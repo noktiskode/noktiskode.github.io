@@ -1,100 +1,211 @@
-<div class="news-ticker">
-  <div class="ticker-track" id="tickerTrack">
-    <span class="ticker-item">Cargando noticias de Santa Rosa...</span>
+<!--
+  Estilo TV para el ticker de BMM.
+  Reemplaza el bloque .news-ticker / .ticker-track / .ticker-item de tu CSS
+  por esto, y el <div class="news-ticker">...</div> + <script> de tu HTML
+  por lo de más abajo.
+-->
+
+<style>
+.news-ticker {
+  display: flex;
+  align-items: stretch;
+  background: #111;
+  border-top: 3px solid #e8452a;
+  height: 42px;
+  font-family: 'Barlow Condensed', 'Barlow', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.ticker-label {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: #e8452a;
+  color: #111;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ticker-viewport {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  will-change: transform;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0 28px 0 0;
+  white-space: nowrap;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ticker-item:hover .ticker-headline {
+  color: #e8452a;
+}
+
+.ticker-dot {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid #9a9a94;
+  background: transparent;
+}
+
+.ticker-item.ticker-denuncia .ticker-dot {
+  background: #e8452a;
+  border-color: #e8452a;
+}
+
+.ticker-headline {
+  color: #fff;
+  transition: color 0.15s ease;
+}
+
+.ticker-sep {
+  flex: 0 0 auto;
+  color: #9a9a94;
+  font-size: 0.7rem;
+  margin-right: 28px;
+}
+
+.news-ticker.is-paused .ticker-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  .ticker-label { font-size: 0.8rem; padding: 0 10px; }
+  .ticker-item { font-size: 0.82rem; }
+}
+</style>
+
+<div class="news-ticker" id="newsTicker" role="region" aria-label="Últimas noticias de Barberena Mi Municipio">
+  <div class="ticker-label">Al día</div>
+  <div class="ticker-viewport">
+    <div class="ticker-track" id="tickerTrack">
+      <a class="ticker-item"><span class="ticker-headline">Cargando noticias de Santa Rosa...</span></a>
+    </div>
   </div>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+
+  const ticker = document.getElementById('newsTicker');
+  const track = document.getElementById('tickerTrack');
+
+  function buildItem(item) {
+    const a = document.createElement('a');
+    a.className = "ticker-item";
+    a.href = item.url || "#";
+    if (item.cat === "denuncia") a.classList.add("ticker-denuncia");
+
+    const dot = document.createElement('span');
+    dot.className = "ticker-dot";
+    a.appendChild(dot);
+
+    const headline = document.createElement('span');
+    headline.className = "ticker-headline";
+    headline.textContent = item.text;
+    a.appendChild(headline);
+
+    const sep = document.createElement('span');
+    sep.className = "ticker-sep";
+    sep.textContent = "◆";
+    a.appendChild(sep);
+
+    return a;
+  }
+
+  function calcularVelocidad() {
+    // Si la persona pidió reducir movimiento en su sistema, no
+    // animamos nada — se queda una lista estática y desplazable.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const anterior = document.getElementById('bmm-ticker-keyframes');
+      if (anterior) anterior.remove();
+      track.parentElement.style.overflowX = 'auto';
+      return;
+    }
+
+    const distancia = track.scrollWidth / 2; // una sola "vuelta" de noticias
+    const pixelesPorSegundo = window.innerWidth <= 640 ? 24 : 32;
+    let duracion = distancia / pixelesPorSegundo;
+    duracion = Math.max(duracion, 45); // nunca menos de 45s
+
+    const styleId = 'bmm-ticker-keyframes';
+    const anterior = document.getElementById(styleId);
+    if (anterior) anterior.remove();
+
+    const style = document.createElement('style');
+    style.id = styleId;
+    style.textContent =
+      '@keyframes tickerScroll { from { transform: translateX(0); } ' +
+      'to { transform: translateX(-' + distancia + 'px); } }' +
+      '#tickerTrack { animation: tickerScroll ' + duracion + 's linear infinite; }';
+    document.head.appendChild(style);
+  }
 
   fetch('/assets/data/ticker.json')
     .then(response => response.json())
     .then(data => {
-
-      const track = document.getElementById('tickerTrack');
-
       track.innerHTML = "";
 
       if (data.length === 0) {
-        track.innerHTML =
-          '<span class="ticker-item">No hay noticias recientes en este momento.</span>';
+        track.appendChild(buildItem({ text: "No hay noticias recientes en este momento." }));
         return;
       }
 
-      // Crear las noticias
-      data.forEach(item => {
+      data.forEach(item => track.appendChild(buildItem(item)));
 
-        const a = document.createElement('a');
-
-        a.href = item.url;
-        a.textContent = item.text;
-        a.className = "ticker-item";
-
-        if (item.cat === "denuncia") {
-          a.classList.add("ticker-denuncia");
-        }
-
-        track.appendChild(a);
-      });
-
-      // Duplicar las noticias para crear el bucle
-      const items = Array.from(track.children);
-
-      items.forEach(item => {
+      // Duplicar para el bucle; los clones no deben leerse dos veces
+      // en lectores de pantalla.
+      Array.from(track.children).forEach(item => {
         const clone = item.cloneNode(true);
         clone.setAttribute('aria-hidden', 'true');
         track.appendChild(clone);
       });
 
-      /*
-       * Calculamos cuánto texto existe.
-       *
-       * Mientras más contenido haya,
-       * más tiempo tardará el recorrido.
-       */
-      function calcularVelocidad() {
-
-        const distancia = track.scrollWidth / 2;
-
-        // Velocidad cómoda para lectura
-        const pixelesPorSegundo =
-          window.innerWidth <= 640 ? 24 : 32;
-
-        let duracion = distancia / pixelesPorSegundo;
-
-        // Nunca menos de 45 segundos
-        duracion = Math.max(duracion, 45);
-
-        track.style.setProperty(
-          '--ticker-duration',
-          duracion + 's'
-        );
-      }
-
-      // Calcular al cargar
       setTimeout(calcularVelocidad, 100);
-
-      // Recalcular si cambia el tamaño
-      window.addEventListener('resize', calcularVelocidad);
-
-      // Recalcular cuando carguen las fuentes
       if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(calcularVelocidad);
       }
 
+      let resizeTimeout;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(calcularVelocidad, 200);
+      });
+
+      ticker.addEventListener('mouseenter', () => ticker.classList.add('is-paused'));
+      ticker.addEventListener('mouseleave', () => ticker.classList.remove('is-paused'));
+      ticker.addEventListener('focusin', () => ticker.classList.add('is-paused'));
+      ticker.addEventListener('focusout', () => ticker.classList.remove('is-paused'));
     })
-
     .catch(err => {
-
-      console.error(
-        "Error al cargar el ticker JSON:",
-        err
-      );
-
-      document.getElementById('tickerTrack').innerHTML =
-        '<span class="ticker-item">Información local al día.</span>';
-
+      console.error("Error al cargar el ticker JSON:", err);
+      track.innerHTML = "";
+      track.appendChild(buildItem({ text: "Información local al día." }));
     });
 
 });
-        </script>  
+</script>
