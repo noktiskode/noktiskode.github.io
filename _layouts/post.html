@@ -9,6 +9,7 @@ layout: default
   }
 
   .post-titulo-banner {
+    display: none;
     background: linear-gradient(135deg, #ff7a45, var(--rojo, #e8452a));
     color: #fff;
     text-align: center;
@@ -49,11 +50,14 @@ layout: default
 
 <article class="post-articulo">
   <div class="post-titulo-banner">{{ page.title }}</div>
-  {% assign mes_num = page.date | date: "%m" | minus: 1 %}
-  <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
+  
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-imagen-destacada">
   {% endif %}
+
+  {% assign mes_num = page.date | date: "%m" | minus: 1 %}
+  <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
+  
   <div class="blog-preview-card-body">
   {{ content }}
   </div>
