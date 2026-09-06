@@ -1,0 +1,49 @@
+<div id="bmm-comentarios" data-slug="{{ page.slug }}">
+  <div id="comment-list"></div>
+  <textarea id="c-texto" placeholder="Escribí tu comentario"></textarea>
+  <input type="text" id="c-nombre" placeholder="Nombre (opcional)">
+  <button id="btn-comentar">Enviar comentario</button>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, query, where, orderBy, onSnapshot, serverTimestamp }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const app = initializeApp({
+    apiKey: "PEGA_AQUÍ_TU_CONFIG",
+    authDomain: "...",
+    projectId: "...",
+    storageBucket: "...",
+    messagingSenderId: "...",
+    appId: "..."
+  });
+  const db = getFirestore(app);
+  const slug = document.getElementById('bmm-comentarios').dataset.slug;
+
+  const q = query(collection(db, "comentarios"),
+    where("postSlug", "==", slug),
+    where("estado", "==", "aprobado"),
+    orderBy("creado", "desc"));
+
+  onSnapshot(q, snap => {
+    const list = document.getElementById('comment-list');
+    if(snap.empty){ list.innerHTML = '<p>Sin comentarios aún.</p>'; return; }
+    list.innerHTML = snap.docs.map(d => {
+      const c = d.data();
+      return `<div><strong>${c.nombre || 'Vecino'}</strong><p>${c.texto}</p></div>`;
+    }).join('');
+  });
+
+  document.getElementById('btn-comentar').addEventListener('click', async () => {
+    const texto = document.getElementById('c-texto').value.trim();
+    if(!texto) return;
+    const nombre = document.getElementById('c-nombre').value.trim();
+    await addDoc(collection(db, "comentarios"), {
+      postSlug: slug, nombre: nombre || "Vecino", texto,
+      estado: "pendiente", creado: serverTimestamp()
+    });
+    document.getElementById('c-texto').value = '';
+    alert('Comentario enviado. Se publicará tras revisión.');
+  });
+</script>
