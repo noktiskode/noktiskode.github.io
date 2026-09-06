@@ -1,0 +1,33 @@
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  import { getFirestore, collection, query, where, onSnapshot, updateDoc, doc }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const app = initializeApp({ /* mismo config que arriba */ });
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  document.getElementById('btn-login').addEventListener('click', () => {
+    const email = document.getElementById('email').value.trim();
+    const pass = document.getElementById('pass').value;
+    signInWithEmailAndPassword(auth, email, pass)
+      .catch(() => document.getElementById('login-error').classList.add('show'));
+  });
+
+  document.getElementById('btn-logout').addEventListener('click', () => signOut(auth));
+
+  onAuthStateChanged(auth, user => {
+    if(!user){ mostrarLogin(); return; }
+    mostrarPanel(user.email);
+    const q = query(collection(db, "comentarios"), where("estado", "==", "pendiente"));
+    onSnapshot(q, snap => {
+      window.__pendientes = snap.docs; // para que renderModeracion los use
+      renderModeracion(snap.docs);
+    });
+  });
+
+  window.aprobarComentario = (id, nuevoEstado) =>
+    updateDoc(doc(db, "comentarios", id), { estado: nuevoEstado });
+</script>
