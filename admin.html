@@ -6,13 +6,17 @@
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const firebaseConfig = {
-  apiKey: "AIzaSyC1jgfupbu5YUvfSeMh5Je9DVExXNgYd1o",
-  authDomain: "bmm-comentarios.firebaseapp.com",
-  projectId: "bmm-comentarios",
-  storageBucket: "bmm-comentarios.firebasestorage.app",
-  messagingSenderId: "601712463771",
-  appId: "1:601712463771:web:60468f91d14b780aad9b3e"
-};
+    apiKey: "AIzaSyC1jgfupbu5YUvfSeMh5Je9DVExXNgYd1o",
+    authDomain: "bmm-comentarios.firebaseapp.com",
+    projectId: "bmm-comentarios",
+    storageBucket: "bmm-comentarios.firebasestorage.app",
+    messagingSenderId: "601712463771",
+    appId: "1:601712463771:web:60468f91d14b780aad9b3e"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
 
   document.getElementById('btn-login').addEventListener('click', () => {
     const email = document.getElementById('email').value.trim();
@@ -28,7 +32,7 @@
     mostrarPanel(user.email);
     const q = query(collection(db, "comentarios"), where("estado", "==", "pendiente"));
     onSnapshot(q, snap => {
-      window.__pendientes = snap.docs; // para que renderModeracion los use
+      window.__pendientes = snap.docs;
       renderModeracion(snap.docs);
     });
   });
