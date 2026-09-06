@@ -10,14 +10,14 @@
   import { getFirestore, collection, addDoc, query, where, orderBy, onSnapshot, serverTimestamp }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  const app = initializeApp({
-    apiKey: "PEGA_AQUÍ_TU_CONFIG",
-    authDomain: "...",
-    projectId: "...",
-    storageBucket: "...",
-    messagingSenderId: "...",
-    appId: "..."
-  });
+  const firebaseConfig = {
+  apiKey: "AIzaSyC1jgfupbu5YUvfSeMh5Je9DVExXNgYd1o",
+  authDomain: "bmm-comentarios.firebaseapp.com",
+  projectId: "",
+  storageBucket: "bmm-comentarios.firebasestorage.app",
+  messagingSenderId: "601712463771",
+  appId: "1:601712463771:web:60468f91d14b780aad9b3e"
+};
   const db = getFirestore(app);
   const slug = document.getElementById('bmm-comentarios').dataset.slug;
 
