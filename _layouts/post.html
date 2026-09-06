@@ -55,5 +55,7 @@ layout: default
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-imagen-destacada">
   {% endif %}
+  <div class="blog-item-body">
   {{ content }}
+  </div>
 </article>
