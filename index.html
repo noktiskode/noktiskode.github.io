@@ -259,7 +259,7 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
       <div class="blog-preview-grid">
         {% for post in site.posts limit:3 %}
           <a href="{{ post.url | relative_url }}" class="blog-preview-card">
-            <div class="blog-preview-card-titulo">{{ post.title }}</div>
+            <div class="">{{ post.title }}</div>
             {% if post.image %}
               <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
             {% endif %}
