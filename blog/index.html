@@ -116,7 +116,9 @@ permalink: /blog/
               <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-item-img">
             {% endif %}
             <div class="blog-item-body">
+              <b>
               {{ post.title }}
+            </b>
               {% assign mes_num = post.date | date: "%m" | minus: 1 %}
               <p class="blog-item-fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
               {% if post.excerpt %}
