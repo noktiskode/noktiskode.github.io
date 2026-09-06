@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barberena, Santa Rosa — Archivo vivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<style>
+  :root{
+    --paper:#EAE0C4;
+    --paper-2:#DFD1A2;
+    --paper-3:#F2EAD3;
+    --line:#C6B37E;
+    --ink:#2A2417;
+    --ink-soft:#6B5F44;
+    --indigo:#223350;
+    --indigo-2:#34496C;
+    --brick:#9A4630;
+    --green:#4B7A4E;
+    --ochre:#B4842A;
+    --orange:#B15A22;
+    --red:#A03A2C;
+    --font-serif:'Fraunces', Georgia, serif;
+    --font-sans:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-sans);
+    min-height:100vh;
+  }
+  a{color:var(--indigo-2);}
+  button{font-family:inherit;cursor:pointer;}
+
+  /* ---------- layout ---------- */
+  .shell{display:flex;min-height:100vh;}
+  .sidebar{
+    width:280px;flex:0 0 280px;
+    background:var(--paper-3);
+    border-right:1px solid var(--line);
+    display:flex;flex-direction:column;
+    height:100vh;position:sticky;top:0;
+  }
+  .brand{
+    padding:22px 20px 14px 20px;
+    border-bottom:1px solid var(--line);
+  }
+  .brand h1{
+    font-family:var(--font-serif);
+    font-size:22px;font-weight:600;margin:0 0 2px 0;line-height:1.15;
+    color:var(--indigo);
+  }
+  .brand p{margin:0;font-size:12.5px;color:var(--ink-soft);}
+
+  .searchwrap{padding:12px 16px;border-bottom:1px solid var(--line);}
+  .searchwrap input{
+    width:100%;padding:8px 10px;border:1px solid var(--line);
+    border-radius:3px;background:var(--paper);font-size:13px;color:var(--ink);
+    font-family:var(--font-sans);
+  }
+  .searchwrap input:focus{outline:2px solid var(--indigo-2);outline-offset:1px;}
+
+  .navlist{list-style:none;margin:0;padding:6px 0;overflow-y:auto;flex:1;}
+  .navlist li{margin:0;}
+  .navbtn{
+    width:100%;display:flex;align-items:center;gap:10px;
+    background:none;border:none;text-align:left;
+    padding:7px 16px;font-size:13.5px;color:var(--ink);
+    border-left:3px solid transparent;
+  }
+  .navbtn:hover{background:var(--paper-2);}
+  .navbtn.active{background:var(--paper-2);border-left-color:var(--indigo);font-weight:600;}
+  .navbtn .num{
+    font-family:var(--font-serif);font-size:13px;color:var(--ink-soft);
+    width:26px;flex:0 0 26px;text-align:right;
+  }
+  .navbtn.active .num{color:var(--indigo);}
+  .dot{width:7px;height:7px;border-radius:50%;flex:0 0 7px;border:1.4px solid var(--ink-soft);background:transparent;}
+  .dot.filled{background:var(--indigo-2);border-color:var(--indigo-2);}
+  .navbtn.dash .num{visibility:hidden;}
+
+  .main{flex:1;min-width:0;padding:34px 44px 80px 44px;max-width:880px;}
+  @media (max-width:820px){
+    .shell{flex-direction:column;}
+    .sidebar{width:100%;flex:none;height:auto;position:relative;max-height:46vh;}
+    .main{padding:24px 20px 60px 20px;max-width:none;}
+  }
+
+  /* ---------- chapter header ---------- */
+  .chapter-head{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:22px;}
+  .chapter-eyebrow{font-size:13px;color:var(--ink-soft);margin:0 0 4px 0;}
+  .chapter-head h2{
+    font-family:var(--font-serif);font-size:32px;font-weight:600;
+    margin:0;color:var(--ink);line-height:1.15;
+  }
+  .chapter-hint{margin:8px 0 0 0;font-size:14px;color:var(--ink-soft);max-width:62ch;}
+
+  .field-label{
+    display:block;font-size:12.5px;color:var(--ink-soft);
+    margin:0 0 5px 0;font-weight:600;
+  }
+  textarea, input[type=text], input[type=url], select{
+    font-family:var(--font-sans);font-size:14px;color:var(--ink);
+    background:var(--paper-3);border:1px solid var(--line);border-radius:3px;
+    padding:9px 10px;width:100%;
+  }
+  textarea:focus, input:focus, select:focus{outline:2px solid var(--indigo-2);outline-offset:1px;}
+  textarea{resize:vertical;font-family:var(--font-sans);line-height:1.5;}
+
+  .summary-block{margin-bottom:30px;}
+  .savehint{font-size:11.5px;color:var(--ink-soft);margin-top:6px;}
+
+  /* ---------- entries ---------- */
+  .entries-head{
+    display:flex;align-items:baseline;justify-content:space-between;
+    border-top:1px solid var(--line);padding-top:18px;margin-bottom:14px;
+  }
+  .entries-head h3{font-family:var(--font-serif);font-size:19px;margin:0;font-weight:600;}
+  .btn{
+    border:1px solid var(--ink);background:var(--ink);color:var(--paper-3);
+    padding:8px 14px;border-radius:3px;font-size:13px;font-weight:600;
+  }
+  .btn:hover{background:var(--indigo);border-color:var(--indigo);}
+  .btn.secondary{background:transparent;color:var(--ink);border:1px solid var(--line);}
+  .btn.secondary:hover{border-color:var(--ink);}
+  .btn.danger{background:transparent;color:var(--brick);border:1px solid var(--brick);}
+  .btn.danger:hover{background:var(--brick);color:var(--paper-3);}
+
+  .empty{
+    border:1px dashed var(--line);border-radius:4px;padding:22px;
+    color:var(--ink-soft);font-size:13.5px;text-align:left;
+  }
+
+  .card{
+    border:1px solid var(--line);border-left:4px solid var(--ink-soft);
+    background:var(--paper-3);border-radius:2px;
+    padding:14px 16px;margin-bottom:12px;
+  }
+  .card.conf-alta{border-left-color:var(--green);}
+  .card.conf-media{border-left-color:var(--ochre);}
+  .card.conf-baja{border-left-color:var(--orange);}
+  .card.conf-no_verificado{border-left-color:var(--red);}
+
+  .card-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+  .chip{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:11.5px;padding:2px 8px;border-radius:12px;
+    border:1px solid var(--line);color:var(--ink-soft);background:var(--paper);
+  }
+  .chip .cdot{width:7px;height:7px;border-radius:50%;}
+  .cdot.alta{background:var(--green);} .cdot.media{background:var(--ochre);}
+  .cdot.baja{background:var(--orange);} .cdot.no_verificado{background:var(--red);}
+
+  .card h4{margin:0 0 8px 0;font-size:15.5px;font-weight:600;font-family:var(--font-serif);}
+  .card dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:4px 10px;font-size:13px;}
+  .card dt{color:var(--ink-soft);}
+  .card dd{margin:0;word-break:break-word;}
+  .card-actions{margin-top:10px;display:flex;gap:8px;}
+  .card-actions button{padding:5px 10px;font-size:12px;}
+
+  /* ---------- form ---------- */
+  .form-panel{
+    border:1px solid var(--line);background:var(--paper-3);
+    border-radius:4px;padding:18px 18px 16px 18px;margin-bottom:18px;
+  }
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:560px){.grid2{grid-template-columns:1fr;}}
+  .fgroup{margin-bottom:14px;}
+
+  .conf-choice{display:flex;gap:8px;flex-wrap:wrap;}
+  .conf-choice label{
+    display:flex;align-items:center;gap:6px;border:1px solid var(--line);
+    padding:6px 10px;border-radius:14px;font-size:12.5px;background:var(--paper);
+  }
+  .conf-choice input{width:auto;margin:0;}
+  .conf-choice .cdot{width:8px;height:8px;border-radius:50%;}
+
+  .form-actions{display:flex;gap:10px;margin-top:6px;}
+
+  /* ---------- dashboard ---------- */
+  .principle{
+    border-left:4px solid var(--indigo);background:var(--paper-3);
+    padding:14px 18px;font-size:14px;color:var(--ink);margin-bottom:26px;
+    border-radius:2px;
+  }
+  .principle strong{color:var(--indigo);}
+  .stat-row{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:30px;}
+  .stat{min-width:110px;}
+  .stat .n{font-family:var(--font-serif);font-size:30px;color:var(--indigo);line-height:1;}
+  .stat .l{font-size:12px;color:var(--ink-soft);margin-top:4px;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:30px;font-size:13px;}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .legend .cdot{width:9px;height:9px;border-radius:50%;}
+
+  .progresslist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
+  .progresslist li{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;
+  }
+  .progresslist button{background:none;border:none;color:var(--indigo-2);font-size:13px;font-weight:600;padding:4px 0;}
+  .progresslist button:hover{text-decoration:underline;}
+
+  .loading{color:var(--ink-soft);font-size:13.5px;padding:20px 0;}
+
+  .setup-screen{max-width:640px;margin:60px auto;padding:0 24px;}
+  .setup-screen h2{font-family:var(--font-serif);font-size:26px;margin-bottom:8px;}
+  .setup-screen p{font-size:14px;line-height:1.6;color:var(--ink-soft);}
+  .setup-screen code{background:var(--paper-3);border:1px solid var(--line);padding:1px 5px;border-radius:3px;font-size:13px;}
+  .live-banner{
+    display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft);
+    padding:6px 16px;border-bottom:1px solid var(--line);background:var(--paper-3);
+  }
+  .live-banner .pulse{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .error-banner{
+    border-left:4px solid var(--red);background:var(--paper-3);padding:12px 16px;
+    font-size:13.5px;margin-bottom:20px;border-radius:2px;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="sidebar">
+    <div class="brand">
+      <h1>Barberena, Santa Rosa</h1>
+      <p>Archivo vivo · historia, memoria y patrimonio</p>
+    </div>
+    <div class="searchwrap">
+      <input id="searchInput" type="text" placeholder="Buscar capítulo…">
+    </div>
+    <ul class="navlist" id="navList"></ul>
+  </nav>
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+    <div class="live-banner" id="liveBanner" style="display:none;">
+      <span class="pulse"></span> Conectado a la base de datos compartida — los cambios se guardan para todos.
+    </div>
+    <div class="error-banner" id="errorBanner" style="display:none;margin:16px 44px 0 44px;"></div>
+    <main class="main" id="main">
+      <div class="loading">Cargando archivo…</div>
+    </main>
+  </div>
+</div>
+
+<script>
+	const firebaseConfig = {
+  apiKey: "AIzaSyCzZPBN8MDfytJ5YwMKrq8YFKKmh9cbaCo",
+  authDomain: "archivo-barberena.firebaseapp.com",
+  projectId: "archivo-barberena",
+  storageBucket: "archivo-barberena.firebasestorage.app",
+  messagingSenderId: "935363065587",
+  appId: "1:935363065587:web:4e75c4d6774719c25c2986"
+};
+
+/* ---------------- data model ---------------- */
+const CHAPTERS = [
+  ["I","Resumen histórico","Visión general y verificada de la historia del municipio, pensada para quien busca una primera lectura confiable."],
+  ["II","Cronología","Línea de tiempo con fechas y hechos comprobados, desde los primeros antecedentes disponibles hasta la actualidad."],
+  ["III","Historia detallada","Desarrollo narrativo completo: pueblos originarios, época colonial, y los siglos XIX, XX y XXI."],
+  ["IV","Personajes","Figuras históricas y contemporáneas relevantes para Barberena, con hechos documentados."],
+  ["V","Alcaldes y autoridades","Alcaldes y periodos de gobierno, cada uno con su fuente correspondiente."],
+  ["VI","Patrimonio","Inventario de bienes patrimoniales materiales e inmateriales del municipio."],
+  ["VII","Templo de Minerva","Historia, construcción, autoría y estado actual del Templo de Minerva."],
+  ["VIII","Pila de las Cinco Calles","Origen, función y valor patrimonial de la pila."],
+  ["IX","Parque Barrios","Historia y transformaciones del parque central."],
+  ["X","José de Barberena","Investigación sobre la persona y el origen del nombre del municipio."],
+  ["XI","Laguna del Pino","Geografía, historia y situación ambiental de la laguna."],
+  ["XII","El Cerinal","Historia y características de este sector o comunidad."],
+  ["XIII","Comunidades","Aldeas, caseríos, colonias y fincas que integran el municipio."],
+  ["XIV","Geografía","Ubicación, extensión, límites y relieve del municipio."],
+  ["XV","Naturaleza","Flora, fauna y ecosistemas presentes en el territorio."],
+  ["XVI","Gastronomía","Platillos y bebidas tradicionales, con su origen cuando se conozca."],
+  ["XVII","Fiestas y tradiciones","Celebraciones religiosas y populares a lo largo del año."],
+  ["XVIII","Leyendas","Relatos tradicionales, conservados como leyenda y no como historia."],
+  ["XIX","Educación","Centros educativos e historia de la educación local."],
+  ["XX","Religión","Instituciones religiosas y su papel en la vida del municipio."],
+  ["XXI","Deportes","Historia deportiva y figuras destacadas."],
+  ["XXII","Economía","Actividades productivas, comercio y economía local."],
+  ["XXIII","Arquitectura","Edificaciones históricas y estilos constructivos."],
+  ["XXIV","Transporte","Vías, transporte y conectividad histórica y actual."],
+  ["XXV","Símbolos","Escudo, bandera u otros símbolos oficiales o identitarios."],
+  ["XXVI","Demografía","Datos de población, siempre con fuente y fecha de consulta."],
+  ["XXVII","Fotografías históricas","Registro de imágenes antiguas con su procedencia y derechos."],
+  ["XXVIII","Barberena antes y ahora","Comparación narrativa y visual entre distintas épocas."],
+  ["XXIX","Contradicciones históricas","Casos donde las fuentes difieren: se conservan ambas versiones."],
+  ["XXX","Preguntas aún sin resolver","Vacíos de investigación que quedan pendientes de resolver."],
+  ["XXXI","Fuentes y bibliografía","Listado completo y rastreable de todas las fuentes consultadas."]
+].map(([id,title,hint]) => ({id,title,hint}));
+
+const CONF = {
+  alta:{label:"Alta confianza", sub:"Documento primario o varias fuentes independientes coincidentes."},
+  media:{label:"Confianza media", sub:"Fuente institucional o secundaria confiable, pero limitada."},
+  baja:{label:"Baja confianza", sub:"Una sola fuente o información difícil de comprobar."},
+  no_verificado:{label:"No verificado", sub:"Rumor, publicación sin respaldo o tradición oral sin documentación."}
+};
+
+const CLASIF = [
+  ["hecho_documentado","Hecho documentado"],
+  ["hecho_multifuente","Hecho respaldado por múltiples fuentes"],
+  ["institucional","Información institucional"],
+  ["tradicion_oral","Tradición oral"],
+  ["leyenda","Leyenda"],
+  ["no_verificada","Versión no verificada"],
+  ["en_disputa","Dato en disputa"]
+];
+const CLASIF_LABEL = Object.fromEntries(CLASIF);
+
+const COLLECTION = "capitulos";
+
+const isConfigured = firebaseConfig.apiKey !== "TU_API_KEY";
+let db = null;
+if(isConfigured){
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore();
+}
+
+/* ---------------- state ---------------- */
+let currentId = "dashboard";
+const cache = {}; // chapterId -> {summary, entries:[]}
+let allLoaded = false;
+let editingEntryId = null; // entry currently being edited/added, or null
+let addingNew = false;
+
+/* ---------------- storage helpers (Firestore) ---------------- */
+async function loadChapter(id){
+  if(cache[id]) return cache[id];
+  let data = {summary:"", entries:[]};
+  try{
+    const doc = await db.collection(COLLECTION).doc(id).get();
+    if(doc.exists){
+      const parsed = doc.data();
+      data = {summary: parsed.summary || "", entries: parsed.entries || []};
+    }
+  }catch(e){
+    console.error("No se pudo leer el capítulo", id, e);
+    showStorageError(e);
+  }
+  cache[id] = data;
+  return data;
+}
+
+async function saveChapter(id){
+  try{
+    await db.collection(COLLECTION).doc(id).set(cache[id]);
+  }catch(e){
+    console.error("No se pudo guardar el capítulo", id, e);
+    showStorageError(e);
+  }
+}
+
+async function loadAllChapters(){
+  try{
+    const snap = await db.collection(COLLECTION).get();
+    const found = {};
+    snap.forEach(doc=>{
+      const parsed = doc.data();
+      found[doc.id] = {summary: parsed.summary || "", entries: parsed.entries || []};
+    });
+    CHAPTERS.forEach(c=>{
+      cache[c.id] = found[c.id] || {summary:"", entries:[]};
+    });
+  }catch(e){
+    console.error("No se pudo cargar el archivo", e);
+    showStorageError(e);
+    CHAPTERS.forEach(c=>{ if(!cache[c.id]) cache[c.id] = {summary:"", entries:[]}; });
+  }
+  allLoaded = true;
+}
+
+function showStorageError(e){
+  const banner = document.getElementById("errorBanner");
+  if(!banner) return;
+  banner.style.display = "block";
+  banner.textContent = "No se pudo conectar con la base de datos (" + (e && e.code ? e.code : "error") + "). Revisa las reglas de seguridad de Firestore y que el proyecto esté bien configurado.";
+}
+
+function uid(){
+  return (crypto.randomUUID ? crypto.randomUUID() : ("id-"+Date.now()+"-"+Math.random().toString(16).slice(2)));
+}
+
+function hasContent(id){
+  const d = cache[id];
+  if(!d) return false;
+  return (d.summary && d.summary.trim().length>0) || (d.entries && d.entries.length>0);
+}
+
+/* ---------------- rendering: sidebar ---------------- */
+function renderSidebar(filter=""){
+  const nav = document.getElementById("navList");
+  nav.innerHTML = "";
+
+  const dashLi = document.createElement("li");
+  const dashBtn = document.createElement("button");
+  dashBtn.className = "navbtn dash" + (currentId==="dashboard" ? " active" : "");
+  dashBtn.innerHTML = `<span class="num"></span><span class="dot"></span><span>Panel general</span>`;
+  dashBtn.onclick = () => selectChapter("dashboard");
+  dashLi.appendChild(dashBtn);
+  nav.appendChild(dashLi);
+
+  const f = filter.trim().toLowerCase();
+  CHAPTERS.forEach(c => {
+    if(f && !c.title.toLowerCase().includes(f) && !c.id.toLowerCase().includes(f)) return;
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+    btn.className = "navbtn" + (currentId===c.id ? " active" : "");
+    const filled = hasContent(c.id);
+    btn.innerHTML = `<span class="num">${c.id}</span><span class="dot ${filled?'filled':''}"></span><span>${c.title}</span>`;
+    btn.onclick = () => selectChapter(c.id);
+    li.appendChild(btn);
+    nav.appendChild(li);
+  });
+}
+
+document.getElementById("searchInput").addEventListener("input", (e)=>{
+  renderSidebar(e.target.value);
+});
+
+/* ---------------- selection ---------------- */
+async function selectChapter(id){
+  currentId = id;
+  editingEntryId = null;
+  addingNew = false;
+  renderSidebar(document.getElementById("searchInput").value);
+  if(id==="dashboard"){
+    await renderDashboard();
+  } else {
+    await loadChapter(id);
+    renderChapterView(id);
+  }
+}
+
+/* ---------------- dashboard ---------------- */
+async function renderDashboard(){
+  const main = document.getElementById("main");
+  main.innerHTML = `<div class="loading">Reuniendo el estado del archivo…</div>`;
+  if(!allLoaded) await loadAllChapters();
+  renderSidebar(document.getElementById("searchInput").value);
+
+  let totalEntries=0, filledChapters=0;
+  const confCounts = {alta:0, media:0, baja:0, no_verificado:0};
+  CHAPTERS.forEach(c=>{
+    const d = cache[c.id];
+    if(hasContent(c.id)) filledChapters++;
+    (d.entries||[]).forEach(e=>{
+      totalEntries++;
+      if(confCounts[e.confianza]!==undefined) confCounts[e.confianza]++;
+    });
+  });
+  const emptyChapters = CHAPTERS.filter(c=>!hasContent(c.id));
+
+  main.innerHTML = `
+    <div class="chapter-head">
+      <p class="chapter-eyebrow">Panel general</p>
+      <h2>Estado del archivo</h2>
+      <p class="chapter-hint">Un vistazo rápido a cuánto del municipio ya tiene fichas registradas, y cuánto sigue en blanco.</p>
+    </div>
+
+    <div class="principle">
+      <strong>Principio de trabajo:</strong> investigar primero, contrastar las fuentes después, y redactar únicamente con lo ya comprobado. Cuando falte evidencia, la ficha debe decirlo — nunca se completa un vacío por suposición.
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><div class="n">${filledChapters}/31</div><div class="l">capítulos con contenido</div></div>
+      <div class="stat"><div class="n">${totalEntries}</div><div class="l">fichas registradas</div></div>
+      <div class="stat"><div class="n">${confCounts.alta}</div><div class="l">de alta confianza</div></div>
+      <div class="stat"><div class="n">${confCounts.no_verificado}</div><div class="l">sin verificar</div></div>
+    </div>
+
+    <div class="legend">
+      <span><span class="cdot" style="background:var(--green)"></span>Alta confianza</span>
+      <span><span class="cdot" style="background:var(--ochre)"></span>Confianza media</span>
+      <span><span class="cdot" style="background:var(--orange)"></span>Baja confianza</span>
+      <span><span class="cdot" style="background:var(--red)"></span>No verificado</span>
+    </div>
+
+    <div class="entries-head" style="border-top:none;padding-top:0;">
+      <h3>Capítulos aún vacíos (${emptyChapters.length})</h3>
+      <button class="btn secondary" id="exportBtn">Descargar copia (JSON)</button>
+    </div>
+    ${emptyChapters.length===0
+      ? `<p class="chapter-hint">Todos los capítulos tienen al menos una nota o ficha.</p>`
+      : `<ul class="progresslist">${emptyChapters.map(c=>`
+          <li><span>${c.id}. ${c.title}</span><button data-goto="${c.id}">Abrir →</button></li>
+        `).join("")}</ul>`
+    }
+  `;
+
+  main.querySelectorAll("[data-goto]").forEach(btn=>{
+    btn.addEventListener("click", ()=> selectChapter(btn.getAttribute("data-goto")));
+  });
+  document.getElementById("exportBtn").addEventListener("click", exportArchive);
+}
+
+function exportArchive(){
+  const payload = { exportado: new Date().toISOString(), capitulos: {} };
+  CHAPTERS.forEach(c=>{ payload.capitulos[c.id] = { titulo: c.title, ...cache[c.id] }; });
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = "archivo-barberena.json";
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+/* ---------------- chapter view ---------------- */
+function renderChapterView(id){
+  const chap = CHAPTERS.find(c=>c.id===id);
+  const data = cache[id];
+  const main = document.getElementById("main");
+
+  main.innerHTML = `
+    <div class="chapter-head">
+      <p class="chapter-eyebrow">Capítulo ${chap.id} de XXXI</p>
+      <h2>${chap.title}</h2>
+      <p class="chapter-hint">${chap.hint}</p>
+    </div>
+
+    <div class="summary-block">
+      <label class="field-label" for="summaryBox">Nota / resumen del capítulo</label>
+      <textarea id="summaryBox" rows="5" placeholder="Escribe aquí un resumen redactado sólo con lo ya comprobado en las fichas de este capítulo…">${escapeHtml(data.summary)}</textarea>
+      <div class="savehint" id="saveHint">Se guarda automáticamente al salir del cuadro de texto.</div>
+    </div>
+
+    <div class="entries-head">
+      <h3>Fichas de dato (${data.entries.length})</h3>
+      <button class="btn" id="newEntryBtn">+ Nueva ficha</button>
+    </div>
+    <div id="formSlot"></div>
+    <div id="entriesList"></div>
+  `;
+
+  const box = document.getElementById("summaryBox");
+  box.addEventListener("blur", async ()=>{
+    cache[id].summary = box.value;
+    await saveChapter(id);
+    document.getElementById("saveHint").textContent = "Guardado.";
+    renderSidebar(document.getElementById("searchInput").value);
+  });
+
+  document.getElementById("newEntryBtn").addEventListener("click", ()=>{
+    addingNew = true; editingEntryId = null;
+    renderForm(id);
+  });
+
+  renderEntries(id);
+  if(addingNew || editingEntryId) renderForm(id);
+}
+
+function renderEntries(id){
+  const data = cache[id];
+  const list = document.getElementById("entriesList");
+  if(!data.entries.length){
+    list.innerHTML = `<div class="empty">Todavía no hay fichas en este capítulo. Cuando encuentres un dato verificable, agrégalo con su fuente y nivel de confianza — así el archivo queda rastreable.</div>`;
+    return;
+  }
+  list.innerHTML = data.entries.map(e=>{
+    const conf = CONF[e.confianza] || CONF.no_verificado;
+    return `
+    <div class="card conf-${e.confianza}">
+      <div class="card-top">
+        <span class="chip"><span class="cdot ${e.confianza}"></span>${conf.label}</span>
+        ${e.clasificacion ? `<span class="chip">${CLASIF_LABEL[e.clasificacion]||e.clasificacion}</span>` : ""}
+      </div>
+      <h4>${escapeHtml(e.afirmacion) || "(sin afirmación registrada)"}</h4>
+      <dl>
+        ${rowIf("Fecha / período", e.fecha)}
+        ${rowIf("Lugar", e.lugar)}
+        ${rowIf("Fuente", e.fuente)}
+        ${rowIf("Tipo de fuente", e.tipoFuente)}
+        ${rowIf("Enlace", e.enlace ? `<a href="${escapeAttr(e.enlace)}" target="_blank" rel="noopener">${escapeHtml(e.enlace)}</a>` : "", true)}
+        ${rowIf("Evidencia", e.evidencia)}
+        ${rowIf("Fuentes independientes", e.fuentesIndep)}
+        ${rowIf("Contradicciones", e.contradicciones)}
+        ${rowIf("Observaciones", e.observaciones)}
+        ${rowIf("Fecha de consulta", e.fechaConsulta)}
+      </dl>
+      <div class="card-actions">
+        <button class="btn secondary" data-edit="${e.id}">Editar</button>
+        <button class="btn danger" data-del="${e.id}">Eliminar</button>
+      </div>
+    </div>`;
+  }).join("");
+
+  list.querySelectorAll("[data-edit]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      editingEntryId = btn.getAttribute("data-edit");
+      addingNew = false;
+      renderForm(id);
+      document.getElementById("formSlot").scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  });
+  list.querySelectorAll("[data-del]").forEach(btn=>{
+    btn.addEventListener("click", async ()=>{
+      if(!confirm("¿Eliminar esta ficha? Esta acción no se puede deshacer.")) return;
+      cache[id].entries = cache[id].entries.filter(e=>e.id!==btn.getAttribute("data-del"));
+      await saveChapter(id);
+      renderChapterView(id);
+      renderSidebar(document.getElementById("searchInput").value);
+    });
+  });
+}
+
+function rowIf(label, value, isHtml=false){
+  if(!value) return "";
+  return `<dt>${label}</dt><dd>${isHtml ? value : escapeHtml(value)}</dd>`;
+}
+
+/* ---------------- entry form ---------------- */
+function renderForm(id){
+  const slot = document.getElementById("formSlot");
+  const data = cache[id];
+  const existing = editingEntryId ? data.entries.find(e=>e.id===editingEntryId) : null;
+  const v = existing || {
+    id: uid(), afirmacion:"", fecha:"", lugar:"", fuente:"", tipoFuente:"",
+    enlace:"", evidencia:"", fuentesIndep:"", contradicciones:"",
+    confianza:"media", clasificacion:"institucional", observaciones:"", fechaConsulta:""
+  };
+
+  slot.innerHTML = `
+    <div class="form-panel">
+      <div class="fgroup">
+        <label class="field-label">Afirmación</label>
+        <textarea id="f_afirmacion" rows="2" placeholder="El dato concreto que se está registrando…">${escapeHtml(v.afirmacion)}</textarea>
+      </div>
+      <div class="grid2">
+        <div class="fgroup">
+          <label class="field-label">Fecha o período</label>
+          <input type="text" id="f_fecha" value="${escapeAttr(v.fecha)}" placeholder="p. ej. 1913, siglo XIX…">
+        </div>
+        <div class="fgroup">
+          <label class="field-label">Lugar</label>
+          <input type="text" id="f_lugar" value="${escapeAttr(v.lugar)}">
+        </div>
+        <div class="fgroup">
+          <label class="field-label">Fuente</label>
+          <input type="text" id="f_fuente" value="${escapeAttr(v.fuente)}" placeholder="Autor, institución o publicación">
+        </div>
+        <div class="fgroup">
+          <label class="field-label">Tipo de fuente</label>
+          <input type="text" id="f_tipoFuente" value="${escapeAttr(v.tipoFuente)}" placeholder="Primaria, institucional, académica…">
+        </div>
+      </div>
+      <div class="fgroup">
+        <label class="field-label">Enlace directo</label>
+        <input type="url" id="f_enlace" value="${escapeAttr(v.enlace)}" placeholder="https://…">
+      </div>
+      <div class="fgroup">
+        <label class="field-label">Evidencia encontrada</label>
+        <textarea id="f_evidencia" rows="2">${escapeHtml(v.evidencia)}</textarea>
+      </div>
+      <div class="grid2">
+        <div class="fgroup">
+          <label class="field-label">Fuentes independientes que la corroboran</label>
+          <textarea id="f_fuentesIndep" rows="2">${escapeHtml(v.fuentesIndep)}</textarea>
+        </div>
+        <div class="fgroup">
+          <label class="field-label">Contradicciones</label>
+          <textarea id="f_contradicciones" rows="2">${escapeHtml(v.contradicciones)}</textarea>
+        </div>
+      </div>
+      <div class="fgroup">
+        <label class="field-label">Nivel de confianza</label>
+        <div class="conf-choice">
+          ${Object.entries(CONF).map(([key,c])=>`
+            <label>
+              <input type="radio" name="f_confianza" value="${key}" ${v.confianza===key?"checked":""}>
+              <span class="cdot ${key}"></span>${c.label}
+            </label>
+          `).join("")}
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="fgroup">
+          <label class="field-label">Clasificación</label>
+          <select id="f_clasificacion">
+            ${CLASIF.map(([key,label])=>`<option value="${key}" ${v.clasificacion===key?"selected":""}>${label}</option>`).join("")}
+          </select>
+        </div>
+        <div class="fgroup">
+          <label class="field-label">Fecha de consulta</label>
+          <input type="text" id="f_fechaConsulta" value="${escapeAttr(v.fechaConsulta)}" placeholder="p. ej. 6 de septiembre de 2026">
+        </div>
+      </div>
+      <div class="fgroup">
+        <label class="field-label">Observaciones</label>
+        <textarea id="f_observaciones" rows="2">${escapeHtml(v.observaciones)}</textarea>
+      </div>
+      <div class="form-actions">
+        <button class="btn" id="saveEntryBtn">${existing ? "Guardar cambios" : "Guardar ficha"}</button>
+        <button class="btn secondary" id="cancelEntryBtn">Cancelar</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("cancelEntryBtn").addEventListener("click", ()=>{
+    addingNew = false; editingEntryId = null;
+    renderChapterView(id);
+  });
+
+  document.getElementById("saveEntryBtn").addEventListener("click", async ()=>{
+    const confRadio = slot.querySelector('input[name="f_confianza"]:checked');
+    const entry = {
+      id: v.id,
+      afirmacion: val("f_afirmacion"),
+      fecha: val("f_fecha"),
+      lugar: val("f_lugar"),
+      fuente: val("f_fuente"),
+      tipoFuente: val("f_tipoFuente"),
+      enlace: val("f_enlace"),
+      evidencia: val("f_evidencia"),
+      fuentesIndep: val("f_fuentesIndep"),
+      contradicciones: val("f_contradicciones"),
+      confianza: confRadio ? confRadio.value : "no_verificado",
+      clasificacion: val("f_clasificacion"),
+      observaciones: val("f_observaciones"),
+      fechaConsulta: val("f_fechaConsulta")
+    };
+    if(!entry.afirmacion.trim()){
+      alert("La afirmación no puede quedar vacía: es el dato que esta ficha registra.");
+      return;
+    }
+    if(existing){
+      const idx = data.entries.findIndex(e=>e.id===v.id);
+      data.entries[idx] = entry;
+    } else {
+      data.entries.push(entry);
+    }
+    await saveChapter(id);
+    addingNew = false; editingEntryId = null;
+    renderChapterView(id);
+    renderSidebar(document.getElementById("searchInput").value);
+  });
+}
+
+function val(elId){ return document.getElementById(elId).value.trim(); }
+function escapeHtml(s){
+  if(!s) return "";
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+function escapeAttr(s){ return escapeHtml(s).replace(/"/g,"&quot;"); }
+
+/* ---------------- init ---------------- */
+(async function init(){
+  if(!isConfigured){
+    document.querySelector(".sidebar").style.display = "none";
+    document.getElementById("main").innerHTML = `
+      <div class="setup-screen">
+        <h2>Falta conectar la base de datos</h2>
+        <p>Esta copia del archivo todavía no tiene configurado su proyecto de Firebase, así que no puede guardar ni mostrar datos compartidos.</p>
+        <p>Abre <code>INSTRUCCIONES-FIREBASE.md</code> (junto a este archivo) y sigue los pasos para crear un proyecto gratuito. Al final obtendrás un bloque <code>firebaseConfig</code> que debes pegar en este archivo HTML, reemplazando los valores de ejemplo cerca del inicio del <code>&lt;script&gt;</code>.</p>
+      </div>`;
+    return;
+  }
+  document.getElementById("liveBanner").style.display = "flex";
+  renderSidebar();
+  await selectChapter("dashboard");
+})();
+</script>
+</body>
+</html>
