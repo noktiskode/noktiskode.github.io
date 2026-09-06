@@ -256,7 +256,7 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
     {% if site.posts.size == 0 %}
       <p class="blog-preview-empty">Todavía no hay entradas publicadas.</p>
     {% else %}
-      <div class="blog-preview-gridu">
+      <div class="blog-preview-grid">
         {% for post in site.posts limit:3 %}
           <a href="{{ post.url | relative_url }}" class="blog-preview-card">
             {% if post.image %}
