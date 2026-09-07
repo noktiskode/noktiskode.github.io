@@ -21,7 +21,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      show_hero: false
+      show_hero: true
+      hero_image: /images/portada.webp
+      hero_alt: Barberena Mi Municipio
+      hero_badge: Blog
 
 # Que no procese estas carpetas/archivos como si fueran páginas
 exclude:
