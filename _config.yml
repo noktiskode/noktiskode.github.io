@@ -21,7 +21,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      show_hero: true
+      show_hero: false
       hero_image: /images/portada.webp
       hero_alt: Barberena Mi Municipio
       hero_badge: Blog
