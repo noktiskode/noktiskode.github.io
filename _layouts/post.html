@@ -53,7 +53,7 @@ hero_badge: Blog
 </style>
 
 <article class="post-articulo">
-  <div class="post-titulo-banner">{{ page.title }}</div>
+  <div class="post-titulo-banner"></div>
     {% assign mes_num = page.date | date: "%m" | minus: 1 %}
   <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
   <div class="blog-preview-card-body">
