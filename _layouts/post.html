@@ -52,10 +52,9 @@ hero_alt: Barberena Mi Municipio
 </style>
 
 <article class="post-articulo">
-  <div class="post-titulo-banner"></div>
   <div class="blog-preview-card-body">
   {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-imagen-destacada">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="blog-item-img">
   {% endif %}
     {% assign mes_num = page.date | date: "%m" | minus: 1 %}
   <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
