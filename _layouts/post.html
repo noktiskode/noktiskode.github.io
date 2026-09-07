@@ -1,7 +1,5 @@
 ---
 layout: default
-hero_image: /images/portada.webp
-hero_alt: Barberena Mi Municipio
 ---
 
 <style>
@@ -53,9 +51,9 @@ hero_alt: Barberena Mi Municipio
 
 <article class="post-articulo">
   <div class="blog-preview-card-body">
-  {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="blog-item-img">
-  {% endif %}
+  {% if page.hero_image %}
+  <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | default: page.title }}" class="post-imagen-destacada">
+{% endif %}
     {% assign mes_num = page.date | date: "%m" | minus: 1 %}
   <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
   {{ content }}
