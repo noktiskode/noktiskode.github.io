@@ -1,7 +1,7 @@
 ---
 title: Transporte de Buena Vista mantendrá tarifa de Q4.00
 date: 2026-09-07T14:44:00.000-06:00
-image: /images/blog/1000032533.webp
+image: /images/blog/1000032536.webp
 ---
 Barberena | El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que:
 
@@ -23,4 +23,4 @@ Aclaro: no fui yo quien cambió de palabra. Ellos aceptaron apoyarnos”.
 
 
 
-\#BuenaVista #Barberena #BarberenaSantaRosa #SantaRosaGT #transporte #BarberenaMiMunicipio
+#BuenaVista #Barberena #BarberenaSantaRosa #SantaRosaGT #transporte #BarberenaMiMunicipio
