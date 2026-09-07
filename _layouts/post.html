@@ -51,7 +51,7 @@ layout: default
 
 <article class="post-articulo">
   <div class="blog-preview-card-body">
-  {% assign imagen = page.hero_image | default: page.image %}
+  {% assign imagen = page.image | default: page.hero_image %}
   {% if imagen %}
   <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}" class="post-imagen-destacada">
   {% endif %}
