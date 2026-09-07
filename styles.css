@@ -47,9 +47,10 @@
     .nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     .nav-links-mobile {
-      display: none; position: fixed; top: 60px; left: 0; width: 100%;
-      background: var(--negro); flex-direction: column; list-style: none;
-      max-height: 0; overflow: hidden; transition: max-height 0.3s ease; z-index: 199;
+  display: none; position: fixed; top: 60px; left: 0; width: 100%;
+  background: rgba(17, 17, 16, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  flex-direction: column; list-style: none;
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease; z-index: 199;
     }
     .nav-links-mobile.open { display: flex; max-height: 400px; }
     .nav-links-mobile li { border-top: 1px solid rgba(255,255,255,0.08); }
