@@ -60,4 +60,12 @@ collections:
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Imagen destacada", name: "image", widget: "image", required: false }
       - { label: "Resumen corto", name: "excerpt", widget: "text", required: false }
+      - label: "Color de tarjeta"
+        name: "card_color"
+        widget: "select"
+        default: "rojo"
+        options:
+          - { label: "Rojo-naranja (BMM)", value: "rojo" }
+          - { label: "Blanco", value: "blanco" }
+          - { label: "Negro", value: "negro" }
       - { label: "Contenido", name: "body", widget: "markdown" }
