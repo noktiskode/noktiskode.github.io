@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+
+<div id="bmm-comentarios" data-slug="{{ page.slug }}" style="max-width:640px;margin:2.5rem auto;font-family:-apple-system,sans-serif;color:#1A1A1A;">
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;letter-spacing:.5px;border-bottom:3px solid #E8432B;padding-bottom:.5rem;margin-bottom:1.3rem;">Comentarios</h3>
+
+  <div id="comment-list" style="margin-bottom:1.75rem;"></div>
+
+  <label style="display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.2px;margin:.6rem 0 .3rem;color:#333;">Nombre (opcional)</label>
+  <input type="text" id="c-nombre" placeholder="Vecino" style="width:100%;padding:11px 13px;font-size:15px;border:1.5px solid #D8D8D8;border-radius:6px;box-sizing:border-box;">
+
+  <label style="display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.2px;margin:1rem 0 .3rem;color:#333;">Comentario</label>
+  <textarea id="c-texto" placeholder="Escribí tu comentario" style="width:100%;min-height:90px;padding:11px 13px;font-size:15px;border:1.5px solid #D8D8D8;border-radius:6px;box-sizing:border-box;font-family:inherit;"></textarea>
+  <p id="err-texto" style="display:none;color:#A32D2D;font-size:13px;margin-top:.4rem;">Escribí algo antes de enviar.</p>
+
+  <button id="btn-comentar" style="margin-top:1rem;padding:12px 26px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#fff;background:#E8432B;border:none;border-radius:6px;cursor:pointer;">Enviar comentario</button>
+  <p id="ok-msg" style="display:none;color:#2F6B4E;font-size:13.5px;margin-top:.8rem;font-weight:600;">Comentario enviado. Se publicará tras revisión.</p>
+</div>
+
+<script type="module">
+  import { getFirestore, collection, addDoc, query, where, orderBy, onSnapshot, serverTimestamp }
+    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const db = getFirestore(window.firebaseApp);
+  const slug = document.getElementById('bmm-comentarios').dataset.slug;
+
+  const q = query(collection(db, "comentarios"),
+    where("postSlug", "==", slug),
+    where("estado", "==", "aprobado"),
+    orderBy("creado", "desc"));
+
+  onSnapshot(q, snap => {
+    const list = document.getElementById('comment-list');
+    if (snap.empty) {
+      list.innerHTML = '<p style="color:#777;font-style:italic;font-size:14px;">Sin comentarios aún.</p>';
+      return;
+    }
+    list.innerHTML = snap.docs.map(d => {
+      const c = d.data();
+      return `<div style="border-bottom:1px solid #EAEAEA;padding:.9rem 0;">
+        <strong style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:.2px;color:#E8432B;">${c.nombre || 'Vecino'}</strong>
+        <p style="font-size:15px;margin:.35rem 0 0;line-height:1.5;">${c.texto}</p>
+      </div>`;
+    }).join('');
+  }, err => console.error('Error leyendo comentarios:', err));
+
+  document.getElementById('btn-comentar').addEventListener('click', async () => {
+    const texto = document.getElementById('c-texto').value.trim();
+    const errEl = document.getElementById('err-texto');
+    if (!texto) { errEl.style.display = 'block'; return; }
+    errEl.style.display = 'none';
+
+    const nombre = document.getElementById('c-nombre').value.trim();
+    try {
+      await addDoc(collection(db, "comentarios"), {
+        postSlug: slug, nombre: nombre || "Vecino", texto,
+        estado: "pendiente", creado: serverTimestamp()
+      });
+      document.getElementById('c-texto').value = '';
+      document.getElementById('ok-msg').style.display = 'block';
+      setTimeout(() => document.getElementById('ok-msg').style.display = 'none', 4000);
+    } catch (err) {
+      console.error('Error enviando comentario:', err);
+      alert('No se pudo enviar el comentario. Revisá la consola.');
+    }
+  });
+</script>
