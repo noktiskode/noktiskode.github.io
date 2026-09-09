@@ -2,8 +2,9 @@
 title: Muni al rescate mientras el CIV duerme
 date: 2026-09-07T11:43:00.000-06:00
 image: /images/blog/1000032525.webp
+card_color: blanco
 ---
-Barberena | Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo.
+Barberena: Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo.
 
 
 
