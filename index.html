@@ -148,6 +148,49 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
     line-height: 1;
     margin-top: 2px;
   }
+
+  /* ---- LAYOUT LADO A LADO EN ESCRITORIO ---- */
+  .lqp-divider-vertical {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .lqp-wrapper {
+      max-width: 980px;
+    }
+
+    .lqp-columns {
+      display: flex;
+      align-items: stretch;
+      gap: 28px;
+    }
+
+    .lqp-col {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .lqp-col .lqp-carousel,
+    .lqp-col .lqp-no-section {
+      height: 100%;
+    }
+
+    .lqp-divider-horizontal {
+      display: none;
+    }
+
+    .lqp-divider-vertical {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      color: #999;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
 </style>
 
   <style>
@@ -281,40 +324,49 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
 
 <div class="lqp-wrapper">
 
-  <div class="lqp-title">LO QUE <span>PUBLICAMOS</span></div>
+  <div class="lqp-columns">
 
-  <div class="lqp-carousel" id="lqpCarousel">
-    <div class="lqp-track" id="lqpTrack">
-      <div class="lqp-card">
-        <div class="lqp-icon">📢</div>
-        <h3>Quejas ciudadanas</h3>
-        <p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p>
-      </div>
-      <div class="lqp-card">
-        <div class="lqp-icon">🛍️</div>
-        <h3>Emprendedores</h3>
-        <p>Visibilidad para negocios y emprendimientos de Barberena.</p>
-      </div>
-      <div class="lqp-card">
-        <div class="lqp-icon">☀️</div>
-        <h3>Noticias positivas</h3>
-        <p>Cuando algo se hace bien en Barberena, también lo contamos.</p>
+    <div class="lqp-col">
+      <div class="lqp-title">LO QUE <span>PUBLICAMOS</span></div>
+
+      <div class="lqp-carousel" id="lqpCarousel">
+        <div class="lqp-track" id="lqpTrack">
+          <div class="lqp-card">
+            <div class="lqp-icon">📢</div>
+            <h3>Quejas ciudadanas</h3>
+            <p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p>
+          </div>
+          <div class="lqp-card">
+            <div class="lqp-icon">🛍️</div>
+            <h3>Emprendedores</h3>
+            <p>Visibilidad para negocios y emprendimientos de Barberena.</p>
+          </div>
+          <div class="lqp-card">
+            <div class="lqp-icon">☀️</div>
+            <h3>Noticias positivas</h3>
+            <p>Cuando algo se hace bien en Barberena, también lo contamos.</p>
+          </div>
+        </div>
+        <div class="lqp-dots" id="lqpDots"></div>
       </div>
     </div>
-    <div class="lqp-dots" id="lqpDots"></div>
-  </div>
 
-  <div class="lqp-divider">pero también</div>
+    <div class="lqp-divider lqp-divider-horizontal">pero también</div>
+    <div class="lqp-divider-vertical"><span>pero también</span></div>
 
-  <div class="lqp-no-section">
-    <div class="lqp-title">LO QUE <span>NO</span> PUBLICAMOS</div>
-    <ul class="lqp-rules-list">
-      <li><span class="lqp-x">✕</span> Difamaciones, calumnias, chismes, etc.</li>
-      <li><span class="lqp-x">✕</span> Insultos y ataques personales.</li>
-      <li><span class="lqp-x">✕</span> Rumores sin fundamento.</li>
-      <li><span class="lqp-x">✕</span> Información falsa.</li>
-      <li><span class="lqp-x">✕</span> Contenido que busque hacer daño a otras personas.</li>
-    </ul>
+    <div class="lqp-col">
+      <div class="lqp-no-section">
+        <div class="lqp-title">LO QUE <span>NO</span> PUBLICAMOS</div>
+        <ul class="lqp-rules-list">
+          <li><span class="lqp-x">✕</span> Difamaciones, calumnias, chismes, etc.</li>
+          <li><span class="lqp-x">✕</span> Insultos y ataques personales.</li>
+          <li><span class="lqp-x">✕</span> Rumores sin fundamento.</li>
+          <li><span class="lqp-x">✕</span> Información falsa.</li>
+          <li><span class="lqp-x">✕</span> Contenido que busque hacer daño a otras personas.</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -464,3 +516,4 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
       });
     }
   </script>
+  
