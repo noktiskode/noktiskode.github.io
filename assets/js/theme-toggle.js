@@ -1,10 +1,18 @@
 // Switch de tema — Barberena Mi Municipio
 // Alterna entre el tema por defecto y el tema naranja,
-// y recuerda la elección del visitante en este navegador.
+// cambia el logo, y recuerda la elección del visitante en este navegador.
 
 (function () {
   var STORAGE_KEY = "bmm-theme";
   var root = document.documentElement;
+  var LOGO_DEFAULT = "/images/logo1.webp";
+  var LOGO_NARANJA = "/images/logo.webp";
+
+  function actualizarLogo(tema) {
+    var logo = document.getElementById("navLogo");
+    if (!logo) return;
+    logo.src = tema === "naranja" ? LOGO_NARANJA : LOGO_DEFAULT;
+  }
 
   function aplicarTema(tema) {
     if (tema === "naranja") {
@@ -12,6 +20,7 @@
     } else {
       root.removeAttribute("data-theme");
     }
+    actualizarLogo(tema);
   }
 
   function temaGuardado() {
@@ -38,6 +47,8 @@
 
   // Conecta el botón con clase .theme-switch (agregalo en tu navbar)
   document.addEventListener("DOMContentLoaded", function () {
+    actualizarLogo(guardado === "naranja" ? "naranja" : "default");
+
     var boton = document.querySelector(".theme-switch");
     if (!boton) return;
 
