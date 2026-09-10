@@ -6,7 +6,7 @@
   var STORAGE_KEY = "bmm-theme";
   var root = document.documentElement;
   var LOGO_DEFAULT = "/images/logo1.webp";
-  var LOGO_NARANJA = "/images/logo.webp";
+  var LOGO_NARANJA = "/images/logo.png";
   var HERO_NARANJA = "/images/portada.png";
 
   function actualizarLogo(tema) {
