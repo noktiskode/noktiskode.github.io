@@ -6,12 +6,24 @@
   var STORAGE_KEY = "bmm-theme";
   var root = document.documentElement;
   var LOGO_DEFAULT = "/images/logo1.webp";
-  var LOGO_NARANJA = "/images/logo.png";
+  var LOGO_NARANJA = "/images/logo.webp";
+  var HERO_NARANJA = "/images/portada.png";
 
   function actualizarLogo(tema) {
     var logo = document.getElementById("navLogo");
     if (!logo) return;
     logo.src = tema === "naranja" ? LOGO_NARANJA : LOGO_DEFAULT;
+  }
+
+  function actualizarHero(tema) {
+    var hero = document.getElementById("heroImg");
+    if (!hero) return;
+    // Guarda la imagen original de cada página la primera vez, porque
+    // varía según la página (portada.webp, u otra que defina el page.image).
+    if (!hero.dataset.original) {
+      hero.dataset.original = hero.getAttribute("src");
+    }
+    hero.src = tema === "naranja" ? HERO_NARANJA : hero.dataset.original;
   }
 
   function aplicarTema(tema) {
@@ -21,6 +33,7 @@
       root.removeAttribute("data-theme");
     }
     actualizarLogo(tema);
+    actualizarHero(tema);
   }
 
   function temaGuardado() {
@@ -48,6 +61,7 @@
   // Conecta el botón con clase .theme-switch (agregalo en tu navbar)
   document.addEventListener("DOMContentLoaded", function () {
     actualizarLogo(guardado === "naranja" ? "naranja" : "default");
+    actualizarHero(guardado === "naranja" ? "naranja" : "default");
 
     var boton = document.querySelector(".theme-switch");
     if (!boton) return;
@@ -68,3 +82,4 @@
     });
   });
 })();
+        
