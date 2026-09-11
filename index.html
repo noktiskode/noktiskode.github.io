@@ -213,55 +213,93 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
 
     .blog-preview-card {
       background: #fff;
-      border-top: 6px solid var(--rojo, #e8452a);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 14px rgba(0,0,0,0.12);
       text-decoration: none;
-      display: block;
+      display: flex;
+      flex-direction: column;
       color: inherit;
       transition: transform 0.2s ease;
+      aspect-ratio: 4 / 5;
     }
 
     .blog-preview-card:hover { transform: translateY(-4px); }
 
-    .blog-preview-card img {
+    .blog-preview-card__img {
+      flex: 0 0 55%;
+      overflow: hidden;
+    }
+
+    .blog-preview-card__img img {
       width: 100%;
-      aspect-ratio: 1080 / 1350;
+      height: 100%;
       object-fit: cover;
+      object-position: top;
       display: block;
     }
 
-    .blog-preview-card-titulo {
-      display: none;
-      background: linear-gradient(135deg, #ff7a45, var(--rojo, #e8452a));
-      color: #fff;
+    .blog-preview-card__footer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 14px;
       text-align: center;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 1.2rem;
-      line-height: 1.2;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      padding: 0.9rem 0.8rem;
-      text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
     }
 
-    .blog-preview-card-body { padding: 20px; }
+    .blog-preview-card__badge-line {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .blog-preview-card__line { flex: 1; height: 1px; }
+
+    .blog-preview-card__logo {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      object-fit: contain;
+      margin: 0 10px;
+    }
+
+    .blog-preview-card__titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 1.05rem;
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
 
     .blog-preview-fecha {
       font-family: 'Barlow', sans-serif;
-      font-size: 0.85rem;
-      color: #999;
-      margin-bottom: 8px;
+      font-size: 0.8rem;
+      opacity: 0.85;
+      margin: 0;
     }
 
-    .blog-preview-resumen {
-      font-family: 'Barlow', sans-serif;
-      font-size: 0.95rem;
-      color: #444;
-      line-height: 1.4;
+    /* Variantes de color, elegidas desde el panel (card_color) */
+    .blog-preview-card--rojo .blog-preview-card__footer {
+      background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
+      color: #fff;
     }
+    .blog-preview-card--rojo .blog-preview-card__line { background: rgba(255,255,255,.6); }
+
+    .blog-preview-card--blanco .blog-preview-card__footer {
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+    .blog-preview-card--blanco .blog-preview-card__line { background: rgba(0,0,0,.25); }
+
+    .blog-preview-card--negro .blog-preview-card__footer {
+      background: #111111;
+      color: #fff;
+    }
+    .blog-preview-card--negro .blog-preview-card__line { background: rgba(255,255,255,.4); }
 
     .blog-preview-cta {
       text-align: center;
@@ -301,16 +339,21 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
     {% else %}
       <div class="blog-preview-grid">
         {% for post in site.posts limit:3 %}
-          <a href="{{ post.url | relative_url }}" class="blog-preview-card">
+          <a href="{{ post.url | relative_url }}" class="blog-preview-card blog-preview-card--{{ post.card_color | default: "rojo" }}">
             {% if post.image %}
+            <div class="blog-preview-card__img">
               <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
             {% endif %}
-            <div class="blog-preview-card-body">
+            <div class="blog-preview-card__footer">
+              <div class="blog-preview-card__badge-line">
+                <span class="blog-preview-card__line"></span>
+                <img class="blog-preview-card__logo" src="/images/logo-bmm.png" alt="BMM">
+                <span class="blog-preview-card__line"></span>
+              </div>
+              <h3 class="blog-preview-card__titulo">{{ post.title }}</h3>
               {% assign mes_num = post.date | date: "%m" | minus: 1 %}
               <p class="blog-preview-fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
-              {% if post.excerpt %}
-                <p class="blog-preview-resumen">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-              {% endif %}
             </div>
           </a>
         {% endfor %}
