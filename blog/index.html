@@ -43,54 +43,85 @@ pagination:
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   }
 
-  .blog-item a { text-decoration: none; color: inherit; display: block; }
-
-  .blog-item-titulo {
-    background: linear-gradient(135deg, #ff7a45, var(--rojo, #e8452a));
-    color: #fff;
-    text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    padding: 0.9rem 0.8rem;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  .blog-item a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 4 / 5;
   }
 
-  .blog-item-img {
+  .blog-item__img { flex: 0 0 55%; overflow: hidden; }
+
+  .blog-item__img img {
     width: 100%;
-    aspect-ratio: 1080 / 1350;
+    height: 100%;
     object-fit: cover;
+    object-position: top;
     display: block;
   }
 
-  .blog-item-body { padding: 20px; }
+  .blog-item__footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 14px;
+    text-align: center;
+  }
+
+  .blog-item__badge-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .blog-item__line { flex: 1; height: 1px; }
+
+  .blog-item__logo {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    object-fit: contain;
+    margin: 0 10px;
+  }
+
+  .blog-item__titulo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
 
   .blog-item-fecha {
     font-family: 'Barlow', sans-serif;
-    font-size: 0.85rem;
-    color: #999;
-    margin-bottom: 8px;
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin: 0;
   }
 
-  .blog-item-resumen {
-    font-family: 'Barlow', sans-serif;
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.4;
-    margin-bottom: 10px;
+  /* Variantes de color, elegidas desde el panel (card_color) */
+  .blog-item--rojo .blog-item__footer {
+    background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
+    color: #fff;
   }
+  .blog-item--rojo .blog-item__line { background: rgba(255,255,255,.6); }
 
-  .blog-item-leer {
-    color: var(--rojo, #e8452a);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 0.05em;
+  .blog-item--blanco .blog-item__footer {
+    background: #ffffff;
+    color: #1a1a1a;
   }
+  .blog-item--blanco .blog-item__line { background: rgba(0,0,0,.25); }
+
+  .blog-item--negro .blog-item__footer {
+    background: #111111;
+    color: #fff;
+  }
+  .blog-item--negro .blog-item__line { background: rgba(255,255,255,.4); }
 
   .blog-paginacion {
     display: flex;
@@ -120,17 +151,21 @@ pagination:
     <ul class="blog-lista">
       {% for post in paginator.posts %}
         <li class="blog-item">
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ post.url | relative_url }}" class="blog-item--{{ post.card_color | default: "rojo" }}">
             {% if post.image %}
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-item-img">
+            <div class="blog-item__img">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
             {% endif %}
-            <div class="blog-item-body">
+            <div class="blog-item__footer">
+              <div class="blog-item__badge-line">
+                <span class="blog-item__line"></span>
+                <img class="blog-item__logo" src="/images/logo-bmm.png" alt="BMM">
+                <span class="blog-item__line"></span>
+              </div>
+              <h3 class="blog-item__titulo">{{ post.title }}</h3>
               {% assign mes_num = post.date | date: "%m" | minus: 1 %}
               <p class="blog-item-fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
-              {% if post.excerpt %}
-                <p class="blog-item-resumen">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-              {% endif %}
-              <span class="blog-item-leer">Leer más →</span>
             </div>
           </a>
         </li>
