@@ -9,55 +9,117 @@ layout: default
     padding: 32px 24px;
   }
 
-  .post-titulo-banner {
+  .post-card {
+    aspect-ratio: 4 / 5;
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    container-type: inline-size;
+  }
+
+  .post-card__img { flex: 0 0 55%; overflow: hidden; }
+
+  .post-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
     display: block;
-    background: linear-gradient(135deg, #ff7a45, var(--rojo, #e8452a));
-    color: #fff;
+  }
+
+  .post-card__footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 14px;
     text-align: center;
+  }
+
+  .post-card__badge-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .post-card__line { flex: 1; height: 1px; }
+
+  .post-card__logo {
+    width: clamp(32px, 10cqw, 52px);
+    height: clamp(32px, 10cqw, 52px);
+    min-width: 32px;
+    object-fit: contain;
+    margin: 0 10px;
+  }
+
+  .post-card__titulo {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 8cqw, 2rem);
     line-height: 1.15;
-    padding: 1.6rem 1.2rem;
-    border-radius: 10px;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
-    margin-bottom: 0.75rem;
+    margin: 0 0 10px;
   }
 
-  .post-fecha {
-    color: #999;
+  .post-card__fecha {
     font-family: 'Barlow', sans-serif;
-    text-align: center;
-    margin-bottom: 1rem;
+    font-size: clamp(0.75rem, 3cqw, 0.9rem);
+    opacity: 0.85;
+    margin: 0;
   }
+
+  /* Variantes de color, elegidas desde el panel (card_color) */
+  .post-card--rojo .post-card__footer {
+    background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
+    color: #fff;
+  }
+  .post-card--rojo .post-card__line { background: rgba(255,255,255,.6); }
+
+  .post-card--blanco .post-card__footer {
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+  .post-card--blanco .post-card__line { background: rgba(0,0,0,.25); }
+
+  .post-card--negro .post-card__footer {
+    background: #111111;
+    color: #fff;
+  }
+  .post-card--negro .post-card__line { background: rgba(255,255,255,.4); }
 
   .post-articulo p {
     white-space: pre-line;
     margin-bottom: 1rem;
   }
-
-  .post-articulo .post-imagen-destacada {
-    width: 100%;
-    max-width: 540px;
-    aspect-ratio: 1080 / 1350;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 1.5rem;
-    border-radius: 8px;
-  }
 </style>
 
 <article class="post-articulo">
-  <div class="blog-preview-card-body">
   {% assign imagen = page.image | default: page.hero_image %}
-  {% if imagen %}
-  <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}" class="post-imagen-destacada">
-  {% endif %}
-    {% assign mes_num = page.date | date: "%m" | minus: 1 %}
-  <p class="post-fecha"><small>{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</small></p>
-  {{ content }}
+  <div class="post-card post-card--{{ page.card_color | default: "rojo" }}">
+    {% if imagen %}
+    <div class="post-card__img">
+      <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
+    </div>
+    {% endif %}
+    <div class="post-card__footer">
+      <div class="post-card__badge-line">
+        <span class="post-card__line"></span>
+        <img class="post-card__logo" src="/images/logo-bmm.png" alt="BMM">
+        <span class="post-card__line"></span>
+      </div>
+      <h1 class="post-card__titulo">{{ page.title }}</h1>
+      {% assign mes_num = page.date | date: "%m" | minus: 1 %}
+      <p class="post-card__fecha">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
+    </div>
   </div>
+
+  {{ content }}
+
   {% include comentarios.html %}
 </article>
