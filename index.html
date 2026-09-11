@@ -222,6 +222,7 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
       color: inherit;
       transition: transform 0.2s ease;
       aspect-ratio: 4 / 5;
+      container-type: inline-size;
     }
 
     .blog-preview-card:hover { transform: translateY(-4px); }
@@ -259,9 +260,9 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
     .blog-preview-card__line { flex: 1; height: 1px; }
 
     .blog-preview-card__logo {
-      width: 36px;
-      height: 36px;
-      min-width: 36px;
+      width: clamp(32px, 10cqw, 52px);
+      height: clamp(32px, 10cqw, 52px);
+      min-width: 32px;
       object-fit: contain;
       margin: 0 10px;
     }
@@ -270,14 +271,14 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       text-transform: uppercase;
-      font-size: 1.05rem;
-      line-height: 1.2;
-      margin: 0 0 8px;
+      font-size: clamp(1.2rem, 8cqw, 2rem);
+      line-height: 1.15;
+      margin: 0 0 10px;
     }
 
     .blog-preview-fecha {
       font-family: 'Barlow', sans-serif;
-      font-size: 0.8rem;
+      font-size: clamp(0.75rem, 3cqw, 0.9rem);
       opacity: 0.85;
       margin: 0;
     }
