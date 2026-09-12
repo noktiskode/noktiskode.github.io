@@ -1,16 +1,17 @@
 <!--
-  Estilo TV para el ticker de BMM.
-  Reemplaza el bloque .news-ticker / .ticker-track / .ticker-item de tu CSS
-  por esto, y el <div class="news-ticker">...</div> + <script> de tu HTML
-  por lo de más abajo.
+  Estilo minimalista (blanco) para el ticker de BMM.
+  Misma estructura y mecánica que tu news-ticker.html original:
+  fetch a /assets/data/ticker.json, animación de desplazamiento infinito,
+  pausa al pasar el mouse/foco, y respeto a prefers-reduced-motion.
+  Solo cambia la paleta de colores (fondo blanco en vez de negro).
 -->
 
 <style>
 .news-ticker {
   display: flex;
   align-items: stretch;
-  background: #111;
-  border-top: 3px solid #e8452a;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e2df;
   height: 42px;
   font-family: 'Barlow Condensed', 'Barlow', sans-serif;
   overflow: hidden;
@@ -23,9 +24,9 @@
   align-items: center;
   padding: 0 16px;
   background: #e8452a;
-  color: #111;
+  color: #ffffff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -53,9 +54,9 @@
   gap: 8px;
   padding: 0 28px 0 0;
   white-space: nowrap;
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #131313;
   text-decoration: none;
 }
 
@@ -68,7 +69,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 1.5px solid #9a9a94;
+  border: 1.5px solid #bbbbbb;
   background: transparent;
 }
 
@@ -78,14 +79,14 @@
 }
 
 .ticker-headline {
-  color: #fff;
+  color: #131313;
   transition: color 0.15s ease;
 }
 
 .ticker-sep {
   flex: 0 0 auto;
-  color: #9a9a94;
-  font-size: 0.7rem;
+  color: #6b6b6b;
+  font-size: 0.65rem;
   margin-right: 28px;
 }
 
@@ -94,8 +95,8 @@
 }
 
 @media (max-width: 640px) {
-  .ticker-label { font-size: 0.8rem; padding: 0 10px; }
-  .ticker-item { font-size: 0.82rem; }
+  .ticker-label { font-size: 0.75rem; padding: 0 10px; }
+  .ticker-item { font-size: 0.8rem; }
 }
 </style>
 
