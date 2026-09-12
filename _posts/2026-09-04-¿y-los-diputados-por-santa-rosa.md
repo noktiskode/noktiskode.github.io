@@ -1,9 +1,9 @@
 ---
 title: ¿Y LOS DIPUTADOS POR SANTA ROSA?
 date: 2026-09-04T17:03:00.000-06:00
-image: /images/blog/1000032061.webp
+image: /images/blog/1000037769.jpg
 excerpt: ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los
-  combustibles! La mera verdad es que la situación está fregada.
+  combustibles! La mera verdad es que la situación está fregada...
 card_color: blanco
 ---
 ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada.
