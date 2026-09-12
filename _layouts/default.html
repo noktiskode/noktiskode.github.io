@@ -45,7 +45,12 @@
   {% include header.html %}
 
   {% unless page.show_hero == false %}
-    {% if page.url == "/index.html" or page.url == "/" %}
+    {% assign es_index = false %}
+    {% if page.url == "/index.html" or page.url == "/" %}{% assign es_index = true %}{% endif %}
+    {% assign mostrar_carrusel = es_index %}
+    {% if page.hero_carrusel == true %}{% assign mostrar_carrusel = true %}{% endif %}
+    {% if page.hero_carrusel == false %}{% assign mostrar_carrusel = false %}{% endif %}
+    {% if mostrar_carrusel %}
     <div class="hero-carrusel" id="heroCarrusel">
       <div class="hero-slide activa">
         <img src="{{ '/images/portada.webp' | relative_url }}" alt="Barberena Mi Municipio">
