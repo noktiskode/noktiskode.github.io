@@ -21,7 +21,6 @@
   <meta name="twitter:image" content="https://barberenamimunicipio.top{{ page.image | default: page.hero_image | default: '/images/portada.webp' }}">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <script src="/assets/js/theme-toggle.js" defer></script>
   <meta name="google-site-verification" content="rnI2_KGt4xMqGnZfDKDdzVr7GxNS1HKlzvXbb8d2ja4" />
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -46,10 +45,25 @@
   {% include header.html %}
 
   {% unless page.show_hero == false %}
-  <div class="hero">
-    <img id="heroImg" src="{{ page.image | default: page.hero_image | default: '/images/portada.webp' | relative_url }}" alt="{{ page.hero_alt | default: 'Barberena Mi Municipio' }}">
-    <div class="hero-overlay"></div>
-  </div>
+    {% if page.url == "/index.html" or page.url == "/" %}
+    <div class="hero-carrusel" id="heroCarrusel">
+      <div class="hero-slide activa">
+        <img src="{{ '/images/portada.webp' | relative_url }}" alt="Barberena Mi Municipio">
+      </div>
+      <div class="hero-slide">
+        <img src="{{ '/images/portada.png' | relative_url }}" alt="De tishudos para tishudos">
+      </div>
+      <div class="hero-overlay"></div>
+      <button type="button" class="hero-flecha" id="heroFlecha" aria-label="Ver siguiente portada">
+        <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    {% else %}
+    <div class="hero">
+      <img id="heroImg" src="{{ page.image | default: page.hero_image | default: '/images/portada.webp' | relative_url }}" alt="{{ page.hero_alt | default: 'Barberena Mi Municipio' }}">
+      <div class="hero-overlay"></div>
+    </div>
+    {% endif %}
   {% endunless %}
 
   <main>
@@ -79,6 +93,36 @@
         burger.setAttribute('aria-expanded', 'false');
       });
     });
+
+    // Carrusel de portadas (solo existe en el inicio)
+    (function () {
+      const carrusel = document.getElementById('heroCarrusel');
+      if (!carrusel) return;
+      const slides = carrusel.querySelectorAll('.hero-slide');
+      const flecha = document.getElementById('heroFlecha');
+      let actual = 0;
+      let auto;
+
+      function mostrar(indice) {
+        slides[actual].classList.remove('activa');
+        actual = (indice + slides.length) % slides.length;
+        slides[actual].classList.add('activa');
+      }
+
+      function siguiente() { mostrar(actual + 1); }
+
+      function iniciarAuto() {
+        clearInterval(auto);
+        auto = setInterval(siguiente, 7000);
+      }
+
+      flecha.addEventListener('click', () => {
+        siguiente();
+        iniciarAuto();
+      });
+
+      if (slides.length > 1) iniciarAuto();
+    })();
 </script>
 </body>
 </html>
