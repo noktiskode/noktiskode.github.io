@@ -283,33 +283,40 @@ hero_image: /images/portada.webp
 
   <!-- ============== Añadido desde bmm-index-hibrido.html: sección "Lo que publicamos" a footer ============== -->
   <style>
-    #bmm-hibrido {
+    .hib-wrap {
       max-width: 720px;
       margin: 0 auto 0 max(24px, calc((100% - 1000px) / 2));
       padding: 0 24px 0 0;
       font-family: 'Barlow', sans-serif;
     }
 
+    .hib-centrado {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      font-family: 'Barlow', sans-serif;
+    }
+
     @media (max-width: 768px) {
-      #bmm-hibrido {
+      .hib-wrap {
         margin: 0 auto;
         padding: 0 24px;
       }
     }
 
-    #bmm-hibrido section.hib-min {
+    section.hib-min {
       padding: 64px 0;
       border-bottom: 1px solid var(--linea, #e4e2df);
     }
 
-    #bmm-hibrido section.hib-min .hib-rotulo {
+    section.hib-min .hib-rotulo {
       display: block;
       font-size: 0.85rem;
       color: var(--gris, #6b6b6b);
       margin-bottom: 8px;
     }
 
-    #bmm-hibrido section.hib-min h2 {
+    section.hib-min h2 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       font-size: 1.9rem;
@@ -318,70 +325,87 @@ hero_image: /images/portada.webp
       transform: none !important;
     }
 
-    #bmm-hibrido .hib-pilares { display: grid; }
-    #bmm-hibrido .hib-pilar { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 26px 0; border-top: 1px solid var(--linea, #e4e2df); }
-    #bmm-hibrido .hib-pilar:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
-    #bmm-hibrido .hib-pilar .hib-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--rojo, #e8452a); }
-    #bmm-hibrido .hib-pilar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; font-family: 'Barlow', sans-serif; }
-    #bmm-hibrido .hib-pilar p { color: var(--gris, #6b6b6b); font-size: 0.98rem; }
+    .hib-pilares { display: grid; }
+    .hib-pilar { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 26px 0; border-top: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar .hib-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--rojo, #e8452a); }
+    .hib-pilar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; font-family: 'Barlow', sans-serif; }
+    .hib-pilar p { color: var(--gris, #6b6b6b); font-size: 0.98rem; }
 
-    #bmm-hibrido .hib-no-publicamos { background: var(--negro, #131313); color: #eee; margin-top: 48px; padding: 44px 32px; border-radius: 10px; }
-    #bmm-hibrido .hib-no-publicamos h3 { color: #fff; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
-    #bmm-hibrido .hib-no-publicamos ul { list-style: none; }
-    #bmm-hibrido .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.14); color: #d8d8d8; font-size: 1rem; }
+    .hib-no-publicamos { background: var(--negro, #131313); color: #eee; margin-top: 48px; padding: 44px 32px; border-radius: 10px; }
+    .hib-no-publicamos h3 { color: #fff; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
+    .hib-no-publicamos ul { list-style: none; }
+    .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.14); color: #d8d8d8; font-size: 1rem; }
 
-    #bmm-hibrido .hib-historia-min { text-align: center; }
-    #bmm-hibrido .hib-historia-min p { max-width: 56ch; margin: 16px auto 0; color: var(--gris, #6b6b6b); font-size: 0.98rem; line-height: 1.7; opacity: 1 !important; }
-    #bmm-hibrido .hib-boton-rojo {
+    /* En escritorio, "lo que publicamos" y "lo que no publicamos" van a la par */
+    @media (min-width: 900px) {
+      .hib-publicamos-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        align-items: start;
+      }
+      .hib-no-publicamos { margin-top: 0; }
+    }
+
+    .hib-historia-min { text-align: center; }
+    .hib-historia-min p { max-width: 56ch; margin: 16px auto 0; color: var(--gris, #6b6b6b); font-size: 0.98rem; line-height: 1.7; opacity: 1 !important; }
+    .hib-boton-rojo {
       display: inline-block; margin-top: 26px; background: var(--rojo, #e8452a); color: #fff; text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.08em;
       text-transform: uppercase; padding: 0.9rem 2rem; border-radius: 999px;
       opacity: 1 !important; transform: none !important;
     }
 
-    #bmm-hibrido .hib-item { padding: 22px 0; border-top: 1px solid var(--linea, #e4e2df); display: grid; grid-template-columns: 32px 1fr; gap: 18px; align-items: start; opacity: 1 !important; transform: none !important; }
-    #bmm-hibrido .hib-item:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
-    #bmm-hibrido .hib-item .hib-icono { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
-    #bmm-hibrido .hib-item .hib-icono svg { width: 100%; height: 100%; fill: none; stroke: var(--negro, #131313); stroke-width: 1.6; }
-    #bmm-hibrido a.hib-item, #bmm-hibrido button.hib-item { text-decoration: none; color: inherit; width: 100%; background: none; border: none; border-top: 1px solid var(--linea, #e4e2df); text-align: left; cursor: pointer; font-family: 'Barlow', sans-serif; }
-    #bmm-hibrido a.hib-item:hover .hib-icono svg, #bmm-hibrido button.hib-item:hover .hib-icono svg { stroke: var(--rojo, #e8452a); }
-    #bmm-hibrido a.hib-item:hover h4, #bmm-hibrido button.hib-item:hover h4 { color: var(--rojo, #e8452a); }
-    #bmm-hibrido .hib-item h4 { margin: 0 0 4px; font-weight: 500; font-size: 1.05rem; }
-    #bmm-hibrido .hib-item p { color: var(--gris, #6b6b6b); font-size: 0.95rem; }
-    #bmm-hibrido .hib-item a { color: var(--rojo, #e8452a); text-decoration: none; border-bottom: 1px solid var(--rojo, #e8452a); }
+    .hib-item { padding: 22px 0; border-top: 1px solid var(--linea, #e4e2df); display: grid; grid-template-columns: 32px 1fr; gap: 18px; align-items: start; opacity: 1 !important; transform: none !important; }
+    .hib-item:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-item .hib-icono { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+    .hib-item .hib-icono svg { width: 100%; height: 100%; fill: none; stroke: var(--negro, #131313); stroke-width: 1.6; }
+    a.hib-item, button.hib-item { text-decoration: none; color: inherit; width: 100%; background: none; border: none; border-top: 1px solid var(--linea, #e4e2df); text-align: left; cursor: pointer; font-family: 'Barlow', sans-serif; }
+    a.hib-item:hover .hib-icono svg, button.hib-item:hover .hib-icono svg { stroke: var(--rojo, #e8452a); }
+    a.hib-item:hover h4, button.hib-item:hover h4 { color: var(--rojo, #e8452a); }
+    .hib-item h4 { margin: 0 0 4px; font-weight: 500; font-size: 1.05rem; }
+    .hib-item p { color: var(--gris, #6b6b6b); font-size: 0.95rem; }
+    .hib-item a { color: var(--rojo, #e8452a); text-decoration: none; border-bottom: 1px solid var(--rojo, #e8452a); }
 
-    #bmm-hibrido footer.hib-min { padding: 40px 0 60px; font-size: 0.85rem; color: var(--gris, #6b6b6b); text-align: center; }
+    footer.hib-min { padding: 40px 0 60px; font-size: 0.85rem; color: var(--gris, #6b6b6b); text-align: center; }
   </style>
 
-  <div id="bmm-hibrido">
+  <div class="hib-wrap">
 
   <section id="publicamos" class="hib-min hib-envoltorio">
     <h2>Lo que publicamos</h2>
 
-    <div class="hib-pilares">
-      <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
-      <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
-      <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
-    </div>
+    <div class="hib-publicamos-row">
+      <div class="hib-pilares">
+        <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
+        <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
+        <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+      </div>
 
-    <div class="hib-no-publicamos">
-      <h3>Lo que no publicamos</h3>
-      <ul>
-        <li>Difamaciones, calumnias, chismes, etc.</li>
-        <li>Insultos y ataques personales.</li>
-        <li>Rumores sin fundamento.</li>
-        <li>Información falsa.</li>
-        <li>Contenido que busque hacer daño a otras personas.</li>
-      </ul>
+      <div class="hib-no-publicamos">
+        <h3>Lo que no publicamos</h3>
+        <ul>
+          <li>Difamaciones, calumnias, chismes, etc.</li>
+          <li>Insultos y ataques personales.</li>
+          <li>Rumores sin fundamento.</li>
+          <li>Información falsa.</li>
+          <li>Contenido que busque hacer daño a otras personas.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section id="historia" class="hib-min hib-envoltorio hib-historia-min">
+  </div>
+
+  <section id="historia" class="hib-min hib-centrado hib-historia-min">
     <span class="hib-rotulo">Nuestras raíces</span>
     <h2 style="margin:0 auto;">Historia de Barberena</h2>
     <p>De Corral de Piedra a San José de Barberena: un recorrido por los hechos que forjaron nuestro municipio, incluyendo el origen de nuestro lema "de tishudos para tishudos".</p>
     <a href="historia.html" class="hib-boton-rojo">Leer la historia completa →</a>
   </section>
+
+  <div class="hib-wrap">
 
   <section id="participa" class="hib-min hib-envoltorio">
     <h2>¿Cómo participar?</h2>
