@@ -54,9 +54,10 @@
         <img src="{{ '/images/portada.png' | relative_url }}" alt="De tishudos para tishudos">
       </div>
       <div class="hero-overlay"></div>
-      <button type="button" class="hero-flecha" id="heroFlecha" aria-label="Ver siguiente portada">
-        <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
+      <div class="hero-dots" id="heroDots">
+        <button type="button" class="hero-dot" aria-label="Ver portada 1"></button>
+        <button type="button" class="hero-dot" aria-label="Ver portada 2"></button>
+      </div>
     </div>
     {% else %}
     <div class="hero">
@@ -94,34 +95,116 @@
       });
     });
 
-    // Carrusel de portadas (solo existe en el inicio)
+    // Carrusel de portadas (solo existe en el inicio): arrastre libre,
+    // indicadores tipo "guion" y rotación infinita en ambos sentidos.
     (function () {
       const carrusel = document.getElementById('heroCarrusel');
       if (!carrusel) return;
-      const slides = carrusel.querySelectorAll('.hero-slide');
-      const flecha = document.getElementById('heroFlecha');
-      let actual = 0;
+      const slides = Array.from(carrusel.querySelectorAll('.hero-slide'));
+      const dots = Array.from(carrusel.querySelectorAll('.hero-dot'));
+      const n = slides.length;
+      let actual = slides.findIndex(s => s.classList.contains('activa'));
+      if (actual < 0) actual = 0;
       let auto;
+      let arrastrando = false;
+      let inicioX = 0;
+      let deltaX = 0;
+      let direccion = null; // se fija al primer movimiento: 'izq' o 'der'
 
-      function mostrar(indice) {
-        slides[actual].classList.remove('activa');
-        actual = (indice + slides.length) % slides.length;
-        slides[actual].classList.add('activa');
+      function offsetCorto(i, base) {
+        let off = i - base;
+        if (off > n / 2) off -= n;
+        if (off < -n / 2) off += n;
+        return off;
       }
 
-      function siguiente() { mostrar(actual + 1); }
+      function posicionar(instantaneo) {
+        slides.forEach((s, i) => {
+          if (instantaneo) s.style.transition = 'none';
+          s.style.transform = 'translateX(' + (offsetCorto(i, actual) * 100) + '%)';
+        });
+        if (instantaneo) {
+          carrusel.offsetHeight; // fuerza reflow
+          slides.forEach(s => { s.style.transition = ''; });
+        }
+        dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
+      }
+
+      function avanzar() { actual = (actual + 1) % n; posicionar(); }
+      function retroceder() { actual = (actual - 1 + n) % n; posicionar(); }
+      function irA(indice) { if (indice === actual) return; actual = indice; posicionar(); }
 
       function iniciarAuto() {
         clearInterval(auto);
-        auto = setInterval(siguiente, 7000);
+        auto = setInterval(avanzar, 7000);
       }
 
-      flecha.addEventListener('click', () => {
-        siguiente();
-        iniciarAuto();
+      dots.forEach((d, i) => d.addEventListener('click', () => { irA(i); iniciarAuto(); }));
+
+      // --- Arrastre (mouse y dedo, vía Pointer Events) ---
+      carrusel.addEventListener('pointerdown', (e) => {
+        arrastrando = true;
+        direccion = null;
+        inicioX = e.clientX;
+        deltaX = 0;
+        slides.forEach(s => { s.style.transition = 'none'; });
+        carrusel.setPointerCapture(e.pointerId);
+        carrusel.style.cursor = 'grabbing';
       });
 
-      if (slides.length > 1) iniciarAuto();
+      carrusel.addEventListener('pointermove', (e) => {
+        if (!arrastrando) return;
+        deltaX = e.clientX - inicioX;
+
+        if (direccion === null && Math.abs(deltaX) > 6) {
+          direccion = deltaX < 0 ? 'izq' : 'der';
+          if (direccion === 'der') {
+            // Coloca la portada anterior a la izquierda al instante,
+            // lista para revelarse mientras se arrastra hacia la derecha.
+            const anteriorIdx = (actual - 1 + n) % n;
+            const anteriorEl = slides[anteriorIdx];
+            anteriorEl.style.transition = 'none';
+            anteriorEl.style.transform = 'translateX(-100%)';
+          }
+        }
+
+        const anchoPct = (deltaX / carrusel.clientWidth) * 100;
+        slides[actual].style.transform = 'translateX(' + anchoPct + '%)';
+
+        if (direccion === 'izq') {
+          const siguienteIdx = (actual + 1) % n;
+          slides[siguienteIdx].style.transform = 'translateX(' + (100 + anchoPct) + '%)';
+        } else if (direccion === 'der') {
+          const anteriorIdx = (actual - 1 + n) % n;
+          slides[anteriorIdx].style.transform = 'translateX(' + (-100 + anchoPct) + '%)';
+        }
+      });
+
+      function finalizarArrastre() {
+        if (!arrastrando) return;
+        arrastrando = false;
+        carrusel.style.cursor = 'grab';
+        slides.forEach(s => { s.style.transition = ''; });
+
+        const umbral = carrusel.clientWidth * 0.15; // 15% del ancho
+        if (direccion === 'izq' && deltaX <= -umbral) {
+          avanzar();
+        } else if (direccion === 'der' && deltaX >= umbral) {
+          retroceder();
+        } else {
+          posicionar(); // no llegó al umbral: regresa a su lugar
+        }
+        direccion = null;
+        deltaX = 0;
+        iniciarAuto();
+      }
+
+      carrusel.addEventListener('pointerup', finalizarArrastre);
+      carrusel.addEventListener('pointercancel', finalizarArrastre);
+      carrusel.addEventListener('pointerleave', () => { if (arrastrando) finalizarArrastre(); });
+
+      posicionar(true);
+      if (n > 1) iniciarAuto();
     })();
 </script>
 </body>
