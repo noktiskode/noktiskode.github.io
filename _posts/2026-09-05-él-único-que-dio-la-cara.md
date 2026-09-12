@@ -1,7 +1,9 @@
 ---
 title: ' "El único que dio la cara"'
 date: 2026-09-04T19:20:00.000-06:00
-image: /images/blog/1000032082.webp
+image: /images/blog/1000037767.jpg
+excerpt: Este viernes 4 de septiembre se liberó un bloqueo de transportistas en
+  El Cerinal, Barberena, que se mantenía desde la madrugada...
 card_color: rojo
 ---
 Este viernes 4 de septiembre se liberó un bloqueo de transportistas en El Cerinal, Barberena, que se mantenía desde la madrugada como protesta por el alza a los combustibles.
