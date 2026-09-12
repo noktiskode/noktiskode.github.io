@@ -205,121 +205,144 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
       margin-bottom: 32px;
     }
 
-    .blog-preview-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
+    /* ---- ENTRADA DESTACADA (la más reciente) ---- */
+    .blog-featured {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 40px;
     }
 
-    .blog-preview-card {
-      background: #fff;
+    .blog-featured__img {
+      display: block;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      color: inherit;
-      transition: transform 0.2s ease;
-      aspect-ratio: 4 / 5;
-      container-type: inline-size;
     }
 
-    .blog-preview-card:hover { transform: translateY(-4px); }
-
-    .blog-preview-card__img {
-      flex: 0 0 55%;
-      overflow: hidden;
-    }
-
-    .blog-preview-card__img img {
+    .blog-featured__img img {
       width: 100%;
-      height: 100%;
+      max-height: 340px;
       object-fit: cover;
-      object-position: top;
       display: block;
     }
 
-    .blog-preview-card__footer {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 18px 14px;
-      text-align: center;
+    .blog-featured__fecha {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.85rem;
+      color: var(--gris, #666);
+      margin: 18px 0 6px;
     }
 
-    .blog-preview-card__badge-line {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-
-    .blog-preview-card__line { flex: 1; height: 1px; }
-
-    .blog-preview-card__logo {
-      width: clamp(32px, 10cqw, 52px);
-      height: clamp(32px, 10cqw, 52px);
-      min-width: 32px;
-      object-fit: contain;
-      margin: 0 10px;
-    }
-
-    .blog-preview-card__titulo {
+    .blog-featured__titulo {
       font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      font-size: clamp(1.2rem, 8cqw, 2rem);
+      font-weight: 700;
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
       line-height: 1.15;
       margin: 0 0 10px;
+      color: #000;
     }
 
-    .blog-preview-fecha {
+    .blog-featured__titulo a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .blog-featured__resumen {
       font-family: 'Barlow', sans-serif;
-      font-size: clamp(0.75rem, 3cqw, 0.9rem);
-      opacity: 0.85;
+      font-size: 1.02rem;
+      color: #444;
+      line-height: 1.5;
+      max-width: 65ch;
+      margin: 0 0 12px;
+    }
+
+    .blog-featured__cta {
+      display: inline-block;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--rojo, #e8452a);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rojo, #e8452a);
+    }
+
+    /* ---- CABECERA "ÚLTIMAS ENTRADAS" + BOTÓN ---- */
+    .blog-preview-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .blog-preview-header-row h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
       margin: 0;
     }
 
-    /* Variantes de color, elegidas desde el panel (card_color) */
-    .blog-preview-card--rojo .blog-preview-card__footer {
-      background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
-      color: #fff;
-    }
-    .blog-preview-card--rojo .blog-preview-card__line { background: rgba(255,255,255,.6); }
-
-    .blog-preview-card--blanco .blog-preview-card__footer {
-      background: #ffffff;
-      color: #1a1a1a;
-    }
-    .blog-preview-card--blanco .blog-preview-card__line { background: rgba(0,0,0,.25); }
-
-    .blog-preview-card--negro .blog-preview-card__footer {
-      background: #111111;
-      color: #fff;
-    }
-    .blog-preview-card--negro .blog-preview-card__line { background: rgba(255,255,255,.4); }
-
-    .blog-preview-cta {
-      text-align: center;
-      margin-top: 32px;
-    }
-
-    .blog-preview-cta a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
+    .blog-ver-todas-btn {
+      flex-shrink: 0;
+      display: inline-block;
       background: var(--rojo, #e8452a);
-      color: white;
+      color: #fff;
       text-decoration: none;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.6rem 1.3rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* ---- GRID DE LAS 4 ENTRADAS ANTERIORES (foto pequeña + título + fecha) ---- */
+    .blog-mini-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    @media (min-width: 640px) {
+      .blog-mini-grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 28px;
+        row-gap: 26px;
+      }
+    }
+
+    .blog-mini-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .blog-mini-item__img {
+      width: 100px;
+      height: 76px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .blog-mini-item h4 {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0 0 6px;
+      color: #000;
+    }
+
+    .blog-mini-item .blog-mini-item__fecha {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.78rem;
+      color: var(--gris, #666);
       text-transform: uppercase;
-      padding: 0.9rem 2.2rem;
+      letter-spacing: 0.05em;
     }
 
     .blog-preview-empty {
@@ -330,40 +353,50 @@ hero_badge: "Barberena · Santa Rosa · Guatemala"
   </style>
 
   <div class="blog-preview" id="blog">
-    <div class="blog-preview-header">
-      <span class="section-label">Del blog</span>
-      <h2>Últimas entradas</h2>
-    </div>
-
     {% if site.posts.size == 0 %}
       <p class="blog-preview-empty">Todavía no hay entradas publicadas.</p>
     {% else %}
-      <div class="blog-preview-grid">
-        {% for post in site.posts limit:3 %}
-          <a href="{{ post.url | relative_url }}" class="blog-preview-card blog-preview-card--{{ post.card_color | default: "rojo" }}">
+      {% assign posts_size = site.posts.size %}
+
+      {% for post in site.posts limit:1 %}
+        <a href="{{ post.url | relative_url }}" class="blog-featured">
+          {% if post.image %}
+          <div class="blog-featured__img">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </div>
+          {% endif %}
+          {% assign mes_num = post.date | date: "%m" | minus: 1 %}
+          <p class="blog-featured__fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
+          <h2 class="blog-featured__titulo">{{ post.title }}</h2>
+          {% if post.excerpt %}
+          <p class="blog-featured__resumen">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+          {% endif %}
+          <span class="blog-featured__cta">Leer la nota completa →</span>
+        </a>
+      {% endfor %}
+
+      {% if posts_size > 1 %}
+      <div class="blog-preview-header-row">
+        <h2>Últimas entradas</h2>
+        <a href="/blog/" class="blog-ver-todas-btn">Ver todas</a>
+      </div>
+
+      <div class="blog-mini-grid">
+        {% for post in site.posts offset:1 limit:4 %}
+          <a href="{{ post.url | relative_url }}" class="blog-mini-item">
             {% if post.image %}
-            <div class="blog-preview-card__img">
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-            </div>
+            <img class="blog-mini-item__img" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
             {% endif %}
-            <div class="blog-preview-card__footer">
-              <div class="blog-preview-card__badge-line">
-                <span class="blog-preview-card__line"></span>
-                <img class="blog-preview-card__logo" src="/images/logo-bmm.png" alt="BMM">
-                <span class="blog-preview-card__line"></span>
-              </div>
-              <h3 class="blog-preview-card__titulo">{{ post.title }}</h3>
-              {% assign mes_num = post.date | date: "%m" | minus: 1 %}
-              <p class="blog-preview-fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
+            <div>
+              <h4>{{ post.title }}</h4>
+              {% assign mes_num2 = post.date | date: "%m" | minus: 1 %}
+              <span class="blog-mini-item__fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num2] }} de {{ post.date | date: "%Y" }}</span>
             </div>
           </a>
         {% endfor %}
       </div>
+      {% endif %}
     {% endif %}
-
-    <div class="blog-preview-cta">
-      <a href="/blog/">Ver todas las entradas →</a>
-    </div>
   </div>
 
 <div class="lqp-wrapper">
