@@ -1,5 +1,5 @@
 ---
-title: "DIPUTADOS DE SANTA ROSA: MUCHA FOTO, POCA CUENTA"
+title: "Diputados de Santa Rosa: mucha foto, poca cuenta"
 date: 2026-09-11T14:27:00.000-06:00
 image: /images/blog/1000037759.png
 excerpt: >
@@ -17,4 +17,4 @@ En materia de combustibles, la fórmula preferida sigue siendo el subsidio: una 
 
 Los diputados son, en teoría, empleados públicos pagados con el trabajo de cada santarroseño. Entonces, para las elecciones de 2027: ¿seguirá bastando con salir en la foto, o esta vez sí tocará rendir cuentas?
 
-#SantaRosaGT #CongresoGT #PoliticaGT #SubsidiosCombustibles #Decreto212026
+#SantaRosaGT #CongresoGT #PoliticaGT #SubsidiosCombustibles #Decreto212026 
