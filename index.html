@@ -36,7 +36,7 @@ hero_image: /images/portada.webp
 
     .blog-featured__img img {
       width: 100%;
-      max-height: 340px;
+      aspect-ratio: 1080 / 675;
       object-fit: cover;
       display: block;
     }
@@ -135,8 +135,8 @@ hero_image: /images/portada.webp
     }
 
     .blog-mini-item__img {
-      width: 100px;
-      height: 76px;
+      width: 120px;
+      height: 75px;
       object-fit: cover;
       border-radius: 8px;
       flex-shrink: 0;
@@ -283,7 +283,19 @@ hero_image: /images/portada.webp
 
   <!-- ============== Añadido desde bmm-index-hibrido.html: sección "Lo que publicamos" a footer ============== -->
   <style>
-    #bmm-hibrido { max-width: 720px; margin: 0 auto; padding: 0 24px; font-family: 'Barlow', sans-serif; }
+    #bmm-hibrido {
+      max-width: 720px;
+      margin: 0 auto 0 max(24px, calc((100% - 1000px) / 2));
+      padding: 0 24px 0 0;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      #bmm-hibrido {
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+    }
 
     #bmm-hibrido section.hib-min {
       padding: 64px 0;
