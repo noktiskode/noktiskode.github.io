@@ -1,7 +1,7 @@
 ---
-title: MERCADO DE BARBERENA
+title: Mercado Municipal de Barberena
 date: 2026-09-01
-image: /images/blog/1000032064.webp
+image: /images/blog/1000037779.jpg
 excerpt: Este es el mercado, el corazón de nuestro pueblo. 😊
 card_color: blanco
 ---
