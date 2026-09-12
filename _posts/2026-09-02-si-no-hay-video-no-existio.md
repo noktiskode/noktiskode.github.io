@@ -1,9 +1,9 @@
 ---
-title: SI NO HAY VIDEO, NO EXISTIÓ
+title: Si no hay video, no existió
 layout: post
 date: 2026-09-02T10:48:00.000-06:00
-image: /images/blog/1000032072.webp
-excerpt: Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano.
+image: /images/blog/1000037776.jpg
+excerpt: Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano...
 card_color: blanco
 ---
 Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano.
@@ -18,4 +18,4 @@ Hace unos días, la esposa de alguien también entregó una silla de ruedas —y
 
 ¿Cuántas de esas sillas se hubieran entregado si no hubiera cámara encendida?
 
-\#Cerinal #Barberena #BarberenaSantaRosa #SantaRosaGT #BarberenaMiMunicipio #PoliticaGT
+#Cerinal #Barberena #BarberenaSantaRosa #SantaRosaGT #Opinion #PoliticaGT
