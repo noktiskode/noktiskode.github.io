@@ -1,10 +1,10 @@
 ---
 title: Anuncian ampliación del cementerio municipal
 date: 2026-08-28T12:28:00.000-06:00
-image: /images/blog/1000032067.webp
+image: /images/blog/1000037775.jpg
 excerpt: El alcalde de Barberena informó sobre trabajos de mantenimiento en el
   Cementerio Municipal del casco urbano y anunció la habilitación de un nuevo
-  espacio para ampliar el área disponible.
+  espacio para ampliar el área disponible...
 card_color: rojo
 ---
 El alcalde de Barberena informó sobre trabajos de mantenimiento en el Cementerio Municipal del casco urbano y anunció la habilitación de un nuevo espacio para ampliar el área disponible.
