@@ -1,8 +1,10 @@
 ---
-title: "NAPO ROJAS, INÉS CASTILLO Y RICARDO ALARCÓN: así votaron los diputados
+title: "Napo Rojas, Inés Castillo y Ricardo Alarcón: así votaron los diputados
   de Santa Rosa"
 date: 2026-09-09T17:23:00.000-06:00
 image: /images/blog/1000037270.png
+excerpt: El Congreso aprobó la Iniciativa 6844 (Decreto 21-2026) que otorga más
+  de Q2,500 millones para el subsidio a los combustibles...
 card_color: rojo
 ---
 El Congreso aprobó la Iniciativa 6844 (Decreto 21-2026) que otorga más de Q2,500 millones para el subsidio a los combustibles. La medida mantiene el debate entre quienes buscan un freno al alza y quienes consideran que los subsidios son temporales y que la solución real era suspender el Impuesto a la Distribución de Petróleo (IDP).
