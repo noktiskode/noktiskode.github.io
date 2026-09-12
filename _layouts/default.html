@@ -113,7 +113,7 @@
       let arrastrando = false;
       let inicioX = 0;
       let deltaX = 0;
-      let direccion = null; // se fija al primer movimiento: 'izq' o 'der'
+      let ladoPreparado = null; // vecino ya colocado junto al activo: 'izq' o 'der'
 
       function offsetCorto(i, base) {
         let off = i - base;
@@ -122,21 +122,41 @@
         return off;
       }
 
-      function posicionar(instantaneo) {
+      // Reposiciona todas las portadas según "actual".
+      // Si se pasa animarIdx (array de índices), solo esas dos animan con
+      // transición; el resto salta a su sitio al instante, sin transición,
+      // para que nunca "atraviesen" la pantalla de por medio.
+      function posicionar(instantaneo, animarIdx) {
         slides.forEach((s, i) => {
-          if (instantaneo) s.style.transition = 'none';
+          const anima = !instantaneo && (!animarIdx || animarIdx.includes(i));
+          if (!anima) s.style.transition = 'none';
           s.style.transform = 'translateX(' + (offsetCorto(i, actual) * 100) + '%)';
         });
-        if (instantaneo) {
-          carrusel.offsetHeight; // fuerza reflow
-          slides.forEach(s => { s.style.transition = ''; });
+        if (instantaneo || animarIdx) {
+          carrusel.offsetHeight; // fuerza reflow antes de restaurar la transición
+          slides.forEach((s, i) => {
+            if (instantaneo || !animarIdx.includes(i)) s.style.transition = '';
+          });
         }
         dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
       }
 
-      function avanzar() { actual = (actual + 1) % n; posicionar(); }
-      function retroceder() { actual = (actual - 1 + n) % n; posicionar(); }
-      function irA(indice) { if (indice === actual) return; actual = indice; posicionar(); }
+      function avanzar() {
+        const anterior = actual;
+        actual = (actual + 1) % n;
+        posicionar(false, [anterior, actual]);
+      }
+      function retroceder() {
+        const anterior = actual;
+        actual = (actual - 1 + n) % n;
+        posicionar(false, [anterior, actual]);
+      }
+      function irA(indice) {
+        if (indice === actual) return;
+        const anterior = actual;
+        actual = indice;
+        posicionar(false, [anterior, actual]);
+      }
 
       function iniciarAuto() {
         clearInterval(auto);
@@ -148,7 +168,7 @@
       // --- Arrastre (mouse y dedo, vía Pointer Events) ---
       carrusel.addEventListener('pointerdown', (e) => {
         arrastrando = true;
-        direccion = null;
+        ladoPreparado = null;
         inicioX = e.clientX;
         deltaX = 0;
         slides.forEach(s => { s.style.transition = 'none'; });
@@ -156,29 +176,48 @@
         carrusel.style.cursor = 'grabbing';
       });
 
+      // Coloca al instante, junto al activo, el vecino del lado indicado
+      // (listo para revelarse) y devuelve el otro vecino a su reposo si
+      // ya se había preparado antes (p. ej. si el arrastre cambió de sentido).
+      function prepararLado(lado) {
+        if (ladoPreparado === lado) return;
+        const siguienteIdx = (actual + 1) % n;
+        const anteriorIdx = (actual - 1 + n) % n;
+
+        if (ladoPreparado === 'izq') {
+          slides[siguienteIdx].style.transition = 'none';
+          slides[siguienteIdx].style.transform = 'translateX(' + (offsetCorto(siguienteIdx, actual) * 100) + '%)';
+        } else if (ladoPreparado === 'der') {
+          slides[anteriorIdx].style.transition = 'none';
+          slides[anteriorIdx].style.transform = 'translateX(' + (offsetCorto(anteriorIdx, actual) * 100) + '%)';
+        }
+
+        if (lado === 'izq') {
+          slides[siguienteIdx].style.transition = 'none';
+          slides[siguienteIdx].style.transform = 'translateX(100%)';
+        } else if (lado === 'der') {
+          slides[anteriorIdx].style.transition = 'none';
+          slides[anteriorIdx].style.transform = 'translateX(-100%)';
+        }
+        ladoPreparado = lado;
+      }
+
       carrusel.addEventListener('pointermove', (e) => {
         if (!arrastrando) return;
         deltaX = e.clientX - inicioX;
 
-        if (direccion === null && Math.abs(deltaX) > 6) {
-          direccion = deltaX < 0 ? 'izq' : 'der';
-          if (direccion === 'der') {
-            // Coloca la portada anterior a la izquierda al instante,
-            // lista para revelarse mientras se arrastra hacia la derecha.
-            const anteriorIdx = (actual - 1 + n) % n;
-            const anteriorEl = slides[anteriorIdx];
-            anteriorEl.style.transition = 'none';
-            anteriorEl.style.transform = 'translateX(-100%)';
-          }
+        if (Math.abs(deltaX) > 6) {
+          const ladoNecesario = deltaX < 0 ? 'izq' : 'der';
+          if (ladoNecesario !== ladoPreparado) prepararLado(ladoNecesario);
         }
 
         const anchoPct = (deltaX / carrusel.clientWidth) * 100;
         slides[actual].style.transform = 'translateX(' + anchoPct + '%)';
 
-        if (direccion === 'izq') {
+        if (ladoPreparado === 'izq') {
           const siguienteIdx = (actual + 1) % n;
           slides[siguienteIdx].style.transform = 'translateX(' + (100 + anchoPct) + '%)';
-        } else if (direccion === 'der') {
+        } else if (ladoPreparado === 'der') {
           const anteriorIdx = (actual - 1 + n) % n;
           slides[anteriorIdx].style.transform = 'translateX(' + (-100 + anchoPct) + '%)';
         }
@@ -191,14 +230,14 @@
         slides.forEach(s => { s.style.transition = ''; });
 
         const umbral = carrusel.clientWidth * 0.15; // 15% del ancho
-        if (direccion === 'izq' && deltaX <= -umbral) {
+        if (ladoPreparado === 'izq' && deltaX <= -umbral) {
           avanzar();
-        } else if (direccion === 'der' && deltaX >= umbral) {
+        } else if (ladoPreparado === 'der' && deltaX >= umbral) {
           retroceder();
         } else {
-          posicionar(); // no llegó al umbral: regresa a su lugar
+          posicionar(); // no llegó al umbral: regresa a su lugar (con animación)
         }
-        direccion = null;
+        ladoPreparado = null;
         deltaX = 0;
         iniciarAuto();
       }
