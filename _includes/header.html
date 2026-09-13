@@ -1,24 +1,50 @@
-  <nav>
-    <a href="{{ '/index.html' | relative_url }}" class="nav-logo">
-      <img id="navLogo" src="{{ '/images/logo1.webp' | relative_url }}" alt="Barberena Mi Municipio"></a>
-    <ul class="nav-links">
-      <li><a href="{{ '/index.html' | relative_url }}">Inicio</a></li>
-      <li><a href="{{ '/manifiesto.html' | relative_url }}">Manifiesto</a></li>
-      <li><a href="{{ '/historia.html' | relative_url }}">Historia</a></li>
-      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-    </ul>
-    <a href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" class="nav-fb">Facebook →</a>
-    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<style>
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
 
-  <ul class="nav-links-mobile" id="navMobile">
+  .marca {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: 0.01em;
+  }
+
+  .marca span {
+    color: var(--rojo, #e8452a);
+    display: block;
+  }
+</style>
+
+<nav>
+  <a href="{{ '/index.html' | relative_url }}" class="nav-logo">
+    <img id="navLogo" src="{{ '/images/logo1.webp' | relative_url }}" alt="Barberena Mi Municipio">
+    <div class="marca">Barberena <span>Mi Municipio</span></div>
+  </a>
+  <ul class="nav-links">
     <li><a href="{{ '/index.html' | relative_url }}">Inicio</a></li>
     <li><a href="{{ '/manifiesto.html' | relative_url }}">Manifiesto</a></li>
     <li><a href="{{ '/historia.html' | relative_url }}">Historia</a></li>
     <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
   </ul>
+  <a href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" class="nav-fb">Facebook →</a>
+  <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<ul class="nav-links-mobile" id="navMobile">
+  <li><a href="{{ '/index.html' | relative_url }}">Inicio</a></li>
+  <li><a href="{{ '/manifiesto.html' | relative_url }}">Manifiesto</a></li>
+  <li><a href="{{ '/historia.html' | relative_url }}">Historia</a></li>
+  <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+</ul>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6187255978940623"
      crossorigin="anonymous"></script>
-     
+                                                    
