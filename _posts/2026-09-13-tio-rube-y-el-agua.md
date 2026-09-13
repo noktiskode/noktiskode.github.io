@@ -2,8 +2,13 @@
 title: '"Tío Rube, ¿y el agua?"'
 date: 2026-09-13T15:03:00.000-06:00
 image: /images/blog/1000038487.webp
-excerpt: Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se
-  fue el agua, imagínese a Pepe Rueda, que apenas lleva 2 años y 8 meses...
+excerpt: >-
+  "Tío Rube, ¿y el agua?
+
+  "No sé, no está. ¿Saber para donde se fue?"
+
+
+  Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se fue el agua...
 card_color: rojo
 ---
 Barberena: Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se fue el agua, imagínese a Pepe Rueda, que apenas lleva 2 años y 8 meses.
