@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: BarberenaMiMunicipio/BarberenaMiMunicipio.github.io
+  repo: noktiskode/noktiskode.github.io
   branch: main
   base_url: https://barberenamimunicipio.pages.dev
   site_url: https://barberenamimunicipio.pages.dev
