@@ -9,21 +9,23 @@ layout: default
     padding: 32px 24px;
   }
 
-  .post-card {
-    aspect-ratio: 4 / 5;
-    max-width: 480px;
-    margin: 0 auto 1.5rem;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    container-type: inline-size;
+  .post-hero {
+    margin: 0 0 28px;
+    border-top: 4px solid var(--rojo, #e8452a);
+    border-radius: 4px;
   }
 
-  .post-card__img { flex: 0 0 55%; overflow: hidden; }
+  .post-hero--negro { border-top-color: #111111; }
+  .post-hero--blanco { border-top-color: #cccccc; }
 
-  .post-card__img img {
+  .post-hero__img {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+
+  .post-hero__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -31,67 +33,28 @@ layout: default
     display: block;
   }
 
-  .post-card__footer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 14px;
-    text-align: center;
+  .post-hero__fecha {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--rojo, #e8452a);
+    margin: 18px 0 8px;
   }
 
-  .post-card__badge-line {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 12px;
-  }
+  .post-hero--negro .post-hero__fecha { color: #111111; }
+  .post-hero--blanco .post-hero__fecha { color: #888888; }
 
-  .post-card__line { flex: 1; height: 1px; }
-
-  .post-card__logo {
-    width: clamp(32px, 10cqw, 52px);
-    height: clamp(32px, 10cqw, 52px);
-    min-width: 32px;
-    object-fit: contain;
-    margin: 0 10px;
-  }
-
-  .post-card__titulo {
+  .post-hero__titulo {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: clamp(1.2rem, 8cqw, 2rem);
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
     line-height: 1.15;
-    margin: 0 0 10px;
-  }
-
-  .post-card__fecha {
-    font-family: 'Barlow', sans-serif;
-    font-size: clamp(0.75rem, 3cqw, 0.9rem);
-    opacity: 0.85;
     margin: 0;
+    color: #111111;
   }
-
-  /* Variantes de color, elegidas desde el panel (card_color) */
-  .post-card--rojo .post-card__footer {
-    background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
-    color: #fff;
-  }
-  .post-card--rojo .post-card__line { background: rgba(255,255,255,.6); }
-
-  .post-card--blanco .post-card__footer {
-    background: #ffffff;
-    color: #1a1a1a;
-  }
-  .post-card--blanco .post-card__line { background: rgba(0,0,0,.25); }
-
-  .post-card--negro .post-card__footer {
-    background: #111111;
-    color: #fff;
-  }
-  .post-card--negro .post-card__line { background: rgba(255,255,255,.4); }
 
   .post-articulo p {
     white-space: pre-line;
@@ -101,22 +64,15 @@ layout: default
 
 <article class="post-articulo">
   {% assign imagen = page.image | default: page.hero_image %}
-  <div class="post-card post-card--{{ page.card_color | default: "rojo" }}">
+  <div class="post-hero post-hero--{{ page.card_color | default: "rojo" }}">
     {% if imagen %}
-    <div class="post-card__img">
+    <div class="post-hero__img">
       <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
     </div>
     {% endif %}
-    <div class="post-card__footer">
-      <div class="post-card__badge-line">
-        <span class="post-card__line"></span>
-        <img class="post-card__logo" src="/images/logo-bmm.png" alt="BMM">
-        <span class="post-card__line"></span>
-      </div>
-      <h1 class="post-card__titulo">{{ page.title }}</h1>
-      {% assign mes_num = page.date | date: "%m" | minus: 1 %}
-      <p class="post-card__fecha">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
-    </div>
+    {% assign mes_num = page.date | date: "%m" | minus: 1 %}
+    <p class="post-hero__fecha">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
+    <h1 class="post-hero__titulo">{{ page.title }}</h1>
   </div>
 
   {{ content }}
