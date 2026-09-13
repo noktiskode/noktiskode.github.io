@@ -29,8 +29,8 @@ pagination:
   .blog-lista {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
     padding: 0;
   }
 
@@ -38,19 +38,32 @@ pagination:
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--rojo, #e8452a);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+
+  .blog-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+  }
+
+  .blog-item--negro { border-top-color: #111111; }
+  .blog-item--blanco { border-top-color: #cccccc; }
 
   .blog-item a {
     text-decoration: none;
     color: inherit;
     display: flex;
     flex-direction: column;
-    aspect-ratio: 4 / 5;
-    container-type: inline-size;
+    height: 100%;
   }
 
-  .blog-item__img { flex: 0 0 55%; overflow: hidden; }
+  .blog-item__img {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #eee;
+  }
 
   .blog-item__img img {
     width: 100%;
@@ -58,76 +71,69 @@ pagination:
     object-fit: cover;
     object-position: top;
     display: block;
+    transition: transform 0.35s ease;
   }
 
-  .blog-item__footer {
+  .blog-item:hover .blog-item__img img {
+    transform: scale(1.05);
+  }
+
+  .blog-item__body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 14px;
-    text-align: center;
+    padding: 18px 20px 22px;
   }
 
-  .blog-item__badge-line {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 12px;
+  .blog-item__fecha {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--rojo, #e8452a);
+    margin: 0 0 10px;
   }
 
-  .blog-item__line { flex: 1; height: 1px; }
-
-  .blog-item__logo {
-    width: clamp(32px, 10cqw, 52px);
-    height: clamp(32px, 10cqw, 52px);
-    min-width: 32px;
-    object-fit: contain;
-    margin: 0 10px;
-  }
+  .blog-item--negro .blog-item__fecha { color: #111111; }
+  .blog-item--blanco .blog-item__fecha { color: #888888; }
 
   .blog-item__titulo {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: clamp(1.2rem, 8cqw, 2rem);
-    line-height: 1.15;
+    font-size: 1.32rem;
+    line-height: 1.18;
     margin: 0 0 10px;
+    color: #111111;
   }
 
-  .blog-item-fecha {
+  .blog-item__resumen {
     font-family: 'Barlow', sans-serif;
-    font-size: clamp(0.75rem, 3cqw, 0.9rem);
-    opacity: 0.85;
-    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #555555;
+    margin: 0 0 16px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  /* Variantes de color, elegidas desde el panel (card_color) */
-  .blog-item--rojo .blog-item__footer {
-    background: linear-gradient(180deg, #ff7a45, var(--rojo, #e8452a));
-    color: #fff;
+  .blog-item__cta {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--rojo, #e8452a);
   }
-  .blog-item--rojo .blog-item__line { background: rgba(255,255,255,.6); }
-
-  .blog-item--blanco .blog-item__footer {
-    background: #ffffff;
-    color: #1a1a1a;
-  }
-  .blog-item--blanco .blog-item__line { background: rgba(0,0,0,.25); }
-
-  .blog-item--negro .blog-item__footer {
-    background: #111111;
-    color: #fff;
-  }
-  .blog-item--negro .blog-item__line { background: rgba(255,255,255,.4); }
 
   .blog-paginacion {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-top: 40px;
+    margin-top: 44px;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -149,22 +155,21 @@ pagination:
   {% else %}
     <ul class="blog-lista">
       {% for post in paginator.posts %}
-        <li class="blog-item">
-          <a href="{{ post.url | relative_url }}" class="blog-item--{{ post.card_color | default: "rojo" }}">
+        <li class="blog-item blog-item--{{ post.card_color | default: "rojo" }}">
+          <a href="{{ post.url | relative_url }}">
             {% if post.image %}
             <div class="blog-item__img">
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
             </div>
             {% endif %}
-            <div class="blog-item__footer">
-              <div class="blog-item__badge-line">
-                <span class="blog-item__line"></span>
-                <img class="blog-item__logo" src="/images/logo-bmm.png" alt="BMM">
-                <span class="blog-item__line"></span>
-              </div>
-              <h3 class="blog-item__titulo">{{ post.title }}</h3>
+            <div class="blog-item__body">
               {% assign mes_num = post.date | date: "%m" | minus: 1 %}
-              <p class="blog-item-fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
+              <p class="blog-item__fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
+              <h3 class="blog-item__titulo">{{ post.title }}</h3>
+              {% if post.excerpt %}
+              <p class="blog-item__resumen">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+              {% endif %}
+              <span class="blog-item__cta">Leer la nota completa →</span>
             </div>
           </a>
         </li>
@@ -185,5 +190,5 @@ pagination:
       </div>
     {% endif %}
 
-  {% endif %} <!-- SE AGREGO ESTE CIERRE FALTANTE PARA EL IF PRINCIPAL -->
+  {% endif %}
 </section>
