@@ -1,0 +1,26 @@
+{% assign url = include.url %}
+
+{% if url contains "youtube.com" or url contains "youtu.be" %}
+  {% comment %} Extraer el ID del video de YouTube {% endcomment %}
+  {% if url contains "youtu.be/" %}
+    {% assign video_id = url | split: "youtu.be/" | last | split: "?" | first %}
+  {% elsif url contains "watch?v=" %}
+    {% assign video_id = url | split: "v=" | last | split: "&" | first %}
+  {% elsif url contains "/embed/" %}
+    {% assign video_id = url | split: "/embed/" | last | split: "?" | first %}
+  {% endif %}
+
+  <div class="video-wrapper youtube-wrapper">
+    <iframe src="https://www.youtube.com/embed/{{ video_id }}"
+      frameborder="0" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+{% elsif url contains "facebook.com" %}
+  <div class="video-wrapper fb-video-wrapper">
+    <div class="fb-video"
+      data-href="{{ url }}"
+      data-width="auto"
+      data-show-text="false">
+    </div>
+  </div>
+{% endif %}
