@@ -315,4 +315,18 @@ article img,
   color: var(--rojo);
   text-decoration: underline;
                                                                                                           }
-             
+
+.fb-video-wrapper {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+
+.fb-video-wrapper iframe {
+  width: 100% !important;
+}
+
+@media (max-width: 600px) {
+  .fb-video-wrapper {
+    max-width: 100%;
+  }
+}
