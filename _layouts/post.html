@@ -17,6 +17,7 @@ layout: default
 
   .post-hero--negro { border-top-color: #111111; }
   .post-hero--blanco { border-top-color: #cccccc; }
+  .post-hero--sin-imagen { padding-top: 24px; }
 
   .post-hero__img {
     aspect-ratio: 3 / 2;
@@ -64,7 +65,7 @@ layout: default
 
 <article class="post-articulo">
   {% assign imagen = page.image | default: page.hero_image %}
-  <div class="post-hero post-hero--{{ page.card_color | default: "rojo" }}">
+  <div class="post-hero post-hero--{{ page.card_color | default: "rojo" }}{% unless imagen and page.video_url == nil %} post-hero--sin-imagen{% endunless %}">
      {% if imagen and page.video_url == nil %}
     <div class="post-hero__img">
       <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
