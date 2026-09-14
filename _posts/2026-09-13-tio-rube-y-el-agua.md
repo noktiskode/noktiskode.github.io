@@ -2,21 +2,31 @@
 title: '"Tío Rube, ¿y el agua?"'
 date: 2026-09-13T15:03:00.000-06:00
 image: /images/blog/1000038487.webp
-excerpt: >-
+excerpt: |-
   "Tío Rube, ¿y el agua?
-
   "No sé, no está. ¿Saber para donde se fue?"
-
-
-  Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se fue el agua...
 card_color: rojo
 ---
-Barberena: Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se fue el agua, imagínese a Pepe Rueda, que apenas lleva 2 años y 8 meses.
+Durante un recorrido por una comunidad del municipio, Rubelio Recinos conversó con varios vecinos sobre la situación del agua potable en la zona.
 
 
 
-¿Será que Pepe sí sabe para dónde se fue? Son preguntas que no nos dejan dormir.
+Según el testimonio de una vecina, "ya seis meses" llevan sin recibir el servicio, por lo que las familias han tenido que comprar agua para poder abastecerse. La falta de suministro se remonta a enero de este año.
 
 
 
-\#Cerinal #BarberenaSantaRosa #SantaRosa #PoliticaGT #agua
+"¿Y no que les echaban bastante agua aquí, pue?", preguntó Rubelio a otro vecino durante el recorrido, quien confirmó que actualmente no reciben nada.
+
+
+
+Ante esta situación, se hace un llamado a las autoridades correspondientes para que brinden una solución y se restablezca el servicio de agua potable en la comunidad.
+
+
+
+Sin embargo, llama la atención que sea el propio Rubelio quien pregunte por el agua, siendo que fue alcalde de Barberena durante 20 años. En un momento del recorrido, alguien, posiblemente de de su equipo de trabajo le preguntó en broma: "Tío Rube, ¿y el agua?", a lo que él respondió, entre risas: "No sé, no está. ¿Saber para dónde se fue?"
+
+
+
+Un intercambio que, sin querer, terminó siendo un tiro en el pie para el propio Recinos.
+
+\#Cerinal #BarberenaSantaRosa #SantaRosaGT #PoliticaGT #agua
