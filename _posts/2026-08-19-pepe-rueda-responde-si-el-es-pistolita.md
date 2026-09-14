@@ -1,6 +1,7 @@
 ---
 title: Pepe Rueda responde si él es "Pistolita"
 date: 2026-08-19T10:00:00.000-06:00
+image: /images/blog/1000038567.webp
 excerpt: Desde hace un tiempo, el exalcalde Rubelio Recinos ha mencionado varias
   veces a alguien a quien llama "Pistolita,"...
 video_url: https://www.facebook.com/reel/3437138596458244/?mibextid=rS40aB7S9Ucbxw6v
