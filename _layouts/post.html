@@ -74,7 +74,11 @@ layout: default
     <p class="post-hero__fecha">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
     <h1 class="post-hero__titulo">{{ page.title }}</h1>
   </div>
-
+  
+{% if page.video_url %}
+  {% include fb-video.html url=page.video_url %}
+{% endif %}
+  
   {{ content }}
 
   {% include comentarios.html %}
