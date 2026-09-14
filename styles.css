@@ -83,7 +83,7 @@
     .hero-badge {
       position: absolute; bottom: 2rem; left: 3rem;
       background: var(--rojo); color: white;
-      font-family: 'Barlow Condensed', sans-serif;
+      font-family: 'Oswald', sans-serif;
       font-size: 0.7rem; font-weight: 700; letter-spacing: 0.25em;
       text-transform: uppercase; padding: 0.4rem 1rem;
     }
@@ -118,11 +118,11 @@
       display: flex; flex-direction: column; justify-content: center; gap: 2rem;
     }
     .manifiesto-sidebar img { width: 140px; height: auto; }
-    .manifiesto-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; }
+    .manifiesto-label { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; }
     .manifiesto-tagline { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--blanco); line-height: 1.4; font-style: italic; }
     .manifiesto-content { padding: 4rem; background: var(--gris-claro); }
-    .manifiesto-pretitle { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; margin-bottom: 1.5rem; }
-    .manifiesto-title { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 800; text-transform: uppercase; color: var(--negro); line-height: 1; margin-bottom: 2rem; }
+    .manifiesto-pretitle { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; margin-bottom: 1.5rem; }
+    .manifiesto-title { font-family: 'Oswald', sans-serif; font-size: 2.8rem; font-weight: 800; text-transform: uppercase; color: var(--negro); line-height: 1; margin-bottom: 2rem; }
     .manifiesto-title span { color: var(--rojo); }
     .manifiesto-text { font-size: 1rem; line-height: 1.85; color: #444442; font-weight: 300; max-width: 580px; }
     .manifiesto-text p + p { margin-top: 1.1rem; }
@@ -130,7 +130,7 @@
     .manifiesto-details { margin-top: 1.1rem; }
     .manifiesto-details summary {
       cursor: pointer; list-style: none; color: var(--rojo); font-weight: 500;
-      font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em;
+      font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em;
       text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem;
     }
     .manifiesto-details summary::-webkit-details-marker { display: none; }
@@ -138,7 +138,7 @@
     .manifiesto-details[open] summary::after { transform: rotate(45deg); }
     .manifiesto-details[open] summary { margin-bottom: 1.1rem; }
     .manifiesto-details-content p + p { margin-top: 1.1rem; }
-    .manifiesto-subhead { font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--negro); margin-top: 1.75rem; margin-bottom: 0.85rem; }
+    .manifiesto-subhead { font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--negro); margin-top: 1.75rem; margin-bottom: 0.85rem; }
     .manifiesto-details-content .manifiesto-subhead:first-child { margin-top: 0; }
     .manifiesto-list { list-style: none; margin-top: 0.6rem; }
     .manifiesto-list li { display: flex; flex-direction: column; gap: 0.2rem; }
@@ -148,11 +148,11 @@
     .manifiesto-list.no-publicamos li { flex-direction: row; }
     .manifiesto-list.no-publicamos li + li { margin-top: 0.6rem; }
 
-    .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 0.75rem; }
+    .section-label { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 0.75rem; }
 
     .quejas { padding: 5rem 3rem 6rem; background: var(--gris-claro); max-width: 1000px; margin: 0 auto; }
     .quejas-header { text-align: center; margin-bottom: 1rem; }
-    .quejas-header h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); }
+    .quejas-header h2 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); }
     .quejas-header p { max-width: 560px; margin: 1rem auto 0; color: var(--gris); font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
     .quejas-feed { margin-top: 3.5rem; display: flex; flex-direction: column; gap: 2.75rem; }
     .quejas-empty { text-align: center; color: var(--gris); font-size: 0.9rem; margin-top: 3.5rem; font-weight: 300; }
@@ -169,27 +169,27 @@
     .queja-media { position: relative; overflow: hidden; background: repeating-linear-gradient(135deg, rgba(232,69,42,0.9) 0 14px, rgba(17,17,16,0.92) 14px 28px); display: flex; align-items: center; justify-content: center; min-height: 190px; }
     .queja-media img { width: 100%; height: 100%; object-fit: cover; }
     .queja-media .icono { font-size: 3.4rem; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4)); }
-    .queja-media .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.75rem; font-family: 'Barlow Condensed', sans-serif; }
+    .queja-media .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.75rem; font-family: 'Oswald', sans-serif; }
 
     .queja-body { padding: 2rem 2.25rem; position: relative; }
     .queja-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
-    .queja-zona { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rojo); }
+    .queja-zona { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rojo); }
     .queja-fecha { font-size: 0.72rem; color: var(--gris); }
     .queja-fecha::before { content: '·'; margin-right: 0.75rem; color: var(--gris); }
-    .queja h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.6rem; line-height: 1.15; }
+    .queja h3 { font-family: 'Oswald', sans-serif; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.6rem; line-height: 1.15; }
     .queja p.relato { font-family: 'Lora', serif; font-style: italic; font-size: 0.95rem; line-height: 1.7; color: #33322f; max-width: 480px; }
     .queja p.relato::before { content: '\201C'; }
     .queja p.relato::after { content: '\201D'; }
     .queja-firma { margin-top: 0.9rem; font-size: 0.78rem; color: var(--gris); font-weight: 500; }
 
-    .sello { position: absolute; top: 1.4rem; right: 1.6rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid; border-radius: 4px; padding: 0.3rem 0.6rem; transform: rotate(6deg); opacity: 0.85; }
+    .sello { position: absolute; top: 1.4rem; right: 1.6rem; font-family: 'Oswald', sans-serif; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid; border-radius: 4px; padding: 0.3rem 0.6rem; transform: rotate(6deg); opacity: 0.85; }
     .sello.revision { color: #b8860b; border-color: #b8860b; }
     .sello.respondida { color: #2e7d32; border-color: #2e7d32; }
     .sello.sinrespuesta { color: var(--rojo); border-color: var(--rojo); }
 
     .quejas-cta { margin-top: 3.5rem; text-align: center; padding: 2.5rem; background: var(--tema-dark-bg); transition: background 0.3s; }
     .quejas-cta p { color: rgba(255,255,255,0.55); font-size: 0.9rem; max-width: 460px; margin: 0 auto 1.25rem; line-height: 1.7; font-weight: 300; }
-    .quejas-cta a { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2.2rem; }
+    .quejas-cta a { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2.2rem; }
 
     @media (max-width: 640px) {
       .quejas { padding: 3rem 1.5rem 4rem; }
@@ -201,7 +201,7 @@
 
     .historia { padding: 5rem 3rem; background: var(--gris-claro); }
     .historia-header { text-align: center; margin-bottom: 3rem; }
-    .historia-header h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); }
+    .historia-header h2 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); }
     .historia-grid { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; }
     .historia-item { border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 0.75rem; }
     .historia-item summary {
@@ -209,10 +209,10 @@
       cursor: pointer; list-style: none; padding: 0.75rem 0;
     }
     .historia-item summary::-webkit-details-marker { display: none; }
-    .historia-item summary::after { content: '+'; font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; color: var(--rojo); transition: transform 0.2s; }
+    .historia-item summary::after { content: '+'; font-family: 'Oswald', sans-serif; font-size: 1.3rem; color: var(--rojo); transition: transform 0.2s; }
     .historia-item[open] summary::after { transform: rotate(45deg); }
-    .historia-year { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--rojo); text-align: right; }
-    .historia-item summary h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--negro); }
+    .historia-year { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--rojo); text-align: right; }
+    .historia-item summary h4 { font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--negro); }
     .historia-text { padding: 0 0 0.5rem 110px; }
     .historia-text p { font-size: 0.9rem; color: var(--gris); line-height: 1.7; font-weight: 300; }
     @media (max-width: 600px) {
@@ -223,26 +223,26 @@
     .historia-note strong { color: var(--negro); font-weight: 500; }
 
     .cta { background: var(--tema-dark-bg); padding: 5rem 3rem; text-align: center; transition: background 0.3s; }
-    .cta-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 1rem; }
-    .cta h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; text-transform: uppercase; color: var(--blanco); line-height: 1.1; margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .cta-label { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 1rem; }
+    .cta h2 { font-family: 'Oswald', sans-serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; text-transform: uppercase; color: var(--blanco); line-height: 1.1; margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
     .cta p { color: rgba(255,255,255,0.45); font-size: 0.95rem; font-weight: 300; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
     .cta-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-    .cta-btn { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; transition: background 0.2s, transform 0.2s; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; transition: background 0.2s, transform 0.2s; }
     .cta-btn:hover { background: #e04b33; transform: translateY(-2px); }
     .cta-btn svg { width: 20px; height: 20px; fill: white; }
-    .cta-btn-outline { display: inline-flex; align-items: center; gap: 0.75rem; background: transparent; color: white; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; border: 1px solid rgba(255,255,255,0.3); transition: border-color 0.2s, background 0.2s; }
+    .cta-btn-outline { display: inline-flex; align-items: center; gap: 0.75rem; background: transparent; color: white; text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; border: 1px solid rgba(255,255,255,0.3); transition: border-color 0.2s, background 0.2s; }
     .cta-btn-outline:hover { border-color: white; background: rgba(255,255,255,0.05); }
 
     .participa { padding: 5rem 3rem; background: var(--gris-claro); }
     .participa-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    .participa h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); line-height: 1.1; margin-bottom: 1.5rem; }
+    .participa h2 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); line-height: 1.1; margin-bottom: 1.5rem; }
     .participa h2 span { color: var(--rojo); }
     .participa p { font-size: 0.95rem; color: var(--gris); line-height: 1.8; font-weight: 300; margin-bottom: 1rem; }
     .participa-items { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
     .participa-item { display: flex; gap: 1rem; align-items: flex-start; opacity: 0; transform: translateX(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .participa-item.visible { opacity: 1; transform: translateX(0); }
-    .participa-num { font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--rojo); line-height: 1; flex-shrink: 0; width: 36px; }
-    .participa-text h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .participa-num { font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--rojo); line-height: 1; flex-shrink: 0; width: 36px; }
+    .participa-text h4 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
     .participa-text p { font-size: 0.85rem; margin-bottom: 0; }
 
     footer { background: var(--tema-dark-bg); padding: 2.5rem 3rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.06); transition: background 0.3s; }
@@ -314,14 +314,5 @@ article img,
 .ticker-item:hover {
   color: var(--rojo);
   text-decoration: underline;
-}
-
-/* Animación de desplazamiento horizontal continuo */
-@keyframes scrollTicker {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-                         }
+                                                                                                          }
+             
