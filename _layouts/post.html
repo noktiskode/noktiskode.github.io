@@ -65,7 +65,7 @@ layout: default
 <article class="post-articulo">
   {% assign imagen = page.image | default: page.hero_image %}
   <div class="post-hero post-hero--{{ page.card_color | default: "rojo" }}">
-    {% if imagen %}
+     {% if imagen and page.video_url == nil %}
     <div class="post-hero__img">
       <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
     </div>
