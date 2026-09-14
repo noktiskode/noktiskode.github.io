@@ -5,6 +5,7 @@ image: /images/blog/1000037775.jpg
 excerpt: El alcalde de Barberena informó sobre trabajos de mantenimiento en el
   Cementerio Municipal del casco urbano y anunció la habilitación de un nuevo
   espacio...
+category: gobierno
 card_color: rojo
 ---
 El alcalde de Barberena informó sobre trabajos de mantenimiento en el Cementerio Municipal del casco urbano y anunció la habilitación de un nuevo espacio para ampliar el área disponible.
