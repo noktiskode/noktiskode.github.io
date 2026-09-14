@@ -60,7 +60,7 @@ collections:
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Imagen destacada", name: "image", widget: "image", required: false }
       - { label: "Resumen corto", name: "excerpt", widget: "text", required: false }
-      - { label: "Video de Facebook (opcional)", name: "video_url", widget: "string", required: false, hint: "Pega el link del video de Facebook, ej: https://www.facebook.com/BarberenaMiMunicipio/videos/123456789/" }
+      - { label: "Video (Facebook o YouTube, opcional)", name: "video_url", widget: "string", required: false, hint: "Pega el link completo del video, de Facebook o de YouTube" }
       - label: "Color de tarjeta"
         name: "card_color"
         widget: "select"
