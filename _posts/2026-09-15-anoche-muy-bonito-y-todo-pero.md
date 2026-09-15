@@ -3,7 +3,7 @@ featured: true
 relevant: false
 title: Anoche, muy bonito y todo, pero...
 date: 2026-09-15T11:53:00.000-06:00
-image: /images/blog/1000038984.jpg
+image: /images/blog/1000038985.webp
 excerpt: "Esto de las antorchas debería estar regulado, porque cada año es un
   caos: el bullicio y la contaminación ambiental que dejan a su paso, más aún
   por las personas que se prestan..."
