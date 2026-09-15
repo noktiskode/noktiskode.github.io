@@ -1,20 +1,11 @@
 title: Barberena Mi Municipio
-description: "De tishudos para tishudos. Entérate de todo lo que pasa en Barberena y El Cerinal: noticias, obras y el día a día de nuestra gente."
+description: "Blog personal sobre Barberena: opiniones, acontecimientos, historias y cosas que vale la pena comentar."
 url: "https://barberenamimunicipio.top"
 
-# Zona horaria oficial para Guatemala
 timezone: America/Guatemala
-
-# Publica entradas aunque su hora exacta caiga después del momento del build
-# (evita que una entrada de "hoy" se oculte por diferencias de minutos/huso horario)
 future: true
-
-# Le decimos a Jekyll que no use ningún tema predefinido,
-# porque ya tenés tu propio diseño en styles.css
 theme: null
 
-# Aplica automáticamente el layout "post" a todo lo que esté en _posts/,
-# sin depender de que el CMS agregue "layout: post" en cada entrada
 defaults:
   - scope:
       path: ""
@@ -26,7 +17,6 @@ defaults:
       hero_alt: Barberena Mi Municipio
       hero_badge: Blog
 
-# Que no procese estas carpetas/archivos como si fueran páginas
 exclude:
   - README.md
 
@@ -51,3 +41,30 @@ meses:
   - "Octubre"
   - "Noviembre"
   - "Diciembre"
+
+categories:
+  - { label: "Opiniones", value: "opiniones" }
+  - { label: "Barberena", value: "barberena" }
+  - { label: "Historias", value: "historias" }
+
+tags:
+  - Municipalidad
+  - Obras
+  - Agua
+  - Comunidad
+  - Política local
+  - Finanzas públicas
+  - Presupuesto
+  - Servicios públicos
+  - Historia
+  - Personajes
+  - Tradiciones
+  - Patrimonio
+  - Acontecimientos
+  - Transporte
+  - Seguridad
+  - Educación
+  - Santa Rosa
+  - Congreso
+  - Templo de Minerva
+  - Antorchas
