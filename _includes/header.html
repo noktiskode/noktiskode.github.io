@@ -1,3 +1,94 @@
+<style>
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #111;
+  font-family: 'Barlow', sans-serif;
+  position: relative;
+  z-index: 20;
+}
+.site-header__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 32px 15px;
+  display: flex;
+  align-items: center;
+}
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #111;
+}
+.site-brand__icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
+.site-brand__text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.35rem;
+  line-height: .88;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+.site-cats {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.site-cats::-webkit-scrollbar { display: none; }
+.site-cats a {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 13px 17px 14px;
+  color: #666;
+  text-decoration: none;
+  font-size: .72rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  transition: color .18s ease;
+}
+.site-cats a:first-child { padding-left: 0; }
+.site-cats a::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  right: 17px;
+  bottom: -1px;
+  height: 2px;
+  background: #e8452a;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .18s ease;
+}
+.site-cats a:first-child::after { left: 0; }
+.site-cats a:hover,
+.site-cats a.active { color: #111; }
+.site-cats a:hover::after,
+.site-cats a.active::after { transform: scaleX(1); }
+
+@media (max-width: 700px) {
+  .site-header__wrap { padding: 15px 18px 13px; }
+  .site-brand__icon { width: 34px; height: 34px; }
+  .site-brand__text { font-size: 1.18rem; }
+  .site-cats { padding: 0 18px; }
+  .site-cats a { padding: 12px 15px 13px; font-size: .66rem; }
+  .site-cats a:first-child { padding-left: 0; }
+  .site-cats a::after { left: 15px; right: 15px; }
+  .site-cats a:first-child::after { left: 0; }
+}
+</style>
+
   <header class="site-header">
     <div class="site-header__wrap">
       <a href="{{ '/index.html' | relative_url }}" class="site-brand">
