@@ -9,7 +9,6 @@ excerpt: "El origen y la historia de la Pila de las Cinco Calles en Barberena,
 category: historia
 card_color: blanco
 ---
-
 <div style="max-width:640px; margin:0 auto; padding: 2.5rem 1.2rem; font-family:'Lora', serif; color:#222; line-height:1.8;">
 
   <figure style="margin-bottom:1.5rem;">
