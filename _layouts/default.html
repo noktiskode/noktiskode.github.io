@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://barberenamimunicipio.top{{ page.image | default: page.hero_image | default: '/images/portada.webp' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <meta name="google-site-verification" content="rnI2_KGt4xMqGnZfDKDdzVr7GxNS1HKlzvXbb8d2ja4" />
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -51,6 +51,7 @@
   <!-- resto de tu contenido -->
 
   {% include header.html %}
+  {% include news-ticker.html %}
 
   {% unless page.show_hero == false %}
     {% assign es_index = false %}
@@ -89,8 +90,8 @@
   </main>
 
   {% unless page.url == "/index.html" or page.url == "/" %}
-  <div style="text-align:center; padding: 1.5rem 1rem 2.5rem;">
-    <a href="/" onclick="if(document.referrer && document.referrer.includes(window.location.hostname)){history.back();return false;}" style="display:inline-flex;align-items:center;gap:0.5rem;color:#e8452a;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">← Volver</a>
+  <div class="site-back">
+    <a href="/" onclick="if(document.referrer && document.referrer.includes(window.location.hostname)){history.back();return false;}">← Volver</a>
   </div>
   {% endunless %}
 
