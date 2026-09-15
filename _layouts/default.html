@@ -97,18 +97,6 @@
   {% include footer.html %}
   
 <script>
-    // Marca como activo el link de categoría que coincide con el hash actual (#cat-xxx)
-    (function () {
-      const catLinks = document.querySelectorAll('.site-cats a');
-      if (!catLinks.length) return;
-      function marcarActivo() {
-        const hash = window.location.hash.replace('#cat-', '') || 'todas';
-        catLinks.forEach(a => a.classList.toggle('active', a.dataset.cat === hash));
-      }
-      marcarActivo();
-      window.addEventListener('hashchange', marcarActivo);
-    })();
-
     // Carrusel de portadas (solo existe en el inicio): arrastre libre,
     // indicadores tipo "guion" y rotación infinita en ambos sentidos.
     (function () {
