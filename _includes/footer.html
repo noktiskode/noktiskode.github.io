@@ -1,3 +1,250 @@
+  <!-- ============== Añadido desde bmm-index-hibrido.html: sección "Lo que publicamos" a footer ============== -->
+  <style>
+    .hib-wrap {
+      max-width: 720px;
+      margin: 0 auto 0 max(24px, calc((100% - 1000px) / 2));
+      padding: 0 24px 0 0;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .hib-centrado {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .hib-wrap {
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+    }
+
+    section.hib-min {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--linea, #e4e2df);
+    }
+
+    section.hib-min .hib-rotulo {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--gris, #6b6b6b);
+      margin-bottom: 8px;
+    }
+
+    section.hib-min h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.9rem;
+      max-width: 26ch;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .hib-pilares { display: grid; }
+    .hib-pilar { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 26px 0; border-top: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar .hib-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--rojo, #e8452a); }
+    .hib-pilar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; font-family: 'Barlow', sans-serif; }
+    .hib-pilar p { color: var(--gris, #6b6b6b); font-size: 0.98rem; }
+
+    .hib-no-publicamos { margin-top: 48px; padding: 0; border-radius: 10px; }
+    .hib-no-publicamos h3 { color: #000; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
+    .hib-no-publicamos ul { list-style: none; }
+    .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid var(--linea, #e4e2df); color: var(--gris, #6b6b6b); font-size: 1rem; }
+
+    /* En escritorio, "lo que publicamos" y "lo que no publicamos" van a la par */
+    @media (min-width: 900px) {
+      .hib-publicamos-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        align-items: start;
+      }
+      .hib-no-publicamos { margin-top: 0; }
+    }
+
+    .hib-historia-min { text-align: center; }
+    .hib-historia-min p { max-width: 56ch; margin: 16px auto 0; color: var(--gris, #6b6b6b); font-size: 0.98rem; line-height: 1.7; opacity: 1 !important; }
+    .hib-boton-rojo {
+      display: inline-block; margin-top: 26px; background: var(--rojo, #e8452a); color: #fff; text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 0.9rem 2rem; border-radius: 999px;
+      opacity: 1 !important; transform: none !important;
+    }
+
+    .hib-item { padding: 22px 0; border-top: 1px solid var(--linea, #e4e2df); display: grid; grid-template-columns: 32px 1fr; gap: 18px; align-items: start; opacity: 1 !important; transform: none !important; }
+    .hib-item:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-item .hib-icono { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+    .hib-item .hib-icono svg { width: 100%; height: 100%; fill: none; stroke: var(--negro, #131313); stroke-width: 1.6; }
+    a.hib-item, button.hib-item { text-decoration: none; color: inherit; width: 100%; background: none; border: none; border-top: 1px solid var(--linea, #e4e2df); text-align: left; cursor: pointer; font-family: 'Barlow', sans-serif; }
+    a.hib-item:hover .hib-icono svg, button.hib-item:hover .hib-icono svg { stroke: var(--rojo, #e8452a); }
+    a.hib-item:hover h4, button.hib-item:hover h4 { color: var(--rojo, #e8452a); }
+    .hib-item h4 { margin: 0 0 4px; font-weight: 500; font-size: 1.05rem; }
+    .hib-item p { color: var(--gris, #6b6b6b); font-size: 0.95rem; }
+    .hib-item a { color: var(--rojo, #e8452a); text-decoration: none; border-bottom: 1px solid var(--rojo, #e8452a); }
+
+    footer.hib-min { padding: 40px 0 60px; font-size: 0.85rem; color: var(--gris, #6b6b6b); text-align: center; }
+  </style>
+
+  <style>
+    .hib-tabs-wrap { position: relative; max-width: 1000px; margin: 0 auto; padding: 24px 24px 0; }
+
+    .hib-tabs-nav { display: flex; justify-content: center; gap: 4px; border-top: 1px solid var(--linea, #e4e2df); }
+    .hib-tabs-nav button {
+      background: none;
+      border: none;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--gris, #6b6b6b);
+      padding: 16px 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .hib-tabs-nav button.active { color: var(--rojo, #ef4f1d); }
+
+    .hib-bubble {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 100%;
+      margin-bottom: 14px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+      padding: 26px;
+      max-height: 65vh;
+      overflow-y: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity .18s ease, transform .18s ease;
+    }
+    .hib-bubble.open { opacity: 1; visibility: visible; transform: translateY(0); }
+    .hib-bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      transform: translateX(-50%) rotate(45deg);
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.06);
+    }
+
+    .hib-tab-panel { display: none; }
+    .hib-tab-panel.active { display: block; }
+    .hib-tab-panel .hib-no-publicamos { margin-top: 0; }
+  </style>
+
+  <div class="hib-tabs-wrap" id="hib-tabs-wrap">
+    <div class="hib-bubble" id="hib-bubble">
+
+      <div class="hib-tab-panel" id="hib-tab-publicamos">
+        <h3 style="margin-bottom:16px;">Lo que publicamos</h3>
+        <div class="hib-pilares">
+          <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
+          <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
+          <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+        </div>
+      </div>
+
+      <div class="hib-tab-panel" id="hib-tab-no-publicamos">
+        <div class="hib-no-publicamos">
+          <h3>Lo que no publicamos</h3>
+          <ul>
+            <li>Difamaciones, calumnias, chismes, etc.</li>
+            <li>Insultos y ataques personales.</li>
+            <li>Rumores sin fundamento.</li>
+            <li>Información falsa.</li>
+            <li>Contenido que busque hacer daño a otras personas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hib-tab-panel" id="hib-tab-participa">
+        <h3 style="margin-bottom:16px;">¿Cómo participar?</h3>
+
+        <a class="hib-item" href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" rel="noopener">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M16 8h-2a2 2 0 0 0-2 2v2H9v3h3v7h3v-7h2.5l.5-3H15v-1.5c0-.5.3-1 1-1H16V8z"/></svg></span>
+          <div><h4>Síguenos en Facebook</h4><p>Dale like a la página y activa las notificaciones para no perderte nada.</p></div>
+        </a>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div><h4>Envíanos tus comentarios</h4><p>¿Tienes algo que compartir? Escríbenos a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> desde tu correo.</p></div>
+        </div>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4z"/></svg></span>
+          <div><h4>Debate con respeto</h4><p>Comenta, opina y discrepa. Todos los puntos de vista son bienvenidos con respeto.</p></div>
+        </div>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+          <div><h4>¿Apareces en una foto y no querés estar?</h4><p>Escribinos por Facebook o a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> y retiramos el contenido.</p></div>
+        </div>
+        <button type="button" class="hib-item" id="btnCompartir">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="5.5" r="2.2"/><circle cx="18" cy="18.5" r="2.2"/><path d="M8 11l8-4.2M8 13l8 4.2"/></svg></span>
+          <div><h4 id="compartirTexto">Comparte la página</h4><p>Entre más barberenenses participen, más impacto tiene la comunidad.</p></div>
+        </button>
+      </div>
+
+    </div>
+
+    <nav class="hib-tabs-nav" id="hib-tabs-nav">
+      <button data-tab="publicamos">Lo que publicamos</button>
+      <button data-tab="no-publicamos">Lo que no publicamos</button>
+      <button data-tab="participa">¿Cómo participar?</button>
+    </nav>
+  </div>
+
+  <script>
+    (function() {
+      const bubble = document.getElementById('hib-bubble');
+      const buttons = document.querySelectorAll('#hib-tabs-nav button');
+      const panels = document.querySelectorAll('.hib-tab-panel');
+
+      function abrir(tab) {
+        panels.forEach(function (p) { p.classList.toggle('active', p.id === 'hib-tab-' + tab); });
+        buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.tab === tab); });
+        bubble.classList.add('open');
+      }
+      function cerrar() {
+        bubble.classList.remove('open');
+        buttons.forEach(function (b) { b.classList.remove('active'); });
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const yaAbiertoEnEsteTab = btn.classList.contains('active') && bubble.classList.contains('open');
+          if (yaAbiertoEnEsteTab) { cerrar(); } else { abrir(btn.dataset.tab); }
+        });
+      });
+
+      bubble.addEventListener('click', function (e) { e.stopPropagation(); });
+      document.addEventListener('click', cerrar);
+
+      const btnCompartir = document.getElementById('btnCompartir');
+      const compartirTexto = document.getElementById('compartirTexto');
+      if (!btnCompartir) return;
+      btnCompartir.addEventListener('click', async () => {
+        const datos = { title: 'Barberena Mi Municipio', text: 'De tishudos para tishudos: noticias de Barberena y El Cerinal.', url: window.location.href };
+        if (navigator.share) {
+          try { await navigator.share(datos); } catch (e) {}
+        } else if (navigator.clipboard) {
+          try {
+            await navigator.clipboard.writeText(datos.url);
+            const original = compartirTexto.textContent;
+            compartirTexto.textContent = 'Enlace copiado';
+            setTimeout(() => { compartirTexto.textContent = original; }, 2000);
+          } catch (e) {}
+        }
+      });
+    })();
+  </script>
+  <!-- ============== Fin de la sección añadida ============== -->
   <footer class="site-footer">
     <a href="{{ '/index.html' | relative_url }}" class="site-footer__brand">
       <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="" class="site-footer__icon">
