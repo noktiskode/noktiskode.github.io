@@ -6,6 +6,8 @@ hero_image: /images/portada.webp
 show_hero: false
 ---
 
+{% include news-ticker.html %}
+
   <style>
     .portal-wrap { max-width: 1000px; margin: 0 auto; padding: 32px 24px 8px; font-family: 'Barlow', sans-serif; }
 
@@ -221,9 +223,6 @@ show_hero: false
     }
 
     portalPintarGrid(categoriaDesdeHash());
-    if (window.location.hash) {
-      document.getElementById('portal').scrollIntoView({ behavior: 'auto', block: 'start' });
-    }
 
     window.addEventListener('hashchange', function () {
       portalPintarGrid(categoriaDesdeHash());
