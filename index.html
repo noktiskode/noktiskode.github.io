@@ -1,16 +1,49 @@
 ---
 layout: default
 title: Inicio
-description: "Blog personal sobre Barberena y El Cerinal. Opiniones, historias y cosas que pasan por aquí."
+description: "Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar."
 hero_image: /images/portada.webp
 show_hero: false
 ---
 
   <style>
     /* =========================================================
-       BARBERENA MI MUNICIPIO — Blog personal
-       Menos portal de noticias, más bitácora local.
+       BARBERENA MI MUNICIPIO — Editorial redesign
+       Visual layer only: Liquid/JS structure remains intact.
        ========================================================= */
+
+    .blog-intro {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      padding: 8px 0 34px;
+      border-bottom: 1px solid var(--bm-line);
+    }
+    .blog-kicker {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--bm-red);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .blog-intro h1 {
+      margin: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: .88;
+      letter-spacing: -.035em;
+      font-weight: 800;
+    }
+    .blog-intro p {
+      max-width: 62ch;
+      margin: 22px 0 0;
+      color: var(--bm-muted);
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
     .portal-wrap {
       --bm-black: #111111;
       --bm-ink: #191919;
@@ -18,71 +51,70 @@ show_hero: false
       --bm-line: #d9d7d3;
       --bm-soft: #f5f4f1;
       --bm-red: var(--rojo, #e8452a);
-      max-width: 1080px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 54px 32px 80px;
+      padding: 46px 32px 80px;
       font-family: 'Barlow', sans-serif;
       color: var(--bm-ink);
     }
+
     .portal-wrap a { color: inherit; }
 
-    .blog-intro {
-      max-width: 760px;
-      margin-bottom: 64px;
-    }
-    .blog-kicker {
-      display: block;
-      margin-bottom: 12px;
+    .portal-tag {
+      display: inline-block;
+      margin: 0;
       font-size: .68rem;
       line-height: 1;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: .14em;
+      letter-spacing: .12em;
       color: var(--bm-red);
     }
-    .blog-intro h1 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: clamp(3rem, 7vw, 5.2rem);
-      line-height: .88;
-      letter-spacing: -.035em;
-      margin: 0 0 22px;
-      color: var(--bm-black);
-    }
-    .blog-intro p {
-      max-width: 62ch;
-      font-size: 1.08rem;
-      line-height: 1.65;
-      color: var(--bm-muted);
-      margin: 0;
-    }
-    .blog-manifiesto {
-      display: inline-block;
-      margin-top: 22px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: .78rem;
-      font-weight: 800;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-bottom: 2px solid var(--bm-black);
-      padding-bottom: 3px;
-    }
-    .blog-manifiesto:hover { color: var(--bm-red); border-color: var(--bm-red); }
 
-    .portal-section-titulo {
+    .portal-etiquetas {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .portal-destacado-badge {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--bm-black);
+      font-size: .68rem;
+      line-height: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .11em;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    .portal-destacado-badge::before {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background: var(--bm-red);
+      margin-right: 8px;
+    }
+
+    .portal-section-titulo {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 18px;
       font-family: 'Barlow Condensed', sans-serif;
       font-size: .82rem;
       line-height: 1;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: .12em;
-      margin: 0 0 28px;
+      margin: 0 0 24px;
       color: var(--bm-black);
     }
+
     .portal-section-titulo::after {
       content: "";
       height: 1px;
@@ -90,28 +122,167 @@ show_hero: false
       background: var(--bm-line);
     }
 
-    .portal-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: 42px;
-      row-gap: 50px;
+    .portal-divider {
+      border: 0;
+      border-top: 1px solid var(--bm-black);
+      margin: 52px 0 38px;
     }
-    .portal-card {
+
+    /* ---------- Portada ---------- */
+
+    .portal-hero-layout {
       display: grid;
-      grid-template-columns: 190px 1fr;
-      gap: 20px;
-      align-items: start;
+      grid-template-columns: minmax(0, 2.15fr) minmax(260px, .85fr);
+      gap: 48px;
+      margin-bottom: 0;
+    }
+
+    .portal-hero {
+      display: block;
       text-decoration: none;
       color: inherit;
-      min-width: 0;
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--bm-line);
     }
-    .portal-card__img {
-      aspect-ratio: 4 / 3;
+
+    .portal-hero__img {
+      aspect-ratio: 16 / 9;
+      border-radius: 0;
       overflow: hidden;
       background: var(--bm-soft);
     }
+
+    .portal-hero__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .portal-hero:hover .portal-hero__img img {
+      transform: scale(1.025);
+    }
+
+    .portal-hero__titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.15rem, 4.7vw, 3.55rem);
+      line-height: .98;
+      letter-spacing: -.025em;
+      max-width: 950px;
+      margin: 14px 0 12px;
+      color: var(--bm-black);
+    }
+
+    .portal-hero__resumen {
+      font-size: 1.02rem;
+      line-height: 1.55;
+      color: var(--bm-muted);
+      max-width: 68ch;
+      margin: 0;
+    }
+
+    /* ---------- Lo más relevante ---------- */
+
+    .portal-relevante {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 3px solid var(--bm-black);
+      padding-top: 13px;
+    }
+
+    .portal-relevante h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: .82rem;
+      line-height: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin: 0 0 5px;
+      color: var(--bm-black);
+    }
+
+    .portal-relevante-item {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 17px 0 18px 34px;
+      border-bottom: 1px solid var(--bm-line);
+    }
+
+    .portal-relevante-item::before {
+      content: counter(relevante);
+      counter-increment: relevante;
+      position: absolute;
+      left: 0;
+      top: 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      color: #9b9b9b;
+    }
+
+    .portal-relevante {
+      counter-reset: relevante;
+    }
+
+    .portal-relevante-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .portal-relevante-item h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.18rem;
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -.01em;
+      margin: 5px 0 7px;
+      color: var(--bm-black);
+      transition: color .2s ease;
+    }
+
+    .portal-relevante-item:hover h3 {
+      color: var(--bm-red);
+    }
+
+    .portal-relevante-item .portal-fecha {
+      font-size: .68rem;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #8a8a8a;
+    }
+
+    /* ---------- Grid ---------- */
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 30px;
+      row-gap: 44px;
+      margin-bottom: 8px;
+    }
+
+    .portal-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      text-decoration: none;
+      color: inherit;
+      min-width: 0;
+    }
+
+    .portal-card__img {
+      aspect-ratio: 16 / 10;
+      border-radius: 0;
+      overflow: hidden;
+      background: var(--bm-soft);
+      margin-bottom: 14px;
+    }
+
     .portal-card__img img {
       width: 100%;
       height: 100%;
@@ -119,134 +290,259 @@ show_hero: false
       display: block;
       transition: transform .45s cubic-bezier(.2,.7,.2,1);
     }
-    .portal-card:hover .portal-card__img img { transform: scale(1.025); }
-    .portal-card__copy { min-width: 0; }
-    .portal-tag {
-      display: inline-block;
-      margin: 2px 0 8px;
-      font-size: .65rem;
-      line-height: 1;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      color: var(--bm-red);
+
+    .portal-card:hover .portal-card__img img {
+      transform: scale(1.025);
     }
+
     .portal-card h4 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 1.55rem;
-      line-height: 1.02;
+      font-size: 1.28rem;
+      line-height: 1.08;
       letter-spacing: -.01em;
-      margin: 0;
+      margin: 7px 0 0;
       color: var(--bm-black);
       transition: color .2s ease;
     }
-    .portal-card:hover h4 { color: var(--bm-red); }
-    .portal-card__date {
-      display: block;
-      margin-top: 12px;
-      font-size: .67rem;
-      font-weight: 600;
-      letter-spacing: .07em;
-      text-transform: uppercase;
-      color: #8a8a8a;
+
+    .portal-card:hover h4 {
+      color: var(--bm-red);
     }
+
     .portal-empty {
       color: var(--bm-muted);
+      font-family: 'Barlow', sans-serif;
       grid-column: 1 / -1;
       padding: 30px 0;
     }
 
-    .blog-cierre {
-      margin-top: 72px;
-      padding-top: 28px;
-      border-top: 1px solid var(--bm-black);
-      max-width: 700px;
-    }
-    .blog-cierre h2 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 2rem;
-      line-height: 1;
-      margin: 0 0 10px;
-    }
-    .blog-cierre p {
-      margin: 0;
-      color: var(--bm-muted);
-      line-height: 1.6;
-    }
+    /* ---------- Responsive ---------- */
 
     @media (max-width: 900px) {
-      .portal-wrap { padding-left: 24px; padding-right: 24px; }
-      .portal-grid { column-gap: 28px; }
-      .portal-card { grid-template-columns: 145px 1fr; gap: 16px; }
+      .blog-intro {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      padding: 8px 0 34px;
+      border-bottom: 1px solid var(--bm-line);
     }
+    .blog-kicker {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--bm-red);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .blog-intro h1 {
+      margin: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: .88;
+      letter-spacing: -.035em;
+      font-weight: 800;
+    }
+    .blog-intro p {
+      max-width: 62ch;
+      margin: 22px 0 0;
+      color: var(--bm-muted);
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .portal-wrap {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .portal-hero-layout {
+        grid-template-columns: 1.65fr 1fr;
+        gap: 32px;
+      }
+
+      .portal-hero__titulo {
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+    }
+
     @media (max-width: 700px) {
-      .portal-wrap { padding: 38px 18px 58px; }
-      .blog-intro { margin-bottom: 48px; }
-      .blog-intro h1 { font-size: clamp(3rem, 15vw, 4.2rem); }
-      .blog-intro p { font-size: 1rem; }
-      .portal-grid { grid-template-columns: 1fr; row-gap: 34px; }
-      .portal-card { grid-template-columns: 132px 1fr; gap: 14px; padding-bottom: 22px; }
-      .portal-card h4 { font-size: 1.35rem; }
+      .blog-intro {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      padding: 8px 0 34px;
+      border-bottom: 1px solid var(--bm-line);
     }
-    @media (max-width: 420px) {
-      .portal-card { grid-template-columns: 112px 1fr; }
-      .portal-card h4 { font-size: 1.2rem; }
+    .blog-kicker {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--bm-red);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .blog-intro h1 {
+      margin: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: .88;
+      letter-spacing: -.035em;
+      font-weight: 800;
+    }
+    .blog-intro p {
+      max-width: 62ch;
+      margin: 22px 0 0;
+      color: var(--bm-muted);
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .portal-wrap {
+        padding: 30px 18px 58px;
+      }
+
+      .portal-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .portal-hero__titulo {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+      }
+
+      .portal-hero__resumen {
+        font-size: .96rem;
+      }
+
+      .portal-relevante {
+        margin-top: 2px;
+      }
+
+      .portal-grid {
+        grid-template-columns: 1fr;
+        row-gap: 34px;
+      }
+
+      .portal-card h4 {
+        font-size: 1.35rem;
+      }
+
+      .portal-divider {
+        margin: 38px 0 30px;
+      }
+    }
+
+    @media (min-width: 640px) and (max-width: 700px) {
+      .portal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 22px;
+      }
     }
   </style>
 
   <div class="portal-wrap" id="portal">
-    <section class="blog-intro">
-      <span class="blog-kicker">Blog personal · Opiniones abiertas</span>
-      <h1>Barberena<br>desde otra mirada.</h1>
-      <p>Un espacio para hablar de Barberena y El Cerinal como son: lo bueno, lo malo, las historias que nos identifican y esas cosas que a veces todos comentamos pero nadie escribe.</p>
-      <a class="blog-manifiesto" href="{{ '/manifiesto.html' | relative_url }}">Conocé nuestra postura</a>
-    </section>
 
+    {% assign featured_post = site.posts | where: "featured", true | first %}
+    {% unless featured_post %}
+      {% assign featured_post = site.posts.first %}
+    {% endunless %}
+
+    {% assign relevant_candidates = site.posts | where: "relevant", true | where_exp: "p", "p.url != featured_post.url" %}
+    {% assign relevant_posts = relevant_candidates | slice: 0, 3 %}
+    {% assign relevant_urls = relevant_posts | map: "url" %}
+
+    {% if featured_post %}
+    <div class="portal-hero-layout" id="portal-portada">
+      <a href="{{ featured_post.url | relative_url }}" class="portal-hero">
+        {% if featured_post.image %}
+        <div class="portal-hero__img">
+          <img src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title | escape }}">
+        </div>
+        {% endif %}
+        <div class="portal-etiquetas">
+          <span class="portal-destacado-badge">Destacado</span>
+          <span class="portal-tag">{{ featured_post.category | default: "General" | capitalize }}</span>
+        </div>
+        <h2 class="portal-hero__titulo">{{ featured_post.title }}</h2>
+        {% if featured_post.excerpt %}
+        <p class="portal-hero__resumen">{{ featured_post.excerpt | strip_html | truncatewords: 24 }}</p>
+        {% endif %}
+      </a>
+
+      {% if relevant_posts.size > 0 %}
+      <aside class="portal-relevante">
+        <h2>Para leer con calma</h2>
+        {% for post in relevant_posts %}
+        <a href="{{ post.url | relative_url }}" class="portal-relevante-item">
+          <span class="portal-tag">{{ post.category | default: "General" | capitalize }}</span>
+          <h3>{{ post.title }}</h3>
+          <span class="portal-fecha">{{ post.date | date: "%b %d" }}</span>
+        </a>
+        {% endfor %}
+      </aside>
+      {% endif %}
+    </div>
+    <hr class="portal-divider" id="portal-portada-divider">
+    {% endif %}
+
+    <div class="blog-intro" id="publicaciones">
+      <span class="blog-kicker">Blog personal · Opiniones abiertas</span>
+      <h1>Barberena desde otra mirada.</h1>
+      <p>Un espacio para hablar de Barberena como es: lo bueno, lo malo, las historias que nos identifican y esas cosas que a veces todos comentamos pero nadie escribe.</p>
+    </div>
     <h2 class="portal-section-titulo" id="portal-grid-titulo">Últimamente por aquí</h2>
     <div class="portal-grid" id="portal-grid"></div>
-
-    <section class="blog-cierre">
-      <h2>Esto no es un noticiero.</h2>
-      <p>Es un blog local. Publicamos opiniones, historias, observaciones y temas que creemos que vale la pena poner sobre la mesa. Las opiniones pueden variar. Los hechos no.</p>
-    </section>
   </div>
 
   <script>
+    // Excluimos del grid de "recientes" la destacada y las de "lo más relevante"
+    const PORTAL_EXCLUIR = [
+      {{ featured_post.url | relative_url | jsonify }}{% if relevant_urls.size > 0 %},{% endif %}
+      {% for u in relevant_urls %}{{ u | relative_url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+    ];
+
     const PORTAL_POSTS = [
       {% for post in site.posts %}
       {
         titulo: {{ post.title | jsonify }},
+        resumen: {{ post.excerpt | strip_html | truncatewords: 18 | jsonify }},
         categoria: {{ post.category | default: "general" | jsonify }},
         imagen: {{ post.image | relative_url | jsonify }},
-        url: {{ post.url | relative_url | jsonify }},
-        fecha: {{ post.date | date: "%d/%m/%Y" | jsonify }}
+        url: {{ post.url | relative_url | jsonify }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
 
     const portalGrid = document.getElementById('portal-grid');
+    const portalPortada = document.getElementById('portal-portada');
+    const portalPortadaDivider = document.getElementById('portal-portada-divider');
+    const portalGridTitulo = document.getElementById('portal-grid-titulo');
     const PORTAL_NOMBRES_CATEGORIA = { gobierno: 'Gobierno', denuncias: 'Denuncias', comunidad: 'Comunidad', politica: 'Política', historia: 'Historia' };
 
     function portalPintarGrid(filtro) {
-      const lista = filtro === 'todas'
-        ? PORTAL_POSTS
+      const esTodas = filtro === 'todas';
+
+      if (portalPortada) portalPortada.style.display = esTodas ? '' : 'none';
+      if (portalPortadaDivider) portalPortadaDivider.style.display = esTodas ? '' : 'none';
+      if (portalGridTitulo) portalGridTitulo.textContent = esTodas ? 'Últimamente por aquí' : (PORTAL_NOMBRES_CATEGORIA[filtro] || filtro);
+
+      const lista = esTodas
+        ? PORTAL_POSTS.filter(function (p) { return PORTAL_EXCLUIR.indexOf(p.url) === -1; })
         : PORTAL_POSTS.filter(function (p) { return p.categoria === filtro; });
 
       if (!lista.length) {
         portalGrid.innerHTML = '<p class="portal-empty">Todavía no hay publicaciones en esta categoría.</p>';
         return;
       }
-
       portalGrid.innerHTML = lista.map(function (p) {
-        const categoria = PORTAL_NOMBRES_CATEGORIA[p.categoria] || p.categoria;
         return '<a href="' + p.url + '" class="portal-card">' +
-          (p.imagen ? '<div class="portal-card__img"><img src="' + p.imagen + '" alt="' + p.titulo + '" loading="lazy"></div>' : '<div class="portal-card__img"></div>') +
-          '<div class="portal-card__copy">' +
-          '<span class="portal-tag">' + categoria + '</span>' +
+          (p.imagen ? '<div class="portal-card__img"><img src="' + p.imagen + '" alt="' + p.titulo + '" loading="lazy"></div>' : '') +
+          '<span class="portal-tag">' + p.categoria + '</span>' +
           '<h4>' + p.titulo + '</h4>' +
-          '<span class="portal-card__date">' + p.fecha + '</span>' +
-          '</div></a>';
+          '</a>';
       }).join('');
     }
 
@@ -255,6 +551,7 @@ show_hero: false
     }
 
     portalPintarGrid(categoriaDesdeHash());
+
     window.addEventListener('hashchange', function () {
       portalPintarGrid(categoriaDesdeHash());
       document.getElementById('portal').scrollIntoView({ behavior: 'smooth', block: 'start' });
