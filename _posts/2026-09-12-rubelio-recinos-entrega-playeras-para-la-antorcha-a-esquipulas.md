@@ -7,8 +7,12 @@ image: /images/blog/1000037876.webp
 excerpt: Hace un par de días, Rubelio Recinos publicó un video a través de su
   cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en
   una comunidad...
-category: politica
 card_color: blanco
+category: barberena
+tags:
+  - Comunidad
+  - Tradiciones
+  - Acontecimientos
 ---
 Hace un par de días, Rubelio Recinos publicó un video a través de su cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en una comunidad que, según él, vive en situaciones un poco complicadas.
 

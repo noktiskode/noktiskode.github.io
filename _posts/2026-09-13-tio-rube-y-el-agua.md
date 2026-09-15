@@ -6,8 +6,12 @@ date: 2026-09-13T15:03:00.000-06:00
 image: /images/blog/1000038487.webp
 excerpt: Durante un recorrido por una comunidad del municipio, Rubelio Recinos
   conversó con varios vecinos sobre la situación del agua potable en la zona...
-category: politica
 card_color: rojo
+category: opiniones
+tags:
+  - Agua
+  - Política local
+  - Barberena
 ---
 Durante un recorrido por una comunidad del municipio, Rubelio Recinos conversó con varios vecinos sobre la situación del agua potable en la zona.
 

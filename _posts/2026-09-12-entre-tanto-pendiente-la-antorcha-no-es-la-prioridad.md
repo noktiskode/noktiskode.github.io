@@ -6,8 +6,12 @@ image: /images/blog/1000037909.png
 excerpt: Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz
   Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio,
   aquí en Barberena...
-category: politica
 card_color: blanco
+category: opiniones
+tags:
+  - Política local
+  - Tradiciones
+  - Antorchas
 ---
 Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio, aquí en Barberena fue el vicealcalde quien tuvo que ir a representar.
 

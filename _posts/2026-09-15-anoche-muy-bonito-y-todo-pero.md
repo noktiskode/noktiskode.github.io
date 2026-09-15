@@ -7,8 +7,12 @@ image: /images/blog/1000038985.webp
 excerpt: "Esto de las antorchas debería estar regulado, porque cada año es un
   caos: el bullicio y la contaminación ambiental que dejan a su paso, más aún
   por las personas que se prestan..."
-category: denuncias
 card_color: rojo
+category: opiniones
+tags:
+  - Comunidad
+  - Tradiciones
+  - Antorchas
 ---
 Esto de las antorchas debería estar regulado, porque cada año es un caos: el bullicio y la contaminación ambiental que dejan a su paso, más aún por las personas que se prestan también a lanzar bolsas de agua, caca, orines y piedras.
 

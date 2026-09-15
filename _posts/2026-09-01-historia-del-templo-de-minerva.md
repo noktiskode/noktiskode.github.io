@@ -8,8 +8,12 @@ excerpt: El Templo de Minerva se ubica en la cabecera municipal de Barberena,
   sobre la ruta principal que conduce hacia la frontera con El Salvador. Su
   posición estratégica le da buen acceso durante todo el año, sin importar la
   temporada...
-category: historia
 card_color: blanco
+category: historias
+tags:
+  - Historia
+  - Patrimonio
+  - Templo de Minerva
 ---
 El Templo de Minerva se ubica en la cabecera municipal de Barberena, sobre la ruta principal que conduce hacia la frontera con El Salvador. Su posición estratégica le da buen acceso durante todo el año, sin importar la temporada.
 

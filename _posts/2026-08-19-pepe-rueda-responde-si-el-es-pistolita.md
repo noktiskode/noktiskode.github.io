@@ -6,7 +6,10 @@ excerpt: Desde hace un tiempo, el exalcalde Rubelio Recinos ha mencionado varias
   veces a alguien a quien llama "Pistolita,"...
 video_url: https://www.facebook.com/reel/3437138596458244/?mibextid=rS40aB7S9Ucbxw6v
 card_color: rojo
-category: politica
+category: opiniones
+tags:
+  - Política local
+  - Barberena
 ---
 Desde hace un tiempo, el exalcalde Rubelio Recinos ha mencionado varias veces a alguien a quien llama "Pistolita," sin que se sepa con certeza a quién se refiere. La más reciente, durante una actividad comunitaria de reparto: "Díganle a Pistolita que voy un paso adelante."
 
