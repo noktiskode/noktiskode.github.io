@@ -1,0 +1,65 @@
+{% assign cat = include.category %}
+{% assign label = include.label %}
+<section class="category-page">
+  <header class="category-masthead">
+    <p class="category-kicker">Barberena Mi Municipio</p>
+    <h1>{{ label }}</h1>
+    <p class="category-intro">{{ include.description }}</p>
+  </header>
+
+  <div class="category-section-head"><span>Publicaciones</span></div>
+
+  {% assign category_posts = site.posts | where: "category", cat %}
+  {% if category_posts.size == 0 %}
+    <p class="category-empty">Todavía no hay publicaciones en esta sección.</p>
+  {% else %}
+    <div class="category-list">
+      {% for post in category_posts %}
+        <article class="category-item category-item--{{ post.card_color | default: 'rojo' }}">
+          <a href="{{ post.url | relative_url }}" class="category-item__link">
+            {% if post.image %}
+            <div class="category-item__img"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy"></div>
+            {% endif %}
+            <div class="category-item__body">
+              <div class="category-item__meta">
+                {% assign mes_num = post.date | date: "%m" | minus: 1 %}
+                <span>{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</span>
+              </div>
+              <h2>{{ post.title }}</h2>
+              {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>{% endif %}
+              <span class="category-item__cta">Leer publicación <b>→</b></span>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+<style>
+.category-page { --red:#e8452a; --black:#111; --muted:#6c6c6c; --line:#d9d7d3; max-width:1180px; margin:0 auto; padding:48px 32px 78px; font-family:'Barlow',sans-serif; }
+.category-masthead { max-width:780px; padding-bottom:30px; border-bottom:1px solid var(--black); }
+.category-kicker { margin:0 0 13px; color:var(--red); font-size:.68rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+.category-masthead h1 { margin:0; font-family:'Barlow Condensed',sans-serif; font-size:clamp(3.3rem,8vw,6rem); line-height:.86; font-weight:800; letter-spacing:-.04em; text-transform:uppercase; }
+.category-intro { max-width:60ch; margin:20px 0 0; color:var(--muted); font-family:'Lora',serif; font-size:1rem; line-height:1.7; }
+.category-section-head { display:flex; align-items:center; gap:16px; margin:34px 0 22px; }
+.category-section-head span { font-family:'Barlow Condensed',sans-serif; font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.category-section-head::after { content:""; height:1px; flex:1; background:var(--line); }
+.category-list { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:0 28px; }
+.category-item { grid-column:span 4; border-top:3px solid var(--red); border-bottom:1px solid var(--line); min-width:0; }
+.category-item--negro { border-top-color:#111; } .category-item--blanco { border-top-color:#aaa; }
+.category-item:nth-child(-n+2) { grid-column:span 6; }
+.category-item__link { display:flex; flex-direction:column; height:100%; color:inherit; text-decoration:none; }
+.category-item__img { aspect-ratio:16/9; overflow:hidden; background:#f1f0ed; }
+.category-item__img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+.category-item__link:hover .category-item__img img { transform:scale(1.035); }
+.category-item__body { display:flex; flex-direction:column; flex:1; padding:18px 0 24px; }
+.category-item__meta { margin-bottom:9px; color:#777; font-size:.66rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.category-item h2 { margin:0 0 10px; color:#111; font-family:'Barlow Condensed',sans-serif; font-size:clamp(1.5rem,2.3vw,2rem); line-height:.98; font-weight:800; letter-spacing:-.015em; text-transform:uppercase; }
+.category-item p { flex:1; margin:0 0 18px; color:#5e5e5e; font-size:.92rem; line-height:1.55; }
+.category-item__cta { color:#111; font-family:'Barlow Condensed',sans-serif; font-size:.75rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.category-item__cta b { color:var(--red); font-size:1rem; margin-left:5px; }
+.category-empty { color:var(--muted); padding:34px 0; border-bottom:1px solid var(--line); }
+@media(max-width:820px){ .category-page{padding:38px 24px 62px;} .category-item,.category-item:nth-child(-n+2){grid-column:span 6;} }
+@media(max-width:560px){ .category-page{padding:30px 18px 52px;} .category-item,.category-item:nth-child(-n+2){grid-column:1/-1;} .category-list{gap:0;} }
+</style>
