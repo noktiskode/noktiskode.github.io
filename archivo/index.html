@@ -1,0 +1,58 @@
+---
+layout: default
+title: Archivo
+show_hero: false
+permalink: /archivo/
+---
+
+<section class="archive-page">
+  <header class="archive-masthead">
+    <p class="archive-kicker">Barberena Mi Municipio</p>
+    <h1>Archivo</h1>
+    <p>La biblioteca completa del blog, con todas las publicaciones ordenadas de la más reciente a la más antigua.</p>
+  </header>
+
+  {% assign previous_month = "" %}
+  <div class="archive-list">
+    {% for post in site.posts %}
+      {% assign month_key = post.date | date: "%Y-%m" %}
+      {% if month_key != previous_month %}
+        {% assign month_num = post.date | date: "%m" | minus: 1 %}
+        <h2 class="archive-month">{{ site.meses[month_num] }} {{ post.date | date: "%Y" }}</h2>
+        {% assign previous_month = month_key %}
+      {% endif %}
+      <article class="archive-entry">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          <strong>{{ post.date | date: "%d" }}</strong>
+          <span>{% assign m = post.date | date: "%m" | minus: 1 %}{{ site.meses[m] | slice: 0, 3 | upcase }}</span>
+        </time>
+        <div class="archive-entry__body">
+          {% if post.category %}{% assign archive_label = post.category %}{% case post.category %}{% when 'opiniones' %}{% assign archive_label = 'Opiniones' %}{% when 'barberena' %}{% assign archive_label = 'Barberena' %}{% when 'historias' %}{% assign archive_label = 'Historias' %}{% endcase %}<span class="archive-category">{{ archive_label }}</span>{% endif %}
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.archive-page { --red:#e8452a; --black:#111; --muted:#6c6c6c; --line:#d9d7d3; max-width:900px; margin:0 auto; padding:48px 32px 78px; font-family:'Barlow',sans-serif; }
+.archive-masthead { padding-bottom:30px; border-bottom:1px solid var(--black); }
+.archive-kicker { margin:0 0 13px; color:var(--red); font-size:.68rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+.archive-masthead h1 { margin:0; font-family:'Barlow Condensed',sans-serif; font-size:clamp(3.3rem,8vw,6rem); line-height:.86; font-weight:800; letter-spacing:-.04em; text-transform:uppercase; }
+.archive-masthead p:last-child { max-width:62ch; margin:20px 0 0; color:var(--muted); font-family:'Lora',serif; line-height:1.7; }
+.archive-list { margin-top:38px; }
+.archive-month { margin:0; padding:0 0 12px; border-bottom:3px solid var(--black); font-family:'Barlow Condensed',sans-serif; font-size:1.15rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.archive-entry { display:grid; grid-template-columns:70px 1fr; gap:22px; padding:20px 0; border-bottom:1px solid var(--line); }
+.archive-entry time { display:flex; flex-direction:column; align-items:flex-start; color:#888; font-family:'Barlow Condensed',sans-serif; line-height:1; }
+.archive-entry time strong { color:var(--black); font-size:1.8rem; font-weight:800; }
+.archive-entry time span { margin-top:4px; font-size:.68rem; font-weight:800; letter-spacing:.08em; }
+.archive-entry__body { min-width:0; }
+.archive-category { color:var(--red); font-size:.64rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.archive-entry h3 { margin:5px 0 7px; font-family:'Barlow Condensed',sans-serif; font-size:1.55rem; line-height:1; font-weight:800; }
+.archive-entry h3 a { color:var(--black); text-decoration:none; }
+.archive-entry h3 a:hover { color:var(--red); }
+.archive-entry p { margin:0; color:#777; font-size:.9rem; line-height:1.5; }
+@media(max-width:600px){ .archive-page{padding:30px 18px 52px;} .archive-entry{grid-template-columns:52px 1fr;gap:15px;} .archive-entry h3{font-size:1.35rem;} }
+</style>
