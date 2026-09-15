@@ -172,7 +172,12 @@ document.addEventListener("DOMContentLoaded", function () {
       track.innerHTML = "";
 
       if (data.length === 0) {
-        track.appendChild(buildItem({ text: "No hay noticias recientes en este momento." }));
+        const item = buildItem({ text: "No hay noticias recientes en este momento." });
+        track.appendChild(item);
+        const clone = item.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+        setTimeout(calcularVelocidad, 100);
         return;
       }
 
@@ -205,7 +210,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(err => {
       console.error("Error al cargar el ticker JSON:", err);
       track.innerHTML = "";
-      track.appendChild(buildItem({ text: "Información local al día." }));
+      const item = buildItem({ text: "Información local al día." });
+      track.appendChild(item);
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+      setTimeout(calcularVelocidad, 100);
     });
 
 });
