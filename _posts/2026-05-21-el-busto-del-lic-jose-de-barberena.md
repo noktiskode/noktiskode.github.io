@@ -11,4 +11,4 @@ Cuentan los abuelos que el nombre de nuestro municipio no nació por casualidad,
 
 Aunque los libros de historia hablan de antiguas haciendas coloniales, este busto es el corazón de la tradición oral que nos hace sentir orgullosos de ser tishudos.
 
-#DatosCuriosos #HistoriaTishuda #SantaRosaGT #OrgulloLocal #Guatemala
+\#DatosCuriosos #HistoriaTishuda #SantaRosaGT #OrgulloLocal #Guatemala
