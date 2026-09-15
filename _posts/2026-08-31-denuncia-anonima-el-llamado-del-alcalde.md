@@ -6,6 +6,7 @@ excerpt: El alcalde Pepe Rueda Vallejo hizo un llamado a la población de
   Barberena para sumarse a la campaña de denuncia anónima a través de Crime
   Stoppers, ante el incremento de hechos delictivos en el municipio...
 card_color: rojo
+category: gobierno
 ---
 El alcalde de Barberena, Pepe Rueda Vallejo hizo un llamado a la población de Barberena para sumarse a la campaña de denuncia anónima a través de Crime Stoppers, ante el incremento de hechos delictivos en el municipio.
 

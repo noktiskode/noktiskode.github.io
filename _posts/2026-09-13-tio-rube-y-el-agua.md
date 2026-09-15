@@ -5,6 +5,7 @@ image: /images/blog/1000038487.webp
 excerpt: Durante un recorrido por una comunidad del municipio, Rubelio Recinos
   conversó con varios vecinos sobre la situación del agua potable en la zona...
 card_color: rojo
+category: politica
 ---
 Durante un recorrido por una comunidad del municipio, Rubelio Recinos conversó con varios vecinos sobre la situación del agua potable en la zona.
 

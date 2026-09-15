@@ -5,6 +5,7 @@ image: /images/blog/1000037767.jpg
 excerpt: Este viernes 4 de septiembre se liberó un bloqueo de transportistas en
   El Cerinal, Barberena, que se mantenía desde la madrugada...
 card_color: rojo
+category: politica
 ---
 Este viernes 4 de septiembre se liberó un bloqueo de transportistas en El Cerinal, Barberena, que se mantenía desde la madrugada como protesta por el alza a los combustibles.
 

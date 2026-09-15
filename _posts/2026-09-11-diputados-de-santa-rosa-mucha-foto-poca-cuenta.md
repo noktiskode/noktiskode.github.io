@@ -6,6 +6,7 @@ excerpt: >
   Cada cierto tiempo sale uno que otro alcalde a decir que Inés Castillo, Napo
   Rojas o Ricardo Alarcón "están peleando proyectos"... 
 card_color: rojo
+category: politica
 ---
 Cada cierto tiempo sale uno que otro alcalde a decir que Inés Castillo, Napo Rojas o Ricardo Alarcón "están peleando proyectos" para nuestros municipios y basta para que el tema se dé por resuelto. Salir en la foto, sin embargo, no equivale a representar a un departamento.
 

@@ -5,6 +5,7 @@ image: /images/blog/1000037769.jpg
 excerpt: ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los
   combustibles! La mera verdad es que la situación está fregada...
 card_color: blanco
+category: politica
 ---
 ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada.
 
