@@ -24,7 +24,7 @@ collections:
       - file: "content/quejas.json"
         label: "Quejas ciudadanas"
         name: "quejas"
-        description: "Cada fila de esta lista es una tarjeta que aparece en la sección 'Quejas ciudadanas' del sitio."
+        description: "Lista independiente de quejas ciudadanas."
         fields:
           - label: "Quejas"
             name: "items"
@@ -44,21 +44,20 @@ collections:
                   - { label: "En revisión", value: "revision" }
                   - { label: "Respondida por la muni", value: "respondida" }
                   - { label: "Sin respuesta", value: "sinrespuesta" }
-              - { label: "Foto (opcional)", name: "foto", widget: "image", required: false, hint: "Si no subes foto, se muestra el ícono de abajo." }
-              - { label: "Ícono si no hay foto", name: "icono", widget: "string", default: "📢", hint: "Un solo emoji, ej. 🕳️ 💡 🗑️ 🚦" }
+              - { label: "Foto (opcional)", name: "foto", widget: "image", required: false }
+              - { label: "Ícono si no hay foto", name: "icono", widget: "string", default: "📢" }
 
   - name: "blog"
-    label: "Entradas del blog"
-    label_singular: "Entrada"
+    label: "Publicaciones del blog"
+    label_singular: "Publicación"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     media_folder: "/images/blog"
     public_folder: "/images/blog"
     fields:
-    # --- OPICIONES PARA LA PORTADA ---
-      - { label: "Destacado Principal (Portada)", name: "featured", widget: "boolean", default: false, required: false, hint: "Muestra esta nota como el artículo principal arriba a la izquierda." }
-      - { label: "Lo Más Relevante (Columna)", name: "relevant", widget: "boolean", default: false, required: false, hint: "Muestra esta nota en la lista lateral 'Lo más relevante'." }
+      - { label: "Destacada en portada", name: "featured", widget: "boolean", default: false, required: false, hint: "Muestra esta publicación como el contenido principal de la portada." }
+      - { label: "También en 'Para leer con calma'", name: "relevant", widget: "boolean", default: false, required: false, hint: "Añade esta publicación a la selección secundaria de la portada." }
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Imagen destacada", name: "image", widget: "image", required: false }
@@ -68,12 +67,15 @@ collections:
         widget: "select"
         required: true
         options:
-          - { label: "Gobierno", value: "gobierno" }
-          - { label: "Denuncias", value: "denuncias" }
-          - { label: "Comunidad", value: "comunidad" }
-          - { label: "Política", value: "politica" }
-          - { label: "Historia", value: "historia" }
-      - { label: "Video (Facebook o YouTube, opcional)", name: "video_url", widget: "string", required: false, hint: "Pega el link completo del video, de Facebook o de YouTube" }
+          - { label: "Opiniones", value: "opiniones" }
+          - { label: "Barberena", value: "barberena" }
+          - { label: "Historias", value: "historias" }
+      - label: "Etiquetas"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "Temas secundarios de la publicación. No aparecen como secciones principales del menú."
+      - { label: "Video (Facebook o YouTube, opcional)", name: "video_url", widget: "string", required: false, hint: "Pega el link completo del video." }
       - label: "Color de tarjeta"
         name: "card_color"
         widget: "select"
@@ -83,4 +85,3 @@ collections:
           - { label: "Blanco", value: "blanco" }
           - { label: "Negro", value: "negro" }
       - { label: "Contenido", name: "body", widget: "markdown" }
-      
