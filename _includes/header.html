@@ -1,26 +1,19 @@
-  <nav>
-    <a href="{{ '/index.html' | relative_url }}" class="nav-logo">
-      <img id="navLogo" src="{{ '/images/logo.svg' | relative_url }}" alt="Barberena Mi Municipio"></a>
-    <ul class="nav-links">
-      <li><a href="{{ '/manifiesto.html' | relative_url }}">Manifiesto</a></li>
-      <li><a href="{{ '/historia.html' | relative_url }}">Historia</a></li>
-      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-      <li><a href="{{ '/index.html' | relative_url }}#participa">Participa</a></li>
-      <li><a href="mailto:barberenamimunicipio@proton.me?subject=Denuncia%20%2F%20Queja%20ciudadana&body=Hola%2C%20quiero%20reportar%20lo%20siguiente%3A%0A%0ALugar%3A%20%0AFecha%3A%20%0ADescripci%C3%B3n%3A%20">Contacto</a></li>
-    </ul>
-    <a href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" class="nav-fb">Facebook →</a>
-    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <header class="site-header">
+    <div class="site-header__wrap">
+      <a href="{{ '/index.html' | relative_url }}" class="site-brand">
+        <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="Barberena Mi Municipio" class="site-brand__icon">
+        <span class="site-brand__text">Barberena<br>Mi Municipio</span>
+      </a>
+    </div>
 
-  <ul class="nav-links-mobile" id="navMobile">
-    <li><a href="{{ '/manifiesto.html' | relative_url }}">Manifiesto</a></li>
-    <li><a href="{{ '/historia.html' | relative_url }}">Historia</a></li>
-    <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-    <li><a href="{{ '/index.html' | relative_url }}#participa">Participa</a></li>
-    <li><a href="mailto:barberenamimunicipio@proton.me?subject=Denuncia%20%2F%20Queja%20ciudadana&body=Hola%2C%20quiero%20reportar%20lo%20siguiente%3A%0A%0ALugar%3A%20%0AFecha%3A%20%0ADescripci%C3%B3n%3A%20">Contacto</a></li>
-  </ul>
+    <nav class="site-cats" id="siteCats">
+      <a href="{{ '/index.html' | relative_url }}#cat-todas" data-cat="todas">Todas</a>
+      <a href="{{ '/index.html' | relative_url }}#cat-gobierno" data-cat="gobierno">Gobierno</a>
+      <a href="{{ '/index.html' | relative_url }}#cat-denuncias" data-cat="denuncias">Denuncias</a>
+      <a href="{{ '/index.html' | relative_url }}#cat-comunidad" data-cat="comunidad">Comunidad</a>
+      <a href="{{ '/index.html' | relative_url }}#cat-politica" data-cat="politica">Política</a>
+      <a href="{{ '/index.html' | relative_url }}#cat-historia" data-cat="historia">Historia</a>
+    </nav>
+  </header>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6187255978940623"
      crossorigin="anonymous"></script>
-     
