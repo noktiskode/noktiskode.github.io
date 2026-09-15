@@ -80,3 +80,7 @@ collections:
           - { label: "Blanco", value: "blanco" }
           - { label: "Negro", value: "negro" }
       - { label: "Contenido", name: "body", widget: "markdown" }
+      # --- OPICIONES PARA LA PORTADA ---
+      - { label: "Destacado Principal (Portada)", name: "featured", widget: "boolean", default: false, hint: "Muestra esta nota como el artículo principal arriba a la izquierda." }
+      - { label: "Lo Más Relevante (Columna)", name: "relevant", widget: "boolean", default: false, hint: "Muestra esta nota en la lista lateral 'Lo más relevante'." }
+      - { label: "Cuerpo de la Nota", name: "body", widget: "markdown" }
