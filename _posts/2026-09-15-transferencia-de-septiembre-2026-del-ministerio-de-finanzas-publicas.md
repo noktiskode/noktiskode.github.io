@@ -7,12 +7,12 @@ image: /images/blog/1000038995.png
 excerpt: La Municipalidad de Barberena recibió Q4,187,251.21 en la transferencia
   de septiembre 2026 del Ministerio de Finanzas Públicas, efectiva desde el 11
   de septiembre...
-card_color: rojo
 category: barberena
 tags:
   - Municipalidad
   - Finanzas públicas
   - Presupuesto
+card_color: blanco
 ---
 La Municipalidad de Barberena recibió Q4,187,251.21 en la transferencia de septiembre 2026 del Ministerio de Finanzas Públicas, efectiva desde el 11 de septiembre.
 
