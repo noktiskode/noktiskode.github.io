@@ -1,6 +1,6 @@
 ---
 featured: false
-relevant: true
+relevant: false
 title: Rubelio Recinos entrega playeras para la antorcha a Esquipulas
 date: 2026-09-12T11:44:00.000-06:00
 image: /images/blog/1000037876.webp
