@@ -2,7 +2,7 @@
 layout: default
 title: Inicio
 description: "De tishudos para tishudos. Entérate de todo lo que pasa en Barberena y El Cerinal: noticias, obras y el día a día de nuestra gente."
-hero_carrusel: false
+hero_image: /images/portada.webp
 show_hero: false
 ---
 
@@ -10,27 +10,6 @@ show_hero: false
 
   <style>
     .portal-wrap { max-width: 1000px; margin: 0 auto; padding: 32px 24px 8px; font-family: 'Barlow', sans-serif; }
-
-    .portal-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--linea, #e4e2df); margin-bottom: 24px; }
-    .portal-nav::-webkit-scrollbar { display: none; }
-
-    .portal-nav button {
-      background: none;
-      border: none;
-      font-family: 'Barlow', sans-serif;
-      font-weight: 600;
-      font-size: 0.85rem;
-      color: var(--gris, #666);
-      padding: 10px 14px;
-      white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      cursor: pointer;
-    }
-
-    .portal-nav button.active, .portal-nav button:hover {
-      color: #000;
-      border-bottom-color: var(--rojo, #ef4f1d);
-    }
 
     .portal-hero { display: block; text-decoration: none; color: inherit; margin-bottom: 32px; }
 
@@ -82,15 +61,6 @@ show_hero: false
   </style>
 
   <div class="portal-wrap" id="portal">
-    <nav class="portal-nav" id="portal-filtros">
-      <button class="active" data-cat="todas">Todas</button>
-      <button data-cat="gobierno">Gobierno</button>
-      <button data-cat="denuncias">Denuncias</button>
-      <button data-cat="comunidad">Comunidad</button>
-      <button data-cat="politica">Política</button>
-      <button data-cat="historia">Historia</button>
-    </nav>
-
     {% assign portal_primero = site.posts.first %}
     {% if portal_primero %}
     <a href="{{ portal_primero.url | relative_url }}" class="portal-hero">
@@ -140,14 +110,18 @@ show_hero: false
       }).join('');
     }
 
-    portalPintarGrid('todas');
+    function categoriaDesdeHash() {
+      return window.location.hash.replace('#cat-', '') || 'todas';
+    }
 
-    document.querySelectorAll('#portal-filtros button').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        document.querySelectorAll('#portal-filtros button').forEach(function (b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        portalPintarGrid(btn.dataset.cat);
-      });
+    portalPintarGrid(categoriaDesdeHash());
+    if (window.location.hash) {
+      document.getElementById('portal').scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
+
+    window.addEventListener('hashchange', function () {
+      portalPintarGrid(categoriaDesdeHash());
+      document.getElementById('portal').scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   </script>
 
@@ -361,7 +335,7 @@ show_hero: false
     .hib-tab-panel .hib-no-publicamos { margin-top: 0; }
   </style>
 
-  <div class="hib-tabs-wrap" id="participa">
+  <div class="hib-tabs-wrap" id="hib-tabs-wrap">
     <div class="hib-bubble" id="hib-bubble">
 
       <div class="hib-tab-panel" id="hib-tab-publicamos">
