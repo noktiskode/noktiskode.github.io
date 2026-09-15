@@ -1,5 +1,5 @@
 ---
-relevant: true
+relevant: false
 title: "Diputados de Santa Rosa: mucha foto, poca cuenta"
 date: 2026-09-11T14:27:00.000-06:00
 image: /images/blog/1000037759.png
