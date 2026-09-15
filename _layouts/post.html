@@ -3,84 +3,258 @@ layout: default
 ---
 
 <style>
-  .post-articulo {
-    max-width: 700px;
+  .post-page {
+    --editorial-red: #e8452a;
+    --editorial-black: #111;
+    --editorial-muted: #6c6c6c;
+    --editorial-line: #d9d7d3;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 32px 24px;
-  }
-
-  .post-hero {
-    margin: 0 0 28px;
-    border-top: 4px solid var(--rojo, #e8452a);
-    border-radius: 4px;
-  }
-
-  .post-hero--negro { border-top-color: #111111; }
-  .post-hero--blanco { border-top-color: #cccccc; }
-  .post-hero--sin-imagen { padding-top: 24px; }
-
-  .post-hero__img {
-    aspect-ratio: 3 / 2;
-    overflow: hidden;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  }
-
-  .post-hero__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-  }
-
-  .post-hero__fecha {
+    padding: 48px 32px 78px;
     font-family: 'Barlow', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--rojo, #e8452a);
-    margin: 18px 0 8px;
   }
 
-  .post-hero--negro .post-hero__fecha { color: #111111; }
-  .post-hero--blanco .post-hero__fecha { color: #888888; }
+  .post-shell {
+    max-width: 820px;
+    margin: 0 auto;
+  }
 
-  .post-hero__titulo {
+  .post-header {
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--editorial-black);
+  }
+
+  .post-header__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px 14px;
+    margin-bottom: 17px;
+  }
+
+  .post-header__category,
+  .post-header__date {
+    margin: 0;
+    font-size: .68rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .post-header__category { color: var(--editorial-red); }
+  .post-header__date { color: #777; }
+
+  .post-header__date::before {
+    content: "·";
+    margin-right: 14px;
+    color: #aaa;
+  }
+
+  .post-title {
+    margin: 0;
+    color: var(--editorial-black);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(2.7rem, 7vw, 5.2rem);
+    line-height: .88;
+    font-weight: 800;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+  }
+
+  .post-lead {
+    margin: 20px 0 0;
+    color: #555;
+    font-size: 1.08rem;
+    line-height: 1.6;
+    max-width: 62ch;
+  }
+
+  .post-media {
+    margin: 30px 0 38px;
+    border-top: 3px solid var(--editorial-red);
+  }
+
+  .post-media--negro { border-top-color: #111; }
+  .post-media--blanco { border-top-color: #aaa; }
+
+  .post-media__img {
+    width: 100%;
+    max-height: 620px;
+    overflow: hidden;
+    background: #f1f0ed;
+  }
+
+  .post-media__img img {
+    width: 100%;
+    max-height: 620px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .post-content {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #292929;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.78;
+  }
+
+  .post-content p {
+    margin: 0 0 1.25rem;
+    white-space: pre-line;
+  }
+
+  .post-content > p:first-child::first-letter {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3.7rem;
+    line-height: .78;
+    font-weight: 800;
+    float: left;
+    margin: .12rem .08rem 0 0;
+    color: var(--editorial-red);
+  }
+
+  .post-content h2,
+  .post-content h3 {
+    margin: 2.2rem 0 .8rem;
+    color: #111;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
+    line-height: 1;
     text-transform: uppercase;
-    font-size: clamp(1.6rem, 5vw, 2.4rem);
-    line-height: 1.15;
-    margin: 0;
-    color: #111111;
   }
 
-  .post-articulo p {
-    white-space: pre-line;
-    margin-bottom: 1rem;
+  .post-content h2 { font-size: 2rem; }
+  .post-content h3 { font-size: 1.5rem; }
+
+  .post-content a {
+    color: #111;
+    text-decoration-color: var(--editorial-red);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .post-content strong { font-weight: 800; }
+  .post-content em { font-family: 'Lora', serif; }
+
+  .post-content blockquote {
+    margin: 2rem 0;
+    padding: 4px 0 4px 22px;
+    border-left: 3px solid var(--editorial-red);
+    color: #555;
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .post-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    margin: 0 0 1.3rem 1.25rem;
+  }
+
+  .post-content li { margin-bottom: .4rem; }
+
+  .post-content hr {
+    margin: 2.8rem 0;
+    border: 0;
+    border-top: 1px solid var(--editorial-line);
+  }
+
+  .post-after {
+    max-width: 720px;
+    margin: 38px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--editorial-line);
+  }
+
+  .post-after__label {
+    margin: 0 0 8px;
+    color: var(--editorial-red);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .post-after__text {
+    margin: 0;
+    color: #777;
+    font-size: .88rem;
+    line-height: 1.6;
+  }
+
+  .post-comments {
+    margin-top: 46px;
+  }
+
+  @media (max-width: 700px) {
+    .post-page { padding: 34px 18px 58px; }
+    .post-title { font-size: clamp(2.5rem, 13vw, 4.2rem); }
+    .post-lead { font-size: 1rem; }
+    .post-media { margin-top: 24px; }
+    .post-content { font-size: 1rem; line-height: 1.72; }
   }
 </style>
 
-<article class="post-articulo">
-  {% assign imagen = page.image | default: page.hero_image %}
-  <div class="post-hero post-hero--{{ page.card_color | default: "rojo" }}{% unless imagen and page.video_url == nil %} post-hero--sin-imagen{% endunless %}">
-     {% if imagen and page.video_url == nil %}
-    <div class="post-hero__img">
-      <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
-    </div>
-    {% endif %}
-    {% assign mes_num = page.date | date: "%m" | minus: 1 %}
-    <p class="post-hero__fecha">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
-    <h1 class="post-hero__titulo">{{ page.title }}</h1>
-  </div>
-  
-{% if page.video_url %}
-  {% include video-embed.html url=page.video_url %}
+{% assign imagen = page.image | default: page.hero_image %}
+{% assign tiene_imagen = false %}
+{% if imagen and page.video_url == nil %}
+  {% assign tiene_imagen = true %}
 {% endif %}
-  
-  {{ content }}
 
-  {% include comentarios.html %}
+<article class="post-page">
+  <div class="post-shell">
+    <header class="post-header">
+      <div class="post-header__top">
+        {% if page.category %}
+          <p class="post-header__category">{{ page.category }}</p>
+        {% endif %}
+        {% assign mes_num = page.date | date: "%m" | minus: 1 %}
+        <p class="post-header__date">{{ page.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ page.date | date: "%Y" }}</p>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="post-lead">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    {% if tiene_imagen %}
+      <figure class="post-media post-media--{{ page.card_color | default: "rojo" }}">
+        <div class="post-media__img">
+          <img src="{{ imagen | relative_url }}" alt="{{ page.hero_alt | default: page.title | default: 'Barberena Mi Municipio' }}">
+        </div>
+      </figure>
+    {% endif %}
+
+    {% if page.video_url %}
+      <div class="post-media post-media--{{ page.card_color | default: "rojo" }}">
+        {% include video-embed.html url=page.video_url %}
+      </div>
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <div class="post-after">
+      <p class="post-after__label">Barberena Mi Municipio</p>
+      <p class="post-after__text">Información, opiniones y acontecimientos de Barberena y El Cerinal. Página independiente.</p>
+    </div>
+
+    <div class="post-comments">
+      {% include comentarios.html %}
+    </div>
+  </div>
 </article>
