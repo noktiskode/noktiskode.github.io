@@ -1,12 +1,14 @@
 ---
+featured: true
+relevant: false
 title: Rubelio Recinos entrega playeras para la antorcha a Esquipulas
 date: 2026-09-12T11:44:00.000-06:00
 image: /images/blog/1000037876.webp
 excerpt: Hace un par de días, Rubelio Recinos publicó un video a través de su
   cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en
   una comunidad...
-card_color: blanco
 category: politica
+card_color: blanco
 ---
 Hace un par de días, Rubelio Recinos publicó un video a través de su cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en una comunidad que, según él, vive en situaciones un poco complicadas.
 
