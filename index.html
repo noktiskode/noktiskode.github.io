@@ -18,8 +18,33 @@ show_hero: false
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: var(--rojo, #ef4f1d);
-      margin: 0 0 6px;
+      margin: 0;
     }
+
+    .portal-etiquetas { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; }
+
+    .portal-destacado-badge {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 3px;
+    }
+
+    .portal-section-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0 0 1.2rem;
+    }
+
+    .portal-divider { border: none; border-top: 1px solid var(--linea, #e4e2df); margin: 32px 0; }
 
     /* --- Fila superior: destacada + lo más relevante --- */
     .portal-hero-layout { display: grid; grid-template-columns: 1fr; gap: 28px; margin-bottom: 32px; }
@@ -107,14 +132,17 @@ show_hero: false
     {% assign relevant_urls = relevant_posts | map: "url" %}
 
     {% if featured_post %}
-    <div class="portal-hero-layout">
+    <div class="portal-hero-layout" id="portal-portada">
       <a href="{{ featured_post.url | relative_url }}" class="portal-hero">
         {% if featured_post.image %}
         <div class="portal-hero__img">
           <img src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title | escape }}">
         </div>
         {% endif %}
-        <span class="portal-tag">{{ featured_post.category | default: "General" | capitalize }}</span>
+        <div class="portal-etiquetas">
+          <span class="portal-destacado-badge">Destacado</span>
+          <span class="portal-tag">{{ featured_post.category | default: "General" | capitalize }}</span>
+        </div>
         <h2 class="portal-hero__titulo">{{ featured_post.title }}</h2>
         {% if featured_post.excerpt %}
         <p class="portal-hero__resumen">{{ featured_post.excerpt | strip_html | truncatewords: 24 }}</p>
@@ -134,8 +162,10 @@ show_hero: false
       </aside>
       {% endif %}
     </div>
+    <hr class="portal-divider" id="portal-portada-divider">
     {% endif %}
 
+    <h2 class="portal-section-titulo" id="portal-grid-titulo">Publicaciones recientes</h2>
     <div class="portal-grid" id="portal-grid"></div>
   </div>
 
@@ -159,9 +189,19 @@ show_hero: false
     ];
 
     const portalGrid = document.getElementById('portal-grid');
+    const portalPortada = document.getElementById('portal-portada');
+    const portalPortadaDivider = document.getElementById('portal-portada-divider');
+    const portalGridTitulo = document.getElementById('portal-grid-titulo');
+    const PORTAL_NOMBRES_CATEGORIA = { gobierno: 'Gobierno', denuncias: 'Denuncias', comunidad: 'Comunidad', politica: 'Política', historia: 'Historia' };
 
     function portalPintarGrid(filtro) {
-      const lista = filtro === 'todas'
+      const esTodas = filtro === 'todas';
+
+      if (portalPortada) portalPortada.style.display = esTodas ? '' : 'none';
+      if (portalPortadaDivider) portalPortadaDivider.style.display = esTodas ? '' : 'none';
+      if (portalGridTitulo) portalGridTitulo.textContent = esTodas ? 'Publicaciones recientes' : (PORTAL_NOMBRES_CATEGORIA[filtro] || filtro);
+
+      const lista = esTodas
         ? PORTAL_POSTS.filter(function (p) { return PORTAL_EXCLUIR.indexOf(p.url) === -1; })
         : PORTAL_POSTS.filter(function (p) { return p.categoria === filtro; });
 
