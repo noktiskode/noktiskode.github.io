@@ -1,12 +1,13 @@
 ---
+relevant: true
 title: Entre tanto pendiente, la antorcha no es la prioridad
 date: 2026-09-12T14:17:00.000-06:00
 image: /images/blog/1000037909.png
 excerpt: Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz
   Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio,
   aquí en Barberena...
-card_color: blanco
 category: politica
+card_color: blanco
 ---
 Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio, aquí en Barberena fue el vicealcalde quien tuvo que ir a representar.
 
