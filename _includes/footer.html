@@ -251,7 +251,7 @@ footer.hib-min {
         <div class="hib-pilares">
           <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
           <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
-          <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+          <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Cuando algo se hace bien</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
         </div>
       </div>
 
@@ -289,7 +289,7 @@ footer.hib-min {
         </div>
         <button type="button" class="hib-item" id="btnCompartir">
           <span class="hib-icono"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="5.5" r="2.2"/><circle cx="18" cy="18.5" r="2.2"/><path d="M8 11l8-4.2M8 13l8 4.2"/></svg></span>
-          <div><h4 id="compartirTexto">Comparte la página</h4><p>Entre más barberenenses participen, más impacto tiene la comunidad.</p></div>
+          <div><h4 id="compartirTexto">Comparte la página</h4><p>Este espacio crece cuando la gente de Barberena participa.</p></div>
         </button>
       </div>
 
@@ -333,7 +333,7 @@ footer.hib-min {
       const compartirTexto = document.getElementById('compartirTexto');
       if (!btnCompartir) return;
       btnCompartir.addEventListener('click', async () => {
-        const datos = { title: 'Barberena Mi Municipio', text: 'De tishudos para tishudos: noticias de Barberena y El Cerinal.', url: window.location.href };
+        const datos = { title: 'Barberena Mi Municipio', text: 'De tishudos para tishudos: un blog personal sobre Barberena y El Cerinal.', url: window.location.href };
         if (navigator.share) {
           try { await navigator.share(datos); } catch (e) {}
         } else if (navigator.clipboard) {
@@ -354,7 +354,7 @@ footer.hib-min {
       <span>Barberena Mi Municipio</span>
     </a>
     <p class="site-footer__copy">
-      &copy; {{ 'now' | date: "%Y" }} Barberena Mi Municipio · De tishudos para tishudos · Página independiente ·
+      &copy; {{ 'now' | date: "%Y" }} Barberena Mi Municipio · Blog personal · Opiniones abiertas · Página independiente ·
       <a href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" rel="noopener">Síguenos en Facebook</a>
     </p>
   </footer>
