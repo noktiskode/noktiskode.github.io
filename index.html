@@ -8,210 +8,147 @@ hero_image: /images/portada.webp
 {% include news-ticker.html %}
 
   <style>
-    .blog-preview {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
+    .portal-wrap { max-width: 1000px; margin: 0 auto; padding: 32px 24px 8px; font-family: 'Barlow', sans-serif; }
 
-    .blog-preview-header {
-      text-align: center;
-      margin-bottom: 32px;
-    }
+    .portal-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--linea, #e4e2df); margin-bottom: 24px; }
+    .portal-nav::-webkit-scrollbar { display: none; }
 
-    /* ---- ENTRADA DESTACADA (la más reciente) ---- */
-    .blog-featured {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      margin-bottom: 40px;
-    }
-
-    .blog-featured__img {
-      display: block;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-    }
-
-    .blog-featured__img img {
-      width: 100%;
-      aspect-ratio: 1080 / 675;
-      object-fit: cover;
-      display: block;
-    }
-
-    .blog-featured__fecha {
+    .portal-nav button {
+      background: none;
+      border: none;
       font-family: 'Barlow', sans-serif;
+      font-weight: 600;
       font-size: 0.85rem;
       color: var(--gris, #666);
-      margin: 18px 0 6px;
+      padding: 10px 14px;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
     }
 
-    .blog-featured__titulo {
+    .portal-nav button.active, .portal-nav button:hover {
+      color: #000;
+      border-bottom-color: var(--rojo, #ef4f1d);
+    }
+
+    .portal-hero { display: block; text-decoration: none; color: inherit; margin-bottom: 32px; }
+
+    .portal-hero__img { aspect-ratio: 16/9; border-radius: 10px; overflow: hidden; background: #eee; }
+    .portal-hero__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .portal-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--rojo, #ef4f1d);
+      margin: 14px 0 6px;
+    }
+
+    .portal-hero__titulo {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      font-size: clamp(1.4rem, 4vw, 2rem);
       line-height: 1.15;
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       color: #000;
     }
 
-    .blog-featured__titulo a {
-      color: inherit;
-      text-decoration: none;
-    }
+    .portal-hero__resumen { font-size: 1rem; color: #444; max-width: 65ch; margin: 0; }
 
-    .blog-featured__resumen {
-      font-family: 'Barlow', sans-serif;
-      font-size: 1.02rem;
-      color: #444;
-      line-height: 1.5;
-      max-width: 65ch;
-      margin: 0 0 12px;
-    }
-
-    .blog-featured__cta {
-      display: inline-block;
-      font-family: 'Barlow', sans-serif;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--rojo, #e8452a);
-      text-decoration: none;
-      border-bottom: 1px solid var(--rojo, #e8452a);
-    }
-
-    /* ---- CABECERA "ÚLTIMAS ENTRADAS" + BOTÓN ---- */
-    .blog-preview-header-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-
-    .blog-preview-header-row h2 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 1.8rem;
-      margin: 0;
-    }
-
-    .blog-ver-todas-btn {
-      flex-shrink: 0;
-      display: inline-block;
-      background: var(--rojo, #e8452a);
-      color: #fff;
-      text-decoration: none;
-      font-family: 'Barlow', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 0.6rem 1.3rem;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-
-    /* ---- GRID DE LAS 4 ENTRADAS ANTERIORES (foto pequeña + título + fecha) ---- */
-    .blog-mini-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 22px;
-    }
+    .portal-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 8px; }
 
     @media (min-width: 640px) {
-      .blog-mini-grid {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 28px;
-        row-gap: 26px;
-      }
+      .portal-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
-    .blog-mini-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      text-decoration: none;
-      color: inherit;
-    }
+    .portal-card { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; }
 
-    .blog-mini-item__img {
-      width: 120px;
-      height: 75px;
-      object-fit: cover;
-      border-radius: 8px;
-      flex-shrink: 0;
-    }
+    .portal-card__img { aspect-ratio: 16/10; border-radius: 8px; overflow: hidden; background: #eee; }
+    .portal-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    .blog-mini-item h4 {
-      font-family: 'Barlow', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.3;
-      margin: 0 0 6px;
+    .portal-card h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      margin: 0;
       color: #000;
     }
 
-    .blog-mini-item .blog-mini-item__fecha {
-      font-family: 'Barlow', sans-serif;
-      font-size: 0.78rem;
-      color: var(--gris, #666);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .blog-preview-empty {
-      text-align: center;
-      color: var(--gris, #666);
-      font-family: 'Barlow', sans-serif;
-    }
+    .portal-empty { color: var(--gris, #666); font-family: 'Barlow', sans-serif; grid-column: 1/-1; }
   </style>
 
-  <div class="blog-preview" id="blog">
-    {% if site.posts.size == 0 %}
-      <p class="blog-preview-empty">Todavía no hay entradas publicadas.</p>
-    {% else %}
-      {% assign posts_size = site.posts.size %}
+  <div class="portal-wrap" id="portal">
+    <nav class="portal-nav" id="portal-filtros">
+      <button class="active" data-cat="todas">Todas</button>
+      <button data-cat="gobierno">Gobierno</button>
+      <button data-cat="denuncias">Denuncias</button>
+      <button data-cat="comunidad">Comunidad</button>
+      <button data-cat="politica">Política</button>
+      <button data-cat="historia">Historia</button>
+    </nav>
 
-      {% for post in site.posts limit:1 %}
-        <a href="{{ post.url | relative_url }}" class="blog-featured">
-          {% if post.image %}
-          <div class="blog-featured__img">
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-          </div>
-          {% endif %}
-          {% assign mes_num = post.date | date: "%m" | minus: 1 %}
-          <p class="blog-featured__fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num] }} de {{ post.date | date: "%Y" }}</p>
-          <h2 class="blog-featured__titulo">{{ post.title }}</h2>
-          {% if post.excerpt %}
-          <p class="blog-featured__resumen">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-          {% endif %}
-          <span class="blog-featured__cta">Leer la nota completa →</span>
-        </a>
-      {% endfor %}
-
-      {% if posts_size > 1 %}
-      <div class="blog-preview-header-row">
-        <h2>Últimas entradas</h2>
-        <a href="/blog/" class="blog-ver-todas-btn">Ver todas</a>
-      </div>
-
-      <div class="blog-mini-grid">
-        {% for post in site.posts offset:1 limit:4 %}
-          <a href="{{ post.url | relative_url }}" class="blog-mini-item">
-            {% if post.image %}
-            <img class="blog-mini-item__img" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-            {% endif %}
-            <div>
-              <h4>{{ post.title }}</h4>
-              {% assign mes_num2 = post.date | date: "%m" | minus: 1 %}
-              <span class="blog-mini-item__fecha">{{ post.date | date: "%d" }} de {{ site.meses[mes_num2] }} de {{ post.date | date: "%Y" }}</span>
-            </div>
-          </a>
-        {% endfor %}
+    {% assign portal_primero = site.posts.first %}
+    {% if portal_primero %}
+    <a href="{{ portal_primero.url | relative_url }}" class="portal-hero">
+      {% if portal_primero.image %}
+      <div class="portal-hero__img">
+        <img src="{{ portal_primero.image | relative_url }}" alt="{{ portal_primero.title }}">
       </div>
       {% endif %}
+      <span class="portal-tag">{{ portal_primero.category | default: "General" | capitalize }}</span>
+      <h2 class="portal-hero__titulo">{{ portal_primero.title }}</h2>
+      {% if portal_primero.excerpt %}
+      <p class="portal-hero__resumen">{{ portal_primero.excerpt | strip_html | truncatewords: 24 }}</p>
+      {% endif %}
+    </a>
     {% endif %}
+
+    <div class="portal-grid" id="portal-grid"></div>
   </div>
+
+  <script>
+    const PORTAL_POSTS = [
+      {% for post in site.posts %}
+      {
+        titulo: {{ post.title | jsonify }},
+        resumen: {{ post.excerpt | strip_html | truncatewords: 18 | jsonify }},
+        categoria: {{ post.category | default: "general" | jsonify }},
+        imagen: {{ post.image | relative_url | jsonify }},
+        url: {{ post.url | relative_url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    const portalGrid = document.getElementById('portal-grid');
+
+    function portalPintarGrid(filtro) {
+      const lista = filtro === 'todas' ? PORTAL_POSTS.slice(1) : PORTAL_POSTS.filter(function (p) { return p.categoria === filtro; });
+      if (!lista.length) {
+        portalGrid.innerHTML = '<p class="portal-empty">Todavía no hay publicaciones en esta categoría.</p>';
+        return;
+      }
+      portalGrid.innerHTML = lista.map(function (p) {
+        return '<a href="' + p.url + '" class="portal-card">' +
+          (p.imagen ? '<div class="portal-card__img"><img src="' + p.imagen + '" alt="' + p.titulo + '" loading="lazy"></div>' : '') +
+          '<span class="portal-tag" style="margin:0;">' + p.categoria + '</span>' +
+          '<h4>' + p.titulo + '</h4>' +
+          '</a>';
+      }).join('');
+    }
+
+    portalPintarGrid('todas');
+
+    document.querySelectorAll('#portal-filtros button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('#portal-filtros button').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        portalPintarGrid(btn.dataset.cat);
+      });
+    });
+  </script>
 
   <script>
     const SELLOS = { revision: 'En revisión', respondida: 'Respondida por la muni', sinrespuesta: 'Sin respuesta' };
@@ -332,10 +269,10 @@ hero_image: /images/portada.webp
     .hib-pilar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; font-family: 'Barlow', sans-serif; }
     .hib-pilar p { color: var(--gris, #6b6b6b); font-size: 0.98rem; }
 
-    .hib-no-publicamos { background: var(--negro, #131313); color: #eee; margin-top: 48px; padding: 44px 32px; border-radius: 10px; }
-    .hib-no-publicamos h3 { color: #fff; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
+    .hib-no-publicamos { margin-top: 48px; padding: 0; border-radius: 10px; }
+    .hib-no-publicamos h3 { color: #000; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
     .hib-no-publicamos ul { list-style: none; }
-    .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.14); color: #d8d8d8; font-size: 1rem; }
+    .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid var(--linea, #e4e2df); color: var(--gris, #6b6b6b); font-size: 1rem; }
 
     /* En escritorio, "lo que publicamos" y "lo que no publicamos" van a la par */
     @media (min-width: 900px) {
@@ -371,70 +308,145 @@ hero_image: /images/portada.webp
     footer.hib-min { padding: 40px 0 60px; font-size: 0.85rem; color: var(--gris, #6b6b6b); text-align: center; }
   </style>
 
-  <div class="hib-wrap">
+  <style>
+    .hib-tabs-wrap { position: relative; max-width: 1000px; margin: 0 auto; padding: 24px 24px 0; }
 
-  <section id="publicamos" class="hib-min hib-envoltorio">
-    <h2>Lo que publicamos</h2>
+    .hib-tabs-nav { display: flex; justify-content: center; gap: 4px; border-top: 1px solid var(--linea, #e4e2df); }
+    .hib-tabs-nav button {
+      background: none;
+      border: none;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--gris, #6b6b6b);
+      padding: 16px 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .hib-tabs-nav button.active { color: var(--rojo, #ef4f1d); }
 
-    <div class="hib-publicamos-row">
-      <div class="hib-pilares">
-        <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
-        <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
-        <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+    .hib-bubble {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 100%;
+      margin-bottom: 14px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+      padding: 26px;
+      max-height: 65vh;
+      overflow-y: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity .18s ease, transform .18s ease;
+    }
+    .hib-bubble.open { opacity: 1; visibility: visible; transform: translateY(0); }
+    .hib-bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      transform: translateX(-50%) rotate(45deg);
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.06);
+    }
+
+    .hib-tab-panel { display: none; }
+    .hib-tab-panel.active { display: block; }
+    .hib-tab-panel .hib-no-publicamos { margin-top: 0; }
+  </style>
+
+  <div class="hib-tabs-wrap" id="hib-tabs-wrap">
+    <div class="hib-bubble" id="hib-bubble">
+
+      <div class="hib-tab-panel" id="hib-tab-publicamos">
+        <h3 style="margin-bottom:16px;">Lo que publicamos</h3>
+        <div class="hib-pilares">
+          <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
+          <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
+          <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+        </div>
       </div>
 
-      <div class="hib-no-publicamos">
-        <h3>Lo que no publicamos</h3>
-        <ul>
-          <li>Difamaciones, calumnias, chismes, etc.</li>
-          <li>Insultos y ataques personales.</li>
-          <li>Rumores sin fundamento.</li>
-          <li>Información falsa.</li>
-          <li>Contenido que busque hacer daño a otras personas.</li>
-        </ul>
+      <div class="hib-tab-panel" id="hib-tab-no-publicamos">
+        <div class="hib-no-publicamos">
+          <h3>Lo que no publicamos</h3>
+          <ul>
+            <li>Difamaciones, calumnias, chismes, etc.</li>
+            <li>Insultos y ataques personales.</li>
+            <li>Rumores sin fundamento.</li>
+            <li>Información falsa.</li>
+            <li>Contenido que busque hacer daño a otras personas.</li>
+          </ul>
+        </div>
       </div>
+
+      <div class="hib-tab-panel" id="hib-tab-participa">
+        <h3 style="margin-bottom:16px;">¿Cómo participar?</h3>
+        <p style="max-width:56ch;color:var(--gris, #6b6b6b);margin:0 0 20px;">Esta página funciona gracias a los vecinos de Barberena. Tú puedes ser parte del cambio compartiendo información, denunciando irregularidades o simplemente siguiéndonos. Lo único que pedimos es respeto y disposición para debatir con argumentos.</p>
+
+        <a class="hib-item" href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" rel="noopener">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M16 8h-2a2 2 0 0 0-2 2v2H9v3h3v7h3v-7h2.5l.5-3H15v-1.5c0-.5.3-1 1-1H16V8z"/></svg></span>
+          <div><h4>Síguenos en Facebook</h4><p>Dale like a la página y activa las notificaciones para no perderte nada.</p></div>
+        </a>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div><h4>Envíanos tus comentarios</h4><p>¿Tienes algo que compartir? Escríbenos a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> desde tu correo.</p></div>
+        </div>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4z"/></svg></span>
+          <div><h4>Debate con respeto</h4><p>Comenta, opina y discrepa. Todos los puntos de vista son bienvenidos con respeto.</p></div>
+        </div>
+        <div class="hib-item">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+          <div><h4>¿Apareces en una foto y no querés estar?</h4><p>Escribinos por Facebook o a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> y retiramos el contenido.</p></div>
+        </div>
+        <button type="button" class="hib-item" id="btnCompartir">
+          <span class="hib-icono"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="5.5" r="2.2"/><circle cx="18" cy="18.5" r="2.2"/><path d="M8 11l8-4.2M8 13l8 4.2"/></svg></span>
+          <div><h4 id="compartirTexto">Comparte la página</h4><p>Entre más barberenenses participen, más impacto tiene la comunidad.</p></div>
+        </button>
+      </div>
+
     </div>
-  </section>
 
-  </div>
-
-  <section id="historia" class="hib-min hib-centrado hib-historia-min">
-    <span class="hib-rotulo">Nuestras raíces</span>
-    <h2 style="margin:0 auto;">Historia de Barberena</h2>
-    <p>De Corral de Piedra a San José de Barberena: un recorrido por los hechos que forjaron nuestro municipio, incluyendo el origen de nuestro lema "de tishudos para tishudos".</p>
-    <a href="historia.html" class="hib-boton-rojo">Leer la historia completa →</a>
-  </section>
-
-  <div class="hib-wrap">
-
-  <section id="participa" class="hib-min hib-envoltorio">
-    <h2>¿Cómo participar?</h2>
-    <p style="max-width:56ch;color:var(--gris, #6b6b6b);margin-top:16px;">Esta página funciona gracias a los vecinos de Barberena. Tú puedes ser parte del cambio compartiendo información, denunciando irregularidades o simplemente siguiéndonos. Lo único que pedimos es respeto y disposición para debatir con argumentos.</p>
-
-    <div style="margin-top:28px;">
-      <a class="hib-item" href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" rel="noopener">
-        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M16 8h-2a2 2 0 0 0-2 2v2H9v3h3v7h3v-7h2.5l.5-3H15v-1.5c0-.5.3-1 1-1H16V8z"/></svg></span>
-        <div><h4>Síguenos en Facebook</h4><p>Dale like a la página y activa las notificaciones para no perderte nada.</p></div>
-      </a>
-      <div class="hib-item">
-        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
-        <div><h4>Envíanos tus comentarios</h4><p>¿Tienes algo que compartir? Escríbenos a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> desde tu correo.</p></div>
-      </div>
-      <div class="hib-item">
-        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4z"/></svg></span>
-        <div><h4>Debate con respeto</h4><p>Comenta, opina y discrepa. Todos los puntos de vista son bienvenidos con respeto.</p></div>
-      </div>
-      <button type="button" class="hib-item" id="btnCompartir">
-        <span class="hib-icono"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="5.5" r="2.2"/><circle cx="18" cy="18.5" r="2.2"/><path d="M8 11l8-4.2M8 13l8 4.2"/></svg></span>
-        <div><h4 id="compartirTexto">Comparte la página</h4><p>Entre más barberenenses participen, más impacto tiene la comunidad.</p></div>
-      </button>
-    </div>
-  </section>
-
+    <nav class="hib-tabs-nav" id="hib-tabs-nav">
+      <button data-tab="publicamos">Lo que publicamos</button>
+      <button data-tab="no-publicamos">Lo que no publicamos</button>
+      <button data-tab="participa">¿Cómo participar?</button>
+    </nav>
   </div>
 
   <script>
     (function() {
+      const bubble = document.getElementById('hib-bubble');
+      const buttons = document.querySelectorAll('#hib-tabs-nav button');
+      const panels = document.querySelectorAll('.hib-tab-panel');
+
+      function abrir(tab) {
+        panels.forEach(function (p) { p.classList.toggle('active', p.id === 'hib-tab-' + tab); });
+        buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.tab === tab); });
+        bubble.classList.add('open');
+      }
+      function cerrar() {
+        bubble.classList.remove('open');
+        buttons.forEach(function (b) { b.classList.remove('active'); });
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const yaAbiertoEnEsteTab = btn.classList.contains('active') && bubble.classList.contains('open');
+          if (yaAbiertoEnEsteTab) { cerrar(); } else { abrir(btn.dataset.tab); }
+        });
+      });
+
+      bubble.addEventListener('click', function (e) { e.stopPropagation(); });
+      document.addEventListener('click', cerrar);
+
       const btnCompartir = document.getElementById('btnCompartir');
       const compartirTexto = document.getElementById('compartirTexto');
       if (!btnCompartir) return;
