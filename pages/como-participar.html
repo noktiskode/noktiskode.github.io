@@ -1,0 +1,94 @@
+---
+layout: default
+title: "¿Cómo participar?"
+permalink: /que-publicamos.html
+---
+
+  <style>
+    .hib-wrap {
+      max-width: 720px;
+      margin: 0 auto 0 max(24px, calc((100% - 1000px) / 2));
+      padding: 0 24px 0 0;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .hib-wrap {
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+    }
+
+    section.hib-min {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--linea, #e4e2df);
+    }
+
+    section.hib-min h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.9rem;
+      max-width: 26ch;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .hib-item { padding: 22px 0; border-top: 1px solid var(--linea, #e4e2df); display: grid; grid-template-columns: 32px 1fr; gap: 18px; align-items: start; opacity: 1 !important; transform: none !important; }
+    .hib-item:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-item .hib-icono { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+    .hib-item .hib-icono svg { width: 100%; height: 100%; fill: none; stroke: var(--negro, #131313); stroke-width: 1.6; }
+    a.hib-item, button.hib-item { text-decoration: none; color: inherit; width: 100%; background: none; border: none; border-top: 1px solid var(--linea, #e4e2df); text-align: left; cursor: pointer; font-family: 'Barlow', sans-serif; }
+    a.hib-item:hover .hib-icono svg, button.hib-item:hover .hib-icono svg { stroke: var(--rojo, #e8452a); }
+    a.hib-item:hover h4, button.hib-item:hover h4 { color: var(--rojo, #e8452a); }
+    .hib-item h4 { margin: 0 0 4px; font-weight: 500; font-size: 1.05rem; }
+    .hib-item p { color: var(--gris, #6b6b6b); font-size: 0.95rem; }
+    .hib-item a { color: var(--rojo, #e8452a); text-decoration: none; border-bottom: 1px solid var(--rojo, #e8452a); }
+  </style>
+
+  <div class="hib-wrap">
+
+  <section id="participa" class="hib-min hib-envoltorio">
+    <h2>¿Cómo participar?</h2>
+
+    <div style="margin-top:28px;">
+      <a class="hib-item" href="https://www.facebook.com/BarberenaMiMunicipio" target="_blank" rel="noopener">
+        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M16 8h-2a2 2 0 0 0-2 2v2H9v3h3v7h3v-7h2.5l.5-3H15v-1.5c0-.5.3-1 1-1H16V8z"/></svg></span>
+        <div><h4>Síguenos en Facebook</h4><p>Dale like a la página y activa las notificaciones para no perderte nada.</p></div>
+      </a>
+      <div class="hib-item">
+        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <div><h4>Envíanos tus comentarios</h4><p>¿Tienes algo que compartir? Escríbenos a <a href="mailto:barberenamimunicipio@proton.me">barberenamimunicipio@proton.me</a> desde tu correo.</p></div>
+      </div>
+      <div class="hib-item">
+        <span class="hib-icono"><svg viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4z"/></svg></span>
+        <div><h4>Debate con respeto</h4><p>Comenta, opina y discrepa. Todos los puntos de vista son bienvenidos con respeto.</p></div>
+      </div>
+      <button type="button" class="hib-item" id="btnCompartir">
+        <span class="hib-icono"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="5.5" r="2.2"/><circle cx="18" cy="18.5" r="2.2"/><path d="M8 11l8-4.2M8 13l8 4.2"/></svg></span>
+        <div><h4 id="compartirTexto">Comparte la página</h4><p>Entre más barberenenses participen, más impacto tiene la comunidad.</p></div>
+      </button>
+    </div>
+  </section>
+
+  </div>
+
+  <script>
+    (function() {
+      const btnCompartir = document.getElementById('btnCompartir');
+      const compartirTexto = document.getElementById('compartirTexto');
+      if (!btnCompartir) return;
+      btnCompartir.addEventListener('click', async () => {
+        const datos = { title: 'Barberena Mi Municipio', text: 'De tishudos para tishudos: noticias de Barberena y El Cerinal.', url: window.location.href };
+        if (navigator.share) {
+          try { await navigator.share(datos); } catch (e) {}
+        } else if (navigator.clipboard) {
+          try {
+            await navigator.clipboard.writeText(datos.url);
+            const original = compartirTexto.textContent;
+            compartirTexto.textContent = 'Enlace copiado';
+            setTimeout(() => { compartirTexto.textContent = original; }, 2000);
+          } catch (e) {}
+        }
+      });
+    })();
+  </script>

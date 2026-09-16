@@ -1,0 +1,85 @@
+---
+layout: default
+title: Lo que publicamos
+permalink: /que-publicamos.html
+---
+
+  <style>
+    .hib-wrap {
+      max-width: 720px;
+      margin: 0 auto 0 max(24px, calc((100% - 1000px) / 2));
+      padding: 0 24px 0 0;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .hib-wrap {
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+    }
+
+    section.hib-min {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--linea, #e4e2df);
+    }
+
+    section.hib-min h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.9rem;
+      max-width: 26ch;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .hib-pilares { display: grid; }
+    .hib-pilar { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 26px 0; border-top: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar:last-child { border-bottom: 1px solid var(--linea, #e4e2df); }
+    .hib-pilar .hib-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--rojo, #e8452a); }
+    .hib-pilar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; font-family: 'Barlow', sans-serif; }
+    .hib-pilar p { color: var(--gris, #6b6b6b); font-size: 0.98rem; }
+
+    .hib-no-publicamos { background: var(--negro, #131313); color: #eee; margin-top: 48px; padding: 44px 32px; border-radius: 10px; }
+    .hib-no-publicamos h3 { color: #fff; font-size: 1.3rem; margin-bottom: 22px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; }
+    .hib-no-publicamos ul { list-style: none; }
+    .hib-no-publicamos li { padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.14); color: #d8d8d8; font-size: 1rem; }
+
+    /* En escritorio, "lo que publicamos" y "lo que no publicamos" van a la par */
+    @media (min-width: 900px) {
+      .hib-publicamos-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        align-items: start;
+      }
+      .hib-no-publicamos { margin-top: 0; }
+    }
+  </style>
+
+  <div class="hib-wrap">
+
+  <section id="publicamos" class="hib-min hib-envoltorio">
+    <h2>Lo que publicamos</h2>
+
+    <div class="hib-publicamos-row">
+      <div class="hib-pilares">
+        <div class="hib-pilar"><span class="hib-num">01</span><div><h3>Quejas ciudadanas</h3><p>Voz a los vecinos que tienen algo que decir sobre su municipio.</p></div></div>
+        <div class="hib-pilar"><span class="hib-num">02</span><div><h3>Emprendedores</h3><p>Visibilidad para negocios y emprendimientos de Barberena.</p></div></div>
+        <div class="hib-pilar"><span class="hib-num">03</span><div><h3>Noticias positivas</h3><p>Cuando algo se hace bien en Barberena, también lo contamos.</p></div></div>
+      </div>
+
+      <div class="hib-no-publicamos">
+        <h3>Lo que no publicamos</h3>
+        <ul>
+          <li>Difamaciones, calumnias, chismes, etc.</li>
+          <li>Insultos y ataques personales.</li>
+          <li>Rumores sin fundamento.</li>
+          <li>Información falsa.</li>
+          <li>Contenido que busque hacer daño a otras personas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
