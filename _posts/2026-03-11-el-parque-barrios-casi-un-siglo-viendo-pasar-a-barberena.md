@@ -22,7 +22,8 @@ El parque fue inaugurado en 1926, durante la administración de don Cesáreo de 
  <img src="/images/blog/1000039579.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
 
 
-<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Parque Barrios, durante los años 20.</figcaption>
+<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Parque Barrios, durante los años 20. (Créditos: El Cuje de Mis Amores).
+</figcaption>
 
 
   </figure>
