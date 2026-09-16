@@ -1,14 +1,10 @@
 ---
 layout: default
-title: Archivo
+title: Publicaciones
 show_hero: false
 permalink: /blog/
 ---
-<meta http-equiv="refresh" content="0; url={{ '/archivo/' | relative_url }}">
-<link rel="canonical" href="{{ '/archivo/' | absolute_url }}">
-<section style="max-width:760px;margin:0 auto;padding:70px 18px;text-align:center;font-family:'Barlow',sans-serif">
-  <p style="font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#e8452a">Barberena Mi Municipio</p>
-  <h1 style="font-family:'Barlow Condensed',sans-serif;text-transform:uppercase">El archivo ahora vive aquí</h1>
-  <p>Redirigiendo a la biblioteca completa de publicaciones.</p>
-  <p><a href="{{ '/archivo/' | relative_url }}">Ir al Archivo →</a></p>
-</section>
+<main class="cb-page"><div class="cb-container">
+<header class="cb-page-header"><p class="kicker">Barberena Mi Municipio</p><h1>Publicaciones</h1><p>Historias, opiniones y acontecimientos de Barberena.</p></header>
+<div class="cb-post-list">{% for post in site.posts %}{% include post-card.html post=post %}{% endfor %}</div>
+</div></main>
