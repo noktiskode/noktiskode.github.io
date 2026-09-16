@@ -10,20 +10,21 @@
 .news-ticker {
   display: flex;
   align-items: stretch;
-  background: #faf9f7;
-  border-bottom: 1px solid #d9d7d3;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--borde);
   height: 40px;
   font-family: 'Barlow', sans-serif;
   overflow: hidden;
   box-sizing: border-box;
+  transition: background .25s ease, border-color .25s ease;
 }
 .ticker-label {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   padding: 0 15px;
-  background: #111;
-  color: #fff;
+  background: var(--texto);
+  color: var(--bg);
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
   font-size: .72rem;
@@ -53,28 +54,28 @@
   white-space: nowrap;
   font-size: .78rem;
   font-weight: 600;
-  color: #222;
+  color: var(--texto);
   text-decoration: none;
 }
-.ticker-item:hover .ticker-headline { color: #e8452a; }
+.ticker-item:hover .ticker-headline { color: #ef4f1d; }
 .ticker-dot {
   flex: 0 0 auto;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   border: 0;
-  background: #aaa;
+  background: var(--texto-mudo);
 }
 .ticker-item.ticker-denuncia .ticker-dot {
-  background: #e8452a;
+  background: #ef4f1d;
 }
 .ticker-headline {
-  color: #222;
+  color: var(--texto);
   transition: color .15s ease;
 }
 .ticker-sep {
   flex: 0 0 auto;
-  color: #b5b3af;
+  color: var(--texto-mudo);
   font-size: .48rem;
   margin-right: 27px;
 }
