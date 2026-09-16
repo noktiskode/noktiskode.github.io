@@ -48,6 +48,16 @@ Pero bueno, vamos a lo que todos quieren saber: ¿de dónde viene lo de "tishudo
 
 Según el Diccionario de guatemaltequismos de Lisandro Sandoval, "tishudo/a" se le decía antes a quien cojeaba al andar. Y el apodo se les pegó a los habitantes de Corral de Piedra —y luego Barberena— por las crianzas de cerdos que había en la zona, que generaban basureros donde se reproducían niguas, causantes de esa cojera tan característica.
 
+<figure style="margin-bottom:1.5rem;">
+
+ <img src="/images/blog/1000031699.jpg" alt="Entrada a Barberena, 1970." style="width:100%; border-radius:8px;">
+
+<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Entrada a Barberena, 1970.
+</figcaption>
+
+  </figure>
+
+
 De ahí, sin pena y con orgullo, nuestro lema: "De tishudos para tishudos."
 
 Así que ya sabe, si alguien le dice tishudo, no se enoje: es historia pura, con todo y sus niguas.
