@@ -3,289 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}Barberena Mi Municipio</title>
-  <meta name="description" content="{{ page.description | default: 'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.' }}">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}Barberena Mi Municipio</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Barberena Mi Municipio">
-  <meta property="og:title" content="{{ page.title | default: 'Barberena Mi Municipio (BMM)' }}">
-  <meta property="og:description" content="{{ page.description | default: 'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.' }}">
+  <meta property="og:title" content="{{ page.title | default: 'Barberena Mi Municipio' }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:url" content="https://barberenamimunicipio.top{{ page.url }}">
   <meta property="og:image" content="https://barberenamimunicipio.top{{ page.image | default: page.hero_image | default: '/images/portada.webp' }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <link rel="canonical" href="https://barberenamimunicipio.top{{ page.url }}">
   <meta property="og:locale" content="es_GT">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title | default: 'Barberena Mi Municipio (BMM)' }}">
-  <meta name="twitter:description" content="{{ page.description | default:'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.' }}">
+  <meta name="twitter:title" content="{{ page.title | default: 'Barberena Mi Municipio' }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
   <meta name="twitter:image" content="https://barberenamimunicipio.top{{ page.image | default: page.hero_image | default: '/images/portada.webp' }}">
+  <link rel="canonical" href="https://barberenamimunicipio.top{{ page.url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <script>
-    (function () {
-      try {
-        var guardado = localStorage.getItem('bmm-theme');
-        if (guardado === 'dark' || guardado === 'light') {
-          document.documentElement.setAttribute('data-theme', guardado);
-        }
-      } catch (e) {}
-    })();
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/clean-blog.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/favicon-96x96.png' | relative_url }}" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  <meta name="google-site-verification" content="rnI2_KGt4xMqGnZfDKDdzVr7GxNS1HKlzvXbb8d2ja4">
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    window.firebaseApp = initializeApp({
+      apiKey: "AIzaSyC1jgfupbu5YUvfSeMh5Je9DVExXNgYd1o",
+      authDomain: "bmm-comentarios.firebaseapp.com",
+      projectId: "bmm-comentarios",
+      storageBucket: "bmm-comentarios.firebasestorage.app",
+      messagingSenderId: "601712463771",
+      appId: "1:601712463771:web:60468f91d14b780aad9b3e"
+    });
   </script>
-  <meta name="google-site-verification" content="rnI2_KGt4xMqGnZfDKDdzVr7GxNS1HKlzvXbb8d2ja4" />
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="BMM" />
-<link rel="manifest" href="/site.webmanifest" />
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  window.firebaseApp = initializeApp({
-    apiKey: "AIzaSyC1jgfupbu5YUvfSeMh5Je9DVExXNgYd1o",
-    authDomain: "bmm-comentarios.firebaseapp.com",
-    projectId: "bmm-comentarios",
-    storageBucket: "bmm-comentarios.firebasestorage.app",
-    messagingSenderId: "601712463771",
-    appId: "1:601712463771:web:60468f91d14b780aad9b3e"
-  });
-</script>
 </head>
 <body>
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0">
-  </script>
-
-  <!-- resto de tu contenido -->
-
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0"></script>
   {% include header.html %}
-
-  {% unless page.show_hero == false %}
-    {% assign es_index = false %}
-    {% if page.url == "/index.html" or page.url == "/" %}{% assign es_index = true %}{% endif %}
-    {% assign mostrar_carrusel = es_index %}
-    {% if page.hero_carrusel == true %}{% assign mostrar_carrusel = true %}{% endif %}
-    {% if page.hero_carrusel == false %}{% assign mostrar_carrusel = false %}{% endif %}
-    {% if mostrar_carrusel %}
-    <div class="hero-carrusel" id="heroCarrusel">
-      <div class="hero-slide activa">
-        <img src="{{ '/images/portada.webp' | relative_url }}" alt="Barberena Mi Municipio">
-      </div>
-      <div class="hero-slide">
-        <img src="{{ '/images/portada.png' | relative_url }}" alt="De tishudos para tishudos">
-      </div>
-      <div class="hero-slide">
-        <img src="{{ '/images/portada3.png' | relative_url }}" alt="Barberena Mi Municipio">
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-dots" id="heroDots">
-        <button type="button" class="hero-dot" aria-label="Ver portada 1"></button>
-        <button type="button" class="hero-dot" aria-label="Ver portada 2"></button>
-        <button type="button" class="hero-dot" aria-label="Ver portada 3"></button>
-      </div>
-    </div>
-    {% else %}
-    <div class="hero">
-      <img id="heroImg" src="{{ page.image | default: page.hero_image | default: '/images/portada.webp' | relative_url }}" alt="{{ page.hero_alt | default: 'Barberena Mi Municipio' }}">
-      <div class="hero-overlay"></div>
-    </div>
-    {% endif %}
-  {% endunless %}
-
-  <main>
-    {{ content }}
-  </main>
-
-  {% unless page.url == "/index.html" or page.url == "/" %}
-  <div class="site-back">
-    <a href="/" onclick="if(document.referrer && document.referrer.includes(window.location.hostname)){history.back();return false;}">← Volver</a>
-  </div>
-  {% endunless %}
-
+  {{ content }}
   {% include footer.html %}
-  
-<script>
-    // Carrusel de portadas (solo existe en el inicio): arrastre libre,
-    // indicadores tipo "guion" y rotación infinita en ambos sentidos.
-    (function () {
-      const carrusel = document.getElementById('heroCarrusel');
-      if (!carrusel) return;
-      const slides = Array.from(carrusel.querySelectorAll('.hero-slide'));
-      const dots = Array.from(carrusel.querySelectorAll('.hero-dot'));
-      const n = slides.length;
-      let actual = slides.findIndex(s => s.classList.contains('activa'));
-      if (actual < 0) actual = 0;
-      let auto;
-      let arrastrando = false;
-      let inicioX = 0;
-      let deltaX = 0;
-      let ladoPreparado = null; // vecino ya colocado junto al activo: 'izq' o 'der'
-
-      function offsetCorto(i, base) {
-        let off = i - base;
-        if (off > n / 2) off -= n;
-        if (off < -n / 2) off += n;
-        return off;
-      }
-
-      // Reposiciona todas las portadas según "actual".
-      // Si se pasa animarIdx (array de índices), solo esas dos animan con
-      // transición; el resto salta a su sitio al instante, sin transición,
-      // para que nunca "atraviesen" la pantalla de por medio.
-      function posicionar(instantaneo, animarIdx) {
-        slides.forEach((s, i) => {
-          const anima = !instantaneo && (!animarIdx || animarIdx.includes(i));
-          if (!anima) s.style.transition = 'none';
-          s.style.transform = 'translateX(' + (offsetCorto(i, actual) * 100) + '%)';
-        });
-        if (instantaneo || animarIdx) {
-          carrusel.offsetHeight; // fuerza reflow antes de restaurar la transición
-          slides.forEach((s, i) => {
-            if (instantaneo || !animarIdx.includes(i)) s.style.transition = '';
-          });
-        }
-        dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
-      }
-
-      function avanzar() {
-        const anterior = actual;
-        actual = (actual + 1) % n;
-        posicionar(false, [anterior, actual]);
-      }
-      function retroceder() {
-        const anterior = actual;
-        actual = (actual - 1 + n) % n;
-        posicionar(false, [anterior, actual]);
-      }
-      function irA(indice) {
-        if (indice === actual) return;
-        const anterior = actual;
-        actual = indice;
-        posicionar(false, [anterior, actual]);
-      }
-
-      function iniciarAuto() {
-        clearInterval(auto);
-        auto = setInterval(avanzar, 7000);
-      }
-
-      dots.forEach((d, i) => d.addEventListener('click', () => { irA(i); iniciarAuto(); }));
-
-      // --- Arrastre (mouse y dedo, vía Pointer Events) ---
-      carrusel.addEventListener('pointerdown', (e) => {
-        arrastrando = true;
-        ladoPreparado = null;
-        inicioX = e.clientX;
-        deltaX = 0;
-        slides.forEach(s => { s.style.transition = 'none'; });
-        carrusel.setPointerCapture(e.pointerId);
-        carrusel.style.cursor = 'grabbing';
-      });
-
-      // Coloca al instante, junto al activo, el vecino del lado indicado
-      // (listo para revelarse) y devuelve el otro vecino a su reposo si
-      // ya se había preparado antes (p. ej. si el arrastre cambió de sentido).
-      function prepararLado(lado) {
-        if (ladoPreparado === lado) return;
-        const siguienteIdx = (actual + 1) % n;
-        const anteriorIdx = (actual - 1 + n) % n;
-
-        if (ladoPreparado === 'izq') {
-          slides[siguienteIdx].style.transition = 'none';
-          slides[siguienteIdx].style.transform = 'translateX(' + (offsetCorto(siguienteIdx, actual) * 100) + '%)';
-        } else if (ladoPreparado === 'der') {
-          slides[anteriorIdx].style.transition = 'none';
-          slides[anteriorIdx].style.transform = 'translateX(' + (offsetCorto(anteriorIdx, actual) * 100) + '%)';
-        }
-
-        if (lado === 'izq') {
-          slides[siguienteIdx].style.transition = 'none';
-          slides[siguienteIdx].style.transform = 'translateX(100%)';
-        } else if (lado === 'der') {
-          slides[anteriorIdx].style.transition = 'none';
-          slides[anteriorIdx].style.transform = 'translateX(-100%)';
-        }
-        ladoPreparado = lado;
-      }
-
-      carrusel.addEventListener('pointermove', (e) => {
-        if (!arrastrando) return;
-        deltaX = e.clientX - inicioX;
-
-        if (Math.abs(deltaX) > 6) {
-          const ladoNecesario = deltaX < 0 ? 'izq' : 'der';
-          if (ladoNecesario !== ladoPreparado) prepararLado(ladoNecesario);
-        }
-
-        const anchoPct = (deltaX / carrusel.clientWidth) * 100;
-        slides[actual].style.transform = 'translateX(' + anchoPct + '%)';
-
-        if (ladoPreparado === 'izq') {
-          const siguienteIdx = (actual + 1) % n;
-          slides[siguienteIdx].style.transform = 'translateX(' + (100 + anchoPct) + '%)';
-        } else if (ladoPreparado === 'der') {
-          const anteriorIdx = (actual - 1 + n) % n;
-          slides[anteriorIdx].style.transform = 'translateX(' + (-100 + anchoPct) + '%)';
-        }
-      });
-
-      function finalizarArrastre() {
-        if (!arrastrando) return;
-        arrastrando = false;
-        carrusel.style.cursor = 'grab';
-        slides.forEach(s => { s.style.transition = ''; });
-
-        const umbral = carrusel.clientWidth * 0.15; // 15% del ancho
-        if (ladoPreparado === 'izq' && deltaX <= -umbral) {
-          avanzar();
-        } else if (ladoPreparado === 'der' && deltaX >= umbral) {
-          retroceder();
-        } else {
-          posicionar(); // no llegó al umbral: regresa a su lugar (con animación)
-        }
-        ladoPreparado = null;
-        deltaX = 0;
-        iniciarAuto();
-      }
-
-      carrusel.addEventListener('pointerup', finalizarArrastre);
-      carrusel.addEventListener('pointercancel', finalizarArrastre);
-      carrusel.addEventListener('pointerleave', () => { if (arrastrando) finalizarArrastre(); });
-
-      posicionar(true);
-      if (n > 1) iniciarAuto();
-    })();
-
-    // Modo oscuro: alterna, recuerda la elección y respeta el sistema si no se ha elegido.
-    (function () {
-      var boton = document.getElementById('theme-toggle');
-      var icono = document.getElementById('theme-toggle-icon');
-      if (!boton) return;
-
-      function prefiereOscuro() {
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-      function temaActual() {
-        var guardado = null;
-        try { guardado = localStorage.getItem('bmm-theme'); } catch (e) {}
-        return guardado || (prefiereOscuro() ? 'dark' : 'light');
-      }
-      function actualizarIcono(tema) {
-        icono.innerHTML = tema === 'dark' ? '&#9728;' : '&#9789;';
-        boton.setAttribute('aria-label', tema === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
-      }
-
-      actualizarIcono(temaActual());
-
-      boton.addEventListener('click', function () {
-        var nuevo = temaActual() === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', nuevo);
-        try { localStorage.setItem('bmm-theme', nuevo); } catch (e) {}
-        actualizarIcono(nuevo);
-      });
-    })();
-</script>
 </body>
 </html>
