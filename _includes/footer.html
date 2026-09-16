@@ -1,30 +1,17 @@
-<footer class="site-footer">
-  <div class="site-footer__inner">
-    <a href="{{ '/' | relative_url }}" class="site-footer__brand">
-      <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="" class="site-footer__icon">
+<footer class="cb-footer">
+  <div class="cb-container">
+    <a href="{{ '/' | relative_url }}" class="cb-footer-brand">
+      <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="">
       <span>Barberena Mi Municipio</span>
     </a>
-    <p class="site-footer__tagline">Blog personal · Opiniones abiertas</p>
-    <p class="site-footer__copy">Un espacio independiente para hablar de Barberena.</p>
-    <nav class="site-footer__nav" aria-label="Enlaces del pie de página">
+    <p>Blog personal · Opiniones abiertas</p>
+    <nav aria-label="Enlaces del pie de página">
       <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/archivo/' | relative_url }}">Publicaciones</a>
       <a href="{{ '/opiniones/' | relative_url }}">Opiniones</a>
       <a href="{{ '/barberena/' | relative_url }}">Barberena</a>
       <a href="{{ '/historias/' | relative_url }}">Historias</a>
-      <a href="{{ '/archivo/' | relative_url }}">Archivo</a>
     </nav>
-    <p class="site-footer__legal">© {{ 'now' | date: "%Y" }} Barberena Mi Municipio</p>
+    <small>© {{ 'now' | date: '%Y' }} Barberena Mi Municipio</small>
   </div>
 </footer>
-<style>
-.site-footer { border-top:1px solid var(--borde); padding:46px 18px 54px; font-family:'Barlow',sans-serif; text-align:center; transition: border-color .25s ease; }
-.site-footer__inner { max-width:760px; margin:0 auto; }
-.site-footer__brand { display:inline-flex; align-items:center; gap:10px; color:var(--texto); text-decoration:none; font-family:'Barlow Condensed',sans-serif; font-size:1.25rem; font-weight:800; text-transform:uppercase; }
-.site-footer__icon { width:30px; height:30px; object-fit:contain; }
-.site-footer__tagline { margin:12px 0 5px; color:var(--texto); font-weight:700; font-size:.86rem; }
-.site-footer__copy { margin:0; color:var(--texto-mudo); font-size:.86rem; }
-.site-footer__nav { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 18px; margin:24px 0 20px; }
-.site-footer__nav a { color:var(--texto-mudo); text-decoration:none; font-size:.72rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-.site-footer__nav a:hover { color:#ef4f1d; }
-.site-footer__legal { margin:0; color:var(--texto-mudo); font-size:.72rem; }
-</style>

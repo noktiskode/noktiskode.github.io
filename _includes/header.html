@@ -1,125 +1,24 @@
-<style>
-.site-header {
-  background: var(--bg);
-  border-bottom: 1px solid var(--borde);
-  font-family: 'Barlow', sans-serif;
-  position: relative;
-  z-index: 20;
-  transition: background 0.25s ease, border-color 0.25s ease;
-}
-.site-header__wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 20px 32px 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.site-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: var(--texto);
-  margin-right: auto;
-}
-.site-brand__icon { width: 38px; height: 38px; object-fit: contain; display: block; }
-.site-brand__text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.35rem;
-  line-height: .88;
-  font-weight: 800;
-  letter-spacing: -.025em;
-  text-transform: uppercase;
-}
-.site-cats {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 32px;
-  display: flex;
-  align-items: stretch;
-  gap: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.site-cats::-webkit-scrollbar { display: none; }
-.site-cats a {
-  position: relative;
-  flex: 0 0 auto;
-  padding: 13px 17px 14px;
-  color: var(--texto-mudo);
-  text-decoration: none;
-  font-size: .72rem;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  transition: color .18s ease;
-}
-.site-cats a:first-child { padding-left: 0; }
-.site-cats a::after {
-  content: "";
-  position: absolute;
-  left: 17px;
-  right: 17px;
-  bottom: -1px;
-  height: 2px;
-  background: #ef4f1d;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform .18s ease;
-}
-.site-cats a:first-child::after { left: 0; }
-.site-cats a:hover, .site-cats a.active { color: var(--texto); }
-.theme-toggle {
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid var(--borde);
-  background: var(--bg-alt);
-  color: var(--texto);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.05rem;
-  line-height: 1;
-  transition: background .18s ease, border-color .18s ease;
-}
-.theme-toggle:hover { border-color: #ef4f1d; }
-@media (max-width: 700px) {
-  .theme-toggle { width: 34px; height: 34px; font-size: .95rem; }
-}
-.site-cats a:hover::after, .site-cats a.active::after { transform: scaleX(1); }
-@media (max-width: 700px) {
-  .site-header__wrap { padding: 15px 18px 13px; }
-  .site-brand__icon { width: 34px; height: 34px; }
-  .site-brand__text { font-size: 1.18rem; }
-  .site-cats { padding: 0 18px; }
-  .site-cats a { padding: 12px 15px 13px; font-size: .66rem; }
-  .site-cats a:first-child { padding-left: 0; }
-  .site-cats a::after { left: 15px; right: 15px; }
-  .site-cats a:first-child::after { left: 0; }
-}
-</style>
-<header class="site-header">
-  <div class="site-header__wrap">
-    <a href="{{ '/' | relative_url }}" class="site-brand">
-      <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="Barberena Mi Municipio" class="site-brand__icon">
-      <span class="site-brand__text">Barberena<br>Mi Municipio</span>
+<header class="cb-navbar">
+  <div class="cb-container cb-navbar-inner">
+    <a class="cb-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/images/icon-bmm.png' | relative_url }}" alt="" class="cb-brand-icon">
+      <span>Barberena Mi Municipio</span>
     </a>
-    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo oscuro">
-      <span id="theme-toggle-icon">&#9789;</span>
-    </button>
+    <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">Menú</button>
+    <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/archivo/' | relative_url }}">Publicaciones</a>
+      <a href="{{ '/opiniones/' | relative_url }}">Opiniones</a>
+      <a href="{{ '/barberena/' | relative_url }}">Barberena</a>
+      <a href="{{ '/historias/' | relative_url }}">Historias</a>
+      <a href="{{ '/manifiesto.html' | relative_url }}">Sobre el blog</a>
+    </nav>
   </div>
-  {% assign current = page.url | default: '/' %}
-  <nav class="site-cats" aria-label="Navegación principal">
-    <a href="{{ '/' | relative_url }}" class="{% if current == '/' or current == '/index.html' %}active{% endif %}">Inicio</a>
-    <a href="{{ '/opiniones/' | relative_url }}" class="{% if current contains '/opiniones' or page.category == 'opiniones' %}active{% endif %}">Opiniones</a>
-    <a href="{{ '/barberena/' | relative_url }}" class="{% if current contains '/barberena' or page.category == 'barberena' %}active{% endif %}">Barberena</a>
-    <a href="{{ '/historias/' | relative_url }}" class="{% if current contains '/historias' or page.category == 'historias' %}active{% endif %}">Historias</a>
-    <a href="{{ '/archivo/' | relative_url }}" class="{% if current contains '/archivo' %}active{% endif %}">Archivo</a>
-  </nav>
 </header>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6187255978940623" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');});
+})();
+</script>
