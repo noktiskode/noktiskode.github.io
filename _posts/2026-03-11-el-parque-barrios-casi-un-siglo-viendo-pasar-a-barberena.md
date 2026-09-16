@@ -42,4 +42,14 @@ Con el paso de las décadas el parque ha tenido su mantenimiento y sus mejoras, 
 
 Casi un siglo después de su inauguración, el Parque Barrios sigue siendo lo que siempre fue: un punto de encuentro entre generaciones, donde el pasado y el presente de Barberena se cruzan todos los días sin que casi nadie lo note.
 
+<figure style="margin-bottom:1.5rem;">
+
+ <img src="/images/blog/1000015276.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
+
+<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Parque Barrios, en la actualidad. (Créditos: Me Gusta Santa Rosa).
+</figcaption>
+
+</figure>
+
+
 Fuentes: Guatemala.com y la ficha de SICultura sobre el Parque Barrios.
