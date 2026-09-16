@@ -16,6 +16,18 @@ Si hay un lugar que conoce de memoria a Barberena, ese es el Parque Barrios. Ah�
 
 El parque fue inaugurado en 1926, durante la administración de don Cesáreo de la Vega. Desde el primer día se pensó como un espacio de descanso y convivencia — o sea, desde hace casi cien años ya era el lugar pa' venir a platicar o simplemente a ver la vida pasar.
 
+<figure style="margin-bottom:1.5rem;">
+
+
+ <img src="/images/blog/1000039579.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
+
+
+<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Parque Barrios, durante los años 20.</figcaption>
+
+
+  </figure>
+
+
 Entre los primeros elementos que le dieron identidad estuvo el pedestal con el busto del general Justo Rufino Barrios, y también se instaló un reloj donado por don Carlos Lenhof, administrador de la finca Viñas. Ambos quedaron pegados para siempre a la imagen del parque.
 
 
