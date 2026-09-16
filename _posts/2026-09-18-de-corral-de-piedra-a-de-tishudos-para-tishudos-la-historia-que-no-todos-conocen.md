@@ -21,7 +21,8 @@ La cosa cambia el 20 de diciembre de 1879, cuando por acuerdo gubernativo se cre
 
  <img src="/images/blog/1000039580.jpg" alt="Entrada a Barberena," style="width:100%; border-radius:8px;">
 
-<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Entrada a Barberena, década de los años cincuenta.</figcaption>
+<figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Entrada a Barberena, década de los años cincuenta. (Créditos: El Cuje de Mis Amores).
+</figcaption>
 
   </figure>
 
