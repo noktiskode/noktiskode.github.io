@@ -18,7 +18,7 @@ Según orden de compra No. 53433920, publicada en Guatecompras el 10 de septiemb
 <figure style="margin-bottom:1.5rem;">
 
 
- <img src="/images/blog/1000041133.png" alt="Orden de compra No. 53433920" style="width:100%; border-radius:8px;">
+ <img src="/images/blog/1000041143.webp" alt="Orden de compra No. 53433920" style="width:100%; border-radius:8px;">
 
 
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Orden de compra No. 53433920
