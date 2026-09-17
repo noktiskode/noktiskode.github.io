@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 relevant: false
 title: Mototaxistas de El Cerinal inconformes por falta de apoyo
 date: 2026-09-16T17:51:00.000-06:00
