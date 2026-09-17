@@ -98,20 +98,20 @@ Y bueno, ¿era esto lo más urgente para Barberena, o esos Q5.25 millones hubier
 
 
 
-\[Guatecompras](https://www.guatecompras.gt/concursos/consultaConcurso.aspx?nog=28233751&lper=2025&iEnt=219&iUnt=3&iTipo=6&o=22)
+[Guatecompras](https://www.guatecompras.gt/concursos/consultaConcurso.aspx?nog=28233751&lper=2025&iEnt=219&iUnt=3&iTipo=6&o=22)
 
 
 
-\[SISCODE](https://auditoria.siscode.gob.gt/proyectos/958)
+[SISCODE](https://auditoria.siscode.gob.gt/proyectos/958)
 
 
 
-\[Enlace a la publicación de El Espectador Guatemala](https://www.facebook.com/100076131531784/posts/1120936423787398/?app=fbl)
+[Enlace a la publicación de El Espectador Guatemala](https://www.facebook.com/100076131531784/posts/1120936423787398/?app=fbl)
 
 
 
-\[Enlace a la publicación de Mass Noticias GT](https://www.facebook.com/100063938386790/posts/1568101995331065/?app=fbl)
+[Enlace a la publicación de Mass Noticias GT](https://www.facebook.com/100063938386790/posts/1568101995331065/?app=fbl)
 
 
 
-\#BarberenaSantaRosa #SantaRosaGT #CODEDE #ObrasPublicas
+#BarberenaSantaRosa #SantaRosaGT #CODEDE #ObrasPublicas
