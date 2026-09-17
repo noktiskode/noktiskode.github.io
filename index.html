@@ -11,7 +11,7 @@ description: "Blog personal sobre Barberena y El Cerinal. Opiniones, historias, 
 {% if featured_post %}
 <section class="cb-hero" style="--cb-hero-image:url('{{ featured_post.image | default: '/images/portada.webp' | relative_url }}')">
   <div class="cb-container">
-    <p class="cb-hero-kicker">{{ page.date | date: "%d/%m/%Y" }}</p>
+    <p class="cb-hero-kicker">{{ page.date | date: "%-d de %B de %Y" }}</p>
     <h1>{{ featured_post.title }}</h1>
     <p>{{ featured_post.excerpt | default: site.description | strip_html | truncatewords: 35 }}</p>
     <a class="cb-readmore" style="display:inline-block;margin-top:18px;color:#fff" href="{{ featured_post.url | relative_url }}">Leer publicación →</a>
