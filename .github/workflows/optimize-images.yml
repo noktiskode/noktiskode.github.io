@@ -7,6 +7,9 @@ on:
       - 'images/quejas/**'
       - 'images/blog/**'
 
+permissions:
+  contents: write
+
 jobs:
   optimize:
     runs-on: ubuntu-latest
@@ -17,14 +20,22 @@ jobs:
       - name: Clonar el repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0  # historial completo, necesario para comparar el rango real del push
 
       - name: Instalar herramientas de imagen
         run: sudo apt-get update && sudo apt-get install -y jpegoptim optipng webp
 
-      - name: Comprimir imágenes nuevas o modificadas (sin cambiar formato)
+      - name: Comprimir imágenes nuevas o modificadas
         run: |
-          IMAGES=$(git diff --name-only HEAD~1 HEAD -- 'images/quejas/*.jpg' 'images/quejas/*.jpeg' 'images/quejas/*.png' 'images/blog/*.jpg' 'images/blog/*.jpeg' 'images/blog/*.png' 2>/dev/null || true)
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          # Si "before" es el commit nulo (primer push a la rama), compara contra el árbol vacío
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE=$(git hash-object -t tree /dev/null)
+          fi
+
+          IMAGES=$(git diff --name-only "$BEFORE" "$AFTER" -- 'images/quejas/*.jpg' 'images/quejas/*.jpeg' 'images/quejas/*.png' 'images/blog/*.jpg' 'images/blog/*.jpeg' 'images/blog/*.png' 2>/dev/null || true)
 
           for img in $IMAGES; do
             if [ -f "$img" ]; then
@@ -36,8 +47,10 @@ jobs:
             fi
           done
 
-          # Además, comprime sin pérdida cualquier .webp nuevo (por si ya subís webp directo)
-          WEBPS=$(git diff --name-only HEAD~1 HEAD -- 'images/quejas/*.webp' 'images/blog/*.webp' 2>/dev/null || true)
+          # WebP nuevos o modificados: recompresión CON pérdida controlada (calidad 82).
+          # Si el .webp de origen ya venía de una compresión lossy, esto es pérdida sobre pérdida.
+          # Cambiá a "cwebp -lossless" si preferís no perder calidad en absoluto (pesa más).
+          WEBPS=$(git diff --name-only "$BEFORE" "$AFTER" -- 'images/quejas/*.webp' 'images/blog/*.webp' 2>/dev/null || true)
           for img in $WEBPS; do
             if [ -f "$img" ]; then
               echo "Recomprimiendo WebP: $img"
