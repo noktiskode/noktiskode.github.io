@@ -16,8 +16,6 @@ tags:
   - Obras Publicas Guatemala
   - Guatecompras
   - SISCODE
-  - Auditoria Social
-  - Noticias Barberena
 card_color: rojo
 ---
 Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples del Barrio El Tanque.
