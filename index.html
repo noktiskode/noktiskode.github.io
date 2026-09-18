@@ -3,12 +3,14 @@ layout: default
 title: Inicio
 show_hero: false
 description: "Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar."
+pagination:
+  enabled: true
 ---
 
 {% assign featured_post = site.posts | where: "featured", true | first %}
 {% unless featured_post %}{% assign featured_post = site.posts.first %}{% endunless %}
 
-{% if featured_post %}
+{% if featured_post and paginator.page == 1 %}
 <section class="cb-hero" style="--cb-hero-image:url('{{ featured_post.image | default: '/images/portada.webp' | relative_url }}')">
   <div class="cb-container">
     
@@ -30,18 +32,28 @@ description: "Blog personal sobre Barberena y El Cerinal. Opiniones, historias, 
     </header>
 
     <div class="cb-post-list">
-      {% assign shown = 0 %}
-      {% for post in site.posts %}
-        {% if post.url != featured_post.url and shown < 6 %}
+      {% for post in paginator.posts %}
+        {% if post.url != featured_post.url %}
           {% include post-card.html post=post %}
-          {% assign shown = shown | plus: 1 %}
         {% endif %}
       {% endfor %}
-      {% if shown == 0 %}<p class="cb-empty">Todavía no hay más publicaciones.</p>{% endif %}
+      {% if paginator.total_posts == 0 %}<p class="cb-empty">Todavía no hay más publicaciones.</p>{% endif %}
     </div>
 
+    {% if paginator.total_pages > 1 %}
     <div class="cb-pagination">
-      <span></span><a href="{{ '/archivo/' | relative_url }}">Ver todas →</a>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">← Anteriores</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      <span class="cb-pagination-count">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Siguientes →</a>
+      {% else %}
+        <span></span>
+      {% endif %}
     </div>
+    {% endif %}
   </div>
 </main>

@@ -27,6 +27,11 @@ plugins:
 
 pagination:
   enabled: true
+  per_page: 6
+  permalink: '/page/:num/'
+  title: ':title - Página :num'
+  sort_field: 'date'
+  sort_reverse: true
 
 meses:
   - "Enero"
