@@ -4,7 +4,7 @@ relevant: false
 title: Lo que se sabe del proyecto del salón en El Tanque
 date: 2026-09-17T18:00:00.000-06:00
 image: /images/blog/1000041201.webp
-excerpt: Vecinos, les contamos cómo va el asunto con el salón de usos múltiples
+excerpt: Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples
   del Barrio El Tanque.
 category: barberena
 tags:
@@ -20,7 +20,7 @@ tags:
   - Noticias Barberena
 card_color: rojo
 ---
-Vecinos, les contamos cómo va el asunto con el salón de usos múltiples del Barrio El Tanque.
+Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples del Barrio El Tanque.
 
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041203.webp" alt="Rótulo de identificación del proyecto" style="width:100%; border-radius:8px;">
