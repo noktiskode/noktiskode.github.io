@@ -1,9 +1,7 @@
 :root{--cb-accent:#0085A1;--cb-text:#212529;--cb-muted:#6c757d;--cb-line:#dee2e6;--cb-bg:#fff;--cb-soft:#f8f9fa}
 *{box-sizing:border-box}
 body{margin:0;background:var(--cb-bg);color:var(--cb-text);font-family:'Barlow',Arial,sans-serif;font-size:16px;line-height:1.6}
-a {
-  color: var(--rojo);
-}
+a{color:inherit}
 .cb-container{width:min(1140px,calc(100% - 40px));margin:0 auto}
 .cb-navbar{position:relative;z-index:10;background:#fff;border-bottom:1px solid rgba(0,0,0,.08)}
 .cb-navbar-inner{min-height:76px;display:flex;align-items:center;gap:28px}
