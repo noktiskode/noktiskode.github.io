@@ -25,7 +25,7 @@ Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples del B
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Rótulo de identificación del proyecto</figcaption>
   </figure>
 
-Resulta que en octubre de 2025, la Muni y el CODEDE acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro Zurdo, S.A.
+La cosa empezó en octubre de 2025, cuando la Muni de Barberena y el CODEDE de Santa Rosa acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro Zurdo, S.A.
 
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041200.webp" alt="Maquinaria" style="width:100%; border-radius:8px;">
