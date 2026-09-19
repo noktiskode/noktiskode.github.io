@@ -18,8 +18,6 @@ tags:
   - SISCODE
 card_color: rojo
 ---
-Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples del Barrio El Tanque.
-
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041203.webp" alt="Rótulo de identificación del proyecto" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Rótulo de identificación del proyecto</figcaption>
