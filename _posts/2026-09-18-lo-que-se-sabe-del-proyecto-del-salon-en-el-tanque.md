@@ -56,7 +56,7 @@ Mientras tanto, en el lugar ya se pueden ver las paredes levantadas, el graderí
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Paredes levantadas</figcaption>
   </figure>
 
-También se ha mencionado en medios locales que este salón ya había tenido trabajos anteriormente. Y la empresa contratista cuenta con otros contratos de proyectos de agua con la Muni.
+También se ha mencionado en medios locales que este salón había sido remozado recientemente. Además, la empresa contratista cuenta con otros contratos de proyectos de agua con la Muni.
 
 Eso es lo que se sabe hasta ahora sobre el proyecto: cuánto cuesta, cuándo comenzó, cómo ha avanzado y qué se ha registrado en los documentos disponibles.
 
