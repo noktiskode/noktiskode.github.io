@@ -18,44 +18,34 @@ tags:
   - SISCODE
 card_color: rojo
 ---
+La cosa empezó en octubre de 2025, cuando la Muni de Barberena y el CODEDE de Santa Rosa acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro Zurdo, S.A.
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041203.webp" alt="Rótulo de identificación del proyecto" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Rótulo de identificación del proyecto</figcaption>
   </figure>
-
-La cosa empezó en octubre de 2025, cuando la Muni de Barberena y el CODEDE de Santa Rosa acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro Zurdo, S.A.
-
+Los trabajos arrancaron en enero de 2026. La idea era terminar en 4 meses, pero el plazo se amplió otros 4 meses, hasta agosto, debido a los trabajos para retirar el techo del edificio anterior y a las condiciones de lluvia.
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041200.webp" alt="Maquinaria" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Maquinaria</figcaption>
   </figure>
-
-Los trabajos arrancaron en enero de 2026. La idea era terminar en 4 meses, pero el plazo se amplió otros 4 meses, hasta agosto, debido a los trabajos para retirar el techo del edificio anterior y a las condiciones de lluvia.
-
+En junio se presentó un documento de suspensión temporal de los trabajos por el clima. Durante esos días también aparecen actualizaciones del porcentaje de avance en el portal público.
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041202.webp" alt="Escombros" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Escombros</figcaption>
   </figure>
+En los informes disponibles aparecen dos porcentajes de avance: el supervisor de la Muni reporta 30.19% al 3 de septiembre, mientras que el reporte del CODEDE registra 44.12% al 9 de septiembre.
 
-En junio se presentó un documento de suspensión temporal de los trabajos por el clima. Durante esos días también aparecen actualizaciones del porcentaje de avance en el portal público.
-
+Mientras tanto, en el lugar ya se pueden ver las paredes levantadas, el graderío, el escenario y el área VIP.
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041199.webp" alt="Paredes levantadas" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Paredes levantadas
 </figcaption>
   </figure>
-
-En los informes disponibles aparecen dos porcentajes de avance: el supervisor de la Muni reporta 30.19% al 3 de septiembre, mientras que el reporte del CODEDE registra 44.12% al 9 de septiembre.
-
-Mientras tanto, en el lugar ya se pueden ver las paredes levantadas, el graderío, el escenario y el área VIP.
-
+También se ha mencionado en medios locales que este salón había sido remozado recientemente. Además, la empresa contratista cuenta con otros contratos de proyectos de agua con la Muni.
 <figure style="margin-bottom:1.5rem;">
  <img src="/images/blog/1000041198.webp" alt="Paredes levantadas" style="width:100%; border-radius:8px;">
 <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Paredes levantadas</figcaption>
   </figure>
-
-También se ha mencionado en medios locales que este salón había sido remozado recientemente. Además, la empresa contratista cuenta con otros contratos de proyectos de agua con la Muni.
-
 Eso es lo que se sabe hasta ahora sobre el proyecto: cuánto cuesta, cuándo comenzó, cómo ha avanzado y qué se ha registrado en los documentos disponibles.
 
 Enlaces para consultar:
