@@ -274,10 +274,6 @@ article img,
   display: block;
 }
 
-/* El estilo del news-ticker (.news-ticker, .ticker-track, .ticker-item, etc.)
-   ahora vive únicamente en el <style> embebido dentro de news-ticker.html,
-   para evitar que esta hoja global choque con esos selectores. */
-
 .video-wrapper {
   max-width: 500px;
   margin: 0 auto 2rem;

@@ -1,9 +1,13 @@
+---
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Panel de moderación — Barberena Mi Municipio</title>
+<meta name="robots" content="noindex, nofollow">
 <style>
   :root{
     --paper:#EFE9DC; --ink:#24291F; --ink-soft:#54554C; --line:#C9C2AF;
@@ -118,10 +122,11 @@
     if(!ts) return '';
     return ts.toDate().toLocaleDateString('es-GT', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
   }
-  function escapeHtml(s){
-    const div = document.createElement('div');
-    div.textContent = s;
-    return div.innerHTML;
+  // Escapa &, <, >, " y ' (el método anterior con textContent no escapaba comillas)
+  function escapeHtml(v){
+    return String(v ?? '').replace(/[&<>"']/g, ch => (
+      { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+    ));
   }
 
   function renderModeracion(docs){
@@ -133,15 +138,15 @@
       const c = d.data();
       return `
         <div class="mod-item">
-          <p class="m-post">${c.postSlug}</p>
+          <p class="m-post">${escapeHtml(c.postSlug)}</p>
           <div class="m-head">
-            <span class="m-name">${c.nombre || 'Vecino'}</span>
+            <span class="m-name">${escapeHtml(c.nombre || 'Vecino')}</span>
             <span class="m-date">${formatFecha(c.creado)}</span>
           </div>
           <p class="m-body">${escapeHtml(c.texto)}</p>
           <div class="mod-actions">
-            <button class="btn-approve" data-id="${d.id}" data-estado="aprobado">Aprobar</button>
-            <button class="btn-reject" data-id="${d.id}" data-estado="rechazado">Rechazar</button>
+            <button class="btn-approve" data-id="${escapeHtml(d.id)}" data-estado="aprobado">Aprobar</button>
+            <button class="btn-reject" data-id="${escapeHtml(d.id)}" data-estado="rechazado">Rechazar</button>
           </div>
         </div>
       `;

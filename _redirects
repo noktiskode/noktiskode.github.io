@@ -1,0 +1,65 @@
+# Redirecciones 301 (Cloudflare Pages). Formato: origen destino código
+# Páginas que cambiaron de dirección
+/como-participar.html    /como-participar/    301
+/que-publicamos.html     /que-publicamos/     301
+/pages/manifiesto.html   /manifiesto/         301
+/pages/manifiesto        /manifiesto/         301
+/archivo-barberena.html  /archivo-barberena/  301
+/blog/                   /archivo/            301
+/blog                    /archivo/            301
+
+# Posts: URL vieja (/categoria/AAAA/MM/DD/titulo.html y sin .html) -> /titulo/
+/historias/2026/03/11/el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena.html  /el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena/  301
+/historias/2026/03/11/el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena  /el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena/  301
+/historias/2026/05/21/el-busto-del-lic-jose-de-barberena.html  /el-busto-del-lic-jose-de-barberena/  301
+/historias/2026/05/21/el-busto-del-lic-jose-de-barberena  /el-busto-del-lic-jose-de-barberena/  301
+/historias/2026/06/11/historia-de-la-pila-de-las-5-calles.html  /historia-de-la-pila-de-las-5-calles/  301
+/historias/2026/06/11/historia-de-la-pila-de-las-5-calles  /historia-de-la-pila-de-las-5-calles/  301
+/opiniones/2026/08/19/pepe-rueda-responde-si-el-es-pistolita.html  /pepe-rueda-responde-si-el-es-pistolita/  301
+/opiniones/2026/08/19/pepe-rueda-responde-si-el-es-pistolita  /pepe-rueda-responde-si-el-es-pistolita/  301
+/barberena/2026/08/31/denuncia-anonima-el-llamado-del-alcalde.html  /denuncia-anonima-el-llamado-del-alcalde/  301
+/barberena/2026/08/31/denuncia-anonima-el-llamado-del-alcalde  /denuncia-anonima-el-llamado-del-alcalde/  301
+/barberena/2026/09/01/bienvenida.html  /bienvenida/  301
+/barberena/2026/09/01/bienvenida  /bienvenida/  301
+/historias/2026/09/01/historia-del-templo-de-minerva.html  /historia-del-templo-de-minerva/  301
+/historias/2026/09/01/historia-del-templo-de-minerva  /historia-del-templo-de-minerva/  301
+/barberena/2026/09/01/horario-y-candado-para-el-tanque.html  /horario-y-candado-para-el-tanque/  301
+/barberena/2026/09/01/horario-y-candado-para-el-tanque  /horario-y-candado-para-el-tanque/  301
+/opiniones/2026/09/02/si-no-hay-video-no-existio.html  /si-no-hay-video-no-existio/  301
+/opiniones/2026/09/02/si-no-hay-video-no-existio  /si-no-hay-video-no-existio/  301
+/barberena/2026/09/07/muni-al-rescate.html  /muni-al-rescate/  301
+/barberena/2026/09/07/muni-al-rescate  /muni-al-rescate/  301
+/barberena/2026/09/07/transporte-de-buena-vista-mantendra-tarifa-de-q4-00.html  /transporte-de-buena-vista-mantendra-tarifa-de-q4-00/  301
+/barberena/2026/09/07/transporte-de-buena-vista-mantendra-tarifa-de-q4-00  /transporte-de-buena-vista-mantendra-tarifa-de-q4-00/  301
+/opiniones/2026/09/09/napo-rojas-ines-castillo-y-ricardo-alarcon-asi-votaron-los-diputados-de-santa-rosa.html  /napo-rojas-ines-castillo-y-ricardo-alarcon-asi-votaron-los-diputados-de-santa-rosa/  301
+/opiniones/2026/09/09/napo-rojas-ines-castillo-y-ricardo-alarcon-asi-votaron-los-diputados-de-santa-rosa  /napo-rojas-ines-castillo-y-ricardo-alarcon-asi-votaron-los-diputados-de-santa-rosa/  301
+/opiniones/2026/09/11/diputados-de-santa-rosa-mucha-foto-poca-cuenta.html  /diputados-de-santa-rosa-mucha-foto-poca-cuenta/  301
+/opiniones/2026/09/11/diputados-de-santa-rosa-mucha-foto-poca-cuenta  /diputados-de-santa-rosa-mucha-foto-poca-cuenta/  301
+/opiniones/2026/09/12/entre-tanto-pendiente-la-antorcha-no-es-la-prioridad.html  /entre-tanto-pendiente-la-antorcha-no-es-la-prioridad/  301
+/opiniones/2026/09/12/entre-tanto-pendiente-la-antorcha-no-es-la-prioridad  /entre-tanto-pendiente-la-antorcha-no-es-la-prioridad/  301
+/barberena/2026/09/12/rubelio-recinos-entrega-playeras-para-la-antorcha-a-esquipulas.html  /rubelio-recinos-entrega-playeras-para-la-antorcha-a-esquipulas/  301
+/barberena/2026/09/12/rubelio-recinos-entrega-playeras-para-la-antorcha-a-esquipulas  /rubelio-recinos-entrega-playeras-para-la-antorcha-a-esquipulas/  301
+/opiniones/2026/09/13/tio-rube-y-el-agua.html  /tio-rube-y-el-agua/  301
+/opiniones/2026/09/13/tio-rube-y-el-agua  /tio-rube-y-el-agua/  301
+/opiniones/2026/09/15/anoche-muy-bonito-y-todo-pero.html  /anoche-muy-bonito-y-todo-pero/  301
+/opiniones/2026/09/15/anoche-muy-bonito-y-todo-pero  /anoche-muy-bonito-y-todo-pero/  301
+/barberena/2026/09/15/transferencia-de-septiembre-2026-del-ministerio-de-finanzas-publicas.html  /transferencia-de-septiembre-2026-del-ministerio-de-finanzas-publicas/  301
+/barberena/2026/09/15/transferencia-de-septiembre-2026-del-ministerio-de-finanzas-publicas  /transferencia-de-septiembre-2026-del-ministerio-de-finanzas-publicas/  301
+/barberena/2026/09/16/mototaxistas-de-el-cerinal-inconformes-por-falta-de-apoyo.html  /mototaxistas-de-el-cerinal-inconformes-por-falta-de-apoyo/  301
+/barberena/2026/09/16/mototaxistas-de-el-cerinal-inconformes-por-falta-de-apoyo  /mototaxistas-de-el-cerinal-inconformes-por-falta-de-apoyo/  301
+/barberena/2026/09/17/la-muni-invirtio-en-pintura-para-la-pila-5-calles.html  /la-muni-invirtio-en-pintura-para-la-pila-5-calles/  301
+/barberena/2026/09/17/la-muni-invirtio-en-pintura-para-la-pila-5-calles  /la-muni-invirtio-en-pintura-para-la-pila-5-calles/  301
+/historias/2026/05/18/de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no-todos-conocen.html  /de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no-todos-conocen/  301
+/historias/2026/05/18/de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no-todos-conocen  /de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no-todos-conocen/  301
+/barberena/2026/09/17/lo-que-se-sabe-del-proyecto-del-salon-en-el-tanque.html  /lo-que-se-sabe-del-proyecto-del-salon-en-el-tanque/  301
+/barberena/2026/09/17/lo-que-se-sabe-del-proyecto-del-salon-en-el-tanque  /lo-que-se-sabe-del-proyecto-del-salon-en-el-tanque/  301
+/barberena/2026/09/18/obra-sera-entregada-a-la-comunidad-en-los-proximos-dias.html  /obra-sera-entregada-a-la-comunidad-en-los-proximos-dias/  301
+/barberena/2026/09/18/obra-sera-entregada-a-la-comunidad-en-los-proximos-dias  /obra-sera-entregada-a-la-comunidad-en-los-proximos-dias/  301
+/barberena/2026/09/19/vecinos-piden-ayuda-a-las-autoridades-para-que-reparen-la-calle.html  /vecinos-piden-ayuda-a-las-autoridades-para-que-reparen-la-calle/  301
+/barberena/2026/09/19/vecinos-piden-ayuda-a-las-autoridades-para-que-reparen-la-calle  /vecinos-piden-ayuda-a-las-autoridades-para-que-reparen-la-calle/  301
+/barberena/2026/09/20/la-municipalidad-de-barberena-promociono-como-totalmente-gratis-los-eventos-del-13-y-19-de-septiembre.html  /la-municipalidad-de-barberena-promociono-como-totalmente-gratis-los-eventos-del-13-y-19-de-septiembre/  301
+/barberena/2026/09/20/la-municipalidad-de-barberena-promociono-como-totalmente-gratis-los-eventos-del-13-y-19-de-septiembre  /la-municipalidad-de-barberena-promociono-como-totalmente-gratis-los-eventos-del-13-y-19-de-septiembre/  301
+
+# Nota: los 4 posts cuyo nombre de archivo tenía caracteres dañados (ampliación del
+# cementerio, ¿Y los diputados…?, El único que dio la cara, Rubelio…apoyará) no tienen
+# redirección porque su URL vieja no es predecible; usan la URL nueva /titulo/.
