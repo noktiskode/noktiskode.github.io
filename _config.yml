@@ -2,6 +2,8 @@ title: Barberena Mi Municipio
 description: "Blog personal sobre Barberena: opiniones, acontecimientos, historias y cosas que vale la pena comentar."
 url: "https://barberenamimunicipio.top"
 
+permalink: /:title/
+
 timezone: America/Guatemala
 future: true
 theme: null
