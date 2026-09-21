@@ -3,7 +3,7 @@ featured: false
 relevant: false
 title: 'De Corral de Piedra a "de tishudos para tishudos": la historia que no
   todos conocen'
-date: 2026-05-18T10:00:00.000-06:00
+date: 2026-09-18T10:00:00.000-06:00
 image: /images/blog/1000039581.jpg
 excerpt: Antes de ser Barberena, este pedazo de tierra ni siquiera se llamaba
   así. En la Colonia era territorio de los frailes mercedarios y le decían...
