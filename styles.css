@@ -44,11 +44,11 @@
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--texto); overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column; transition: background 0.25s ease, color 0.25s ease; }
+    body { font-family: 'Roboto', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--texto); overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column; transition: background 0.25s ease, color 0.25s ease; }
     img { filter: var(--img-filtro); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 main { flex: 1; }
 
@@ -64,7 +64,7 @@ main { flex: 1; }
     .site-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--texto); }
     .site-brand__icon { height: 40px; width: 40px; display: block; }
     .site-brand__text {
-      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-family: 'Roboto Condensed', sans-serif; font-weight: 700;
       font-size: 1.1rem; line-height: 1.05; text-transform: uppercase; letter-spacing: 0.01em;
     }
     .site-cats {
@@ -74,7 +74,7 @@ main { flex: 1; }
     }
     .site-cats::-webkit-scrollbar { display: none; }
     .site-cats a {
-      font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.85rem;
+      font-family: 'Roboto', sans-serif; font-weight: 600; font-size: 0.85rem;
       color: var(--texto-mudo); text-decoration: none; white-space: nowrap;
       padding: 10px 14px; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
     }
@@ -92,7 +92,7 @@ main { flex: 1; }
     .hero-badge {
       position: absolute; bottom: 2rem; left: 3rem;
       background: var(--rojo); color: white;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
       font-size: 0.7rem; font-weight: 700; letter-spacing: 0.25em;
       text-transform: uppercase; padding: 0.4rem 1rem;
     }
@@ -127,11 +127,11 @@ main { flex: 1; }
       display: flex; flex-direction: column; justify-content: center; gap: 2rem;
     }
     .manifiesto-sidebar img { width: 140px; height: auto; }
-    .manifiesto-label { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; }
-    .manifiesto-tagline { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--bg); line-height: 1.4; font-style: italic; }
+    .manifiesto-label { font-family: 'Roboto Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; }
+    .manifiesto-tagline { font-family: 'Roboto', sans-serif; font-size: 1.5rem; color: var(--bg); line-height: 1.4; font-style: italic; }
     .manifiesto-content { padding: 4rem; background: var(--bg-alt); }
-    .manifiesto-pretitle { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; margin-bottom: 1.5rem; }
-    .manifiesto-title { font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 800; text-transform: uppercase; color: var(--texto); line-height: 1; margin-bottom: 2rem; }
+    .manifiesto-pretitle { font-family: 'Roboto Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; margin-bottom: 1.5rem; }
+    .manifiesto-title { font-family: 'Roboto Condensed', sans-serif; font-size: 2.8rem; font-weight: 800; text-transform: uppercase; color: var(--texto); line-height: 1; margin-bottom: 2rem; }
     .manifiesto-title span { color: var(--rojo); }
     .manifiesto-text { font-size: 1rem; line-height: 1.85; color: var(--texto-suave); font-weight: 300; max-width: 580px; }
     .manifiesto-text p + p { margin-top: 1.1rem; }
@@ -139,7 +139,7 @@ main { flex: 1; }
     .manifiesto-details { margin-top: 1.1rem; }
     .manifiesto-details summary {
       cursor: pointer; list-style: none; color: var(--rojo); font-weight: 500;
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em;
+      font-family: 'Roboto Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em;
       text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem;
     }
     .manifiesto-details summary::-webkit-details-marker { display: none; }
@@ -147,7 +147,7 @@ main { flex: 1; }
     .manifiesto-details[open] summary::after { transform: rotate(45deg); }
     .manifiesto-details[open] summary { margin-bottom: 1.1rem; }
     .manifiesto-details-content p + p { margin-top: 1.1rem; }
-    .manifiesto-subhead { font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto); margin-top: 1.75rem; margin-bottom: 0.85rem; }
+    .manifiesto-subhead { font-family: 'Roboto Condensed', sans-serif; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto); margin-top: 1.75rem; margin-bottom: 0.85rem; }
     .manifiesto-details-content .manifiesto-subhead:first-child { margin-top: 0; }
     .manifiesto-list { list-style: none; margin-top: 0.6rem; }
     .manifiesto-list li { display: flex; flex-direction: column; gap: 0.2rem; }
@@ -157,11 +157,11 @@ main { flex: 1; }
     .manifiesto-list.no-publicamos li { flex-direction: row; }
     .manifiesto-list.no-publicamos li + li { margin-top: 0.6rem; }
 
-    .section-label { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 0.75rem; }
+    .section-label { font-family: 'Roboto Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rojo); font-weight: 700; display: block; margin-bottom: 0.75rem; }
 
     .quejas { padding: 5rem 3rem 6rem; background: var(--bg-alt); max-width: 1000px; margin: 0 auto; }
     .quejas-header { text-align: center; margin-bottom: 1rem; }
-    .quejas-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); }
+    .quejas-header h2 { font-family: 'Roboto Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); }
     .quejas-header p { max-width: 560px; margin: 1rem auto 0; color: var(--texto-mudo); font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
     .quejas-feed { margin-top: 3.5rem; display: flex; flex-direction: column; gap: 2.75rem; }
     .quejas-empty { text-align: center; color: var(--texto-mudo); font-size: 0.9rem; margin-top: 3.5rem; font-weight: 300; }
@@ -178,27 +178,27 @@ main { flex: 1; }
     .queja-media { position: relative; overflow: hidden; background: repeating-linear-gradient(135deg, rgba(232,69,42,0.9) 0 14px, rgba(17,17,16,0.92) 14px 28px); display: flex; align-items: center; justify-content: center; min-height: 190px; }
     .queja-media img { width: 100%; height: 100%; object-fit: cover; }
     .queja-media .icono { font-size: 3.4rem; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4)); }
-    .queja-media .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.75rem; font-family: 'Space Grotesk', sans-serif; }
+    .queja-media .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.75rem; font-family: 'Roboto Condensed', sans-serif; }
 
     .queja-body { padding: 2rem 2.25rem; position: relative; }
     .queja-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
-    .queja-zona { font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rojo); }
+    .queja-zona { font-family: 'Roboto Condensed', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rojo); }
     .queja-fecha { font-size: 0.72rem; color: var(--texto-mudo); }
     .queja-fecha::before { content: '·'; margin-right: 0.75rem; color: var(--texto-mudo); }
-    .queja h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.6rem; line-height: 1.15; }
-    .queja p.relato { font-family: 'Lora', serif; font-style: italic; font-size: 0.95rem; line-height: 1.7; color: var(--texto-suave); max-width: 480px; }
+    .queja h3 { font-family: 'Roboto Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.6rem; line-height: 1.15; }
+    .queja p.relato { font-family: 'Roboto', sans-serif; font-style: italic; font-size: 0.95rem; line-height: 1.7; color: var(--texto-suave); max-width: 480px; }
     .queja p.relato::before { content: '\201C'; }
     .queja p.relato::after { content: '\201D'; }
     .queja-firma { margin-top: 0.9rem; font-size: 0.78rem; color: var(--texto-mudo); font-weight: 500; }
 
-    .sello { position: absolute; top: 1.4rem; right: 1.6rem; font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid; border-radius: 4px; padding: 0.3rem 0.6rem; transform: rotate(6deg); opacity: 0.85; }
+    .sello { position: absolute; top: 1.4rem; right: 1.6rem; font-family: 'Roboto Condensed', sans-serif; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid; border-radius: 4px; padding: 0.3rem 0.6rem; transform: rotate(6deg); opacity: 0.85; }
     .sello.revision { color: #b8860b; border-color: #b8860b; }
     .sello.respondida { color: #2e7d32; border-color: #2e7d32; }
     .sello.sinrespuesta { color: var(--rojo); border-color: var(--rojo); }
 
     .quejas-cta { margin-top: 3.5rem; text-align: center; padding: 2.5rem; background: var(--tema-dark-bg); transition: background 0.3s; }
     .quejas-cta p { color: rgba(255,255,255,0.55); font-size: 0.9rem; max-width: 460px; margin: 0 auto 1.25rem; line-height: 1.7; font-weight: 300; }
-    .quejas-cta a { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2.2rem; }
+    .quejas-cta a { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--rojo); color: white; text-decoration: none; font-family: 'Roboto Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2.2rem; }
 
     @media (max-width: 640px) {
       .quejas { padding: 3rem 1.5rem 4rem; }
@@ -210,7 +210,7 @@ main { flex: 1; }
 
     .historia { padding: 5rem 3rem; background: var(--bg-alt); }
     .historia-header { text-align: center; margin-bottom: 3rem; }
-    .historia-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); }
+    .historia-header h2 { font-family: 'Roboto Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); }
     .historia-grid { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; }
     .historia-item { border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 0.75rem; }
     .historia-item summary {
@@ -218,10 +218,10 @@ main { flex: 1; }
       cursor: pointer; list-style: none; padding: 0.75rem 0;
     }
     .historia-item summary::-webkit-details-marker { display: none; }
-    .historia-item summary::after { content: '+'; font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; color: var(--rojo); transition: transform 0.2s; }
+    .historia-item summary::after { content: '+'; font-family: 'Roboto Condensed', sans-serif; font-size: 1.3rem; color: var(--rojo); transition: transform 0.2s; }
     .historia-item[open] summary::after { transform: rotate(45deg); }
-    .historia-year { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--rojo); text-align: right; }
-    .historia-item summary h4 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--texto); }
+    .historia-year { font-family: 'Roboto Condensed', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--rojo); text-align: right; }
+    .historia-item summary h4 { font-family: 'Roboto Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--texto); }
     .historia-text { padding: 0 0 0.5rem 110px; }
     .historia-text p { font-size: 0.9rem; color: var(--texto-mudo); line-height: 1.7; font-weight: 300; }
     @media (max-width: 600px) {
@@ -232,22 +232,22 @@ main { flex: 1; }
     .historia-note strong { color: var(--texto); font-weight: 500; }
 
     .site-footer { border-top: 1px solid var(--borde); padding: 2.5rem 1.5rem; margin-top: 3rem; text-align: center; }
-    .site-footer__brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--texto); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .site-footer__brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--texto); font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; margin-bottom: 0.5rem; }
     .site-footer__icon { height: 28px; width: 28px; display: block; }
-    .site-footer__copy { font-family: 'Barlow', sans-serif; font-size: 0.85rem; color: var(--texto-mudo); }
+    .site-footer__copy { font-family: 'Roboto', sans-serif; font-size: 0.85rem; color: var(--texto-mudo); }
     .site-footer__copy a { color: var(--rojo); text-decoration: none; }
     .site-footer__copy a:hover { text-decoration: underline; }
 
     .participa { padding: 5rem 3rem; background: var(--bg-alt); }
     .participa-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    .participa h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); line-height: 1.1; margin-bottom: 1.5rem; }
+    .participa h2 { font-family: 'Roboto Condensed', sans-serif; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; color: var(--texto); line-height: 1.1; margin-bottom: 1.5rem; }
     .participa h2 span { color: var(--rojo); }
     .participa p { font-size: 0.95rem; color: var(--texto-mudo); line-height: 1.8; font-weight: 300; margin-bottom: 1rem; }
     .participa-items { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
     .participa-item { display: flex; gap: 1rem; align-items: flex-start; opacity: 0; transform: translateX(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .participa-item.visible { opacity: 1; transform: translateX(0); }
-    .participa-num { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--rojo); line-height: 1; flex-shrink: 0; width: 36px; }
-    .participa-text h4 { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .participa-num { font-family: 'Roboto Condensed', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--rojo); line-height: 1; flex-shrink: 0; width: 36px; }
+    .participa-text h4 { font-family: 'Roboto Condensed', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
     .participa-text p { font-size: 0.85rem; margin-bottom: 0; }
 
     @media (max-width: 900px) {
@@ -302,7 +302,7 @@ article img,
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px 34px;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .site-back a {
   display: inline-flex;
@@ -310,7 +310,7 @@ article img,
   gap: 8px;
   color: var(--texto);
   text-decoration: none;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: .76rem;
   font-weight: 800;
   letter-spacing: .1em;
