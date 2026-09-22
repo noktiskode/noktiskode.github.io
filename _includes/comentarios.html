@@ -45,7 +45,18 @@
   onSnapshot(q, snap => {
     const list = document.getElementById('comment-list');
     if (snap.empty) {
-      list.innerHTML = '<p style="color:var(--texto-mudo);font-style:italic;font-size:14px;">Sin comentarios aún.</p>';
+      list.innerHTML = `
+        <div style="text-align:center;padding:2.2rem 1rem 1.6rem;">
+          <svg width="72" height="52" viewBox="0 0 72 52" style="margin-bottom:1rem;">
+            <path d="M20 2h34a12 12 0 0 1 12 12v10a12 12 0 0 1-12 12H36l-9 9v-9h-7a12 12 0 0 1-12-12V14A12 12 0 0 1 20 2z" fill="#ef4f1d"/>
+            <circle cx="34" cy="17" r="3" fill="#fff"/>
+            <circle cx="46" cy="17" r="3" fill="#fff"/>
+            <circle cx="58" cy="17" r="3" fill="#fff"/>
+            <path d="M14 22h28a10 10 0 0 1 10 10v6a10 10 0 0 1-10 10H22l-8 8v-8a10 10 0 0 1-10-10v-6a10 10 0 0 1 10-10z" fill="none" stroke="var(--texto)" stroke-width="2.2"/>
+          </svg>
+          <p style="font-weight:700;font-size:19px;margin:0 0 .3rem;color:var(--texto);">Aún no hay comentarios</p>
+          <p style="color:var(--texto-mudo);font-size:15px;margin:0;">Sé la primera persona en comentar.</p>
+        </div>`;
       return;
     }
     list.innerHTML = snap.docs.map(d => {
