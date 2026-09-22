@@ -1,8 +1,7 @@
 ---
-relevant: false
 title: "Diputados de Santa Rosa: mucha foto, poca cuenta"
 date: 2026-09-11T14:27:00.000-06:00
-image: /images/blog/1000037759.png
+image: /images/blog/1000042077.webp
 excerpt: >
   Cada cierto tiempo sale uno que otro alcalde a decir que Inés Castillo, Napo
   Rojas o Ricardo Alarcón "están peleando proyectos"... 
@@ -11,6 +10,7 @@ category: opiniones
 tags:
   - Política local
   - Santa Rosa
+relevant: false
 ---
 Cada cierto tiempo sale uno que otro alcalde a decir que Inés Castillo, Napo Rojas o Ricardo Alarcón "están peleando proyectos" para nuestros municipios y basta para que el tema se dé por resuelto. Salir en la foto, sin embargo, no equivale a representar a un departamento.
 
