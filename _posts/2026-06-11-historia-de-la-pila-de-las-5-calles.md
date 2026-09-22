@@ -5,18 +5,18 @@ excerpt: "El origen y la historia de la Pila de las Cinco Calles en Barberena,
 layout: post
 title: Historia de la Pila de las 5 Calles
 date: 2026-06-11T10:00:00.000-06:00
+card_color: blanco
 image: /images/blog/1000038999.jpg
 category: historias
 tags:
   - Historia
   - Patrimonio
   - Tradiciones
-card_color: blanco
 ---
 <div style="max-width:640px; margin:0 auto; padding: 2.5rem 1.2rem; font-family:'Lora', serif; color:#222; line-height:1.8;">
 
   <figure style="margin-bottom:1.5rem;">
-    <img src="/images/historia/1788418785301.jpg" alt="Las Cinco Calles, Barberena, 1942" style="width:100%; border-radius:8px;">
+    <img src="/images/blog/1788418785301.webp" alt="Las Cinco Calles, Barberena, 1942" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">Las Cinco Calles, Barberena, 1942.</figcaption>
   </figure>
 
@@ -29,7 +29,7 @@ card_color: blanco
   </h2>
 
   <figure style="margin-bottom:1.5rem;">
-    <img src="/images/historia/1788418884653.jpg" alt="Mujeres lavando en la Pila de las Cinco Calles, fotografía histórica" style="width:100%; border-radius:8px;">
+    <img src="/images/blog/1788418884653.webp" alt="Mujeres lavando en la Pila de las Cinco Calles, fotografía histórica" style="width:100%; border-radius:8px;">
   </figure>
 
   <p>
@@ -57,7 +57,7 @@ card_color: blanco
   </p>
 
   <figure style="margin: 1rem 0 1.5rem;">
-    <img src="/images/historia/20260311205854_001.jpg" alt="Pila de las Cinco Calles, Barberena, fotografía de fecha incierta" style="width:100%; border-radius:8px;">
+    <img src="/images/blog/20260311205854_001.webp" alt="Pila de las Cinco Calles, Barberena, fotografía de fecha incierta" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">La Pila de las Cinco Calles en una fotografía más reciente que la de 1942, aunque de fecha exacta incierta.</figcaption>
   </figure>
 
@@ -70,7 +70,7 @@ card_color: blanco
   </p>
 
   <figure style="margin: 1rem 0 1.5rem;">
-    <img src="/images/historia/695267470.webp" alt="Pila de las Cinco Calles, Barberena, en la actualidad" style="width:100%; border-radius:8px;">
+    <img src="/images/blog/695267470.webp" alt="Pila de las Cinco Calles, Barberena, en la actualidad" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem;">La Pila de las Cinco Calles en la actualidad.</figcaption>
   </figure>
 
