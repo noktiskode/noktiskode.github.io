@@ -1,6 +1,6 @@
 ---
 featured: true
-title: «Aquí se van a tener que sacrificar o nos vamos a tener que sacrificar todos
+title: «Aquí se van a tener que sacrificar o nos vamos a tener que sacrificar todos»
 date: 2026-09-22T21:38:00.000-06:00
 image: /images/blog/1000042303.webp
 category: opiniones
