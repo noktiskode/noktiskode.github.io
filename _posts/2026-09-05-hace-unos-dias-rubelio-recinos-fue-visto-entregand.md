@@ -1,0 +1,16 @@
+---
+featured: false
+title: "Hace unos días, Rubelio Recinos fue visto entregando…"
+date: 2026-09-05T17:29:47.000Z
+image: "/images/blog/122227556810318393.jpg"
+excerpt: "Hace unos días, Rubelio Recinos fue visto entregando verduras y hoy publicó un video en el que se puede ver que estuvo presente en la escuela de la Colonia Arim"
+category: barberena
+tags: ["ColoniaArimany","Barberena","SantaRosaGT","Septiembre","comunidad"]
+---
+Hace unos días, Rubelio Recinos fue visto entregando verduras y hoy publicó un video en el que se puede ver que estuvo presente en la escuela de la Colonia Arimany, donde se le escuchó mencionar que apoyará con toldos y sonido para las actividades programadas para el 14 de septiembre.
+
+A través de su cuenta de Facebook, Recinos publicó:
+
+“Con mucho cariño brindamos nuestro apoyo a las actividades de septiembre en la Escuela de la Colonia Arimany.
+
+Seguimos sumando esfuerzos para apoyar a nuestra comunidad y, especialmente, a nuestra niñez.”
