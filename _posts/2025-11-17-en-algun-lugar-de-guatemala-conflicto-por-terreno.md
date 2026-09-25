@@ -1,10 +1,14 @@
 ---
 featured: false
-title: "En algún lugar de Guatemala… Conflicto por terreno…"
+title: En algún lugar de Guatemala… Conflicto por terreno…
 date: 2025-11-17T20:34:17.000Z
-excerpt: "En algún lugar de Guatemala… Conflicto por terreno La señora de rojo asegura que le están arrebatando parte de su terreno. Entre discusiones, la persona vestida"
-category: barberena
-tags: ["Guatemala"]
+excerpt: En algún lugar de Guatemala… Conflicto por terreno La señora de rojo
+  asegura que le están arrebatando parte de su terreno. Entre discusiones, la
+  persona vestida
+category: opiniones
+tags:
+  - Guatemala
+video_url: https://www.facebook.com/reel/818510174300588/
 ---
 En algún lugar de Guatemala…
 
