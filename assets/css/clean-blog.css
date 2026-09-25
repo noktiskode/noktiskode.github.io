@@ -109,3 +109,14 @@ a{color:inherit}
 .cb-more{display:inline-block;border:1.5px solid var(--cb-text);background:transparent;color:var(--cb-text);font:600 1rem 'Roboto',sans-serif;padding:13px 28px;border-radius:99px;cursor:pointer;transition:background .2s,color .2s}
 .cb-more:hover{background:var(--cb-text);color:#fff}
 .cb-more[hidden]{display:none}
+.cb-edit {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ef4f1d;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-decoration: none;
+}
