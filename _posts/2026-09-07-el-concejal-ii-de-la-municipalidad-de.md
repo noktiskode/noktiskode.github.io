@@ -1,13 +1,21 @@
 ---
 featured: false
-title: "| El concejal II de la Municipalidad de…"
+title: El concejal II de la Municipalidad de…
 date: 2026-09-07T20:39:51.000Z
-image: "/images/blog/122227776386318393.jpg"
-excerpt: "#Barberena | El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que: “Después de todo un dí"
+image: /images/blog/122227776386318393.jpg
+excerpt: "El concejal II de la Municipalidad de Barberena, Walfredo Arébalo
+  López, ha informado a través de su cuenta de Facebook que: “Después de todo un
+  dí"
 category: barberena
-tags: ["Barberena","BuenaVista","BarberenaSantaRosa","SantaRosaGT","transporte","BarberenaMiMunicipio"]
+tags:
+  - Barberena
+  - BuenaVista
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - transporte
+  - BarberenaMiMunicipio
 ---
-#Barberena | El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que:
+El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que:
 
 “Después de todo un día en diálogo con la asociación de transporte de nuestra comunidad, se informa de manera oficial que ellos tomaron la decisión de mantener la tarifa de Q4.00.
 
