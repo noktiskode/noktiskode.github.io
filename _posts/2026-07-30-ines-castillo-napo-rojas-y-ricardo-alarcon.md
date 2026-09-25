@@ -1,13 +1,20 @@
 ---
 featured: false
-title: "| INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN:…"
+title: Inés Castillo, Napo Rojas y Ricardo Alarcón:…
 date: 2026-07-30T00:57:53.000Z
-image: "/images/blog/122223693464318393.jpg"
-excerpt: "#SantaRosa | INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen demostrando que quieren vivir del pueblo de Guatemala a toda costa Después de aprobar la elimin"
-category: barberena
-tags: ["SantaRosa","Barberena","BarberenaSantaRosa","SantaRosaGT","IUSI"]
+image: /images/blog/122223693464318393.jpg
+excerpt: "#SantaRosa | INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen
+  demostrando que quieren vivir del pueblo de Guatemala a toda costa Después de
+  aprobar la elimin"
+category: opiniones
+tags:
+  - SantaRosa
+  - Barberena
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - IUSI
 ---
-#SantaRosa | INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen demostrando que quieren vivir del pueblo de Guatemala a toda costa
+INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen demostrando que quieren vivir del pueblo de Guatemala a toda costa
 
 Después de aprobar la eliminación del IUSI para viviendas, se propuso que quienes tienen cargos públicos y mejores condiciones económicas asuman una mayor responsabilidad.
 
