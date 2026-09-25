@@ -1,14 +1,18 @@
 ---
 featured: false
-title: "| ¿EL TRANSBARBERENA ESTÁ FUNCIONANDO? En varios horarios,…"
+title: ¿El Transbarberena está funcionando? En varios horarios,…
 date: 2026-07-20T18:02:24.000Z
-image: "/images/blog/122222844110318393.jpg"
-excerpt: "#Barberena | ¿EL TRANSBARBERENA ESTÁ FUNCIONANDO? En varios horarios, según reportan vecinos, el bus anda casi vacío. Y eso hace que muchos se pregunten si el s"
-category: barberena
-tags: ["Barberena","ELCERINAL","BarberenaSantaRosa","SantaRosaGT","santarosa"]
+image: /images/blog/122222844110318393.jpg
+excerpt: ¿El Transbarberena está funcionando? En varios horarios, según reportan
+  vecinos, el bus anda casi vacío. Y eso hace que muchos se pregunten si el s
+category: opiniones
+tags:
+  - Barberena
+  - ELCERINAL
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - SantaRosa
 ---
-#Barberena | ¿EL TRANSBARBERENA ESTÁ FUNCIONANDO?
-
 En varios horarios, según reportan vecinos, el bus anda casi vacío. Y eso hace que muchos se pregunten si el servicio realmente se está aprovechando.
 
 La intención es buena: transportar a estudiantes de bajos recursos, adultos mayores y personas con capacidades diferentes.
