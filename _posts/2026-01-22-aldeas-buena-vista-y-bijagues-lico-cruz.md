@@ -1,10 +1,18 @@
 ---
 featured: false
-title: "Aldeas Buena Vista y Bijagües 🛺 Lico Cruz…"
+title: Aldeas Buena Vista y Bijagües 🛺 Lico Cruz…
 date: 2026-01-22T16:27:13.000Z
-excerpt: "Aldeas Buena Vista y Bijagües 🛺 Lico Cruz señaló que el alcalde Pepe Rueda tiene la capacidad de solucionar la falta de mototaxistas en estas comunidades, pero"
+excerpt: Aldeas Buena Vista y Bijagües 🛺 Lico Cruz señaló que el alcalde Pepe
+  Rueda tiene la capacidad de solucionar la falta de mototaxistas en estas
+  comunidades, pero
 category: barberena
-tags: ["Barberena","SantaRosa","BuenaVista","Bijagues"]
+tags:
+  - Barberena
+  - SantaRosa
+  - BuenaVista
+  - Bijagues
+  - Mototaxis
+video_url: https://www.facebook.com/reel/1650600339489038/
 ---
 Aldeas Buena Vista y Bijagües 🛺
 
