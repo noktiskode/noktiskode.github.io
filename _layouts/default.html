@@ -45,5 +45,15 @@
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var sesion = localStorage.getItem('decap-cms-user') || localStorage.getItem('netlify-cms-user');
+  if (sesion) {
+    document.querySelectorAll('[data-edit-link]').forEach(function (el) {
+      el.style.display = 'inline-block';
+    });
+  }
+});
+  </script>
 </body>
 </html>
