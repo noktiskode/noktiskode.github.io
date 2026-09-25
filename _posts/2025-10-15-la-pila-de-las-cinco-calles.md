@@ -1,10 +1,17 @@
 ---
 featured: false
-title: "💧✨ La Pila de las Cinco Calles ✨💧…"
+title: 💧✨ La Pila de las Cinco Calles ✨💧…
 date: 2025-10-15T23:30:17.000Z
-excerpt: "💧✨ La Pila de las Cinco Calles ✨💧 Escuchemos este relato sobre uno de los lugares más queridos de nuestro municipio. Un espacio que, en su momento, fue punto "
+excerpt: "💧✨ La Pila de las Cinco Calles ✨💧 Escuchemos este relato sobre uno
+  de los lugares más queridos de nuestro municipio. Un espacio que, en su
+  momento, fue punto "
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","BarberenaSomosTodos","BarberenaMiMunicipio"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - BarberenaSomosTodos
+  - BarberenaMiMunicipio
+video_url: https://www.facebook.com/reel/1215918300373884/
 ---
 💧✨ La Pila de las Cinco Calles ✨💧
 
