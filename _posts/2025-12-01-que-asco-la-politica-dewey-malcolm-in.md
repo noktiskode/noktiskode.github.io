@@ -1,10 +1,20 @@
 ---
 featured: false
-title: "“¡Qué asco la política!” — Dewey, Malcolm in…"
+title: “¡Qué asco la política!” — Dewey, Malcolm in…
 date: 2025-12-01T07:51:50.000Z
-excerpt: "“¡Qué asco la política!” — Dewey, Malcolm in the Middle > “Los votantes no leen, no piensan por sí mismos. Se dejan llevar por lo último que escucharon, sea ver"
-category: barberena
-tags: ["Democracia","HumorNegro","Dewey","MalcolmInTheMiddle","Reflexión","CulturaPop","ParticipaciónCiudadana"]
+excerpt: “¡Qué asco la política!” — Dewey, Malcolm in the Middle > “Los votantes
+  no leen, no piensan por sí mismos. Se dejan llevar por lo último que
+  escucharon, sea ver
+category: opiniones
+tags:
+  - Democracia
+  - HumorNegro
+  - Dewey
+  - MalcolmInTheMiddle
+  - Reflexión
+  - CulturaPop
+  - ParticipaciónCiudadana
+video_url: https://www.facebook.com/reel/1464225208001597/
 ---
 “¡Qué asco la política!” — Dewey, Malcolm in the Middle
 
