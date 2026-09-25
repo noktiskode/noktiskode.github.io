@@ -2,9 +2,16 @@
 featured: false
 title: "🌼 Amigo barberenense: Se acercan los días en…"
 date: 2025-10-17T07:47:13.000Z
-excerpt: "🌼 Amigo barberenense: Se acercan los días en que visitamos, adornamos y limpiamos las tumbas de nuestros seres queridos. 💐 Es una hermosa tradición que nos un"
+excerpt: "🌼 Amigo barberenense: Se acercan los días en que visitamos, adornamos
+  y limpiamos las tumbas de nuestros seres queridos. 💐 Es una hermosa tradición
+  que nos un"
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","barberenasomostodos","barberenamimunicipio"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - barberenasomostodos
+  - barberenamimunicipio
+video_url: https://www.facebook.com/reel/1491546245508748/
 ---
 🌼 Amigo barberenense:
 
