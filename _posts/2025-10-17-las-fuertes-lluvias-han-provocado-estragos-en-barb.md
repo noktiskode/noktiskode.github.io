@@ -1,10 +1,17 @@
 ---
 featured: false
-title: "Las fuertes lluvias han provocado estragos en Barberena.…"
+title: Las fuertes lluvias han provocado estragos en Barberena.…
 date: 2025-10-17T03:01:53.000Z
-excerpt: "Las fuertes lluvias han provocado estragos en Barberena. Los culpables somos nosotros los vecinos por no cuidar las calles y ensuciarlas. El cambio comienza en "
-category: barberena
-tags: ["Barberena","BarberenaSantaRosa","barberenasomostodos","barberenamimunicipio"]
+excerpt: "Las fuertes lluvias han provocado estragos en Barberena. Los culpables
+  somos nosotros los vecinos por no cuidar las calles y ensuciarlas. El cambio
+  comienza en "
+category: opiniones
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - barberenasomostodos
+  - barberenamimunicipio
+video_url: https://www.facebook.com/reel/1344585720728614/
 ---
 Las fuertes lluvias han provocado estragos en Barberena.
 
