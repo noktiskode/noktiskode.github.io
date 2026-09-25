@@ -1,10 +1,16 @@
 ---
 featured: false
-title: "Señor alcalde, Pepe Rueda Necesitamos de su ayuda…"
+title: Señor alcalde, Pepe Rueda Necesitamos de su ayuda…
 date: 2025-10-07T04:27:15.000Z
-excerpt: "Señor alcalde, Pepe Rueda Necesitamos de su ayuda en el callejón \"Los Pineda\", sufrimos de mucho lodo, aunque sea esas planchas de cemento que va tirar venga a "
+excerpt: 'Señor alcalde, Pepe Rueda Necesitamos de su ayuda en el callejón "Los
+  Pineda", sufrimos de mucho lodo, aunque sea esas planchas de cemento que va
+  tirar venga a '
 category: barberena
-tags: ["BarberenaSantaRosa","Barberena","barberenasomostodos"]
+tags:
+  - BarberenaSantaRosa
+  - Barberena
+  - barberenasomostodos
+video_url: https://www.facebook.com/share/v/1NM9VM3LUD/
 ---
 Señor alcalde, Pepe Rueda
 
