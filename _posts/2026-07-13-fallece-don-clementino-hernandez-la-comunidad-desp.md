@@ -1,13 +1,20 @@
 ---
 featured: false
-title: "| FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE…"
+title: Fallece don Clementino Hernández; la comunidad despide…
 date: 2026-07-13T16:37:21.000Z
-image: "/images/blog/122222176388318393.jpg"
-excerpt: "#Barberena | FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE CON PESAR A LA PAREJA DE ESPOSOS Con profundo pesar, se confirmó el fallecimiento de Don Cle"
+image: /images/blog/122222176388318393.jpg
+excerpt: Fallece don Clementino Hernández; la comunidad despide con pesar a la
+  pareja de esposos. Con profundo pesar, se confirmó el fallecimiento de Don
+  Cle...
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - SantaRosa
+  - NotaDeDuelo
 ---
-#Barberena | FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE CON PESAR A LA PAREJA DE ESPOSOS
+FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE CON PESAR A LA PAREJA DE ESPOSOS
 
 Con profundo pesar, se confirmó el fallecimiento de Don Clementino Hernández, quien permanecía hospitalizado en Cuilapa tras el accidente ocurrido la noche del domingo en el sector de Quebrada La Galera, sobre el kilómetro 52.8 de la carretera a El Salvador.
 
