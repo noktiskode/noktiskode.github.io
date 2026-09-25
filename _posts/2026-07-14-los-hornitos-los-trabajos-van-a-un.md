@@ -1,13 +1,21 @@
 ---
 featured: false
-title: "| LOS HORNITOS: LOS TRABAJOS VAN A UN…"
+title: "LOS HORNITOS: LOS TRABAJOS VAN A UN…"
 date: 2026-07-14T16:03:35.000Z
-image: "/images/blog/122222265488318393.jpg"
-excerpt: "#Barberena | LOS HORNITOS: LOS TRABAJOS VAN A UN RITMO LENTO A mes y medio del vencimiento del contrato, el supervisor advierte que \"los trabajos de ejecución n"
+image: /images/blog/122222265488318393.jpg
+excerpt: 'LOS HORNITOS: LOS TRABAJOS VAN A UN RITMO LENTO A mes y medio del
+  vencimiento del contrato, el supervisor advierte que "los trabajos de
+  ejecución n'
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa","guatecompras"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - SantaRosa
+  - Guatecompras
+  - LosHornitos
 ---
-#Barberena | LOS HORNITOS: LOS TRABAJOS VAN A UN RITMO LENTO
+LOS HORNITOS: LOS TRABAJOS VAN A UN RITMO LENTO
 
 A mes y medio del vencimiento del contrato, el supervisor advierte que "los trabajos de ejecución no han tenido mayor avance, van a un ritmo lento y se sugiere a la empresa poner más gente a trabajar para no tener problemas con los tiempos de contrato."
 
