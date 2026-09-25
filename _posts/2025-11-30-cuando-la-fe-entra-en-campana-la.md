@@ -1,10 +1,20 @@
 ---
 featured: false
-title: "📌 Cuando la fe entra en campaña La…"
+title: 📌 Cuando la fe entra en campaña La…
 date: 2025-11-30T20:07:46.000Z
-excerpt: "📌 Cuando la fe entra en campaña La religión tiene un poder único: toca lo más profundo de cada persona. Por eso, cuando aparece en la política, no pasa desaper"
-category: barberena
-tags: ["PolíticaYReligión","ReflexiónSocial","ConcienciaCiudadana","OpiniónPública","Pensemos","barberenamimunicipio","Barberena"]
+excerpt: "📌 Cuando la fe entra en campaña La religión tiene un poder único:
+  toca lo más profundo de cada persona. Por eso, cuando aparece en la política,
+  no pasa desaper"
+category: opiniones
+tags:
+  - PolíticaYReligión
+  - ReflexiónSocial
+  - ConcienciaCiudadana
+  - OpiniónPública
+  - Pensemos
+  - barberenamimunicipio
+  - Barberena
+video_url: https://www.facebook.com/reel/1063885189145674/
 ---
 📌 Cuando la fe entra en campaña
 
