@@ -1,13 +1,20 @@
 ---
 featured: false
-title: "| Según una investigación de La Hora publicada…"
+title: Según una investigación de La Hora publicada…
 date: 2026-09-01T01:38:35.000Z
-image: "/images/blog/122227072964318393.jpg"
-excerpt: "#OjoAlDato | Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como \"el caso más visible\" de la nueva estrategia de fichajes d"
-category: barberena
-tags: ["OjoAlDato","SantaRosaGT","Barberena","Elecciones2027","politicagt","Guatemala"]
+image: /images/blog/122227072964318393.jpg
+excerpt: Según una investigación de La Hora publicada este fin de semana, Santa
+  Rosa aparece como "el caso más visible" de la nueva estrategia de fichajes d
+category: opiniones
+tags:
+  - OjoAlDato
+  - SantaRosaGT
+  - Barberena
+  - Elecciones2027
+  - politicagt
+  - Guatemala
 ---
-#OjoAlDato | Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como "el caso más visible" de la nueva estrategia de fichajes del Partido Unionista rumbo a 2027. Y Barberena aparece nombrado directamente.
+Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como "el caso más visible" de la nueva estrategia de fichajes del Partido Unionista rumbo a 2027. Y Barberena aparece nombrado directamente.
 
 Según la investigación, el alcalde Pepe Rueda —junto a los diputados Napoleón Rojas y su primo, Ricardo Martínez Alarcón, ambos representantes del mismo distrito— forma parte del bloque que Unionista busca absorber como estructura política completa, no como incorporaciones individuales sueltas.
 
