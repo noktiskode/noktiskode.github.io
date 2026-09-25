@@ -10,7 +10,7 @@ tags:
   - BarberenaSantaRosa
   - Barberena
   - barberenasomostodos
-video_url: https://www.facebook.com/share/v/1NM9VM3LUD/
+video_url: https://www.facebook.com/reel/1845337526190681/
 ---
 Señor alcalde, Pepe Rueda
 
