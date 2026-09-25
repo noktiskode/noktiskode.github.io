@@ -17,4 +17,5 @@
   <h2><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
   {% if include.post.excerpt %}<p class="cb-post-excerpt">{{ include.post.excerpt | strip_html | truncatewords: 42 }}</p>{% endif %}
   <a class="cb-readmore" href="{{ include.post.url | relative_url }}">Leer publicación →</a>
+<a class="cb-edit" href="/admin/#/collections/blog/entries/{{ include.post.slug }}" data-edit-link style="display:none;">✏️ Editar</a>
 </article>
