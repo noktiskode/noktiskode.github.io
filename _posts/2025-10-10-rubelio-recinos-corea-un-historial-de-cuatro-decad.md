@@ -1,10 +1,16 @@
 ---
 featured: false
-title: "Rubelio Recinos Corea: Un Historial de Cuatro Décadas…"
+title: "Rubelio Recinos Corea: Un Historial de Cuatro Décadas"
 date: 2025-10-10T02:58:47.000Z
-excerpt: "Rubelio Recinos Corea: Un Historial de Cuatro Décadas en Barberena ¿Ha concluido definitivamente el ciclo político de Rubelio Recinos Corea en la alcaldía de Ba"
+excerpt: "Rubelio Recinos Corea: Un Historial de Cuatro Décadas en Barberena ¿Ha
+  concluido definitivamente el ciclo político de Rubelio Recinos Corea en la
+  alcaldía de Ba"
 category: barberena
-tags: ["BarberenaSantaRosa","Barberena","barberenasomostodos"]
+tags:
+  - BarberenaSantaRosa
+  - Barberena
+  - barberenasomostodos
+video_url: https://www.facebook.com/reel/2961564690719627/
 ---
 Rubelio Recinos Corea: Un Historial de Cuatro Décadas en Barberena
 
