@@ -1,13 +1,21 @@
 ---
 featured: false
-title: "| ¿Alguna vez lo han llamado para elegir…"
+title: ¿Alguna vez lo han llamado para elegir…
 date: 2026-09-21T19:57:03.000Z
-image: "/images/blog/122229251600318393.jpg"
-excerpt: "#Barberena | ¿Alguna vez lo han llamado para elegir a los representantes de su COCODE? Quiero leerlos. ¿En su comunidad les avisaron que habría asamblea? ¿Les d"
+image: /images/blog/1000042057.png
+excerpt: ¿Alguna vez lo han llamado para elegir a los representantes de su
+  COCODE? Quiero leerlos. ¿En su comunidad les avisaron que habría asamblea?
+  ¿Les d
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","COCODE","comunidad","Participación"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - COCODE
+  - comunidad
+  - Participación
 ---
-#Barberena | ¿Alguna vez lo han llamado para elegir a los representantes de su COCODE? Quiero leerlos.
+¿Alguna vez lo han llamado para elegir a los representantes de su COCODE? Quiero leerlos.
 
 ¿En su comunidad les avisaron que habría asamblea? ¿Les dijeron el día, la hora y el lugar? ¿Pudieron participar los vecinos? ¿Hubo propuestas de distintas personas? ¿O cuando usted se enteró, ya todo estaba decidido?
 
