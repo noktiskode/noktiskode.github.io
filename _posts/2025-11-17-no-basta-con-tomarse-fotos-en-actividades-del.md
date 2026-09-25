@@ -1,10 +1,25 @@
 ---
 featured: false
-title: "No basta con tomarse fotos en actividades del…"
+title: No basta con tomarse fotos en actividades del…
 date: 2025-11-17T19:13:58.000Z
-excerpt: "No basta con tomarse fotos en actividades del gobierno. La representación se demuestra con trabajo. Este es el informe ciudadano que nadie quiso hacer… Y mientr"
-category: barberena
-tags: ["SantaRosa","Guatemala","FiscalizaciónCiudadana","Transparencia","CongresoGT","InformeCiudadano","ParticipaciónCiudadana","barberenamimunicipio","BarberenaSantaRosa","Barberena","ELCERINAL","Cuilapa"]
+excerpt: No basta con tomarse fotos en actividades del gobierno. La
+  representación se demuestra con trabajo. Este es el informe ciudadano que
+  nadie quiso hacer… Y mientr
+category: opiniones
+tags:
+  - SantaRosa
+  - Guatemala
+  - FiscalizaciónCiudadana
+  - Transparencia
+  - CongresoGT
+  - InformeCiudadano
+  - ParticipaciónCiudadana
+  - barberenamimunicipio
+  - BarberenaSantaRosa
+  - Barberena
+  - ELCERINAL
+  - Cuilapa
+video_url: https://www.facebook.com/reel/1943996066157042/
 ---
 No basta con tomarse fotos en actividades del gobierno.
 La representación se demuestra con trabajo.
