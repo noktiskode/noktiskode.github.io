@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PIDEN EL REGRESO 𝗗𝗘𝗟 MEJOR ALCALDE: el licenciado…"
+title: "Piden el regreso 𝗗𝗘𝗟 mejor alcalde: el licenciado 𝗥𝗨𝗕𝗘𝗟𝗜𝗢 𝗥𝗘𝗖𝗜𝗡𝗢𝗦 𝗖𝗢𝗥𝗘𝗔."
 date: 2026-03-13T02:35:54.000Z
 excerpt: "PIDEN EL REGRESO 𝗗𝗘𝗟 MEJOR ALCALDE: el licenciado 𝗥𝗨𝗕𝗘𝗟𝗜𝗢 𝗥𝗘𝗖𝗜𝗡𝗢𝗦 𝗖𝗢𝗥𝗘𝗔. #Barberena, #BuenaVista, #Bijagues, #ElCerinal y #LosHornitos 𝗹\ud835"
 category: barberena

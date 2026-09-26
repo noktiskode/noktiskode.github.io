@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL DÍA QUE PEPE ATRAPÓ UN THERIAN El…"
+title: "El día que pepe atrapó un therian"
 date: 2026-03-11T06:26:28.000Z
 image: "/images/blog/122209664324318393.jpg"
 excerpt: "EL DÍA QUE PEPE ATRAPÓ UN THERIAN El día que Pepe salió a trabajar… terminó atrapando un therian: sí, justo el que ves en la imagen. 🙃 Hace unos días, los trab"

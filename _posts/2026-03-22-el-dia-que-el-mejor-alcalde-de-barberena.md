@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL DÍA QUE EL MEJOR ALCALDE DE BARBERENA…"
+title: "El día que el mejor alcalde de Barberena se pasó (de eficiente) Púchica… apenas cuatro días en el cargo y ya había resuelto lo urgente: actualizarse el sueldo."
 date: 2026-03-22T10:03:06.000Z
 excerpt: "EL DÍA QUE EL MEJOR ALCALDE DE BARBERENA SE PASÓ (DE EFICIENTE) Púchica… apenas cuatro días en el cargo y ya había resuelto lo urgente: actualizarse el sueldo. "
 category: barberena

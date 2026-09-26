@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Transparencia en el uso de fondos municipales…"
+title: "Transparencia en el uso de fondos municipales"
 date: 2026-03-02T23:42:08.000Z
 image: "/images/blog/122208892382318393.jpg"
 excerpt: "#Barberena | Transparencia en el uso de fondos municipales En Guatecompras aparece registrado un pago municipal de Q225.00 por el alquiler de 150 sillas plástic"
 category: barberena
 tags: ["Barberena"]
 ---
-#Barberena | Transparencia en el uso de fondos municipales
+Transparencia en el uso de fondos municipales
 
 En Guatecompras aparece registrado un pago municipal de Q225.00 por el alquiler de 150 sillas plásticas para apoyo en un velorio realizado el 16 de febrero de 2026.
 

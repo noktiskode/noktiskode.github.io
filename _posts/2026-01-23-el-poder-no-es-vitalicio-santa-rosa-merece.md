@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL PODER NO ES VITALICIO: Santa Rosa merece…"
+title: "El poder no es vitalicio: Santa Rosa merece alternancia y transparencia Santa Rosa no merece políticos eternos ni cargos convertidos en refugios personales."
 date: 2026-01-23T16:00:31.000Z
 image: "/images/blog/122205162542318393.jpg"
 excerpt: "EL PODER NO ES VITALICIO: Santa Rosa merece alternancia y transparencia ❌ Santa Rosa no merece políticos eternos ni cargos convertidos en refugios personales. L"

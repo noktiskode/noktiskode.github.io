@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL AÑO DEL AGUA EN BARBERENA 💧 Si…"
+title: "El año del agua en Barberena"
 date: 2026-02-11T17:11:00.000Z
 image: "/images/blog/122207016446318393.jpg"
 excerpt: "EL AÑO DEL AGUA EN BARBERENA 💧 Si algo hay que reconocerle a Pepe Rueda es que entendió una realidad evidente: El Cerinal apenas contaba con dos pozos y no pod"

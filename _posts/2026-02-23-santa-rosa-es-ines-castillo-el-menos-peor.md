@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "SANTA ROSA ¿Es Inés Castillo el “menos peor”…"
+title: "Santa Rosa"
 date: 2026-02-23T05:08:06.000Z
 image: "/images/blog/122208138152318393.jpg"
 excerpt: "SANTA ROSA ¿Es Inés Castillo el “menos peor” de nuestros diputados? Vamos al grano. En el Congreso casi no se oye nada de los diputados de Santa Rosa. Muchos pa"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Aldea El Cerinal | Barberena Doña Lola amaneció…"
+title: "Aldea El Cerinal | Barberena Doña Lola amaneció de mal humor y desató el caos: volcó una venta de comida frente a su casa mientras decía que ya estaba harta."
 date: 2026-01-24T08:10:44.000Z
 excerpt: "Aldea El Cerinal | Barberena Doña Lola amaneció de mal humor y desató el caos: volcó una venta de comida frente a su casa mientras decía que ya estaba harta. En"
 category: barberena

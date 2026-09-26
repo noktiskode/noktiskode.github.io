@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Q6 MILLONES ADJUDICADOS Y OBRAS CASI DETENIDAS EN…"
+title: "Q6 millones adjudicados Y obras casi detenidas en Barberena ¿constructora O destructora?"
 date: 2026-03-10T16:04:54.000Z
 image: "/images/blog/122209610132318393.jpg"
 excerpt: "Q6 MILLONES ADJUDICADOS Y OBRAS CASI DETENIDAS EN BARBERENA ¿CONSTRUCTORA O DESTRUCTORA? Mientras Molina colecciona anticipos, en EL CERINAL los albañiles colec"

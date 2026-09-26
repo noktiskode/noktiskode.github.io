@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Barberena | Robo en el parqueo de La…"
+title: "Barberena | Robo en el parqueo de La Maxi Despensa en Plaza Barberena Hace una semana, una familia fue víctima de un robo en el parqueo de La Maxi Despensa, en Plaza Barberena."
 date: 2026-01-22T22:00:00.000Z
 image: "/images/blog/122205093008318393.jpg"
 excerpt: "Barberena | Robo en el parqueo de La Maxi Despensa en Plaza Barberena Hace una semana, una familia fue víctima de un robo en el parqueo de La Maxi Despensa, en "

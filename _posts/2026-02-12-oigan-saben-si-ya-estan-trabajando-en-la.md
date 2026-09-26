@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Oigan, ¿saben si ya están trabajando en La…"
+title: "Oigan, ¿saben si ya están trabajando en La Ladrillera?"
 date: 2026-02-12T16:00:52.000Z
 image: "/images/blog/122207105102318393.jpg"
 excerpt: "Oigan, ¿saben si ya están trabajando en La Ladrillera? Pregunto porque tal vez alguien que viva por el sector haya visto más movimiento. Ya pasó aproximadamente"

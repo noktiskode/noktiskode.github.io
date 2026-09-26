@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Vecinos de Barberena comentan que hay un agente…"
+title: "Vecinos de Barberena comentan que hay un agente de la PMT que, al parecer, confunde la calle con un ring de boxeo… por la forma en que trata a la gente."
 date: 2026-03-22T23:42:38.000Z
 image: "/images/blog/122211359282318393.jpg"
 excerpt: "Vecinos de Barberena comentan que hay un agente de la PMT que, al parecer, confunde la calle con un ring de boxeo… por la forma en que trata a la gente. Cuentan"

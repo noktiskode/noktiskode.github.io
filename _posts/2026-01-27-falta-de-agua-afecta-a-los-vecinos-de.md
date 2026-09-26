@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Falta de agua afecta a los vecinos de…"
+title: "Falta de agua afecta a los vecinos de Utzumazate Desde hace varios meses, en Utzumazate el servicio de agua ya no se brinda con regularidad, según comentan algunos vecinos."
 date: 2026-01-27T22:00:00.000Z
 image: "/images/blog/122205568568318393.jpg"
 excerpt: "Falta de agua afecta a los vecinos de Utzumazate Desde hace varios meses, en Utzumazate el servicio de agua ya no se brinda con regularidad, según comentan algu"

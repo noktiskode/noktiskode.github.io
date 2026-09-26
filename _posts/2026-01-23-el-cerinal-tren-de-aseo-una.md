@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El Cerinal | Tren de aseo 🗑️ Una…"
+title: "El Cerinal | Tren de aseo Una vecina informó que, desde el cambio de chófer del tren de aseo, se han registrado problemas constantes en el Sector El Campo–Cementerio."
 date: 2026-01-23T01:30:01.000Z
 image: "/images/blog/122205104954318393.jpg"
 excerpt: "El Cerinal | Tren de aseo 🗑️ Una vecina informó que, desde el cambio de chófer del tren de aseo, se han registrado problemas constantes en el Sector El Campo–C"

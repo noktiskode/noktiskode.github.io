@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"¿SABOTAJES POR PARTE DE LOS FONTANEROS?\" 💧 Mucho…"
+title: "\"¿Sabotajes por parte de los fontaneros?\""
 date: 2026-02-17T16:00:53.000Z
 image: "/images/blog/122207590640318393.jpg"
 excerpt: "\"¿SABOTAJES POR PARTE DE LOS FONTANEROS?\" 💧 Mucho hemos estado comentando sobre la problemática del agua, los pozos y las pipas; ahora toca hablar sobre los fo"

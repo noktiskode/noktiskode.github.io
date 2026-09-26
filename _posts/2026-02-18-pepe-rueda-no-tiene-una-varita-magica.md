@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Pepe Rueda “NO TIENE UNA VARITA MÁGICA\" 👉…"
+title: "Pepe Rueda “no tiene una varita mágica\""
 date: 2026-02-18T23:43:55.000Z
 image: "/images/blog/122207714978318393.jpg"
 excerpt: "Pepe Rueda “NO TIENE UNA VARITA MÁGICA\" 👉 Miércoles 18 de febrero 2026 Les comparto lo más importante que ha dicho el día de hoy. Pepe Rueda recordó que no tie"

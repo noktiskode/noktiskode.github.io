@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Así se encuentra : un completo caos, por…"
+title: "Así se encuentra: un completo caos, por donde lo mires."
 date: 2026-02-28T20:58:58.000Z
 excerpt: "Así se encuentra #Barberena: un completo caos, por donde lo mires. Urge el mercado auxiliar para liberar esas calles obstaculizadas; también obligar a los vende"
 category: barberena

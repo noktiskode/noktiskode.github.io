@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Vecino comenta que hay largas filas para ingresar…"
+title: "Vecino comenta que hay largas filas para ingresar a Barberena: “Esto ya necesita que se le dé una respuesta."
 date: 2026-02-14T19:52:07.000Z
 image: "/images/blog/122207310188318393.jpg"
 excerpt: "Vecino comenta que hay largas filas para ingresar a Barberena: “Esto ya necesita que se le dé una respuesta. Hay buses tirándose contra la vía, pudiendo provoca"

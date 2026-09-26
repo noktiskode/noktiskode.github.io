@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Resumen de mi telenovela favorita 🍿…"
+title: "Barberena | Resumen de mi telenovela favorita"
 date: 2026-01-28T16:00:28.000Z
 image: "/images/blog/122205653102318393.jpg"
 excerpt: "BARBERENA | Resumen de mi telenovela favorita 🍿 Desde hace tiempo, Lico Cruz y el alcalde Pepe Rueda se vienen señalando mutuamente en distintos videos: uno in"

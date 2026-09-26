@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PEPE RUEDA, “EL GENEROSO” El segundo mejor alcalde…"
+title: "Pepe Rueda, “el generoso”"
 date: 2026-03-14T16:36:49.000Z
 image: "/images/blog/122209974014318393.jpg"
 excerpt: "PEPE RUEDA, “EL GENEROSO” El segundo mejor alcalde de Barberena llevó mobiliario a “La Escuelona” y dice que, lamentablemente, no existe un convenio entre el Mi"

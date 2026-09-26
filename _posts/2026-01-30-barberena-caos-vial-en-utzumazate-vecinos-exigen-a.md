@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA Caos Vial En Utzumazate: Vecinos exigen acción…"
+title: "Barberena"
 date: 2026-01-30T04:40:02.000Z
 excerpt: "BARBERENA Caos Vial En Utzumazate: Vecinos exigen acción a autoridades Vecinos expresan su hartazgo en la entrada de Utzumazate y hacen un llamado urgente al al"
 category: barberena

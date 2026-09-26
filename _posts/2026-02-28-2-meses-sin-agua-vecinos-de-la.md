@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "2 MESES SIN AGUA 💧 Vecinos de La…"
+title: "2 Meses sin agua"
 date: 2026-02-28T00:15:42.000Z
 image: "/images/blog/122208594116318393.jpg"
 excerpt: "2 MESES SIN AGUA 💧 Vecinos de La Torre, en el sector cercano a la iglesia Amor y Vida, manifiestan que llevan aproximadamente dos meses sin el servicio de agua"

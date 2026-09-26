@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El señor alcalde Pepe Rueda, junto a su…"
+title: "El señor alcalde Pepe Rueda, junto a su Honorable Concejo Municipal, expresan sus más sinceras condolencias a su familia y seres queridos, elevando oraciones para que encuentren fortaleza, consuelo y resignación ante esta irreparable pérdida."
 date: 2026-03-22T02:46:15.000Z
 image: "/images/blog/122210692160318393.jpg"
 excerpt: "El señor alcalde Pepe Rueda, junto a su Honorable Concejo Municipal, expresan sus más sinceras condolencias a su familia y seres queridos, elevando oraciones pa"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Sector La Cuchilla Hace poco volvimos…"
+title: "Barberena | Sector La Cuchilla Hace poco volvimos a encontrar colchones abandonados en el callejón de siempre, ese que tristemente se ha usado durante años como basurero clandestino."
 date: 2026-01-27T20:05:57.000Z
 image: "/images/blog/122205563198318393.jpg"
 excerpt: "BARBERENA | Sector La Cuchilla Hace poco volvimos a encontrar colchones abandonados en el callejón de siempre, ese que tristemente se ha usado durante años como"

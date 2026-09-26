@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "𝗟𝗔 𝗣𝗥𝗘𝗖𝗔𝗥𝗜𝗘𝗗𝗔𝗗 𝗖𝗢𝗠𝗢 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗣𝗢𝗟𝗜𝗧𝗜𝗖𝗢 CUANDO EL CONTRATO…"
+title: "𝗟𝗔 𝗣𝗥𝗘𝗖𝗔𝗥𝗜𝗘𝗗𝗔𝗗 𝗖𝗢𝗠𝗢 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗣𝗢𝗟𝗜𝗧𝗜𝗖𝗢"
 date: 2026-02-26T18:37:19.000Z
 excerpt: "𝗟𝗔 𝗣𝗥𝗘𝗖𝗔𝗥𝗜𝗘𝗗𝗔𝗗 𝗖𝗢𝗠𝗢 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗣𝗢𝗟𝗜𝗧𝗜𝗖𝗢 CUANDO EL CONTRATO SE VUELVE CORREA: Si trabajas con contratos bajo los renglones 021, 022,"
 category: barberena

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "CRÓNICA DE UN ADIÓS ANUNCIADO: El michi que…"
+title: "Crónica de un adiós anunciado"
 date: 2026-01-30T01:48:19.000Z
 excerpt: "CRÓNICA DE UN ADIÓS ANUNCIADO: El michi que mandó el sillón al basurero Lo que parecía un mueble eterno en la sala terminó su vida útil en el tren de aseo, víct"
 category: barberena

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¿ES JUSTO RECLAMAR AHORA O ANTES TAMBIÉN HABÍA…"
+title: "¿Es justo reclamar ahora O antes también había problemas Y nadie decía nada?"
 date: 2026-03-20T09:13:00.000Z
 excerpt: "¿ES JUSTO RECLAMAR AHORA O ANTES TAMBIÉN HABÍA PROBLEMAS Y NADIE DECÍA NADA? 🤔 Algunos vecinos de #Barberena se muestran indignados, ya que las calles se encue"
 category: barberena

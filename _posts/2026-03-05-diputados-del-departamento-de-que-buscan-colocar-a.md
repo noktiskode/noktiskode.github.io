@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"Diputados del departamento de que buscan colocar a…"
+title: "Diputados del departamento de que buscan colocar a Molina Barreto como magistrado de la cc a pesar de constantemente demostrar que esta del lado de narcotraficantes, crimen organizado y grandes corruptos."
 date: 2026-03-05T20:52:39.000Z
 image: "/images/blog/122209153382318393.jpg"
 excerpt: "\"Diputados del departamento de #SantaRosa que buscan colocar a Molina Barreto como magistrado de la CC a pesar de constantemente demostrar que esta del lado de "

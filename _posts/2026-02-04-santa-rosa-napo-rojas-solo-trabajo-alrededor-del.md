@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "SANTA ROSA Napo Rojas solo trabajó alrededor del…"
+title: "Santa Rosa"
 date: 2026-02-04T01:00:55.000Z
 image: "/images/blog/122206275548318393.jpg"
 excerpt: "SANTA ROSA Napo Rojas solo trabajó alrededor del 40% en 2025 Según informes de fiscalización legislativa y análisis de organizaciones como Congreso Eficiente, e"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El alcalde de Nueva Santa Rosa y el…"
+title: "El alcalde de Nueva Santa Rosa y el futuro alcalde de Barberena hablaban de cosas aparentemente profundas… como eso de “componer el mundo”."
 date: 2026-03-09T00:57:04.000Z
 image: "/images/blog/122209448738318393.jpg"
 excerpt: "El alcalde de Nueva Santa Rosa y el futuro alcalde de Barberena hablaban de cosas aparentemente profundas… como eso de “componer el mundo”. Enrique Arredondo pu"

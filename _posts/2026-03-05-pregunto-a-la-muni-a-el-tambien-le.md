@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Pregunto a la Muni: ¿A él también le…"
+title: "Pregunto a la Muni: ¿A él también le enviaron 150 sillas plásticas para su velorio, como las del 16 de febrero?"
 date: 2026-03-05T17:44:17.000Z
 excerpt: "Pregunto a la Muni: ¿A él también le enviaron 150 sillas plásticas para su velorio, como las del 16 de febrero? Si el apoyo es institucional y está reglamentado"
 category: barberena

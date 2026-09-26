@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "BARBERENA | Buses fuera de control: caos en…"
+title: "Barberena | Buses fuera de control: caos en cada calle Vecinos hacen un llamado a las autoridades municipales y a la PMT ante el constante caos vial frente a Farmacias Batres."
 date: 2026-01-30T05:33:09.000Z
 excerpt: "BARBERENA | Buses fuera de control: caos en cada calle 🚨 Vecinos hacen un llamado a las autoridades municipales y a la PMT ante el constante caos vial frente a"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosa","CaosVial","PMT","Munibarbe"]
 ---
-BARBERENA | Buses fuera de control: caos en cada calle 🚨 
+BARBERENA | Buses fuera de control: caos en cada calle 🚨
 
 Vecinos hacen un llamado a las autoridades municipales y a la PMT ante el constante caos vial frente a Farmacias Batres. Según comentan, la situación se repite cada día: los chóferes se parquean de manera indiscriminada, llegando a obstruir completamente la carretera, y nadie los sanciona.
 

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El alcalde Pepe Rueda: \"En unos días se…"
+title: "El alcalde Pepe Rueda: \"En unos días se pondrán en funcionamiento los tres nuevos pozos en la aldea El Cerinal.\""
 date: 2026-03-18T01:18:08.000Z
 image: "/images/blog/122210303258318393.jpg"
 excerpt: "El alcalde Pepe Rueda: \"En unos días se pondrán en funcionamiento los tres nuevos pozos en la aldea El Cerinal.\" Los cerinalenses pasarán de contar con solo dos"

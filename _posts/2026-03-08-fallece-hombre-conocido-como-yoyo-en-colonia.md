@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Fallece hombre conocido como “Yoyo” en colonia…"
+title: "Fallece hombre conocido como “Yoyo” en colonia Las Gardenias Conocido como “Yoyo” se encuentra fallecido en colonia Las Gardenias, sector La Hondonada."
 date: 2026-03-08T22:37:58.000Z
 image: "/images/blog/122209439966318393.jpg"
 excerpt: "#Barberena | Fallece hombre conocido como “Yoyo” en colonia Las Gardenias Conocido como “Yoyo” se encuentra fallecido en colonia Las Gardenias, sector La Hondon"
 category: barberena
 tags: ["Barberena","NoticiasBarberena","Respeto","InformaciónResponsable","ÉticaPeriodística"]
 ---
-#Barberena | Fallece hombre conocido como “Yoyo” en colonia Las Gardenias
+Fallece hombre conocido como “Yoyo” en colonia Las Gardenias
  
 Conocido como “Yoyo” se encuentra fallecido en colonia Las Gardenias, sector La Hondonada.
  

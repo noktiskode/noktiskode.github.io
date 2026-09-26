@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Los Hornitos: indiferencia y descontento ciudadano…"
+title: "Barberena | Los Hornitos: indiferencia y descontento ciudadano"
 date: 2026-01-26T16:30:56.000Z
 image: "/images/blog/122205449186318393.jpg"
 excerpt: "BARBERENA | Los Hornitos: indiferencia y descontento ciudadano Vecinos de Los Hornitos han manifestado su inconformidad con la gestión del alcalde Pepe Rueda, s"

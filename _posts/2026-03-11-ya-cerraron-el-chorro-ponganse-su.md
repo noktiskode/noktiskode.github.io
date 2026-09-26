@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "¿YA CERRARON EL CHORRO? 💧 🔫 Pónganse su…"
+title: "¿Ya cerraron el chorro?"
 date: 2026-03-11T02:17:44.000Z
 image: "/images/blog/122209646468318393.jpg"
 excerpt: "#BARBERENA ¿YA CERRARON EL CHORRO? 💧 🔫 Pónganse su calzoneta y aprovechen el “Splash Day” de la Muni; puede que sea el único día en que vuelvan a tocar agua s"
 category: barberena
 tags: ["BARBERENA"]
 ---
-#BARBERENA ¿YA CERRARON EL CHORRO? 💧 🔫 
+¿YA CERRARON EL CHORRO? 💧 🔫
  
 Pónganse su calzoneta y aprovechen el “Splash Day” de la Muni; puede que sea el único día en que vuelvan a tocar agua sin haberle comprado a los de la pipa. 😁
  

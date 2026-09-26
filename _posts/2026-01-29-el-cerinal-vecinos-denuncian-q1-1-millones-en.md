@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL CERINAL | VECINOS DENUNCIAN Q1.1 MILLONES EN…"
+title: "El Cerinal | vecinos denuncian Q1.1 millones en “remodelación” fantasma Vecinos del sector aseguran que la llamada “remodelación” de una pasarela costó un millón cien mil quetzales, pero la pasarela ya estaba construida."
 date: 2026-01-29T18:40:56.000Z
 image: "/images/blog/122205757184318393.jpg"
 excerpt: "EL CERINAL | VECINOS DENUNCIAN Q1.1 MILLONES EN “REMODELACIÓN” FANTASMA Vecinos del sector aseguran que la llamada “remodelación” de una pasarela costó un milló"

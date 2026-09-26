@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NO OBSTACULIZAR LA VISIBILIDAD “No sé si a…"
+title: "No obstaculizar la visibilidad"
 date: 2026-01-26T14:00:07.000Z
 image: "/images/blog/122205438038318393.jpg"
 excerpt: "NO OBSTACULIZAR LA VISIBILIDAD “No sé si a los demás les ha pasado, pero cuando uno necesita incorporarse a la vía principal muchas veces se encuentra con que e"

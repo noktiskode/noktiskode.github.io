@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "DIPUTADOS DE SANTA ROSA LE FALLAN OTRA VEZ…"
+title: "Diputados de Santa Rosa le fallan otra vez al pueblo VAMOS, UNE, Valor y Cabal, las bancadas detrás de la reelección de Roberto Molina Barreto y Luis Rosales en la cc."
 date: 2026-03-06T11:09:44.000Z
 excerpt: "DIPUTADOS DE SANTA ROSA LE FALLAN OTRA VEZ AL PUEBLO Vamos, UNE, Valor y Cabal, las bancadas detrás de la reelección de Roberto Molina Barreto y Luis Rosales en"
 category: barberena
 tags: ["Guatemala","SantaRosa","Barberena","Congreso","Elecciones2027","PoliticaGT","ElGrito"]
 ---
-DIPUTADOS DE SANTA ROSA LE FALLAN OTRA VEZ AL PUEBLO 
+DIPUTADOS DE SANTA ROSA LE FALLAN OTRA VEZ AL PUEBLO
 
 Vamos, UNE, Valor y Cabal, las bancadas detrás de la reelección de Roberto Molina Barreto y Luis Rosales en la CC.
 

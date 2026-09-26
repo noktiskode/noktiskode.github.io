@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La administración del 𝗔𝗟𝗖𝗔𝗟𝗗𝗘 𝗣𝗘𝗣𝗘 𝗥𝗨𝗘𝗗𝗔 informa que…"
+title: "La administración del 𝗔𝗟𝗖𝗔𝗟𝗗𝗘 𝗣𝗘𝗣𝗘 𝗥𝗨𝗘𝗗𝗔 informa que las planchas de pavimento que estaban agrietadas ya fueron restauradas."
 date: 2026-03-15T16:00:02.000Z
 image: "/images/blog/122210067332318393.jpg"
 excerpt: "La administración del 𝗔𝗟𝗖𝗔𝗟𝗗𝗘 𝗣𝗘𝗣𝗘 𝗥𝗨𝗘𝗗𝗔 informa que las planchas de pavimento que estaban agrietadas YA FUERON RESTAURADAS. Solo faltan 7 RENGL"

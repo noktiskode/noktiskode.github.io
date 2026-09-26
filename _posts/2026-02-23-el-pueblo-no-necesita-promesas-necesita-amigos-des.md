@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "“El pueblo no necesita promesas, necesita amigos.” Después…"
+title: "“El pueblo no necesita promesas, necesita amigos.”"
 date: 2026-02-23T05:32:02.000Z
 image: "/images/blog/122208140138318393.jpg"
 excerpt: "“El pueblo no necesita promesas, necesita amigos.” Después de 20 años en la silla… ahora resulta que lo que hacía falta era amistad. Veinte años para demostrarl"

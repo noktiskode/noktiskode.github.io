@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Cruce de señalamientos entre Lico Cruz…"
+title: "Barberena | Cruce de señalamientos entre Lico Cruz y Pepe Rueda Continúa mi telenovela favorita… Lico Cruz respondió a las acusaciones del alcalde Pepe Rueda y subió la apuesta."
 date: 2026-01-27T03:05:45.000Z
 excerpt: "BARBERENA | Cruce de señalamientos entre Lico Cruz y Pepe Rueda Continúa mi telenovela favorita… 🍿 Lico Cruz respondió a las acusaciones del alcalde Pepe Rueda"
 category: barberena

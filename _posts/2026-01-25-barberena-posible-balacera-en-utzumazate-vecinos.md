@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Posible balacera en Utzumazate 🚨 Vecinos…"
+title: "Barberena | Posible balacera en Utzumazate Vecinos del cantón Utzumazate reportan que habría ocurrido una balacera, específicamente en el sector del campo."
 date: 2026-01-25T23:44:58.000Z
 image: "/images/blog/122205380816318393.jpg"
 excerpt: "BARBERENA | Posible balacera en Utzumazate 🚨 Vecinos del cantón Utzumazate reportan que habría ocurrido una balacera, específicamente en el sector del campo. H"

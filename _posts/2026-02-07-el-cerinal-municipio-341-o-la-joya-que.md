@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El Cerinal: ¿Municipio 341 o la joya que…"
+title: "El Cerinal: ¿Municipio 341 o la joya que Barberena no quiere soltar?"
 date: 2026-02-07T23:46:43.000Z
 image: "/images/blog/122206883312318393.jpg"
 excerpt: "El Cerinal: ¿Municipio 341 o la joya que Barberena no quiere soltar? Durante años, los vecinos de El Cerinal pidieron atención. Hoy, justo cuando la posibilidad"

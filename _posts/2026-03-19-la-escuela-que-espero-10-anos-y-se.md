@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "LA ESCUELA QUE \"ESPERÓ\" 10 AÑOS Y SE…"
+title: "La escuela que \"esperó\" 10 años Y se pagó con tus impuestos Este 19 de marzo de 2026 se inauguró el remozamiento de la Escuela Preprimaria pain en Aldea El Junquillo, Barberena."
 date: 2026-03-19T20:07:11.000Z
 image: "/images/blog/122210471012318393.jpg"
 excerpt: "LA ESCUELA QUE \"ESPERÓ\" 10 AÑOS Y SE PAGÓ CON TUS IMPUESTOS Este 19 de marzo de 2026 se inauguró el remozamiento de la Escuela Preprimaria PAIN en Aldea El Junq"

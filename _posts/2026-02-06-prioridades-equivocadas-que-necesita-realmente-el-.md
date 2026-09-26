@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PRIORIDADES EQUIVOCADAS: ¿QUÉ NECESITA REALMENTE EL MUNICIPIO? La…"
+title: "Prioridades equivocadas: ¿qué necesita realmente el municipio?"
 date: 2026-02-06T20:12:54.000Z
 image: "/images/blog/122206546046318393.jpg"
 excerpt: "PRIORIDADES EQUIVOCADAS: ¿QUÉ NECESITA REALMENTE EL MUNICIPIO? La escasez de agua en nuestro municipio no es un problema reciente; se arrastra desde hace mucho "

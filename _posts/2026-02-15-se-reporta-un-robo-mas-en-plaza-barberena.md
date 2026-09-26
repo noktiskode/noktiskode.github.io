@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "SE REPORTA UN ROBO MÁS EN PLAZA BARBERENA…"
+title: "Se reporta un robo más en plaza Barberena"
 date: 2026-02-15T22:08:31.000Z
 image: "/images/blog/122207419118318393.jpg"
 excerpt: "SE REPORTA UN ROBO MÁS EN PLAZA BARBERENA 🚨 Vecina reporta que acaban de robarse un Yaris gris, de 4 puertas, dentro de Plaza Barberena. Quien haya visto algo "

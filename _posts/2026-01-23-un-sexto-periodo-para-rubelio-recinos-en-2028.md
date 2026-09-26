@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¿UN SEXTO PERÍODO PARA RUBELIO RECINOS EN 2028?…"
+title: "¿Un sexto período para Rubelio Recinos en 2028?"
 date: 2026-01-23T22:58:44.000Z
 image: "/images/blog/122206072028318393.jpg"
 excerpt: "¿UN SEXTO PERÍODO PARA RUBELIO RECINOS EN 2028? Barberena: el escenario político empieza a moverse, y el posible regreso de Rubelio Recinos Corea ya no suena so"

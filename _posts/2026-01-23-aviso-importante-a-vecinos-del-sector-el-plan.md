@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "AVISO IMPORTANTE A VECINOS DEL SECTOR EL PLAN…"
+title: "Aviso importante A vecinos del sector el plan"
 date: 2026-01-23T20:47:49.000Z
 image: "/images/blog/122205179366318393.jpg"
 excerpt: "AVISO IMPORTANTE A VECINOS DEL SECTOR EL PLAN Se hace un llamado respetuoso a las personas del sector El Plan, solicitándoles de la manera más cordial que ya no"

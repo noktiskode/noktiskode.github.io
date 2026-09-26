@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOTA DE DUELO Y SERVICIO SOCIAL 🕊️ Buenas…"
+title: "Nota de duelo Y servicio social"
 date: 2026-03-22T21:57:30.000Z
 image: "/images/blog/122210770604318393.jpg"
 excerpt: "NOTA DE DUELO Y SERVICIO SOCIAL 🕊️ Buenas tardes a todas las personas de buen corazón que puedan colaborar con doña Petrona García. Hace unos minutos falleció "

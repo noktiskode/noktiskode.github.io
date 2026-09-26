@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "SANTA ROSA ¿Diputado de Curul o de Feria?…"
+title: "Santa Rosa"
 date: 2026-02-09T05:05:53.000Z
 image: "/images/blog/122206834136318393.jpg"
 excerpt: "SANTA ROSA ¿Diputado de Curul o de Feria? El caso de Ricardo Alarcón Si buscás el nombre de Ricardo Martínez Alarcón (VAMOS) en la agenda de grandes transformac"

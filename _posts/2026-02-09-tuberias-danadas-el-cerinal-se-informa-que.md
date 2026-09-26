@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "TUBERÍAS DAÑADAS | EL CERINAL Se informa que…"
+title: "Tuberías dañadas | El Cerinal"
 date: 2026-02-09T18:25:32.000Z
 image: "/images/blog/122206824116318393.jpg"
 excerpt: "TUBERÍAS DAÑADAS | EL CERINAL Se informa que los vecinos de distintos sectores en el Campo de El Cerinal se encuentran actualmente sin servicio de agua potable."

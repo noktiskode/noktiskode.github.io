@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Municipalidad de Barberena Este comunicado nos dice que…"
+title: "Municipalidad de Barberena Este comunicado nos dice que está prohibida la autorización, realización o desarrollo de cualquier actividad que implique el cierre, obstrucción o bloqueo de la vía pública."
 date: 2026-03-02T21:12:11.000Z
 image: "/images/blog/122208883526318393.jpg"
 excerpt: "Municipalidad de Barberena Este comunicado nos dice que está prohibida la autorización, realización o desarrollo de cualquier actividad que implique el cierre, "

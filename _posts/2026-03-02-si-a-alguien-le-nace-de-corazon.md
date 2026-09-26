@@ -1,13 +1,12 @@
 ---
 featured: false
-title: "| Si a alguien le nace de corazón…"
+title: "Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho."
 date: 2026-03-02T18:13:00.000Z
 image: "/images/blog/122208872498318393.jpg"
 excerpt: "#AyudaSocial | #AldeaSanNicolás #Barberena #SantaRosa Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho. No tienen dónde hacer sus"
 category: barberena
 tags: ["AyudaSocial","AldeaSanNicolás","Barberena","SantaRosa"]
 ---
-#AyudaSocial | #AldeaSanNicolás #Barberena #SantaRosa
 
 Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho.
 

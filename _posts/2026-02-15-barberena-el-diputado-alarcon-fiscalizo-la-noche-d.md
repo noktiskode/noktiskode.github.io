@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Barberena: el diputado Alarcón fiscalizó la noche de…"
+title: "Barberena: el diputado Alarcón fiscalizó la noche de películas El diputado por Santa Rosa, Ricardo Alarcón, estuvo anoche en Barberena."
 date: 2026-02-15T08:48:19.000Z
 image: "/images/blog/122207362976318393.jpg"
 excerpt: "Barberena: el diputado Alarcón fiscalizó la noche de películas 🫡 El diputado por Santa Rosa, Ricardo Alarcón, estuvo anoche en Barberena. ¿El motivo? La noche "

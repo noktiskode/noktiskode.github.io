@@ -1,13 +1,12 @@
 ---
 featured: false
-title: "\"FISCALIZACIÓN\" PAVIMENTACIÓN VILLA GRACIELA, CUILAPA Como se ha…"
+title: "\"Fiscalización\" pavimentación Villa Graciela, Cuilapa"
 date: 2026-03-04T02:12:17.000Z
 image: "/images/blog/122208988436318393.jpg"
 excerpt: "#Cuilapa #SantaRosa \"FISCALIZACIÓN\" PAVIMENTACIÓN VILLA GRACIELA, CUILAPA Como se ha dicho en otras publicaciones, el diputado por Santa Rosa, Ricardo Alarcón, "
 category: barberena
 tags: ["Cuilapa","SantaRosa"]
 ---
-#Cuilapa #SantaRosa
 "FISCALIZACIÓN" PAVIMENTACIÓN VILLA GRACIELA, CUILAPA
 
 Como se ha dicho en otras publicaciones, el diputado por Santa Rosa, Ricardo Alarcón, solo vive de este tipo de circos.

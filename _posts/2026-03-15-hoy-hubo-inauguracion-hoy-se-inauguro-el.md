@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| HOY HUBO INAUGURACIÓN Hoy se inauguró el…"
+title: "Hoy hubo inauguración"
 date: 2026-03-15T21:58:49.000Z
 image: "/images/blog/122210090156318393.jpg"
 excerpt: "#Cuilapa | HOY HUBO INAUGURACIÓN Hoy se inauguró el pavimento hacia la Col. Virgen del Carpinello, con 50 días de retraso. La prórroga legal (Fianza 1066980) ve"
 category: barberena
 tags: ["Cuilapa"]
 ---
-#Cuilapa | HOY HUBO INAUGURACIÓN
+HOY HUBO INAUGURACIÓN
 
 Hoy se inauguró el pavimento hacia la Col. Virgen del Carpinello, con 50 días de retraso.
 La prórroga legal (Fianza 1066980) venció el 24 de enero de 2026. Según la ley, la empresa debería enfrentar una multa. ¿Se cobró ese dinero o se perdonó?

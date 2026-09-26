@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Lo que no sabe ninguno de ustedes es…"
+title: "Lo que no sabe ninguno de ustedes es que este pollito tiene genes de gavilán."
 date: 2026-01-29T01:46:32.000Z
 excerpt: "Lo que no sabe ninguno de ustedes es que este pollito tiene genes de gavilán. Mientras el Gallo sigue cacareando por costumbre, el Pollo está esperando el momen"
 category: barberena

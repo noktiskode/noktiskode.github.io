@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Muchos diputados saltan de un partido a otro,…"
+title: "Muchos diputados saltan de un partido a otro, pero sus votos siempre dejan huella."
 date: 2026-03-07T02:39:57.000Z
 excerpt: "Muchos diputados saltan de un partido a otro, pero sus votos siempre dejan huella. En Santa Rosa, ya sabemos quiénes traicionaron al pueblo: Inés Castillo (UNE)"
 category: barberena

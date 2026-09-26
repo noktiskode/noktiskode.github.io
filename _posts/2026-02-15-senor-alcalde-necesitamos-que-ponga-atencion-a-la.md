@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"Señor alcalde, necesitamos que ponga atención a la…"
+title: "Señor alcalde, necesitamos que ponga atención a la situación del agua acá en El Cerinal."
 date: 2026-02-15T00:32:05.000Z
 image: "/images/blog/122207327480318393.jpg"
 excerpt: "\"Señor alcalde, necesitamos que ponga atención a la situación del agua acá en El Cerinal. Su fontanero no la está enviando con suficiente presión y no está lleg"

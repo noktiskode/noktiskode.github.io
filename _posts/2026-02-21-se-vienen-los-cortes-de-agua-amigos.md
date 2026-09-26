@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "SE VIENEN LOS CORTES DE AGUA 💧✂️ Amigos,…"
+title: "Se vienen los cortes de agua"
 date: 2026-02-21T16:00:48.000Z
 image: "/images/blog/122207983028318393.jpg"
 excerpt: "SE VIENEN LOS CORTES DE AGUA 💧✂️ Amigos, atención: si su agua está conectada de manera ilegal, deben regularizarla en la oficina del agua de la municipalidad. "

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🚨 El señor Alberto Gómez, padre de Emily…"
+title: "El señor Alberto Gómez, padre de Emily Fernanda Gómez Chávez, publicó en su Facebook lo siguiente: “visor Suroriente Última Hora Guatemala, por favor compartan la información como es."
 date: 2026-03-09T23:53:23.000Z
 image: "/images/blog/122209541342318393.jpg"
 excerpt: "🚨 El señor Alberto Gómez, padre de Emily Fernanda Gómez Chávez, publicó en su Facebook lo siguiente: “VISOR Suroriente Última Hora Guatemala, por favor compart"

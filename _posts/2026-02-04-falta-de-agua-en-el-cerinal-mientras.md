@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "FALTA DE AGUA EN EL CERINAL 💧 “Mientras…"
+title: "Falta de agua en El Cerinal"
 date: 2026-02-04T01:41:19.000Z
 excerpt: "FALTA DE AGUA EN EL CERINAL 💧 “Mientras el agua se está desperdiciando en este tanque, en la calle Coguasa y en muchos otros sectores de nuestra aldea no se no"
 category: barberena
 tags: ["Barberena","ElCerinal","aguapotable"]
 ---
-FALTA DE AGUA EN EL CERINAL 💧 
+FALTA DE AGUA EN EL CERINAL 💧
 
 “Mientras el agua se está desperdiciando en este tanque, en la calle Coguasa y en muchos otros sectores de nuestra aldea no se nos está suministrando el servicio”, comentó un vecino.
 
