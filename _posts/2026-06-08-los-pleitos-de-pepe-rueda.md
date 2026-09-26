@@ -1,0 +1,20 @@
+---
+featured: false
+title: "Los pleitos de Pepe Rueda"
+date: 2026-06-08T16:09:43.000Z
+image: 
+category: barberena
+tags:
+  - Barberena
+  - Santa Rosa
+  - reels
+  - Pepe Rueda
+  - Municipalidad
+  - Gobierno municipal
+---
+
+LOS PLEITOS DE PEPE RUEDA
+
+Pepe Rueda en apenas dos años se ha peleado con medio municipio: tuctuqueros, diputados, ex alcaldes, periodistas, ex concejales y hasta la iglesia.
+
+No es fácil pelearse con tanta gente en tan poco tiempo. Todo un récord para una sola administración.
