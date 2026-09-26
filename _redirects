@@ -1,8 +1,0 @@
-# Redirecciones 301 (Cloudflare Pages). Formato: origen destino código
-# Páginas que cambiaron de dirección
-/como-participar.html    /como-participar/    301
-/que-publicamos.html     /que-publicamos/     301
-/pages/manifiesto.html   /manifiesto/         301
-/pages/manifiesto        /manifiesto/         301
-/blog/                   /archivo/            301
-/blog                    /archivo/            301
