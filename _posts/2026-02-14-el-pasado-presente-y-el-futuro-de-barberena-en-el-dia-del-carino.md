@@ -1,0 +1,19 @@
+---
+featured: false
+title: "El pasado, presente y el futuro de Barberena en el día del cariño."
+date: 2026-02-14T06:58:29.000Z
+image: 
+category: barberena
+tags:
+  - Barberena
+  - Santa Rosa
+  - El Cerinal
+  - 14 febrero
+  - Política
+  - Guatemala
+---
+
+El pasado, presente y el futuro de Barberena en el día del cariño.
+Rubelito, Pepito y Jorgito.
+
+Homero Simpson ya tiene su favorito
