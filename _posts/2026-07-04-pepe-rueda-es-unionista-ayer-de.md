@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PEPE RUEDA ES UNIONISTA 🟡 Ayer de…"
+title: "Pepe Rueda es unionista"
 date: 2026-07-04T15:48:56.000Z
 image: "/images/blog/122221240808318393.jpg"
 excerpt: "#BARBERENA | PEPE RUEDA ES UNIONISTA 🟡 Ayer de manera sorpresiva, se realizó una jornada de afiliación y capacitación del partido Unionista. Según se puede ver"
 category: barberena
 tags: ["BARBERENA","BarberenaSantaRosa","SantaRosaGT","SantaRosa","politicagt","Elecciones2027"]
 ---
-#BARBERENA | PEPE RUEDA ES UNIONISTA 🟡 
+PEPE RUEDA ES UNIONISTA 🟡
 
 Ayer de manera sorpresiva, se realizó una jornada de afiliación y capacitación del partido Unionista. Según se puede ver, estuvieron presentes el alcalde Pepe Rueda Vallejo —coordinador municipal—, la exaspirante presidencial Zury Ríos, ahora secretaria de fortalecimiento institucional, Sebastián Siero, secretario general, y los diputados Napo Rojas y Ricardo Alarcón, ambos provenientes de VAMOS.
 

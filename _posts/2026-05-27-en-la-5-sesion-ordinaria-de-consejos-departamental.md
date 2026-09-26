@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "En la 5.ª sesión ordinaria de Consejos Departamentales…"
+title: "En la 5.ª sesión ordinaria de Consejos Departamentales"
 date: 2026-05-27T23:38:38.000Z
 excerpt: "En la 5.ª sesión ordinaria de Consejos Departamentales de Desarrollo que se llevó a cabo en #SanJuanTecuaco, el alcalde Pepe Rueda comentó que se firmaron cuatr"
 category: barberena

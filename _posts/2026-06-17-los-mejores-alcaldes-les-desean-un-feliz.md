@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LOS MEJORES ALCALDES LES DESEAN UN FELIZ…"
+title: "Los mejores alcaldes les desean un feliz día del padre Si su esposa no se acordó de felicitarlo"
 date: 2026-06-17T21:46:27.000Z
 image: "/images/blog/122219734178318393.jpg"
 excerpt: "#Barberena | LOS MEJORES ALCALDES LES DESEAN UN FELIZ DÍA DEL PADRE Si su esposa no se acordó de felicitarlo... no se preocupe, papá tishudo. Los mejores alcald"
 category: barberena
 tags: ["Barberena","FelizDíaDelPadre","SantaRosa","ElCerinal"]
 ---
-#Barberena | LOS MEJORES ALCALDES LES DESEAN UN FELIZ DÍA DEL PADRE
+LOS MEJORES ALCALDES LES DESEAN UN FELIZ DÍA DEL PADRE
 
 Si su esposa no se acordó de felicitarlo... no se preocupe, papá tishudo. Los mejores alcaldes sí se acordaron. Qué tipazos. Qué chulada de lindura.
 

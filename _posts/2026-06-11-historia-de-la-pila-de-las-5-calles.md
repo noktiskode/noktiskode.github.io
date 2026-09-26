@@ -3,7 +3,7 @@ excerpt: "El origen y la historia de la Pila de las Cinco Calles en Barberena,
   Santa Rosa: de punto de encuentro de viajeros a monumento reconstruido en el
   centro del municipio."
 layout: post
-title: Historia de la Pila de las 5 Calles
+title: "Historia de la Pila de las 5 Calles"
 date: 2026-06-11T10:00:00.000-06:00
 card_color: blanco
 image: /images/blog/1000038999.jpg

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¡SE LES ACABÓ EL TIEMPO Y LA…"
+title: "¡Se les acabó el tiempo Y la calle sigue A medias!"
 date: 2026-05-13T22:12:30.000Z
 image: "/images/blog/122216211812318393.jpg"
 excerpt: "#ELCERINAL | ¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS! El plazo para entregar el proyecto en El Cerinal venció ayer, 12 de mayo, y la obra todavía no e"
 category: barberena
 tags: ["ELCERINAL","Barberena","SantaRosa","AuditoriaSocial","guatecompras","obraspublicas"]
 ---
-#ELCERINAL | ¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS! 
+¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS!
 
 El plazo para entregar el proyecto en El Cerinal venció ayer, 12 de mayo, y la obra todavía no está lista. Aunque en los papeles dicen que llevan un 86% de avance, la realidad es otra.
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿LA CALLE LA TORRE, PARA CUÁNDO? Un…"
+title: "¿La calle la torre, para cuándo?"
 date: 2026-07-06T17:36:55.000Z
 image: "/images/blog/122221439792318393.jpg"
 excerpt: "#ELPINO | ¿LA CALLE LA TORRE, PARA CUÁNDO? Un vecino pregunta lo siguiente: \"¿Cuándo sale el proyecto de los 700 metros de la calle La Torre, en El Pino? Desde "
 category: barberena
 tags: ["ELPINO","Barberena","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#ELPINO | ¿LA CALLE LA TORRE, PARA CUÁNDO?
+¿LA CALLE LA TORRE, PARA CUÁNDO?
 
 Un vecino pregunta lo siguiente:
 

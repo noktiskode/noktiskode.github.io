@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS…"
+title: "Cuando invertir en equipo propio rinde más"
 date: 2026-06-25T16:53:11.000Z
 image: "/images/blog/122220437756318393.jpg"
 excerpt: "#BARBERENA | CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS La compra del convoy municipal fue uno de los mejores aciertos de esta administración. Aunque todavía se"
 category: barberena
 tags: ["BARBERENA","BarberenaSantaRosa","SantaRosaGT","SantaRosa","convoymunicipal"]
 ---
-#BARBERENA | CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS 
+CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS
 
 La compra del convoy municipal fue uno de los mejores aciertos de esta administración. Aunque todavía se renta cierta maquinaria, el gasto ha disminuido considerablemente, y eso también se refleja en el tren de aseo.
 

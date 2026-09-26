@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| DOS POZOS, DOS ATRASOS La Municipalidad de…"
+title: "Dos pozos, dos atrasos"
 date: 2026-05-25T16:02:50.000Z
 image: "/images/blog/122217463310318393.jpg"
 excerpt: "#BARBERENA | DOS POZOS, DOS ATRASOS La Municipalidad de Barberena ejecuta actualmente dos proyectos de agua potable con retrasos en su entrega. Según Guatecompr"
 category: barberena
 tags: ["BARBERENA","SantaRosa","AguaPotable","Guatecompras"]
 ---
-#BARBERENA | DOS POZOS, DOS ATRASOS
+DOS POZOS, DOS ATRASOS
 
 La Municipalidad de Barberena ejecuta actualmente dos proyectos de agua potable con retrasos en su entrega.
 

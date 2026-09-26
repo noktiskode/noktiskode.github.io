@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La PMT de Barberena salió a poner orden…"
+title: "La PMT de Barberena salió a poner orden en la calle principal de la aldea El Cerinal, notificando a los vendedores que tienen que dejar libre el paso, tanto para carros como para peatones."
 date: 2026-05-25T21:28:45.000Z
 image: "/images/blog/122217488078318393.jpg"
 excerpt: "La PMT de Barberena salió a poner orden en la calle principal de la aldea El Cerinal, notificando a los vendedores que tienen que dejar libre el paso, tanto par"

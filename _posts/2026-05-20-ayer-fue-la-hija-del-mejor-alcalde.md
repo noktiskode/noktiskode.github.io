@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| AYER FUE LA HIJA DEL “MEJOR ALCALDE”…"
+title: "Ayer fue la hija del “mejor alcalde” A fiscalizar los trabajos en La Ladrillera María José, hija de Rubelio Recinos, señaló el proyecto como “fallido” y “convertido en miseria”, pero parece que llegó cuando la obra ya está entrando en su fase final."
 date: 2026-05-20T18:08:57.000Z
 image: "/images/blog/122216970182318393.jpg"
 excerpt: "#BARBERENA | AYER FUE LA HIJA DEL “MEJOR ALCALDE” A FISCALIZAR LOS TRABAJOS EN LA LADRILLERA María José, hija de Rubelio Recinos, señaló el proyecto como “falli"
 category: barberena
 tags: ["BARBERENA","LaLadrillera","SantaRosa","Guatemala","ObraPública","fiscalizacion"]
 ---
-#BARBERENA | AYER FUE LA HIJA DEL “MEJOR ALCALDE” A FISCALIZAR LOS TRABAJOS EN LA LADRILLERA
+AYER FUE LA HIJA DEL “MEJOR ALCALDE” A FISCALIZAR LOS TRABAJOS EN LA LADRILLERA
 
 María José, hija de Rubelio Recinos, señaló el proyecto como “fallido” y “convertido en miseria”, pero parece que llegó cuando la obra ya está entrando en su fase final.
 

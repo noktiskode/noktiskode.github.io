@@ -1,13 +1,12 @@
 ---
 featured: false
-title: "Con profundo dolor comunicamos el sensible fallecimiento de…"
+title: "Con profundo dolor comunicamos el sensible fallecimiento de la señora 𝗠𝗮𝗿í𝗮 𝗜𝘀𝗮𝗯𝗲𝗹 𝗧𝗲𝗽𝗲𝗾𝘂𝗲 𝗚𝘂𝘇𝗺𝗮́𝗻 \"Chinita\" Q.E.P.D."
 date: 2026-06-14T17:16:37.000Z
 image: "/images/blog/122219442308318393.jpg"
 excerpt: "#NotadeDuelo Con profundo dolor comunicamos el sensible fallecimiento de la señora 𝗠𝗮𝗿í𝗮 𝗜𝘀𝗮𝗯𝗲𝗹 𝗧𝗲𝗽𝗲𝗾𝘂𝗲 𝗚𝘂𝘇𝗺𝗮́𝗻 \"Chinita\" Q.E.P.D. — 13 d"
 category: barberena
 tags: ["NotadeDuelo","Barberena","santarosa"]
 ---
-#NotadeDuelo
 Con profundo dolor comunicamos el sensible fallecimiento de la señora
 
 𝗠𝗮𝗿í𝗮 𝗜𝘀𝗮𝗯𝗲𝗹 𝗧𝗲𝗽𝗲𝗾𝘂𝗲 𝗚𝘂𝘇𝗺𝗮́𝗻

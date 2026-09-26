@@ -1,13 +1,12 @@
 ---
 featured: false
-title: "MISA DE RÉQUIEM Y VELACIÓN DE CANDELAS Rogad…"
+title: "Misa de réquiem Y velación de candelas"
 date: 2026-06-20T15:59:46.000Z
 image: "/images/blog/122219981630318393.jpg"
 excerpt: "#Barberena #NotaDeDuelo MISA DE RÉQUIEM Y VELACIÓN DE CANDELAS Rogad a Dios por el alma de quien en vida fue María Isabel Tepeque Guzmán Sus padres, hijos, herm"
 category: barberena
 tags: ["Barberena","NotaDeDuelo","BarberenaSantaRosa","santarosa"]
 ---
-#Barberena #NotaDeDuelo 
 MISA DE RÉQUIEM Y VELACIÓN DE CANDELAS
 
 Rogad a Dios por el alma de quien en vida fue

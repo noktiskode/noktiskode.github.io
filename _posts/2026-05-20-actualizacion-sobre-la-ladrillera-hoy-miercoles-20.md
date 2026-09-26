@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Actualización sobre La Ladrillera Hoy, miércoles 20…"
+title: "Actualización sobre La Ladrillera Hoy, miércoles 20 de mayo, se cumplen aproximadamente cinco meses desde que este proyecto se puso en marcha."
 date: 2026-05-20T16:01:17.000Z
 image: "/images/blog/122216961956318393.jpg"
 excerpt: "#Barberena | Actualización sobre La Ladrillera Hoy, miércoles 20 de mayo, se cumplen aproximadamente cinco meses desde que este proyecto se puso en marcha. De a"
 category: barberena
 tags: ["Barberena","LaLadrillera","Guatecompras","SantaRosa","ObrasPublicas","AuditoriaSocial","Guatemala"]
 ---
-#Barberena | Actualización sobre La Ladrillera
+Actualización sobre La Ladrillera
 
 Hoy, miércoles 20 de mayo, se cumplen aproximadamente cinco meses desde que este proyecto se puso en marcha.
 

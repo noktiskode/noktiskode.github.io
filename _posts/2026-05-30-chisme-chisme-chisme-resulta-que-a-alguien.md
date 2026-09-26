@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¡CHISME, CHISME, CHISME! Resulta que a alguien…"
+title: "¡Chisme, chisme, chisme!"
 date: 2026-05-30T02:21:55.000Z
 image: "/images/blog/122217907082318393.jpg"
 excerpt: "#Barberena | ¡CHISME, CHISME, CHISME! Resulta que a alguien se le ocurrió la brillante idea de crear una página con exactamente el mismo nombre que la nuestra: "
 category: barberena
 tags: ["Barberena","ElCerinal","santarosa","SantaRosaGT"]
 ---
-#Barberena | ¡CHISME, CHISME, CHISME!
+¡CHISME, CHISME, CHISME!
 
 Resulta que a alguien se le ocurrió la brillante idea de crear una página con exactamente el mismo nombre que la nuestra: Barberena Mi Municipio.
 Nada raro, ¿verdad? 😏

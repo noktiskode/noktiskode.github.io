@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LICO CRUZ desmiente que en 20 años…"
+title: "Lico Cruz desmiente que en 20 años \"no se hizo nada\" El licenciado Federico Fulgencio Cruz publicó un video a través de su cuenta de Facebook en respuesta a videos y comentarios de ciertos vecinos, donde asegura que en e"
 date: 2026-07-03T22:03:11.000Z
 image: "/images/blog/122221172888318393.jpg"
 excerpt: "#Barberena | LICO CRUZ desmiente que en 20 años \"no se hizo nada\" El licenciado Federico Fulgencio Cruz publicó un video a través de su cuenta de Facebook en re"
 category: barberena
 tags: ["Barberena","ELCERINAL","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#Barberena | LICO CRUZ desmiente que en 20 años "no se hizo nada"
+LICO CRUZ desmiente que en 20 años "no se hizo nada"
 
 El licenciado Federico Fulgencio Cruz publicó un video a través de su cuenta de Facebook en respuesta a videos y comentarios de ciertos vecinos, donde asegura que en esos 20 años sí hubo obra: el edificio municipal, el parque, la pila de las cinco calles y el templo de Minerva fueron mejorados.
 

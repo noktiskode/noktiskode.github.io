@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| PEPE RUEDA VS. LICO CRUZ Mientras Pepe…"
+title: "Pepe Rueda vs. Lico Cruz"
 date: 2026-05-13T14:32:13.000Z
 excerpt: "#BARBERENA | PEPE RUEDA VS. LICO CRUZ Mientras Pepe Rueda sigue inaugurando obras y cortando listones, a Lico Cruz le cayó un Hadouken legal que lo dejó viendo "
 category: barberena
 tags: ["BARBERENA","SantaRosa","ElCerinal","AuditoriaSocial","satirapolitica","streetfighter","round1"]
 ---
-#BARBERENA | PEPE RUEDA VS. LICO CRUZ 
+PEPE RUEDA VS. LICO CRUZ
 
 Mientras Pepe Rueda sigue inaugurando obras y cortando listones, a Lico Cruz le cayó un Hadouken legal que lo dejó viendo estrellitas.
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿DESFILE HÍPICO O ESCAPARATE POLÍTICO? En el…"
+title: "¿Desfile hípico O escaparate político?"
 date: 2026-07-01T18:53:54.000Z
 image: "/images/blog/122220983402318393.jpg"
 excerpt: "#SantaRosa | ¿DESFILE HÍPICO O ESCAPARATE POLÍTICO? En el Desfile Hípico de #Amberes, Santa Rosa de Lima, estuvieron presentes los diputados Napo Rojas y Ricard"
 category: barberena
 tags: ["SantaRosa","Amberes","Elecciones2027","TSE","SantaRosaDeLima","SantaRosaGT","Guatemala"]
 ---
-#SantaRosa | ¿DESFILE HÍPICO O ESCAPARATE POLÍTICO?
+¿DESFILE HÍPICO O ESCAPARATE POLÍTICO?
 
 En el Desfile Hípico de #Amberes, Santa Rosa de Lima, estuvieron presentes los diputados Napo Rojas y Ricardo Alarcón, junto a los alcaldes Pepe Rueda, Dayri Bocanegra y la alcaldesa Mariflor Morales.
 

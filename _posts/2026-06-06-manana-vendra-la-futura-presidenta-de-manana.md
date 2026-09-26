@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE Mañana…"
+title: "Mañana vendrá la futura presidenta de #Guatemala"
 date: 2026-06-06T17:01:31.000Z
 excerpt: "#BARBERENA | MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE #GUATEMALA Mañana se espera la visita de Sandra Torres. ¿El motivo? Reunirse con el mejor alcalde para la afi"
 category: barberena
 tags: ["BARBERENA","GUATEMALA","video","ELCERINAL","BarberenaSantaRosa","santarosa","Política2027","Une"]
 ---
-#BARBERENA | MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE #GUATEMALA
+MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE #GUATEMALA
 
 Mañana se espera la visita de Sandra Torres. ¿El motivo? Reunirse con el mejor alcalde para la afiliación y capacitación que organiza el partido UNE.
 

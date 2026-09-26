@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🚨 | HACEN UN LLAMADO AL ALCALDE DE…"
+title: "Hacen un llamado al alcalde de Barberena Vecinos del sector afectado manifiestan su preocupación y hacen un llamado público ante las difíciles condiciones en las que se encuentran: \"Ojalá el alcalde supiera cómo estamos aquí abajo."
 date: 2026-05-23T02:31:26.000Z
 excerpt: "🚨 #Barberena | HACEN UN LLAMADO AL ALCALDE DE BARBERENA Vecinos del sector afectado manifiestan su preocupación y hacen un llamado público ante las difíciles c"
 category: barberena

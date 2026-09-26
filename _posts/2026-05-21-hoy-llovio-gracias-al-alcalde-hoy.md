@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| HOY LLOVIÓ GRACIAS AL ALCALDE 😃 Hoy…"
+title: "Hoy llovió gracias al alcalde"
 date: 2026-05-21T23:57:28.000Z
 excerpt: "#BARBERENA | HOY LLOVIÓ GRACIAS AL ALCALDE 😃 Hoy sí llovió en Barberena y muchos dicen que fue gracias a las “gestiones” del alcalde Pepe Rueda y de los diputa"
 category: barberena
 tags: ["BARBERENA","SantaRosa","Lluvia","Mercado","HumorChapín","Noticias","inundaciones"]
 ---
-#BARBERENA | HOY LLOVIÓ GRACIAS AL ALCALDE 😃
+HOY LLOVIÓ GRACIAS AL ALCALDE 😃
 
 Hoy sí llovió en Barberena y muchos dicen que fue gracias a las “gestiones” del alcalde Pepe Rueda y de los diputados Napo Rojas y Ricardo Alarcón.
 

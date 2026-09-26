@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| VECINOS SOLICITAN EL APOYO DEL ALCALDE Vecinos…"
+title: "Vecinos solicitan el apoyo del alcalde"
 date: 2026-07-01T05:31:55.000Z
 excerpt: "#BARBERENA | VECINOS SOLICITAN EL APOYO DEL ALCALDE Vecinos de la aldea El Pino hacen un llamado al alcalde Pepe Rueda para que pueda brindar una solución al ma"
 category: barberena
 tags: ["BARBERENA","ElPino","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#BARBERENA | VECINOS SOLICITAN EL APOYO DEL ALCALDE
+VECINOS SOLICITAN EL APOYO DEL ALCALDE
 
 Vecinos de la aldea El Pino hacen un llamado al alcalde Pepe Rueda para que pueda brindar una solución al mal estado de calle La Segunda, desde su inicio hasta el cruce con la colonia Villas del Pino.
 

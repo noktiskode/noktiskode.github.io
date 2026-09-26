@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¡VENDO, CAMBIO Y COMPRO! ¿Quién tiene el…"
+title: "¡Vendo, cambio Y compro!"
 date: 2026-05-26T16:00:46.000Z
 image: "/images/blog/122217575768318393.jpg"
 excerpt: "#BARBERENA | ¡VENDO, CAMBIO Y COMPRO! ¿Quién tiene el álbum lleno y quién necesita un nuevo sobre? 🐟 Jorge Cruz: La joven promesa que todos esperan ver brillar"
 category: barberena
 tags: ["BARBERENA","Humor","AlbumPanini","PoliticaLocal","Elecciones","Guatemala","SantaRosa"]
 ---
-#BARBERENA | ¡VENDO, CAMBIO Y COMPRO!
+¡VENDO, CAMBIO Y COMPRO!
 
 ¿Quién tiene el álbum lleno y quién necesita un nuevo sobre?
 

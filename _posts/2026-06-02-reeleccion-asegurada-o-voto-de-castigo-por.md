@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿REELECCIÓN ASEGURADA O VOTO DE CASTIGO POR…"
+title: "¿Reelección asegurada O voto de castigo por el agua?"
 date: 2026-06-02T16:00:15.000Z
 image: "/images/blog/122218252232318393.jpg"
 excerpt: "#ANÁLISIS | ¿REELECCIÓN ASEGURADA O VOTO DE CASTIGO POR EL AGUA? EL PANORAMA EN #BARBERENA A dos años y casi cinco meses de haber asumido el cargo, las cosas pi"
 category: barberena
 tags: ["ANÁLISIS","BARBERENA"]
 ---
-#ANÁLISIS | ¿REELECCIÓN ASEGURADA O VOTO DE CASTIGO POR EL AGUA? EL PANORAMA EN #BARBERENA
+¿REELECCIÓN ASEGURADA O VOTO DE CASTIGO POR EL AGUA? EL PANORAMA EN #BARBERENA
 
 A dos años y casi cinco meses de haber asumido el cargo, las cosas pintan bien para el alcalde Pepe Rueda, a pesar de que el mayor talón de Aquiles de su administración sigue siendo el tema del agua potable.
 

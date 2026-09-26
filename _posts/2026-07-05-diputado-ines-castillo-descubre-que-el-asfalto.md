@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO…"
+title: "Diputado Inés Castillo descubre que el asfalto existe, Y de paso se acuerda que hay elecciones en 2027 El diputado Inés Castillo salió esta semana con una revelación que dejó a todos boquiabiertos: resulta que el Ministerio de Comunicaciones gasta pisto en carreteras."
 date: 2026-07-05T17:52:42.000Z
 image: "/images/blog/122221342412318393.jpg"
 excerpt: "#REGIONALES | DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO EXISTE, Y DE PASO SE ACUERDA QUE HAY ELECCIONES EN 2027 El diputado Inés Castillo salió esta semana"
 category: barberena
 tags: ["REGIONALES","santarosa","SantaRosaGT","Chiquimulilla","Jutiapa","CiudadPedroDeAlvarado","ElBoqueron"]
 ---
-#REGIONALES | DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO EXISTE, Y DE PASO SE ACUERDA QUE HAY ELECCIONES EN 2027
+DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO EXISTE, Y DE PASO SE ACUERDA QUE HAY ELECCIONES EN 2027
 
 El diputado Inés Castillo salió esta semana con una revelación que dejó a todos boquiabiertos: resulta que el Ministerio de Comunicaciones gasta pisto en carreteras. Quién lo hubiera imaginado.
 

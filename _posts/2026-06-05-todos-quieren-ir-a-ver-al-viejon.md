@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| TODOS QUIEREN IR A VER AL VIEJÓN…"
+title: "Todos quieren ir A ver al viejón"
 date: 2026-06-05T17:42:05.000Z
 excerpt: "#BARBERENA | TODOS QUIEREN IR A VER AL VIEJÓN Don Rubelio Recinos invita a la población a participar en la Jornada de Afiliación y Capacitación que organiza el "
 category: barberena
 tags: ["BARBERENA","ELCERINAL","santarosa","BarberenaSantaRosa","Une","Política2027"]
 ---
-#BARBERENA | TODOS QUIEREN IR A VER AL VIEJÓN
+TODOS QUIEREN IR A VER AL VIEJÓN
 
 Don Rubelio Recinos invita a la población a participar en la Jornada de Afiliación y Capacitación que organiza el partido UNE. El evento busca organizar y capacitar a militantes y simpatizantes de cara al proceso electoral 2027.
 

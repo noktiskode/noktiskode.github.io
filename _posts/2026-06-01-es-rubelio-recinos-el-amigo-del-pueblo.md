@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¿ES RUBELIO RECINOS EL AMIGO DEL PUEBLO? 🤔…"
+title: "¿Es Rubelio Recinos el amigo del pueblo?"
 date: 2026-06-01T23:10:04.000Z
 excerpt: "¿ES RUBELIO RECINOS EL AMIGO DEL PUEBLO? 🤔 Don Rubelio Recinos tuvo ayer una convivencia con amigos, donde también agradeció a los presentes por el encuentro. "
 category: barberena

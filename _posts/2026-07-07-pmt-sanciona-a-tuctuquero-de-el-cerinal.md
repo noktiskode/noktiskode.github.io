@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PMT SANCIONA A TUCTUQUERO DE EL CERINAL…"
+title: "PMT sanciona A tuctuquero de El Cerinal que llevaba emergencia al hospital Vecino comenta lo siguiente: \"Que se enteren los compañeros tuctuqueros de la aldea El Cerinal."
 date: 2026-07-07T17:18:05.000Z
 image: "/images/blog/122221557254318393.jpg"
 excerpt: "#BARBERENA | PMT SANCIONA A TUCTUQUERO DE EL CERINAL QUE LLEVABA EMERGENCIA AL HOSPITAL Vecino comenta lo siguiente: \"Que se enteren los compañeros tuctuqueros "
 category: barberena
 tags: ["BARBERENA","ELCERINAL","BarberenaSantaRosa","SantaRosaGT","SantaRosa","PMT"]
 ---
-#BARBERENA | PMT SANCIONA A TUCTUQUERO DE EL CERINAL QUE LLEVABA EMERGENCIA AL HOSPITAL
+PMT SANCIONA A TUCTUQUERO DE EL CERINAL QUE LLEVABA EMERGENCIA AL HOSPITAL
 
 Vecino comenta lo siguiente:
 

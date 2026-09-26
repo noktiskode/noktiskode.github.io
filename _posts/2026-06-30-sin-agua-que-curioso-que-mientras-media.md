@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "SIN AGUA 💧 Qué curioso que mientras media…"
+title: "Sin agua"
 date: 2026-06-30T17:39:12.000Z
 image: "/images/blog/122220889304318393.jpg"
 excerpt: "#BARBERENA SIN AGUA 💧 Qué curioso que mientras media Barberena no tiene ni una gota, los que venden agua en pipa nunca se ven tan \"afectados\" por la famosa esc"
 category: barberena
 tags: ["BARBERENA","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa","agua"]
 ---
-#BARBERENA SIN AGUA 💧
+SIN AGUA 💧
 
 Qué curioso que mientras media Barberena no tiene ni una gota, los que venden agua en pipa nunca se ven tan "afectados" por la famosa escasez. Será cuestión de suerte, dirán algunos.
 

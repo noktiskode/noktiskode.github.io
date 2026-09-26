@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| INAUGURACIÓN DE CALLEJÓN EN EL CERINAL: LA…"
+title: "Inauguración de callejón en El Cerinal: la obra, de los vecinos."
 date: 2026-06-21T15:59:30.000Z
 image: "/images/blog/122220071846318393.jpg"
 excerpt: "#BARBERENA | INAUGURACIÓN DE CALLEJÓN EN EL CERINAL: LA OBRA, DE LOS VECINOS. LAS FOTOS, DE NAPO ROJAS. Ayer se inauguró un callejón en aldea El Cerinal. La man"
 category: barberena
 tags: ["BARBERENA","Congreso","BarberenaSantaRosa","SantaRosaGT","santarosa","obraspublicas"]
 ---
-#BARBERENA | INAUGURACIÓN DE CALLEJÓN EN EL CERINAL: LA OBRA, DE LOS VECINOS. LAS FOTOS, DE NAPO ROJAS.
+INAUGURACIÓN DE CALLEJÓN EN EL CERINAL: LA OBRA, DE LOS VECINOS. LAS FOTOS, DE NAPO ROJAS.
 
 Ayer se inauguró un callejón en aldea El Cerinal. La mano de obra fue de los vecinos, los materiales los aportó la Municipalidad... y las fotos se las llevó el señor diputado Napo Rojas.
 

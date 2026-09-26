@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La de anunció que reforzará los operativos para…"
+title: "La de anunció que reforzará los operativos para"
 date: 2026-07-04T21:52:25.000Z
 image: "/images/blog/122221264070318393.jpg"
 excerpt: "La #PMT de #BARBERENA anunció que reforzará los operativos para detectar y sancionar el transporte colectivo que opere sin autorización municipal. Pilotos y pro"

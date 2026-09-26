@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| HACE FALTA VOLUNTAD El alcalde Pepe Rueda…"
+title: "Hace falta voluntad"
 date: 2026-05-30T20:56:02.000Z
 excerpt: "#BARBERENA | HACE FALTA VOLUNTAD El alcalde Pepe Rueda anduvo supervisando los trabajos de mejoramiento de calle en el sector cruce a El Boquerón, cruce a Mal P"
 category: barberena
 tags: ["BARBERENA","ElCerinal","SantaRosa","HaceFaltaVoluntad"]
 ---
-#BARBERENA | HACE FALTA VOLUNTAD
+HACE FALTA VOLUNTAD
 
 El alcalde Pepe Rueda anduvo supervisando los trabajos de mejoramiento de calle en el sector cruce a El Boquerón, cruce a Mal País y La Laguna, El Cerinal, y de paso aprovechó para mencionar que le pagan bien; que gracias a Dios tiene un salario que él no se puso, que así lo encontró y que trabaja para desquitarlo.
 

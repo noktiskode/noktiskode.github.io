@@ -1,7 +1,7 @@
 ---
 featured: false
 relevant: false
-title: 'De Corral de Piedra a "de tishudos para tishudos": la historia que no
+title: "'De Corral de Piedra a \"de tishudos para tishudos\": la historia que no"
   todos conocen'
 date: 2026-05-18T10:00:00.000-06:00
 image: /images/blog/1000039581.jpg

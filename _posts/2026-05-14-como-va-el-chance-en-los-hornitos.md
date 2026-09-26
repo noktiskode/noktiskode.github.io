@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿CÓMO VA EL CHANCE EN LOS HORNITOS?…"
+title: "¿Cómo va el chance en Los Hornitos?"
 date: 2026-05-14T16:00:29.000Z
 image: "/images/blog/122216293460318393.jpg"
 excerpt: "#BARBERENA | ¿CÓMO VA EL CHANCE EN LOS HORNITOS? Según el último informe de supervisión del CODEDE, aunque la obra estuvo algo estancada durante unos días, los "
 category: barberena
 tags: ["BARBERENA","Guatecompras","SantaRosa","LosHornitos","CODEDE","ObraPública"]
 ---
-#BARBERENA | ¿CÓMO VA EL CHANCE EN LOS HORNITOS?
+¿CÓMO VA EL CHANCE EN LOS HORNITOS?
 
 Según el último informe de supervisión del CODEDE, aunque la obra estuvo algo estancada durante unos días, los números indican que ahora sí le están metiendo nitro.
 

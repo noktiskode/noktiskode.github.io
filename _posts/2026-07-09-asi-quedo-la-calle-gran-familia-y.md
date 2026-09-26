@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y…"
+title: "Así quedó la calle Gran Familia Y Platanar, aldea El Cerinal Como les contamos antes sobre este proyecto, hoy les compartimos cómo quedó."
 date: 2026-07-09T22:31:46.000Z
 image: "/images/blog/122221784534318393.jpg"
 excerpt: "#BARBERENA | ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y PLATANAR, ALDEA EL CERINAL Como les contamos antes sobre este proyecto, hoy les compartimos cómo quedó. Aunque to"
 category: barberena
 tags: ["BARBERENA","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa","ObraPública"]
 ---
-#BARBERENA | ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y PLATANAR, ALDEA EL CERINAL
+ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y PLATANAR, ALDEA EL CERINAL
 
 Como les contamos antes sobre este proyecto, hoy les compartimos cómo quedó. Aunque todavía no ha habido inauguración, la obra ya está terminada y así lo confirmó la comisión encargada.
 
