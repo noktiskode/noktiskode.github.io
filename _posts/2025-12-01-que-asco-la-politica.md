@@ -1,0 +1,20 @@
+---
+featured: false
+title: "¡Qué asco la política!"
+date: 2025-12-01T07:51:50.000Z
+image: 
+category: opiniones
+tags:
+  - Democracia
+  - Humor Negro
+  - Dewey
+  - Malcolm In The Middle
+  - Reflexión
+  - Cultura Pop
+---
+
+“¡Qué asco la política!” — Dewey, Malcolm in the Middle
+
+> “Los votantes no leen, no piensan por sí mismos. Se dejan llevar por lo último que escucharon, sea verdad o no. La democracia es un fracaso, porque seamos realistas: la gente es idiota.”
+
+ Un niño de primaria lo dice, pero nos hace pensar: votar no basta si no pensamos por nosotros mismos. La educación y el sentido crítico son lo que realmente mantienen viva la democracia.
