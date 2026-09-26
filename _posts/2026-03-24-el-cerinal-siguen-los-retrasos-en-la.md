@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL CERINAL | SIGUEN LOS RETRASOS EN LA…"
+title: "El Cerinal | siguen los retrasos en la reconstrucción de la escuela N.º 1 Vecinos y padres de familia expresan su preocupación por la falta de avances en la reconstrucción de la Escuela N.º 1 de la aldea El Cerinal, pese a contar con una inversión de Q2,001,162.00."
 date: 2026-03-24T23:10:28.000Z
 excerpt: "EL CERINAL | SIGUEN LOS RETRASOS EN LA RECONSTRUCCIÓN DE LA ESCUELA N.º 1 Vecinos y padres de familia expresan su preocupación por la falta de avances en la rec"
 category: barberena

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| EL ÚLTIMO TRUCO DE LICO CRUZ 😬…"
+title: "El último truco de Lico Cruz"
 date: 2026-05-13T01:15:53.000Z
 image: "/images/blog/122216106134318393.jpg"
 excerpt: "#BARBERENA | EL ÚLTIMO TRUCO DE LICO CRUZ 😬 Un convenio de pago por más de Q812 mil terminó llevando a Lico Cruz a enfrentar un proceso penal por presunto abus"
 category: barberena
 tags: ["BARBERENA","SantaRosa","satirapolitica","truco"]
 ---
-#BARBERENA | EL ÚLTIMO TRUCO DE LICO CRUZ 😬
+EL ÚLTIMO TRUCO DE LICO CRUZ 😬
 
 Un convenio de pago por más de Q812 mil terminó llevando a Lico Cruz a enfrentar un proceso penal por presunto abuso de autoridad.
 

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Este muchacho trabaja para la Muni de como…"
+title: "Este muchacho trabaja para la Muni de como auxiliar de logística en la Dirección de Relaciones Públicas y, al mismo tiempo, también colabora con Visor Suroriente."
 date: 2026-04-03T17:23:29.000Z
 image: "/images/blog/122211942062318393.jpg"
 excerpt: "Este muchacho trabaja para la Muni de #Barberena como auxiliar de logística en la Dirección de Relaciones Públicas y, al mismo tiempo, también colabora con Viso"

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| HOY ES EL DÍA DEL ALBAÑIL, PERO...…"
+title: "Hoy es el día del albañil, pero"
 date: 2026-05-03T19:28:16.000Z
 image: "/images/blog/122215032236318393.jpg"
 excerpt: "#SantaRosaGT | HOY ES EL DÍA DEL ALBAÑIL, PERO... LOS MEJORES DIPUTADOS POR SANTA ROSA ESTÁN CONSTRUYENDO UN MEJOR PAÍS. 👏 Inés Castillo, Napo Rojas, Ricardo A"
 category: barberena
 tags: ["SantaRosaGT","CongresoGT","DíaDelAlbañil","Diputados","Guatemala","Elecciones","66mil"]
 ---
-#SantaRosaGT | HOY ES EL DÍA DEL ALBAÑIL, PERO...
+HOY ES EL DÍA DEL ALBAÑIL, PERO...
 
 LOS MEJORES DIPUTADOS POR SANTA ROSA ESTÁN CONSTRUYENDO UN MEJOR PAÍS. 👏 
 

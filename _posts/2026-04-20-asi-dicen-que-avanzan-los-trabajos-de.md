@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE…"
+title: "Así dicen que avanzan los trabajos de pavimentación en el sector de La Ladrillera Recientemente, el personal municipal afirmó que el pavimento tiene un avance del 95%, excluyendo las cunetas."
 date: 2026-04-20T20:09:29.000Z
 image: "/images/blog/122213707748318393.jpg"
 excerpt: "#Barberena | ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE PAVIMENTACIÓN EN EL SECTOR DE LA LADRILLERA Recientemente, el personal municipal afirmó que el pavimento tien"
 category: barberena
 tags: ["Barberena","SantaRosaGT","santarosa","Fiscalizacion","obraspublicas","obras","guatecompras"]
 ---
-#Barberena | ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE PAVIMENTACIÓN EN EL SECTOR DE LA LADRILLERA
+ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE PAVIMENTACIÓN EN EL SECTOR DE LA LADRILLERA
 
 Recientemente, el personal municipal afirmó que el pavimento tiene un avance del 95%, excluyendo las cunetas. Sin embargo, al contrastar esta cifra con la realidad física de la obra, los números simplemente no cuadran.
 

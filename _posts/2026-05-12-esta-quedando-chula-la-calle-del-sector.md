@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR…"
+title: "Está quedando chula la calle del sector de panadería \"la dulce abuelita\" La gente pregunta si van a quitar la tierra de las banquetas"
 date: 2026-05-12T22:10:48.000Z
 excerpt: "#BARBERENA | ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR DE PANADERÍA \"LA DULCE ABUELITA\" La gente pregunta si van a quitar la tierra de las banquetas... Por cierto"
 category: barberena
 tags: ["BARBERENA"]
 ---
-#BARBERENA | ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR DE PANADERÍA "LA DULCE ABUELITA"
+ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR DE PANADERÍA "LA DULCE ABUELITA"
 
 La gente pregunta si van a quitar la tierra de las banquetas...
 

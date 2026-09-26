@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "GRACIAS A LAS FISCALIZACIONES DE LICO CRUZ, LA…"
+title: "Gracias A las fiscalizaciones de Lico Cruz, La Ladrillera por fin es pavimentada Mucho tiempo tuvo que pasar para que este sector fuera pavimentado, después de que los trabajos fueran abandonados varias veces."
 date: 2026-04-15T16:02:19.000Z
 image: "/images/blog/122213088320318393.jpg"
 excerpt: "GRACIAS A LAS FISCALIZACIONES DE LICO CRUZ, LA LADRILLERA POR FIN ES PAVIMENTADA Mucho tiempo tuvo que pasar para que este sector fuera pavimentado, después de "

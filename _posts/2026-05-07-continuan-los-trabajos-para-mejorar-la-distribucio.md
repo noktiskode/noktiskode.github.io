@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN…"
+title: "Continúan los trabajos para mejorar la distribución del agua en aldea El Cerinal La introducción de tubería beneficiará a los sectores de (no a la residencial), y."
 date: 2026-05-07T20:00:30.000Z
 image: "/images/blog/122215489058318393.jpg"
 excerpt: "#ELCERINAL | CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN DEL AGUA EN ALDEA EL CERINAL La introducción de tubería beneficiará a los sectores de #AmateBla"
 category: barberena
 tags: ["ELCERINAL","AmateBlanco","Coguasa","ElZapotillo","ElBoquerón","Barberena","SantaRosaGT","aguapotable","agua"]
 ---
-#ELCERINAL | CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN DEL AGUA EN ALDEA EL CERINAL
+CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN DEL AGUA EN ALDEA EL CERINAL
 
 La introducción de tubería beneficiará a los sectores de #AmateBlanco (no a la residencial), #Coguasa y #ElZapotillo. Estas mejoras conectarán con el nuevo pozo del sector de #ElBoquerón.
 

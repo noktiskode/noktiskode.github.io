@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¡APOYANDO LO NUESTRO! 🌭🔥 DELI HOTCHOS: Sabor irresistible…"
+title: "¡Apoyando lo nuestro! deli hotchos: Sabor irresistible"
 date: 2026-04-06T23:43:01.000Z
 image: "/images/blog/122212264706318393.jpg"
 excerpt: "¡APOYANDO LO NUESTRO! 🌭🔥 DELI HOTCHOS: Sabor irresistible Ya tenemos ricos hotchos y panes: Q20 con salchicha jumbo, tocino, mayonesa, ketchup, mostaza, adere"

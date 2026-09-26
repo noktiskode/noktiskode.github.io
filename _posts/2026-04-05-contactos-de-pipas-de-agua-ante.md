@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "💧 | Contactos de pipas de agua Ante…"
+title: "Contactos de pipas de agua Ante la escasez de agua en Barberena, compartimos números de personas y servicios que venden agua en pipa: Agua Quiquillo: 5551-5008 Susan López: 4909-9235 / 4447-5365 / 4676-5866 Susan López ("
 date: 2026-04-05T17:29:41.000Z
 image: "/images/blog/122212151090318393.jpg"
 excerpt: "#Barberena #ElCerinal 💧 | Contactos de pipas de agua Ante la escasez de agua en Barberena, compartimos números de personas y servicios que venden agua en pipa:"
 category: barberena
 tags: ["Barberena","ElCerinal"]
 ---
-#Barberena #ElCerinal 💧 | Contactos de pipas de agua
+💧 | Contactos de pipas de agua
 
 Ante la escasez de agua en Barberena, compartimos números de personas y servicios que venden agua en pipa:
 

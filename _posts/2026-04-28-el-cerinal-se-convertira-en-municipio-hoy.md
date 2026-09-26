@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY?…"
+title: "¿El Cerinal se convertirá en municipio hoy?"
 date: 2026-04-28T11:32:36.000Z
 image: "/images/blog/122214488696318393.jpg"
 excerpt: "#iniciativa5558 | ¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY? 🚨 Resulta que hoy en el Congreso estarán viendo la iniciativa 5558… la que podría hacer que El Ce"
 category: barberena
 tags: ["iniciativa5558","Barberena","ELCERINAL","SantaRosaGT","CongresoGT","Guatecompras"]
 ---
-#iniciativa5558 | ¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY? 🚨
+¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY? 🚨
 
 Resulta que hoy en el Congreso estarán viendo la iniciativa 5558… la que podría hacer que El Cerinal se convierta en municipio.
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| NO SON Q5 MILLONES Y MEDIO 🚨…"
+title: "No son Q5 millones Y medio"
 date: 2026-04-30T05:19:27.000Z
 image: "/images/blog/122214658904318393.jpg"
 excerpt: "#Barberena | NO SON Q5 MILLONES Y MEDIO 🚨 Circula una publicación en la que se menciona que la municipalidad de Barberena gastó Q5 millones y medio en la compr"
 category: barberena
 tags: ["Barberena","SantaRosaGT","Agricultura","Guatecompras","Fertilizante"]
 ---
-#Barberena | NO SON Q5 MILLONES Y MEDIO 🚨
+NO SON Q5 MILLONES Y MEDIO 🚨
 
 Circula una publicación en la que se menciona que la municipalidad de Barberena gastó Q5 millones y medio en la compra de 7,500 sacos de fertilizante.
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN…"
+title: "Continúan con la entrega de fertilizante en Barberena Este día, los beneficiarios fueron de varias comunidades, entre ellas:, y."
 date: 2026-05-05T19:02:40.000Z
 image: "/images/blog/122215263428318393.jpg"
 excerpt: "#BARBERENA | CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA Este día, los beneficiarios fueron de varias comunidades, entre ellas: #Canoguitas, #SanNicol"
 category: barberena
 tags: ["BARBERENA","Canoguitas","SanNicolás","MalPaís","LaVega"]
 ---
-#BARBERENA | CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA
+CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA
 
 Este día, los beneficiarios fueron de varias comunidades, entre ellas: #Canoguitas, #SanNicolás, #MalPaís y #LaVega.
 

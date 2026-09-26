@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Siempre hemos pensado que ellos son el verdadero…"
+title: "Siempre hemos pensado que ellos son el verdadero motor."
 date: 2026-04-03T20:23:55.000Z
 image: "/images/blog/122211954512318393.jpg"
 excerpt: "Siempre hemos pensado que ellos son el verdadero motor. Los fontaneros y el personal de limpieza —y también los PMT— son quienes realmente mantienen a nuestro m"

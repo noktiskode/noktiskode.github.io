@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PEPE RUEDA REGRESA DE SUS VACACIONES Tras un…"
+title: "Pepe Rueda regresa de sus vacaciones"
 date: 2026-04-07T18:57:16.000Z
 image: "/images/blog/122212357514318393.jpg"
 excerpt: "PEPE RUEDA REGRESA DE SUS VACACIONES Tras un merecido descanso mientras los proyectos del municipio quedaban a la deriva por falta de pago del CODEDE, el \"mero "

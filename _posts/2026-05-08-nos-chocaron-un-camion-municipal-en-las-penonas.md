@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOS CHOCARON UN CAMIÓN MUNICIPAL EN “LAS PEÑONAS”…"
+title: "Nos chocaron un camión municipal en “Las Peñonas” Y bella vista (Km 52.3) Un camión de la Municipalidad de chocó esta mañana contra un transporte de productos lácteos en el sector de Las Peñonas y Bella Vista, rumbo a la capital."
 date: 2026-05-08T19:40:19.000Z
 image: "/images/blog/122215601762318393.jpg"
 excerpt: "NOS CHOCARON UN CAMIÓN MUNICIPAL EN “LAS PEÑONAS” Y BELLA VISTA (Km 52.3) Un camión de la Municipalidad de #Barberena chocó esta mañana contra un transporte de "

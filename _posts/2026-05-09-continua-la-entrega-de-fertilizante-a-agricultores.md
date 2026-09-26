@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES…"
+title: "Continúa la entrega de fertilizante A agricultores"
 date: 2026-05-09T19:48:02.000Z
 image: "/images/blog/122215713728318393.jpg"
 excerpt: "#BARBERENA | CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES Durante el quinto y sexto día de entrega de fertilizante, agricultores de distintas comunidades "
 category: barberena
 tags: ["BARBERENA","Monterroso","MiMunicipio","SantaRosaGT","Transparencia","AuditoriaSocial"]
 ---
-#BARBERENA | CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES
+CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES
 
 Durante el quinto y sexto día de entrega de fertilizante, agricultores de distintas comunidades de Barberena recibieron tres costales de abono: dos de urea y uno de 20-20-0, como apoyo para fortalecer sus cultivos.
 

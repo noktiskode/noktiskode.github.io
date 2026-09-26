@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100%…"
+title: "Aldea San Nicolás: obra terminada al 100%"
 date: 2026-03-28T19:28:27.000Z
 image: "/images/blog/122211346094318393.jpg"
 excerpt: "#BARBERENA | ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100% ✅ El desarrollo sigue llegando a Barberena de la mano del gobierno central y del alcalde Pepe Rueda. Los "
 category: barberena
 tags: ["BARBERENA","AldeaSanNicolas","SantaRosaGT","Codede","Gobierno","obraspublicas"]
 ---
-#BARBERENA | ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100% ✅
+ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100% ✅
 
 El desarrollo sigue llegando a Barberena de la mano del gobierno central y del alcalde Pepe Rueda.
 

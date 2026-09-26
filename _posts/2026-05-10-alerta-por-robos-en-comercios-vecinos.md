@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| ALERTA POR ROBOS EN COMERCIOS 🚨 Vecinos…"
+title: "Alerta por robos en comercios"
 date: 2026-05-10T02:33:05.000Z
 excerpt: "#SantaRosa | ALERTA POR ROBOS EN COMERCIOS 🚨 Vecinos y comerciantes denuncian a varias mujeres señaladas de robar en un local de la aldea El Cerinal, quienes h"
 category: barberena
 tags: ["SantaRosa","Zaragoza","ElCerinal","Barberena","Chimaltenango"]
 ---
-#SantaRosa | ALERTA POR ROBOS EN COMERCIOS 🚨
+ALERTA POR ROBOS EN COMERCIOS 🚨
 
 Vecinos y comerciantes denuncian a varias mujeres señaladas de robar en un local de la aldea El Cerinal, quienes habrían cometido hechos similares en #Zaragoza, Chimaltenango.
 

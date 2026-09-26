@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA SIN AGUA 🚨 Una contradicción que indigna.…"
+title: "Barberena sin agua"
 date: 2026-04-13T18:17:46.000Z
 image: "/images/blog/122212912214318393.jpg"
 excerpt: "BARBERENA SIN AGUA 🚨 Una contradicción que indigna. Mientras hace poco se desperdiciaba agua en los famosos “Splash Day”, hoy miles de barberenenses tienen que"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "MUCHOS QUISIÉRAMOS QUE LA PASARELA DE EL CERINAL…"
+title: "Muchos quisiéramos que la pasarela de El Cerinal tuviera la estética de la de chiquimulilla (primera foto), pero los números cuentan otra historia."
 date: 2026-04-30T20:40:30.000Z
 image: "/images/blog/122214748538318393.jpg"
 excerpt: "MUCHOS QUISIÉRAMOS QUE LA PASARELA DE EL CERINAL TUVIERA LA ESTÉTICA DE LA DE CHIQUIMULILLA (PRIMERA FOTO), PERO LOS NÚMEROS CUENTAN OTRA HISTORIA. La de Chiqui"

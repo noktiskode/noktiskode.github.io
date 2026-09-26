@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¿PEPE RUEDA CAE MAL? 🤔 Te podrá gustar…"
+title: "¿Pepe Rueda cae mal?"
 date: 2026-04-19T17:34:10.000Z
 image: "/images/blog/122213566814318393.jpg"
 excerpt: "¿PEPE RUEDA CAE MAL? 🤔 Te podrá gustar o no, pero Pepe ha llevado desarrollo a donde antes no llegaba; claro, con nuestros impuestos, pero la voluntad también "

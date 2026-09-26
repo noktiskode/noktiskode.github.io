@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "A un año de su partida, recordamos con…"
+title: "A un año de su partida, recordamos con cariño a: Isidro Guzmán Ivoy “Don Chilo” Invitamos a todos los amigos, familiares y conocidos a unirse en oración en su memoria, y a recordarlo con el amor, la bondad y la alegría que siempre compartió entre nosotros."
 date: 2026-04-18T16:02:15.000Z
 image: "/images/blog/122213399744318393.jpg"
 excerpt: "A un año de su partida, recordamos con cariño a: Isidro Guzmán Ivoy “Don Chilo” Invitamos a todos los amigos, familiares y conocidos a unirse en oración en su m"

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "LICO CRUZ FISCALIZA EL LIBRAMIENTO - En el…"
+title: "Lico Cruz fiscaliza el libramiento #Barberena - #elcerinal"
 date: 2026-04-15T19:40:56.000Z
 image: "/images/blog/122213101982318393.jpg"
 excerpt: "LICO CRUZ FISCALIZA EL LIBRAMIENTO #BARBERENA - #ELCERINAL En el libramiento existe un socavamiento que pone en riesgo la integridad de quienes transitan por es"
 category: barberena
 tags: ["BARBERENA","ELCERINAL","SantaRosaGT","santarosa","guatemala","fiscalizacion"]
 ---
-LICO CRUZ FISCALIZA EL LIBRAMIENTO #BARBERENA - #ELCERINAL 
+LICO CRUZ FISCALIZA EL LIBRAMIENTO #BARBERENA - #ELCERINAL
 
 En el libramiento existe un socavamiento que pone en riesgo la integridad de quienes transitan por ese tramo, y lo más preocupante es que lleva meses sin ser atendido.
 

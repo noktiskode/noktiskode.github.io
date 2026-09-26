@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¡BUENAS NOTICIAS! 😀 Los trabajos municipales en el…"
+title: "¡Buenas noticias!"
 date: 2026-03-28T21:33:46.000Z
 image: "/images/blog/122211356840318393.jpg"
 excerpt: "¡BUENAS NOTICIAS! 😀 Los trabajos municipales en el sector El Jocote, El Cerinal, se han retomado tras dos semanas de espera, tal como lo confirmaron los vecino"

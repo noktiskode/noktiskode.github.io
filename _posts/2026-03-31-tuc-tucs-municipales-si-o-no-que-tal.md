@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Tuc-tucs municipales: ¿sí o no? ¿Qué tal…"
+title: "Tuc-tucs municipales: ¿sí o no?"
 date: 2026-03-31T07:23:02.000Z
 image: "/images/blog/122211607946318393.jpg"
 excerpt: "#Barberena | Tuc-tucs municipales: ¿sí o no? ¿Qué tal si la Muni de Barberena pone tuc-tucs en comunidades donde los privados ya no tienen permitido ir y donde "
 category: barberena
 tags: ["Barberena"]
 ---
-#Barberena | Tuc-tucs municipales: ¿sí o no?
+Tuc-tucs municipales: ¿sí o no?
 
 ¿Qué tal si la Muni de Barberena pone tuc-tucs en comunidades donde los privados ya no tienen permitido ir y donde el Transbarberena ni siquiera puede entrar?
 

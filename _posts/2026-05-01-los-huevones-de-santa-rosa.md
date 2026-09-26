@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| LOS \"HUEVONES\" DE SANTA ROSA 🤣 :…"
+title: "Los \"huevones\" de Santa Rosa"
 date: 2026-05-01T09:50:48.000Z
 excerpt: "#Casillas | LOS \"HUEVONES\" DE SANTA ROSA 🤣 #video: ¿No creen que la reacción del alcalde de Casillas fue exagerada? Más bien parece que quiso hacer show, todo "
 category: barberena
 tags: ["Casillas","video","SantaRosaGT","Guatemala","santarosa","diadeltrabajador"]
 ---
-#Casillas | LOS "HUEVONES" DE SANTA ROSA 🤣
+LOS "HUEVONES" DE SANTA ROSA 🤣
 
 #video: ¿No creen que la reacción del alcalde de Casillas fue exagerada? Más bien parece que quiso hacer show, todo porque supuestamente les dijeron “huevones”.
 

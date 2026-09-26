@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🗣️ El diputado Samuel Pérez llama “vividor” al…"
+title: "El diputado Samuel Pérez llama “vividor” al diputado Mynor Alfonso De La Rosa por su trayectoria durante la administración del gobierno anterior."
 date: 2026-04-08T16:00:17.000Z
 image: "/images/blog/122212448720318393.jpg"
 excerpt: "🗣️ El diputado Samuel Pérez llama “vividor” al diputado Mynor Alfonso De La Rosa por su trayectoria durante la administración del gobierno anterior. Menciona q"

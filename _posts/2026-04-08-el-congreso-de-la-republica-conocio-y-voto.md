@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El Congreso de la República conoció y votó…"
+title: "El Congreso de la República conoció y votó anoche la iniciativa 6742, la cual buscaba otorgar un subsidio a los combustibles para aliviar el impacto económico en las familias."
 date: 2026-04-08T17:46:25.000Z
 image: "/images/blog/122212462406318393.jpg"
 excerpt: "El Congreso de la República conoció y votó anoche la iniciativa 6742, la cual buscaba otorgar un subsidio a los combustibles para aliviar el impacto económico e"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Queremos comentarles que esta obra no ha sido…"
+title: "Queremos comentarles que esta obra no ha sido"
 date: 2026-03-27T06:20:40.000Z
 image: "/images/blog/122211199292318393.jpg"
 excerpt: "Queremos comentarles que esta obra no ha sido entregada todavía; aún le faltan cunetas y bordillos. Las planchas que estaban agrietadas ya fueron levantadas y s"

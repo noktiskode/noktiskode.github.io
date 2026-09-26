@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| \"LA LADRILLERA EN EL AIRE\" Vecino denuncia:…"
+title: "\"La Ladrillera en el aire\" Vecino denuncia"
 date: 2026-05-11T16:53:20.000Z
 excerpt: "#Barberena #SantaRosa | \"LA LADRILLERA EN EL AIRE\" Vecino denuncia: “La calle de la Ladrillera sigue en el aire. El asfalto ha quedado abandonado otra vez; no h"
 category: barberena
 tags: ["Barberena","SantaRosa"]
 ---
-#Barberena #SantaRosa | "LA LADRILLERA EN EL AIRE"
+"LA LADRILLERA EN EL AIRE"
 
 Vecino denuncia:
 

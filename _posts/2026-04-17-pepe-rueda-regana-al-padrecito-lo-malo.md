@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PEPE RUEDA REGAÑA AL PADRECITO 😱 Lo malo…"
+title: "Pepe Rueda regaña al padrecito"
 date: 2026-04-17T22:11:59.000Z
 image: "/images/blog/122213301632318393.jpg"
 excerpt: "PEPE RUEDA REGAÑA AL PADRECITO 😱 Lo malo de aceptar “ayudas” de ciertos políticos es que rara vez vienen sin condiciones: después no solo cobran el favor, tamb"

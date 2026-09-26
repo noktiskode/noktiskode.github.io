@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El alcalde 𝗣𝗲𝗽𝗲 𝗥𝘂𝗲𝗱𝗮 consiguió un saludo para…"
+title: "El alcalde 𝗣𝗲𝗽𝗲 𝗥𝘂𝗲𝗱𝗮 consiguió un saludo para 𝗕𝗮𝗿𝗯𝗲𝗿𝗲𝗻𝗮 de parte de la 𝗕𝗮𝗻𝗱𝗮 𝗠𝗦."
 date: 2026-03-26T19:21:48.000Z
 excerpt: "El alcalde 𝗣𝗲𝗽𝗲 𝗥𝘂𝗲𝗱𝗮 consiguió un saludo para 𝗕𝗮𝗿𝗯𝗲𝗿𝗲𝗻𝗮 de parte de la 𝗕𝗮𝗻𝗱𝗮 𝗠𝗦. ¿Cuál habrá sido el costo? ¿Lo pagó con su sueldo o c"
 category: barberena

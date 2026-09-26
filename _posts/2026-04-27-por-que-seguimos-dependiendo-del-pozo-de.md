@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE…"
+title: "¿Por qué seguimos dependiendo del pozo de mal país?"
 date: 2026-04-27T08:33:40.000Z
 image: "/images/blog/122215763270318393.jpg"
 excerpt: "#BARBERENA | ¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE MAL PAÍS? Es común escuchar a vecinos de El Cerinal decir que el casco urbano de Barberena les \"roba\" el "
 category: barberena
 tags: ["BARBERENA","ElCerinal","SantaRosa","Guatecompras","Agua"]
 ---
-#BARBERENA | ¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE MAL PAÍS?
+¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE MAL PAÍS?
 
 Es común escuchar a vecinos de El Cerinal decir que el casco urbano de Barberena les "roba" el agua.
 

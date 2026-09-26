@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| YA FUE LOCALIZADO EL SEÑOR Los barberenenses…"
+title: "Ya fue localizado el señor"
 date: 2026-04-20T21:58:55.000Z
 image: "/images/blog/122213715428318393.jpg"
 excerpt: "#Barberena #SantaRosaGT | YA FUE LOCALIZADO EL SEÑOR Los barberenenses son pilas y ya localizaron al señor que caminó sobre el pavimento cuando aún estaba fresc"
 category: barberena
 tags: ["Barberena","SantaRosaGT"]
 ---
-#Barberena #SantaRosaGT | YA FUE LOCALIZADO EL SEÑOR
+YA FUE LOCALIZADO EL SEÑOR
 
 Los barberenenses son pilas y ya localizaron al señor que caminó sobre el pavimento cuando aún estaba fresco. Esto ocurrió hace tres días en La Ladrillera.
 

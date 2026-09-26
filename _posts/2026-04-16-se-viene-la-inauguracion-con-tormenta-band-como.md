@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¡SE VIENE LA INAUGURACIÓN CON TORMENTA BAND! Como…"
+title: "¡Se viene la inauguración con tormenta band!"
 date: 2026-04-16T01:01:50.000Z
 image: "/images/blog/122213121530318393.jpg"
 excerpt: "¡SE VIENE LA INAUGURACIÓN CON TORMENTA BAND! Como lo veníamos anunciando en días anteriores, la inauguración ya es una realidad. El mejoramiento de la calle pri"

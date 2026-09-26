@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| MEJORAMIENTO ESCUELA FRAY NO. 1 ¡Siguen echando…"
+title: "Mejoramiento escuela fray no. 1"
 date: 2026-05-07T18:01:50.000Z
 image: "/images/blog/122215477490318393.jpg"
 excerpt: "#ELCERINAL | MEJORAMIENTO ESCUELA FRAY NO. 1 ¡Siguen echando punta en la Escuela Fray No. 1 de la aldea El Cerinal! La ampliación y construcción de un módulo de"
 category: barberena
 tags: ["ELCERINAL","Barberena","SantaRosaGT","Educación","ObrasPúblicas"]
 ---
-#ELCERINAL | MEJORAMIENTO ESCUELA FRAY NO. 1
+MEJORAMIENTO ESCUELA FRAY NO. 1
 
 ¡Siguen echando punta en la Escuela Fray No. 1 de la aldea El Cerinal!
 La ampliación y construcción de un módulo de 8 aulas va agarrando forma.

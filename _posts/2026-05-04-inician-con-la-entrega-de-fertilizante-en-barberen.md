@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA…"
+title: "Inician con la entrega de fertilizante en Barberena"
 date: 2026-05-04T20:07:41.000Z
 image: "/images/blog/122215149536318393.jpg"
 excerpt: "INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA Después de una noche de \"romper la discoteca\" y de sacar los pasos prohibidos en el CerritoFer 2026, el alca"
 category: barberena
 tags: ["BuenaVista","Colellana","Utzumazate","guatecompras","Barberena","SantaRosaGT","santarosa","fertilizante","Fiscalización"]
 ---
-INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA 
+INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA
 
 Después de una noche de "romper la discoteca" y de sacar los pasos prohibidos en el CerritoFer 2026, el alcalde se hizo presente para la entrega del fertilizante a los beneficiados de #BuenaVista, #Colellana y #Utzumazate.
 

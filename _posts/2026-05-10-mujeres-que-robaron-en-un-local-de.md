@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| MUJERES QUE ROBARON EN UN LOCAL DE…"
+title: "Mujeres que robaron en un local de también habrían robado en Las mujeres que robaron el día de ayer en un local de El Cerinal también habrían robado cinco cortes de una venta de ropa típica, utilizando amenazas e intimidaciones, según testigos."
 date: 2026-05-10T06:18:32.000Z
 excerpt: "#BARBERENA | MUJERES QUE ROBARON EN UN LOCAL DE #ELCERINAL TAMBIÉN HABRÍAN ROBADO EN #SANJUANCOMALAPA Las mujeres que robaron el día de ayer en un local de El C"
 category: barberena
 tags: ["BARBERENA","ELCERINAL","SANJUANCOMALAPA","Zaragoza","SantaRosa","Chimaltenango"]
 ---
-#BARBERENA | MUJERES QUE ROBARON EN UN LOCAL DE #ELCERINAL TAMBIÉN HABRÍAN ROBADO EN #SANJUANCOMALAPA
+MUJERES QUE ROBARON EN UN LOCAL DE #ELCERINAL TAMBIÉN HABRÍAN ROBADO EN #SANJUANCOMALAPA
 
 Las mujeres que robaron el día de ayer en un local de El Cerinal también habrían robado cinco cortes de una venta de ropa típica, utilizando amenazas e intimidaciones, según testigos.
 

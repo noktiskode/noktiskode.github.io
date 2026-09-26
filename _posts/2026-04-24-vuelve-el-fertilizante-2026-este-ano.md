@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| 🌱 VUELVE EL FERTILIZANTE 2026 Este año…"
+title: "Vuelve el fertilizante 2026"
 date: 2026-04-24T04:45:17.000Z
 image: "/images/blog/122214054044318393.jpg"
 excerpt: "#Barberena | 🌱 VUELVE EL FERTILIZANTE 2026 Este año llegarán 7,500 costales de fertilizante para 2,500 personas (3 por persona). Desde 2024, la Municipalidad l"
 category: barberena
 tags: ["Barberena","SantaRosaGT","Agricultura","Guatecompras","Fertilizante"]
 ---
-#Barberena | 🌱 VUELVE EL FERTILIZANTE 2026
+🌱 VUELVE EL FERTILIZANTE 2026
 
 Este año llegarán 7,500 costales de fertilizante para 2,500 personas (3 por persona).
 

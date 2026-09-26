@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA…"
+title: "La municipalidad de Barberena continúa con la conexión de una nueva red de distribución de agua La Municipalidad de Barberena sigue adelante con los trabajos de la nueva red de distribución que conectará con el pozo del sector La Joya."
 date: 2026-04-06T21:21:13.000Z
 image: "/images/blog/122212256426318393.jpg"
 excerpt: "#AldeaElCerinal | LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA CONEXIÓN DE UNA NUEVA RED DE DISTRIBUCIÓN DE AGUA La Municipalidad de Barberena sigue adelante c"
 category: barberena
 tags: ["AldeaElCerinal","Barberena","ElCerinal","SantaRosaGT","ObrasGT","BarberenaSantaRosa"]
 ---
-#AldeaElCerinal | LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA CONEXIÓN DE UNA NUEVA RED DE DISTRIBUCIÓN DE AGUA
+LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA CONEXIÓN DE UNA NUEVA RED DE DISTRIBUCIÓN DE AGUA
 
 La Municipalidad de Barberena sigue adelante con los trabajos de la nueva red de distribución que conectará con el pozo del sector La Joya.
 

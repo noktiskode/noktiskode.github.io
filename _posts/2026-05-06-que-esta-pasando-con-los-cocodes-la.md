@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿QUÉ ESTÁ PASANDO CON LOS COCODES? La…"
+title: "¿Qué está pasando con los cocodes?"
 date: 2026-05-06T09:53:21.000Z
 image: "/images/blog/122215324964318393.jpg"
 excerpt: "#BARBERENA | ¿QUÉ ESTÁ PASANDO CON LOS COCODES? La gente comenta que familias completas conforman algunos de los distintos COCODES de nuestro municipio y que, a"
 category: barberena
 tags: ["BARBERENA","BuenaVista","Bijagüez","ElJunquillo","ElCerinal","SantaRosaGT","COCODE","Transparencia","fertilizante","guatecompras"]
 ---
-#BARBERENA | ¿QUÉ ESTÁ PASANDO CON LOS COCODES?
+¿QUÉ ESTÁ PASANDO CON LOS COCODES?
 
 La gente comenta que familias completas conforman algunos de los distintos COCODES de nuestro municipio y que, además, familiares de trabajadores municipales también forman parte de ellos.
 

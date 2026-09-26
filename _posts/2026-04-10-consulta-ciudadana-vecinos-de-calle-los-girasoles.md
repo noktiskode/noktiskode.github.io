@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Consulta ciudadana Vecinos de calle Los Girasoles…"
+title: "Consulta ciudadana Vecinos de calle Los Girasoles y de San Jorge comentan que tienen dudas sobre cómo se está manejando la mano de obra en la pavimentación."
 date: 2026-04-10T05:37:03.000Z
 image: "/images/blog/122212586726318393.jpg"
 excerpt: "#Barberena | Consulta ciudadana Vecinos de calle Los Girasoles 🌻 y de San Jorge comentan que tienen dudas sobre cómo se está manejando la mano de obra en la pa"
 category: barberena
 tags: ["Barberena"]
 ---
-#Barberena | Consulta ciudadana
+Consulta ciudadana
 
 Vecinos de calle Los Girasoles 🌻 y de San Jorge comentan que tienen dudas sobre cómo se está manejando la mano de obra en la pavimentación.
 

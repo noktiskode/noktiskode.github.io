@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| BÚSQUEDA DE FAMILIA EN BARBERENA 🚨 Se…"
+title: "Búsqueda de familia en Barberena"
 date: 2026-05-12T23:15:29.000Z
 image: "/images/blog/122216097152318393.jpg"
 excerpt: "#Barberena #SantaRosa | BÚSQUEDA DE FAMILIA EN BARBERENA 🚨 Se solicita con urgencia la colaboración de la comunidad para localizar a los familiares de Byron De"
 category: barberena
 tags: ["Barberena","SantaRosa"]
 ---
-#Barberena #SantaRosa | BÚSQUEDA DE FAMILIA EN BARBERENA 🚨
+BÚSQUEDA DE FAMILIA EN BARBERENA 🚨
 
 Se solicita con urgencia la colaboración de la comunidad para localizar a los familiares de Byron De Paz Hernández, un joven originario de Barberena, Santa Rosa, quien aparece en la fotografía adjunta.
 

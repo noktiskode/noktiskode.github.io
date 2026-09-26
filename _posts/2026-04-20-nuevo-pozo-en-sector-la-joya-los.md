@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| NUEVO POZO EN SECTOR LA JOYA Los…"
+title: "Nuevo pozo en sector la joya"
 date: 2026-04-20T08:28:36.000Z
 image: "/images/blog/122213649758318393.jpg"
 excerpt: "#ELCERINAL | NUEVO POZO EN SECTOR LA JOYA Los trabajos de perforación de un pozo en el sector La Joya, aldea El Cerinal, han finalizado como parte del mejoramie"
 category: barberena
 tags: ["ELCERINAL","agua","Barberena","SantaRosaGT","Codede","guatecompras","obraspublicas"]
 ---
-#ELCERINAL | NUEVO POZO EN SECTOR LA JOYA
+NUEVO POZO EN SECTOR LA JOYA
 
 Los trabajos de perforación de un pozo en el sector La Joya, aldea El Cerinal, han finalizado como parte del mejoramiento del sistema de agua potable en la zona.
 

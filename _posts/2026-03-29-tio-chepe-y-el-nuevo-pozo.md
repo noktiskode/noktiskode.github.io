@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| TÍO CHEPE Y EL NUEVO POZO 💧…"
+title: "Tío chepe Y el nuevo pozo"
 date: 2026-03-29T20:05:37.000Z
 image: "/images/blog/122211450902318393.jpg"
 excerpt: "#ELCERINAL | TÍO CHEPE Y EL NUEVO POZO 💧 ¡Ya casi hay agua señores! Un pelito de rana calva falta para que el sector La Joya abra el chorro con ganas. (Tenemos"
 category: barberena
 tags: ["ELCERINAL"]
 ---
-#ELCERINAL | TÍO CHEPE Y EL NUEVO POZO 💧
+TÍO CHEPE Y EL NUEVO POZO 💧
 
 ¡Ya casi hay agua señores!
 Un pelito de rana calva falta para que el sector La Joya abra el chorro con ganas. (Tenemos el 95.80% de avance). 🥳

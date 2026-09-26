@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| OBRA TERMINADA… ¿Y LA INAUGURACIÓN? 🤔 La…"
+title: "Obra terminada… ¿Y la inauguración?"
 date: 2026-04-20T05:26:40.000Z
 image: "/images/blog/122213632070318393.jpg"
 excerpt: "#ELCERINAL | OBRA TERMINADA… ¿Y LA INAUGURACIÓN? 🤔 La calle Gran Familia y Platanar ya está completamente finalizada y lista para el uso de la población. Según"
 category: barberena
 tags: ["ELCERINAL","Barberena","SantaRosaGT","santarosa","Codede","obras","obraspublicas","NOG25579711"]
 ---
-#ELCERINAL | OBRA TERMINADA… ¿Y LA INAUGURACIÓN? 🤔
+OBRA TERMINADA… ¿Y LA INAUGURACIÓN? 🤔
 
 La calle Gran Familia y Platanar ya está completamente finalizada y lista para el uso de la población.
 

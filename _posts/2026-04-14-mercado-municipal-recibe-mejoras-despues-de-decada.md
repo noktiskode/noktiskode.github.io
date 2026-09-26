@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "MERCADO MUNICIPAL RECIBE MEJORAS DESPUÉS DE DÉCADAS La…"
+title: "Mercado municipal recibe mejoras después de décadas"
 date: 2026-04-14T19:03:17.000Z
 image: "/images/blog/122213006438318393.jpg"
 excerpt: "MERCADO MUNICIPAL RECIBE MEJORAS DESPUÉS DE DÉCADAS La Municipalidad de #Barberena, bajo la administración del alcalde Pepe Rueda, inició hoy trabajos de mejora"

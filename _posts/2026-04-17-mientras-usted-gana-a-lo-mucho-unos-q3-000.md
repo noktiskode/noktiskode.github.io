@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Mientras usted gana, a lo mucho, unos Q3,000…"
+title: "Mientras usted gana, a lo mucho, unos Q3,000 mensuales, estos personajes se embolsan Q66 mil sin hacer absolutamente nada."
 date: 2026-04-17T08:25:13.000Z
 image: "/images/blog/122213247236318393.jpg"
 excerpt: "Mientras usted gana, a lo mucho, unos Q3,000 mensuales, estos personajes se embolsan Q66 mil sin hacer absolutamente nada. Asisten al Congreso solo ocho días al"

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| TÍO CHEPE ESTÁ BRAVÍSIMO 😤 Resulta que…"
+title: "Tío chepe está bravísimo"
 date: 2026-04-23T18:22:48.000Z
 image: "/images/blog/122214017216318393.jpg"
 excerpt: "#Barberena | TÍO CHEPE ESTÁ BRAVÍSIMO 😤 Resulta que ayer, a las 11:30 p. m., el Centro de Monitoreo captó el ingreso de unas motocicletas en el sector de La La"
 category: barberena
 tags: ["Barberena","SantaRosaGT","santarosa","Satira","satirapolitica","obras"]
 ---
-#Barberena | TÍO CHEPE ESTÁ BRAVÍSIMO 😤
+TÍO CHEPE ESTÁ BRAVÍSIMO 😤
 
 Resulta que ayer, a las 11:30 p. m., el Centro de Monitoreo captó el ingreso de unas motocicletas en el sector de La Ladrillera, justo donde hace dos días se echó el pavimento… o sea, recién salidito del horno.
 

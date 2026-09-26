@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN…"
+title: "Acto de brujería en tumba genera indignación en El Cerinal Una persona denunció en redes sociales un supuesto acto de brujería en la tumba de su mamá, ubicada en el cementerio de El Cerinal."
 date: 2026-05-13T20:10:11.000Z
 excerpt: "#SUPUESTO ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN EL CERINAL Una persona denunció en redes sociales un supuesto acto de brujería en la tumba de su mamá,"
 category: barberena
 tags: ["SUPUESTO","ElCerinal","Barberena","SantaRosa","Denuncia","Cementerio","Respeto","Guatemala"]
 ---
-#SUPUESTO ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN EL CERINAL
+ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN EL CERINAL
 
 Una persona denunció en redes sociales un supuesto acto de brujería en la tumba de su mamá, ubicada en el cementerio de El Cerinal. Según expresó, llegó al lugar para documentar la situación y manifestó su molestia por lo ocurrido.
 

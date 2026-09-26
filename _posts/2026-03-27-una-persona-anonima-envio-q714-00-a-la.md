@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Una persona anónima envió Q714.00 a la…
+title: "Una persona anónima envió Q714.00 a la abuelita Petrona García, viuda del difunto don Guicho."
 date: 2026-03-27T21:09:54.000Z
 image: /images/blog/122211253238318393.jpg
 excerpt: "#Barberena | Una persona anónima envió Q714.00 a la abuelita Petrona

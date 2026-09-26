@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LOS HUEVONES DE SANTA ROSA SOLO APARECEN…"
+title: "Los huevones de Santa Rosa solo aparecen en las fiestas Q66 mil les pagamos mensualmente a Napo Rojas y Ricardo Alarcón para que legislen y fiscalicen, y nos salen con que también les gusta andar en celebraciones del Día de la Madre."
 date: 2026-05-10T16:00:34.000Z
 image: "/images/blog/122215819844318393.jpg"
 excerpt: "#SantaRosa | LOS HUEVONES DE SANTA ROSA SOLO APARECEN EN LAS FIESTAS Q66 mil les pagamos mensualmente a Napo Rojas y Ricardo Alarcón para que legislen y fiscali"
 category: barberena
 tags: ["SantaRosa","Barberena","ElCerinal","FiscalizaciónCiudadana","FueraHuevones","Elecciones2027"]
 ---
-#SantaRosa | LOS HUEVONES DE SANTA ROSA SOLO APARECEN EN LAS FIESTAS
+LOS HUEVONES DE SANTA ROSA SOLO APARECEN EN LAS FIESTAS
 
 Q66 mil les pagamos mensualmente a Napo Rojas y Ricardo Alarcón para que legislen y fiscalicen, y nos salen con que también les gusta andar en celebraciones del Día de la Madre.
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR La…"
+title: "Pavimentación calle Gran Familia Y Platanar"
 date: 2026-03-23T15:50:02.000Z
 image: "/images/blog/122210845094318393.jpg"
 excerpt: "#ELCERINAL | PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR La administración del alcalde Pepe Rueda está pavimentando un tramo en la aldea El Cerinal y dicen que "
 category: barberena
 tags: ["ELCERINAL","Barberena","FiscalizaciónCiudadana","Transparencia","SantaRosaGT","Guatecompras","SNIP352733","NOG25579711"]
 ---
-#ELCERINAL | PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR
+PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR
 
 La administración del alcalde Pepe Rueda está pavimentando un tramo en la aldea El Cerinal y dicen que beneficiará a 350 personas.
 

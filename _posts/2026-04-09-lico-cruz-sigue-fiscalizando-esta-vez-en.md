@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN…"
+title: "Lico Cruz sigue fiscalizando: esta vez en Los Hornitos Lico Cruz supervisó ayer los trabajos en Los Hornitos y aseguró que no encontró ni un alma trabajando."
 date: 2026-04-09T16:36:01.000Z
 image: "/images/blog/122212540064318393.jpg"
 excerpt: "#Barberena | LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN LOS HORNITOS Lico Cruz supervisó ayer los trabajos en Los Hornitos y aseguró que no encontró ni un alma t"
 category: barberena
 tags: ["Barberena"]
 ---
-#Barberena | LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN LOS HORNITOS
+LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN LOS HORNITOS
 
 Lico Cruz supervisó ayer los trabajos en Los Hornitos y aseguró que no encontró ni un alma trabajando. Pide al alcalde Pepe Rueda que sea más responsable y contrate empresas con respaldo económico para terminar lo que empiezan.
 

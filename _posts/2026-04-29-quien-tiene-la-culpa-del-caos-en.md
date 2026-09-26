@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿QUIÉN TIENE LA CULPA DEL CAOS EN…"
+title: "¿Quién tiene la culpa del caos en Barberena?"
 date: 2026-04-29T07:32:01.000Z
 image: "/images/blog/122214578726318393.jpg"
 excerpt: "#OrdenVial | ¿QUIÉN TIENE LA CULPA DEL CAOS EN BARBERENA? El tráfico en el centro de Barberena está “de la fregada”: tanta atrancazón… y no es casualidad. Vecin"
 category: barberena
 tags: ["OrdenVial","PMT","Barberena"]
 ---
-#OrdenVial | ¿QUIÉN TIENE LA CULPA DEL CAOS EN BARBERENA?
+¿QUIÉN TIENE LA CULPA DEL CAOS EN BARBERENA?
 
 El tráfico en el centro de Barberena está “de la fregada”: tanta atrancazón… y no es casualidad.
 

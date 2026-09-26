@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "LA CARRERA MÁS CARA DE BARBERENA Q90,000 razones…"
+title: "La carrera más cara de Barberena"
 date: 2026-04-22T06:30:58.000Z
 image: "/images/blog/122213869232318393.jpg"
 excerpt: "LA CARRERA MÁS CARA DE BARBERENA Q90,000 razones para estar enojados. Ni la marimba, ni las luces, ni el café pudieron tapar el hueco de una carrera que simplem"

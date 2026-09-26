@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Cuentan que los trabajadores del alcalde Pepe Rueda…"
+title: "Cuentan que los trabajadores del alcalde Pepe Rueda estarían actuando de forma desordenada en la distribución de agua en el callejón Los Morenos, dejando algunas casas abastecidas y otras no, además de dar distintas excusas para no completar el recorrido."
 date: 2026-04-14T21:58:41.000Z
 image: "/images/blog/122213013368318393.jpg"
 excerpt: "Cuentan que los trabajadores del alcalde Pepe Rueda estarían actuando de forma desordenada en la distribución de agua en el callejón Los Morenos, dejando alguna"

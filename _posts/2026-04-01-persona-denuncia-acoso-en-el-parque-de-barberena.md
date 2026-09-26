@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Persona denuncia acoso en el parque de Barberena…"
+title: "Persona denuncia acoso en el parque de Barberena"
 date: 2026-04-01T19:12:16.000Z
 image: "/images/blog/122211755738318393.jpg"
 excerpt: "Persona denuncia acoso en el parque de Barberena \"Muy buen día, este pequeño mensaje va dirigido al señor alcalde Pepe Rueda Vallejo y a la municipalidad. Les c"

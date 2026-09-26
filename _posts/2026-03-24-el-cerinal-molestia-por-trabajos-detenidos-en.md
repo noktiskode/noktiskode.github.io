@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL CERINAL | MOLESTIA POR TRABAJOS DETENIDOS EN…"
+title: "El Cerinal | molestia por trabajos detenidos en El Jocote En el sector El Jocote, de la aldea El Cerinal, se realizan trabajos de introducción de tubería nueva de agua potable de más de medio kilómetro en los callejones Samaria, Los Oscal y otros callejones que conforman el sector."
 date: 2026-03-24T14:00:02.000Z
 image: "/images/blog/122210939036318393.jpg"
 excerpt: "EL CERINAL | MOLESTIA POR TRABAJOS DETENIDOS EN EL JOCOTE En el sector El Jocote, de la aldea El Cerinal, se realizan trabajos de introducción de tubería nueva "

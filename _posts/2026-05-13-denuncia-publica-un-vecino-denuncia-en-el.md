@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| DENUNCIA PÚBLICA Un vecino denuncia: “En el…"
+title: "Denuncia pública"
 date: 2026-05-13T23:47:18.000Z
 image: "/images/blog/122216217968318393.jpg"
 excerpt: "#BARBERENA | DENUNCIA PÚBLICA Un vecino denuncia: “En el barrio Las Estrellas, en la entrada de la calle que se dirige a El Colorado, la gente es una lata. Ahor"
 category: barberena
 tags: ["BARBERENA","DenunciaPública","Mascotas","Basura","ConcienciaCiudadana","SantaRosaGT"]
 ---
-#BARBERENA | DENUNCIA PÚBLICA
+DENUNCIA PÚBLICA
 
 Un vecino denuncia:
 

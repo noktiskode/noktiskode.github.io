@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Lico Cruz denuncia la falta de planificación en…"
+title: "Lico Cruz denuncia la falta de planificación en Barberena y asegura que la pavimentación de La Ladrillera lleva demasiado tiempo, lo que tiene a la gente ya desesperada."
 date: 2026-03-26T08:34:54.000Z
 image: "/images/blog/122211137216318393.jpg"
 excerpt: "Lico Cruz denuncia la falta de planificación en Barberena y asegura que la pavimentación de La Ladrillera lleva demasiado tiempo, lo que tiene a la gente ya des"

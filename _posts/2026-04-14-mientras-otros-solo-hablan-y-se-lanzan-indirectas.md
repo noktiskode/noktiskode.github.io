@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Mientras otros solo hablan y se lanzan indirectas,…"
+title: "Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejor alcalde de — guarda silencio, como todo un caballero, y se mantiene alejado de los chismes que puedan ensuciar su imagen."
 date: 2026-04-14T16:07:31.000Z
 image: "/images/blog/122213045480318393.jpg"
 excerpt: "Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejor alcalde de #Barberena— guarda silencio, como todo un caballero, y se mantiene alejado de "

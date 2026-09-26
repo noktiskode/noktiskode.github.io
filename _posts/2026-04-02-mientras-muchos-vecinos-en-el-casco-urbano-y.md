@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Mientras muchos vecinos en el casco urbano y…"
+title: "Mientras muchos vecinos en el casco urbano y El Cerinal pasan días sin que caiga una gota de agua, la Municipalidad de Barberena acaba de pagar más de un millón y medio de quetzales (Q1,527,525.00) solo por alquilar camiones cisterna."
 date: 2026-04-02T08:38:05.000Z
 image: "/images/blog/122211810032318393.jpg"
 excerpt: "Mientras muchos vecinos en el casco urbano y El Cerinal pasan días sin que caiga una gota de agua, la Municipalidad de Barberena acaba de pagar más de un millón"
