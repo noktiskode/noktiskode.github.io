@@ -24,5 +24,3 @@ Ante esta situación, se hace un llamado a las autoridades correspondientes para
 Sin embargo, llama la atención que sea el propio Rubelio quien pregunte por el agua, siendo que fue alcalde de Barberena durante 20 años no consecutivos. En un momento del recorrido, alguien le preguntó en tono de broma: "Tío Rube, ¿y el agua?", a lo que él respondió, entre risas: "No sé, no está. ¿Saber para dónde se fue?"
 
 Un intercambio que, sin querer, terminó siendo un tiro en el pie para el propio Recinos.
-
-\Cerinal BarberenaSantaRosa SantaRosaGT PoliticaGT agua
