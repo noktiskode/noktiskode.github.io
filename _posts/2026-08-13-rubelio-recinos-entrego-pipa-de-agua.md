@@ -1,13 +1,20 @@
 ---
 featured: false
-title: "| Rubelio Recinos entregó pipa de agua 💧…"
+title: Rubelio Recinos entregó pipa de agua 💧
 date: 2026-08-13T03:15:36.000Z
-image: "/images/blog/122225158280318393.jpg"
-excerpt: "#Barberena | Rubelio Recinos entregó pipa de agua 💧 A través de sus redes sociales, Rubelio Recinos publicó un video en el que se le observa entregando una pip"
+image: /images/blog/122225158280318393.jpg
+excerpt: Rubelio Recinos entregó pipa de agua 💧 A través de sus redes sociales,
+  Rubelio Recinos publicó un video en el que se le observa entregando una
+  pipa...
 category: barberena
-tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","Cerinal","agua"]
+tags:
+  - Barberena
+  - BarberenaSantaRosa
+  - SantaRosaGT
+  - Cerinal
+  - agua
 ---
-#Barberena | Rubelio Recinos entregó pipa de agua 💧
+Rubelio Recinos entregó pipa de agua 💧
 
 A través de sus redes sociales, Rubelio Recinos publicó un video en el que se le observa entregando una pipa de agua a vecinos, acompañado del mensaje "cuando el agua hace falta, cada gota cuenta."
 
