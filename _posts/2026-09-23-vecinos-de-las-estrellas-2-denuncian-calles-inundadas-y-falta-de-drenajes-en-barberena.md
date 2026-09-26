@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Vecinos de Las Estrellas 2 denuncian calles inundadas y falta de drenajes
+title: "Vecinos de Las Estrellas 2 denuncian calles inundadas y falta de drenajes"
   en Barberena
 date: 2026-09-23T15:29:00.000-06:00
 image: /images/blog/1000042532.webp

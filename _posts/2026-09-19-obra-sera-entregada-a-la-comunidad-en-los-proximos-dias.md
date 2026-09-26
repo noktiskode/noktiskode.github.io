@@ -1,7 +1,7 @@
 ---
 featured: false
 relevant: false
-title: Obra será entregada a la comunidad en los próximos días
+title: "Obra será entregada a la comunidad en los próximos días"
 date: 2026-09-18T19:16:00.000-06:00
 image: /images/blog/1000041386.webp
 excerpt: El alcalde Pepe Rueda anunció un "avance físico significativo" en la

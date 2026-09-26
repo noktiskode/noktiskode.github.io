@@ -1,7 +1,7 @@
 ---
 featured: false
 relevant: false
-title: Rubelio Recinos entrega playeras para la antorcha a Esquipulas
+title: "Rubelio Recinos entrega playeras para la antorcha a Esquipulas"
 date: 2026-09-12T11:44:00.000-06:00
 image: /images/blog/1000037876.webp
 excerpt: Hace un par de días, Rubelio Recinos publicó un video a través de su

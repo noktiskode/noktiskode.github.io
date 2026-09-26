@@ -1,6 +1,6 @@
 ---
 relevant: true
-title: Entre tanto pendiente, la antorcha no es la prioridad
+title: "Entre tanto pendiente, la antorcha no es la prioridad"
 date: 2026-09-12T14:17:00.000-06:00
 image: /images/blog/1000037909.png
 excerpt: Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz

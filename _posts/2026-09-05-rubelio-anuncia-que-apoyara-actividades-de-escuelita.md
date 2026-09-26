@@ -1,5 +1,5 @@
 ---
-title: Rubelio anuncia que apoyará actividades de escuelita
+title: "Rubelio anuncia que apoyará actividades de escuelita"
 date: 2026-09-05T11:42:00.000-06:00
 image: /images/blog/1000037765.jpg
 excerpt: Hace unos días, Rubelio Recinos fue visto entregando verduras y hoy

@@ -1,7 +1,7 @@
 ---
 featured: true
 relevant: false
-title: La Muni invirtió en pintura para la Pila 5 Calles
+title: "La Muni invirtió en pintura para la Pila 5 Calles"
 date: 2026-09-17T12:11:00.000-06:00
 image: /images/blog/1000041136.jpg
 excerpt: Según orden de compra No. 53433920, publicada en Guatecompras el 10 de

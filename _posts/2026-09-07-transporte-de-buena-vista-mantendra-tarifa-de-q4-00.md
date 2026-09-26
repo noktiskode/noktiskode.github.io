@@ -1,5 +1,5 @@
 ---
-title: Transporte de Buena Vista mantendrá tarifa
+title: "Transporte de Buena Vista mantendrá tarifa"
 date: 2026-09-07T14:44:00.000-06:00
 image: /images/blog/1000037761.webp
 card_color: blanco

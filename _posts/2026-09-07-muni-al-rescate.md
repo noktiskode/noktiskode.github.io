@@ -1,5 +1,5 @@
 ---
-title: Muni al rescate mientras el CIV duerme
+title: "Muni al rescate mientras el civ duerme"
 date: 2026-09-07T11:43:00.000-06:00
 image: /images/blog/1000037763.jpg
 card_color: blanco

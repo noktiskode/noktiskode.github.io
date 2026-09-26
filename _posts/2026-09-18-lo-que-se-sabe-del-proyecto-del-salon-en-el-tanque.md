@@ -1,7 +1,7 @@
 ---
 featured: false
 relevant: false
-title: Lo que se sabe del proyecto del salón en El Tanque
+title: "Lo que se sabe del proyecto del salón en El Tanque"
 date: 2026-09-17T18:00:00.000-06:00
 image: /images/blog/1000041201.webp
 excerpt: Tishud@s, les contamos cómo va el asunto con el salón de usos múltiples

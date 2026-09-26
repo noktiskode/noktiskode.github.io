@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Los muchachos de la Muni salieron desde…"
+title: "Los muchachos de la Muni salieron desde tempranito a echar punta."
 date: 2026-09-07T17:40:08.000Z
 image: "/images/blog/122227762424318393.jpg"
 excerpt: "#Barberena | Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo. Según las fotos que s"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","Guatemala","CIV","COVIAL"]
 ---
-#Barberena | Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo.
+Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo.
 
 Según las fotos que subió la misma Muni, anduvieron fajándose enfrente del Templo de Minerva y de Auto Repuestos León, ahí cerca sobre la CA-1.
 

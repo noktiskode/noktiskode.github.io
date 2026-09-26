@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Si Rubelio Recinos, que estuvo 20 años…
+title: "Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se fue el agua, imagínese a Pepe Rueda, que apenas lleva 2 años y 8 meses."
 date: 2026-09-13T20:56:18.000Z
 image: /images/blog/122228396978318393.jpg
 excerpt: Si Rubelio Recinos, que estuvo 20 años en la Muni, no sabe a dónde se

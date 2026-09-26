@@ -1,6 +1,6 @@
 ---
 featured: true
-title: ¿Memoria corta o estrategia? Napo Rojas presume su voto, pero omite el anterior
+title: "¿Memoria corta o estrategia? Napo Rojas presume su voto, pero omite el anterior"
 date: 2026-09-23T10:00:00.000-06:00
 image: /images/blog/1000042519.webp
 category: opiniones

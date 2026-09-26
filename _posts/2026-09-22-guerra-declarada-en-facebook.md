@@ -1,7 +1,7 @@
 ---
 featured: true
 relevant: false
-title: Guerra declarada (en Facebook)
+title: "Guerra declarada (en Facebook)"
 date: 2026-09-21T19:00:00.000-06:00
 image: /images/blog/1000042073.webp
 excerpt: Enrique Arredondo acusó al diputado José Inés Castillo Martínez de

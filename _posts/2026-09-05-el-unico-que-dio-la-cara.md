@@ -1,5 +1,5 @@
 ---
-title: ' "El único que dio la cara"'
+title: "\"El único que dio la cara\""
 date: 2026-09-04T19:20:00.000-06:00
 image: /images/blog/1000037767.jpg
 excerpt: Este viernes 4 de septiembre se liberó un bloqueo de transportistas en

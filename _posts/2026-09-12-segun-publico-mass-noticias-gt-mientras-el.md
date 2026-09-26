@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Según publicó Mass Noticias GT, mientras el…
+title: "Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio, aquí en Barberena fue el vicealcalde quien tuvo que ir a representar."
 date: 2026-09-12T20:05:40.000Z
 image: /images/blog/122228297372318393.jpg
 excerpt: Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz

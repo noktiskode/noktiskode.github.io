@@ -1,5 +1,5 @@
 ---
-title: "Napo Rojas, Inés Castillo y Ricardo Alarcón: así votaron los diputados
+title: "\"Napo Rojas, Inés Castillo y Ricardo Alarcón: así votaron los diputados"
   de Santa Rosa"
 date: 2026-09-09T17:23:00.000-06:00
 image: /images/blog/1000042075.webp

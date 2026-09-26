@@ -1,7 +1,7 @@
 ---
 featured: false
 relevant: true
-title: Transferencia de septiembre 2026 del Ministerio de Finanzas Públicas
+title: "Transferencia de septiembre 2026 del Ministerio de Finanzas Públicas"
 date: 2026-09-15T14:30:00.000-06:00
 image: /images/blog/1000038995.png
 excerpt: La Municipalidad de Barberena recibió Q4,187,251.21 en la transferencia

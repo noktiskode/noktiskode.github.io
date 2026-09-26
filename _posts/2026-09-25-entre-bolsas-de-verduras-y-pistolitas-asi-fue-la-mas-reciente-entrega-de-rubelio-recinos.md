@@ -1,6 +1,6 @@
 ---
 featured: false
-title: 'Entre bolsas de verduras y "pistolitas": así fue la más reciente entrega
+title: "'Entre bolsas de verduras y \"pistolitas\": así fue la más reciente entrega"
   de Rubelio Recinos'
 date: 2026-09-25T15:14:00.000-06:00
 image: /images/blog/1000046534.webp

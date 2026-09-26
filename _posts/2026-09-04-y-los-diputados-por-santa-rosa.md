@@ -1,5 +1,5 @@
 ---
-title: ¿Y los diputados por Santa Rosa?
+title: "¿Y los diputados por Santa Rosa?"
 date: 2026-09-04T17:03:00.000-06:00
 image: /images/blog/1000037769.jpg
 excerpt: ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los

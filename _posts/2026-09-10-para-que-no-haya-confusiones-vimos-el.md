@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PARA QUE NO HAYA CONFUSIONES Vimos el…"
+title: "Para que no haya confusiones"
 date: 2026-09-10T03:15:17.000Z
 image: "/images/blog/122228016980318393.jpg"
 excerpt: "#Barberena | PARA QUE NO HAYA CONFUSIONES Vimos el comunicado publicado por la Municipalidad de Barberena sobre una página llamada “Barberena Mi Municipio”. Así"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","BarberenaMiMunicipio"]
 ---
-#Barberena | PARA QUE NO HAYA CONFUSIONES
+PARA QUE NO HAYA CONFUSIONES
 
 Vimos el comunicado publicado por la Municipalidad de Barberena sobre una página llamada “Barberena Mi Municipio”.
 

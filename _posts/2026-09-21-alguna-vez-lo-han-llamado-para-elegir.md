@@ -1,6 +1,6 @@
 ---
 featured: false
-title: ¿Alguna vez lo han llamado para elegir…
+title: "¿Alguna vez lo han llamado para elegir a los representantes de su COCODE?"
 date: 2026-09-21T19:57:03.000Z
 image: /images/blog/1000042057.png
 excerpt: ¿Alguna vez lo han llamado para elegir a los representantes de su

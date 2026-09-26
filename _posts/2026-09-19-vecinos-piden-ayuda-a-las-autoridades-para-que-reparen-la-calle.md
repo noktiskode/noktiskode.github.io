@@ -1,7 +1,7 @@
 ---
 featured: true
 relevant: false
-title: Vecinos piden ayuda a las autoridades para que reparen la calle
+title: "Vecinos piden ayuda a las autoridades para que reparen la calle"
 date: 2026-09-19T14:05:00.000-06:00
 image: /images/blog/1000041418.webp
 excerpt: Vecinos piden ayuda a las autoridades para que reparen la calle...

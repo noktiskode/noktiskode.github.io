@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "DIPUTADOS DE SANTA ROSA: MUCHA FOTO, POCA CUENTA…"
+title: "Diputados de Santa Rosa: mucha foto, poca cuenta"
 date: 2026-09-11T19:18:34.000Z
 image: "/images/blog/122228184260318393.jpg"
 excerpt: "DIPUTADOS DE SANTA ROSA: MUCHA FOTO, POCA CUENTA Cada cierto tiempo sale uno que otro alcalde a decir que Inés Castillo, Napo Rojas o Ricardo Alarcón \"están pel"
