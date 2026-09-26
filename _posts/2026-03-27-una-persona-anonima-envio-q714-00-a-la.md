@@ -1,13 +1,17 @@
 ---
 featured: false
-title: "| Una persona anónima envió Q714.00 a la…"
+title: Una persona anónima envió Q714.00 a la…
 date: 2026-03-27T21:09:54.000Z
-image: "/images/blog/122211253238318393.jpg"
-excerpt: "#Barberena | Una persona anónima envió Q714.00 a la abuelita Petrona García, viuda del difunto don Guicho. La entrega se realizó por medio del concejal II, Walf"
+image: /images/blog/122211253238318393.jpg
+excerpt: "#Barberena | Una persona anónima envió Q714.00 a la abuelita Petrona
+  García, viuda del difunto don Guicho. La entrega se realizó por medio del
+  concejal II, Walf"
 category: barberena
-tags: ["Barberena"]
+tags:
+  - Barberena
+  - AyudaSocial
 ---
-#Barberena | Una persona anónima envió Q714.00 a la abuelita Petrona García, viuda del difunto don Guicho.
+Una persona anónima envió Q714.00 a la abuelita Petrona García, viuda del difunto don Guicho.
 
 La entrega se realizó por medio del concejal II, Walfredo, quien asegura que nuevamente hizo el video con fines de transparencia.
 
