@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "BARBERENA, SANTA ROSA 🚨 Incidente genera alarma entre…"
+title: "Barberena, Santa Rosa"
 date: 2025-12-18T19:45:32.000Z
 image: "/images/blog/122201399882318393.jpg"
 excerpt: "BARBERENA, SANTA ROSA 🚨 Incidente genera alarma entre vecinos de Barrio La Cuchilla Un incidente ocurrido recientemente en Barrio La Cuchilla generó preocupaci"
 category: barberena
 tags: ["Barberena","santarosa"]
 ---
-BARBERENA, SANTA ROSA 🚨 
+BARBERENA, SANTA ROSA 🚨
 
 Incidente genera alarma entre vecinos de Barrio La Cuchilla
 

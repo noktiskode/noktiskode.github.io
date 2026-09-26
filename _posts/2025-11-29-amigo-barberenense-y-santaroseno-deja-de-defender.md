@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🟩 Amigo barberenense y santaroseño: Deja de defender…"
+title: "Amigo barberenense y santaroseño: Deja de defender a los políticos como si fueran tus amigos o tu equipo favorito."
 date: 2025-11-29T20:47:27.000Z
 image: "/images/blog/122199397490318393.jpg"
 excerpt: "🟩 Amigo barberenense y santaroseño: Deja de defender a los políticos como si fueran tus amigos o tu equipo favorito. Sé crítico. Ten criterio propio. Que hayas"

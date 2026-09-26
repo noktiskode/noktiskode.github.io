@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🟣 Sobre percepciones… y realidades Hace poco se…"
+title: "Sobre percepciones… y realidades Hace poco se afirmó que ciertos diputados “están trabajando por el departamento y por el municipio”."
 date: 2025-12-03T02:04:54.000Z
 image: "/images/blog/122199767636318393.jpg"
 excerpt: "🟣 Sobre percepciones… y realidades Hace poco se afirmó que ciertos diputados “están trabajando por el departamento y por el municipio”. Quizá —en un plano que "

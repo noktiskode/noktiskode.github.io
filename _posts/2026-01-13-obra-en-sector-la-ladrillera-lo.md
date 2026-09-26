@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "📢 OBRA EN SECTOR LA LADRILLERA – LO…"
+title: "Obra en sector La Ladrillera – lo que debes saber En grupos de Barberena se comenta que la pavimentación será de solo 100 o 120 metros."
 date: 2026-01-13T22:34:53.000Z
 image: "/images/blog/122204234762318393.jpg"
 excerpt: "📢 OBRA EN SECTOR LA LADRILLERA – LO QUE DEBES SABER 🚧 En grupos de Barberena se comenta que la pavimentación será de solo 100 o 120 metros. ⚠️ OJO VECINO: el "

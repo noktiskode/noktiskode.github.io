@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"EMPLEADOS NO RECIBEN BILLETES DE Q 200. Un…"
+title: "\"Empleados no reciben billetes de Q 200."
 date: 2025-11-11T16:58:14.000Z
 image: "/images/blog/122197612304318393.jpg"
 excerpt: "\"EMPLEADOS NO RECIBEN BILLETES DE Q 200. Un vecino del municipio de Quesada, Jutiapa, nos informa que fue a comprar pizza junto a su familia a una reconocida em"

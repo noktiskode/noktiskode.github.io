@@ -1,6 +1,6 @@
 ---
 featured: false
-title: No basta con tomarse fotos en actividades del…
+title: "No basta con tomarse fotos en actividades del gobierno."
 date: 2025-11-17T19:13:58.000Z
 excerpt: No basta con tomarse fotos en actividades del gobierno. La
   representación se demuestra con trabajo. Este es el informe ciudadano que

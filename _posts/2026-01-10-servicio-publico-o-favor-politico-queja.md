@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¿SERVICIO PÚBLICO O FAVOR POLÍTICO? 🗑️🚫 — Queja…"
+title: "¿Servicio público O favor político?"
 date: 2026-01-10T02:29:23.000Z
 image: "/images/blog/122203745258318393.jpg"
 excerpt: "¿SERVICIO PÚBLICO O FAVOR POLÍTICO? 🗑️🚫 — Queja ciudadana — Es lamentable que, al denunciar el desorden del Tren de Aseo (Campamento–Laguna y sector El Boquer"

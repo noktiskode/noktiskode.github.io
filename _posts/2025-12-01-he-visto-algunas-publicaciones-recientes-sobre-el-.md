@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "He visto algunas publicaciones recientes sobre el caso…"
+title: "He visto algunas publicaciones recientes sobre el caso de Raquel Escalante y, aunque es totalmente comprensible la preocupación y el deseo de obtener respuestas, también creo que estamos ante un tema muy delicado que merece ser manejado con mucha calma."
 date: 2025-12-01T17:35:09.000Z
 image: "/images/blog/122199597092318393.jpg"
 excerpt: "He visto algunas publicaciones recientes sobre el caso de Raquel Escalante y, aunque es totalmente comprensible la preocupación y el deseo de obtener respuestas"

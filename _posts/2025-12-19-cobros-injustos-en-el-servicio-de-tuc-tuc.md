@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Cobros injustos en el servicio de tuc tuc…"
+title: "Cobros injustos en el servicio de tuc tuc en Barberena \"No soy de denunciar, pero me parece importante expresar esta situación."
 date: 2025-12-19T22:59:53.000Z
 image: "/images/blog/122201524052318393.jpg"
 excerpt: "Cobros injustos en el servicio de tuc tuc en Barberena \"No soy de denunciar, pero me parece importante expresar esta situación. ¿Cómo es posible que los tuc tuc"

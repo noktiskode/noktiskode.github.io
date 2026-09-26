@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🔴 Hechos por esclarecer en Barberena Mass Noticias…"
+title: "Hechos por esclarecer en Barberena Mass Noticias GT difundió un comunicado denunciando un incidente en el Complejo Deportivo de Barberena, donde un colaborador del medio habría sido intimidado mientras se encontraba en un espacio de acceso público."
 date: 2026-01-05T00:52:37.000Z
 image: "/images/blog/122203228910318393.jpg"
 excerpt: "🔴 Hechos por esclarecer en Barberena Mass Noticias GT difundió un comunicado denunciando un incidente en el Complejo Deportivo de Barberena, donde un colaborad"

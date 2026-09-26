@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "El problema con el agua💧 Durante algunos años…"
+title: "El problema con el agua"
 date: 2025-09-09T19:42:44.000Z
 image: "/images/blog/122190980726318393.jpg"
 excerpt: "El problema con el agua💧 Durante algunos años venimos arrastrando el problema de escasez de agua, ¿no hay agua o no la quieren echar los fontaneros? Y esto, ya"
 category: barberena
 ---
-El problema con el agua💧 
+El problema con el agua💧
 
 Durante algunos años venimos arrastrando el problema de escasez de agua, ¿no hay agua o no la quieren echar los fontaneros?
 

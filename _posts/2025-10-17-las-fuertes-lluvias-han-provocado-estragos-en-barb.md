@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Las fuertes lluvias han provocado estragos en Barberena.…
+title: "Las fuertes lluvias han provocado estragos en Barberena."
 date: 2025-10-17T03:01:53.000Z
 excerpt: "Las fuertes lluvias han provocado estragos en Barberena. Los culpables
   somos nosotros los vecinos por no cuidar las calles y ensuciarlas. El cambio

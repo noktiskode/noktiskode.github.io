@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NO HUBO BOICOT. Hubo publicidad engañosa. La Municipalidad…"
+title: "No hubo boicot. Hubo publicidad engañosa. La Municipalidad promocionó a Los Caminantes (oficial), pero en el escenario se presentó otra agrupación distinta."
 date: 2026-01-18T18:38:01.000Z
 image: "/images/blog/122204704754318393.jpg"
 excerpt: "NO HUBO BOICOT. Hubo publicidad engañosa. La Municipalidad promocionó a Los Caminantes (oficial), pero en el escenario se presentó otra agrupación distinta. Seg"

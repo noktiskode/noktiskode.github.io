@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🌼 Amigo barberenense: Se acercan los días en…"
+title: "Amigo barberenense: Se acercan los días en que visitamos, adornamos y limpiamos las tumbas de nuestros seres queridos."
 date: 2025-10-17T07:47:13.000Z
 excerpt: "🌼 Amigo barberenense: Se acercan los días en que visitamos, adornamos
   y limpiamos las tumbas de nuestros seres queridos. 💐 Es una hermosa tradición

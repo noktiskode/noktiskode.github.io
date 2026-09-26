@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🟢 Cuidemos a nuestras mascotas, cuidemos a nuestra…"
+title: "Cuidemos a nuestras mascotas, cuidemos a nuestra comunidad Recientemente hemos visto muchos perros y gatos deambulando por la terminal de buses de Barberena, o como algunos aún le llaman, el campo de la feria."
 date: 2025-12-01T21:32:44.000Z
 image: "/images/blog/122199613148318393.jpg"
 excerpt: "🟢 Cuidemos a nuestras mascotas, cuidemos a nuestra comunidad 🐶🐱 Recientemente hemos visto muchos perros y gatos deambulando por la terminal de buses de Barbe"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Una pequeña reflexión para todos nosotros Hace unos…"
+title: "Una pequeña reflexión para todos nosotros Hace unos días vi pasar el camión de la basura con los trabajadores de la municipalidad, como lo hacen todos los días."
 date: 2025-12-01T21:14:10.000Z
 image: "/images/blog/122199611690318393.jpg"
 excerpt: "Una pequeña reflexión para todos nosotros Hace unos días vi pasar el camión de la basura con los trabajadores de la municipalidad, como lo hacen todos los días."

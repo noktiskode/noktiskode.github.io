@@ -1,6 +1,6 @@
 ---
 featured: false
-title: El Parque Barrios de Barberena @seguidores
+title: "El Parque Barrios de Barberena"
 date: 2025-10-07T20:50:09.000Z
 excerpt: El Parque Barrios de Barberena @seguidores
 category: barberena

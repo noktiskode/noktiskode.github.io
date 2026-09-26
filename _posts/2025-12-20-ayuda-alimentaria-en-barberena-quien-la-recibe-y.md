@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Ayuda alimentaria en Barberena: ¿quién la recibe y…"
+title: "Ayuda alimentaria en Barberena: ¿quién la recibe y por qué?"
 date: 2025-12-20T02:03:19.000Z
 image: "/images/blog/122201534516318393.jpg"
 excerpt: "Ayuda alimentaria en Barberena: ¿quién la recibe y por qué? Como vecinos de Barberena, Santa Rosa, queremos recordar que las entregas de ayuda alimentaria son u"

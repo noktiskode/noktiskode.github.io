@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🚨 SERVICIO SOCIAL URGENTE 🚨 Gómez Orellana: \"Muy…"
+title: "Servicio social urgente"
 date: 2025-10-26T03:46:02.000Z
 image: "/images/blog/122195937170318393.jpg"
 excerpt: "🚨 SERVICIO SOCIAL URGENTE 🚨 Gómez Orellana: \"Muy buenas noches, gente linda de Cuilapa y sus alrededores. Hoy vengo tocando a la puerta de sus corazones, ya q"

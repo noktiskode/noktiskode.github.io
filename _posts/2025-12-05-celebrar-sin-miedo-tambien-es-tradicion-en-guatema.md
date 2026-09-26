@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Celebrar Sin Miedo También Es Tradición En Guatemala…"
+title: "Celebrar Sin Miedo También Es Tradición En Guatemala estamos llenos de tradiciones, y muchas de ellas nos unen."
 date: 2025-12-05T03:37:51.000Z
 image: "/images/blog/122199975056318393.jpg"
 excerpt: "Celebrar Sin Miedo También Es Tradición En Guatemala estamos llenos de tradiciones, y muchas de ellas nos unen. Pero hay dos que, aunque la disfrutemos unos seg"

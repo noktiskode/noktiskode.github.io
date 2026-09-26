@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "En una de sus transmisiones, Pepe Rueda Vallejo…"
+title: "En una de sus transmisiones, Pepe Rueda Vallejo se refirió al tema “periodístico” que están ejerciendo algunas páginas y perfiles en Facebook."
 date: 2025-10-22T00:23:21.000Z
 image: "/images/blog/122195496860318393.jpg"
 excerpt: "En una de sus transmisiones, Pepe Rueda Vallejo se refirió al tema “periodístico” que están ejerciendo algunas páginas y perfiles en Facebook. ​De hecho, tiene "

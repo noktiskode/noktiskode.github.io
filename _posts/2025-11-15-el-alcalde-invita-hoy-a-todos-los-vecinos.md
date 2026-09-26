@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "El alcalde invita hoy a todos los vecinos…"
+title: "El alcalde invita hoy a todos los vecinos del municipio al encendido del árbol navideño y de las luces en el Parque Barrios."
 date: 2025-11-15T20:34:17.000Z
 image: "/images/blog/122198013830318393.jpg"
 excerpt: "El alcalde invita hoy a todos los vecinos del municipio al encendido del árbol navideño y de las luces en el Parque Barrios. 🎄🎇 El kiosko del Parque Barrios l"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOTA DE DUELO La familia López Chiguaque Invita…"
+title: "Nota de duelo: la familia López Chiguaque invita a velación de candelas."
 date: 2025-09-19T03:36:17.000Z
 image: "/images/blog/122191978586318393.jpg"
 excerpt: "NOTA DE DUELO La familia López Chiguaque Invita a velación de candelas por cumplir un año de fallecida, Doña Julia Calixta Chiguaque Mus, la velación de candela"

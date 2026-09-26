@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La función de informar implica ver el panorama…"
+title: "La función de informar implica ver el panorama completo."
 date: 2026-01-16T16:56:13.000Z
 image: "/images/blog/122204508974318393.jpg"
 excerpt: "La función de informar implica ver el panorama completo. Aquí los hechos de la gestión actual, para que el análisis sea basado en datos y no en percepciones. 📊"

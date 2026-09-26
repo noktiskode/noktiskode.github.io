@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "NOTICIA CONFIRMADA ✅ Efectivamente, los verdaderos Los Caminantes…"
+title: "Noticia confirmada"
 date: 2026-01-14T22:00:56.000Z
 image: "/images/blog/122204339180318393.jpg"
 excerpt: "NOTICIA CONFIRMADA ✅ Efectivamente, los verdaderos Los Caminantes no vendrán a Guatemala, ya que tienen compromisos en Estados Unidos este 17 de enero. Quienes "
 category: barberena
 tags: ["Barberena","santarosa","ELCERINAL","cerifer2026"]
 ---
-NOTICIA CONFIRMADA ✅ 
+NOTICIA CONFIRMADA ✅
 
 Efectivamente, los verdaderos Los Caminantes no vendrán a Guatemala, ya que tienen compromisos en Estados Unidos este 17 de enero.
 

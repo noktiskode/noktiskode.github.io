@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🟥 Diputados por Santa Rosa: la verdad que…"
+title: "Diputados por Santa Rosa: la verdad que nadie quiere decir El alcalde repite que “trabajan por el municipio y el departamento”."
 date: 2025-11-26T22:37:35.000Z
 image: "/images/blog/122199119660318393.jpg"
 excerpt: "🟥 Diputados por Santa Rosa: la verdad que nadie quiere decir El alcalde repite que “trabajan por el municipio y el departamento”. La realidad: sus decisiones d"

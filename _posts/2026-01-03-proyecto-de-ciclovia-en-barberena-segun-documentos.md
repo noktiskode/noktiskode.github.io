@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "PROYECTO DE CICLOVÍA EN BARBERENA Según documentos oficiales,…"
+title: "Proyecto de ciclovía en Barberena"
 date: 2026-01-03T15:00:21.000Z
 image: "/images/blog/122203080164318393.jpg"
 excerpt: "PROYECTO DE CICLOVÍA EN BARBERENA Según documentos oficiales, el proyecto de ciclovía en Barberena tuvo un costo de Q898,000. En redes sociales, vecinos del mun"

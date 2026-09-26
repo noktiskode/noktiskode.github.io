@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "🐶🐱 En la calle El Calvario, un vecino…"
+title: "En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados."
 date: 2025-11-11T17:24:57.000Z
 image: "/images/blog/122197613978318393.jpg"
 excerpt: "🐶🐱 En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados. 🚫 Colocó un rótulo para advertir a todos… pero algui"
 category: barberena
 tags: ["barberenamimunicipio","ELCERINAL","BarberenaSantaRosa","Barberena","animalrescue"]
 ---
-🐶🐱  En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados. 
+🐶🐱  En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados.
 🚫  Colocó un rótulo para advertir a todos… pero alguien lo arrancó.
 ¿Quién está haciendo esto? ¿Y por qué?
 

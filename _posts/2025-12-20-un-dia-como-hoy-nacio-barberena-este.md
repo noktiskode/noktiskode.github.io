@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "📜 Un día como hoy nació Barberena Este…"
+title: "Un día como hoy nació Barberena Este 20 de diciembre recordamos 146 años de historia de nuestro municipio, una historia que no se escribe solo con fechas, sino con la vida, el trabajo y los sueños de cada comunidad que lo conforma."
 date: 2025-12-20T17:54:14.000Z
 image: "/images/blog/122201611982318393.jpg"
 excerpt: "📜 Un día como hoy nació Barberena Este 20 de diciembre recordamos 146 años de historia de nuestro municipio, una historia que no se escribe solo con fechas, si"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¡Qué nivel de solidaridad el de nuestra Muni!…"
+title: "¡Qué nivel de solidaridad el de nuestra Muni!"
 date: 2026-01-19T18:35:14.000Z
 image: "/images/blog/122204797940318393.jpg"
 excerpt: "¡Qué nivel de solidaridad el de nuestra Muni! 👏 Mientras el resto de nosotros vemos cómo llegar al trabajo con el Estado de Sitio, ellos se sacrifican quedándo"

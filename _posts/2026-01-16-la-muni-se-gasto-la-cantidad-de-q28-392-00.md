@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La Muni se gastó la cantidad de Q28,392.00…"
+title: "La Muni se gastó la cantidad de Q28,392.00 en shows de drones para Barberena y El Cerinal, esto como parte de la y 2026"
 date: 2026-01-16T23:48:01.000Z
 image: "/images/blog/122204531258318393.jpg"
 excerpt: "La Muni se gastó la cantidad de Q28,392.00 en shows de drones para Barberena y El Cerinal, esto como parte de la #barbefer y #cerifer 2026... 5 minutos y 5 figu"

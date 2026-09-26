@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🎭 EFEMÉRIDES (No comprobadas y con retraso administrativo)…"
+title: "Efemérides (No comprobadas y con retraso administrativo)"
 date: 2026-01-05T16:00:05.000Z
 image: "/images/blog/122203300712318393.jpg"
 excerpt: "🎭 EFEMÉRIDES (No comprobadas y con retraso administrativo) ⚠️ NOTA EDITORIAL: Aunque el calendario dice que fue ayer, nuestro equipo de “investigación profunda"

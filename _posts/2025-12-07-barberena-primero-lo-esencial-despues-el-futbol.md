@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🏞️ BARBERENA: Primero lo esencial, después el fútbol…"
+title: "Barberena: primero lo esencial, después el fútbol"
 date: 2025-12-07T22:23:04.000Z
 image: "/images/blog/122200242194318393.jpg"
 excerpt: "🏞️ BARBERENA: Primero lo esencial, después el fútbol ⚽ El reciente triunfo de Nueva Santa Rosa en la primera división del fútbol guatemalteco es una buena noti"

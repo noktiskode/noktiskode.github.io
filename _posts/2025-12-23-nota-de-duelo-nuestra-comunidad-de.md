@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🖤 Nota de Duelo 🖤 Nuestra comunidad de…"
+title: "Nota de duelo: nuestra comunidad de Barberena lamenta profundamente el fallecimiento de doña María Alicia Cordero."
 date: 2025-12-23T17:30:30.000Z
 image: "/images/blog/122201947526318393.jpg"
 excerpt: "🖤 Nota de Duelo 🖤 Nuestra comunidad de Barberena, especialmente los vecinos del sector Banco Industrial, lamenta profundamente el fallecimiento de doña María "

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Temporada de ferias… y de jinetes 🐎 Con…"
+title: "Temporada de ferias… y de jinetes Con la llegada de las ferias también regresan los desfiles hípicos y, curiosamente, los mismos personajes de siempre, solo que a veces con diferente camisa."
 date: 2026-01-02T19:47:33.000Z
 image: "/images/blog/122202999236318393.jpg"
 excerpt: "Temporada de ferias… y de jinetes 🐎 Con la llegada de las ferias también regresan los desfiles hípicos y, curiosamente, los mismos personajes de siempre, solo "

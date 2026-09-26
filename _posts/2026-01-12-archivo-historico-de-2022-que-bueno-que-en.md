@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "ARCHIVO HISTÓRICO DE 2022. ​Qué bueno que en…"
+title: "Archivo histórico de 2022."
 date: 2026-01-12T22:33:01.000Z
 image: "/images/blog/122204131634318393.jpg"
 excerpt: "ARCHIVO HISTÓRICO DE 2022. ​Qué bueno que en Barberena y Santa Rosa ya todo es diferente y el servicio al pueblo es la prioridad... ❤️ ​En Santa Rosa estamos ag"

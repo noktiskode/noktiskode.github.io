@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🎉 Barberena está de fiesta, ¡sí señor! Y…"
+title: "Barberena está de fiesta, ¡sí señor!"
 date: 2025-12-28T22:28:09.000Z
 image: "/images/blog/122202475964318393.jpg"
 excerpt: "🎉 Barberena está de fiesta, ¡sí señor! Y no es para menos. ¡Feliz cumpleaños al legendario y mejor ex alcalde del mundo mundial! Estimado Don Rubelio Recinos C"

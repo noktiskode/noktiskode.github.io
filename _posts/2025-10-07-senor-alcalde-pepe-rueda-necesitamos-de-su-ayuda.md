@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Señor alcalde, Pepe Rueda Necesitamos de su ayuda…
+title: "Señor alcalde, Pepe Rueda: Necesitamos de su ayuda en el callejón \"Los Pineda\""
 date: 2025-10-07T04:27:15.000Z
 excerpt: 'Señor alcalde, Pepe Rueda Necesitamos de su ayuda en el callejón "Los
   Pineda", sufrimos de mucho lodo, aunque sea esas planchas de cemento que va

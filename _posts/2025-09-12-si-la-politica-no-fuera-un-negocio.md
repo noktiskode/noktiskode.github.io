@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "SI LA POLÍTICA NO FUERA UN NEGOCIO 📌…"
+title: "Si la política no fuera un negocio"
 date: 2025-09-12T22:45:57.000Z
 image: "/images/blog/122191319366318393.jpg"
 excerpt: "SI LA POLÍTICA NO FUERA UN NEGOCIO 📌 Si la política no fuera un negocio, se centraría en el servicio público y el compromiso con la ciudadanía, en lugar de en "
 category: barberena
 ---
-SI LA POLÍTICA NO FUERA UN NEGOCIO 📌 
+SI LA POLÍTICA NO FUERA UN NEGOCIO 📌
 
 Si la política no fuera un negocio, se centraría en el servicio público y el compromiso con la ciudadanía, en lugar de en la búsqueda de beneficios personales o grupales. Esto implicaría una toma de decisiones basada en las necesidades de la comunidad y el bien común, la transparencia en la gestión de los recursos públicos, la rendición de cuentas de los funcionarios y una menor influencia del dinero en las campañas y en las decisiones políticas, lo que podría fortalecer la democracia y la confianza ciudadana. 
 

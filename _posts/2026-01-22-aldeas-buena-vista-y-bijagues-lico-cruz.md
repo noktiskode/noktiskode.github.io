@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Aldeas Buena Vista y Bijagües 🛺 Lico Cruz…
+title: "Aldeas Buena Vista y Bijagües Lico Cruz señaló que el alcalde Pepe Rueda tiene la capacidad de solucionar la falta de mototaxistas en estas comunidades, pero carece de voluntad para hacerlo."
 date: 2026-01-22T16:27:13.000Z
 excerpt: Aldeas Buena Vista y Bijagües 🛺 Lico Cruz señaló que el alcalde Pepe
   Rueda tiene la capacidad de solucionar la falta de mototaxistas en estas

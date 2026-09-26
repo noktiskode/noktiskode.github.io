@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "HOY LE QUEREMOS ENCONTRAR DEFECTOS A TODO Nadie…"
+title: "Hoy le queremos encontrar defectos A todo"
 date: 2025-09-20T01:55:38.000Z
 image: "/images/blog/122192081090318393.jpg"
 excerpt: "HOY LE QUEREMOS ENCONTRAR DEFECTOS A TODO Nadie se había pronunciado ni preocupado antes, hasta ahora. Creo que el término, \"chileras\" suena algo despectivo, au"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🎤 Aclaración sobre la presentación de “Los Caminantes”…"
+title: "Aclaración sobre la presentación de “Los Caminantes” en El Cerinal En días recientes se ha anunciado la presentación de “Los Caminantes” el 17 de enero en la Feria de El Cerinal, Barberena."
 date: 2026-01-13T16:58:06.000Z
 image: "/images/blog/122204218850318393.jpg"
 excerpt: "🎤 Aclaración sobre la presentación de “Los Caminantes” en El Cerinal En días recientes se ha anunciado la presentación de “Los Caminantes” el 17 de enero en la"

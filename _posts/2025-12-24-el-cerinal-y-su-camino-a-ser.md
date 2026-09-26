@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🟦 EL CERINAL Y SU CAMINO A SER…"
+title: "El Cerinal Y su camino A ser municipio: un proceso largo, cuestionado Y aún sin respuestas Desde 2009, la comunidad de El Cerinal, en el municipio de Barberena, busca convertirse en municipio."
 date: 2025-12-24T21:59:35.000Z
 image: "/images/blog/122202066062318393.jpg"
 excerpt: "🟦 EL CERINAL Y SU CAMINO A SER MUNICIPIO: UN PROCESO LARGO, CUESTIONADO Y AÚN SIN RESPUESTAS Desde 2009, la comunidad de El Cerinal, en el municipio de Barbere"

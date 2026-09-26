@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA: MÁS SEGURIDAD Y ORDEN La seguridad en…"
+title: "Barberena: más seguridad Y orden"
 date: 2025-12-06T05:51:29.000Z
 image: "/images/blog/122200081370318393.jpg"
 excerpt: "BARBERENA: MÁS SEGURIDAD Y ORDEN La seguridad en Barberena aún tiene espacios de mejora. Señalización, semáforos estratégicos, calles iluminadas y mejor orden e"

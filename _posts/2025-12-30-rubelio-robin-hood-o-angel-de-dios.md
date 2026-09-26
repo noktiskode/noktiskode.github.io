@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Rubelio: ¿Robin Hood o ángel de Dios? 😅…"
+title: "Rubelio: ¿Robin Hood o ángel de Dios?"
 date: 2025-12-30T21:28:30.000Z
 image: "/images/blog/122202677534318393.jpg"
 excerpt: "Rubelio: ¿Robin Hood o ángel de Dios? 😅 Cuando Pepe Rueda Vallejo ganó las elecciones, en varias ocasiones se le preguntó si realizaría una auditoría a la muni"

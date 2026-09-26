@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Se reportó un posible caso paranormal en el…
+title: "Se reportó un posible caso paranormal en el bazar frente al Parque Barrios en Barberena… Dicen que el “objeto” aparece y desaparece, pero cuando fui… mejor mírenlo ustedes mismos."
 date: 2025-12-02T22:07:55.000Z
 excerpt: Se reportó un posible caso paranormal en el bazar frente al Parque
   Barrios en Barberena… 👀😳 Dicen que el “objeto” aparece y desaparece, pero

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Creo que el alcalde debería de dar explicaciones…"
+title: "Creo que el alcalde debería de dar explicaciones"
 date: 2025-05-29T16:58:07.000Z
 excerpt: "Creo que el alcalde debería de dar explicaciones de lo que se le acusa en las distintas páginas (que antes fueron financiadas por la municipalidad en los gobier"
 category: barberena

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: ¿Cuál es tu evaluación general del desempeño de…
+title: "¿Cuál es tu evaluación general del desempeño de Pepe Rueda Vallejo como alcalde hasta ahora, en particular en lo que respecta a la gestión e inversión de los recursos económicos del municipio?"
 date: 2025-10-13T03:41:06.000Z
 excerpt: ¿Cuál es tu evaluación general del desempeño de Pepe Rueda Vallejo como
   alcalde hasta ahora, en particular en lo que respecta a la gestión e inversión

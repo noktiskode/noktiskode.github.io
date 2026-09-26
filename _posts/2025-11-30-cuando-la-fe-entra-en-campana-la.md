@@ -1,6 +1,6 @@
 ---
 featured: false
-title: 📌 Cuando la fe entra en campaña La…
+title: "Cuando la fe entra en campaña La religión tiene un poder único: toca lo más profundo de cada persona."
 date: 2025-11-30T20:07:46.000Z
 excerpt: "📌 Cuando la fe entra en campaña La religión tiene un poder único:
   toca lo más profundo de cada persona. Por eso, cuando aparece en la política,

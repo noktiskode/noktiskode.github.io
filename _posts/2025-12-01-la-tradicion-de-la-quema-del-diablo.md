@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🔥 La tradición de la quema del diablo…"
+title: "La tradición de la quema del diablo en Guatemala Cada 7 de diciembre, muchas familias guatemaltecas participan en la quema del diablo, buscando “limpiar” el hogar y despedir lo negativo del año."
 date: 2025-12-01T21:48:01.000Z
 image: "/images/blog/122199613958318393.jpg"
 excerpt: "🔥 La tradición de la quema del diablo en Guatemala 🔥 Cada 7 de diciembre, muchas familias guatemaltecas participan en la quema del diablo, buscando “limpiar” "

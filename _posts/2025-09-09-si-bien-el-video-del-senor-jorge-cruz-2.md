@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Si bien, el vídeo del Señor Jorge Cruz…"
+title: "Si bien, el vídeo del Señor Jorge Cruz en el Cementerio de Barberena fue nada más con fines políticos (como todo lo que hace,) también deja en evidencia que este se encuentra algo descuidado."
 date: 2025-09-09T01:44:31.000Z
 excerpt: "Si bien, el vídeo del Señor Jorge Cruz en el Cementerio de Barberena fue nada más con fines políticos (como todo lo que hace,) también deja en evidencia que est"
 category: barberena

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "En Barberena ya no se sabe qué admirar…"
+title: "En Barberena ya no se sabe qué admirar más: si la elegancia de los caballos o la velocidad de Jorge Cruz esquivando jinetes para entregar cuadernos."
 date: 2026-01-05T22:00:11.000Z
 image: "/images/blog/122203401404318393.jpg"
 excerpt: "En Barberena ya no se sabe qué admirar más: si la elegancia de los caballos o la velocidad de Jorge Cruz esquivando jinetes para entregar cuadernos. 🤔📚 Menos "

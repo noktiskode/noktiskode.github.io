@@ -1,6 +1,6 @@
 ---
 featured: false
-title: 💧✨ La Pila de las Cinco Calles ✨💧…
+title: "La Pila de las Cinco Calles"
 date: 2025-10-15T23:30:17.000Z
 excerpt: "💧✨ La Pila de las Cinco Calles ✨💧 Escuchemos este relato sobre uno
   de los lugares más queridos de nuestro municipio. Un espacio que, en su

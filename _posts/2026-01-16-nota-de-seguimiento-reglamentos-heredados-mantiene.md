@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOTA DE SEGUIMIENTO ⚠️ Reglamentos heredados mantienen sin…"
+title: "Nota de seguimiento"
 date: 2026-01-16T00:01:41.000Z
 image: "/images/blog/122204442368318393.jpg"
 excerpt: "NOTA DE SEGUIMIENTO ⚠️ Reglamentos heredados mantienen sin mototaxis a Buena Vista y Bijagües A varios días de que los vecinos de Aldea Buena Vista y Aldea Bija"

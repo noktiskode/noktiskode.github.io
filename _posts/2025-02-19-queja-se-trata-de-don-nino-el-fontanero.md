@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Queja: Se trata de Don \"Nino\", el fontanero,…"
+title: "Queja: Se trata de Don \"Nino\", el fontanero, ya que los vecinos comentan que él, \"cuesta que eche el agua\", esto en Callejón Las Brisas, Moauto."
 date: 2025-02-19T07:57:47.000Z
 excerpt: "Queja: Se trata de Don \"Nino\", el fontanero, ya que los vecinos comentan que él, \"cuesta que eche el agua\", esto en Callejón Las Brisas, Moauto. Además, dicen q"
 category: barberena

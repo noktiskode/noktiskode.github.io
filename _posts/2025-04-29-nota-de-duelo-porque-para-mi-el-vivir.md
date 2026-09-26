@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOTA DE DUELO \"Porque para mí el vivir…"
+title: "Nota de duelo: “Porque para mí el vivir es Cristo, y el morir es ganancia.”"
 date: 2025-04-29T00:07:15.000Z
 image: "/images/blog/122171686202318393.jpg"
 excerpt: "NOTA DE DUELO \"Porque para mí el vivir es Cristo, y el morir es ganancia.\" (Filipenses 1:21). María Teresa Juárez Hernández Por cumplirse próximamente 1 año de "

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "BARBERENA | Sector Los Hornitos Durante la actividad…"
+title: "Barberena | Sector Los Hornitos Durante la actividad de colocación de la primera piedra del proyecto de mejoramiento de calle en Los Hornitos, el alcalde Pepe Rueda volvió a manifestar su malestar ante los cuestionamientos que ha recibido a lo largo de sus dos años de gestión."
 date: 2026-01-20T00:03:55.000Z
 image: "/images/blog/122205591470318393.jpg"
 excerpt: "BARBERENA | Sector Los Hornitos Durante la actividad de colocación de la primera piedra del proyecto de mejoramiento de calle en Los Hornitos, el alcalde Pepe R"

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "ACLARACIONES SOBRE AUDITORÍA MUNICIPAL Y RUMORES El alcalde…"
+title: "Aclaraciones sobre auditoría municipal Y rumores"
 date: 2025-12-31T19:05:50.000Z
 image: "/images/blog/122202779426318393.jpg"
 excerpt: "ACLARACIONES SOBRE AUDITORÍA MUNICIPAL Y RUMORES El alcalde ya se pronunció sobre el tema de la auditoría municipal. Aclaró que no es ahijado ni tiene ningún ví"

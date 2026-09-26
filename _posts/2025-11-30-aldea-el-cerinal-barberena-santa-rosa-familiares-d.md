@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Aldea El Cerinal, Barberena, Santa Rosa: Familiares de…"
+title: "Aldea El Cerinal, Barberena, Santa Rosa: Familiares de un bebé denuncian que, tras recibir una inyección en un centro de salud, le apareció una bolita que no mejoró pese a 20 días de tratamiento."
 date: 2025-11-30T23:55:56.000Z
 image: "/images/blog/122199519116318393.jpg"
 excerpt: "Aldea El Cerinal, Barberena, Santa Rosa: Familiares de un bebé denuncian que, tras recibir una inyección en un centro de salud, le apareció una bolita que no me"

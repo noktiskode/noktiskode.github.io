@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "NOTA DE DUELO “Yo soy la resurrección y…"
+title: "Nota de duelo: “Yo soy la resurrección y la vida; el que cree en mí, aunque muera, vivirá.”"
 date: 2025-04-28T02:15:21.000Z
 image: "/images/blog/122171538890318393.jpg"
 excerpt: "NOTA DE DUELO “Yo soy la resurrección y la vida; el que cree en mí, aunque muera, vivirá.” (Juan 11:25) Al cumplirse próximamente nueve días de su partida hacia"

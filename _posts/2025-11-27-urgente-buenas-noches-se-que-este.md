@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "🚨 ¡URGENTE! 🚨 \"Buenas noches, Sé que este…"
+title: "Urgente: se solicita ayuda por perros maltratados en El Pino."
 date: 2025-11-27T02:00:41.000Z
 image: "/images/blog/122199133562318393.jpg"
 excerpt: "🚨 ¡URGENTE! 🚨 \"Buenas noches, Sé que este grupo no es específicamente para esto, pero necesito ayuda urgente. En la Segunda Aldea, El Pino, Barberena, hay per"
 category: barberena
 tags: ["PNC","PNCdeGuatemala","DIPRONA","ubamaga","animalrescue","ELCERINAL","Barberena","barberenamimunicipio"]
 ---
-🚨 ¡URGENTE! 🚨 
+🚨 ¡URGENTE! 🚨
 
 "Buenas noches,
 

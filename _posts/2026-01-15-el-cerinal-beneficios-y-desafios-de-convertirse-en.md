@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL CERINAL: BENEFICIOS Y DESAFÍOS DE CONVERTIRSE EN…"
+title: "El Cerinal: beneficios Y desafíos de convertirse en municipio El debate sobre la posible autonomía de El Cerinal es legítimo y necesario."
 date: 2026-01-15T16:00:02.000Z
 image: "/images/blog/122204413916318393.jpg"
 excerpt: "EL CERINAL: BENEFICIOS Y DESAFÍOS DE CONVERTIRSE EN MUNICIPIO El debate sobre la posible autonomía de El Cerinal es legítimo y necesario. Es un tema que genera "

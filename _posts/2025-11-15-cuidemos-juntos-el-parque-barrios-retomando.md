@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🌟 ¡Cuidemos juntos el Parque Barrios! ✨ Retomando…"
+title: "¡Cuidemos juntos el Parque Barrios!"
 date: 2025-11-15T21:07:31.000Z
 excerpt: "🌟 ¡Cuidemos juntos el Parque Barrios! ✨ Retomando el tema sobre el Parque Barrios... Vecinos, todos queremos un parque seguro y agradable, donde podamos camina"
 category: barberena

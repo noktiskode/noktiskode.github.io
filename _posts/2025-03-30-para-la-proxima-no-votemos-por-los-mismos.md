@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Para la próxima NO VOTEMOS por los mismos…"
+title: "Para la próxima no votemos por los mismos diputados, hay que darle la oportunidad a otros para que también vayan a llenarse los bolsillos con nuestros impuestos."
 date: 2025-03-30T21:11:22.000Z
 excerpt: "Para la próxima NO VOTEMOS por los mismos DIPUTADOS, hay que darle la OPORTUNIDAD a otros para que también vayan a LLENARSE los BOLSILLOS con NUESTROS IMPUESTOS"
 category: barberena

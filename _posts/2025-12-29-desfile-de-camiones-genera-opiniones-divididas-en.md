@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "🚌 DESFILE DE CAMIONES GENERA OPINIONES DIVIDIDAS EN…"
+title: "Desfile de camiones genera opiniones divididas en Barberena Las opiniones en Barberena están divididas respecto a la organización del desfile de camiones realizado el día de ayer."
 date: 2025-12-29T19:42:01.000Z
 image: "/images/blog/122202563588318393.jpg"
 excerpt: "🚌 DESFILE DE CAMIONES GENERA OPINIONES DIVIDIDAS EN BARBERENA Las opiniones en Barberena están divididas respecto a la organización del desfile de camiones rea"

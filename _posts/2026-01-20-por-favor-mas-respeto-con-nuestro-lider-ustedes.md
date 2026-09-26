@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Por favor, más respeto con nuestro líder. Ustedes…
+title: "Por favor, más respeto con nuestro líder."
 date: 2026-01-20T22:07:07.000Z
 excerpt: Por favor, más respeto con nuestro líder. Ustedes criticando la falta
   de agua y él aquí, debatiéndose entre construir el futuro o conquistar el

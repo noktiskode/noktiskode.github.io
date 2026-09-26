@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "⚠️ Vecinos de Buena Vista sin transporte interno:…"
+title: "Vecinos de Buena Vista sin transporte interno: su malestar crece Habitantes de Aldea Buena Vista manifiestan su malestar por la eliminación del servicio de mototaxis interno, que facilitaba la movilidad de quienes viven en sectores alejados de la calle principal."
 date: 2026-01-11T16:30:02.000Z
 image: "/images/blog/122203916708318393.jpg"
 excerpt: "⚠️ Vecinos de Buena Vista sin transporte interno: su malestar crece Habitantes de Aldea Buena Vista manifiestan su malestar por la eliminación del servicio de m"

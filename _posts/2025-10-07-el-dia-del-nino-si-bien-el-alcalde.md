@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "EL DÍA DEL NIÑO Si bien, el alcalde…"
+title: "El día del niño"
 date: 2025-10-07T01:41:37.000Z
 excerpt: "EL DÍA DEL NIÑO Si bien, el alcalde no tenía ninguna obligación de celebrar el día del niño, también nos queda claro que lo hicieron de manera incorrecta, el ví"
 category: barberena
