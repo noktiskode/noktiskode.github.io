@@ -1,14 +1,24 @@
 ---
 featured: false
-title: "| SERVICIO SOCIAL Hoy queremos pedir el apoyo…"
+title: "Servicio social: hoy queremos pedir el apoyo"
 date: 2026-03-24T01:05:21.000Z
-image: "/images/blog/122210880374318393.jpg"
-excerpt: "#BARBERENA | SERVICIO SOCIAL Hoy queremos pedir el apoyo de todos para la abuelita Petrona García 🙏 Se comenta que aún se adeudan Q2,000 (dos mil quetzales) a "
+image: /images/blog/122210880374318393.jpg
+excerpt: "Servicio social: hoy queremos pedir el apoyo de todos para la abuelita
+  Petrona García 🙏 Se comenta que aún se adeudan Q2,000 (dos mil quetzales)
+  a..."
 category: barberena
-tags: ["BARBERENA","SantaRosaGT","ServicioSocial","Guatemala","BarberenaSantaRosa","estadosunidos","AyudaSocial","ELCERINAL","santarosa","viral"]
+tags:
+  - Barberena
+  - SantaRosaGT
+  - ServicioSocial
+  - Guatemala
+  - BarberenaSantaRosa
+  - estadosunidos
+  - AyudaSocial
+  - ELCERINAL
+  - santarosa
+  - viral
 ---
-#BARBERENA | SERVICIO SOCIAL
-
 Hoy queremos pedir el apoyo de todos para la abuelita Petrona García 🙏
 
 Se comenta que aún se adeudan Q2,000 (dos mil quetzales) a la funeraria que cubrió el servicio de su difunto esposo, don Guicho. Es una situación difícil para ella, y en estos momentos necesita de nuestra solidaridad.
