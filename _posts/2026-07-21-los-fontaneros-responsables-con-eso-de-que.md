@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LOS FONTANEROS RESPONSABLES Con eso de que…"
+title: "Los fontaneros responsables"
 date: 2026-07-21T22:09:27.000Z
 image: "/images/blog/122222943260318393.jpg"
 excerpt: "#Barberena | LOS FONTANEROS RESPONSABLES Con eso de que se está contratando un nuevo fontanero, han surgido unas fotos de unos muchachones disfrutando de unas t"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa","aguapotable"]
 ---
-#Barberena | LOS FONTANEROS RESPONSABLES
+LOS FONTANEROS RESPONSABLES
 
 Con eso de que se está contratando un nuevo fontanero, han surgido unas fotos de unos muchachones disfrutando de unas taconudas, quizá porque hacía mucho calor o simplemente traían seco el gaznate, qué se yo.
 

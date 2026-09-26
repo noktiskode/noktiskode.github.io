@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Según una investigación de La Hora publicada…
+title: "Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como \"el caso más visible\" de la nueva estrategia de fichajes del Partido Unionista rumbo a 2027."
 date: 2026-09-01T01:38:35.000Z
 image: /images/blog/122227072964318393.jpg
 excerpt: Según una investigación de La Hora publicada este fin de semana, Santa

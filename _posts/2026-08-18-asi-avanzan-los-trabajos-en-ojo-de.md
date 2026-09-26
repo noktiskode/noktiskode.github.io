@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Así avanzan los trabajos en Ojo de…"
+title: "Así avanzan los trabajos en Ojo de Agua, Bijagues Ya se realizan trabajos de pavimentación en la calle del sector Ojo de Agua, en aldea Bijagues."
 date: 2026-08-18T20:06:51.000Z
 image: "/images/blog/122225720792318393.jpg"
 excerpt: "#Barberena | Así avanzan los trabajos en Ojo de Agua, Bijagues Ya se realizan trabajos de pavimentación en la calle del sector Ojo de Agua, en aldea Bijagues. E"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","Bijagues","ObraPública","SantaRosa","Guatecompras","SCEP","Codede"]
 ---
-#Barberena | Así avanzan los trabajos en Ojo de Agua, Bijagues
+Así avanzan los trabajos en Ojo de Agua, Bijagues
 
 Ya se realizan trabajos de pavimentación en la calle del sector Ojo de Agua, en aldea Bijagues.
 

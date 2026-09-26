@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| La Municipalidad de Barberena, a través del…"
+title: "La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del sector Los Chepitos, en El Cerinal, un tramo que por años se volvía intransitable en época de invierno."
 date: 2026-08-28T01:03:16.000Z
 image: "/images/blog/122226663164318393.jpg"
 excerpt: "#ELCERINAL | La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del se"
 category: barberena
 tags: ["ELCERINAL","Cerinal","Barberena","BarberenaSantaRosa","SantaRosaGT","ObrasPublicas"]
 ---
-#ELCERINAL | La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del sector Los Chepitos, en El Cerinal, un tramo que por años se volvía intransitable en época de invierno.
+La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del sector Los Chepitos, en El Cerinal, un tramo que por años se volvía intransitable en época de invierno.
 
 Según lo expuesto durante el acto, el proyecto incluyó también la instalación de una nueva red de conducción y distribución de agua, en un sector que —pese a su cercanía con el Parque Nacional Laguna del Pino— históricamente no ha contado con el servicio. La comuna indicó que en los próximos días se habilitaría un pozo perforado en la zona, que abastecería a toda la calle Vieja de El Cerinal.
 

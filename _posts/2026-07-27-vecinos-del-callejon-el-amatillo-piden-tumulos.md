@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Vecinos del Callejón El Amatillo piden túmulos…"
+title: "Vecinos del Callejón El Amatillo piden túmulos y alumbrado Los vecinos del Callejón El Amatillo, kilómetro 49.5 rumbo a Aldea El Cerinal, presentaron una solicitud formal a la municipalidad pidiendo la construcción de ci"
 date: 2026-07-27T16:11:21.000Z
 image: "/images/blog/122223468032318393.jpg"
 excerpt: "#Barberena | Vecinos del Callejón El Amatillo piden túmulos y alumbrado Los vecinos del callejón El Amatillo, kilómetro 49.5 rumbo a Aldea El Cerinal, presentar"
 category: barberena
 tags: ["Barberena","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#Barberena | Vecinos del Callejón El Amatillo piden túmulos y alumbrado
+Vecinos del Callejón El Amatillo piden túmulos y alumbrado
 
 Los vecinos del callejón El Amatillo, kilómetro 49.5 rumbo a Aldea El Cerinal, presentaron una solicitud formal a la municipalidad pidiendo la construcción de cinco túmulos, un poste de alumbrado público en la entrada del callejón y el cambio de focos quemados en el sector.
 

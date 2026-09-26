@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Rubelio Recinos entregó pipa de agua 💧
+title: "Rubelio Recinos entregó pipa de agua"
 date: 2026-08-13T03:15:36.000Z
 image: /images/blog/122225158280318393.jpg
 excerpt: Rubelio Recinos entregó pipa de agua 💧 A través de sus redes sociales,

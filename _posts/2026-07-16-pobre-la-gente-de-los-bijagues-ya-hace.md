@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"Pobre la gente de los Bijagües, ya hace…"
+title: "Pobre la gente de los Bijagües, ya hace meses que no nos cae ni una gota de agua, y supuestamente van a regalar agua, pero solo a la gente que vive a orilla de la calle les llega, porque ni una buena manguera cargan."
 date: 2026-07-16T17:18:55.000Z
 image: "/images/blog/122222473070318393.jpg"
 excerpt: "\"Pobre la gente de los Bijagües, ya hace meses que no nos cae ni una gota de agua, y supuestamente van a regalar agua, pero solo a la gente que vive a orilla de"

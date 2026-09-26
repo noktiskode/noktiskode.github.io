@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| El licenciado Federico \"Lico\" Cruz Suárez se…"
+title: "El licenciado Federico \"Lico\" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva meses ahí y que nadie ha venido a arreglar."
 date: 2026-08-20T21:54:44.000Z
 image: "/images/blog/122225947202318393.jpg"
 excerpt: "#ELCERINAL | El licenciado Federico \"Lico\" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva mese"
 category: barberena
 tags: ["ELCERINAL","Cerinal","Barberena","BarberenaSantaRosa","SantaRosaGT","CIV"]
 ---
-#ELCERINAL | El licenciado Federico "Lico" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva meses ahí y que nadie ha venido a arreglar.
+El licenciado Federico "Lico" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva meses ahí y que nadie ha venido a arreglar.
 
 Según Cruz, el hueco ya ha causado accidentes en la zona, y hasta la fecha ni el Ministerio de Comunicaciones, Infraestructura y Vivienda ni los diputados por Santa Rosa —Inés Castillo, Ricardo Alarcón y Napo Rojas— se han aparecido a ver el problema.
 

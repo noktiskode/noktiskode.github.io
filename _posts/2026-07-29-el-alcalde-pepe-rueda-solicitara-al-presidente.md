@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE…"
+title: "El alcalde Pepe Rueda solicitará al presidente declarar estado de sitio en Barberena Resulta que el alcalde Pepe Rueda Vallejo anunció que la comuna enviará una solicitud formal al mismísimo presidente Bernardo Arévalo p"
 date: 2026-07-29T00:12:33.000Z
 image: "/images/blog/122223591398318393.jpg"
 excerpt: "#Barberena | EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE DECLARAR ESTADO DE SITIO EN BARBERENA Resulta que el alcalde Pepe Rueda Vallejo anunció que la comun"
 category: barberena
 tags: ["Barberena","Cerinal","BarberenaSantaRosa","SantaRosaGT","santarosa","URGENTE"]
 ---
-#Barberena | EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE DECLARAR ESTADO DE SITIO EN BARBERENA
+EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE DECLARAR ESTADO DE SITIO EN BARBERENA
 
 Resulta que el alcalde Pepe Rueda Vallejo anunció que la comuna enviará una solicitud formal al mismísimo presidente Bernardo Arévalo para que declare estado de sitio en el municipio 😱, como medida para enfrentar a la delincuencia.
 

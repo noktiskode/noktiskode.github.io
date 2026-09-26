@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| ROBO DE MOTO ESTA NOCHE EN EL…"
+title: "Robo de moto esta noche en El Cerinal Reporte compartido por un vecino en un grupo local: \"Buenas noches, solicitamos su apoyo."
 date: 2026-07-19T05:47:55.000Z
 excerpt: "#URGENTE | ROBO DE MOTO ESTA NOCHE EN EL CERINAL 🚨 Reporte compartido por un vecino en un grupo local: \"Buenas noches, solicitamos su apoyo. Si logran ver esta"
 category: barberena
 tags: ["URGENTE","ELCERINAL","Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa","Alerta"]
 ---
-#URGENTE | ROBO DE MOTO ESTA NOCHE EN EL CERINAL 🚨
+ROBO DE MOTO ESTA NOCHE EN EL CERINAL 🚨
 
 Reporte compartido por un vecino en un grupo local:
 

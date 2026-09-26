@@ -1,5 +1,5 @@
 ---
-title: Horario y candado para el tanque
+title: "Horario y candado para el tanque"
 date: 2026-09-01T20:22:00.000-06:00
 image: /images/blog/1000037777.jpg
 excerpt: La pila del Barrio El Tanque, en pleno casco urbano de Barberena, ya

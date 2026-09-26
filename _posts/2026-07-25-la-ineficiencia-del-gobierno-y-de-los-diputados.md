@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "¡LA INEFICIENCIA DEL GOBIERNO Y DE LOS DIPUTADOS!…"
+title: "¡La ineficiencia del gobierno Y de los diputados!"
 date: 2026-07-25T01:16:47.000Z
 image: "/images/blog/122223238298318393.jpg"
 excerpt: "¡LA INEFICIENCIA DEL GOBIERNO Y DE LOS DIPUTADOS! 🇸🇻 El Salvador: regular Q34.77, súper Q37.29 y diésel Q35.00. 🇬🇹 Guatemala: regular Q41.89, súper Q42.89, "

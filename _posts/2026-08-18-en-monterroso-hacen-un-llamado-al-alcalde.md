@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| EN MONTERROSO HACEN UN LLAMADO AL ALCALDE…"
+title: "En Monterroso hacen un llamado al alcalde"
 date: 2026-08-18T16:39:35.000Z
 excerpt: "#ELCERINAL | EN MONTERROSO HACEN UN LLAMADO AL ALCALDE Una persona publicó en Facebook un video en el que hace un llamado al alcalde de Barberena por la falta d"
 category: barberena
 tags: ["ELCERINAL","Cerinal","Barberena","BarberenaSantaRosa","SantaRosa","SinAgua"]
 ---
-#ELCERINAL | EN MONTERROSO HACEN UN LLAMADO AL ALCALDE
+EN MONTERROSO HACEN UN LLAMADO AL ALCALDE
 
 Una persona publicó en Facebook un video en el que hace un llamado al alcalde de Barberena por la falta de agua en Monterroso.
 

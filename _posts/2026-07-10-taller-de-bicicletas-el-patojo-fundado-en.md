@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| TALLER DE BICICLETAS \"EL PATOJO\" Fundado en…"
+title: "Taller de bicicletas \"el patojo\""
 date: 2026-07-10T09:30:08.000Z
 excerpt: "#BARBERENA | TALLER DE BICICLETAS \"EL PATOJO\" Fundado en Barberena en 1952, este taller sigue en pie a la orilla de la CA-1, a la par del templo de Minerva. Cue"
 category: barberena
 tags: ["BARBERENA","HistoriasDeBarberena","BarberenaMiMunicipio","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#BARBERENA | TALLER DE BICICLETAS "EL PATOJO"
+TALLER DE BICICLETAS "EL PATOJO"
 
 Fundado en Barberena en 1952, este taller sigue en pie a la orilla de la CA-1, a la par del templo de Minerva.
 

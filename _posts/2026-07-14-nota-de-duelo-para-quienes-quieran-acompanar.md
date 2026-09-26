@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Nota de duelo para quienes quieran acompañar,…
+title: "Nota de duelo"
 date: 2026-07-14T18:37:46.000Z
 image: /images/blog/122222276366318393.jpg
 excerpt: "Nota de duelo: para quienes quieran acompañar, el entierro de doña

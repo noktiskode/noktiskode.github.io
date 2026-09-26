@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| RUBELIO RECINOS: EN CUILAPA LO AMAN En…"
+title: "Rubelio Recinos: en Cuilapa lo aman"
 date: 2026-08-07T16:11:11.000Z
 excerpt: "#Barberena | RUBELIO RECINOS: EN CUILAPA LO AMAN En #Cuilapa quieren tanto a Rubelio Recinos, tanto que si él decidiera irse a competir por la alcaldía, la gana"
 category: barberena
 tags: ["Barberena","Cuilapa","Cerinal","BarberenaSantaRosa","SantaRosa","SantaRosaGT"]
 ---
-#Barberena | RUBELIO RECINOS: EN CUILAPA LO AMAN
+RUBELIO RECINOS: EN CUILAPA LO AMAN
 
 En #Cuilapa quieren tanto a Rubelio Recinos, tanto que si él decidiera irse a competir por la alcaldía, la ganaría sin muchas dificultades.
 

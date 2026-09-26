@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Alcalde se refiere al incidente con mototaxis…"
+title: "Alcalde se refiere al incidente con mototaxis en El Cerinal El alcalde Pepe Rueda explicó en entrevista que esta mañana agentes de la PMT detuvieron un mototaxi en Aldea El Cerinal por no portar placas de circulación."
 date: 2026-08-12T22:28:20.000Z
 image: "/images/blog/122225133068318393.jpg"
 excerpt: "#Barberena | Alcalde se refiere al incidente con mototaxis en El Cerinal El alcalde Pepe Rueda explicó en entrevista que esta mañana agentes de la PMT detuviero"
 category: barberena
 tags: ["Barberena","Cerinal","BarberenaSantaRosa","santarosa","PMT","ELCERINAL","SantaRosaGT"]
 ---
-#Barberena | Alcalde se refiere al incidente con mototaxis en El Cerinal
+Alcalde se refiere al incidente con mototaxis en El Cerinal
 
 El alcalde Pepe Rueda explicó en entrevista que esta mañana agentes de la PMT detuvieron un mototaxi en Aldea El Cerinal por no portar placas de circulación. Según relató, al intentar llevarse el vehículo, otros mototaxistas del lugar se reunieron y, según sus palabras, "amenazaron" e "intimidaron" a los agentes, por lo que estos optaron por retirarse y devolver los documentos.
 

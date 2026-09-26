@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| ANAM reconoce buenas prácticas municipales La Asociación…"
+title: "ANAM reconoce buenas prácticas municipales La Asociación Nacional de Municipalidades (ANAM) reconoce a la Municipalidad de Barberena por \"impulsar obras y proyectos que generan resultados para el desarrollo del municipio.\""
 date: 2026-08-18T23:04:23.000Z
 excerpt: "#Barberena | ANAM reconoce buenas prácticas municipales La Asociación Nacional de Municipalidades (ANAM) reconoce a la Municipalidad de Barberena por \"impulsar "
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosa","SantaRosaGT","Anam"]
 ---
-#Barberena | ANAM reconoce buenas prácticas municipales
+ANAM reconoce buenas prácticas municipales
 
 La Asociación Nacional de Municipalidades (ANAM) reconoce a la Municipalidad de Barberena por "impulsar obras y proyectos que generan resultados para el desarrollo del municipio."
 

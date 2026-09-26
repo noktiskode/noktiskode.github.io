@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN…"
+title: "Vecinos denuncian problemas de aguas negras en la joya Y san jorge 3 Vecinos de los sectores La Joya y San Jorge 3 comparten lo siguiente: \"Quiero pedirle a nuestro alcalde Pepe Rueda que, por favor, nos pueda solucionar"
 date: 2026-07-09T17:32:59.000Z
 excerpt: "#DenunciaCiudadana | VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN LA JOYA Y SAN JORGE 3 Vecinos de los sectores La Joya y San Jorge 3 comparten lo siguiente: "
 category: barberena
 tags: ["DenunciaCiudadana","ELCERINAL","Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#DenunciaCiudadana | VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN LA JOYA Y SAN JORGE 3
+VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN LA JOYA Y SAN JORGE 3
 
 Vecinos de los sectores La Joya y San Jorge 3 comparten lo siguiente:
 

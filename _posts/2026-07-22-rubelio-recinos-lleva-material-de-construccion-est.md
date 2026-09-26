@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN Esta…"
+title: "Rubelio Recinos lleva material de construcción"
 date: 2026-07-22T23:11:03.000Z
 image: "/images/blog/122223054788318393.jpg"
 excerpt: "#Barberena | RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN Esta vez, Rubelio Recinos llevó material de construcción y una que otra cosita para compartir con lo"
 category: barberena
 tags: ["Barberena","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#Barberena | RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN
+RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN
 
 Esta vez, Rubelio Recinos llevó material de construcción y una que otra cosita para compartir con los vecinos, quienes se mostraron agradecidos.
 

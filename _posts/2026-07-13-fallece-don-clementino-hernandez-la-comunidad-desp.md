@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Fallece don Clementino Hernández; la comunidad despide…
+title: "Fallece don clementino hernández; la comunidad despide con pesar A la pareja de esposos Con profundo pesar, se confirmó el fallecimiento de Don Clementino Hernández, quien permanecía hospitalizado en Cuilapa tras el acci"
 date: 2026-07-13T16:37:21.000Z
 image: /images/blog/122222176388318393.jpg
 excerpt: Fallece don Clementino Hernández; la comunidad despide con pesar a la

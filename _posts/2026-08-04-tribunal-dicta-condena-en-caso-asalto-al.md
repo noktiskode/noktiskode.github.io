@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Tribunal dicta condena en caso \"Asalto al…"
+title: "Tribunal dicta condena en caso \"Asalto al Ministerio de Salud\" El Tribunal de Mayor Riesgo D emitió sentencia contra tres exdiputados señalados por tráfico de influencias: Aracely Chavarría — 7 años 11 meses (inconmutable)."
 date: 2026-08-04T03:04:21.000Z
 image: "/images/blog/122224225760318393.jpg"
 excerpt: "#Barberena | Tribunal dicta condena en caso \"Asalto al Ministerio de Salud\" El Tribunal de Mayor Riesgo D emitió sentencia contra tres exdiputados señalados por"
 category: barberena
 tags: ["Barberena","SantaRosaGT","Cerinal","BarberenaSantaRosa","santarosa"]
 ---
-#Barberena | Tribunal dicta condena en caso "Asalto al Ministerio de Salud"
+Tribunal dicta condena en caso "Asalto al Ministerio de Salud"
 
 El Tribunal de Mayor Riesgo D emitió sentencia contra tres exdiputados señalados por tráfico de influencias:
 

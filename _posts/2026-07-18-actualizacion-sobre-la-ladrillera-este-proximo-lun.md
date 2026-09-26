@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Actualización sobre La Ladrillera Este próximo lunes…"
+title: "Actualización sobre La Ladrillera Este próximo lunes 20 de julio, se cumplen aproximadamente siete meses desde que este proyecto se puso en marcha."
 date: 2026-07-18T18:05:04.000Z
 image: "/images/blog/122222666030318393.jpg"
 excerpt: "#Barberena | Actualización sobre La Ladrillera Este próximo lunes 20 de julio, se cumplen aproximadamente siete meses desde que este proyecto se puso en marcha."
 category: barberena
 tags: ["Barberena","LaLadrillera","Guatecompras","BarberenaSantaRosa","santarosa","SantaRosaGT"]
 ---
-#Barberena | Actualización sobre La Ladrillera
+Actualización sobre La Ladrillera
 
 Este próximo lunes 20 de julio, se cumplen aproximadamente siete meses desde que este proyecto se puso en marcha.
 

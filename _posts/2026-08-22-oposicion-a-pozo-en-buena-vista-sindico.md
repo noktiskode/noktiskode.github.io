@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO…"
+title: "Oposición A pozo en Buena Vista; síndico pide \"apoyo\" Una familia de aldea Buena Vista se oponía a que se llevaran a cabo los trabajos de perforación de un nuevo pozo mecánico municipal, alegando derechos sobre el terreno."
 date: 2026-08-22T19:06:09.000Z
 image: "/images/blog/122226157748318393.jpg"
 excerpt: "#Barberena | OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO PIDE \"APOYO\" Una familia de aldea Buena Vista se oponía a que se llevaran a cabo los trabajos de perforaci"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","agua","BuenaVista","comunidad"]
 ---
-#Barberena | OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO PIDE "APOYO"
+OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO PIDE "APOYO"
 
 Una familia de aldea Buena Vista se oponía a que se llevaran a cabo los trabajos de perforación de un nuevo pozo mecánico municipal, alegando derechos sobre el terreno. Ante esto, el síndico suplente hizo un llamado a través de Facebook para que las demás familias de Buena Vista y Colellana se hicieran presentes en el lugar a "apoyar" el proyecto.
 

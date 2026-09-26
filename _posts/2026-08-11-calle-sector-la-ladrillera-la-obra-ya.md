@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Calle Sector La Ladrillera: la obra ya…"
+title: "Calle Sector La Ladrillera: la obra ya terminó Ya terminaron los trabajos en el sector de."
 date: 2026-08-11T07:09:10.000Z
 image: "/images/blog/122224960004318393.jpg"
 excerpt: "#Barberena | Calle Sector La Ladrillera: la obra ya terminó Ya terminaron los trabajos en el sector de #LaLadrillera. Según el informe de supervisión de Codede "
 category: barberena
 tags: ["Barberena","LaLadrillera","Guatecompras","BarberenaSantaRosa","SantaRosa","obraspublicas","SCEP"]
 ---
-#Barberena | Calle Sector La Ladrillera: la obra ya terminó
+Calle Sector La Ladrillera: la obra ya terminó
 
 Ya terminaron los trabajos en el sector de #LaLadrillera. Según el informe de supervisión de Codede del 4 de agosto, el proyecto ya llegó al 100% de avance físico.
 

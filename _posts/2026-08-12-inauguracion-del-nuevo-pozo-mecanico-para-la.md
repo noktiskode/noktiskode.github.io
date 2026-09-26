@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Inauguración del nuevo pozo mecánico para la…"
+title: "Inauguración del nuevo pozo mecánico para la aldea Este martes se entregó el pozo mecánico que se encuentra detrás del rastro municipal, en aldea El Cerinal."
 date: 2026-08-12T03:04:50.000Z
 image: "/images/blog/122225043146318393.jpg"
 excerpt: "#ELCERINAL | Inauguración del nuevo pozo mecánico para la aldea Este martes se entregó el pozo mecánico que se encuentra detrás del rastro municipal, en aldea E"
 category: barberena
 tags: ["ELCERINAL","Guatecompras","Cerinal","Barberena","BarberenaSantaRosa","SantaRosa","agua","SCEP","SantaRosaGT"]
 ---
-#ELCERINAL | Inauguración del nuevo pozo mecánico para la aldea
+Inauguración del nuevo pozo mecánico para la aldea
 
 Este martes se entregó el pozo mecánico que se encuentra detrás del rastro municipal, en aldea El Cerinal.
 

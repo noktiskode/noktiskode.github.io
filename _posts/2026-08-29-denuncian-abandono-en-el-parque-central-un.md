@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| Denuncian abandono en el parque central Un…"
+title: "Denuncian abandono en el parque central Un vecino reportó, a través de la página Barberena Santa Rosa, el estado de abandono en que se encuentra el parque de Barberena: no hay jardines y las lámparas están improvisadas con plafoneras adaptadas."
 date: 2026-08-29T21:50:27.000Z
 excerpt: "#Barberena | Denuncian abandono en el parque central Un vecino reportó, a través de la página Barberena Santa Rosa, el estado de abandono en que se encuentra el"
 category: barberena
 tags: ["Barberena","ParqueBarrios","BarberenaSantaRosa","SantaRosaGT","Tishudos","barberenenses"]
 ---
-#Barberena | Denuncian abandono en el parque central
+Denuncian abandono en el parque central
 
 Un vecino reportó, a través de la página Barberena Santa Rosa, el estado de abandono en que se encuentra el parque de Barberena: no hay jardines y las lámparas están improvisadas con plafoneras adaptadas.
 

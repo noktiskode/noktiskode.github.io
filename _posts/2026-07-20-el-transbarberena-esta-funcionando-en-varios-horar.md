@@ -1,6 +1,6 @@
 ---
 featured: false
-title: ¿El Transbarberena está funcionando? En varios horarios,…
+title: "¿El Transbarberena está funcionando? En varios horarios"
 date: 2026-07-20T18:02:24.000Z
 image: /images/blog/122222844110318393.jpg
 excerpt: ¿El Transbarberena está funcionando? En varios horarios, según reportan

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: Historia del Templo de Minerva
+title: "Historia del Templo de Minerva"
 date: 2026-09-01T14:54:00.000-06:00
 image: /images/blog/1000038996.jpg
 excerpt: El Templo de Minerva se ubica en la cabecera municipal de Barberena,

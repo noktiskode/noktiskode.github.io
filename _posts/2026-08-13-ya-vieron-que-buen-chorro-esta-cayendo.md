@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| ¿Ya vieron qué buen chorro está cayendo…"
+title: "¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE?"
 date: 2026-08-13T20:31:23.000Z
 excerpt: "#ELCERINAL | ¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE? Corrijo: en la casa de un vecino 😉. Porque hay secto"
 category: barberena
 tags: ["ELCERINAL","Cerinal","Barberena","BarberenaSantaRosa","SantaRosaGT","SantaRosa","agua"]
 ---
-#ELCERINAL | ¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE?
+¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE?
 
 Corrijo: en la casa de un vecino 😉. Porque hay sectores donde el agua todavía no llega, o llega un chorrito sin presión, y en otros lugares ni siquiera cae y tienen que comprar pipas.
 

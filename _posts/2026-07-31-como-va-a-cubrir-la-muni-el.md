@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| ¿CÓMO VA A CUBRIR LA MUNI EL…"
+title: "¿Cómo va A cubrir la muni el hueco que deja la eliminación del IUSI?"
 date: 2026-07-31T16:01:01.000Z
 image: "/images/blog/122223852224318393.jpg"
 excerpt: "#Barberena | ¿CÓMO VA A CUBRIR LA MUNI EL HUECO QUE DEJA LA ELIMINACIÓN DEL IUSI? La Municipalidad de Barberena recaudó Q3.89 millones por IUSI en 2025, sobre u"
 category: barberena
 tags: ["Barberena","SantaRosa","SantaRosaGT","Guatemala","IUSI","CongresoGT","impuestos"]
 ---
-#Barberena | ¿CÓMO VA A CUBRIR LA MUNI EL HUECO QUE DEJA LA ELIMINACIÓN DEL IUSI?
+¿CÓMO VA A CUBRIR LA MUNI EL HUECO QUE DEJA LA ELIMINACIÓN DEL IUSI?
 
 La Municipalidad de Barberena recaudó Q3.89 millones por IUSI en 2025, sobre una meta de casi Q5 millones para ese año. En lo que va de 2026, con una meta similar, lleva percibido Q2.7 millones — un 55%.
 

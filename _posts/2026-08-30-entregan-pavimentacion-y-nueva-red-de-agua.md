@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Entregan pavimentación y nueva red de agua…"
+title: "Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal) La Municipalidad de Barberena inauguró este fin de semana el proyecto de pavimentación del Callejón San Antonio, en el sector"
 date: 2026-08-30T01:20:46.000Z
 image: "/images/blog/122226868622318393.jpg"
 excerpt: "#ELCERINAL | Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal) La Municipalidad de Barberena inauguró este fin de se"
 category: barberena
 tags: ["ELCERINAL","Cerinal","Barberena","BarberenaSantaRosa","SantaRosaGT","ObrasPublicas"]
 ---
-#ELCERINAL | Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal)
+Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal)
 
 La Municipalidad de Barberena inauguró este fin de semana el proyecto de pavimentación del Callejón San Antonio, en el sector El Jocote, aldea El Cerinal, que incluyó además la instalación de nueva red de conducción y distribución de agua potable.
 

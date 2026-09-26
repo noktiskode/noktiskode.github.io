@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Regalar una silla de ruedas está bien.…"
+title: "Regalar una silla de ruedas está bien."
 date: 2026-09-02T16:37:13.000Z
 image: "/images/blog/122227246382318393.jpg"
 excerpt: "#Barberena | Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano. Pero en Barberena hemos aprendido que ese gesto tiene una condición: "
 category: barberena
 tags: ["Barberena","Cerinal","BarberenaSantaRosa","SantaRosaGT","PoliticaGT"]
 ---
-#Barberena | Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano.
+Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano.
 
 Pero en Barberena hemos aprendido que ese gesto tiene una condición: si no hay video, no existió.
 

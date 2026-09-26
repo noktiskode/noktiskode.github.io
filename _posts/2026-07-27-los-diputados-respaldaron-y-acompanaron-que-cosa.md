@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LOS DIPUTADOS \"RESPALDARON Y ACOMPAÑARON\"... ¿QUÉ COSA…"
+title: "Los diputados \"respaldaron Y acompañaron\""
 date: 2026-07-27T19:05:42.000Z
 image: "/images/blog/122223481046318393.jpg"
 excerpt: "#SantaRosa | LOS DIPUTADOS \"RESPALDARON Y ACOMPAÑARON\"... ¿QUÉ COSA EXACTAMENTE? Esta semana varias páginas publicaron el mismo texto, palabra por palabra, dici"
 category: barberena
 tags: ["SantaRosa","Barberena","SantaRosaGT","TishudosNoFocas","DóndeEstáElExpediente"]
 ---
-#SantaRosa | LOS DIPUTADOS "RESPALDARON Y ACOMPAÑARON"... ¿QUÉ COSA EXACTAMENTE?
+LOS DIPUTADOS "RESPALDARON Y ACOMPAÑARON"... ¿QUÉ COSA EXACTAMENTE?
 
 Esta semana varias páginas publicaron el mismo texto, palabra por palabra, diciendo que los diputados Napo Rojas y Ricardo Alarcón ayudaron a traer fondos para obras en Barberena.
 

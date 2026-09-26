@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "LOS HORNITOS: LOS TRABAJOS VAN A UN…"
+title: "Los Hornitos: los trabajos van A un ritmo lento A mes y medio del vencimiento del contrato, el supervisor advierte que \"los trabajos de ejecución no han tenido mayor avance, van a un ritmo lento y se sugiere a la empresa"
 date: 2026-07-14T16:03:35.000Z
 image: /images/blog/122222265488318393.jpg
 excerpt: 'LOS HORNITOS: LOS TRABAJOS VAN A UN RITMO LENTO A mes y medio del

@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "La función de un COCODE es identificar las…"
+title: "La función de un COCODE es identificar las necesidades de la comunidad, proponer soluciones y gestionar proyectos de desarrollo social, económico y cultural ante la municipalidad."
 date: 2026-07-16T16:07:04.000Z
 image: "/images/blog/122222465258318393.jpg"
 excerpt: "La función de un COCODE es identificar las necesidades de la comunidad, proponer soluciones y gestionar proyectos de desarrollo social, económico y cultural ant"

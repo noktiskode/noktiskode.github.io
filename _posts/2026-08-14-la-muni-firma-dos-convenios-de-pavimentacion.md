@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN…"
+title: "La muni firma dos convenios de pavimentación"
 date: 2026-08-14T16:43:58.000Z
 image: "/images/blog/122225313944318393.jpg"
 excerpt: "#Barberena | LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN El alcalde Pepe Rueda Vallejo anunció la firma de dos proyectos de pavimentación para Barberena. Según"
 category: barberena
 tags: ["Barberena","Codede","Cerinal","BarberenaSantaRosa","SantaRosaGT","Guatemala"]
 ---
-#Barberena | LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN
+LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN
 
 El alcalde Pepe Rueda Vallejo anunció la firma de dos proyectos de pavimentación para Barberena.
 

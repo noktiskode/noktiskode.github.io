@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| Lico Cruz se pronunció sobre el ordenamiento…"
+title: "Lico Cruz se pronunció sobre el ordenamiento vial en Barberena Resulta que este lunes, el licenciado y exconcejal Federico Fulgencio Cruz Suárez sacó un video hablando fuerte y claro sobre varios temas que tienen inconforme a más de un vecino."
 date: 2026-08-17T22:56:40.000Z
 image: "/images/blog/122225649782318393.jpg"
 excerpt: "#Barberena | Lico Cruz se pronunció sobre el ordenamiento vial en Barberena Resulta que este lunes, el licenciado y exconcejal Federico Fulgencio Cruz Suárez sa"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","SantaRosa","PMT","OrdenVial","Cerinal"]
 ---
-#Barberena | Lico Cruz se pronunció sobre el ordenamiento vial en Barberena
+Lico Cruz se pronunció sobre el ordenamiento vial en Barberena
 
 Resulta que este lunes, el licenciado y exconcejal Federico Fulgencio Cruz Suárez sacó un video hablando fuerte y claro sobre varios temas que tienen inconforme a más de un vecino.
 

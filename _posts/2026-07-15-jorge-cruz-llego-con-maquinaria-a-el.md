@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| JORGE CRUZ LLEGÓ CON MAQUINARIA A EL…"
+title: "Jorge Cruz llegó con maquinaria A El Pino Jorge Cruz, \"El Mojarro\", publicó un video en su cuenta de Facebook en donde comenta que los vecinos de la aldea El Pino le hicieron una solicitud para que les apoyara con darle"
 date: 2026-07-15T17:54:13.000Z
 image: "/images/blog/122222368478318393.jpg"
 excerpt: "#ELCERINAL | JORGE CRUZ LLEGÓ CON MAQUINARIA A EL PINO Jorge Cruz, \"El Mojarro\", publicó un video en su cuenta de Facebook en donde comenta que los vecinos de l"
 category: barberena
 tags: ["ELCERINAL","Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#ELCERINAL | JORGE CRUZ LLEGÓ CON MAQUINARIA A EL PINO
+JORGE CRUZ LLEGÓ CON MAQUINARIA A EL PINO
 
 Jorge Cruz, "El Mojarro", publicó un video en su cuenta de Facebook en donde comenta que los vecinos de la aldea El Pino le hicieron una solicitud para que les apoyara con darle mantenimiento a un callejón, ya que, según ellos, se encontraba intransitable.
 

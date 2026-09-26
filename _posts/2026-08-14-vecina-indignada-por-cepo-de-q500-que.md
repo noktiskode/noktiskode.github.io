@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| VECINA INDIGNADA POR CEPO DE Q500 QUE…"
+title: "Vecina indignada por cepo de Q500 que le colocó la PMT de Barberena La PMT sigue dando de qué hablar."
 date: 2026-08-14T00:37:43.000Z
 excerpt: "#Barberena | VECINA INDIGNADA POR CEPO DE Q500 QUE LE COLOCÓ LA PMT DE BARBERENA La PMT sigue dando de qué hablar. Después del round con los tuctuqueros en El C"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa","PMT","Cerinal"]
 ---
-#Barberena | VECINA INDIGNADA POR CEPO DE Q500 QUE LE COLOCÓ LA PMT DE BARBERENA
+VECINA INDIGNADA POR CEPO DE Q500 QUE LE COLOCÓ LA PMT DE BARBERENA
 
 La PMT sigue dando de qué hablar. Después del round con los tuctuqueros en El Cerinal, ahora le tocó a esta vecina.
 

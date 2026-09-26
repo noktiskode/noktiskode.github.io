@@ -1,13 +1,12 @@
 ---
 featured: false
-title: "La gente tiene duda de si se están…"
+title: "La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo."
 date: 2026-07-19T00:00:50.000Z
 image: "/images/blog/122222682026318393.jpg"
 excerpt: "#BarberenaPregunta La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo. Publicación original 👇 https:/"
 category: barberena
 tags: ["BarberenaPregunta","Barberena","ElCerinal","SantaRosa"]
 ---
-#BarberenaPregunta 
 La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo.
 
 Publicación original 👇

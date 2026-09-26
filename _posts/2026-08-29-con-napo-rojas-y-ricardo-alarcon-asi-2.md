@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ…"
+title: "Con Napo Rojas Y Ricardo Alarcón: así se inauguró La Ladrillera La Muni inauguró este viernes la calle de La Ladrillera en el casco urbano de Barberena."
 date: 2026-08-29T16:54:07.000Z
 excerpt: "#Barberena | CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ SE INAUGURÓ LA LADRILLERA La Muni inauguró este viernes la calle de La Ladrillera en el casco urbano de Barbe"
 category: barberena
 tags: ["Barberena","LaLadrillera","BarberenaSantaRosa","SantaRosaGT","ObrasPublicas","show","PanYCirco"]
 ---
-#Barberena | CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ SE INAUGURÓ LA LADRILLERA
+CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ SE INAUGURÓ LA LADRILLERA
 
 La Muni inauguró este viernes la calle de La Ladrillera en el casco urbano de Barberena. Para eso cerraron el paso vehicular desde las 6 de la mañana, provocando atrancazones, pero el show tenía que continuar.
 

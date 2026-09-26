@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE…"
+title: "Rubelio Recinos llegó A la escuelita de El Pino A través de sus redes sociales, Recinos publicó un video en el que se le ve recorriendo la escuelita, acompañado de un mensaje en el que resta importancia a las críticas qu"
 date: 2026-08-27T18:15:39.000Z
 image: "/images/blog/122226633002318393.jpg"
 excerpt: "#Barberena | RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE EL PINO A través de sus redes sociales, Recinos publicó un video en el que se le ve recorriendo la escuelit"
 category: barberena
 tags: ["Barberena","ElPino","Cerinal","BarberenaSantaRosa","SantaRosa","Escuelita"]
 ---
-#Barberena | RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE EL PINO
+RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE EL PINO
 
 A través de sus redes sociales, Recinos publicó un video en el que se le ve recorriendo la escuelita, acompañado de un mensaje en el que resta importancia a las críticas que, según él, ha recibido últimamente:
 

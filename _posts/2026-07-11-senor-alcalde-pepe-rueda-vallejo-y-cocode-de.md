@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "\"SEÑOR ALCALDE PEPE RUEDA VALLEJO Y COCODE DE…"
+title: "Señor alcalde Pepe Rueda Vallejo Y COCODE de El Cerinal: Con el debido respeto que merece, hago un llamado a su persona y al COCODE de El Cerinal para que se pongan la mano en la conciencia."
 date: 2026-07-11T20:19:13.000Z
 image: "/images/blog/122222005922318393.jpg"
 excerpt: "\"SEÑOR ALCALDE PEPE RUEDA VALLEJO Y COCODE DE EL CERINAL: Con el debido respeto que merece, hago un llamado a su persona y al Cocode de El Cerinal para que se p"

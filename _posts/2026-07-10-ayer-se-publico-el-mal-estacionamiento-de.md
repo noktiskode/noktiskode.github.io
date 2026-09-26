@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| \"Ayer se publicó el 'mal estacionamiento' de…"
+title: "Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado."
 date: 2026-07-10T21:58:56.000Z
 image: "/images/blog/122221913060318393.jpg"
 excerpt: "#Barberena | \"Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado. Señores comerciantes, ustedes no son los dueños de la calle, ocupa"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","BarberenaMiMunicipio","SantaRosaGT","santarosa"]
 ---
-#Barberena | "Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado.
+"Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado.
 
 Señores comerciantes, ustedes no son los dueños de la calle, ocupan banquetas y parte de la calle, a diario y todo el día, ¿qué pasa entonces con el respeto al derecho ajeno?
 

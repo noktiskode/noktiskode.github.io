@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4…"
+title: "Proyecto de pavimentación sector san jorge 4"
 date: 2026-08-08T02:07:29.000Z
 image: "/images/blog/122224637438318393.jpg"
 excerpt: "#ElCerinal | PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4 Hoy fue inaugurada una calle en el sector de San Jorge 4, en El Cerinal. Este proyecto se realizó en c"
 category: barberena
 tags: ["ElCerinal","Barberena","BarberenaSantaRosa","SantaRosa","Cerinal"]
 ---
-#ElCerinal | PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4
+PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4
 
 Hoy fue inaugurada una calle en el sector de San Jorge 4, en El Cerinal. Este proyecto se realizó en conjunto entre los vecinos del sector y la Municipalidad de #Barberena: los vecinos pusieron la mano de obra y la Muni, los materiales.
 

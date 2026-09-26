@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN…"
+title: "Rubelio Recinos realiza entrega de verduras en Arimany El excalde Rubelio Recinos compartió una publicación en la que se le observa con familias del sector Arimany, durante una entrega de verduras."
 date: 2026-07-28T21:35:36.000Z
 image: "/images/blog/122223578474318393.jpg"
 excerpt: "#Barberena | RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN ARIMANY El excalde Rubelio Recinos compartió una publicación en la que se le observa con familias de"
 category: barberena
 tags: ["Barberena","Arimany","Cerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#Barberena | RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN ARIMANY
+RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN ARIMANY
 
 El excalde Rubelio Recinos compartió una publicación en la que se le observa con familias del sector Arimany, durante una entrega de verduras.
 

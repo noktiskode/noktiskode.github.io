@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| PAVIMENTO NUEVO EN ARIMANY: 'Su terreno vale…"
+title: "Pavimento nuevo en Arimany: 'Su terreno vale el doble', dice el alcalde La Municipalidad inauguró, ayer y hoy, dos nuevas calles trabajadas en conjunto con los vecinos del Callejón Los Ramírez, Aldea Buena Vista, y con los vecinos de calle La Luz Del Mundo, sector Arimany."
 date: 2026-07-19T00:35:02.000Z
 image: "/images/blog/122222683688318393.jpg"
 excerpt: "#Barberena | PAVIMENTO NUEVO EN ARIMANY: 'Su terreno vale el doble', dice el alcalde La Municipalidad inauguró, ayer y hoy, dos nuevas calles trabajadas en conj"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa"]
 ---
-#Barberena | PAVIMENTO NUEVO EN ARIMANY: 'Su terreno vale el doble', dice el alcalde
+PAVIMENTO NUEVO EN ARIMANY: 'Su terreno vale el doble', dice el alcalde
 
 La Municipalidad inauguró, ayer y hoy, dos nuevas calles trabajadas en conjunto con los vecinos del Callejón Los Ramírez, Aldea Buena Vista, y con los vecinos de calle La Luz Del Mundo, sector Arimany.
 

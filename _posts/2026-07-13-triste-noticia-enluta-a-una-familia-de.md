@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| TRISTE NOTICIA ENLUTA A UNA FAMILIA DE…"
+title: "Triste noticia enluta A una familia de nuestro municipio La noche de ayer, un lamentable accidente ocurrió sobre el kilómetro 52.8 de la carretera a El Salvador, en el sector conocido como Quebrada La Galera, donde dos a"
 date: 2026-07-13T13:01:04.000Z
 image: "/images/blog/122222160068318393.jpg"
 excerpt: "#Barberena | TRISTE NOTICIA ENLUTA A UNA FAMILIA DE NUESTRO MUNICIPIO La noche de ayer, un lamentable accidente ocurrió sobre el kilómetro 52.8 de la carretera "
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#Barberena | TRISTE NOTICIA ENLUTA A UNA FAMILIA DE NUESTRO MUNICIPIO
+TRISTE NOTICIA ENLUTA A UNA FAMILIA DE NUESTRO MUNICIPIO
 
 La noche de ayer, un lamentable accidente ocurrió sobre el kilómetro 52.8 de la carretera a El Salvador, en el sector conocido como Quebrada La Galera, donde dos adultos mayores fueron atropellados cuando, según lo comentado por personas del sector, se disponían a regresar a su hogar en El Carrito de la Cruz.
 

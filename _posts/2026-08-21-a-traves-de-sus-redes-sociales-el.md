@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| A través de sus redes sociales, el…"
+title: "A través de sus redes sociales, el exalcalde compartió una publicación: \"Hoy estuvimos cerca de las familias para conocer de primera mano lo que están viviendo y brindarles un poco de apoyo ante esta necesidad."
 date: 2026-08-21T17:25:20.000Z
 image: "/images/blog/122226049322318393.jpg"
 excerpt: "#Barberena | A través de sus redes sociales, el exalcalde compartió una publicación: \"Hoy estuvimos cerca de las familias para conocer de primera mano lo que es"
 category: barberena
 tags: ["Barberena","Cerinal","BarberenaSantaRosa","SantaRosaGT","SinAgua","agua","SantaRosa"]
 ---
-#Barberena | A través de sus redes sociales, el exalcalde compartió una publicación:
+A través de sus redes sociales, el exalcalde compartió una publicación:
 "Hoy estuvimos cerca de las familias para conocer de primera mano lo que están viviendo y brindarles un poco de apoyo ante esta necesidad. Una realidad que merece ser escuchada."
 
 En el video:

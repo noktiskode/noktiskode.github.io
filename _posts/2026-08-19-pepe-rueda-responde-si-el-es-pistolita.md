@@ -1,12 +1,12 @@
 ---
 featured: false
-title: "| PEPE RUEDA RESPONDE SI ÉL ES \"PISTOLITA\"…"
+title: "Pepe Rueda responde si él es \"pistolita\""
 date: 2026-08-19T06:53:57.000Z
 excerpt: "#Barberena | PEPE RUEDA RESPONDE SI ÉL ES \"PISTOLITA\" Desde hace un tiempo, el exalcalde Rubelio Recinos ha mencionado varias veces a alguien a quien llama \"Pis"
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosa","Cerinal","BarberenaMiMunicipio","SantaRosaGT"]
 ---
-#Barberena | PEPE RUEDA RESPONDE SI ÉL ES "PISTOLITA"
+PEPE RUEDA RESPONDE SI ÉL ES "PISTOLITA"
 
 Desde hace un tiempo, el exalcalde Rubelio Recinos ha mencionado varias veces a alguien a quien llama "Pistolita," sin que se sepa con certeza a quién se refiere. La más reciente, durante una actividad comunitaria de reparto: "Díganle a Pistolita que voy un paso adelante."
 

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "|| \"EL AÑO DEL AGUA\" 💧 Bien, algunos…"
+title: "\"El año del agua\""
 date: 2026-07-23T17:30:22.000Z
 image: "/images/blog/122223123776318393.jpg"
 excerpt: "#Barberena || \"EL AÑO DEL AGUA\" 💧 Bien, algunos de ustedes quieren saber cómo va el avance en la perforación de los nuevos pozos y del mejoramiento del sistema"
 category: barberena
 tags: ["Barberena","ELCERINAL","BarberenaSantaRosa","SantaRosaGT","santarosa","agua","aguapotable"]
 ---
-#Barberena || "EL AÑO DEL AGUA" 💧
+"EL AÑO DEL AGUA" 💧
 
 Bien, algunos de ustedes quieren saber cómo va el avance en la perforación de los nuevos pozos y del mejoramiento del sistema de agua potable en el municipio. Bueno, en algunos casos ha habido prórrogas porque, según, se han topado con material durísimo, durísimo.
 

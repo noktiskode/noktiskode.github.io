@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS Rubelio Recinos…"
+title: "Rubelio Recinos sigue entregando verduras"
 date: 2026-07-14T19:23:42.000Z
 image: "/images/blog/122222287346318393.jpg"
 excerpt: "#BARBERENA | RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS Rubelio Recinos continúa recorriendo las comunidades y entregando verduras a las familias. \"Continuamos r"
 category: barberena
 tags: ["BARBERENA","BarberenaSantaRosa","SantaRosaGT","santarosa","ELCERINAL"]
 ---
-#BARBERENA | RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS
+RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS
 
 Rubelio Recinos continúa recorriendo las comunidades y entregando verduras a las familias.
 

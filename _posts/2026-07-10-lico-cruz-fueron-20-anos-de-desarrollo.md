@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LICO CRUZ: \"FUERON 20 AÑOS DE DESARROLLO\"…"
+title: "Lico Cruz: \"fueron 20 años de desarrollo\""
 date: 2026-07-10T16:00:27.000Z
 image: "/images/blog/122221890734318393.jpg"
 excerpt: "#BARBERENA | LICO CRUZ: \"FUERON 20 AÑOS DE DESARROLLO\" El licenciado Federico Fulgencio Cruz, exconcejal municipal, publicó ayer un video desde su perfil de Fac"
 category: barberena
 tags: ["BARBERENA","SanNicolas","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#BARBERENA | LICO CRUZ: "FUERON 20 AÑOS DE DESARROLLO"
+LICO CRUZ: "FUERON 20 AÑOS DE DESARROLLO"
 
 El licenciado Federico Fulgencio Cruz, exconcejal municipal, publicó ayer un video desde su perfil de Facebook comentando que durante la administración anterior sí se trabajó y que se pavimentaron todas las calles de San Nicolás, menos el proyecto reciente que conecta con Fraijanes. Mencionó también que se construyó un salón comunal.
 

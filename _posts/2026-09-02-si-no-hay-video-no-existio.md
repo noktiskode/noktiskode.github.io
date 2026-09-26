@@ -1,5 +1,5 @@
 ---
-title: Si no hay video, no existió
+title: "Si no hay video, no existió"
 layout: post
 date: 2026-09-02T10:48:00.000-06:00
 image: /images/blog/1000037776.jpg

@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| SALÓN DE USOS MÚLTIPLES, ASÍ VA LA…"
+title: "Salón de usos múltiples, así va la cosa Según Guatecompras, el contrato 29-2025 (nog 28233751) para el salón de usos múltiples de barrio El Tanque se firmó el 12 de diciembre de 2025 con Suministro Zurdo, S.A., por Q5,250,000.00, con un plazo original de cuatro meses."
 date: 2026-07-15T23:59:56.000Z
 image: "/images/blog/122222390960318393.jpg"
 excerpt: "#Barberena | SALÓN DE USOS MÚLTIPLES, ASÍ VA LA COSA Según Guatecompras, el contrato 29-2025 (NOG 28233751) para el salón de usos múltiples de barrio El Tanque "
 category: barberena
 tags: ["Barberena","BarberenaSantaRosa","SantaRosaGT","santarosa","guatecompras"]
 ---
-#Barberena | SALÓN DE USOS MÚLTIPLES, ASÍ VA LA COSA
+SALÓN DE USOS MÚLTIPLES, ASÍ VA LA COSA
 
 Según Guatecompras, el contrato 29-2025 (NOG 28233751) para el salón de usos múltiples de barrio El Tanque se firmó el 12 de diciembre de 2025 con Suministro Zurdo, S.A., por Q5,250,000.00, con un plazo original de cuatro meses. Ese plazo venció, y la empresa pidió una ampliación de cuatro meses más citando dificultades con la demolición del salón anterior y afectaciones por lluvia. El nuevo límite quedó para el 17 de agosto.
 

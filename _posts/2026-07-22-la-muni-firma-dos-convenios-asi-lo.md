@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LA MUNI FIRMA DOS CONVENIOS Así lo…"
+title: "La muni firma dos convenios"
 date: 2026-07-22T21:00:55.000Z
 image: "/images/blog/122223047804318393.jpg"
 excerpt: "#Barberena | LA MUNI FIRMA DOS CONVENIOS Así lo informó ayer el alcalde Pepe Rueda a través de un video publicado en su cuenta de Facebook. Estas dos firmas rep"
 category: barberena
 tags: ["Barberena","ElCerinal","BarberenaSantaRosa","SantaRosaGT","SantaRosa"]
 ---
-#Barberena | LA MUNI FIRMA DOS CONVENIOS
+LA MUNI FIRMA DOS CONVENIOS
 
 Así lo informó ayer el alcalde Pepe Rueda a través de un video publicado en su cuenta de Facebook. Estas dos firmas representan dos proyectos importantes para El Cerinal y la aldea El Pino.
 

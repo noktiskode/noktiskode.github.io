@@ -1,6 +1,6 @@
 ---
 featured: false
-title: "Multan a repartidor en mientras la comunidad denuncia…"
+title: "Multan a repartidor en mientras la comunidad denuncia meses sin agua Una boleta de infracción de tránsito, emitida el 11 de agosto por la PMT de Barberena, documenta la sanción a un motociclista en el Km 47, aldea El Cer"
 date: 2026-08-12T00:00:22.000Z
 image: "/images/blog/122225029394318393.jpg"
 excerpt: "Multan a repartidor en #ELCERINAL mientras la comunidad denuncia meses sin agua Una boleta de infracción de tránsito, emitida el 11 de agosto por la PMT de Barb"

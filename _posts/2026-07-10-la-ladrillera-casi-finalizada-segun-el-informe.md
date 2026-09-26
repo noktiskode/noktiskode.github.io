@@ -1,13 +1,13 @@
 ---
 featured: false
-title: "| LA LADRILLERA CASI FINALIZADA Según el Informe…"
+title: "La Ladrillera casi finalizada"
 date: 2026-07-10T01:00:20.000Z
 image: "/images/blog/122221829672318393.jpg"
 excerpt: "#BARBERENA | LA LADRILLERA CASI FINALIZADA Según el Informe de Supervisión No. 4 de la Municipalidad de Barberena (6 de julio 2026), el proyecto \"Mejoramiento C"
 category: barberena
 tags: ["BARBERENA","BarberenaSantaRosa","SantaRosaGT","SantaRosa","ObraPública"]
 ---
-#BARBERENA | LA LADRILLERA CASI FINALIZADA
+LA LADRILLERA CASI FINALIZADA
 
 Según el Informe de Supervisión No. 4 de la Municipalidad de Barberena (6 de julio 2026), el proyecto "Mejoramiento Calle Sector La Ladrillera" reporta un avance físico del 95.14%.
 
