@@ -108,7 +108,11 @@
             <div>
               <label for="image">Imagen destacada</label>
               <input id="image" placeholder="/images/blog/foto.webp">
-              <p class="help">Usá una ruta pública del sitio o una URL completa.</p>
+              <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+                <input type="file" id="image-file" accept="image/*" style="flex:1">
+                <button type="button" id="image-upload-btn" class="btn btn-secondary">Subir</button>
+              </div>
+              <p class="help" id="image-upload-status">O escribí una ruta/URL a mano arriba.</p>
             </div>
 
             <div>
@@ -124,8 +128,12 @@
 
             <div class="full">
               <label for="body">Contenido *</label>
+              <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+                <input type="file" id="body-image-file" accept="image/*" style="flex:1">
+                <button type="button" id="body-image-upload-btn" class="btn btn-secondary">Insertar imagen aquí</button>
+              </div>
               <textarea id="body" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
-              <p class="help">Se admite Markdown y HTML básico, igual que en los posts migrados.</p>
+              <p class="help" id="body-image-status">Se admite Markdown y HTML básico, igual que en los posts migrados. La imagen se inserta donde esté el cursor.</p>
             </div>
 
             <div class="full check">
@@ -184,6 +192,61 @@
     const words=first.split(/\s+/).filter(Boolean);
     return words.length>40 ? words.slice(0,40).join(' ')+'…' : first;
   }
+
+  async function uploadImage(file){
+    const ext = (file.name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g,'') || 'jpg';
+    const path = Date.now() + '-' + Math.random().toString(36).slice(2,8) + '.' + ext;
+    const {error} = await client.storage.from('post-images').upload(path, file, {
+      cacheControl: '31536000', upsert: false
+    });
+    if(error) throw error;
+    const {data} = client.storage.from('post-images').getPublicUrl(path);
+    return data.publicUrl;
+  }
+
+  $('image-upload-btn').addEventListener('click', async ()=>{
+    const file = $('image-file').files[0];
+    const status = $('image-upload-status');
+    if(!file){ status.textContent='Elegí un archivo primero.'; return; }
+    const btn=$('image-upload-btn'); btn.disabled=true; btn.textContent='Subiendo…';
+    status.textContent='Subiendo imagen…';
+    try{
+      const url = await uploadImage(file);
+      $('image').value = url;
+      status.textContent = 'Imagen subida y cargada arriba.';
+      $('image-file').value = '';
+    }catch(err){
+      console.error(err);
+      status.textContent = 'No se pudo subir: ' + (err.message || 'Error desconocido');
+    }finally{
+      btn.disabled=false; btn.textContent='Subir';
+    }
+  });
+
+  $('body-image-upload-btn').addEventListener('click', async ()=>{
+    const file = $('body-image-file').files[0];
+    const status = $('body-image-status');
+    if(!file){ status.textContent='Elegí un archivo primero.'; return; }
+    const btn=$('body-image-upload-btn'); btn.disabled=true; btn.textContent='Subiendo…';
+    status.textContent='Subiendo imagen…';
+    try{
+      const url = await uploadImage(file);
+      const ta = $('body');
+      const start = ta.selectionStart ?? ta.value.length;
+      const end = ta.selectionEnd ?? ta.value.length;
+      const snippet = '\n\n![](' + url + ')\n\n';
+      ta.value = ta.value.slice(0,start) + snippet + ta.value.slice(end);
+      const newPos = start + snippet.length;
+      ta.focus(); ta.setSelectionRange(newPos, newPos);
+      status.textContent = 'Imagen insertada en el contenido.';
+      $('body-image-file').value = '';
+    }catch(err){
+      console.error(err);
+      status.textContent = 'No se pudo subir: ' + (err.message || 'Error desconocido');
+    }finally{
+      btn.disabled=false; btn.textContent='Insertar imagen aquí';
+    }
+  });
 
   $('published-at').value=localDateTime();
   $('title').addEventListener('input',()=>{ if(!$('slug').dataset.manual) $('slug').value=slugify($('title').value); });
