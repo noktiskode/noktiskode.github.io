@@ -127,9 +127,58 @@
     });
   }
 
+  function injectEditableStyles() {
+    if (document.getElementById('inline-edit-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'inline-edit-styles';
+    style.textContent = `
+      body.is-admin [data-edit-target] {
+        cursor: pointer;
+        outline: 2px dashed rgba(239,79,29,.5);
+        outline-offset: 6px;
+        border-radius: 4px;
+        transition: outline-color .15s;
+      }
+      body.is-admin [data-edit-target]:hover {
+        outline-color: #ef4f1d;
+        background: rgba(239,79,29,.05);
+      }
+      body.is-admin [data-edit-target]::after {
+        content: '✏️ Editar';
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ef4f1d;
+        margin-top: 6px;
+      }
+      .inline-edit-input, .inline-edit-textarea {
+        width: 100%;
+        font: inherit;
+        padding: 6px 8px;
+        border: 2px solid #ef4f1d;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .inline-edit-save, .inline-edit-cancel {
+        margin-top: 6px;
+        margin-right: 6px;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .inline-edit-save { background: #ef4f1d; color: #fff; }
+      .inline-edit-cancel { background: #e5e5e5; color: #333; }
+    `;
+    document.head.appendChild(style);
+  }
+
   document.addEventListener('DOMContentLoaded', async function () {
     const session = await window.supabaseReady;
     if (!session) return; // sin sesión, no se activa nada
+
+    injectEditableStyles();
 
     // Modo tarjetas (listado): botón "Editar" aparte, edita el título del card
     document.querySelectorAll('[data-edit-link]').forEach(function (btn) {
