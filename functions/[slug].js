@@ -60,10 +60,36 @@ function escapeHtml(str) {
 
 function markdownToHtml(md) {
   if (!md) return '';
-  const paragraphs = md.trim().split(/\n\s*\n/);
-  return paragraphs
-    .map((p) => {
-      let html = escapeHtml(p.trim());
+  // Separa el cuerpo en bloques de HTML crudo (figure/div/img sueltos, que
+  // ya vienen escritos a mano en tus posts) y bloques de texto/markdown.
+  const htmlBlockRegex = /<figure[\s\S]*?<\/figure>|<div[\s\S]*?<\/div>|<img[^>]*>/gi;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  while ((match = htmlBlockRegex.exec(md)) !== null) {
+    if (match.index > lastIndex) parts.push({ type: 'text', content: md.slice(lastIndex, match.index) });
+    parts.push({ type: 'html', content: match[0] });
+    lastIndex = htmlBlockRegex.lastIndex;
+  }
+  if (lastIndex < md.length) parts.push({ type: 'text', content: md.slice(lastIndex) });
+
+  return parts
+    .map((part) => (part.type === 'html' ? part.content.trim() : textBlockToHtml(part.content)))
+    .filter(Boolean)
+    .join('\n');
+}
+
+function textBlockToHtml(text) {
+  const blocks = text.trim().split(/\n\s*\n/).filter((b) => b.trim());
+  return blocks
+    .map((block) => {
+      let html = escapeHtml(block.trim());
+      // Imagen markdown: ![alt](url)
+      html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, url) =>
+        `<img src="${url}" alt="${alt}" style="max-width:100%;border-radius:8px;">`);
+      // Enlace markdown: [texto](url)
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, url) =>
+        `<a href="${url}" target="_blank" rel="noopener">${t}</a>`);
       html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
       html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
       html = html.replace(/\n/g, '<br>');
@@ -249,6 +275,7 @@ ${related.map((r) => `      <a class="cb-related-card" href="/${r.slug}/"><small
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/css/clean-blog.css">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -264,7 +291,7 @@ ${headerHtml()}
     <header class="cb-article-header">
       <div class="meta"><a href="/${post.category}/">${categoryLabel}</a> · ${fecha} · ${minutes} min de lectura</div>
       <h1 data-edit-target data-slug="${slug}" data-inline-field="title">${title}</h1>
-      ${post.excerpt ? `<p class="cb-article-lead">${escapeHtml(post.excerpt)}</p>` : ''}
+      ${post.excerpt ? `<p class="cb-article-lead" data-edit-target data-slug="${slug}" data-inline-field="excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
     </header>
     ${mediaHtml}
     <div class="cb-article-body" data-edit-target data-slug="${slug}" data-inline-field="body">${bodyHtml}</div>
