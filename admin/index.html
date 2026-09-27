@@ -16,6 +16,7 @@
     button,a{font:inherit}
     .btn{border:0;border-radius:7px;padding:10px 15px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
     .btn-primary{background:var(--orange);color:#fff}.btn-secondary{background:#e9e9e9;color:#222}.btn:disabled{opacity:.55;cursor:wait}
+    .btn-delete{background:#8f2510;color:#fff;border:0;border-radius:7px;padding:10px 15px;font-weight:750;cursor:pointer}
     main{max-width:980px;margin:28px auto 60px;padding:0 16px}
     .notice{padding:12px 14px;border-radius:8px;margin-bottom:18px;font-size:14px;display:none}
     .notice.error{background:#ffe7e2;color:#8f2510;border:1px solid #f3b4a6}
@@ -250,8 +251,25 @@
     if(!data || !data.length){box.innerHTML='<span class="loading">No hay publicaciones.</span>';return;}
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
-      return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a></div>';
+      return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div>'
+        +'<div style="display:flex;gap:6px"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a>'
+        +'<button type="button" class="btn btn-delete" data-slug="'+escapeHtml(p.slug)+'" data-title="'+escapeHtml(p.title)+'">Eliminar</button></div></div>';
     }).join('');
+    box.querySelectorAll('.btn-delete').forEach(function(btn){
+      btn.addEventListener('click', async function(){
+        const slug = btn.dataset.slug, title = btn.dataset.title;
+        if(!confirm('¿Eliminar la publicación "'+title+'"? Esta acción no se puede deshacer.')) return;
+        btn.disabled = true; btn.textContent = 'Eliminando…';
+        const {error} = await client.from('posts').delete().eq('slug', slug);
+        if(error){
+          alert('No se pudo eliminar: ' + error.message);
+          btn.disabled = false; btn.textContent = 'Eliminar';
+          return;
+        }
+        show(okBox, 'Publicación eliminada.');
+        loadRecent();
+      });
+    });
   }
   function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
   init();
