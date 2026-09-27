@@ -1,15 +1,261 @@
----
-sitemap: false
----
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panel de administración — Barberena Mi Municipio</title>
-  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuevo post — Barberena Mi Municipio</title>
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    :root{--orange:#ef4f1d;--ink:#171717;--muted:#6b6b6b;--line:#dedede;--bg:#f5f5f3;--card:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .top{background:#111;color:#fff;padding:14px 18px;position:sticky;top:0;z-index:10}
+    .top-inner{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .brand{font-weight:800}.brand small{display:block;font-weight:500;color:#bbb;margin-top:2px}
+    button,a{font:inherit}
+    .btn{border:0;border-radius:7px;padding:10px 15px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+    .btn-primary{background:var(--orange);color:#fff}.btn-secondary{background:#e9e9e9;color:#222}.btn:disabled{opacity:.55;cursor:wait}
+    main{max-width:980px;margin:28px auto 60px;padding:0 16px}
+    .notice{padding:12px 14px;border-radius:8px;margin-bottom:18px;font-size:14px;display:none}
+    .notice.error{background:#ffe7e2;color:#8f2510;border:1px solid #f3b4a6}
+    .notice.ok{background:#e5f5ea;color:#235b36;border:1px solid #b9ddc4}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    h1{font-size:30px;margin:0 0 5px}.intro{color:var(--muted);margin:0 0 22px}
+    h2{font-size:20px;margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .full{grid-column:1/-1}
+    label{display:block;font-size:13px;font-weight:800;margin:0 0 6px}
+    input,select,textarea{width:100%;border:1px solid #cfcfcf;border-radius:7px;background:#fff;color:#171717;padding:11px 12px;font:inherit;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 2px rgba(239,79,29,.12)}
+    textarea{min-height:330px;resize:vertical;line-height:1.55}
+    .help{font-size:12px;color:var(--muted);margin:5px 0 0}
+    .slug-row{display:flex;gap:8px}.slug-row input{flex:1}
+    .check{display:flex;align-items:center;gap:8px;margin-top:25px}.check input{width:auto}
+    .actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:4px}
+    .result{display:none;margin-top:18px;padding:15px;border-radius:8px;background:#f4f4f4}
+    .result a{color:var(--orange);font-weight:750}
+    .posts{display:grid;gap:8px}
+    .post-item{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+    .post-item:last-child{border-bottom:0}.post-title{font-weight:750}.post-meta{font-size:12px;color:var(--muted);margin-top:3px}
+    .loading{color:var(--muted);font-size:14px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.top-inner{align-items:flex-start}.slug-row{display:block}.slug-row .btn{margin-top:7px}h1{font-size:26px}.card{padding:17px}}
+  </style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">Barberena Mi Municipio<small>Panel de publicaciones</small></div>
+      <div>
+        <a class="btn btn-secondary" href="/" style="margin-right:6px">Ver sitio</a>
+        <button id="logout" class="btn btn-secondary">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="notice-error" class="notice error"></div>
+    <div id="notice-ok" class="notice ok"></div>
+
+    <section id="login-required" class="card" style="display:none">
+      <h1>Acceso requerido</h1>
+      <p class="intro">Iniciá sesión para crear publicaciones.</p>
+      <a class="btn btn-primary" href="/login.html">Ir al inicio de sesión</a>
+    </section>
+
+    <section id="app" style="display:none">
+      <div class="card">
+        <h1>Nueva publicación</h1>
+        <p class="intro">La publicación se guarda directamente en Supabase. No se crea ningún archivo en GitHub.</p>
+
+        <form id="post-form">
+          <div class="grid">
+            <div class="full">
+              <label for="title">Título *</label>
+              <input id="title" required maxlength="180" autocomplete="off">
+            </div>
+
+            <div class="full">
+              <label for="slug">Slug / URL *</label>
+              <div class="slug-row">
+                <input id="slug" required maxlength="180" autocomplete="off">
+                <button type="button" id="make-slug" class="btn btn-secondary">Generar</button>
+              </div>
+              <p class="help">Será la dirección /slug/ de la publicación.</p>
+            </div>
+
+            <div>
+              <label for="published-at">Fecha y hora *</label>
+              <input id="published-at" type="datetime-local" required>
+            </div>
+
+            <div>
+              <label for="category">Categoría *</label>
+              <select id="category" required>
+                <option value="barberena">Barberena</option>
+                <option value="opiniones">Opiniones</option>
+                <option value="historias">Historias</option>
+              </select>
+            </div>
+
+            <div class="full">
+              <label for="excerpt">Resumen corto</label>
+              <textarea id="excerpt" style="min-height:90px" maxlength="500"></textarea>
+              <p class="help">Si lo dejás vacío, se generará a partir del primer párrafo.</p>
+            </div>
+
+            <div>
+              <label for="image">Imagen destacada</label>
+              <input id="image" placeholder="/images/blog/foto.webp">
+              <p class="help">Usá una ruta pública del sitio o una URL completa.</p>
+            </div>
+
+            <div>
+              <label for="video">Video (opcional)</label>
+              <input id="video" placeholder="https://www.youtube.com/watch?v=...">
+            </div>
+
+            <div class="full">
+              <label for="tags">Etiquetas</label>
+              <input id="tags" placeholder="Agua, Obras, Comunidad">
+              <p class="help">Separalas con comas.</p>
+            </div>
+
+            <div class="full">
+              <label for="body">Contenido *</label>
+              <textarea id="body" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
+              <p class="help">Se admite Markdown y HTML básico, igual que en los posts migrados.</p>
+            </div>
+
+            <div class="full check">
+              <input id="featured" type="checkbox">
+              <label for="featured" style="margin:0">Destacar en portada</label>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" id="clear" class="btn btn-secondary">Limpiar</button>
+            <button type="submit" id="save" class="btn btn-primary">Publicar directamente</button>
+          </div>
+        </form>
+
+        <div id="result" class="result"></div>
+      </div>
+
+      <div class="card">
+        <h2>Últimas publicaciones</h2>
+        <div id="recent" class="posts"><span class="loading">Cargando…</span></div>
+      </div>
+    </section>
+  </main>
+
+<script>
+(function(){
+  const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+  const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  window.supabaseClient = client;
+
+  const $ = id => document.getElementById(id);
+  const errorBox = $('notice-error'), okBox = $('notice-ok');
+
+  function show(box, msg){ box.textContent=msg; box.style.display='block'; }
+  function hide(box){ box.style.display='none'; }
+  function slugify(value){
+    return value.toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+      .toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,180);
+  }
+  function localDateTime(){
+    const d=new Date(); const p=n=>String(n).padStart(2,'0');
+    return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'T'+p(d.getHours())+':'+p(d.getMinutes());
+  }
+  function excerptFromBody(body){
+    const plain=body.replace(/<[^>]+>/g,'').replace(/[*_`#]/g,'').replace(/\[([^\]]+)\]\([^)]+\)/g,'$1').trim();
+    const first=plain.split(/\n\s*\n/)[0].trim();
+    const words=first.split(/\s+/).filter(Boolean);
+    return words.length>40 ? words.slice(0,40).join(' ')+'…' : first;
+  }
+
+  $('published-at').value=localDateTime();
+  $('title').addEventListener('input',()=>{ if(!$('slug').dataset.manual) $('slug').value=slugify($('title').value); });
+  $('slug').addEventListener('input',()=>{ $('slug').dataset.manual='1'; });
+  $('make-slug').addEventListener('click',()=>{ $('slug').value=slugify($('title').value); delete $('slug').dataset.manual; });
+
+  async function init(){
+    const {data,error}=await client.auth.getSession();
+    if(error){show(errorBox,'No se pudo comprobar la sesión: '+error.message);return;}
+    if(!data.session){ $('login-required').style.display='block'; return; }
+    $('app').style.display='block';
+    loadRecent();
+  }
+
+  $('logout').addEventListener('click',async()=>{
+    await client.auth.signOut();
+    location.href='/login.html';
+  });
+
+  $('clear').addEventListener('click',()=>{
+    $('post-form').reset();
+    $('published-at').value=localDateTime();
+    delete $('slug').dataset.manual;
+    $('result').style.display='none';
+    hide(errorBox); hide(okBox);
+  });
+
+  $('post-form').addEventListener('submit',async e=>{
+    e.preventDefault(); hide(errorBox); hide(okBox);
+    const title=$('title').value.trim(), slug=slugify($('slug').value), body=$('body').value.trim();
+    if(!title||!slug||!body){show(errorBox,'Completá el título, slug y contenido.');return;}
+    const tags=$('tags').value.split(',').map(x=>x.trim()).filter(Boolean);
+    const excerpt=$('excerpt').value.trim() || excerptFromBody(body);
+    const save=$('save'); save.disabled=true; save.textContent='Publicando…';
+    try{
+      const {data:exists,error:checkError}=await client.from('posts').select('slug').eq('slug',slug).maybeSingle();
+      if(checkError) throw checkError;
+      if(exists) throw new Error('Ese slug ya existe. Elegí otro o generá uno nuevo.');
+
+      const payload={
+        slug,title,excerpt,body,
+        category:$('category').value,
+        image_url:$('image').value.trim() || null,
+        video_url:$('video').value.trim() || null,
+        tags,
+        featured:$('featured').checked,
+        published:true,
+        published_at:new Date($('published-at').value).toISOString()
+      };
+      const {error}=await client.from('posts').insert(payload);
+      if(error) throw error;
+
+      const url='/'+encodeURIComponent(slug)+'/';
+      $('result').innerHTML='Publicación creada correctamente. <a href="'+url+'">Abrir publicación →</a>';
+      $('result').style.display='block';
+      show(okBox,'La publicación ya está en Supabase y el sitio la puede servir sin pasar por GitHub.');
+      $('post-form').reset();
+      $('published-at').value=localDateTime();
+      delete $('slug').dataset.manual;
+      loadRecent();
+    }catch(err){
+      console.error(err);
+      show(errorBox,'No se pudo publicar: '+(err.message || 'Error desconocido'));
+    }finally{
+      save.disabled=false; save.textContent='Publicar directamente';
+    }
+  });
+
+  async function loadRecent(){
+    const box=$('recent');
+    const {data,error}=await client.from('posts').select('slug,title,category,published_at').order('published_at',{ascending:false}).limit(8);
+    if(error){box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;}
+    if(!data || !data.length){box.innerHTML='<span class="loading">No hay publicaciones.</span>';return;}
+    box.innerHTML=data.map(p=>{
+      const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
+      return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a></div>';
+    }).join('');
+  }
+  function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  init();
+})();
+</script>
 </body>
 </html>
