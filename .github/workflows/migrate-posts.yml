@@ -1,0 +1,30 @@
+name: Migrar posts a Supabase
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Cuántos posts migrar (0 = todos)"
+        required: false
+        default: "10"
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install python-frontmatter requests
+
+      - name: Correr migración
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/migrate_posts.py --limit ${{ github.event.inputs.limit }}
