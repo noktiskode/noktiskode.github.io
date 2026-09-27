@@ -85,7 +85,9 @@ def parse_post(path: Path):
 
 
 def insert_batch(rows, supabase_url, service_key):
-    endpoint = f"{supabase_url}/rest/v1/posts"
+    # on_conflict=slug es necesario para que "resolution=ignore-duplicates"
+    # realmente ignore la fila conflictiva en vez de fallar el lote entero.
+    endpoint = f"{supabase_url}/rest/v1/posts?on_conflict=slug"
     headers = {
         "apikey": service_key,
         "Authorization": f"Bearer {service_key}",
@@ -97,6 +99,24 @@ def insert_batch(rows, supabase_url, service_key):
         print(f"  [ERROR] {res.status_code}: {res.text[:500]}")
         return False
     return True
+
+
+def dedupe_slugs(parsed_rows):
+    """Si dos posts distintos comparten slug, le agrega la fecha al segundo
+    en adelante para no perderlos ni pisar el primero."""
+    seen = {}
+    duplicates_found = []
+    for row in parsed_rows:
+        slug = row["slug"]
+        if slug not in seen:
+            seen[slug] = 1
+        else:
+            seen[slug] += 1
+            original = slug
+            date_part = row["published_at"][:10]  # YYYY-MM-DD
+            row["slug"] = f"{original}-{date_part}"
+            duplicates_found.append((original, row["slug"]))
+    return duplicates_found
 
 
 def main():
@@ -117,24 +137,27 @@ def main():
 
     print(f"Encontrados {len(files)} archivos para procesar.")
 
-    rows, ok, failed, skipped = [], 0, 0, 0
+    parsed_rows, skipped = [], 0
     for path in files:
         row = parse_post(path)
         if row is None:
             skipped += 1
             continue
-        rows.append(row)
+        parsed_rows.append(row)
 
-        if len(rows) >= args.batch_size:
-            success = insert_batch(rows, supabase_url, service_key)
-            ok += len(rows) if success else 0
-            failed += 0 if success else len(rows)
-            rows = []
+    duplicates = dedupe_slugs(parsed_rows)
+    if duplicates:
+        print(f"\n{len(duplicates)} slug(s) duplicado(s) — se les agregó la fecha para diferenciarlos:")
+        for original, new_slug in duplicates:
+            print(f"  {original}  ->  {new_slug}")
+        print()
 
-    if rows:
-        success = insert_batch(rows, supabase_url, service_key)
-        ok += len(rows) if success else 0
-        failed += 0 if success else len(rows)
+    ok, failed = 0, 0
+    for i in range(0, len(parsed_rows), args.batch_size):
+        batch = parsed_rows[i : i + args.batch_size]
+        success = insert_batch(batch, supabase_url, service_key)
+        ok += len(batch) if success else 0
+        failed += 0 if success else len(batch)
 
     print(f"\nListo. Insertados: {ok} | Fallidos: {failed} | Omitidos: {skipped}")
 
