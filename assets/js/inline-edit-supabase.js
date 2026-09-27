@@ -1,7 +1,6 @@
 /**
  * Edición en línea para BMM (versión Supabase).
  * Requiere que /assets/js/supabase-auth.js ya se haya cargado antes.
- * Reemplaza al viejo inline-edit.js (el que usaba la API de GitHub).
  */
 (function () {
   function startEdit(anchorEl, slug, field) {
@@ -59,7 +58,71 @@
         alert('Error al guardar: ' + error.message);
         restore(originalText);
       } else {
-        restore(newValue); // ya está guardado, en vivo, sin esperar ningún build
+        restore(newValue);
+      }
+    });
+  }
+
+  // Bloque grande (cuerpo del post): usa textarea en vez de input de una línea
+  function startEditBlock(targetEl, slug, field) {
+    const originalHtml = targetEl.innerHTML;
+    const originalText = targetEl.innerText.trim();
+
+    const textarea = document.createElement('textarea');
+    textarea.className = 'inline-edit-textarea';
+    textarea.value = originalText;
+    textarea.rows = Math.min(20, Math.max(6, originalText.split('\n').length + 2));
+
+    const saveBtn = document.createElement('button');
+    saveBtn.type = 'button';
+    saveBtn.textContent = 'Guardar';
+    saveBtn.className = 'inline-edit-save';
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.textContent = 'Cancelar';
+    cancelBtn.className = 'inline-edit-cancel';
+
+    const wrap = document.createElement('div');
+    wrap.className = 'inline-edit-block-wrap';
+    wrap.appendChild(textarea);
+    const btnRow = document.createElement('div');
+    btnRow.appendChild(saveBtn);
+    btnRow.appendChild(cancelBtn);
+    wrap.appendChild(btnRow);
+
+    targetEl.replaceWith(wrap);
+    textarea.focus();
+
+    function restore(html) {
+      targetEl.innerHTML = html;
+      wrap.replaceWith(targetEl);
+    }
+
+    cancelBtn.addEventListener('click', () => restore(originalHtml));
+
+    saveBtn.addEventListener('click', async () => {
+      const newValue = textarea.value.trim();
+      if (!newValue) {
+        restore(originalHtml);
+        return;
+      }
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Guardando…';
+
+      const { error } = await window.supabaseClient
+        .from('posts')
+        .update({ [field]: newValue })
+        .eq('slug', slug);
+
+      if (error) {
+        alert('Error al guardar: ' + error.message);
+        restore(originalHtml);
+      } else {
+        // Vuelve a mostrar como párrafos simples; el próximo load ya
+        // vendrá renderizado por completo desde el servidor.
+        const html = newValue.split(/\n\s*\n/).map((p) => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+        restore(html);
       }
     });
   }
@@ -68,6 +131,7 @@
     const session = await window.supabaseReady;
     if (!session) return; // sin sesión, no se activa nada
 
+    // Modo tarjetas (listado): botón "Editar" aparte, edita el título del card
     document.querySelectorAll('[data-edit-link]').forEach(function (btn) {
       btn.style.display = 'inline-block';
       btn.addEventListener('click', function (e) {
@@ -78,6 +142,23 @@
         const titleLink = card && card.querySelector('h2 a');
         if (!slug || !titleLink) return;
         startEdit(titleLink, slug, field);
+      });
+    });
+
+    // Modo página de post completo: el propio título/cuerpo es clickeable
+    document.querySelectorAll('[data-edit-target]').forEach(function (el) {
+      el.classList.add('inline-editable');
+      el.title = 'Clic para editar';
+      el.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return; // no interceptar links dentro del bloque
+        const slug = el.getAttribute('data-slug');
+        const field = el.getAttribute('data-inline-field');
+        if (!slug || !field) return;
+        if (field === 'body') {
+          startEditBlock(el, slug, field);
+        } else {
+          startEdit(el, slug, field);
+        }
       });
     });
   });
