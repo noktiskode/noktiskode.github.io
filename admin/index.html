@@ -66,7 +66,7 @@
 
     <section id="app" style="display:none">
       <div class="card">
-        <h1>Nueva publicación</h1>
+        <h1 id="form-title">Nueva publicación</h1>
         <p class="intro">La publicación se guarda directamente en Supabase. No se crea ningún archivo en GitHub.</p>
 
         <form id="post-form">
@@ -135,6 +135,7 @@
           </div>
 
           <div class="actions">
+            <button type="button" id="cancel-edit" class="btn btn-secondary" style="display:none">Cancelar edición</button>
             <button type="button" id="clear" class="btn btn-secondary">Limpiar</button>
             <button type="submit" id="save" class="btn btn-primary">Publicar directamente</button>
           </div>
@@ -144,7 +145,8 @@
       </div>
 
       <div class="card">
-        <h2>Últimas publicaciones</h2>
+        <h2>Publicaciones</h2>
+        <input id="search" placeholder="Buscar por título…" style="margin-bottom:14px" autocomplete="off">
         <div id="recent" class="posts"><span class="loading">Cargando…</span></div>
       </div>
     </section>
@@ -159,6 +161,12 @@
 
   const $ = id => document.getElementById(id);
   const errorBox = $('notice-error'), okBox = $('notice-ok');
+  let editingSlug = null;
+
+  function isoToLocalInput(iso){
+    const d=new Date(iso); const p=n=>String(n).padStart(2,'0');
+    return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'T'+p(d.getHours())+':'+p(d.getMinutes());
+  }
 
   function show(box, msg){ box.textContent=msg; box.style.display='block'; }
   function hide(box){ box.style.display='none'; }
@@ -190,18 +198,46 @@
     loadRecent();
   }
 
+  function exitEditMode(){
+    editingSlug = null;
+    $('form-title').textContent = 'Nueva publicación';
+    $('save').textContent = 'Publicar directamente';
+    $('cancel-edit').style.display = 'none';
+    $('post-form').reset();
+    $('published-at').value = localDateTime();
+    delete $('slug').dataset.manual;
+    $('result').style.display = 'none';
+  }
+
+  async function enterEditMode(slug){
+    hide(errorBox); hide(okBox);
+    const {data,error} = await client.from('posts').select('*').eq('slug',slug).single();
+    if(error || !data){ show(errorBox,'No se pudo cargar la publicación: '+(error?error.message:'')); return; }
+    editingSlug = slug;
+    $('form-title').textContent = 'Editar publicación';
+    $('save').textContent = 'Guardar cambios';
+    $('cancel-edit').style.display = 'inline-flex';
+    $('title').value = data.title || '';
+    $('slug').value = data.slug || ''; $('slug').dataset.manual='1';
+    $('published-at').value = isoToLocalInput(data.published_at);
+    $('category').value = data.category || 'barberena';
+    $('excerpt').value = data.excerpt || '';
+    $('image').value = data.image_url || '';
+    $('video').value = data.video_url || '';
+    $('tags').value = (data.tags||[]).join(', ');
+    $('body').value = data.body || '';
+    $('featured').checked = !!data.featured;
+    $('post-form').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  $('cancel-edit').addEventListener('click', exitEditMode);
+
   $('logout').addEventListener('click',async()=>{
     await client.auth.signOut();
     location.href='/login.html';
   });
 
-  $('clear').addEventListener('click',()=>{
-    $('post-form').reset();
-    $('published-at').value=localDateTime();
-    delete $('slug').dataset.manual;
-    $('result').style.display='none';
-    hide(errorBox); hide(okBox);
-  });
+  $('clear').addEventListener('click', exitEditMode);
 
   $('post-form').addEventListener('submit',async e=>{
     e.preventDefault(); hide(errorBox); hide(okBox);
@@ -209,11 +245,16 @@
     if(!title||!slug||!body){show(errorBox,'Completá el título, slug y contenido.');return;}
     const tags=$('tags').value.split(',').map(x=>x.trim()).filter(Boolean);
     const excerpt=$('excerpt').value.trim() || excerptFromBody(body);
-    const save=$('save'); save.disabled=true; save.textContent='Publicando…';
+    const save=$('save'); save.disabled=true; save.textContent=editingSlug?'Guardando…':'Publicando…';
+    const isEditing = !!editingSlug;
     try{
-      const {data:exists,error:checkError}=await client.from('posts').select('slug').eq('slug',slug).maybeSingle();
-      if(checkError) throw checkError;
-      if(exists) throw new Error('Ese slug ya existe. Elegí otro o generá uno nuevo.');
+      // Si el slug cambió (al crear, o al renombrar uno existente), hay que
+      // confirmar que el nuevo slug no choque con otra publicación distinta.
+      if(!isEditing || slug!==editingSlug){
+        const {data:exists,error:checkError}=await client.from('posts').select('slug').eq('slug',slug).maybeSingle();
+        if(checkError) throw checkError;
+        if(exists) throw new Error('Ese slug ya existe. Elegí otro o generá uno nuevo.');
+      }
 
       const payload={
         slug,title,excerpt,body,
@@ -225,36 +266,47 @@
         published:true,
         published_at:new Date($('published-at').value).toISOString()
       };
-      const {error}=await client.from('posts').insert(payload);
-      if(error) throw error;
+
+      if(isEditing){
+        const {error}=await client.from('posts').update(payload).eq('slug',editingSlug);
+        if(error) throw error;
+      }else{
+        const {error}=await client.from('posts').insert(payload);
+        if(error) throw error;
+      }
 
       const url='/'+encodeURIComponent(slug)+'/';
-      $('result').innerHTML='Publicación creada correctamente. <a href="'+url+'">Abrir publicación →</a>';
+      $('result').innerHTML=(isEditing?'Cambios guardados correctamente.':'Publicación creada correctamente.')+' <a href="'+url+'">Abrir publicación →</a>';
       $('result').style.display='block';
-      show(okBox,'La publicación ya está en Supabase y el sitio la puede servir sin pasar por GitHub.');
-      $('post-form').reset();
-      $('published-at').value=localDateTime();
-      delete $('slug').dataset.manual;
-      loadRecent();
+      show(okBox, isEditing ? 'Los cambios ya están en vivo.' : 'La publicación ya está en Supabase y el sitio la puede servir sin pasar por GitHub.');
+      exitEditMode();
+      loadRecent($('search').value.trim());
     }catch(err){
       console.error(err);
-      show(errorBox,'No se pudo publicar: '+(err.message || 'Error desconocido'));
+      show(errorBox,'No se pudo guardar: '+(err.message || 'Error desconocido'));
     }finally{
-      save.disabled=false; save.textContent='Publicar directamente';
+      save.disabled=false; save.textContent=editingSlug?'Guardar cambios':'Publicar directamente';
     }
   });
 
-  async function loadRecent(){
+  async function loadRecent(term){
     const box=$('recent');
-    const {data,error}=await client.from('posts').select('slug,title,category,published_at').order('published_at',{ascending:false}).limit(8);
+    box.innerHTML='<span class="loading">Cargando…</span>';
+    let query = client.from('posts').select('slug,title,category,published_at').order('published_at',{ascending:false});
+    query = term ? query.ilike('title','%'+term+'%').limit(30) : query.limit(8);
+    const {data,error} = await query;
     if(error){box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;}
-    if(!data || !data.length){box.innerHTML='<span class="loading">No hay publicaciones.</span>';return;}
+    if(!data || !data.length){box.innerHTML='<span class="loading">'+(term?'Sin resultados para "'+escapeHtml(term)+'".':'No hay publicaciones.')+'</span>';return;}
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
       return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div>'
-        +'<div style="display:flex;gap:6px"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a>'
+        +'<div style="display:flex;gap:6px;flex-wrap:wrap"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a>'
+        +'<button type="button" class="btn btn-secondary btn-edit" data-slug="'+escapeHtml(p.slug)+'">Editar</button>'
         +'<button type="button" class="btn btn-delete" data-slug="'+escapeHtml(p.slug)+'" data-title="'+escapeHtml(p.title)+'">Eliminar</button></div></div>';
     }).join('');
+    box.querySelectorAll('.btn-edit').forEach(function(btn){
+      btn.addEventListener('click', function(){ enterEditMode(btn.dataset.slug); });
+    });
     box.querySelectorAll('.btn-delete').forEach(function(btn){
       btn.addEventListener('click', async function(){
         const slug = btn.dataset.slug, title = btn.dataset.title;
@@ -266,11 +318,18 @@
           btn.disabled = false; btn.textContent = 'Eliminar';
           return;
         }
+        if(editingSlug===slug) exitEditMode();
         show(okBox, 'Publicación eliminada.');
-        loadRecent();
+        loadRecent($('search').value.trim());
       });
     });
   }
+
+  let searchTimer=null;
+  $('search').addEventListener('input',()=>{
+    clearTimeout(searchTimer);
+    searchTimer=setTimeout(()=>loadRecent($('search').value.trim()), 300);
+  });
   function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
   init();
 })();
