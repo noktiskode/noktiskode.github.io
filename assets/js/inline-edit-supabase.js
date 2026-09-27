@@ -63,15 +63,35 @@
     });
   }
 
-  // Bloque grande (cuerpo del post): usa textarea en vez de input de una línea
-  function startEditBlock(targetEl, slug, field) {
+  // Bloque grande (cuerpo del post): usa textarea, y trae el texto CRUDO
+  // (markdown/HTML original) desde Supabase antes de editar — no el HTML
+  // ya renderizado, para no perder la sintaxis de imágenes y enlaces.
+  async function startEditBlock(targetEl, slug, field) {
     const originalHtml = targetEl.innerHTML;
-    const originalText = targetEl.innerText.trim();
+    targetEl.style.opacity = '0.5';
+
+    const { data, error: fetchError } = await window.supabaseClient
+      .from('posts')
+      .select(field)
+      .eq('slug', slug)
+      .single();
+
+    targetEl.style.opacity = '';
+
+    if (fetchError || !data) {
+      alert('No se pudo cargar el texto original: ' + (fetchError ? fetchError.message : ''));
+      return;
+    }
+    const rawText = data[field] || '';
 
     const textarea = document.createElement('textarea');
     textarea.className = 'inline-edit-textarea';
-    textarea.value = originalText;
-    textarea.rows = Math.min(20, Math.max(6, originalText.split('\n').length + 2));
+    textarea.value = rawText;
+    textarea.rows = Math.min(24, Math.max(8, rawText.split('\n').length + 2));
+
+    const hint = document.createElement('p');
+    hint.className = 'inline-edit-hint';
+    hint.textContent = 'Podés usar ![](url-de-imagen) para agregar una imagen, y [texto](url) para un enlace.';
 
     const saveBtn = document.createElement('button');
     saveBtn.type = 'button';
@@ -86,6 +106,7 @@
     const wrap = document.createElement('div');
     wrap.className = 'inline-edit-block-wrap';
     wrap.appendChild(textarea);
+    wrap.appendChild(hint);
     const btnRow = document.createElement('div');
     btnRow.appendChild(saveBtn);
     btnRow.appendChild(cancelBtn);
@@ -119,10 +140,8 @@
         alert('Error al guardar: ' + error.message);
         restore(originalHtml);
       } else {
-        // Vuelve a mostrar como párrafos simples; el próximo load ya
-        // vendrá renderizado por completo desde el servidor.
-        const html = newValue.split(/\n\s*\n/).map((p) => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
-        restore(html);
+        alert('Guardado. Recargá la página para ver el resultado con imágenes/enlaces ya renderizados.');
+        window.location.reload();
       }
     });
   }
@@ -132,6 +151,9 @@
     const style = document.createElement('style');
     style.id = 'inline-edit-styles';
     style.textContent = `
+      body.is-admin {
+        padding-bottom: 46px;
+      }
       body.is-admin [data-edit-target] {
         cursor: pointer;
         outline: 2px dashed rgba(239,79,29,.5);
