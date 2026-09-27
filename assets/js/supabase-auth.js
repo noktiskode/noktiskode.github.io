@@ -23,11 +23,19 @@
     bar.id = 'bmm-admin-bar';
     bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9999;' +
       'background:#111;color:#fff;font:13px system-ui,sans-serif;' +
-      'padding:8px 14px;display:flex;justify-content:space-between;' +
-      'align-items:center;gap:10px;box-shadow:0 -2px 8px rgba(0,0,0,.3);';
+      'padding:8px 14px;display:flex;justify-content:space-between;flex-wrap:wrap;' +
+      'align-items:center;gap:8px 10px;box-shadow:0 -2px 8px rgba(0,0,0,.3);';
 
     const label = document.createElement('span');
     label.textContent = '🟢 Conectado como ' + (session.user && session.user.email ? session.user.email : 'admin');
+
+    const panelLink = document.createElement('a');
+    panelLink.href = '/admin/';
+    panelLink.textContent = '📝 Panel';
+    panelLink.style.cssText = 'color:#fff;text-decoration:underline;flex-shrink:0;';
+
+    const right = document.createElement('div');
+    right.style.cssText = 'display:flex;align-items:center;gap:14px;flex-shrink:0;';
 
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -41,8 +49,10 @@
       window.location.reload();
     });
 
+    right.appendChild(panelLink);
+    right.appendChild(btn);
     bar.appendChild(label);
-    bar.appendChild(btn);
+    bar.appendChild(right);
     document.body.appendChild(bar);
   }
 
