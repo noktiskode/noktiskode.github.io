@@ -121,27 +121,24 @@ a{color:inherit}
   text-decoration: none;
 }
 
-/* Overlay del ícono de video sobre la imagen destacada en las tarjetas.
-   Agregar al final de styles.css */
+/* Overlay de video sobre la imagen de las tarjetas.
+   ver-video.png (1080x675, transparente, con leve oscurecimiento propio)
+   cubre toda la tarjeta igual que la imagen de fondo. */
 .cb-post-image.has-video-overlay { position: relative; }
 .cb-post-image .cb-media-bg { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cb-video-mask {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, .28);
+  background: none;
   transition: background .25s ease;
 }
+.cb-post-image:hover .cb-video-mask { background: rgba(0, 0, 0, .12); }
 .cb-post-image .cb-video-icon {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  transform: none;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .4));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none;
 }
-.cb-post-image:hover .cb-video-icon { transform: none; }
 
 /* Fondo de respaldo cuando el post tiene video pero no subiste una imagen propia */
 .cb-video-fallback-bg {
