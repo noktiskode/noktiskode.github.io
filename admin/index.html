@@ -3,52 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuevo post — Barberena Mi Municipio</title>
+  <title>Panel — Barberena Mi Municipio</title>
   <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
-    :root{--orange:#ef4f1d;--ink:#171717;--muted:#6b6b6b;--line:#dedede;--bg:#f5f5f3;--card:#fff}
+    :root{
+      --orange:#ef4f1d; --orange-dark:#d43f11; --orange-soft:#fff1ec;
+      --ink:#171717; --muted:#6b6b6b; --line:#e4e2dd; --bg:#f5f5f3; --card:#fff;
+      --danger:#b3260e; --danger-bg:#fdebe7; --ok:#235b36; --ok-bg:#e5f5ea;
+    }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    .top{background:#111;color:#fff;padding:14px 18px;position:sticky;top:0;z-index:10}
-    .top-inner{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .brand{font-weight:800}.brand small{display:block;font-weight:500;color:#bbb;margin-top:2px}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.45}
     button,a{font:inherit}
-    .btn{border:0;border-radius:7px;padding:10px 15px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
-    .btn-primary{background:var(--orange);color:#fff}.btn-secondary{background:#e9e9e9;color:#222}.btn:disabled{opacity:.55;cursor:wait}
-    .btn-delete{background:#8f2510;color:#fff;border:0;border-radius:7px;padding:10px 15px;font-weight:750;cursor:pointer}
-    main{max-width:980px;margin:28px auto 60px;padding:0 16px}
-    .notice{padding:12px 14px;border-radius:8px;margin-bottom:18px;font-size:14px;display:none}
-    .notice.error{background:#ffe7e2;color:#8f2510;border:1px solid #f3b4a6}
-    .notice.ok{background:#e5f5ea;color:#235b36;border:1px solid #b9ddc4}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    h1{font-size:30px;margin:0 0 5px}.intro{color:var(--muted);margin:0 0 22px}
-    h2{font-size:20px;margin:0 0 16px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+    /* Header claro con ícono BMM */
+    .top{background:#fff;border-bottom:3px solid var(--orange);padding:12px 16px;position:sticky;top:0;z-index:10}
+    .top-inner{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:0}
+    .logo{flex:none;width:40px;height:40px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;font-size:22px;display:grid;place-items:center}
+    .brand-text{font-weight:900;font-size:17px;line-height:1.15;letter-spacing:-.01em}
+    .brand-text small{display:block;font-weight:500;font-size:13px;color:var(--muted);margin-top:2px;letter-spacing:0}
+    .top-actions{display:flex;gap:6px;flex:none}
+
+    .btn{border:0;border-radius:8px;padding:10px 15px;font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:background .15s,border-color .15s}
+    .btn-primary{background:var(--orange);color:#fff}.btn-primary:hover{background:var(--orange-dark)}
+    .btn-secondary{background:#efeeea;color:#222;border:1px solid #dcdad4}.btn-secondary:hover{background:#e6e4de}
+    .btn-danger{background:var(--danger-bg);color:var(--danger);border:1px solid #f0b3a6}.btn-danger:hover{background:#fbdcd5}
+    .btn-delete{background:#8f2510;color:#fff}.btn-delete:hover{background:#741d0c}
+    .btn:disabled{opacity:.55;cursor:wait}
+
+    main{max-width:980px;margin:26px auto 60px;padding:0 16px}
+    .notice{padding:12px 14px;border-radius:8px;margin-bottom:18px;font-size:14px;display:none;font-weight:500}
+    .notice.error{background:var(--danger-bg);color:var(--danger);border:1px solid #f0b3a6}
+    .notice.ok{background:var(--ok-bg);color:var(--ok);border:1px solid #b9ddc4}
+
+    .card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:12px;padding:24px;margin-bottom:22px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    h1{font-size:30px;font-weight:900;letter-spacing:-.02em;margin:0 0 5px}
+    .intro{color:var(--muted);margin:0 0 22px;font-size:15px}
+    h2{font-size:22px;font-weight:900;letter-spacing:-.01em;margin:0 0 16px}
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .full{grid-column:1/-1}
-    label{display:block;font-size:13px;font-weight:800;margin:0 0 6px}
-    input,select,textarea{width:100%;border:1px solid #cfcfcf;border-radius:7px;background:#fff;color:#171717;padding:11px 12px;font:inherit;outline:none}
-    input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 2px rgba(239,79,29,.12)}
-    textarea{min-height:330px;resize:vertical;line-height:1.55}
-    .help{font-size:12px;color:var(--muted);margin:5px 0 0}
+    label{display:block;font-size:14px;font-weight:700;margin:0 0 6px}
+    input,select,textarea{width:100%;border:1px solid #cfcdc7;border-radius:8px;background:#fff;color:var(--ink);padding:11px 12px;font:inherit;outline:none;transition:border-color .15s,box-shadow .15s}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(239,79,29,.14)}
+    textarea{min-height:300px;resize:vertical;line-height:1.55}
+    .help{font-size:13px;color:var(--muted);margin:5px 0 0}
     .slug-row{display:flex;gap:8px}.slug-row input{flex:1}
-    .check{display:flex;align-items:center;gap:8px;margin-top:25px}.check input{width:auto}
-    .actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:4px}
-    .result{display:none;margin-top:18px;padding:15px;border-radius:8px;background:#f4f4f4}
-    .result a{color:var(--orange);font-weight:750}
-    .posts{display:grid;gap:8px}
-    .post-item{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
-    .post-item:last-child{border-bottom:0}.post-title{font-weight:750}.post-meta{font-size:12px;color:var(--muted);margin-top:3px}
+
+    /* Widget de imagen destacada */
+    .image-widget{border:2px dashed #d3d0c9;border-radius:12px;padding:16px;background:#faf9f7}
+    .image-preview-box{display:none;flex-direction:column;align-items:center;gap:14px}
+    .image-preview-box img{width:100%;max-width:520px;max-height:260px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#eee}
+    .image-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+    .image-upload-controls{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .url-row{display:flex;gap:8px;width:100%;max-width:460px}
+    .url-row input{font-size:14px}
+    .img-tag{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--orange-soft);color:var(--orange-dark)}
+    .img-tag.ext{background:#eee;color:#555}
+
+    .check{display:flex;align-items:center;gap:9px;margin-top:6px}
+    .check input{width:20px;height:20px;accent-color:var(--orange);cursor:pointer}
+    .actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:14px}
+
+    .result{display:none;margin-top:18px;padding:14px;border-radius:8px;background:var(--orange-soft);border-left:4px solid var(--orange)}
+    .result a{color:var(--orange-dark);font-weight:700}
+
+    .posts{display:grid}
+    .post-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+    .post-item:last-child{border-bottom:0}
+    .post-title{font-weight:700}
+    .post-meta{font-size:13px;color:var(--muted);margin-top:3px}
+    .post-btns{display:flex;gap:6px;flex-wrap:wrap}
     .loading{color:var(--muted);font-size:14px}
-    @media(max-width:700px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.top-inner{align-items:flex-start}.slug-row{display:block}.slug-row .btn{margin-top:7px}h1{font-size:26px}.card{padding:17px}}
+
+    @media(max-width:700px){
+      .grid{grid-template-columns:1fr}.full{grid-column:auto}
+      .slug-row{display:block}.slug-row .btn{margin-top:8px;width:100%}
+      h1{font-size:26px}.card{padding:18px}
+      .brand-text{font-size:15px}.brand-text small{display:none}
+      .top-actions .btn{padding:9px 11px;font-size:14px}
+      .post-item{flex-direction:column;align-items:flex-start}
+      .post-btns{width:100%}
+      .image-actions .btn{flex:1 1 100%}
+    }
   </style>
 </head>
 <body>
   <header class="top">
     <div class="top-inner">
-      <div class="brand">Barberena Mi Municipio<small>Panel de publicaciones</small></div>
-      <div>
-        <a class="btn btn-secondary" href="/" style="margin-right:6px">Ver sitio</a>
+      <div class="brand">
+        <div class="logo">B</div>
+        <div class="brand-text">Barberena Mi Municipio<small>Panel de publicaciones</small></div>
+      </div>
+      <div class="top-actions">
+        <a class="btn btn-secondary" href="/" target="_blank">Ver sitio</a>
         <button id="logout" class="btn btn-secondary">Cerrar sesión</button>
       </div>
     </div>
@@ -73,13 +125,13 @@
           <div class="grid">
             <div class="full">
               <label for="title">Título *</label>
-              <input id="title" required maxlength="180" autocomplete="off">
+              <input id="title" required maxlength="180" autocomplete="off" placeholder="Escribe el título aquí...">
             </div>
 
             <div class="full">
               <label for="slug">Slug / URL *</label>
               <div class="slug-row">
-                <input id="slug" required maxlength="180" autocomplete="off">
+                <input id="slug" required maxlength="180" autocomplete="off" placeholder="mi-titulo-de-post">
                 <button type="button" id="make-slug" class="btn btn-secondary">Generar</button>
               </div>
               <p class="help">Será la dirección /slug/ de la publicación.</p>
@@ -101,23 +153,43 @@
 
             <div class="full">
               <label for="excerpt">Resumen corto</label>
-              <textarea id="excerpt" style="min-height:90px" maxlength="500"></textarea>
+              <textarea id="excerpt" style="min-height:80px" maxlength="500" placeholder="Resumen para la portada o búsquedas..."></textarea>
               <p class="help">Si lo dejás vacío, se generará a partir del primer párrafo.</p>
             </div>
 
-            <div>
-              <label for="image">Imagen destacada</label>
-              <input id="image" placeholder="/images/blog/foto.webp">
-              <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
-                <input type="file" id="image-file" accept="image/*" style="flex:1">
-                <button type="button" id="image-upload-btn" class="btn btn-secondary">Subir</button>
+            <!-- Imagen destacada -->
+            <div class="full">
+              <label>Imagen destacada</label>
+              <input type="hidden" id="image">
+              <input type="file" id="image-file" accept="image/*" style="display:none">
+
+              <div class="image-widget">
+                <!-- Con imagen -->
+                <div id="image-preview-box" class="image-preview-box">
+                  <img id="image-preview" src="" alt="Vista previa">
+                  <span id="image-origin" class="img-tag"></span>
+                  <div class="image-actions">
+                    <button type="button" id="btn-change-image" class="btn btn-secondary">Elegir nueva imagen</button>
+                    <button type="button" id="btn-remove-image" class="btn btn-secondary" title="Solo la desvincula del post; el archivo sigue en Supabase">Quitar</button>
+                    <button type="button" id="btn-delete-image" class="btn btn-danger" title="Borra el archivo de Supabase Storage">Eliminar de Supabase</button>
+                  </div>
+                </div>
+
+                <!-- Sin imagen -->
+                <div id="image-upload-controls" class="image-upload-controls">
+                  <button type="button" id="btn-select-file" class="btn btn-secondary">Elegir imagen</button>
+                  <div class="url-row">
+                    <input id="image-url-manual" placeholder="O pegá una URL / ruta a mano…" autocomplete="off">
+                    <button type="button" id="btn-use-url" class="btn btn-secondary">Usar</button>
+                  </div>
+                </div>
               </div>
-              <p class="help" id="image-upload-status">O escribí una ruta/URL a mano arriba.</p>
+              <p class="help" id="image-upload-status"></p>
             </div>
 
-            <div>
+            <div class="full">
               <label for="video">Video (opcional)</label>
-              <input id="video" placeholder="https://www.youtube.com/watch?v=...">
+              <input id="video" placeholder="https://www.youtube.com/watch?v=... o URL de Facebook Reel">
             </div>
 
             <div class="full">
@@ -133,7 +205,7 @@
                 <button type="button" id="body-image-upload-btn" class="btn btn-secondary">Insertar imagen aquí</button>
               </div>
               <textarea id="body" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
-              <p class="help" id="body-image-status">Se admite Markdown y HTML básico, igual que en los posts migrados. La imagen se inserta donde esté el cursor.</p>
+              <p class="help" id="body-image-status">Se admite Markdown y HTML básico. La imagen se inserta donde esté el cursor.</p>
             </div>
 
             <div class="full check">
@@ -153,7 +225,7 @@
       </div>
 
       <div class="card">
-        <h2>Publicaciones</h2>
+        <h2>Publicaciones existentes</h2>
         <input id="search" placeholder="Buscar por título…" style="margin-bottom:14px" autocomplete="off">
         <div id="recent" class="posts"><span class="loading">Cargando…</span></div>
       </div>
@@ -172,6 +244,7 @@
   let editingSlug = null;
 
   function isoToLocalInput(iso){
+    if(!iso) return localDateTime();
     const d=new Date(iso); const p=n=>String(n).padStart(2,'0');
     return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'T'+p(d.getHours())+':'+p(d.getMinutes());
   }
@@ -193,6 +266,33 @@
     return words.length>40 ? words.slice(0,40).join(' ')+'…' : first;
   }
 
+  /* Path del archivo dentro del bucket a partir de su URL pública */
+  function getStoragePathFromUrl(url){
+    if(!url || typeof url!=='string' || !url.includes('/post-images/')) return null;
+    let p = url.split('/post-images/').pop().split('?')[0].split('#')[0];
+    try{ p = decodeURIComponent(p); }catch(e){}
+    return p || null;
+  }
+
+  /* Todas las imágenes del bucket usadas en un texto (Markdown/HTML) */
+  function storageUrlsInText(text){
+    const re = /https?:\/\/[^\s)"'<>]+\/post-images\/[^\s)"'<>]+/g;
+    return (String(text||'').match(re) || []);
+  }
+
+  /* ¿Otra publicación usa este archivo? (si falla la consulta, se asume que sí, por seguridad) */
+  async function isFileUsedElsewhere(path, excludeSlug){
+    const pat = '%' + path.replace(/[%_\\]/g,'\\$&') + '%';
+    for(const col of ['image_url','body']){
+      let q = client.from('posts').select('slug').ilike(col, pat).limit(1);
+      if(excludeSlug) q = q.neq('slug', excludeSlug);
+      const {data,error} = await q;
+      if(error || (data && data.length)) return true;
+    }
+    return false;
+  }
+
+/* Subida a Supabase Storage */
   async function uploadImage(file){
     const ext = (file.name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g,'') || 'jpg';
     const path = Date.now() + '-' + Math.random().toString(36).slice(2,8) + '.' + ext;
@@ -204,25 +304,110 @@
     return data.publicUrl;
   }
 
-  $('image-upload-btn').addEventListener('click', async ()=>{
+  /* Eliminar archivo de Supabase Storage (lanza error si no se borró de verdad) */
+  async function deleteImageFromStorage(url){
+    const path = getStoragePathFromUrl(url);
+    if(!path) return false;
+    const {data,error} = await client.storage.from('post-images').remove([path]);
+    if(error) throw error;
+    if(!data || !data.length) throw new Error('Supabase no borró el archivo (revisá la policy de DELETE del bucket post-images).');
+    return true;
+  }
+
+/* Widget de imagen destacada */
+  function setImageValue(url, msg){
+    url = (url||'').trim();
+    $('image').value = url;
+    $('image-url-manual').value = '';
+    $('image-file').value = '';
+    if(url){
+      $('image-preview').src = url;
+      $('image-preview-box').style.display = 'flex';
+      $('image-upload-controls').style.display = 'none';
+      const inSb = !!getStoragePathFromUrl(url);
+      const tag = $('image-origin');
+      tag.textContent = inSb ? 'Guardada en Supabase' : 'Enlace externo / ruta del sitio';
+      tag.className = 'img-tag' + (inSb ? '' : ' ext');
+      $('btn-delete-image').style.display = inSb ? '' : 'none';
+    } else {
+      $('image-preview').removeAttribute('src');
+      $('image-preview-box').style.display = 'none';
+      $('image-upload-controls').style.display = 'flex';
+    }
+    $('image-upload-status').textContent = msg || '';
+  }
+
+  $('image-preview').addEventListener('error', ()=>{
+    if($('image').value) $('image-upload-status').textContent = 'No se pudo cargar la vista previa (la URL se conserva igual).';
+  });
+
+  $('btn-select-file').addEventListener('click', () => $('image-file').click());
+  $('btn-change-image').addEventListener('click', () => $('image-file').click());
+
+  $('image-file').addEventListener('change', async () => {
     const file = $('image-file').files[0];
+    if(!file) return;
     const status = $('image-upload-status');
-    if(!file){ status.textContent='Elegí un archivo primero.'; return; }
-    const btn=$('image-upload-btn'); btn.disabled=true; btn.textContent='Subiendo…';
-    status.textContent='Subiendo imagen…';
-    try{
+    status.textContent = 'Subiendo imagen…';
+    try {
       const url = await uploadImage(file);
-      $('image').value = url;
-      status.textContent = 'Imagen subida y cargada arriba.';
-      $('image-file').value = '';
-    }catch(err){
+      setImageValue(url, 'Imagen subida. Recordá guardar el post.');
+    } catch(err) {
       console.error(err);
-      status.textContent = 'No se pudo subir: ' + (err.message || 'Error desconocido');
-    }finally{
-      btn.disabled=false; btn.textContent='Subir';
+      status.textContent = 'Error al subir: ' + (err.message || 'Error desconocido');
+      $('image-file').value = '';
     }
   });
 
+  function useManualUrl(){
+    const val = $('image-url-manual').value.trim();
+    if(val) setImageValue(val, 'Imagen vinculada. Recordá guardar el post.');
+  }
+  $('btn-use-url').addEventListener('click', useManualUrl);
+  $('image-url-manual').addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); useManualUrl(); } });
+
+  // QUITAR: desvincula la imagen del post; el archivo sigue en Supabase
+  $('btn-remove-image').addEventListener('click', () => {
+    setImageValue('', 'Imagen quitada del post (el archivo sigue guardado en Supabase). Recordá guardar.');
+  });
+
+  // ELIMINAR: borra el archivo de Supabase Storage
+  $('btn-delete-image').addEventListener('click', async () => {
+    const url = $('image').value;
+    const path = getStoragePathFromUrl(url);
+    if(!url) return;
+    const status = $('image-upload-status');
+    if(!path){ setImageValue('', 'Esa imagen no está en Supabase; solo se quitó del post.'); return; }
+    if(!confirm('¿Eliminar permanentemente esta imagen de Supabase Storage?')) return;
+
+    const btn = $('btn-delete-image'); btn.disabled = true;
+    status.textContent = 'Comprobando y eliminando…';
+    try{
+      // ¿La usa otro post, o el contenido de este mismo post?
+      const usedByOther = await isFileUsedElsewhere(path, editingSlug);
+      const usedInBody = $('body').value.includes(path);
+      if(usedByOther || usedInBody){
+        setImageValue('', usedInBody
+          ? 'No se borró el archivo: también está insertada en el contenido de este post. Solo se quitó como destacada.'
+          : 'No se borró el archivo: lo usa otra publicación. Solo se quitó de este post.');
+        return;
+      }
+      await deleteImageFromStorage(url);
+      // Si el post ya existe, limpiar también su image_url para que no quede un enlace roto
+      if(editingSlug){
+        const {error} = await client.from('posts').update({image_url:null}).eq('slug', editingSlug);
+        if(error) throw error;
+      }
+      setImageValue('', 'Imagen eliminada de Supabase Storage.');
+    }catch(err){
+      console.error(err);
+      status.textContent = 'No se pudo eliminar: ' + (err.message || 'Error desconocido');
+    }finally{
+      btn.disabled = false;
+    }
+  });
+
+  // Subida de imagen para insertar dentro del contenido Markdown
   $('body-image-upload-btn').addEventListener('click', async ()=>{
     const file = $('body-image-file').files[0];
     const status = $('body-image-status');
@@ -267,6 +452,7 @@
     $('save').textContent = 'Publicar directamente';
     $('cancel-edit').style.display = 'none';
     $('post-form').reset();
+    setImageValue('');
     $('published-at').value = localDateTime();
     delete $('slug').dataset.manual;
     $('result').style.display = 'none';
@@ -285,7 +471,10 @@
     $('published-at').value = isoToLocalInput(data.published_at);
     $('category').value = data.category || 'barberena';
     $('excerpt').value = data.excerpt || '';
-    $('image').value = data.image_url || '';
+    
+    // Carga visual de la imagen guardada
+    setImageValue(data.image_url || '');
+
     $('video').value = data.video_url || '';
     $('tags').value = (data.tags||[]).join(', ');
     $('body').value = data.body || '';
@@ -311,8 +500,6 @@
     const save=$('save'); save.disabled=true; save.textContent=editingSlug?'Guardando…':'Publicando…';
     const isEditing = !!editingSlug;
     try{
-      // Si el slug cambió (al crear, o al renombrar uno existente), hay que
-      // confirmar que el nuevo slug no choque con otra publicación distinta.
       if(!isEditing || slug!==editingSlug){
         const {data:exists,error:checkError}=await client.from('posts').select('slug').eq('slug',slug).maybeSingle();
         if(checkError) throw checkError;
@@ -339,9 +526,9 @@
       }
 
       const url='/'+encodeURIComponent(slug)+'/';
-      $('result').innerHTML=(isEditing?'Cambios guardados correctamente.':'Publicación creada correctamente.')+' <a href="'+url+'">Abrir publicación →</a>';
+      $('result').innerHTML=(isEditing?'Cambios guardados correctamente.':'Publicación creada correctamente.')+' <a href="'+url+'" target="_blank">Abrir publicación →</a>';
       $('result').style.display='block';
-      show(okBox, isEditing ? 'Los cambios ya están en vivo.' : 'La publicación ya está en Supabase y el sitio la puede servir sin pasar por GitHub.');
+      show(okBox, isEditing ? 'Los cambios ya están en vivo.' : 'La publicación ya está lista en el sitio.');
       exitEditMode();
       loadRecent($('search').value.trim());
     }catch(err){
@@ -356,34 +543,59 @@
     const box=$('recent');
     box.innerHTML='<span class="loading">Cargando…</span>';
     let query = client.from('posts').select('slug,title,category,published_at').order('published_at',{ascending:false});
-    query = term ? query.ilike('title','%'+term+'%').limit(30) : query.limit(8);
+    query = term ? query.ilike('title','%'+term+'%').limit(30) : query.limit(10);
     const {data,error} = await query;
     if(error){box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;}
     if(!data || !data.length){box.innerHTML='<span class="loading">'+(term?'Sin resultados para "'+escapeHtml(term)+'".':'No hay publicaciones.')+'</span>';return;}
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
       return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div>'
-        +'<div style="display:flex;gap:6px;flex-wrap:wrap"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/">Ver</a>'
+        +'<div class="post-btns"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/" target="_blank">Ver</a>'
         +'<button type="button" class="btn btn-secondary btn-edit" data-slug="'+escapeHtml(p.slug)+'">Editar</button>'
         +'<button type="button" class="btn btn-delete" data-slug="'+escapeHtml(p.slug)+'" data-title="'+escapeHtml(p.title)+'">Eliminar</button></div></div>';
     }).join('');
+    
     box.querySelectorAll('.btn-edit').forEach(function(btn){
       btn.addEventListener('click', function(){ enterEditMode(btn.dataset.slug); });
     });
+    
     box.querySelectorAll('.btn-delete').forEach(function(btn){
       btn.addEventListener('click', async function(){
         const slug = btn.dataset.slug, title = btn.dataset.title;
-        if(!confirm('¿Eliminar la publicación "'+title+'"? Esta acción no se puede deshacer.')) return;
+        if(!confirm('¿Eliminar la publicación "'+title+'"?\n\nSe borrarán también sus imágenes de Supabase (salvo las que use otra publicación). No se puede deshacer.')) return;
         btn.disabled = true; btn.textContent = 'Eliminando…';
-        const {error} = await client.from('posts').delete().eq('slug', slug);
-        if(error){
-          alert('No se pudo eliminar: ' + error.message);
+        try{
+          // 1. Leer las imágenes del post antes de borrarlo
+          const {data:post,error:readErr} = await client.from('posts').select('image_url,body').eq('slug', slug).single();
+          if(readErr) throw readErr;
+          const urls = new Set([post.image_url, ...storageUrlsInText(post.body)].filter(Boolean));
+
+          // 2. Borrar la fila (si falla, no se toca ninguna imagen)
+          const {error} = await client.from('posts').delete().eq('slug', slug);
+          if(error) throw error;
+
+          // 3. Borrar imágenes que ya nadie usa
+          let removed = 0, kept = 0, failed = 0;
+          for(const u of urls){
+            const path = getStoragePathFromUrl(u);
+            if(!path) continue;
+            try{
+              if(await isFileUsedElsewhere(path, null)){ kept++; continue; }
+              await deleteImageFromStorage(u); removed++;
+            }catch(e){ console.warn(e); failed++; }
+          }
+          if(editingSlug===slug) exitEditMode();
+          let msg = 'Publicación eliminada.';
+          if(removed) msg += ' Imágenes borradas de Supabase: '+removed+'.';
+          if(kept) msg += ' '+kept+' se conservó porque la usa otra publicación.';
+          if(failed) msg += ' '+failed+' no se pudo borrar (revisá la policy de DELETE del bucket).';
+          show(okBox, msg);
+          loadRecent($('search').value.trim());
+        }catch(err){
+          console.error(err);
+          alert('No se pudo eliminar: ' + (err.message || 'Error desconocido'));
           btn.disabled = false; btn.textContent = 'Eliminar';
-          return;
         }
-        if(editingSlug===slug) exitEditMode();
-        show(okBox, 'Publicación eliminada.');
-        loadRecent($('search').value.trim());
       });
     });
   }
