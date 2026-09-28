@@ -125,9 +125,9 @@ function mediaBlock(post, title) {
   if (!post.video_url && !post.image_url) return '';
   const bg = post.image_url
     ? `<img src="${resolveImage(post)}" alt="${title}" loading="lazy" class="cb-media-bg">`
-    : (post.video_url ? '<div class="cb-video-fallback-bg"></div>' : '');
+    : `<img src="/assets/img/default-thumb.png" alt="${title}" loading="lazy" class="cb-media-bg">`;
   const overlay = post.video_url
-    ? `<div class="cb-video-mask"><img src="/assets/img/ver-video.svg" alt="Este post contiene un video" loading="lazy" class="cb-video-icon"></div>`
+    ? `<div class="cb-video-mask"><img src="/assets/img/ver-video.png" alt="Este post contiene un video" loading="lazy" class="cb-video-icon"></div>`
     : '';
   return `<a class="cb-post-image${post.video_url ? ' has-video-overlay' : ''}" href="/${post.slug}/">${bg}${overlay}</a>`;
 }
