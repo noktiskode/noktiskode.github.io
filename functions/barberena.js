@@ -65,12 +65,20 @@ function footerHtml() {
   </div>
 </footer>`;
 }
+function mediaBlock(post, title) {
+  if (!post.video_url && !post.image_url) return '';
+  const bg = post.image_url
+    ? `<img src="${resolveImage(post)}" alt="${title}" loading="lazy" class="cb-media-bg">`
+    : (post.video_url ? '<div class="cb-video-fallback-bg"></div>' : '');
+  const overlay = post.video_url
+    ? `<div class="cb-video-mask"><img src="/assets/img/ver-video.svg" alt="Este post contiene un video" loading="lazy" class="cb-video-icon"></div>`
+    : '';
+  return `<a class="cb-post-image${post.video_url ? ' has-video-overlay' : ''}" href="/${post.slug}/">${bg}${overlay}</a>`;
+}
 function postCard(post) {
   const title = escapeHtml(post.title);
   const minutes = readingMinutes(post.body);
-  const media = post.video_url
-    ? `<a class="cb-post-image" href="/${post.slug}/"><img src="/assets/img/ver-video.svg" alt="Este post contiene un video" loading="lazy"></a>`
-    : (post.image_url ? `<a class="cb-post-image" href="/${post.slug}/"><img src="${resolveImage(post)}" alt="${title}" loading="lazy"></a>` : '');
+  const media = mediaBlock(post, title);
   return `<article class="cb-post">
   ${media}
   <div class="cb-post-meta"><span class="cat">${LABEL}</span> · ${fechaCorta(post.published_at)} · ${minutes} min de lectura</div>
