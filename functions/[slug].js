@@ -178,25 +178,42 @@ function comentariosBlock(slug) {
 function headerHtml() {
   return `<header class="cb-navbar">
   <div class="cb-container cb-navbar-inner">
-    <a class="cb-brand" href="/">
-      <img src="/images/bmm-logo.png" alt="" class="cb-brand-icon">
-      <span>Barberena Mi Municipio</span>
-    </a>
+    <a class="cb-brand" href="/"><img src="/images/bmm-logo.png" alt="" class="cb-brand-icon"><span>Barberena Mi Municipio</span></a>
     <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">Menú</button>
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a>
-      <a href="/barberena/">Barberena</a>
-      <a href="/opiniones/">Opiniones</a>
-      <a href="/historias/">Historias</a>
-      <a href="/archivo/">Archivo</a><a href="/buscar/">Buscar</a>
+      <a href="/">Inicio</a><a href="/barberena/">Barberena</a><a href="/opiniones/">Opiniones</a><a href="/historias/">Historias</a><a href="/archivo/">Archivo</a>
     </nav>
+    <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
+    </button>
+  </div>
+  <div class="cb-search-panel" id="searchPanel" hidden>
+    <div class="cb-container">
+      <form class="cb-search-bar" action="/buscar/" method="get" role="search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
+        <input type="search" name="q" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones" autocomplete="off" enterkeyhint="search">
+        <button type="button" class="cb-search-close" aria-label="Cerrar búsqueda">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </form>
+    </div>
   </div>
 </header>
 <script>
 (function(){
   var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
-  if(!b||!n)return;
-  b.addEventListener('click',function(){var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');});
+  var s=document.querySelector('.cb-search-toggle'),p=document.getElementById('searchPanel');
+  var i=p&&p.querySelector('input'),c=p&&p.querySelector('.cb-search-close');
+  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');}}
+  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){i.focus();},30);}
+  function closeSearch(){p.hidden=true;s.setAttribute('aria-expanded','false');}
+  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');});}
+  if(s&&p&&i&&c){
+    s.addEventListener('click',function(){if(p.hidden)openSearch();else closeSearch();});
+    c.addEventListener('click',closeSearch);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden)closeSearch();});
+    document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target)&&!s.contains(e.target))closeSearch();});
+  }
 })();
 </script>`;
 }
