@@ -6,7 +6,7 @@
       <img src="{{ include.post.image | relative_url }}" alt="{{ include.post.title | escape }}" loading="lazy" class="cb-media-bg">
     {% elsif include.post.video_url %}
       <!-- Fondo por defecto si hay video pero no subiste imagen personalizada -->
-      <img src="/assets/img/default-thumb.jpg" alt="{{ include.post.title | escape }}" loading="lazy" class="cb-media-bg">
+      <img src="/assets/img/default-thumb.png" alt="{{ include.post.title | escape }}" loading="lazy" class="cb-media-bg">
     {% endif %}
 
     <!-- Máscara/Overlay que solo aparece si hay un video -->
