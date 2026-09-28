@@ -120,19 +120,3 @@ a{color:inherit}
   font-size: 12px;
   text-decoration: none;
 }
-
-/* Contenedor de la imagen */
-.cb-post-image {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-radius: 8px; /* Ajusta según el diseño de tu sitio */
-}
-
-/* Imagen de fondo */
-.cb-media-bg {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
