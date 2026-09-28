@@ -73,7 +73,7 @@ function headerHtml() {
       <a href="/barberena/">Barberena</a>
       <a href="/opiniones/">Opiniones</a>
       <a href="/historias/">Historias</a>
-      <a href="/archivo/">Archivo</a>
+      <a href="/archivo/">Archivo</a><a href="/buscar/">Buscar</a>
     </nav>
   </div>
 </header>

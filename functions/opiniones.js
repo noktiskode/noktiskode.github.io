@@ -45,7 +45,7 @@ function headerHtml() {
     <a class="cb-brand" href="/"><img src="/images/bmm-logo.png" alt="" class="cb-brand-icon"><span>Barberena Mi Municipio</span></a>
     <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">Menú</button>
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a><a href="/barberena/">Barberena</a><a href="/opiniones/">Opiniones</a><a href="/historias/">Historias</a><a href="/archivo/">Archivo</a>
+      <a href="/">Inicio</a><a href="/barberena/">Barberena</a><a href="/opiniones/">Opiniones</a><a href="/historias/">Historias</a><a href="/archivo/">Archivo</a><a href="/buscar/">Buscar</a>
     </nav>
   </div>
 </header>
