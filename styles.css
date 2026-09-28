@@ -330,3 +330,29 @@ article img,
 @media (max-width: 700px) {
   .site-back { padding: 0 18px 28px; }
 }
+
+/* Overlay del ícono de video sobre la imagen destacada en las tarjetas.
+   Agregar al final de styles.css */
+.cb-post-image.has-video-overlay { position: relative; }
+.cb-post-image .cb-media-bg { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cb-video-mask {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .28);
+  transition: background .25s ease;
+}
+.cb-post-image:hover .cb-video-mask { background: rgba(0, 0, 0, .42); }
+.cb-video-icon {
+  width: 52px;
+  height: 52px;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .4));
+}
+/* Fondo de respaldo cuando el post tiene video pero no subiste una imagen propia */
+.cb-video-fallback-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2b2b2b, #111);
+}
