@@ -135,7 +135,7 @@ function postCard(post) {
   const title = escapeHtml(post.title);
   const minutes = readingMinutes(post.body);
   const media = mediaBlock(post, title);
-  return `<article class="cb-post">
+  return `<article class="cb-post cb-post--${CATEGORY}">
   ${media}
   <div class="cb-post-meta"><span class="cat">${LABEL}</span> · ${fechaCorta(post.published_at)} · ${minutes} min de lectura</div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
