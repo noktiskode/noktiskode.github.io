@@ -13,15 +13,14 @@ const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', histor
 export async function onRequestGet(context) {
   const headers = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
 
-  let featured = null;
+  let featuredPosts = [];
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=1`,
+      `${SUPABASE_URL}/rest/v1/posts?featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=3`,
       { headers }
     );
-    const rows = res.ok ? await res.json() : [];
-    featured = rows[0] || null;
-  } catch (e) { featured = null; }
+    featuredPosts = res.ok ? await res.json() : [];
+  } catch (e) { featuredPosts = []; }
 
   let posts = [];
   try {
@@ -32,10 +31,19 @@ export async function onRequestGet(context) {
     posts = res.ok ? await res.json() : [];
   } catch (e) { posts = []; }
 
-  if (!featured) featured = posts[0] || null;
-  const gridPosts = posts.filter((p) => !featured || p.slug !== featured.slug);
+  // Si hay menos de 3 destacados, completa el carrusel con los más recientes
+  if (featuredPosts.length < 3) {
+    const usedSlugs = new Set(featuredPosts.map((p) => p.slug));
+    for (const p of posts) {
+      if (featuredPosts.length >= 3) break;
+      if (!usedSlugs.has(p.slug)) { featuredPosts.push(p); usedSlugs.add(p.slug); }
+    }
+  }
 
-  return new Response(renderHome(featured, gridPosts), {
+  const carouselSlugs = new Set(featuredPosts.map((p) => p.slug));
+  const gridPosts = posts.filter((p) => !carouselSlugs.has(p.slug));
+
+  return new Response(renderHome(featuredPosts, gridPosts), {
     headers: { 'content-type': 'text/html; charset=UTF-8' }
   });
 }
@@ -159,6 +167,33 @@ function mediaBlock(post, title) {
     : '';
   return `<a class="cb-post-image${post.video_url ? ' has-video-overlay' : ''}" href="/${post.slug}/">${bg}${overlay}</a>`;
 }
+function heroCarruselHtml(featuredPosts) {
+  if (!featuredPosts.length) return '';
+
+  const slidesHtml = featuredPosts.map((post, i) => {
+    const title = escapeHtml(post.title);
+    return `<div class="hero-slide${i === 0 ? ' activa' : ''}" data-index="${i}">
+    <img src="${resolveImage(post)}" alt="${title}">
+    <div class="hero-overlay"></div>
+    <div class="cb-container hero-slide-content">
+      <p class="cb-hero-kicker">${fechaCorta(post.published_at)}</p>
+      <h1>${title}</h1>
+      <p>${escapeHtml(post.excerpt || '')}</p>
+      <a class="cb-readmore" href="/${post.slug}/">Leer publicación →</a>
+    </div>
+  </div>`;
+  }).join('\n  ');
+
+  const dotsHtml = featuredPosts.length > 1
+    ? `<div class="hero-dots">${featuredPosts.map((_, i) => `<button type="button" class="hero-dot${i === 0 ? ' activo' : ''}" data-index="${i}" aria-label="Publicación destacada ${i + 1}"></button>`).join('')}</div>`
+    : '';
+
+  return `<section class="hero-carrusel" id="heroCarrusel" aria-roledescription="carrusel" aria-label="Publicaciones destacadas">
+  ${slidesHtml}
+  ${dotsHtml}
+</section>`;
+}
+
 function postCard(post) {
   const title = escapeHtml(post.title);
   const label = CATEGORY_LABELS[post.category] || 'Barberena';
@@ -177,17 +212,11 @@ function postCard(post) {
 </article>`;
 }
 
-function renderHome(featured, gridPosts) {
+function renderHome(featuredPosts, gridPosts) {
   const desc = 'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.';
+  const og = featuredPosts[0];
 
-  const heroHtml = featured ? `<section class="cb-hero" style="--cb-hero-image:url('${resolveImage(featured)}')">
-  <div class="cb-container">
-    <p class="cb-hero-kicker">${fechaCorta(featured.published_at)}</p>
-    <h1>${escapeHtml(featured.title)}</h1>
-    <p>${escapeHtml(featured.excerpt || '')}</p>
-    <a class="cb-readmore" style="display:inline-block;margin-top:18px;color:#fff" href="/${featured.slug}/">Leer publicación →</a>
-  </div>
-</section>` : '';
+  const heroHtml = heroCarruselHtml(featuredPosts);
 
   const cardsHtml = gridPosts.length
     ? gridPosts.map(postCard).join('\n')
@@ -207,7 +236,7 @@ function renderHome(featured, gridPosts) {
   <meta property="og:title" content="Barberena Mi Municipio">
   <meta property="og:description" content="${escapeHtml(desc)}">
   <meta property="og:url" content="${SITE_URL}/">
-  <meta property="og:image" content="${SITE_URL}/images/portada.webp">
+  <meta property="og:image" content="${og ? resolveImage(og) : SITE_URL + '/images/portada.webp'}">
   <meta property="og:locale" content="es_GT">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -241,6 +270,51 @@ ${heroHtml}
   </div>
 </main>
 ${footerHtml()}
+<script>
+(function () {
+  var carrusel = document.getElementById('heroCarrusel');
+  if (!carrusel) return;
+  var slides = [].slice.call(carrusel.querySelectorAll('.hero-slide'));
+  var dots = [].slice.call(carrusel.querySelectorAll('.hero-dot'));
+  if (slides.length < 2) return; // un solo destacado: nada que rotar
+
+  var current = 0, timer = null;
+
+  function goTo(i) {
+    current = (i + slides.length) % slides.length;
+    slides.forEach(function (s, idx) { s.classList.toggle('activa', idx === current); });
+    dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === current); });
+  }
+  function next() { goTo(current + 1); }
+  function startAuto() { stopAuto(); timer = setInterval(next, 6000); }
+  function stopAuto() { if (timer) clearInterval(timer); timer = null; }
+
+  dots.forEach(function (d) {
+    d.addEventListener('click', function () { goTo(parseInt(d.dataset.index, 10)); startAuto(); });
+  });
+
+  carrusel.addEventListener('mouseenter', stopAuto);
+  carrusel.addEventListener('mouseleave', startAuto);
+
+  var startX = null;
+  carrusel.addEventListener('pointerdown', function (e) {
+    startX = e.clientX;
+    carrusel.style.cursor = 'grabbing';
+    stopAuto();
+  });
+  carrusel.addEventListener('pointerup', function (e) {
+    if (startX === null) return;
+    var delta = e.clientX - startX;
+    if (Math.abs(delta) > 40) { delta < 0 ? next() : goTo(current - 1); }
+    startX = null;
+    carrusel.style.cursor = 'grab';
+    startAuto();
+  });
+  carrusel.addEventListener('pointercancel', function () { startX = null; carrusel.style.cursor = 'grab'; startAuto(); });
+
+  startAuto();
+})();
+</script>
 <script>
 (function () {
   var step = 7, shown = step;
