@@ -170,9 +170,11 @@ function mediaBlock(post, title) {
 function heroCarruselHtml(featuredPosts) {
   if (!featuredPosts.length) return '';
 
+  const n = featuredPosts.length;
   const slidesHtml = featuredPosts.map((post, i) => {
     const title = escapeHtml(post.title);
-    return `<div class="hero-slide${i === 0 ? ' activa' : ''}" data-index="${i}">
+    const cls = i === 0 ? 'activa' : (i === n - 1 ? 'anterior' : 'siguiente');
+    return `<div class="hero-slide ${cls}" data-index="${i}">
     <a class="hero-slide-link" href="/${post.slug}/" aria-label="${title}">
       <img src="${resolveImage(post)}" alt="${title}">
       <div class="hero-overlay"></div>
@@ -289,11 +291,21 @@ ${footerHtml()}
   if (slides.length < 2) return; // un solo destacado: nada que rotar ni arrastrar
 
   var current = 0, timer = null;
+  var n = slides.length;
 
-  function goTo(i) {
-    current = (i + slides.length) % slides.length;
-    slides.forEach(function (s, idx) { s.classList.toggle('activa', idx === current); });
-    dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === current); });
+  function goTo(newIndex) {
+    newIndex = ((newIndex % n) + n) % n;
+    if (newIndex === current) return;
+    var prev = current;
+    slides.forEach(function (s, idx) {
+      var cls = idx === newIndex ? 'activa' : (idx === (newIndex - 1 + n) % n ? 'anterior' : 'siguiente');
+      var involved = (idx === prev || idx === newIndex);
+      if (!involved) s.style.transition = 'none'; // reposiciona sin animar (no debe cruzar la pantalla)
+      s.className = 'hero-slide ' + cls;
+      if (!involved) { void s.offsetWidth; s.style.transition = ''; }
+    });
+    dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === newIndex); });
+    current = newIndex;
   }
   function next() { goTo(current + 1); }
   function startAuto() { stopAuto(); timer = setInterval(next, 6000); }
