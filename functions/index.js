@@ -173,14 +173,16 @@ function heroCarruselHtml(featuredPosts) {
   const slidesHtml = featuredPosts.map((post, i) => {
     const title = escapeHtml(post.title);
     return `<div class="hero-slide${i === 0 ? ' activa' : ''}" data-index="${i}">
-    <img src="${resolveImage(post)}" alt="${title}">
-    <div class="hero-overlay"></div>
-    <div class="cb-container hero-slide-content">
-      <p class="cb-hero-kicker">${fechaCorta(post.published_at)}</p>
-      <h1>${title}</h1>
-      <p>${escapeHtml(post.excerpt || '')}</p>
-      <a class="cb-readmore" href="/${post.slug}/">Leer publicación →</a>
-    </div>
+    <a class="hero-slide-link" href="/${post.slug}/" aria-label="${title}">
+      <img src="${resolveImage(post)}" alt="${title}">
+      <div class="hero-overlay"></div>
+      <div class="cb-container hero-slide-content">
+        <p class="cb-hero-kicker">${fechaCorta(post.published_at)}</p>
+        <h1>${title}</h1>
+        <p>${escapeHtml(post.excerpt || '')}</p>
+        <span class="cb-readmore">Leer publicación →</span>
+      </div>
+    </a>
   </div>`;
   }).join('\n  ');
 
@@ -276,7 +278,15 @@ ${footerHtml()}
   if (!carrusel) return;
   var slides = [].slice.call(carrusel.querySelectorAll('.hero-slide'));
   var dots = [].slice.call(carrusel.querySelectorAll('.hero-dot'));
-  if (slides.length < 2) return; // un solo destacado: nada que rotar
+  var links = [].slice.call(carrusel.querySelectorAll('.hero-slide-link'));
+
+  // Si se arrastró (swipe), se cancela el clic del enlace para no navegar sin querer
+  var moved = false;
+  links.forEach(function (a) {
+    a.addEventListener('click', function (e) { if (moved) e.preventDefault(); });
+  });
+
+  if (slides.length < 2) return; // un solo destacado: nada que rotar ni arrastrar
 
   var current = 0, timer = null;
 
@@ -299,8 +309,13 @@ ${footerHtml()}
   var startX = null;
   carrusel.addEventListener('pointerdown', function (e) {
     startX = e.clientX;
+    moved = false;
     carrusel.style.cursor = 'grabbing';
     stopAuto();
+  });
+  carrusel.addEventListener('pointermove', function (e) {
+    if (startX === null) return;
+    if (Math.abs(e.clientX - startX) > 8) moved = true;
   });
   carrusel.addEventListener('pointerup', function (e) {
     if (startX === null) return;
