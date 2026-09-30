@@ -33,7 +33,7 @@
   /* Superficies y texto (valores de Clean Blog) */
   --bg: #ffffff;
   --bg-alt: #f8f9fa;
-  --bg-card: #f8f9fa;
+  --bg-card: #ffffff;
   --texto: #212529;
   --texto-suave: #495057;
   --texto-mudo: #6c757d;
@@ -295,9 +295,8 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
   color: rgba(255, 255, 255, .92);
 }
 
-/* ---------- 5. Encabezados tipo masthead ---------- */
-/* Banda oscura a todo el ancho; el texto queda en la columna de lectura. */
-.category-masthead,
+/* ---------- 5. Encabezados ---------- */
+/* Banda oscura a todo el ancho (páginas internas y post); el texto queda en la columna de lectura. */
 .site-info-header,
 .cb-article-header {
   margin-bottom: 3.5rem;
@@ -305,15 +304,12 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
   background: var(--masthead-bg);
   color: #fff;
 }
-.category-masthead,
 .site-info-header { text-align: center; }
-.category-masthead h1,
 .site-info-header h1 {
   font-size: clamp(2.5rem, 7vw, 5rem);
   line-height: 1.05;
   color: #fff;
 }
-.category-intro,
 .site-info-header p {
   display: block; margin: .75rem 0 0;
   font-size: clamp(1.1rem, 2.6vw, 1.5rem);
@@ -322,9 +318,24 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
 }
 .site-info-header .site-info-kicker { display: none; }
 
+/* Categorías: encabezado limpio, sin fondo ni color */
+.category-masthead {
+  width: var(--w); margin: 0 auto 3rem; padding: 0;
+  background: none; text-align: center; color: var(--texto);
+}
+.category-masthead h1 {
+  font-size: clamp(2.75rem, 8vw, 4.5rem);
+  line-height: 1; color: var(--texto);
+}
+.category-intro {
+  display: block; margin: 1rem auto 0; max-width: 34rem;
+  font-size: 1.125rem; font-weight: 300; line-height: 1.6;
+  color: var(--texto-mudo);
+}
+
 /* ---------- 6. Listado de publicaciones ---------- */
 .cb-page { padding: 4.5rem 0 5rem; }
-.category-page { padding: 0 0 5rem; }
+.category-page { padding: 4.5rem 0 5rem; }
 
 /* Título de sección (como "section-heading" de Clean Blog) */
 .cb-page-header { width: var(--w); margin: 0 auto 2.5rem; text-align: left; }
@@ -336,47 +347,56 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
 .category-empty,
 .cb-empty { width: var(--w); margin: 0 auto; color: var(--texto-mudo); text-align: left; font-size: 1.125rem; }
 
-/* Cada publicación es un "post-preview": sin caja, sin borde, sin sombra */
+/* Tarjeta de publicación: imagen arriba, fecha, título, extracto y "Leer más >".
+   Sin borde; solo una sombra suave y esquinas redondeadas. */
 .cb-post {
   position: relative;
   display: flex; flex-direction: column;
-  min-width: 0;
-  background: none; border: 0; border-radius: 0; box-shadow: none;
+  min-width: 0; overflow: hidden;
+  background: var(--bg-card);
+  border: 0; border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
 }
-/* Línea fina entre publicaciones (el <hr> de Clean Blog).
-   Para quitarla, borra las 3 líneas de abajo y deja solo el margin-top. */
-.cb-post + .cb-post {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--borde);
+html[data-theme="dark"] .cb-post { box-shadow: 0 2px 14px rgba(0, 0, 0, .45); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .cb-post { box-shadow: 0 2px 14px rgba(0, 0, 0, .45); }
 }
+.cb-post + .cb-post { margin-top: 1.75rem; }
 .cb-post-image {
   order: 0; position: relative; display: block;
-  aspect-ratio: 16 / 9; margin-bottom: 1.25rem;
+  aspect-ratio: 16 / 10; margin: 0;
   overflow: hidden; background: var(--bg-alt);
 }
 .cb-post-image .cb-media-bg { width: 100%; height: 100%; object-fit: cover; display: block; }
-.cb-post h2 {
+.cb-post-meta {
   order: 1;
-  margin: 0 0 .625rem;
-  font-size: 1.875rem; line-height: 1.2;
+  margin: 0; padding: 1.5rem 1.5rem 0;
+  font-size: .875rem; font-style: normal;
+  color: var(--texto-mudo);
+}
+.cb-post-meta .cat { font-style: normal; font-weight: 400; color: inherit; }
+.cb-post h2 {
+  order: 2;
+  margin: 0; padding: .5rem 1.5rem 0;
+  font-size: 1.5rem; line-height: 1.25;
 }
 .cb-post h2 a { color: var(--texto); transition: color .2s ease; }
 .cb-post h2 a:hover { color: var(--rojo); }
 .cb-post-excerpt {
-  order: 2;
-  margin: 0 0 .625rem;
-  font-size: 1.125rem; font-weight: 300; line-height: 1.5;
-  color: var(--texto);
-}
-.cb-post-meta {
   order: 3;
-  font-size: 1rem; font-style: italic;
+  margin: 0; padding: .75rem 1.5rem 0;
+  font-size: 1.0625rem; font-weight: 400; line-height: 1.55;
   color: var(--texto-mudo);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-.cb-post-meta .cat { font-style: normal; font-weight: 600; color: var(--rojo); }
-/* El título y la imagen ya llevan al post; sin botón extra */
-.cb-post .cb-readmore { display: none; }
+.cb-post .cb-readmore {
+  order: 4; align-self: flex-start;
+  display: inline-block; margin: 0; padding: 1.25rem 1.5rem 1.5rem;
+  font: 600 1.0625rem var(--fuente-texto);
+  color: var(--texto);
+  transition: color .2s ease;
+}
+.cb-post .cb-readmore:hover { color: var(--rojo); }
 
 /* Superposición de video sobre la imagen */
 .cb-post-image.has-video-overlay { position: relative; }
@@ -453,23 +473,57 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
 }
 
 /* Compartir: botones planos, sin borde */
-.cb-share { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; width: var(--w); margin: 2.25rem auto 0; }
-.cb-share-label { margin-right: .25rem; font: 600 .75rem var(--fuente-texto); letter-spacing: .0625em; text-transform: uppercase; color: var(--texto-mudo); }
-.cb-share-fallback { display: inline-flex; flex-wrap: wrap; gap: .5rem; }
-.cb-share-native,
+.cb-share { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1rem; width: var(--w); margin: 2.5rem auto 0; }
+.cb-share-label { font: 600 .8125rem var(--fuente-texto); letter-spacing: .0625em; text-transform: uppercase; color: var(--texto-mudo); }
+.cb-share-fallback { display: inline-flex; flex-wrap: wrap; gap: .75rem; }
+
+/* Botones redondos de 52 px con el color de cada red */
 .cb-share-btn {
+  position: relative;
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 40px; padding: 0 1rem;
-  border: 0; border-radius: .375rem;
-  background: var(--bg-alt); color: var(--texto);
-  font: 600 .75rem var(--fuente-texto);
-  letter-spacing: .0625em; text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s ease, color .2s ease;
+  width: 52px; height: 52px; padding: 0;
+  border: 0; border-radius: 50%;
+  color: #fff; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
-.cb-share-fallback .cb-share-btn:not(.cb-share-copy) { width: 40px; padding: 0; border-radius: 50%; font-size: .95rem; letter-spacing: 0; text-transform: none; }
-.cb-share-native:hover,
-.cb-share-btn:hover { background: var(--rojo); color: #fff; }
+.cb-share-btn svg { width: 24px; height: 24px; display: block; }
+.cb-share-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0, 0, 0, .22); filter: brightness(1.06); }
+.cb-share-btn:active { transform: translateY(0); }
+.cb-share-facebook { background: #1877f2; }
+.cb-share-x { background: #111111; }
+.cb-share-whatsapp { background: #25d366; }
+.cb-share-copy { background: var(--rojo); }
+html[data-theme="dark"] .cb-share-x { background: #2c2b28; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .cb-share-x { background: #2c2b28; } }
+
+/* Aviso "Copiado" sobre el botón de copiar */
+.cb-share-copy::after {
+  content: 'Copiado';
+  position: absolute; bottom: calc(100% + 10px); left: 50%;
+  padding: .3rem .65rem; border-radius: 6px;
+  background: var(--texto); color: var(--bg);
+  font: 600 .75rem var(--fuente-texto); white-space: nowrap;
+  opacity: 0; transform: translate(-50%, 4px); pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.cb-share-copy.is-copied::after { opacity: 1; transform: translate(-50%, 0); }
+
+/* Botón de compartir nativo del teléfono */
+.cb-share-native {
+  display: inline-flex; align-items: center; gap: .6rem;
+  height: 52px; padding: 0 1.5rem;
+  border: 0; border-radius: 26px;
+  background: var(--rojo); color: #fff;
+  font: 600 .9375rem var(--fuente-texto);
+  letter-spacing: .0625em; text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(239, 79, 29, .35);
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.cb-share-native[hidden] { display: none; }
+.cb-share-native svg { width: 22px; height: 22px; }
+.cb-share-native:hover { background: var(--rojo-hover); transform: translateY(-2px); }
 
 .cb-after {
   width: var(--w); margin: 2.5rem auto 0; padding: 1.5rem 0 0;
@@ -596,7 +650,7 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
 
 /* ---------- 12. Móvil ---------- */
 @media (min-width: 992px) {
-  .cb-post h2 { font-size: 2.25rem; }
+  .cb-post h2 { font-size: 1.75rem; }
   .cb-article-body { font-size: 1.25rem; }
   .site-info-text { font-size: 1.25rem; }
 }
@@ -622,12 +676,12 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
   .hero-slide-content { padding: 28px 20px; }
   .cb-hero { padding: 4.5rem 0; }
 
-  .category-masthead,
   .site-info-header,
   .cb-article-header { margin-bottom: 2.5rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .category-page { padding-top: 3rem; }
+  .category-masthead { margin-bottom: 2.25rem; }
   .cb-page { padding: 3rem 0 3.5rem; }
   .cb-page-header h1 { font-size: 2rem; }
-  .cb-post h2 { font-size: 1.75rem; }
   .cb-search-form { flex-direction: column; align-items: stretch; gap: .75rem; }
   .cb-footer { padding: 2.5rem 0; }
 }
