@@ -39,7 +39,7 @@ export async function onRequestGet(context) {
   let related = [];
   try {
     const relRes = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?category=eq.${encodeURIComponent(post.category)}&slug=neq.${encodeURIComponent(slug)}&select=slug,title,published_at&order=published_at.desc&limit=2`,
+      `${SUPABASE_URL}/rest/v1/posts?category=eq.${encodeURIComponent(post.category)}&slug=neq.${encodeURIComponent(slug)}&select=slug,title,published_at&order=published_at.desc&limit=3`,
       { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } }
     );
     if (relRes.ok) related = await relRes.json();
@@ -116,8 +116,10 @@ function videoEmbed(url) {
 }
 
 function comentariosBlock(slug) {
-  return `<div id="bmm-comentarios" data-slug="${slug}" style="max-width:640px;margin:2.5rem auto;font-family:-apple-system,sans-serif;color:var(--texto);">
-  <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;letter-spacing:.5px;border-bottom:3px solid #ef4f1d;padding-bottom:.5rem;margin-bottom:1.3rem;color:var(--texto);">Comentarios</h3>
+  return `<details class="comments-details">
+  <summary>Comentarios</summary>
+  <div class="comments-panel">
+  <div id="bmm-comentarios" data-slug="${slug}" style="font-family:-apple-system,sans-serif;color:var(--texto);">
   <div id="comment-list" style="margin-bottom:1.75rem;"></div>
   <label style="display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.2px;margin:.6rem 0 .3rem;color:var(--texto-suave);">Nombre (opcional)</label>
   <input type="text" id="c-nombre" placeholder="Vecino" maxlength="60" style="width:100%;padding:11px 13px;font-size:15px;border:1.5px solid var(--borde);border-radius:6px;box-sizing:border-box;background:var(--bg-card);color:var(--texto);">
@@ -127,6 +129,8 @@ function comentariosBlock(slug) {
   <button id="btn-comentar" style="margin-top:1rem;padding:12px 26px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#fff;background:#ef4f1d;border:none;border-radius:6px;cursor:pointer;">Enviar comentario</button>
   <p id="ok-msg" style="display:none;color:#2F6B4E;font-size:13.5px;margin-top:.8rem;font-weight:600;">Comentario enviado. Se publicará tras revisión.</p>
 </div>
+  </div>
+</details>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, addDoc, query, where, orderBy, onSnapshot, serverTimestamp }
@@ -178,18 +182,27 @@ function comentariosBlock(slug) {
 function headerHtml() {
   return `<header class="cb-navbar">
   <div class="cb-container cb-navbar-inner">
-    <a class="cb-brand" href="/"><img src="/images/bmm-logo.png" alt="" class="cb-brand-icon"><span>Barberena Mi Municipio</span></a>
-    <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">Menú</button>
+    <a class="cb-brand" href="/">
+      <img src="/images/bmm-logo.png" alt="" class="cb-brand-icon">
+      <span>Barberena Mi Municipio</span>
+    </a>
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a><a href="/barberena/">Barberena</a><a href="/opiniones/">Opiniones</a><a href="/historias/">Historias</a><a href="/archivo/">Archivo</a>
+      <a href="/">Inicio</a>
+      <a href="/barberena/">Barberena</a>
+      <a href="/opiniones/">Opiniones</a>
+      <a href="/historias/">Historias</a>
+      <a href="/archivo/">Archivo</a>
     </nav>
-    <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-    </button>
-    <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-    </button>
+    <div class="cb-nav-actions">
+      <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
+      </button>
+      <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">☰</button>
+    </div>
   </div>
   <div class="cb-search-panel" id="searchPanel" hidden>
     <div class="cb-container">
@@ -208,42 +221,27 @@ function headerHtml() {
   var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
   var s=document.querySelector('.cb-search-toggle'),p=document.getElementById('searchPanel');
   var i=p&&p.querySelector('input'),c=p&&p.querySelector('.cb-search-close');
-  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');}}
-  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){i.focus();},30);}
+  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menú');}}
+  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){if(i)i.focus();},30);}
   function closeSearch(){p.hidden=true;s.setAttribute('aria-expanded','false');}
-  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');});}
+  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});}
   if(s&&p&&i&&c){
     s.addEventListener('click',function(){if(p.hidden)openSearch();else closeSearch();});
     c.addEventListener('click',closeSearch);
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden)closeSearch();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!p.hidden)closeSearch();if(n&&n.classList.contains('is-open'))closeMenu();}});
     document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target)&&!s.contains(e.target))closeSearch();});
   }
 })();
 (function(){
-  var STORAGE_KEY='bmm-theme';
-  var btn=document.querySelector('.cb-theme-toggle');
-  if(!btn) return;
-  function isDarkNow(){
-    var t=document.documentElement.getAttribute('data-theme');
-    if(t==='dark') return true;
-    if(t==='light') return false;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function updateLabel(dark){
-    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
-    btn.setAttribute('aria-label', dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
-  }
+  var STORAGE_KEY='bmm-theme',btn=document.querySelector('.cb-theme-toggle');
+  if(!btn)return;
+  function isDarkNow(){var t=document.documentElement.getAttribute('data-theme');if(t==='dark')return true;if(t==='light')return false;return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;}
+  function updateLabel(dark){btn.setAttribute('aria-pressed',dark?'true':'false');btn.setAttribute('aria-label',dark?'Cambiar a modo claro':'Cambiar a modo oscuro');}
   updateLabel(isDarkNow());
-  btn.addEventListener('click', function(){
-    var next = isDarkNow() ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try{ localStorage.setItem(STORAGE_KEY, next); }catch(e){}
-    updateLabel(next==='dark');
-  });
+  btn.addEventListener('click',function(){var next=isDarkNow()?'light':'dark';document.documentElement.setAttribute('data-theme',next);try{localStorage.setItem(STORAGE_KEY,next);}catch(e){}updateLabel(next==='dark');});
 })();
 </script>`;
 }
-
 function footerHtml() {
   const year = new Date().getFullYear();
   return `<footer class="cb-footer">
@@ -285,7 +283,7 @@ function renderPost(post, slug, related) {
 
   const relatedHtml = (related && related.length)
     ? `<section class="cb-related"><h2>También puedes leer</h2><div class="cb-related-grid">
-${related.map((r) => `      <a class="cb-related-card" href="/${r.slug}/"><small>${new Date(r.published_at).toLocaleDateString('es-GT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</small><h3>${escapeHtml(r.title)}</h3></a>`).join('\n')}
+${related.slice(0, 3).map((r) => `      <a class="cb-related-card" href="/${r.slug}/"><small>${new Date(r.published_at).toLocaleDateString('es-GT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</small><h3>${escapeHtml(r.title)}</h3></a>`).join('\n')}
     </div></section>`
     : '';
 
@@ -319,7 +317,6 @@ ${related.map((r) => `      <a class="cb-related-card" href="/${r.slug}/"><small
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="/assets/css/clean-blog.css">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -339,20 +336,15 @@ ${headerHtml()}
     </header>
     ${mediaHtml}
     <div class="cb-article-body" data-edit-target data-slug="${slug}" data-inline-field="body">${bodyHtml}</div>
-    <div class="cb-share">
+    <div class="cb-share" data-share data-url="${escapeHtml(canonical)}" data-title="${title}">
       <span class="cb-share-label">Compartir:</span>
-      <a class="cb-share-btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en Facebook">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg>
-      </a>
-      <a class="cb-share-btn" href="https://api.whatsapp.com/send?text=${encodeURIComponent(post.title)}%20${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2m0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2m4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.3-.4c.1-.1.1-.3 0-.4s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.3 5.3 0 0 0 1.1 2.7 12 12 0 0 0 4.5 4c.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1s1.5-.6 1.7-1.2.2-1.1.1-1.2-.2-.2-.4-.3"/></svg>
-      </a>
-      <a class="cb-share-btn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en X">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M18.9 2h3.4l-7.5 8.6L23.6 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1 2h7l4.9 6.4zm-1.2 18h1.9L7.3 4H5.2z"/></svg>
-      </a>
-      <a class="cb-share-btn" href="https://t.me/share/url?url=${encodeURIComponent(canonical)}&text=${encodeURIComponent(post.title)}" target="_blank" rel="noopener" aria-label="Compartir en Telegram">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M22 2 2 10.5l5.5 1.8L9.5 19l4-3.5 4.7 3.5L22 2zM8.9 12.1 17 6.5l-6.5 6-.2 2.8-1.4-3.2z"/></svg>
-      </a>
+      <button type="button" class="cb-share-native" data-share-native hidden aria-label="Compartir publicación">Compartir</button>
+      <div class="cb-share-fallback" data-share-fallback hidden aria-label="Opciones para compartir">
+        <a class="cb-share-btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en Facebook">f</a>
+        <a class="cb-share-btn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en X">𝕏</a>
+        <a class="cb-share-btn" href="https://api.whatsapp.com/send?text=${encodeURIComponent(post.title)}%20${encodeURIComponent(canonical)}" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp">☏</a>
+        <button type="button" class="cb-share-btn cb-share-copy" data-share-copy aria-label="Copiar enlace">Copiar enlace</button>
+      </div>
     </div>
     ${tagsHtml}
     <div class="cb-after"><strong>Barberena Mi Municipio</strong><br>Blog personal · Opiniones abiertas. Un espacio independiente para hablar de Barberena.</div>
@@ -360,9 +352,11 @@ ${headerHtml()}
     <div class="post-comments">${comentariosBlock(slug)}</div>
   </article>
 </main>
+<div class="site-back"><a href="" data-site-back aria-label="Volver a la página anterior">← Volver</a></div>
 ${footerHtml()}
 <script src="/assets/js/supabase-auth.js"></script>
 <script src="/assets/js/inline-edit-supabase.js" defer></script>
+<script src="/assets/js/site-ui.js" defer></script>
 </body>
 </html>`;
 }
