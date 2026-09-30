@@ -201,11 +201,10 @@ function heroCarruselHtml(featuredPosts) {
 function postCard(post) {
   const title = escapeHtml(post.title);
   const label = CATEGORY_LABELS[post.category] || 'Barberena';
-  const categoryClass = ['barberena', 'opiniones', 'historias'].includes(post.category) ? post.category : 'barberena';
   const minutes = readingMinutes(post.body);
   const media = mediaBlock(post, title);
 
-  return `<article class="cb-post cb-post--${categoryClass}">
+  return `<article class="cb-post">
   ${media}
   <div class="cb-post-meta">
     <span class="cat">${label}</span> · ${fechaCorta(post.published_at)} · ${minutes} min de lectura
