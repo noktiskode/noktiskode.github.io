@@ -47,8 +47,8 @@
     if(copy){
       copy.addEventListener('click', function(){
         copyText().then(function(){
-          var old=copy.textContent; copy.textContent='Copiado';
-          setTimeout(function(){copy.textContent=old;},1800);
+          copy.classList.add('is-copied');
+          setTimeout(function(){copy.classList.remove('is-copied');},1800);
         }).catch(function(){
           window.prompt('Copiá este enlace:', url);
         });
