@@ -42,27 +42,18 @@ function fechaCorta(iso) {
 function headerHtml() {
   return `<header class="cb-navbar">
   <div class="cb-container cb-navbar-inner">
-    <a class="cb-brand" href="/">
-      <img src="/images/bmm-logo.png" alt="" class="cb-brand-icon">
-      <span>Barberena Mi Municipio</span>
-    </a>
+    <a class="cb-brand" href="/"><img src="/images/bmm-logo.png" alt="" class="cb-brand-icon"><span>Barberena Mi Municipio</span></a>
+    <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">Menú</button>
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a>
-      <a href="/barberena/">Barberena</a>
-      <a href="/opiniones/">Opiniones</a>
-      <a href="/historias/">Historias</a>
-      <a href="/archivo/">Archivo</a>
+      <a href="/">Inicio</a><a href="/barberena/">Barberena</a><a href="/opiniones/">Opiniones</a><a href="/historias/">Historias</a><a href="/archivo/">Archivo</a>
     </nav>
-    <div class="cb-nav-actions">
-      <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-      </button>
-      <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
-      <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">☰</button>
-    </div>
+    <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
+    </button>
   </div>
   <div class="cb-search-panel" id="searchPanel" hidden>
     <div class="cb-container">
@@ -81,24 +72,38 @@ function headerHtml() {
   var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
   var s=document.querySelector('.cb-search-toggle'),p=document.getElementById('searchPanel');
   var i=p&&p.querySelector('input'),c=p&&p.querySelector('.cb-search-close');
-  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menú');}}
-  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){if(i)i.focus();},30);}
+  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');}}
+  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){i.focus();},30);}
   function closeSearch(){p.hidden=true;s.setAttribute('aria-expanded','false');}
-  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});}
+  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');});}
   if(s&&p&&i&&c){
     s.addEventListener('click',function(){if(p.hidden)openSearch();else closeSearch();});
     c.addEventListener('click',closeSearch);
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!p.hidden)closeSearch();if(n&&n.classList.contains('is-open'))closeMenu();}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden)closeSearch();});
     document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target)&&!s.contains(e.target))closeSearch();});
   }
 })();
 (function(){
-  var STORAGE_KEY='bmm-theme',btn=document.querySelector('.cb-theme-toggle');
-  if(!btn)return;
-  function isDarkNow(){var t=document.documentElement.getAttribute('data-theme');if(t==='dark')return true;if(t==='light')return false;return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;}
-  function updateLabel(dark){btn.setAttribute('aria-pressed',dark?'true':'false');btn.setAttribute('aria-label',dark?'Cambiar a modo claro':'Cambiar a modo oscuro');}
+  var STORAGE_KEY='bmm-theme';
+  var btn=document.querySelector('.cb-theme-toggle');
+  if(!btn) return;
+  function isDarkNow(){
+    var t=document.documentElement.getAttribute('data-theme');
+    if(t==='dark') return true;
+    if(t==='light') return false;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function updateLabel(dark){
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+  }
   updateLabel(isDarkNow());
-  btn.addEventListener('click',function(){var next=isDarkNow()?'light':'dark';document.documentElement.setAttribute('data-theme',next);try{localStorage.setItem(STORAGE_KEY,next);}catch(e){}updateLabel(next==='dark');});
+  btn.addEventListener('click', function(){
+    var next = isDarkNow() ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try{ localStorage.setItem(STORAGE_KEY, next); }catch(e){}
+    updateLabel(next==='dark');
+  });
 })();
 </script>`;
 }
@@ -135,7 +140,7 @@ function postCard(post) {
   <div class="cb-post-meta"><span class="cat">${LABEL}</span> · ${fechaCorta(post.published_at)} · ${minutes} min de lectura</div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
-  <a class="cb-readmore" href="/${post.slug}/">Leer publicación</a>
+  <a class="cb-readmore" href="/${post.slug}/">Leer publicación →</a>
   <a class="cb-edit" href="#" data-edit-link data-slug="${post.slug}" data-inline-field="title" style="display:none;">✏️ Editar título</a>
 </article>`;
 }
@@ -162,6 +167,7 @@ function renderCategoryPage(posts) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/css/clean-blog.css">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -174,11 +180,9 @@ ${headerHtml()}
   </header>
   ${listHtml}
 </section>
-<div class="site-back"><a href="" data-site-back aria-label="Volver a la página anterior">← Volver</a></div>
 ${footerHtml()}
 <script src="/assets/js/supabase-auth.js"></script>
 <script src="/assets/js/inline-edit-supabase.js" defer></script>
-<script src="/assets/js/site-ui.js" defer></script>
 </body>
 </html>`;
 }
