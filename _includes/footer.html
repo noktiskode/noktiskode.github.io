@@ -1,3 +1,6 @@
+{% unless page.url == '/' %}
+<div class="site-back"><a href="" data-site-back aria-label="Volver a la página anterior">← Volver</a></div>
+{% endunless %}
 <footer class="cb-footer">
   <div class="cb-container">
     <a href="{{ '/' | relative_url }}" class="cb-footer-brand">
