@@ -72,7 +72,7 @@ function headerHtml() {
   return `<header class="cb-navbar">
   <div class="cb-container cb-navbar-inner">
     <a class="cb-brand" href="/">
-      <img src="/images/bmm-logo.png" alt="" class="cb-brand-icon">
+      <img src="/images/logo-header.png" alt="" class="cb-brand-icon">
       <span>Barberena Mi Municipio</span>
     </a>
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
@@ -136,7 +136,7 @@ function footerHtml() {
   return `<footer class="cb-footer">
   <div class="cb-container">
     <a href="/" class="cb-footer-brand">
-      <img src="/images/icon-bmm.png" alt="">
+      <img src="/images/logo-footer.png" alt="">
       <span>Barberena Mi Municipio</span>
     </a>
     <p>Blog personal · Opiniones abiertas · Página independiente</p>
