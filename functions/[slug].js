@@ -331,11 +331,11 @@ ${headerHtml()}
   <article class="cb-article">
     <header class="cb-article-header">
       <div class="meta"><a href="/${post.category}/">${categoryLabel}</a> · ${fecha} · ${minutes} min de lectura</div>
-      <h1 data-edit-target data-slug="${slug}" data-inline-field="title">${title}</h1>
-      ${post.excerpt ? `<p class="cb-article-lead" data-edit-target data-slug="${slug}" data-inline-field="excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
+      <h1>${title}</h1>
+      ${post.excerpt ? `<p class="cb-article-lead">${escapeHtml(post.excerpt)}</p>` : ''}
     </header>
     ${mediaHtml}
-    <div class="cb-article-body" data-edit-target data-slug="${slug}" data-inline-field="body">${bodyHtml}</div>
+    <div class="cb-article-body">${bodyHtml}</div>
     <div class="cb-share" data-share data-url="${escapeHtml(canonical)}" data-title="${title}">
       <span class="cb-share-label">Compartir:</span>
       <button type="button" class="cb-share-native" data-share-native hidden aria-label="Compartir publicación">
@@ -366,7 +366,6 @@ ${headerHtml()}
 <div class="site-back"><a href="" data-site-back aria-label="Volver a la página anterior">← Volver</a></div>
 ${footerHtml()}
 <script src="/assets/js/supabase-auth.js"></script>
-<script src="/assets/js/inline-edit-supabase.js" defer></script>
 <script src="/assets/js/site-ui.js" defer></script>
 </body>
 </html>`;

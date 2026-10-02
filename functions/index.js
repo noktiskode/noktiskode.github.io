@@ -206,7 +206,6 @@ function postCard(post) {
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
   <a class="cb-readmore" href="/${post.slug}/">Leer más &gt;</a>
-  <a class="cb-edit" href="#" data-edit-link data-slug="${post.slug}" data-inline-field="title" style="display:none;">✏️ Editar título</a>
 </article>`;
 }
 
@@ -350,7 +349,6 @@ ${footerHtml()}
 })();
 </script>
 <script src="/assets/js/supabase-auth.js"></script>
-<script src="/assets/js/inline-edit-supabase.js" defer></script>
 </body>
 </html>`;
 }
