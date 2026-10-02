@@ -1,0 +1,29 @@
+name: Comprimir imágenes de Supabase
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Modo prueba (true = solo muestra, false = aplica cambios)"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm install --no-save @supabase/supabase-js sharp
+
+      - name: Comprimir
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node .github/scripts/compress-images.mjs
