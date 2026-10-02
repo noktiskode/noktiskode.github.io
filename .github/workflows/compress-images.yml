@@ -26,4 +26,5 @@ jobs:
         env:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           DRY_RUN: ${{ inputs.dry_run }}
+          QUALITY: 88
         run: node .github/scripts/compress-images.mjs
