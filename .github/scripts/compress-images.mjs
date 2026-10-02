@@ -9,7 +9,8 @@
 //   BUCKET                       (default: post-images)
 //   DRY_RUN                      ("false" para aplicar cambios de verdad)
 //   MIN_KB                       (default: 200, no toca imágenes más livianas)
-//   MAX_WIDTH                    (default: 1200)
+//   MAX_WIDTH                    (default: 1400)
+//   QUALITY                      (default: 82; más alto = más nítido y más pesado)
 
 import { createClient } from '@supabase/supabase-js';
 import sharp from 'sharp';
@@ -19,7 +20,8 @@ const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = process.env.BUCKET || 'post-images';
 const DRY_RUN = process.env.DRY_RUN !== 'false';
 const MIN_BYTES = Number(process.env.MIN_KB || 200) * 1024;
-const MAX_WIDTH = Number(process.env.MAX_WIDTH || 1200);
+const MAX_WIDTH = Number(process.env.MAX_WIDTH || 1400);
+const QUALITY = Number(process.env.QUALITY || 82);
 
 if (!KEY) {
   console.error('Falta SUPABASE_SERVICE_ROLE_KEY');
@@ -47,8 +49,8 @@ async function listAll() {
 
 function encode(buf, ext) {
   let img = sharp(buf).rotate().resize({ width: MAX_WIDTH, withoutEnlargement: true });
-  if (ext === 'webp') return img.webp({ quality: 75 }).toBuffer();
-  if (ext === 'jpg' || ext === 'jpeg') return img.jpeg({ quality: 78, mozjpeg: true }).toBuffer();
+  if (ext === 'webp') return img.webp({ quality: QUALITY }).toBuffer();
+  if (ext === 'jpg' || ext === 'jpeg') return img.jpeg({ quality: QUALITY, mozjpeg: true }).toBuffer();
   if (ext === 'png') return img.png({ compressionLevel: 9, palette: true }).toBuffer();
   return null;
 }
