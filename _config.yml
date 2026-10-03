@@ -75,3 +75,7 @@ tags:
   - Congreso
   - Templo de Minerva
   - Antorchas
+  
+include:
+  - _redirects
+  
