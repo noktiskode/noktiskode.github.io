@@ -170,7 +170,7 @@ function heroCarruselHtml(featuredPosts) {
     const cls = i === 0 ? 'activa' : (i === n - 1 ? 'anterior' : 'siguiente');
     return `<div class="hero-slide ${cls}" data-index="${i}">
     <a class="hero-slide-link" href="/${post.slug}/" aria-label="${title}">
-      <img src="${resolveImage(post)}" alt="${title}">
+      <img src="${resolveImage(post)}" alt="${title}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>
       <div class="hero-overlay"></div>
       <div class="cb-container hero-slide-content">
         <p class="cb-hero-kicker">${fechaCorta(post.published_at)}</p>
@@ -205,7 +205,7 @@ function postCard(post) {
   </div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
-  <a class="cb-readmore" href="/${post.slug}/">Leer más &gt;</a>
+  <a class="cb-readmore" href="/${post.slug}/" aria-label="Leer más: ${title}">Leer más &gt;</a>
 </article>`;
 }
 
@@ -238,7 +238,8 @@ function renderHome(featuredPosts, gridPosts) {
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -246,7 +247,6 @@ function renderHome(featuredPosts, gridPosts) {
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="google-site-verification" content="rnI2_KGt4xMqGnZfDKDdzVr7GxNS1HKlzvXbb8d2ja4">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 ${headerHtml()}
@@ -348,7 +348,16 @@ ${footerHtml()}
   render();
 })();
 </script>
-<script src="/assets/js/supabase-auth.js"></script>
+<script>
+/* Supabase solo se descarga si hay una sesión de admin guardada en este navegador */
+(function(){try{
+  if(!localStorage.getItem('sb-iolchsadedieagiqrxzu-auth-token'))return;
+  var a=document.createElement('script');
+  a.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+  a.onload=function(){var b=document.createElement('script');b.src='/assets/js/supabase-auth.js';document.body.appendChild(b);};
+  document.head.appendChild(a);
+}catch(e){}})();
+</script>
 </body>
 </html>`;
 }
