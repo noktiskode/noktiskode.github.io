@@ -1,2 +1,4 @@
 /login.html /admin/login.html 301
+/login /admin/login 301
 /moderar.html /admin/moderar.html 301
+/moderar /admin/moderar 301
