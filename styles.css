@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: .75rem 1.5rem;
   border: 0;
   border-radius: .375rem;
-  background: var(--rojo);
+  background: #c93c0b; /* contraste 5.1:1 con texto blanco (antes #ef4f1d = 3.6:1) */
   color: #fff;
   font: 600 .875rem var(--fuente-texto);
   letter-spacing: .0625em;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: background .2s ease;
 }
 .cb-more:hover,
-.cb-search-form button:hover { background: var(--rojo-hover); }
+.cb-search-form button:hover { background: #b8340b; }
 
 /* ---------- 3. Navegación y buscador ---------- */
 .cb-container { width: min(1140px, calc(100% - 40px)); margin: 0 auto; }
@@ -268,16 +268,19 @@ html[data-theme="dark"] .cb-nav-actions .cb-theme-toggle .icon-moon { display: b
   text-decoration: underline; text-underline-offset: 4px;
 }
 .hero-dots {
-  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
-  display: flex; gap: 6px; z-index: 5;
+  position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 0; z-index: 5;
 }
+/* Área táctil de 48x48 px; la barrita visible sigue siendo de 22x4 px */
 .hero-dot {
-  width: 22px; height: 4px; padding: 0;
-  border: 0; border-radius: 2px;
+  box-sizing: border-box;
+  width: 48px; height: 48px; padding: 22px 13px;
+  border: 0; border-radius: 0;
   background: rgba(255, 255, 255, .45);
+  background-clip: content-box;
   cursor: pointer; transition: background .2s ease;
 }
-.hero-dot.activo { background: #fff; }
+.hero-dot.activo { background: #fff; background-clip: content-box; }
 
 /* Héroe de respaldo (index.html de Jekyll) */
 .cb-hero {
