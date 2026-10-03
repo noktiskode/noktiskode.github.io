@@ -1,0 +1,24 @@
+# Barberena Mi Municipio
+
+> Blog personal e independiente sobre Barberena y El Cerinal, Santa Rosa, Guatemala. Publica opiniones, historias, acontecimientos y temas de interés público del municipio.
+
+El contenido son artículos escritos desde una perspectiva local. Cada publicación pertenece a una de tres categorías: Barberena, Opiniones o Historias, y todas se pueden consultar en el Archivo.
+
+## Secciones
+
+- [Barberena](https://barberenamimunicipio.top/barberena/): Lo que ocurre en el municipio: obras, servicios, comunidad, acontecimientos e información pública.
+- [Opiniones](https://barberenamimunicipio.top/opiniones/): Reflexiones, críticas, comentarios y análisis escritos desde una perspectiva personal.
+- [Historias](https://barberenamimunicipio.top/historias/): Memoria, patrimonio y relatos de Barberena: lugares, personajes, tradiciones.
+- [Archivo](https://barberenamimunicipio.top/archivo/): La biblioteca completa del blog, de la publicación más reciente a la más antigua.
+- [Buscar](https://barberenamimunicipio.top/buscar/): Buscador de publicaciones.
+
+## Acerca de este sitio
+
+- [Lo que publicamos](https://barberenamimunicipio.top/que-publicamos/): Qué tipo de contenido se publica en el sitio.
+- [¿Cómo participar?](https://barberenamimunicipio.top/como-participar/): Formas de aportar información y opiniones.
+- [Manifiesto](https://barberenamimunicipio.top/manifiesto/): Por qué existe esta página.
+
+## Opcional
+
+- [Mapa del sitio](https://barberenamimunicipio.top/sitemap.xml): Lista de todas las URL publicadas.
+- [Página de Facebook](https://www.facebook.com/BarberenaMiMunicipio/): Canal donde también se comparten las publicaciones.
