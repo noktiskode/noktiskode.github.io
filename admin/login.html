@@ -1,0 +1,93 @@
+---
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión — Barberena Mi Municipio</title>
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 320px;
+    }
+    h1 { font-size: 1.2rem; margin-bottom: 1.2rem; }
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      background: #ef4f1d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.6; }
+    #msg { color: #c0392b; font-size: 0.9rem; margin-top: 0.8rem; min-height: 1.2em; }
+  </style>
+</head>
+<body>
+  <form id="login-form">
+    <h1>Iniciar sesión — BMM</h1>
+    <input type="email" id="email" placeholder="Correo" required autocomplete="username">
+    <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
+    <button type="submit" id="submit-btn">Entrar</button>
+    <div id="msg"></div>
+  </form>
+
+  <script src="/assets/js/supabase-auth.js"></script>
+  <script>
+    // Si ya hay sesión activa, no tiene sentido mostrar el login
+    window.supabaseReady.then(function (session) {
+      if (session) window.location.href = '/';
+    });
+
+    document.getElementById('login-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const msg = document.getElementById('msg');
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      btn.disabled = true;
+      btn.textContent = 'Entrando…';
+      msg.textContent = '';
+
+      const { error } = await window.supabaseClient.auth.signInWithPassword({ email, password });
+
+      if (error) {
+        msg.textContent = 'No se pudo iniciar sesión: ' + error.message;
+        btn.disabled = false;
+        btn.textContent = 'Entrar';
+      } else {
+        window.location.href = '/';
+      }
+    });
+  </script>
+</body>
+</html>

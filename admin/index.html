@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -91,9 +94,21 @@
       h1{font-size:26px}.card{padding:18px}
       .brand-text{font-size:15px}.brand-text small{display:none}
       .top-actions .btn{padding:9px 11px;font-size:14px}
+      .top-actions .long{display:none}
       .post-item{flex-direction:column;align-items:flex-start}
       .post-btns{width:100%}
       .image-actions .btn{flex:1 1 100%}
+    }
+    @media (max-width:520px){
+      .brand-text{display:none}
+    }
+    @media (max-width:440px){
+      .top{padding:10px 12px}
+      .top-actions{gap:4px}
+      .top-actions .btn{padding:8px 9px;font-size:13px}
+    }
+    @media (max-width:370px){
+      .logo{display:none}
     }
   </style>
 </head>
@@ -105,6 +120,7 @@
         <div class="brand-text">Barberena Mi Municipio<small>Panel de publicaciones</small></div>
       </div>
       <div class="top-actions">
+        <a class="btn btn-secondary" href="/admin/moderar.html">Moderar<span class="long"> comentarios</span></a>
         <a class="btn btn-secondary" href="/" target="_blank">Ver sitio</a>
         <button id="logout" class="btn btn-secondary">Cerrar sesión</button>
       </div>
@@ -118,7 +134,7 @@
     <section id="login-required" class="card" style="display:none">
       <h1>Acceso requerido</h1>
       <p class="intro">Iniciá sesión para crear publicaciones.</p>
-      <a class="btn btn-primary" href="/login.html">Ir al inicio de sesión</a>
+      <a class="btn btn-primary" href="/admin/login.html">Ir al inicio de sesión</a>
     </section>
 
     <section id="app" style="display:none">
@@ -513,7 +529,7 @@
 
   $('logout').addEventListener('click',async()=>{
     await client.auth.signOut();
-    location.href='/login.html';
+    location.href='/admin/login.html';
   });
 
   $('clear').addEventListener('click', exitEditMode);
