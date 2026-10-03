@@ -164,7 +164,7 @@ function postCard(post) {
   <div class="cb-post-meta">${fechaCorta(post.published_at)} · <span class="cat">${label}</span> · ${minutes} min de lectura</div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
-  <a class="cb-readmore" href="/${post.slug}/">Leer más &gt;</a>
+  <a class="cb-readmore" href="/${post.slug}/" aria-label="Leer más: ${title}">Leer más &gt;</a>
 </article>`;
 }
 
@@ -197,10 +197,10 @@ function renderSearch(q, posts, failed) {
   <link rel="canonical" href="${SITE_URL}/buscar/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 ${headerHtml()}
@@ -218,7 +218,16 @@ ${headerHtml()}
   </div>
 </main>
 ${footerHtml()}
-<script src="/assets/js/supabase-auth.js"></script>
+<script>
+/* Supabase solo se descarga si hay una sesión de admin guardada en este navegador */
+(function(){try{
+  if(!localStorage.getItem('sb-iolchsadedieagiqrxzu-auth-token'))return;
+  var a=document.createElement('script');
+  a.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+  a.onload=function(){var b=document.createElement('script');b.src='/assets/js/supabase-auth.js';document.body.appendChild(b);};
+  document.head.appendChild(a);
+}catch(e){}})();
+</script>
 </body>
 </html>`;
 }
