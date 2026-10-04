@@ -1,0 +1,82 @@
+# Archivos que el workflow "Limpiar repo" va a borrar (uno por línea).
+# Las líneas que empiezan con # se ignoran. Quita el # para activar una línea.
+
+# ===== PASO 1 - Seguros: no afectan el sitio (62 imágenes sin uso, 19.1 MB) =====
+# Antes de activar el paso 1, corre verificar-imagenes.sql en Supabase: debe dar 0 filas.
+images/blog/1000014737.jpg
+images/blog/1000031636.webp
+images/blog/1000037781.webp
+images/blog/1000038567.webp
+images/blog/1000042077.webp
+images/blog/122199604400318393.jpg
+images/blog/122200885946318393.jpg
+images/blog/122202683630318393.jpg
+images/blog/122206146404318393.jpg
+images/blog/122208817046318393.jpg
+images/blog/122209516196318393.jpg
+images/blog/122209516250318393.jpg
+images/blog/122209516304318393.jpg
+images/blog/122209516364318393.jpg
+images/blog/122209516418318393.jpg
+images/blog/122209516472318393.jpg
+images/blog/122209516520318393.jpg
+images/blog/122209516568318393.jpg
+images/blog/122210204678318393.jpg
+images/blog/122210364284318393.jpg
+images/blog/122210553440318393.jpg
+images/blog/122210553446318393.jpg
+images/blog/122210553452318393.jpg
+images/blog/122210553458318393.jpg
+images/blog/122211041060318393.jpg
+images/blog/122226748058318393.jpg
+images/blog/122226832406318393.jpg
+images/blog/122227044212318393.jpg
+images/blog/122227070990318393.jpg
+images/blog/122227072712318393.jpg
+images/blog/122227151840318393.jpg
+images/blog/122227178564318393.jpg
+images/blog/122227556810318393.jpg
+images/blog/122227608476318393.jpg
+images/blog/122227776386318393.jpg
+images/blog/122227982504318393.jpg
+images/blog/122227998026318393.jpg
+images/blog/122228071406318393.jpg
+images/blog/122228280116318393.jpg
+images/blog/122228396978318393.jpg
+images/blog/122228580830318393.jpg
+images/blog/122228591786318393.jpg
+images/blog/122228778542318393.jpg
+images/blog/122228778596318393.jpg
+images/blog/122228892092318393.jpg
+images/blog/122228922776318393.jpg
+images/blog/122229011354318393.jpg
+images/blog/122229011390318393.jpg
+images/blog/122229011438318393.jpg
+images/blog/122229011480318393.jpg
+images/blog/122229011522318393.jpg
+images/blog/122229011564318393.jpg
+images/blog/122229123986318393.jpg
+images/blog/122229279776318393.jpg
+images/blog/122229421238318393.jpg
+images/blog/122229424112318393.jpg
+images/blog/122229425096318393.jpg
+images/blog/122229499190318393.jpg
+images/blog/122229499232318393.jpg
+images/blog/20260927145243.webp
+images/bmm-footer.png
+images/bmm-header.png
+
+# Panel antiguo de edición en línea (también hay que quitar su línea en _layouts/default.html)
+assets/js/inline-edit-supabase.js
+
+# Acceso con GitHub para un CMS que ya no se usa (nada del repo lo llama)
+functions/api/auth.js
+functions/api/auth/callback.js
+
+# ===== PASO 2 - Solo después de confirmar que los 485 posts están en Supabase =====
+#.github/workflows/migrate-posts.yml
+#.github/scripts/migrate_posts.py
+
+# ===== PASO 3 - Decides tú =====
+# Solo si NO usas noktiskode.github.io (el sitio real está en Cloudflare):
+#.github/workflows/jekyll.yml
