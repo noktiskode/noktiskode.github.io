@@ -1,0 +1,49 @@
+name: Limpiar repo
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Modo prueba (true = solo lista lo que borraría, false = borra y guarda el cambio)"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+permissions:
+  contents: write
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Borrar archivos de .github/cleanup/borrar.txt
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          LISTA=".github/cleanup/borrar.txt"
+          borrados=0; faltan=0
+          while IFS= read -r linea || [ -n "$linea" ]; do
+            # ignora vacías y comentarios
+            case "$linea" in ""|\#*) continue ;; esac
+            if [ -f "$linea" ]; then
+              echo "Borraría: $linea ($(du -k "$linea" | cut -f1) KB)"
+              if [ "$DRY_RUN" = "false" ]; then git rm -q "$linea"; fi
+              borrados=$((borrados+1))
+            else
+              echo "No existe (se omite): $linea"; faltan=$((faltan+1))
+            fi
+          done < "$LISTA"
+          echo ""
+          echo "Total: $borrados archivos, $faltan no encontrados."
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Esto fue una prueba. Corre de nuevo con dry_run = false para aplicar."
+            exit 0
+          fi
+          if [ "$borrados" -gt 0 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Limpieza del repo: borra archivos sin uso"
+            git push
+          fi
