@@ -152,7 +152,7 @@ function comentariosBlock(slug) {
   onSnapshot(q, snap => {
     const list = document.getElementById('comment-list');
     if (snap.empty) {
-      list.innerHTML = '<div style="text-align:center;padding:2.2rem 1rem 1.6rem;"><img src="/images/icons/comments-icon.png" alt="" style="display:block;width:64px;height:auto;margin:0 auto 1rem;"><p style="font-weight:700;font-size:19px;margin:0 0 .3rem;color:var(--texto);">Aún no hay comentarios</p><p style="color:var(--texto-mudo);font-size:15px;margin:0;">Sé la primera persona en comentar.</p></div>';
+      list.innerHTML = '<div style="text-align:center;padding:2.2rem 1rem 1.6rem;"><img src="/images/icons/comments-icon.svg" alt="" style="display:block;width:64px;height:auto;margin:0 auto 1rem;"><p style="font-weight:700;font-size:19px;margin:0 0 .3rem;color:var(--texto);">Aún no hay comentarios</p><p style="color:var(--texto-mudo);font-size:15px;margin:0;">Sé la primera persona en comentar.</p></div>';
       return;
     }
     list.innerHTML = snap.docs.map(d => {
