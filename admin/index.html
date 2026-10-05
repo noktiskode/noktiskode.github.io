@@ -146,13 +146,13 @@ sitemap: false
           <div class="grid">
             <div class="full">
               <label for="title">Título *</label>
-              <input id="title" required maxlength="180" autocomplete="off" placeholder="Escribe el título aquí...">
+              <input id="title" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" required maxlength="180" autocomplete="off" placeholder="Escribe el título aquí...">
             </div>
 
             <div class="full">
               <label for="slug">Slug / URL *</label>
               <div class="slug-row">
-                <input id="slug" required maxlength="180" autocomplete="off" placeholder="mi-titulo-de-post">
+                <input id="slug" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" required maxlength="180" autocomplete="off" placeholder="mi-titulo-de-post">
                 <button type="button" id="make-slug" class="btn btn-secondary">Generar</button>
               </div>
               <p class="help">Será la dirección /slug/ de la publicación.</p>
@@ -174,7 +174,7 @@ sitemap: false
 
             <div class="full">
               <label for="excerpt">Resumen corto</label>
-              <textarea id="excerpt" style="min-height:80px" maxlength="500" placeholder="Resumen para la portada o búsquedas..."></textarea>
+              <textarea id="excerpt" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" style="min-height:80px" maxlength="500" placeholder="Resumen para la portada o búsquedas..."></textarea>
               <p class="help">Si lo dejás vacío, se generará a partir del primer párrafo.</p>
             </div>
 
@@ -200,7 +200,7 @@ sitemap: false
                 <div id="image-upload-controls" class="image-upload-controls">
                   <button type="button" id="btn-select-file" class="btn btn-secondary">Elegir imagen</button>
                   <div class="url-row">
-                    <input id="image-url-manual" placeholder="O pegá una URL / ruta a mano…" autocomplete="off">
+                    <input id="image-url-manual" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" placeholder="O pegá una URL / ruta a mano…" autocomplete="off">
                     <button type="button" id="btn-use-url" class="btn btn-secondary">Usar</button>
                   </div>
                 </div>
@@ -210,12 +210,12 @@ sitemap: false
 
             <div class="full">
               <label for="video">Video (opcional)</label>
-              <input id="video" placeholder="https://www.youtube.com/watch?v=... o URL de Facebook Reel">
+              <input id="video" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" autocomplete="off" inputmode="url" placeholder="https://www.youtube.com/watch?v=... o URL de Facebook Reel">
             </div>
 
             <div class="full">
               <label for="tags">Etiquetas</label>
-              <input id="tags" placeholder="Agua, Obras, Comunidad">
+              <input id="tags" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" autocomplete="off" placeholder="Agua, Obras, Comunidad">
               <p class="help">Separalas con comas.</p>
             </div>
 
@@ -225,7 +225,7 @@ sitemap: false
                 <input type="file" id="body-image-file" accept="image/*" style="flex:1">
                 <button type="button" id="body-image-upload-btn" class="btn btn-secondary">Insertar imagen aquí</button>
               </div>
-              <textarea id="body" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
+              <textarea id="body" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
               <p class="help" id="body-image-status">Se admite Markdown y HTML básico. La imagen se inserta donde esté el cursor.</p>
             </div>
 
@@ -247,7 +247,7 @@ sitemap: false
 
       <div class="card">
         <h2>Publicaciones existentes</h2>
-        <input id="search" placeholder="Buscar por título…" style="margin-bottom:14px" autocomplete="off">
+        <input id="search" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" placeholder="Buscar por título…" style="margin-bottom:14px" autocomplete="off">
         <div id="recent" class="posts"><span class="loading">Cargando…</span></div>
       </div>
     </section>
