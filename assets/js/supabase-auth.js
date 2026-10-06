@@ -1,6 +1,6 @@
 /**
- * Cliente de Supabase para BMM — sesión de login persistente.
- * Cargar este script en todas las páginas, ANTES de inline-edit-supabase.js.
+ * Cliente de Supabase para BMM — solo lo usa la página de login del panel (/admin/login.html).
+ * Las páginas públicas ya no cargan este script ni muestran ninguna barra de sesión.
  * Requiere haber cargado antes: https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
  */
 (function () {
@@ -17,61 +17,8 @@
     }
   });
 
-  function injectAdminBar(session) {
-    if (!session || document.getElementById('bmm-admin-bar')) return;
-    const bar = document.createElement('div');
-    bar.id = 'bmm-admin-bar';
-    bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9999;' +
-      'background:#111;color:#fff;font:13px system-ui,sans-serif;' +
-      'padding:8px 14px;display:flex;justify-content:space-between;flex-wrap:wrap;' +
-      'align-items:center;gap:8px 10px;box-shadow:0 -2px 8px rgba(0,0,0,.3);';
-
-    const label = document.createElement('span');
-    label.textContent = '🟢 Conectado como ' + (session.user && session.user.email ? session.user.email : 'admin');
-
-    const panelLink = document.createElement('a');
-    panelLink.href = '/admin/';
-    panelLink.textContent = '📝 Panel';
-    panelLink.style.cssText = 'color:#fff;text-decoration:underline;flex-shrink:0;';
-
-    const right = document.createElement('div');
-    right.style.cssText = 'display:flex;align-items:center;gap:14px;flex-shrink:0;';
-
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.textContent = 'Cerrar sesión';
-    btn.style.cssText = 'background:#ef4f1d;color:#fff;border:none;' +
-      'padding:6px 12px;border-radius:4px;cursor:pointer;font-weight:700;flex-shrink:0;';
-    btn.addEventListener('click', async function () {
-      btn.disabled = true;
-      btn.textContent = 'Saliendo…';
-      await window.supabaseClient.auth.signOut();
-      window.location.reload();
-    });
-
-    right.appendChild(panelLink);
-    right.appendChild(btn);
-    bar.appendChild(label);
-    bar.appendChild(right);
-    document.body.appendChild(bar);
-  }
-
-  // Marca el <body> con una clase cuando hay sesión activa, para que el CSS
-  // pueda mostrar/ocultar elementos de admin sin esperar al JS de cada uno.
-  window.supabaseClient.auth.onAuthStateChange(function (_event, session) {
-    document.body.classList.toggle('is-admin', !!session);
-    if (session) injectAdminBar(session);
-  });
-
-  // Revisa la sesión ya guardada al cargar la página (login persistente real)
+  // Promesa con la sesión ya guardada (por si algún script del panel la necesita)
   window.supabaseReady = window.supabaseClient.auth.getSession().then(function (res) {
-    const session = res.data.session;
-    document.body.classList.toggle('is-admin', !!session);
-    if (session) {
-      // Espera a que el <body> exista si el script corrió antes de tiempo
-      if (document.body) injectAdminBar(session);
-      else document.addEventListener('DOMContentLoaded', () => injectAdminBar(session));
-    }
-    return session;
+    return res.data.session;
   });
 })();
