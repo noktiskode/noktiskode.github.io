@@ -365,16 +365,6 @@ ${headerHtml()}
 </main>
 <div class="site-back"><a href="" data-site-back aria-label="Volver a la página anterior">← Volver</a></div>
 ${footerHtml()}
-<script>
-/* Supabase solo se descarga si hay una sesión de admin guardada en este navegador */
-(function(){try{
-  if(!localStorage.getItem('sb-iolchsadedieagiqrxzu-auth-token'))return;
-  var a=document.createElement('script');
-  a.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
-  a.onload=function(){var b=document.createElement('script');b.src='/assets/js/supabase-auth.js';document.body.appendChild(b);};
-  document.head.appendChild(a);
-}catch(e){}})();
-</script>
 <script src="/assets/js/site-ui.js" defer></script>
 </body>
 </html>`;

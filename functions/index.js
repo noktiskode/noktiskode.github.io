@@ -348,16 +348,6 @@ ${footerHtml()}
   render();
 })();
 </script>
-<script>
-/* Supabase solo se descarga si hay una sesión de admin guardada en este navegador */
-(function(){try{
-  if(!localStorage.getItem('sb-iolchsadedieagiqrxzu-auth-token'))return;
-  var a=document.createElement('script');
-  a.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
-  a.onload=function(){var b=document.createElement('script');b.src='/assets/js/supabase-auth.js';document.body.appendChild(b);};
-  document.head.appendChild(a);
-}catch(e){}})();
-</script>
 </body>
 </html>`;
 }
