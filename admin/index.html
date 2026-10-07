@@ -529,7 +529,7 @@ sitemap: false
 
   $('logout').addEventListener('click',async()=>{
     await client.auth.signOut();
-    location.href='/admin/login.html';
+    location.href='/login';
   });
 
   $('clear').addEventListener('click', exitEditMode);
