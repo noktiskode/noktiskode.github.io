@@ -1,6 +1,6 @@
-/admin/login.html    /login    301!
-/admin/login         /login    301!
-/login.html          /login    301!
-/admin/moderar.html  /moderar  301!
-/admin/moderar       /moderar  301!
-/moderar.html        /moderar  301!
+/admin/login.html    /login    301
+/admin/login         /login    301
+/login.html          /login    301
+/admin/moderar.html  /moderar  301
+/admin/moderar       /moderar  301
+/moderar.html        /moderar  301
