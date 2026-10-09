@@ -235,21 +235,23 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
 
 .dest-wrap { position: relative; }
 /* El relleno deja espacio para las sombras de las tarjetas sin que se corten */
+/* Carrusel infinito: el recorte es horizontal y exacto (sin relleno lateral), así no asoman tarjetas vecinas */
 .dest-viewport {
-  overflow-x: auto; overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory; scroll-padding-inline: 12px;
-  scrollbar-width: none; -ms-overflow-style: none;
-  padding: 8px 12px 32px; margin: -8px -12px -32px;
+  overflow: hidden; touch-action: pan-y; cursor: grab;
+  padding: 8px 0 32px; margin: -8px 0 -32px;
 }
-.dest-viewport::-webkit-scrollbar { display: none; }
+.dest-viewport.is-dragging { cursor: grabbing; }
 .dest-track {
   --per: 1; --gap: 16px;
   display: flex; gap: var(--gap);
   margin: 0; padding: 0; list-style: none;
+  will-change: transform;
+  transition: transform .5s cubic-bezier(.22, .8, .3, 1);
 }
 .dest-slide {
   flex: 0 0 calc((100% - (var(--per) - 1) * var(--gap)) / var(--per));
-  min-width: 0; display: flex; scroll-snap-align: start; scroll-snap-stop: always;
+  width: calc((100% - (var(--per) - 1) * var(--gap)) / var(--per));
+  min-width: 0; display: flex;
 }
 @media (min-width: 640px)  { .dest-track { --per: 2; --gap: 20px; } }
 @media (min-width: 1024px) { .dest-track { --per: 3; --gap: 24px; } }
@@ -264,9 +266,8 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
 .dest-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--bg-alt); }
 .dest-media img {
   width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform .5s ease;
+  pointer-events: none; user-select: none; -webkit-user-drag: none;
 }
-.dest-card:hover .dest-media img { transform: scale(1.05); }
 .dest-badge {
   position: absolute; top: 12px; left: 12px; padding: .25rem .7rem;
   border-radius: 999px; background: rgba(194, 65, 12, .93); color: #fff;
@@ -285,12 +286,10 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
   margin: 0 0 .6rem; font-size: 1.25rem; line-height: 1.2;
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-.dest-title a { color: var(--texto); text-decoration: none; transition: color .2s ease; }
-/* Toda la tarjeta es un solo enlace (el del título) */
-.dest-title a::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 16px; }
-.dest-card:hover .dest-title a { color: var(--rojo); }
-.dest-title a:focus-visible { outline: none; }
-.dest-title a:focus-visible::after { outline: 3px solid var(--rojo); outline-offset: -3px; }
+/* Solo el título y el botón "Leer publicación" son enlaces; la foto no lo es */
+.dest-title a { color: var(--texto); text-decoration: none; transition: color .2s ease; -webkit-user-drag: none; }
+.dest-title a:hover { color: var(--rojo); }
+.dest-title a:focus-visible, .dest-cta:focus-visible { outline: 3px solid var(--rojo); outline-offset: 2px; }
 .dest-excerpt {
   margin: 0 0 1.1rem; font-size: .9rem; line-height: 1.55; color: var(--texto-suave);
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
@@ -299,10 +298,10 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
   margin-top: auto; display: flex; align-items: center; justify-content: center; gap: .5rem;
   padding: .65rem 1rem; border-radius: 12px;
   background: var(--bg-alt); color: var(--texto-suave);
-  font: 600 .85rem var(--fuente-texto);
+  font: 600 .85rem var(--fuente-texto); text-decoration: none; -webkit-user-drag: none;
   transition: background .2s ease, color .2s ease;
 }
-.dest-card:hover .dest-cta { background: var(--rojo-hover); color: #fff; }
+.dest-cta:hover { background: var(--rojo-hover); color: #fff; }
 
 /* Flechas: a la altura de la foto de la tarjeta */
 .dest-wrap { --cw: calc(100vw - 32px); }
@@ -339,7 +338,7 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
 }
 .dest-dot:hover span { background: rgba(120, 126, 132, .8); }
 .dest-dot[aria-current="true"] span { width: 28px; background: var(--rojo); }
-.dest.sin-control .dest-arrow, .dest.sin-control .dest-dots { display: none; }
+.dest.sin-control .dest-arrow, .dest.sin-control .dest-dots, .dest.sin-control .dest-clone { display: none; }
 
 /* Héroe de respaldo (index.html de Jekyll) */
 .cb-hero {
@@ -450,6 +449,10 @@ html[data-theme="dark"] .cb-post { box-shadow: 0 2px 14px rgba(0, 0, 0, .45); }
   color: var(--texto-mudo);
 }
 .cb-post-meta .cat { font-style: normal; font-weight: 400; color: inherit; }
+/* Meta con los mismos iconos que el carrusel (fecha y tiempo de lectura) */
+.cb-post-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .9rem; }
+.cb-post-meta span { display: inline-flex; align-items: center; gap: .3rem; }
+.cb-post-meta svg, .cb-article-header .meta svg { flex-shrink: 0; }
 .cb-post h2 {
   order: 2;
   margin: 0; padding: .5rem 1.5rem 0;
@@ -515,6 +518,9 @@ html[data-theme="dark"] .cb-post { box-shadow: 0 2px 14px rgba(0, 0, 0, .45); }
   letter-spacing: 0; text-transform: none;
   color: rgba(255, 255, 255, .85);
 }
+.cb-article-header .meta { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1.1rem; }
+.cb-article-header .meta span { display: inline-flex; align-items: center; gap: .4rem; }
+.cb-article-header .meta svg { width: 1em; height: 1em; }
 .cb-article-header .meta a { font-weight: 600; font-style: normal; color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 .cb-article-image { width: var(--w); margin: 0 auto 2.5rem; }
@@ -761,6 +767,5 @@ html[data-theme="dark"] .cb-share-x { background: #2c2b28; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .dest-card, .dest-media img, .dest-dot span, .dest-arrow { transition: none; }
-  .dest-card:hover .dest-media img { transform: none; }
+  .dest-card, .dest-track, .dest-dot span, .dest-arrow { transition: none; }
 }
