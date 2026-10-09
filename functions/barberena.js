@@ -126,13 +126,15 @@ function mediaBlock(post, title) {
     : '';
   return `<a class="cb-post-image${post.video_url ? ' has-video-overlay' : ''}" href="/${post.slug}/">${bg}${overlay}</a>`;
 }
+const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 function postCard(post) {
   const title = escapeHtml(post.title);
   const minutes = readingMinutes(post.body);
   const media = mediaBlock(post, title);
   return `<article class="cb-post cb-post--${CATEGORY}">
   ${media}
-  <div class="cb-post-meta">${fechaCorta(post.published_at)} · <span class="cat">${LABEL}</span> · ${minutes} min de lectura</div>
+  <div class="cb-post-meta"><span>${ICON_CAL}${fechaCorta(post.published_at)}</span><span class="cat">${LABEL}</span><span>${ICON_CLOCK}${minutes} min de lectura</span></div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
   <a class="cb-readmore" href="/${post.slug}/" aria-label="Leer más: ${title}">Leer más &gt;</a>

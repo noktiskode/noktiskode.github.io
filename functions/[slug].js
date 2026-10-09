@@ -10,6 +10,8 @@ const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
 const SITE_URL = 'https://barberenamimunicipio.top';
 
+const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 
 export async function onRequestGet(context) {
@@ -330,7 +332,7 @@ ${headerHtml()}
 <main class="cb-post-page">
   <article class="cb-article">
     <header class="cb-article-header">
-      <div class="meta"><a href="/${post.category}/">${categoryLabel}</a> · ${fecha} · ${minutes} min de lectura</div>
+      <div class="meta"><a href="/${post.category}/">${categoryLabel}</a><span>${ICON_CAL}${fecha}</span><span>${ICON_CLOCK}${minutes} min de lectura</span></div>
       <h1>${title}</h1>
       ${post.excerpt ? `<p class="cb-article-lead">${escapeHtml(post.excerpt)}</p>` : ''}
     </header>

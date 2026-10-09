@@ -178,7 +178,7 @@ function destacadoCard(post, i, total) {
           <p class="dest-meta"><span>${ICON_CAL}${fechaCorta(post.published_at)}</span><span>${ICON_CLOCK}${readingMinutes(post.body)} min de lectura</span></p>
           <h3 class="dest-title"><a href="/${post.slug}/">${title}</a></h3>
           ${post.excerpt ? `<p class="dest-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
-          <span class="dest-cta" aria-hidden="true">Leer publicación ${ICON_ARROW}</span>
+          <a class="dest-cta" href="/${post.slug}/" aria-label="Leer publicación: ${title}">Leer publicación ${ICON_ARROW}</a>
         </div>
       </article>
     </li>`;
@@ -191,7 +191,7 @@ function destacadosHtml(featuredPosts) {
   <div class="cb-container">
     <header class="dest-head">
       <span class="dest-chip">Destacados</span>
-      <h2>Historias y opiniones de Barberena</h2>
+      <h2>De tishudos para tishudos.</h2>
     </header>
     <div class="dest-wrap">
       <div class="dest-viewport">
@@ -215,9 +215,7 @@ function postCard(post) {
 
   return `<article class="cb-post">
   ${media}
-  <div class="cb-post-meta">
-    ${fechaCorta(post.published_at)} · <span class="cat">${label}</span> · ${minutes} min de lectura
-  </div>
+  <div class="cb-post-meta"><span>${ICON_CAL}${fechaCorta(post.published_at)}</span><span class="cat">${label}</span><span>${ICON_CLOCK}${minutes} min de lectura</span></div>
   <h2><a href="/${post.slug}/">${title}</a></h2>
   ${post.excerpt ? `<p class="cb-post-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
   <a class="cb-readmore" href="/${post.slug}/" aria-label="Leer más: ${title}">Leer más &gt;</a>
@@ -270,7 +268,7 @@ ${destHtml}
   <div class="cb-container">
     <header class="cb-page-header">
       <h1>Las últimas</h1>
-      <p>De tishudos para tishudos. Historias, opiniones y cosas que vale la pena comentar sobre Barberena.</p>
+      <p>Historias, opiniones y cosas que vale la pena comentar sobre Barberena.</p>
     </header>
     <div class="cb-post-list">
       ${cardsHtml}
@@ -287,64 +285,133 @@ ${footerHtml()}
   if (!root) return;
   var vp = root.querySelector('.dest-viewport');
   var track = root.querySelector('.dest-track');
-  var slides = [].slice.call(track.children);
+  var originals = [].slice.call(track.children);
+  var n = originals.length;
   var dotsBox = root.querySelector('.dest-dots');
   var prevBtn = root.querySelector('.dest-prev');
   var nextBtn = root.querySelector('.dest-next');
-  var n = slides.length;
-  var per = 1, maxIdx = 0, current = 0, dots = [];
+  var per = 1, loop = false, idx = 0, dots = [];
+  var busy = false, busyTimer = null;
   var DURATION = 6000, remaining = DURATION, startedAt = 0, timer = null;
   var hovering = false, inView = true;
   var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Bucle infinito: un juego de copias antes y otro después de las tarjetas reales
+  function clones() {
+    return originals.map(function (s) {
+      var c = s.cloneNode(true);
+      c.classList.add('dest-clone');
+      c.setAttribute('aria-hidden', 'true');
+      [].forEach.call(c.querySelectorAll('a,button'), function (el) { el.setAttribute('tabindex', '-1'); });
+      [].forEach.call(c.querySelectorAll('img'), function (im) { im.removeAttribute('fetchpriority'); im.loading = 'lazy'; });
+      return c;
+    });
+  }
+  clones().forEach(function (c) { track.insertBefore(c, originals[0]); });
+  clones().forEach(function (c) { track.appendChild(c); });
+
+  function mod(i) { return ((i % n) + n) % n; }
   function step() {
     var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    return slides[0].getBoundingClientRect().width + gap;
+    return originals[0].getBoundingClientRect().width + gap;
+  }
+  function pos(i) { return ((loop ? n : 0) + i) * step(); }
+  function place(i, animate) {
+    track.style.transition = animate ? '' : 'none';
+    track.style.transform = 'translate3d(' + (-pos(i)) + 'px,0,0)';
+    if (!animate) void track.offsetWidth;
   }
   function paintDots() {
+    var a = mod(idx);
     dots.forEach(function (d, i) {
-      if (i === current) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      if (i === a) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
     });
+  }
+  // Si quedó sobre una copia, vuelve a la tarjeta real equivalente sin animación (no se nota)
+  function normalize() {
+    if (loop && (idx < 0 || idx >= n)) { idx = mod(idx); place(idx, false); }
+  }
+  function settle() { busy = false; normalize(); }
+  function go(target) {
+    if (!loop || busy) return;
+    idx = target;
+    place(idx, true);
+    paintDots();
+    busy = true;
+    clearTimeout(busyTimer);
+    busyTimer = setTimeout(settle, reducido ? 0 : 560);
+  }
+  track.addEventListener('transitionend', function (e) {
+    if (e.target === track && e.propertyName === 'transform') { clearTimeout(busyTimer); settle(); }
+  });
+  function next() { go(idx + 1); }
+  function prev() { go(idx - 1); }
+
+  function buildDots() {
+    dotsBox.innerHTML = '';
+    dots = [];
+    for (var i = 0; i < n; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'dest-dot';
+      b.setAttribute('aria-label', 'Ir a la publicación ' + (i + 1) + ' de ' + n);
+      b.appendChild(document.createElement('span'));
+      b.addEventListener('click', (function (k) { return function () { go(k); restart(); }; })(i));
+      dotsBox.appendChild(b);
+      dots.push(b);
+    }
   }
   function measure() {
     per = parseInt(getComputedStyle(track).getPropertyValue('--per'), 10) || 1;
-    maxIdx = Math.max(0, n - per);
-    root.classList.toggle('sin-control', maxIdx === 0);
-    if (dots.length !== maxIdx + 1) {
-      dotsBox.innerHTML = '';
-      dots = [];
-      for (var i = 0; i <= maxIdx; i++) {
-        var b = document.createElement('button');
-        b.type = 'button';
-        b.className = 'dest-dot';
-        b.setAttribute('aria-label', 'Ir a la posición ' + (i + 1) + ' de ' + (maxIdx + 1));
-        b.appendChild(document.createElement('span'));
-        b.addEventListener('click', (function (k) { return function () { goTo(k, true); restart(); }; })(i));
-        dotsBox.appendChild(b);
-        dots.push(b);
-      }
-    }
+    loop = n > per;
+    root.classList.toggle('sin-control', !loop);
+    if (dots.length !== n) buildDots();
+    busy = false;
+    idx = loop ? mod(idx) : 0;
+    place(idx, false);
     paintDots();
   }
-  function goTo(i, smooth) {
-    i = Math.max(0, Math.min(maxIdx, i));
-    vp.scrollTo({ left: i * step(), behavior: (smooth && !reducido) ? 'smooth' : 'auto' });
-  }
-  function next() { goTo(current >= maxIdx ? 0 : current + 1, true); }
-  function prev() { goTo(current <= 0 ? maxIdx : current - 1, true); }
 
-  // El punto activo sigue al desplazamiento (también cuando se desliza con el dedo)
-  var ticking = false;
-  vp.addEventListener('scroll', function () {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      ticking = false;
-      var s = step();
-      var idx = Math.max(0, Math.min(maxIdx, Math.round(vp.scrollLeft / s)));
-      if (idx !== current) { current = idx; paintDots(); }
-    });
-  }, { passive: true });
+  // Deslizar con el dedo o el mouse
+  var dragging = false, moved = false, pid = null, startX = 0, dx = 0, startT = 0, suppress = false;
+  vp.addEventListener('pointerdown', function (e) {
+    if (!loop || busy || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    dragging = true; moved = false; pid = e.pointerId; startX = e.clientX; dx = 0; startT = Date.now();
+    pauseAuto();
+  });
+  vp.addEventListener('pointermove', function (e) {
+    if (!dragging || e.pointerId !== pid) return;
+    dx = e.clientX - startX;
+    if (!moved) {
+      if (Math.abs(dx) < 6) return;
+      moved = true;
+      track.style.transition = 'none';
+      vp.classList.add('is-dragging');
+      try { vp.setPointerCapture(pid); } catch (err) {}
+    }
+    track.style.transform = 'translate3d(' + (-pos(idx) + dx) + 'px,0,0)';
+  });
+  function endDrag(e) {
+    if (!dragging || e.pointerId !== pid) return;
+    dragging = false;
+    vp.classList.remove('is-dragging');
+    try { vp.releasePointerCapture(pid); } catch (err) {}
+    if (moved) {
+      suppress = true;
+      setTimeout(function () { suppress = false; }, 60);
+      var v = dx / ((Date.now() - startT) || 1);
+      var th = Math.min(60, step() * 0.15);
+      if (dx < -th || (v < -0.5 && dx < -20)) go(idx + 1);
+      else if (dx > th || (v > 0.5 && dx > 20)) go(idx - 1);
+      else place(idx, true);
+    }
+    restart();
+  }
+  vp.addEventListener('pointerup', endDrag);
+  vp.addEventListener('pointercancel', endDrag);
+  // Tras arrastrar no debe activarse ningún enlace
+  track.addEventListener('click', function (e) { if (suppress) { e.preventDefault(); e.stopPropagation(); } }, true);
+  track.addEventListener('dragstart', function (e) { e.preventDefault(); });
 
   // Avance automático con pausa: al reanudar continúa con el tiempo que faltaba
   function schedule() {
@@ -352,7 +419,7 @@ ${footerHtml()}
     startedAt = Date.now();
     timer = setTimeout(function () { next(); remaining = DURATION; schedule(); }, remaining);
   }
-  function canRun() { return maxIdx > 0 && !hovering && inView && !document.hidden; }
+  function canRun() { return loop && !hovering && inView && !document.hidden && !dragging; }
   function pauseAuto() {
     if (!timer) return;
     clearTimeout(timer); timer = null;
@@ -369,10 +436,6 @@ ${footerHtml()}
   root.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { hovering = false; resumeAuto(); } });
   root.addEventListener('focusin', function (e) { if (e.target.matches && e.target.matches(':focus-visible')) pauseAuto(); });
   root.addEventListener('focusout', function (e) { if (!root.contains(e.relatedTarget)) resumeAuto(); });
-  vp.addEventListener('touchstart', pauseAuto, { passive: true });
-  vp.addEventListener('touchend', restart, { passive: true });
-  vp.addEventListener('touchcancel', restart, { passive: true });
-  vp.addEventListener('wheel', function () { restart(); }, { passive: true });
   document.addEventListener('visibilitychange', function () { document.hidden ? pauseAuto() : resumeAuto(); });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (entries) {
@@ -384,7 +447,7 @@ ${footerHtml()}
   var rt = null;
   window.addEventListener('resize', function () {
     clearTimeout(rt);
-    rt = setTimeout(function () { measure(); goTo(Math.min(current, maxIdx), false); }, 120);
+    rt = setTimeout(function () { measure(); restart(); }, 120);
   });
 
   measure();
