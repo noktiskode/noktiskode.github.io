@@ -9,6 +9,8 @@ const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
 const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
+// Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
+const CAROUSEL_SIZE = 6;
 
 export async function onRequestGet(context) {
   const headers = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
@@ -16,7 +18,7 @@ export async function onRequestGet(context) {
   let featuredPosts = [];
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=3`,
+      `${SUPABASE_URL}/rest/v1/posts?featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE}`,
       { headers }
     );
     featuredPosts = res.ok ? await res.json() : [];
@@ -31,11 +33,11 @@ export async function onRequestGet(context) {
     posts = res.ok ? await res.json() : [];
   } catch (e) { posts = []; }
 
-  // Si hay menos de 3 destacados, completa el carrusel con los más recientes
-  if (featuredPosts.length < 3) {
+  // Si hay menos destacados que tarjetas, completa el carrusel con los más recientes
+  if (featuredPosts.length < CAROUSEL_SIZE) {
     const usedSlugs = new Set(featuredPosts.map((p) => p.slug));
     for (const p of posts) {
-      if (featuredPosts.length >= 3) break;
+      if (featuredPosts.length >= CAROUSEL_SIZE) break;
       if (!usedSlugs.has(p.slug)) { featuredPosts.push(p); usedSlugs.add(p.slug); }
     }
   }
@@ -161,36 +163,47 @@ function mediaBlock(post, title) {
     : '';
   return `<a class="cb-post-image${post.video_url ? ' has-video-overlay' : ''}" href="/${post.slug}/">${bg}${overlay}</a>`;
 }
-function heroCarruselHtml(featuredPosts) {
+const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const ICON_ARROW = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+function destacadoCard(post, i, total) {
+  const title = escapeHtml(post.title);
+  const cat = CATEGORY_LABELS[post.category] ? post.category : 'barberena';
+  const img = `<img src="${resolveImage(post)}" alt=""${i === 0 ? ' fetchpriority="high"' : (i < 3 ? '' : ' loading="lazy" decoding="async"')}>`;
+  return `<li class="dest-slide" role="group" aria-roledescription="publicación" aria-label="${i + 1} de ${total}">
+      <article class="dest-card">
+        <div class="dest-media">${img}<span class="dest-badge" data-cat="${cat}">${CATEGORY_LABELS[cat]}</span></div>
+        <div class="dest-body">
+          <p class="dest-meta"><span>${ICON_CAL}${fechaCorta(post.published_at)}</span><span>${ICON_CLOCK}${readingMinutes(post.body)} min de lectura</span></p>
+          <h3 class="dest-title"><a href="/${post.slug}/">${title}</a></h3>
+          ${post.excerpt ? `<p class="dest-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
+          <span class="dest-cta" aria-hidden="true">Leer publicación ${ICON_ARROW}</span>
+        </div>
+      </article>
+    </li>`;
+}
+
+function destacadosHtml(featuredPosts) {
   if (!featuredPosts.length) return '';
-
-  const n = featuredPosts.length;
-  const slidesHtml = featuredPosts.map((post, i) => {
-    const title = escapeHtml(post.title);
-    const label = escapeHtml(CATEGORY_LABELS[post.category] || 'Barberena');
-    const cls = i === 0 ? 'activa' : (i === n - 1 ? 'anterior' : 'siguiente');
-    return `<div class="hero-slide ${cls}" data-index="${i}">
-    <a class="hero-slide-link" href="/${post.slug}/" aria-label="${title}">
-      <img src="${resolveImage(post)}" alt="${title}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>
-      <div class="hero-overlay"></div>
-      <div class="cb-container hero-slide-content">
-        <p class="cb-hero-kicker">${label}</p>
-        <h1>${title}</h1>
-        ${post.excerpt ? `<p class="hero-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
+  const cards = featuredPosts.map((p, i) => destacadoCard(p, i, featuredPosts.length)).join('\n    ');
+  return `<section class="dest" id="destCarrusel" aria-roledescription="carrusel" aria-label="Publicaciones destacadas">
+  <div class="cb-container">
+    <header class="dest-head">
+      <span class="dest-chip">Destacados</span>
+      <h2>Historias y opiniones de Barberena</h2>
+    </header>
+    <div class="dest-wrap">
+      <div class="dest-viewport">
+        <ul class="dest-track" aria-live="off">
+    ${cards}
+        </ul>
       </div>
-    </a>
-  </div>`;
-  }).join('\n  ');
-
-  const dotsHtml = n > 1
-    ? `<div class="hero-dots">${featuredPosts.map((_, i) => `<button type="button" class="hero-dot${i === 0 ? ' activo' : ''}" data-index="${i}" aria-label="Publicación destacada ${i + 1}"><span class="hero-dot-bar"></span></button>`).join('')}</div>
-  <button type="button" class="hero-arrow hero-prev" aria-label="Publicación anterior"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button>
-  <button type="button" class="hero-arrow hero-next" aria-label="Publicación siguiente"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>`
-    : '';
-
-  return `<section class="hero-carrusel" id="heroCarrusel" aria-roledescription="carrusel" aria-label="Publicaciones destacadas">
-  ${slidesHtml}
-  ${dotsHtml}
+      <button type="button" class="dest-arrow dest-prev" aria-label="Publicaciones anteriores"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="dest-arrow dest-next" aria-label="Publicaciones siguientes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="dest-dots" role="group" aria-label="Elegir posición del carrusel"></div>
+  </div>
 </section>`;
 }
 
@@ -215,7 +228,7 @@ function renderHome(featuredPosts, gridPosts) {
   const desc = 'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.';
   const og = featuredPosts[0];
 
-  const heroHtml = heroCarruselHtml(featuredPosts);
+  const destHtml = destacadosHtml(featuredPosts);
 
   const cardsHtml = gridPosts.length
     ? gridPosts.map(postCard).join('\n')
@@ -252,7 +265,7 @@ function renderHome(featuredPosts, gridPosts) {
 </head>
 <body>
 ${headerHtml()}
-${heroHtml}
+${destHtml}
 <main class="cb-page">
   <div class="cb-container">
     <header class="cb-page-header">
@@ -270,90 +283,111 @@ ${heroHtml}
 ${footerHtml()}
 <script>
 (function () {
-  var carrusel = document.getElementById('heroCarrusel');
-  if (!carrusel) return;
-  var slides = [].slice.call(carrusel.querySelectorAll('.hero-slide'));
-  var dots = [].slice.call(carrusel.querySelectorAll('.hero-dot'));
-  var links = [].slice.call(carrusel.querySelectorAll('.hero-slide-link'));
-
-  // Si se arrastró (swipe), se cancela el clic del enlace para no navegar sin querer
-  var moved = false;
-  links.forEach(function (a) {
-    a.addEventListener('click', function (e) { if (moved) e.preventDefault(); });
-  });
-
-  if (slides.length < 2) return; // un solo destacado: nada que rotar ni arrastrar
-
-  var current = 0, timer = null;
+  var root = document.getElementById('destCarrusel');
+  if (!root) return;
+  var vp = root.querySelector('.dest-viewport');
+  var track = root.querySelector('.dest-track');
+  var slides = [].slice.call(track.children);
+  var dotsBox = root.querySelector('.dest-dots');
+  var prevBtn = root.querySelector('.dest-prev');
+  var nextBtn = root.querySelector('.dest-next');
   var n = slides.length;
-  var DURATION = 6000, remaining = DURATION, startedAt = 0, hovering = false;
-  var prevBtn = carrusel.querySelector('.hero-prev');
-  var nextBtn = carrusel.querySelector('.hero-next');
+  var per = 1, maxIdx = 0, current = 0, dots = [];
+  var DURATION = 6000, remaining = DURATION, startedAt = 0, timer = null;
+  var hovering = false, inView = true;
+  var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  function goTo(newIndex) {
-    newIndex = ((newIndex % n) + n) % n;
-    if (newIndex === current) return;
-    var prev = current;
-    slides.forEach(function (s, idx) {
-      var cls = idx === newIndex ? 'activa' : (idx === (newIndex - 1 + n) % n ? 'anterior' : 'siguiente');
-      var involved = (idx === prev || idx === newIndex);
-      if (!involved) s.style.transition = 'none'; // reposiciona sin animar (no debe cruzar la pantalla)
-      s.className = 'hero-slide ' + cls;
-      if (!involved) { void s.offsetWidth; s.style.transition = ''; }
-    });
-    dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === newIndex); });
-    current = newIndex;
+  function step() {
+    var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    return slides[0].getBoundingClientRect().width + gap;
   }
+  function paintDots() {
+    dots.forEach(function (d, i) {
+      if (i === current) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+    });
+  }
+  function measure() {
+    per = parseInt(getComputedStyle(track).getPropertyValue('--per'), 10) || 1;
+    maxIdx = Math.max(0, n - per);
+    root.classList.toggle('sin-control', maxIdx === 0);
+    if (dots.length !== maxIdx + 1) {
+      dotsBox.innerHTML = '';
+      dots = [];
+      for (var i = 0; i <= maxIdx; i++) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'dest-dot';
+        b.setAttribute('aria-label', 'Ir a la posición ' + (i + 1) + ' de ' + (maxIdx + 1));
+        b.appendChild(document.createElement('span'));
+        b.addEventListener('click', (function (k) { return function () { goTo(k, true); restart(); }; })(i));
+        dotsBox.appendChild(b);
+        dots.push(b);
+      }
+    }
+    paintDots();
+  }
+  function goTo(i, smooth) {
+    i = Math.max(0, Math.min(maxIdx, i));
+    vp.scrollTo({ left: i * step(), behavior: (smooth && !reducido) ? 'smooth' : 'auto' });
+  }
+  function next() { goTo(current >= maxIdx ? 0 : current + 1, true); }
+  function prev() { goTo(current <= 0 ? maxIdx : current - 1, true); }
+
+  // El punto activo sigue al desplazamiento (también cuando se desliza con el dedo)
+  var ticking = false;
+  vp.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      ticking = false;
+      var s = step();
+      var idx = Math.max(0, Math.min(maxIdx, Math.round(vp.scrollLeft / s)));
+      if (idx !== current) { current = idx; paintDots(); }
+    });
+  }, { passive: true });
+
   // Avance automático con pausa: al reanudar continúa con el tiempo que faltaba
   function schedule() {
     clearTimeout(timer);
     startedAt = Date.now();
-    timer = setTimeout(function () { goTo(current + 1); remaining = DURATION; schedule(); }, remaining);
+    timer = setTimeout(function () { next(); remaining = DURATION; schedule(); }, remaining);
   }
+  function canRun() { return maxIdx > 0 && !hovering && inView && !document.hidden; }
   function pauseAuto() {
     if (!timer) return;
     clearTimeout(timer); timer = null;
     remaining = Math.max(400, remaining - (Date.now() - startedAt));
   }
-  function resumeAuto() { if (timer || hovering) return; schedule(); }
-  function restart() { remaining = DURATION; if (hovering) { clearTimeout(timer); timer = null; } else schedule(); }
-  function manual(i) { goTo(i); restart(); }
+  function resumeAuto() { if (!timer && canRun()) schedule(); }
+  function restart() { clearTimeout(timer); timer = null; remaining = DURATION; if (canRun()) schedule(); }
 
-  dots.forEach(function (d) {
-    d.addEventListener('click', function () { manual(parseInt(d.dataset.index, 10)); });
-  });
-  if (prevBtn) prevBtn.addEventListener('click', function () { manual(current - 1); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { manual(current + 1); });
+  if (prevBtn) prevBtn.addEventListener('click', function () { prev(); restart(); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { next(); restart(); });
 
-  // Pausa con el mouse (no con el dedo, para que el celular no se quede pausado),
-  // con el foco de teclado y cuando la pestaña no está visible
-  carrusel.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { hovering = true; pauseAuto(); } });
-  carrusel.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { hovering = false; resumeAuto(); } });
-  carrusel.addEventListener('focusin', function (e) { if (e.target.matches && e.target.matches(':focus-visible')) pauseAuto(); });
-  carrusel.addEventListener('focusout', function (e) { if (!carrusel.contains(e.relatedTarget)) resumeAuto(); });
+  // Pausa con el mouse (no con el dedo), con el foco de teclado y si el carrusel no se ve
+  root.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { hovering = true; pauseAuto(); } });
+  root.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { hovering = false; resumeAuto(); } });
+  root.addEventListener('focusin', function (e) { if (e.target.matches && e.target.matches(':focus-visible')) pauseAuto(); });
+  root.addEventListener('focusout', function (e) { if (!root.contains(e.relatedTarget)) resumeAuto(); });
+  vp.addEventListener('touchstart', pauseAuto, { passive: true });
+  vp.addEventListener('touchend', restart, { passive: true });
+  vp.addEventListener('touchcancel', restart, { passive: true });
+  vp.addEventListener('wheel', function () { restart(); }, { passive: true });
   document.addEventListener('visibilitychange', function () { document.hidden ? pauseAuto() : resumeAuto(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      inView = entries[0].isIntersecting;
+      inView ? resumeAuto() : pauseAuto();
+    }, { threshold: 0.15 }).observe(root);
+  }
 
-  var startX = null;
-  carrusel.addEventListener('pointerdown', function (e) {
-    startX = e.clientX;
-    moved = false;
-    carrusel.style.cursor = 'grabbing';
-    pauseAuto();
+  var rt = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () { measure(); goTo(Math.min(current, maxIdx), false); }, 120);
   });
-  carrusel.addEventListener('pointermove', function (e) {
-    if (startX === null) return;
-    if (Math.abs(e.clientX - startX) > 8) moved = true;
-  });
-  carrusel.addEventListener('pointerup', function (e) {
-    if (startX === null) return;
-    var delta = e.clientX - startX;
-    if (Math.abs(delta) > 40) { goTo(delta < 0 ? current + 1 : current - 1); remaining = DURATION; }
-    startX = null;
-    carrusel.style.cursor = 'grab';
-    resumeAuto();
-  });
-  carrusel.addEventListener('pointercancel', function () { startX = null; carrusel.style.cursor = 'grab'; resumeAuto(); });
 
+  measure();
   restart();
 })();
 </script>
