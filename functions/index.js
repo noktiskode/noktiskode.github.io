@@ -286,37 +286,38 @@ ${footerHtml()}
 
   var current = 0, timer = null;
   var n = slides.length;
-  var DURATION = 6000, remaining = DURATION, startedAt = 0;
-  var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DURATION = 6000, remaining = DURATION, startedAt = 0, hovering = false;
   var prevBtn = carrusel.querySelector('.hero-prev');
   var nextBtn = carrusel.querySelector('.hero-next');
 
   function goTo(newIndex) {
     newIndex = ((newIndex % n) + n) % n;
     if (newIndex === current) return;
+    var prev = current;
     slides.forEach(function (s, idx) {
       var cls = idx === newIndex ? 'activa' : (idx === (newIndex - 1 + n) % n ? 'anterior' : 'siguiente');
+      var involved = (idx === prev || idx === newIndex);
+      if (!involved) s.style.transition = 'none'; // reposiciona sin animar (no debe cruzar la pantalla)
       s.className = 'hero-slide ' + cls;
+      if (!involved) { void s.offsetWidth; s.style.transition = ''; }
     });
     dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === newIndex); });
     current = newIndex;
   }
-  // Temporizador con pausa: al reanudar continúa con el tiempo que faltaba
+  // Avance automático con pausa: al reanudar continúa con el tiempo que faltaba
   function schedule() {
     clearTimeout(timer);
     startedAt = Date.now();
-    carrusel.classList.remove('en-pausa');
     timer = setTimeout(function () { goTo(current + 1); remaining = DURATION; schedule(); }, remaining);
   }
-  function startAuto() { if (reducido) return; remaining = DURATION; schedule(); }
   function pauseAuto() {
-    if (reducido || !timer) return;
+    if (!timer) return;
     clearTimeout(timer); timer = null;
     remaining = Math.max(400, remaining - (Date.now() - startedAt));
-    carrusel.classList.add('en-pausa');
   }
-  function resumeAuto() { if (reducido || timer) return; schedule(); }
-  function manual(i) { goTo(i); startAuto(); }
+  function resumeAuto() { if (timer || hovering) return; schedule(); }
+  function restart() { remaining = DURATION; if (hovering) { clearTimeout(timer); timer = null; } else schedule(); }
+  function manual(i) { goTo(i); restart(); }
 
   dots.forEach(function (d) {
     d.addEventListener('click', function () { manual(parseInt(d.dataset.index, 10)); });
@@ -324,10 +325,11 @@ ${footerHtml()}
   if (prevBtn) prevBtn.addEventListener('click', function () { manual(current - 1); });
   if (nextBtn) nextBtn.addEventListener('click', function () { manual(current + 1); });
 
-  // Pausa con mouse, con foco de teclado y cuando la pestaña no está visible
-  carrusel.addEventListener('mouseenter', pauseAuto);
-  carrusel.addEventListener('mouseleave', resumeAuto);
-  carrusel.addEventListener('focusin', pauseAuto);
+  // Pausa con el mouse (no con el dedo, para que el celular no se quede pausado),
+  // con el foco de teclado y cuando la pestaña no está visible
+  carrusel.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { hovering = true; pauseAuto(); } });
+  carrusel.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { hovering = false; resumeAuto(); } });
+  carrusel.addEventListener('focusin', function (e) { if (e.target.matches && e.target.matches(':focus-visible')) pauseAuto(); });
   carrusel.addEventListener('focusout', function (e) { if (!carrusel.contains(e.relatedTarget)) resumeAuto(); });
   document.addEventListener('visibilitychange', function () { document.hidden ? pauseAuto() : resumeAuto(); });
 
@@ -352,7 +354,7 @@ ${footerHtml()}
   });
   carrusel.addEventListener('pointercancel', function () { startX = null; carrusel.style.cursor = 'grab'; resumeAuto(); });
 
-  startAuto();
+  restart();
 })();
 </script>
 <script>
