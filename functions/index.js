@@ -167,23 +167,25 @@ function heroCarruselHtml(featuredPosts) {
   const n = featuredPosts.length;
   const slidesHtml = featuredPosts.map((post, i) => {
     const title = escapeHtml(post.title);
+    const label = escapeHtml(CATEGORY_LABELS[post.category] || 'Barberena');
     const cls = i === 0 ? 'activa' : (i === n - 1 ? 'anterior' : 'siguiente');
     return `<div class="hero-slide ${cls}" data-index="${i}">
     <a class="hero-slide-link" href="/${post.slug}/" aria-label="${title}">
       <img src="${resolveImage(post)}" alt="${title}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>
       <div class="hero-overlay"></div>
       <div class="cb-container hero-slide-content">
-        <p class="cb-hero-kicker">${fechaCorta(post.published_at)}</p>
+        <p class="cb-hero-kicker">${label}</p>
         <h1>${title}</h1>
-        <p>${escapeHtml(post.excerpt || '')}</p>
-        <span class="cb-readmore">Leer publicación →</span>
+        ${post.excerpt ? `<p class="hero-excerpt">${escapeHtml(post.excerpt)}</p>` : ''}
       </div>
     </a>
   </div>`;
   }).join('\n  ');
 
-  const dotsHtml = featuredPosts.length > 1
-    ? `<div class="hero-dots">${featuredPosts.map((_, i) => `<button type="button" class="hero-dot${i === 0 ? ' activo' : ''}" data-index="${i}" aria-label="Publicación destacada ${i + 1}"></button>`).join('')}</div>`
+  const dotsHtml = n > 1
+    ? `<div class="hero-dots">${featuredPosts.map((_, i) => `<button type="button" class="hero-dot${i === 0 ? ' activo' : ''}" data-index="${i}" aria-label="Publicación destacada ${i + 1}"><span class="hero-dot-bar"></span></button>`).join('')}</div>
+  <button type="button" class="hero-arrow hero-prev" aria-label="Publicación anterior"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="hero-arrow hero-next" aria-label="Publicación siguiente"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>`
     : '';
 
   return `<section class="hero-carrusel" id="heroCarrusel" aria-roledescription="carrusel" aria-label="Publicaciones destacadas">
@@ -284,38 +286,57 @@ ${footerHtml()}
 
   var current = 0, timer = null;
   var n = slides.length;
+  var DURATION = 6000, remaining = DURATION, startedAt = 0;
+  var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var prevBtn = carrusel.querySelector('.hero-prev');
+  var nextBtn = carrusel.querySelector('.hero-next');
 
   function goTo(newIndex) {
     newIndex = ((newIndex % n) + n) % n;
     if (newIndex === current) return;
-    var prev = current;
     slides.forEach(function (s, idx) {
       var cls = idx === newIndex ? 'activa' : (idx === (newIndex - 1 + n) % n ? 'anterior' : 'siguiente');
-      var involved = (idx === prev || idx === newIndex);
-      if (!involved) s.style.transition = 'none'; // reposiciona sin animar (no debe cruzar la pantalla)
       s.className = 'hero-slide ' + cls;
-      if (!involved) { void s.offsetWidth; s.style.transition = ''; }
     });
     dots.forEach(function (d, idx) { d.classList.toggle('activo', idx === newIndex); });
     current = newIndex;
   }
-  function next() { goTo(current + 1); }
-  function startAuto() { stopAuto(); timer = setInterval(next, 6000); }
-  function stopAuto() { if (timer) clearInterval(timer); timer = null; }
+  // Temporizador con pausa: al reanudar continúa con el tiempo que faltaba
+  function schedule() {
+    clearTimeout(timer);
+    startedAt = Date.now();
+    carrusel.classList.remove('en-pausa');
+    timer = setTimeout(function () { goTo(current + 1); remaining = DURATION; schedule(); }, remaining);
+  }
+  function startAuto() { if (reducido) return; remaining = DURATION; schedule(); }
+  function pauseAuto() {
+    if (reducido || !timer) return;
+    clearTimeout(timer); timer = null;
+    remaining = Math.max(400, remaining - (Date.now() - startedAt));
+    carrusel.classList.add('en-pausa');
+  }
+  function resumeAuto() { if (reducido || timer) return; schedule(); }
+  function manual(i) { goTo(i); startAuto(); }
 
   dots.forEach(function (d) {
-    d.addEventListener('click', function () { goTo(parseInt(d.dataset.index, 10)); startAuto(); });
+    d.addEventListener('click', function () { manual(parseInt(d.dataset.index, 10)); });
   });
+  if (prevBtn) prevBtn.addEventListener('click', function () { manual(current - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { manual(current + 1); });
 
-  carrusel.addEventListener('mouseenter', stopAuto);
-  carrusel.addEventListener('mouseleave', startAuto);
+  // Pausa con mouse, con foco de teclado y cuando la pestaña no está visible
+  carrusel.addEventListener('mouseenter', pauseAuto);
+  carrusel.addEventListener('mouseleave', resumeAuto);
+  carrusel.addEventListener('focusin', pauseAuto);
+  carrusel.addEventListener('focusout', function (e) { if (!carrusel.contains(e.relatedTarget)) resumeAuto(); });
+  document.addEventListener('visibilitychange', function () { document.hidden ? pauseAuto() : resumeAuto(); });
 
   var startX = null;
   carrusel.addEventListener('pointerdown', function (e) {
     startX = e.clientX;
     moved = false;
     carrusel.style.cursor = 'grabbing';
-    stopAuto();
+    pauseAuto();
   });
   carrusel.addEventListener('pointermove', function (e) {
     if (startX === null) return;
@@ -324,12 +345,12 @@ ${footerHtml()}
   carrusel.addEventListener('pointerup', function (e) {
     if (startX === null) return;
     var delta = e.clientX - startX;
-    if (Math.abs(delta) > 40) { delta < 0 ? next() : goTo(current - 1); }
+    if (Math.abs(delta) > 40) { goTo(delta < 0 ? current + 1 : current - 1); remaining = DURATION; }
     startX = null;
     carrusel.style.cursor = 'grab';
-    startAuto();
+    resumeAuto();
   });
-  carrusel.addEventListener('pointercancel', function () { startX = null; carrusel.style.cursor = 'grab'; startAuto(); });
+  carrusel.addEventListener('pointercancel', function () { startX = null; carrusel.style.cursor = 'grab'; resumeAuto(); });
 
   startAuto();
 })();
