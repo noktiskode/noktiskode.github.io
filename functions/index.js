@@ -191,7 +191,7 @@ function destacadosHtml(featuredPosts) {
   <div class="cb-container">
     <header class="dest-head">
       <span class="dest-chip">Destacados</span>
-      <h2>De tishudos para tishudos.</h2>
+      <h2>De tishudos para tishudos</h2>
     </header>
     <div class="dest-wrap">
       <div class="dest-viewport">
