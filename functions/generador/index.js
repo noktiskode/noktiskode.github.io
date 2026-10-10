@@ -43,7 +43,7 @@ export async function onRequestPost({ request, env }) {
           role: 'system',
           content:
             'Eres editor de un diario hiperlocal. Del titular que te den, elige la frase clave: de 1 a 3 palabras consecutivas, ' +
-            'copiadas exactamente del titular, que más conviene resaltar. Prefiere el tema o dato central (no verbos ni palabras de relleno). ' +
+            'copiadas exactamente del titular, que más conviene resaltar. Prefiere el sustantivo o dato central (por ejemplo el tema de la noticia), sin verbos ni palabras de relleno; una sola palabra suele bastar. ' +
             'Si hay una palabra o frase entre comillas, casi siempre es la mejor opción. ' +
             'Responde solo con esa frase, sin comillas ni explicaciones.',
         },
@@ -319,7 +319,7 @@ function layoutHead(text,fs,font,w,hlPhrase){
 // ---- Frase clave automática (reglas, sin IA) ----
 const STOP=new Set('el la los las un una unos unas de del al a en y e o u que se su sus por con sin para ante bajo entre hacia hasta desde sobre tras es son fue ser ha han hay lo le les mi tu nos este esta estos estas ese esa eso como mas muy ya no ni pero si tambien quienes quien cual cuales esto eso otros otras todo todos toda todas sea cuando donde porque pues mientras tras ante vecinos'.split(' ').filter(x=>x!=='vecinos'));
 const BRIDGE=new Set(['de','del','en']);
-const VERBS=new Set('denuncian denuncia anuncia anuncian inaugura inauguran exigen exige piden pide reportan reporta confirman confirma informa informan lanza lanzan presenta presentan realiza realizan celebra celebran consume afectara afectaran habra hubo llega llegan abre abren cierra cierran suspende suspenden ofrece ofrecen invita invitan convoca convocan reclaman reclama advierten advierte descubren  registra registran llama llaman dice dijo afirma asegura critica critican escriben escribe responde responden acusa acusan'.split(' '));
+const VERBS=new Set('denuncian denuncia anuncia anuncian inaugura inauguran exigen exige piden pide reportan reporta confirman confirma informa informan lanza lanzan presenta presentan realiza realizan celebra celebran consume afectara afectaran habra hubo llega llegan abre abren cierra cierran suspende suspenden ofrece ofrecen invita invitan convoca convocan reclaman reclama advierten advierte descubren  registra registran llama llaman dice dijo afirma asegura critica critican escriben escribe responde responden acusa acusan plantea plantean propone proponen aprueba aprueban busca buscan pretende pretenden prohibe prohiben'.split(' '));
 const KEY=new Set('urgente alerta aviso importante emergencia accidente incendio robo agua luz energia drenaje seguridad salud gratis gratuito nuevo nueva hoy cierre suspension corte cortes apagon bloqueo derrumbe lluvia peligro reunion asamblea feria festival campana jornada convocatoria obra obras escasez recargos multa'.split(' '));
 function strip(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9ñ]/g,'')}
 function autoPhrase(text){
@@ -329,7 +329,7 @@ function autoPhrase(text){
     const st=/^["“«]/.test(t),en=/["”»][.,;:!?]*$/.test(t);const quoted=q||st;if(st&&!en)q=true;if(en)q=false;
     const content=!!n&&!STOP.has(n)&&(n.length>=3||/\\d/.test(n)||t===t.toUpperCase()&&n.length>=2);
     return {t,n,quoted,content,bridge:BRIDGE.has(n),brk:/[,;:.!?]$/.test(t),cap:i>0&&/^[A-ZÁÉÍÓÚÑ]/.test(t),
-      verb:VERBS.has(n)||(n.length>=6&&/(aron|ieron|ando|iendo)$/.test(n)),dig:/\\d/.test(n)}});
+      verb:VERBS.has(n)||(n.length>=6&&/(aron|ieron|ando|iendo)$/.test(n))||(n.length>=7&&/(ar|er|ir)$/.test(n)),dig:/\\d/.test(n)}});
   let best=null;
   for(let i=0;i<toks.length;i++){
     if(!info[i].content)continue;
@@ -400,7 +400,8 @@ function draw(){
     const s0=Math.min(.95,Math.max(0,(top-460)/H)),s1=Math.min(.99,Math.max(s0+.02,(top-50)/H));
     const g=ctx.createLinearGradient(0,0,0,H);
     g.addColorStop(0,'rgba(10,10,10,0)');g.addColorStop(s0,'rgba(10,10,10,0)');
-    g.addColorStop(s1,\`rgba(10,10,10,\${k})\`);g.addColorStop(1,'rgba(10,10,10,.97)');
+    const s2=Math.min(1,Math.max(s1+.01,(top+30)/H));
+    g.addColorStop(s1,\`rgba(10,10,10,\${k})\`);g.addColorStop(s2,'rgba(10,10,10,1)');g.addColorStop(1,'rgba(10,10,10,1)');
     ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
   }else if(bg!=='naranja'){
     const g=ctx.createLinearGradient(0,H*.55,0,H);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.6)');
