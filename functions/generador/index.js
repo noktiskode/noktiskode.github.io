@@ -169,7 +169,7 @@ footer{background:#fff;border-top:1px solid var(--linea);padding:20px;text-align
     <div class="box" id="photoOpts" style="display:none;margin-top:12px">
       <div class="row r2" style="margin-top:0">
         <div><span class="sm">Encuadre de la foto</span><input type="range" id="pos" min="0" max="100" value="25"></div>
-        <div><span class="sm">Oscurecer abajo</span><input type="range" id="dark" min="40" max="100" value="88"></div>
+        <div><span class="sm">Oscuridad abajo (menos = más foto)</span><input type="range" id="dark" min="30" max="100" value="72"></div>
       </div>
     </div>
   </div>
@@ -398,11 +398,11 @@ function draw(){
   if(photoMode){
     const k=$('dark').value/100;
     const cl=v=>Math.min(1,Math.max(0,v/H));
-    const s0=cl(top-460),sA=Math.max(s0+.01,cl(top-260)),sB=Math.max(sA+.01,cl(top-110)),s2=Math.max(sB+.01,cl(top+10));
+    const s0=cl(top-460),sA=Math.max(s0+.01,cl(top-300)),sB=Math.max(sA+.01,cl(top-80));
     const g=ctx.createLinearGradient(0,0,0,H);
     g.addColorStop(0,'rgba(10,10,10,0)');g.addColorStop(s0,'rgba(10,10,10,0)');
-    g.addColorStop(sA,\`rgba(10,10,10,\${(k*.65).toFixed(2)})\`);g.addColorStop(sB,\`rgba(10,10,10,\${Math.max(k,.97)})\`);
-    g.addColorStop(s2,'rgba(10,10,10,1)');g.addColorStop(1,'rgba(10,10,10,1)');
+    g.addColorStop(sA,\`rgba(10,10,10,\${(k*.45).toFixed(2)})\`);g.addColorStop(sB,\`rgba(10,10,10,\${(k*.9).toFixed(2)})\`);
+    g.addColorStop(1,\`rgba(10,10,10,\${k.toFixed(2)})\`);
     ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
   }else if(bg!=='naranja'){
     const g=ctx.createLinearGradient(0,H*.55,0,H);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.6)');
@@ -505,7 +505,7 @@ $('resetBtn').onclick=()=>{
   $('autoHl').checked=true;$('hl').value='falta de agua';$('font').value='Roboto Condensed|700';$('sz').value=96;$('szv').textContent='96';
   $('anchor').value='abajo';$('upper').checked=false;$('name').value='Barberena Mi Municipio';
   $('url').value='barberenamimunicipio.top';$('credit').value='Foto: archivo';$('showLogo').checked=true;
-  $('accent').value='#ef4f1d';$('hcolor').value='#ffffff';$('dark').value=88;
+  $('accent').value='#ef4f1d';$('hcolor').value='#ffffff';$('dark').value=72;
   H=1350;document.querySelectorAll('#fmt button').forEach((x,i)=>x.classList.toggle('on',i===0));
   setBg('negro');loadFonts();toast('Valores restablecidos.');
 };
