@@ -1,651 +1,499 @@
-// functions/generador/index.js
+// functions/generador/index.js  (Cloudflare Pages Functions)
+// GET  /generador/  -> página del generador de carteles
+// POST /generador/  -> { titulo } => { frase }  (frase clave elegida con Workers AI)
 //
-// Generador de carteles y avisos vecinales: /generador/
-// Página estática (no consulta Supabase). Los fondos se dibujan con código
-// (colores, degradados y patrones) y la imagen final se genera en el navegador.
+// Requisito: en Cloudflare Pages > Settings > Bindings, agregar "Workers AI" con el nombre AI.
 
-const SITE_URL = 'https://barberenamimunicipio.top';
+const MODELO = '@cf/meta/llama-3.1-8b-instruct'; // si Cloudflare retira el modelo, cambia solo esta línea
+
+const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9ñ ]/g, '').trim();
+const json = (obj, status = 200) =>
+  new Response(JSON.stringify(obj), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 
 export async function onRequestGet() {
-  return new Response(renderPage(), {
-    headers: { 'content-type': 'text/html; charset=UTF-8' }
-  });
+  return new Response(HTML, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
 }
 
-function headerHtml() {
-  return `<header class="cb-navbar">
-  <div class="cb-container cb-navbar-inner">
-    <a class="cb-brand" href="/">
-      <img src="/images/bmm-orange-logo.svg" alt="" class="cb-brand-icon">
-      <span>Barberena Mi Municipio</span>
-    </a>
-    <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a>
-      <a href="/barberena/">Barberena</a>
-      <a href="/opiniones/">Opiniones</a>
-      <a href="/historias/">Historias</a>
-      <a href="/archivo/">Archivo</a>
-    </nav>
-    <div class="cb-nav-actions">
-      <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-      </button>
-      <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
-      <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">☰</button>
-    </div>
-  </div>
-  <div class="cb-search-panel" id="searchPanel" hidden>
-    <div class="cb-container">
-      <form class="cb-search-bar" action="/buscar/" method="get" role="search">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-        <input type="search" name="q" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones" autocomplete="off" enterkeyhint="search">
-        <button type="button" class="cb-search-close" aria-label="Cerrar búsqueda">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
-        </button>
-      </form>
-    </div>
-  </div>
-</header>
-<script>
-(function(){
-  var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
-  var s=document.querySelector('.cb-search-toggle'),p=document.getElementById('searchPanel');
-  var i=p&&p.querySelector('input'),c=p&&p.querySelector('.cb-search-close');
-  function closeMenu(){if(n&&b){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menú');}}
-  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){if(i)i.focus();},30);}
-  function closeSearch(){p.hidden=true;s.setAttribute('aria-expanded','false');}
-  if(b&&n){b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});}
-  if(s&&p&&i&&c){
-    s.addEventListener('click',function(){if(p.hidden)openSearch();else closeSearch();});
-    c.addEventListener('click',closeSearch);
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!p.hidden)closeSearch();if(n&&n.classList.contains('is-open'))closeMenu();}});
-    document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target)&&!s.contains(e.target))closeSearch();});
+export async function onRequestPost({ request, env }) {
+  // Solo acepta peticiones desde la propia página
+  const origin = request.headers.get('origin');
+  if (origin && new URL(origin).host !== new URL(request.url).host) return json({ error: 'origen no permitido' }, 403);
+  if (!env.AI) return json({ error: 'Falta el binding AI' }, 503);
+
+  let titulo = '';
+  try {
+    const raw = await request.text();
+    if (raw.length > 2000) return json({ error: 'demasiado largo' }, 413);
+    titulo = String(JSON.parse(raw).titulo || '').trim().slice(0, 160);
+  } catch (e) {
+    return json({ error: 'JSON inválido' }, 400);
   }
-})();
-(function(){
-  var STORAGE_KEY='bmm-theme',btn=document.querySelector('.cb-theme-toggle');
-  if(!btn)return;
-  function isDarkNow(){var t=document.documentElement.getAttribute('data-theme');if(t==='dark')return true;if(t==='light')return false;return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;}
-  function updateLabel(dark){btn.setAttribute('aria-pressed',dark?'true':'false');btn.setAttribute('aria-label',dark?'Cambiar a modo claro':'Cambiar a modo oscuro');}
-  updateLabel(isDarkNow());
-  btn.addEventListener('click',function(){var next=isDarkNow()?'light':'dark';document.documentElement.setAttribute('data-theme',next);try{localStorage.setItem(STORAGE_KEY,next);}catch(e){}updateLabel(next==='dark');});
-})();
-</script>`;
-}
-function footerHtml() {
-  const year = new Date().getFullYear();
-  return `<footer class="cb-footer">
-  <div class="cb-container">
-    <a href="/" class="cb-footer-brand">
-      <img src="/images/bmm-black-logo.svg" alt="">
-      <span>Barberena Mi Municipio</span>
-    </a>
-    <p>Blog personal · Opiniones abiertas · Página independiente</p>
-    <nav aria-label="Enlaces del pie de página">
-      <a href="/que-publicamos/">¿Qué publicamos?</a>
-      <a href="/como-participar/">¿Cómo participar?</a>
-      <a href="/manifiesto/">Manifiesto</a>
-      <a href="https://www.facebook.com/BarberenaMiMunicipio/" target="_blank" rel="noopener">Facebook</a>
-    </nav>
-    <small>© ${year} Barberena Mi Municipio</small>
-  </div>
-</footer>`;
+  if (titulo.split(/\s+/).length < 3) return json({ frase: '' });
+
+  try {
+    const res = await env.AI.run(MODELO, {
+      messages: [
+        {
+          role: 'system',
+          content:
+            'Eres editor de un diario hiperlocal. Del titular que te den, elige la frase clave: de 1 a 3 palabras consecutivas, ' +
+            'copiadas exactamente del titular, que más conviene resaltar. Prefiere el tema o dato central (no verbos ni palabras de relleno). ' +
+            'Responde solo con esa frase, sin comillas ni explicaciones.',
+        },
+        { role: 'user', content: titulo },
+      ],
+      max_tokens: 20,
+      temperature: 0,
+    });
+    let frase = String(res.response || '').split('\n')[0].replace(/^["“'«\s]+|["”'»\s.]+$/g, '');
+    // Validación: debe ser una secuencia exacta de palabras del titular, de 1 a 4 palabras
+    const pw = norm(frase).split(/\s+/).filter(Boolean);
+    const tw = norm(titulo).split(/\s+/).filter(Boolean);
+    const ok = pw.length >= 1 && pw.length <= 4 && tw.some((_, i) => pw.every((w, k) => tw[i + k] === w));
+    return json({ frase: ok ? frase : '' });
+  } catch (e) {
+    return json({ frase: '', error: 'IA no disponible' }, 200);
+  }
 }
 
-function renderPage() {
-  return `<!DOCTYPE html>
+const HTML = `<!DOCTYPE html>
 <html lang="es">
 <head>
-  <script>(function(){try{var t=localStorage.getItem('bmm-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generador de carteles — Barberena Mi Municipio</title>
-  <meta name="description" content="Armá carteles y avisos vecinales para compartir en WhatsApp y redes sociales.">
-  <link rel="canonical" href="${SITE_URL}/generador/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&family=Anton&family=Bebas+Neue&family=Oswald:wght@700&family=Montserrat:wght@900&family=Playfair+Display:wght@900&family=Permanent+Marker&display=swap">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <style>
-    /* ---------- Generador de carteles (usa las variables de styles.css) ---------- */
-    .gen-wrap { padding: 3.5rem 0 4.5rem; }
-    .gen-head { margin-bottom: 2.25rem; }
-    .gen-head h1 { font-size: 2.25rem; line-height: 1.2; }
-    .gen-head p { margin-top: .5rem; max-width: 42rem; color: var(--texto-mudo); font-size: 1.125rem; font-weight: 300; }
-
-    .gen { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 2.25rem; align-items: start; }
-    .gen-preview { position: sticky; top: 5rem; }
-    .gen-panel { background: var(--bg-card); border: 1px solid var(--borde); border-radius: 12px; padding: 1.75rem; }
-
-    .gen-sec + .gen-sec { margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid var(--borde); }
-    .gen-sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
-    .gen-sec h2 { font-size: 1.5rem; }
-    .gen-reset { border: 0; background: none; padding: .25rem 0; color: var(--texto-mudo); font-size: .9375rem; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
-    .gen-reset:hover { color: var(--rojo); }
-
-    .gen-label { display: block; margin-bottom: .4rem; color: var(--texto-suave); font: 600 .9375rem var(--fuente-texto); }
-    .gen-group + .gen-group { margin-top: 1.25rem; }
-
-    /* Muestras de fondo */
-    .gen-swatches { display: flex; flex-wrap: wrap; gap: .625rem; }
-    .gen-sw {
-      width: 46px; height: 46px; padding: 0; border: 1px solid rgba(0, 0, 0, .18); border-radius: 10px;
-      cursor: pointer; transition: box-shadow .15s ease;
-    }
-    .gen-sw[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--bg-card), 0 0 0 4px var(--texto); }
-    .gen-custom { display: inline-flex; align-items: center; gap: .6rem; margin-top: .875rem; font-size: .9375rem; color: var(--texto-suave); }
-    .gen-custom input { width: 46px; height: 46px; padding: 2px; border: 1px solid var(--borde); border-radius: 10px; background: transparent; cursor: pointer; }
-
-    /* Patrones */
-    .gen-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
-    .gen-chip {
-      min-height: 40px; padding: .35rem .95rem; border: 1px solid var(--borde); border-radius: 999px;
-      background: transparent; color: var(--texto); font: 500 .9375rem var(--fuente-texto); cursor: pointer;
-      transition: background .15s ease, color .15s ease, border-color .15s ease;
-    }
-    .gen-chip:hover { border-color: var(--rojo); }
-    .gen-chip[aria-pressed="true"] { background: #c93c0b; border-color: #c93c0b; color: #fff; }
-
-    /* Campos de texto, selects y controles (mismo trazo que el buscador del sitio) */
-    .gen-input, .gen-select {
-      width: 100%; min-width: 0; padding: .6rem 0; border: 0; border-bottom: 1px solid var(--borde); border-radius: 0;
-      background: transparent; color: var(--texto); font-size: 1.0625rem; -webkit-appearance: none; appearance: none;
-    }
-    .gen-select { padding-right: 1.5rem; cursor: pointer;
-      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
-      background-position: calc(100% - 9px) 55%, calc(100% - 4px) 55%; background-size: 5px 5px; background-repeat: no-repeat; }
-    .gen-select option { background: var(--bg-card); color: var(--texto); }
-    .gen-input:focus, .gen-select:focus { outline: none; border-bottom-color: var(--rojo); box-shadow: 0 1px 0 var(--rojo); }
-    .gen-color { width: 100%; height: 2.6rem; padding: 2px; border: 1px solid var(--borde); border-radius: .375rem; background: transparent; cursor: pointer; }
-    .gen input[type="range"] { width: 100%; accent-color: var(--rojo); margin-top: .6rem; }
-    .gen-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
-    .gen-check { display: flex; align-items: center; gap: .6rem; margin-top: 1.25rem; font-size: 1rem; color: var(--texto-suave); cursor: pointer; }
-    .gen-check input { width: 1.15rem; height: 1.15rem; accent-color: var(--rojo); }
-
-    .gen-upload { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
-    .gen-btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; }
-    .gen-btn svg { flex-shrink: 0; }
-    .gen-btn-quiet {
-      padding: .75rem 1.5rem; border: 1px solid var(--borde); border-radius: .375rem; background: transparent; color: var(--texto);
-      font: 600 .875rem var(--fuente-texto); letter-spacing: .0625em; text-transform: uppercase; cursor: pointer;
-      transition: border-color .2s ease, color .2s ease;
-    }
-    .gen-btn-quiet:hover { border-color: var(--rojo); color: var(--rojo); }
-    .gen-btn-small { padding: .55rem 1rem; }
-    .gen-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
-    .gen-actions .cb-more { flex: 1 1 200px; }
-
-    /* Vista previa */
-    .gen-frame { background: var(--bg-alt); border: 1px solid var(--borde); border-radius: 12px; padding: .75rem; }
-    #cartel { display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 6px 24px rgba(0, 0, 0, .22); }
-    .gen-meta { display: flex; justify-content: space-between; gap: 1rem; margin: 0 0 .75rem; color: var(--texto-mudo); font-size: .9375rem; }
-    .gen-note { margin-top: .875rem; color: var(--texto-mudo); font-size: 1rem; font-weight: 300; line-height: 1.5; }
-
-    .gen-toast {
-      position: fixed; left: 50%; bottom: 1.5rem; z-index: 60; max-width: min(92vw, 28rem);
-      padding: .8rem 1.1rem; border-radius: .5rem; background: #111110; color: #fff; font-size: .9375rem; line-height: 1.4;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
-      transform: translate(-50%, 1.5rem); opacity: 0; pointer-events: none; transition: transform .25s ease, opacity .25s ease;
-    }
-    .gen-toast.is-on { transform: translate(-50%, 0); opacity: 1; }
-
-    @media (max-width: 900px) {
-      .gen { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
-      .gen-preview { position: static; order: -1; }
-      .gen-wrap { padding: 2.25rem 0 3rem; }
-      .gen-head h1 { font-size: 2rem; }
-      .gen-panel { padding: 1.25rem; }
-    }
-    @media (prefers-reduced-motion: reduce) { .gen-toast, .gen-sw, .gen-chip { transition: none; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generador de Carteles - Barberena Mi Municipio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@700&family=Barlow+Condensed:wght@700&family=Bebas+Neue&family=Montserrat:wght@800&family=Oswald:wght@700&family=Playfair+Display:wght@800&family=Roboto:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#ef4f1d;--rojo-hover:#d9420f;--negro:#111110;--gris-claro:#f8f9fa;--gris:#6c757d;--linea:#dee2e6;
+--fuente-titulo:'Roboto Condensed',sans-serif;--fuente-texto:'Roboto',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#f1f1ef;color:#212529;font-family:var(--fuente-texto);min-height:100vh;display:flex;flex-direction:column}
+header{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:20}
+.hd{max-width:1180px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:40px;height:40px;border-radius:50%;display:block}
+.brand b{display:block;font-family:var(--fuente-titulo);font-weight:700;font-size:19px;letter-spacing:.06em;color:var(--negro);line-height:1.1}
+.brand span{font-family:var(--fuente-titulo);font-weight:300;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo)}
+.back{font-size:13px;font-weight:500;color:var(--negro);text-decoration:none;background:#f1f1ef;padding:8px 14px;border-radius:10px}
+.back:hover{background:#e6e6e3}
+main{flex:1;max-width:1180px;width:100%;margin:0 auto;padding:28px 20px}
+.intro h1{font-family:var(--fuente-titulo);font-weight:700;font-size:32px;margin:0;color:var(--negro);letter-spacing:-.005em}
+.intro p{margin:6px 0 24px;color:var(--gris);font-size:15px}
+.grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+@media(min-width:960px){.grid{grid-template-columns:1.05fr .95fr;gap:32px}.prev{position:sticky;top:88px}}
+.prev{order:-1}
+@media(min-width:960px){.prev{order:0}}
+.card{background:#fff;border:1px solid var(--linea);border-radius:16px;box-shadow:0 10px 30px rgba(17,17,16,.07);padding:22px}
+.ch{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:14px;margin-bottom:18px}
+.ch h3{margin:0;font-family:var(--fuente-titulo);font-weight:700;font-size:17px;letter-spacing:.04em;text-transform:uppercase;color:var(--negro)}
+.ch h3:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--rojo);margin-right:10px}
+.pill{font-size:12px;font-weight:500;color:var(--gris);background:#f1f1ef;padding:5px 11px;border-radius:99px}
+.ghost{font:500 12px var(--fuente-texto);color:var(--gris);background:#f1f1ef;border:0;padding:7px 12px;border-radius:10px;cursor:pointer}
+.ghost:hover{background:#fde8e1;color:var(--rojo-hover)}
+.sec{margin-bottom:20px}
+.sec>label.t{display:flex;align-items:center;gap:9px;font-family:var(--fuente-titulo);font-weight:700;font-size:14px;letter-spacing:.09em;text-transform:uppercase;color:var(--negro);margin-bottom:10px}
+.n{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--negro);color:#fff;font-size:12px;align-items:center;justify-content:center;letter-spacing:0}
+.box{background:var(--gris-claro);border:1px solid #e9ecef;border-radius:12px;padding:14px}
+.sm{display:block;font-size:11.5px;font-weight:500;color:var(--gris);margin:0 0 5px}
+input[type=text],textarea,select{width:100%;padding:10px 13px;background:#fff;border:1px solid #ced4da;border-radius:10px;font:500 14px var(--fuente-texto);color:#212529}
+textarea{resize:vertical;min-height:70px}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--rojo);outline-offset:-1px;border-color:var(--rojo)}
+input[type=range]{width:100%;accent-color:var(--rojo)}
+input[type=color]{width:100%;height:40px;padding:3px;background:#fff;border:1px solid #ced4da;border-radius:10px;cursor:pointer}
+.row{display:grid;gap:12px;margin-top:12px}.r2{grid-template-columns:1fr 1fr}.r3{grid-template-columns:1fr 1fr 1fr}
+.fmt{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fmt button,.bgb{font-family:var(--fuente-texto);cursor:pointer;border:2px solid var(--linea);background:#fff;border-radius:12px}
+.fmt button{padding:10px 6px;font-size:12px;font-weight:700;color:var(--negro)}
+.fmt small{display:block;font-weight:400;color:var(--gris);margin-top:2px}
+.fmt button.on,.bgb.on{border-color:var(--rojo);background:#fff4f0;box-shadow:0 0 0 3px rgba(239,79,29,.15)}
+.bgs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.bgb{padding:0;overflow:hidden;aspect-ratio:4/3;position:relative;color:#fff;font-size:11px;font-weight:700}
+.bgb span{position:absolute;left:0;right:0;bottom:0;padding:14px 6px 5px;background:linear-gradient(transparent,rgba(0,0,0,.7));text-align:center}
+.up{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px;width:100%;padding:11px;border:2px dashed #ced4da;border-radius:12px;cursor:pointer;font-weight:700;font-size:13px;color:var(--negro)}
+.up:hover{border-color:var(--rojo);background:#fff4f0;color:var(--rojo-hover)}
+.chk{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;margin-top:12px}
+.chk input{accent-color:var(--rojo);width:18px;height:18px}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.btn{flex:1;min-width:150px;border:0;border-radius:12px;padding:14px 16px;font:700 15px var(--fuente-texto);color:#fff;cursor:pointer;transition:transform .1s}
+.btn:active{transform:scale(.97)}
+.b1{background:var(--rojo);box-shadow:0 8px 18px rgba(239,79,29,.3)}.b1:hover{background:var(--rojo-hover)}
+.b2{background:var(--negro)}.b2:hover{background:#2a2a28}
+.cvw{background:var(--negro);border-radius:12px;padding:10px;display:flex;justify-content:center}
+canvas{width:100%;max-width:460px;height:auto;border-radius:6px;display:block}
+.tip{margin-top:14px;padding:12px 14px;background:#fff4f0;border:1px solid #fbd5c8;border-radius:12px;font-size:12.5px;line-height:1.5;color:#7a2a0e}
+#toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);opacity:0;background:var(--negro);color:#fff;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:500;transition:.25s;z-index:50;max-width:90vw;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+footer{background:#fff;border-top:1px solid var(--linea);padding:20px;text-align:center;font-size:12px;color:var(--gris)}
+</style>
 </head>
 <body>
-${headerHtml()}
-<main class="gen-wrap">
-  <div class="cb-container">
-    <header class="gen-head">
-      <h1>Generador de carteles</h1>
-      <p>Carteles y avisos vecinales listos para compartir en WhatsApp y redes sociales.</p>
-    </header>
+<header><div class="hd">
+  <div class="brand"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiB2aWV3Qm94PSIwIDAgMTUzNiAxNTM2Ij4KICA8Y2lyY2xlIGN4PSI3NjgiIGN5PSI3NjgiIHI9Ijc2OCIgZmlsbD0iI0VGNEYxRCIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc2OCA3NjgpIHNjYWxlKDEuMSkgdHJhbnNsYXRlKC04MDAgLTc2OCkiPgogICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuNSAyLjUpIiBmaWxsPSIjZmRmZGZkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NTggMzczIEw0NTcgMzc0IEw0NTcgMzc1IEw0NTQgMzc4IEw0NTQgMzc5IEw0NTIgMzgxIEw0NTIgMzgyIEw0NTEgMzgzIEw0NTEgMzg0IEw0NTAgMzg1IEw0NTAgMzg3IEw0NDkgMzg4IEw0NDkgMzkyIEw0NDggMzkzIEw0NDggMTEzOSBMNDQ5IDExNDAgTDQ0OSAxMTQzIEw0NTAgMTE0NCBMNDUwIDExNDYgTDQ1MSAxMTQ3IEw0NTEgMTE0OSBMNDUyIDExNTAgTDQ1MiAxMTUxIEw0NTUgMTE1NCBMNDU1IDExNTUgTDQ2MCAxMTYwIEw0NjEgMTE2MCBMNDYyIDExNjEgTDQ2MyAxMTYxIEw0NjQgMTE2MiBMNDY1IDExNjIgTDQ2NiAxMTYzIEw0NjcgMTE2MyBMNDY4IDExNjQgTDQ2OSAxMTY0IEw0NzAgMTE2NSBMNDczIDExNjUgTDQ3NCAxMTY2IEw5MTcgMTE2NiBMOTE4IDExNjUgTDkzMCAxMTY1IEw5MzEgMTE2NCBMOTM2IDExNjQgTDkzNyAxMTYzIEw5NDMgMTE2MyBMOTQ0IDExNjIgTDk0OSAxMTYyIEw5NTAgMTE2MSBMOTU0IDExNjEgTDk1NSAxMTYwIEw5NTggMTE2MCBMOTU5IDExNTkgTDk2MiAxMTU5IEw5NjMgMTE1OCBMOTY3IDExNTggTDk2OCAxMTU3IEw5NzAgMTE1NyBMOTcxIDExNTYgTDk3MyAxMTU2IEw5NzQgMTE1NSBMOTc3IDExNTUgTDk3OCAxMTU0IEw5ODAgMTE1NCBMOTgxIDExNTMgTDk4MyAxMTUzIEw5ODQgMTE1MiBMOTg2IDExNTIgTDk4NyAxMTUxIEw5ODkgMTE1MSBMOTkwIDExNTAgTDk5MiAxMTUwIEw5OTMgMTE0OSBMOTk0IDExNDkgTDk5NSAxMTQ4IEw5OTcgMTE0OCBMOTk4IDExNDcgTDk5OSAxMTQ3IEwxMDAwIDExNDYgTDEwMDIgMTE0NiBMMTAwMyAxMTQ1IEwxMDA0IDExNDUgTDEwMDUgMTE0NCBMMTAwNiAxMTQ0IEwxMDA3IDExNDMgTDEwMDggMTE0MyBMMTAwOSAxMTQyIEwxMDEwIDExNDIgTDEwMTEgMTE0MSBMMTAxMyAxMTQxIEwxMDE0IDExNDAgTDEwMTUgMTE0MCBMMTAxNiAxMTM5IEwxMDE3IDExMzkgTDEwMTggMTEzOCBMMTAxOSAxMTM4IEwxMDIxIDExMzYgTDEwMjIgMTEzNiBMMTAyMyAxMTM1IEwxMDI0IDExMzUgTDEwMjUgMTEzNCBMMTAyNiAxMTM0IEwxMDI4IDExMzIgTDEwMjkgMTEzMiBMMTAzMCAxMTMxIEwxMDMxIDExMzEgTDEwMzMgMTEyOSBMMTAzNCAxMTI5IEwxMDM2IDExMjcgTDEwMzcgMTEyNyBMMTAzOCAxMTI2IEwxMDM5IDExMjYgTDEwNDEgMTEyNCBMMTA0MiAxMTI0IEwxMDQ0IDExMjIgTDEwNDUgMTEyMiBMMTA0OSAxMTE4IEwxMDUwIDExMTggTDEwNTIgMTExNiBMMTA1MyAxMTE2IEwxMDU4IDExMTEgTDEwNTkgMTExMSBMMTA3OCAxMDkyIEwxMDc4IDEwOTEgTDEwODIgMTA4NyBMMTA4MiAxMDg2IEwxMDg2IDEwODIgTDEwODYgMTA4MSBMMTA4OCAxMDc5IEwxMDg4IDEwNzggTDEwOTEgMTA3NSBMMTA5MSAxMDc0IEwxMDkyIDEwNzMgTDEwOTIgMTA3MiBMMTA5NCAxMDcwIEwxMDk0IDEwNjkgTDEwOTYgMTA2NyBMMTA5NiAxMDY2IEwxMDk3IDEwNjUgTDEwOTcgMTA2NCBMMTA5OCAxMDYzIEwxMDk4IDEwNjIgTDExMDAgMTA2MCBMMTEwMCAxMDU5IEwxMTAxIDEwNTggTDExMDEgMTA1NyBMMTEwMiAxMDU2IEwxMTAyIDEwNTUgTDExMDMgMTA1NCBMMTEwMyAxMDUzIEwxMTA0IDEwNTIgTDExMDQgMTA1MSBMMTEwNSAxMDUwIEwxMTA1IDEwNDkgTDExMDYgMTA0OCBMMTEwNiAxMDQ3IEwxMTA3IDEwNDYgTDExMDcgMTA0NCBMMTEwOCAxMDQzIEwxMTA4IDEwNDIgTDExMDkgMTA0MSBMMTEwOSAxMDQwIEwxMTEwIDEwMzkgTDExMTAgMTAzNyBMMTExMSAxMDM2IEwxMTExIDEwMzQgTDExMTIgMTAzMyBMMTExMiAxMDMyIEwxMTEzIDEwMzEgTDExMTMgMTAyOSBMMTExNCAxMDI4IEwxMTE0IDEwMjYgTDExMTUgMTAyNSBMMTExNSAxMDIyIEwxMTE2IDEwMjEgTDExMTYgMTAxOSBMMTExNyAxMDE4IEwxMTE3IDEwMTYgTDExMTggMTAxNSBMMTExOCAxMDEyIEwxMTE5IDEwMTEgTDExMTkgMTAwOCBMMTEyMCAxMDA3IEwxMTIwIDEwMDQgTDExMjEgMTAwMyBMMTEyMSA5OTkgTDExMjIgOTk4IEwxMTIyIDk5NSBMMTEyMyA5OTQgTDExMjMgOTg4IEwxMTI0IDk4NyBMMTEyNCA5ODEgTDExMjUgOTgwIEwxMTI1IDk3MiBMMTEyNiA5NzEgTDExMjYgOTYzIEwxMTI3IDk2MiBMMTEyNyA5MTcgTDExMjYgOTE2IEwxMTI2IDkwNiBMMTEyNSA5MDUgTDExMjUgODk2IEwxMTI0IDg5NSBMMTEyNCA4ODkgTDExMjMgODg4IEwxMTIzIDg4MyBMMTEyMiA4ODIgTDExMjIgODc5IEwxMTIxIDg3OCBMMTEyMSA4NzQgTDExMjAgODczIEwxMTIwIDg3MCBMMTExOSA4NjkgTDExMTkgODY2IEwxMTE4IDg2NSBMMTExOCA4NjIgTDExMTcgODYxIEwxMTE3IDg1OSBMMTExNiA4NTggTDExMTYgODU2IEwxMTE1IDg1NSBMMTExNSA4NTMgTDExMTQgODUyIEwxMTE0IDg1MCBMMTExMyA4NDkgTDExMTMgODQ3IEwxMTEyIDg0NiBMMTExMiA4NDUgTDExMTEgODQ0IEwxMTExIDg0MyBMMTExMCA4NDIgTDExMTAgODQxIEwxMTA5IDg0MCBMMTEwOSA4MzggTDExMDggODM3IEwxMTA4IDgzNiBMMTEwNyA4MzUgTDExMDcgODM0IEwxMTA2IDgzMyBMMTEwNiA4MzIgTDExMDUgODMxIEwxMTA1IDgzMCBMMTEwNCA4MjkgTDExMDQgODI4IEwxMTAzIDgyNyBMMTEwMyA4MjYgTDExMDIgODI1IEwxMTAyIDgyNCBMMTEwMSA4MjMgTDExMDEgODIyIEwxMDk5IDgyMCBMMTA5OSA4MTkgTDEwOTggODE4IEwxMDk4IDgxNyBMMTA5NyA4MTYgTDEwOTcgODE1IEwxMDk1IDgxMyBMMTA5NSA4MTIgTDEwOTIgODA5IEwxMDkyIDgwOCBMMTA4OSA4MDUgTDEwODkgODA0IEwxMDg3IDgwMiBMMTA4NyA4MDEgTDEwODEgNzk1IEwxMDgxIDc5NCBMMTA2MyA3NzYgTDEwNjIgNzc2IEwxMDU3IDc3MSBMMTA1NiA3NzEgTDEwNTMgNzY4IEwxMDUyIDc2OCBMMTA0OSA3NjUgTDEwNDggNzY1IEwxMDQ3IDc2NCBMMTA0NiA3NjQgTDEwNDQgNzYyIEwxMDQzIDc2MiBMMTA0MSA3NjAgTDEwNDAgNzYwIEwxMDM3IDc1NyBMMTAzNiA3NTcgTDEwMzUgNzU2IEwxMDM0IDc1NiBMMTAzMiA3NTQgTDEwMzEgNzU0IEwxMDMwIDc1MyBMMTAyOSA3NTMgTDEwMjcgNzUxIEwxMDI2IDc1MSBMMTAyNSA3NTAgTDEwMjQgNzUwIEwxMDIzIDc0OSBMMTAyMiA3NDkgTDEwMjEgNzQ4IEwxMDIwIDc0OCBMMTAxOSA3NDcgTDEwMTcgNzQ3IEwxMDE2IDc0NiBMMTAxNSA3NDYgTDEwMTQgNzQ1IEwxMDEzIDc0NSBMMTAxMiA3NDQgTDEwMTEgNzQ0IEwxMDEwIDc0MyBMMTAwOSA3NDMgTDEwMDggNzQyIEwxMDA3IDc0MiBMMTAwNiA3NDEgTDEwMDUgNzQxIEwxMDAzIDczOSBMMTAwNSA3MzcgTDEwMDYgNzM3IEwxMDA4IDczNSBMMTAwOSA3MzUgTDEwMTAgNzM0IEwxMDExIDczNCBMMTAxMyA3MzIgTDEwMTQgNzMyIEwxMDE2IDczMCBMMTAxNyA3MzAgTDEwMTkgNzI4IEwxMDIwIDcyOCBMMTAyMyA3MjUgTDEwMjQgNzI1IEwxMDI5IDcyMCBMMTAzMCA3MjAgTDEwNDUgNzA1IEwxMDQ1IDcwNCBMMTA0NiA3MDMgTDEwNDcgNzAzIEwxMDQ3IDcwMiBMMTA1MSA2OTggTDEwNTEgNjk3IEwxMDU0IDY5NCBMMTA1NCA2OTMgTDEwNTcgNjkwIEwxMDU3IDY4OSBMMTA1OSA2ODcgTDEwNTkgNjg2IEwxMDYxIDY4NCBMMTA2MSA2ODMgTDEwNjMgNjgxIEwxMDYzIDY4MCBMMTA2NCA2NzkgTDEwNjQgNjc4IEwxMDY1IDY3NyBMMTA2NSA2NzYgTDEwNjYgNjc1IEwxMDY2IDY3NCBMMTA2NyA2NzMgTDEwNjcgNjcyIEwxMDY4IDY3MSBMMTA2OCA2NzAgTDEwNjkgNjY5IEwxMDY5IDY2OCBMMTA3MCA2NjcgTDEwNzAgNjY2IEwxMDcxIDY2NSBMMTA3MSA2NjQgTDEwNzIgNjYzIEwxMDcyIDY2MiBMMTA3MyA2NjEgTDEwNzMgNjYwIEwxMDc0IDY1OSBMMTA3NCA2NTcgTDEwNzUgNjU2IEwxMDc1IDY1NCBMMTA3NiA2NTMgTDEwNzYgNjUyIEwxMDc3IDY1MSBMMTA3NyA2NDkgTDEwNzggNjQ4IEwxMDc4IDY0NiBMMTA3OSA2NDUgTDEwNzkgNjQ0IEwxMDgwIDY0MyBMMTA4MCA2NDAgTDEwODEgNjM5IEwxMDgxIDYzNyBMMTA4MiA2MzYgTDEwODIgNjMzIEwxMDgzIDYzMiBMMTA4MyA2MjkgTDEwODQgNjI4IEwxMDg0IDYyNCBMMTA4NSA2MjMgTDEwODUgNjE5IEwxMDg2IDYxOCBMMTA4NiA2MTUgTDEwODcgNjE0IEwxMDg3IDYwOSBMMTA4OCA2MDggTDEwODggNjAxIEwxMDg5IDYwMCBMMTA4OSA1OTAgTDEwOTAgNTg5IEwxMDkwIDU1MCBMMTA4OSA1NDkgTDEwODkgNTQwIEwxMDg4IDUzOSBMMTA4OCA1MzEgTDEwODcgNTMwIEwxMDg3IDUyNCBMMTA4NiA1MjMgTDEwODYgNTIwIEwxMDg1IDUxOSBMMTA4NSA1MTUgTDEwODQgNTE0IEwxMDg0IDUxMSBMMTA4MyA1MTAgTDEwODMgNTA3IEwxMDgyIDUwNiBMMTA4MiA1MDMgTDEwODEgNTAyIEwxMDgxIDQ5OSBMMTA4MCA0OTggTDEwODAgNDk2IEwxMDc5IDQ5NSBMMTA3OSA0OTMgTDEwNzggNDkyIEwxMDc4IDQ5MCBMMTA3NyA0ODkgTDEwNzcgNDg4IEwxMDc2IDQ4NyBMMTA3NiA0ODUgTDEwNzUgNDg0IEwxMDc1IDQ4MyBMMTA3NCA0ODIgTDEwNzQgNDgwIEwxMDczIDQ3OSBMMTA3MyA0NzggTDEwNzIgNDc3IEwxMDcyIDQ3NiBMMTA3MSA0NzUgTDEwNzEgNDc0IEwxMDcwIDQ3MyBMMTA3MCA0NzIgTDEwNjkgNDcxIEwxMDY5IDQ3MCBMMTA2OCA0NjkgTDEwNjggNDY4IEwxMDY3IDQ2NyBMMTA2NyA0NjYgTDEwNjYgNDY1IEwxMDY2IDQ2NCBMMTA2NCA0NjIgTDEwNjQgNDYxIEwxMDYzIDQ2MCBMMTA2MyA0NTkgTDEwNjEgNDU3IEwxMDYxIDQ1NiBMMTA2MCA0NTUgTDEwNjAgNDU0IEwxMDU3IDQ1MSBMMTA1NyA0NTAgTDEwNTQgNDQ3IEwxMDU0IDQ0NiBMMTA0OSA0NDEgTDEwNDkgNDQwIEwxMDMxIDQyMiBMMTAzMCA0MjIgTDEwMjUgNDE3IEwxMDI0IDQxNyBMMTAyMCA0MTMgTDEwMTkgNDEzIEwxMDE4IDQxMiBMMTAxNyA0MTIgTDEwMTUgNDEwIEwxMDE0IDQxMCBMMTAxMSA0MDcgTDEwMTAgNDA3IEwxMDA3IDQwNCBMMTAwNiA0MDQgTDEwMDUgNDAzIEwxMDA0IDQwMyBMMTAwMiA0MDEgTDEwMDEgNDAxIEwxMDAwIDQwMCBMOTk5IDQwMCBMOTk4IDM5OSBMOTk3IDM5OSBMOTk1IDM5NyBMOTkzIDM5NyBMOTkxIDM5NSBMOTkwIDM5NSBMOTg5IDM5NCBMOTg4IDM5NCBMOTg3IDM5MyBMOTg2IDM5MyBMOTg1IDM5MiBMOTg0IDM5MiBMOTgzIDM5MSBMOTgyIDM5MSBMOTgxIDM5MCBMOTc5IDM5MCBMOTc3IDM4OCBMOTc1IDM4OCBMOTc0IDM4NyBMOTcyIDM4NyBMOTcxIDM4NiBMOTcwIDM4NiBMOTY5IDM4NSBMOTY4IDM4NSBMOTY3IDM4NCBMOTY0IDM4NCBMOTYzIDM4MyBMOTYyIDM4MyBMOTYxIDM4MiBMOTU5IDM4MiBMOTU4IDM4MSBMOTU2IDM4MSBMOTU1IDM4MCBMOTUzIDM4MCBMOTUyIDM3OSBMOTUwIDM3OSBMOTQ5IDM3OCBMOTQ4IDM3OCBMOTQ3IDM3NyBMOTQ0IDM3NyBMOTQzIDM3NiBMOTQwIDM3NiBMOTM5IDM3NSBMOTM3IDM3NSBMOTM2IDM3NCBMOTMyIDM3NCBMOTMxIDM3MyBMOTI4IDM3MyBMOTI3IDM3MiBMOTIzIDM3MiBMOTIyIDM3MSBMOTE5IDM3MSBMOTE4IDM3MCBMOTE0IDM3MCBMOTEzIDM2OSBMOTA3IDM2OSBMOTA2IDM2OCBMOTAwIDM2OCBMODk5IDM2NyBMODkwIDM2NyBMODg5IDM2NiBMODc2IDM2NiBMODc1IDM2NSBMNDc4IDM2NSBMNDc3IDM2NiBMNDcyIDM2NiBMNDcxIDM2NyBMNDY5IDM2NyBMNDY4IDM2OCBMNDY2IDM2OCBMNDY1IDM2OSBMNDY0IDM2OSBMNDYzIDM3MCBMNDYyIDM3MCBMNDU5IDM3MyBaTTk1MiA5MDcgTDk1MiA5MDkgTDk1MyA5MTAgTDk1MyA5MTMgTDk1NCA5MTQgTDk1NCA5MTggTDk1NSA5MTkgTDk1NSA5MjMgTDk1NiA5MjQgTDk1NiA5MzAgTDk1NyA5MzEgTDk1NyA5NjQgTDk1NiA5NjUgTDk1NiA5NzIgTDk1NSA5NzMgTDk1NSA5NzYgTDk1NCA5NzcgTDk1NCA5ODAgTDk1MyA5ODEgTDk1MyA5ODQgTDk1MiA5ODUgTDk1MiA5ODcgTDk1MSA5ODggTDk1MSA5OTAgTDk1MCA5OTEgTDk1MCA5OTMgTDk0OSA5OTQgTDk0OSA5OTUgTDk0OCA5OTYgTDk0OCA5OTcgTDk0NyA5OTggTDk0NyA5OTkgTDk0NiAxMDAwIEw5NDYgMTAwMSBMOTQ1IDEwMDIgTDk0NSAxMDAzIEw5NDMgMTAwNSBMOTQzIDEwMDYgTDk0MSAxMDA4IEw5NDEgMTAwOSBMOTM4IDEwMTIgTDkzOCAxMDEzIEw5MjcgMTAyNCBMOTI2IDEwMjQgTDkyMyAxMDI3IEw5MjIgMTAyNyBMOTIwIDEwMjkgTDkxOSAxMDI5IEw5MTcgMTAzMSBMOTE2IDEwMzEgTDkxNSAxMDMyIEw5MTQgMTAzMiBMOTEzIDEwMzMgTDkxMiAxMDMzIEw5MTEgMTAzNCBMOTEwIDEwMzQgTDkwOSAxMDM1IEw5MDggMTAzNSBMOTA3IDEwMzYgTDkwNSAxMDM2IEw5MDQgMTAzNyBMOTAyIDEwMzcgTDkwMSAxMDM4IEw4OTkgMTAzOCBMODk4IDEwMzkgTDg5NSAxMDM5IEw4OTQgMTA0MCBMODkwIDEwNDAgTDg4OSAxMDQxIEw4NzkgMTA0MSBMODc4IDEwNDIgTDYzMyAxMDQyIEw2MzIgMTA0MSBMNjI2IDEwNDEgTDYyNSAxMDQwIEw2MjMgMTA0MCBMNjIyIDEwMzkgTDYyMCAxMDM5IEw2MTkgMTAzOCBMNjE4IDEwMzggTDYxNyAxMDM3IEw2MTYgMTAzNyBMNjE1IDEwMzYgTDYxNCAxMDM2IEw2MTMgMTAzNSBMNjEyIDEwMzUgTDYwMyAxMDI2IEw2MDMgMTAyNSBMNjAxIDEwMjMgTDYwMSAxMDIyIEw2MDAgMTAyMSBMNjAwIDEwMjAgTDU5OSAxMDE5IEw1OTkgMTAxOCBMNTk4IDEwMTcgTDU5OCAxMDE2IEw1OTcgMTAxNSBMNTk3IDEwMTMgTDU5NiAxMDEyIEw1OTYgMTAwOCBMNTk1IDEwMDcgTDU5NSA4OTQgTDU5NiA4OTMgTDU5NiA4ODkgTDU5NyA4ODggTDU5NyA4ODUgTDU5OCA4ODQgTDU5OCA4ODMgTDU5OSA4ODIgTDU5OSA4ODEgTDYwMCA4ODAgTDYwMCA4NzkgTDYwMSA4NzggTDYwMSA4NzcgTDYwMyA4NzUgTDYwMyA4NzQgTDYxMCA4NjcgTDYxMSA4NjcgTDYxMyA4NjUgTDYxNCA4NjUgTDYxNiA4NjMgTDYxNyA4NjMgTDYxOCA4NjIgTDYxOSA4NjIgTDYyMCA4NjEgTDYyMiA4NjEgTDYyMyA4NjAgTDYyNiA4NjAgTDYyNyA4NTkgTDYzMiA4NTkgTDYzMyA4NTggTDgxMyA4NTggTDgyOSA4NDIgTDgyOSA4NDEgTDgzMCA4NDAgTDgzMSA4NDAgTDg3MiA3OTkgTDg3MyA3OTkgTDg3NCA4MDAgTDg3NCA4MDkgTDg3MyA4MTAgTDg3MyA4MTcgTDg3MiA4MTggTDg3MiA4MjcgTDg3MSA4MjggTDg3MSA4MzUgTDg3MCA4MzYgTDg3MCA4NDEgTDg2OSA4NDIgTDg2OSA4NDggTDg2OCA4NDkgTDg2OCA4NTggTDg4NyA4NTggTDg4OCA4NTkgTDg5NCA4NTkgTDg5NSA4NjAgTDkwMCA4NjAgTDkwMSA4NjEgTDkwMyA4NjEgTDkwNCA4NjIgTDkwNyA4NjIgTDkwOCA4NjMgTDkxMCA4NjMgTDkxMSA4NjQgTDkxMiA4NjQgTDkxMyA4NjUgTDkxNSA4NjUgTDkxNiA4NjYgTDkxNyA4NjYgTDkxOCA4NjcgTDkxOSA4NjcgTDkyMCA4NjggTDkyMSA4NjggTDkyMyA4NzAgTDkyNCA4NzAgTDkyNyA4NzMgTDkyOCA4NzMgTDkzMiA4NzcgTDkzMyA4NzcgTDkzOCA4ODIgTDkzOCA4ODMgTDk0MiA4ODcgTDk0MiA4ODggTDk0NCA4OTAgTDk0NCA4OTEgTDk0NSA4OTIgTDk0NSA4OTMgTDk0NiA4OTQgTDk0NiA4OTUgTDk0OCA4OTcgTDk0OCA4OTkgTDk0OSA5MDAgTDk0OSA5MDEgTDk1MCA5MDIgTDk1MCA5MDQgTDk1MSA5MDUgTDk1MSA5MDYgWk01ODggNTE4IEw1ODkgNTE3IEw1ODkgNTE2IEw1OTAgNTE1IEw1OTAgNTE0IEw1OTEgNTEzIEw1OTEgNTEyIEw1OTIgNTExIEw1OTIgNTEwIEw1OTQgNTA4IEw1OTQgNTA3IEw2MDAgNTAxIEw2MDEgNTAxIEw2MDQgNDk4IEw2MDUgNDk4IEw2MDYgNDk3IEw2MDggNDk3IEw2MDkgNDk2IEw2MTAgNDk2IEw2MTEgNDk1IEw2MTQgNDk1IEw2MTUgNDk0IEw2MTkgNDk0IEw2MjAgNDkzIEw4NjYgNDkzIEw4NjcgNDk0IEw4NzEgNDk0IEw4NzIgNDk1IEw4NzUgNDk1IEw4NzYgNDk2IEw4NzcgNDk2IEw4NzggNDk3IEw4ODAgNDk3IEw4ODEgNDk4IEw4ODIgNDk4IEw4ODMgNDk5IEw4ODQgNDk5IEw4ODYgNTAxIEw4ODcgNTAxIEw4ODkgNTAzIEw4OTAgNTAzIEw5MDAgNTEzIEw5MDAgNTE0IEw5MDIgNTE2IEw5MDIgNTE3IEw5MDQgNTE5IEw5MDQgNTIwIEw5MDYgNTIyIEw5MDYgNTIzIEw5MDcgNTI0IEw5MDcgNTI1IEw5MDggNTI2IEw5MDggNTI3IEw5MDkgNTI4IEw5MDkgNTMxIEw5MTAgNTMyIEw5MTAgNTM0IEw5MTEgNTM1IEw5MTEgNTM3IEw5MTIgNTM4IEw5MTIgNTQwIEw5MTMgNTQxIEw5MTMgNTQzIEw5MTQgNTQ0IEw5MTQgNTQ4IEw5MTUgNTQ5IEw5MTUgNTU0IEw5MTYgNTU1IEw5MTYgNTY5IEw5MTcgNTcwIEw5MTcgNjA0IEw5MTYgNjA1IEw5MTYgNjEzIEw5MTUgNjE0IEw5MTUgNjIwIEw5MTQgNjIxIEw5MTQgNjI0IEw5MTMgNjI1IEw5MTMgNjI4IEw5MTIgNjI5IEw5MTIgNjMyIEw5MTEgNjMzIEw5MTEgNjM0IEw5MTAgNjM1IEw5MTAgNjM3IEw5MDkgNjM4IEw5MDkgNjQwIEw5MDggNjQxIEw5MDggNjQyIEw5MDcgNjQzIEw5MDcgNjQ0IEw5MDYgNjQ1IEw5MDYgNjQ2IEw5MDUgNjQ3IEw5MDUgNjQ4IEw5MDQgNjQ5IEw5MDQgNjUwIEw5MDMgNjUxIEw5MDMgNjUyIEw5MDIgNjUzIEw5MDIgNjU0IEw5MDAgNjU2IEw5MDAgNjU3IEw4OTYgNjYxIEw4OTYgNjYyIEw4ODkgNjY5IEw4ODggNjY5IEw4ODQgNjczIEw4ODMgNjczIEw4ODEgNjc1IEw4ODAgNjc1IEw4NzkgNjc2IEw4NzggNjc2IEw4NzcgNjc3IEw4NzYgNjc3IEw4NzQgNjc5IEw4NzMgNjc5IEw4NzIgNjgwIEw4NzAgNjgwIEw4NjkgNjgxIEw4NjcgNjgxIEw4NjYgNjgyIEw4NjQgNjgyIEw4NjMgNjgzIEw4NTkgNjgzIEw4NTggNjg0IEw3NDAgNjg0IEw3MzkgNjg1IEw3MzggNjg1IEw2NzkgNzQ0IEw2NzkgNzQ1IEw2NzggNzQ2IEw2NzcgNzQ2IEw2NzUgNzQ4IEw2NzQgNzQ3IEw2NzQgNzM5IEw2NzUgNzM4IEw2NzUgNzMxIEw2NzYgNzMwIEw2NzYgNzIzIEw2NzcgNzIyIEw2NzcgNzE1IEw2NzggNzE0IEw2NzggNzEwIEw2NzkgNzA5IEw2NzkgNzAyIEw2ODAgNzAxIEw2ODAgNjkzIEw2ODEgNjkyIEw2ODEgNjg1IEw2ODAgNjg0IEw2MTcgNjg0IEw2MTYgNjgzIEw2MTMgNjgzIEw2MTIgNjgyIEw2MTAgNjgyIEw2MDkgNjgxIEw2MDggNjgxIEw2MDcgNjgwIEw2MDYgNjgwIEw2MDUgNjc5IEw2MDQgNjc5IEw2MDEgNjc2IEw2MDAgNjc2IEw1OTUgNjcxIEw1OTUgNjcwIEw1OTIgNjY3IEw1OTIgNjY2IEw1OTAgNjY0IEw1OTAgNjYyIEw1ODkgNjYxIEw1ODkgNjU5IEw1ODggNjU4IEw1ODggNjU2IEw1ODcgNjU1IEw1ODcgNjUyIEw1ODYgNjUxIEw1ODYgNTI2IEw1ODcgNTI1IEw1ODcgNTIxIEw1ODggNTIwIFoiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="BMM"><div><b>BARBERENA MI MUNICIPIO</b><span>Generador de carteles</span></div></div>
+  <a class="back" href="/">Volver al sitio</a>
+</div></header>
 
-    <div class="gen">
-      <!-- Controles -->
-      <div class="gen-panel">
-        <section class="gen-sec" aria-labelledby="secFondo">
-          <div class="gen-sec-head">
-            <h2 id="secFondo">1. Fondo</h2>
-            <button type="button" class="gen-reset" id="resetBtn">Reiniciar todo</button>
-          </div>
+<main>
+<div class="intro"><h1>Creador de carteles y afiches</h1><p>Diseña carteles con la identidad de Barberena Mi Municipio, listos para redes sociales.</p></div>
+<div class="grid">
 
-          <div class="gen-group">
-            <span class="gen-label" id="lblColores">Colores</span>
-            <div class="gen-swatches" id="swColores" role="group" aria-labelledby="lblColores"></div>
-            <label class="gen-custom">
-              <input type="color" id="customColor" value="#ef4f1d">
-              <span>Otro color</span>
-            </label>
-          </div>
+<section class="card">
+  <div class="ch"><h3>Configuración</h3><button class="ghost" id="resetBtn" type="button">Reiniciar</button></div>
 
-          <div class="gen-group">
-            <span class="gen-label" id="lblDegradados">Degradados</span>
-            <div class="gen-swatches" id="swDegradados" role="group" aria-labelledby="lblDegradados"></div>
-          </div>
+  <div class="sec"><label class="t"><span class="n">1</span>Formato</label>
+    <div class="fmt" id="fmt">
+      <button type="button" data-h="1350" class="on">4:5<small>Feed 1080×1350</small></button>
+      <button type="button" data-h="1080">1:1<small>Cuadrado 1080×1080</small></button>
+      <button type="button" data-h="1920">9:16<small>Historia 1080×1920</small></button>
+    </div></div>
 
-          <div class="gen-group">
-            <span class="gen-label" id="lblPatron">Patrón</span>
-            <div class="gen-chips" id="chipsPatron" role="group" aria-labelledby="lblPatron"></div>
-          </div>
-
-          <div class="gen-group">
-            <label class="gen-label" for="scrim">Oscurecer arriba y abajo (<span id="scrimVal">60</span>%)</label>
-            <input type="range" id="scrim" min="0" max="100" value="60">
-          </div>
-
-          <div class="gen-group">
-            <span class="gen-label">Imagen propia (reemplaza el color o degradado)</span>
-            <div class="gen-upload">
-              <label class="gen-btn gen-btn-quiet gen-btn-small" for="imageLoader" style="cursor:pointer">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Subir imagen
-              </label>
-              <input type="file" id="imageLoader" accept="image/*" hidden>
-              <button type="button" class="gen-reset" id="removeImg" hidden>Quitar imagen</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="gen-sec" aria-labelledby="secTop">
-          <div class="gen-sec-head"><h2 id="secTop">2. Texto superior (titular)</h2></div>
-          <label class="gen-label" for="topText">Texto</label>
-          <input type="text" id="topText" class="gen-input" value="¡AVISO IMPORTANTE!" placeholder="Ej: ¡ATENCIÓN VECINOS!" autocomplete="off">
-          <div class="gen-row">
-            <div>
-              <label class="gen-label" for="topColor">Color</label>
-              <input type="color" id="topColor" class="gen-color" value="#ffffff">
-            </div>
-            <div>
-              <label class="gen-label" for="topSize">Tamaño (<span id="topSizeVal">40</span>)</label>
-              <input type="range" id="topSize" min="20" max="70" value="40">
-            </div>
-            <div>
-              <label class="gen-label" for="topFont">Tipografía</label>
-              <select id="topFont" class="gen-select"></select>
-            </div>
-          </div>
-        </section>
-
-        <section class="gen-sec" aria-labelledby="secBottom">
-          <div class="gen-sec-head"><h2 id="secBottom">3. Texto inferior (detalles)</h2></div>
-          <label class="gen-label" for="bottomText">Texto</label>
-          <input type="text" id="bottomText" class="gen-input" value="REUNIÓN DE VECINOS - SÁBADO 10 AM, PARQUE CENTRAL" placeholder="Ej: Sábado 10:00 AM en el Parque Central" autocomplete="off">
-          <div class="gen-row">
-            <div>
-              <label class="gen-label" for="bottomColor">Color</label>
-              <input type="color" id="bottomColor" class="gen-color" value="#ffffff">
-            </div>
-            <div>
-              <label class="gen-label" for="bottomSize">Tamaño (<span id="bottomSizeVal">32</span>)</label>
-              <input type="range" id="bottomSize" min="16" max="60" value="32">
-            </div>
-            <div>
-              <label class="gen-label" for="bottomFont">Tipografía</label>
-              <select id="bottomFont" class="gen-select"></select>
-            </div>
-          </div>
-          <label class="gen-check"><input type="checkbox" id="outline" checked> Contorno oscuro en las letras</label>
-        </section>
-
-        <div class="gen-actions">
-          <button type="button" class="cb-more gen-btn" id="downloadBtn">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v12m0 0 5-5m-5 5-5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Descargar PNG
-          </button>
-          <button type="button" class="gen-btn-quiet gen-btn" id="shareBtn">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 15V4m0 0L8 8m4-4 4 4M5 13v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Compartir
-          </button>
-        </div>
-      </div>
-
-      <!-- Vista previa -->
-      <div class="gen-preview">
-        <p class="gen-meta"><span>Vista previa</span><span>1080 × 1080 px</span></p>
-        <div class="gen-frame">
-          <canvas id="cartel" width="1080" height="1080" role="img" aria-label="Vista previa del cartel"></canvas>
-        </div>
-        <p class="gen-note">El tamaño cuadrado se ve completo en WhatsApp y Facebook. En el celular, Compartir abre el menú para enviarlo directo.</p>
+  <div class="sec"><label class="t"><span class="n">2</span>Fondo</label>
+    <div class="bgs" id="bgs">
+      <button type="button" class="bgb on" data-bg="negro" style="background:radial-gradient(circle at 80% 10%,#4a2012,#0a0a0a 70%)"><span>Negro</span></button>
+      <button type="button" class="bgb" data-bg="naranja" style="background:linear-gradient(135deg,#ef4f1d,#c93a0e)"><span>Naranja</span></button>
+      <button type="button" class="bgb" data-bg="degradado" style="background:linear-gradient(135deg,#ef4f1d,#111110)"><span>Degradado</span></button>
+      <button type="button" class="bgb" data-bg="lineas" style="background:repeating-linear-gradient(135deg,#111110 0 12px,#1d1d1b 12px 24px)"><span>Líneas</span></button>
+      <button type="button" class="bgb" data-bg="puntos" style="background:radial-gradient(#555 1.5px,#111110 2px) 0 0/12px 12px"><span>Puntos</span></button>
+      <button type="button" class="bgb" id="photoTile" data-bg="foto" style="background:#2b2b29;display:none"><span>Tu foto</span></button>
+    </div>
+    <label class="up"><span>Subir foto desde tu dispositivo</span><input type="file" id="imageLoader" accept="image/*" hidden></label>
+    <div class="box" id="photoOpts" style="display:none;margin-top:12px">
+      <div class="row r2" style="margin-top:0">
+        <div><span class="sm">Encuadre de la foto</span><input type="range" id="pos" min="0" max="100" value="25"></div>
+        <div><span class="sm">Oscurecer abajo</span><input type="range" id="dark" min="40" max="100" value="88"></div>
       </div>
     </div>
   </div>
+
+  <div class="sec"><label class="t"><span class="n">3</span>Texto</label>
+    <div class="box">
+      <span class="sm">Etiqueta (opcional)</span>
+      <input type="text" id="tag" value="Local · Servicios" maxlength="40">
+      <span class="sm" style="margin-top:12px">Titular</span>
+      <textarea id="head" maxlength="160">Vecinos denuncian falta de agua y exigen boletas sin recargos</textarea>
+      <span class="sm" style="margin-top:12px">Palabras en color de acento</span>
+      <input type="text" id="hl" value="falta de agua" maxlength="60">
+      <label class="chk" style="margin-top:8px"><input type="checkbox" id="autoHl" checked> Detectar la frase clave automáticamente <span id="aiSt" style="color:var(--gris);font-weight:400"></span></label>
+      <div class="row r3">
+        <div><span class="sm">Tipografía</span>
+          <select id="font">
+            <option value="Roboto Condensed|700">Roboto Condensed</option>
+            <option value="Oswald|700">Oswald</option>
+            <option value="Bebas Neue|400">Bebas Neue</option>
+            <option value="Anton|400">Anton</option>
+            <option value="Barlow Condensed|700">Barlow Condensed</option>
+            <option value="Archivo Narrow|700">Archivo Narrow</option>
+            <option value="Montserrat|800">Montserrat</option>
+            <option value="Roboto Slab|700">Roboto Slab</option>
+            <option value="Playfair Display|800">Playfair Display</option>
+          </select></div>
+        <div><span class="sm">Tamaño máx. (<span id="szv">96</span>px)</span><input type="range" id="sz" min="48" max="130" value="96"></div>
+        <div><span class="sm">Ubicación</span>
+          <select id="anchor"><option value="abajo">Abajo</option><option value="centro">Centro</option></select></div>
+      </div>
+      <label class="chk"><input type="checkbox" id="upper"> Titular en mayúsculas</label>
+    </div>
+  </div>
+
+  <div class="sec"><label class="t"><span class="n">4</span>Pie y créditos</label>
+    <div class="box">
+      <div class="row r2" style="margin-top:0">
+        <div><span class="sm">Nombre</span><input type="text" id="name" value="Barberena Mi Municipio" maxlength="40"></div>
+        <div><span class="sm">Dirección web</span><input type="text" id="url" value="barberenamimunicipio.top" maxlength="40"></div>
+      </div>
+      <span class="sm" style="margin-top:12px">Crédito de la foto (opcional)</span>
+      <input type="text" id="credit" value="Foto: archivo" maxlength="40">
+      <label class="chk"><input type="checkbox" id="showLogo" checked> Mostrar logo en el pie</label>
+    </div>
+  </div>
+
+  <div class="sec"><label class="t"><span class="n">5</span>Colores</label>
+    <div class="row r2" style="margin-top:0">
+      <div><span class="sm">Acento (etiqueta, palabras, URL)</span><input type="color" id="accent" value="#ef4f1d"></div>
+      <div><span class="sm">Titular</span><input type="color" id="hcolor" value="#ffffff"></div>
+    </div>
+  </div>
+
+  <div class="acts">
+    <button class="btn b1" id="dl" type="button">Descargar PNG</button>
+    <button class="btn b2" id="share" type="button">Compartir</button>
+  </div>
+</section>
+
+<section class="prev"><div class="card">
+  <div class="ch"><h3>Vista previa</h3><span class="pill" id="dim">1080 × 1350 px</span></div>
+  <div class="cvw"><canvas id="cv" width="1080" height="1350"></canvas></div>
+  <div class="tip"><b>Consejo:</b> usa titulares de 8 a 12 palabras y marca con acento solo la frase clave. En el formato 4:5 el cartel se ve completo en el feed de Instagram y Facebook.</div>
+</div></section>
+
+</div>
 </main>
-${footerHtml()}
-<div class="gen-toast" id="genToast" role="status" aria-live="polite"></div>
+<footer>© 2026 Barberena Mi Municipio · Herramienta de uso interno</footer>
+<div id="toast"></div>
 
 <script>
-(function () {
-  var W = 1080, K = W / 800;
-  var canvas = document.getElementById('cartel');
-  var ctx = canvas.getContext('2d');
+const $=id=>document.getElementById(id);
+const cv=$('cv'),ctx=cv.getContext('2d');
+const W=1080,M=56;
+let H=1350,bg='negro',photo=null;
+const logo=new Image();logo.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiB2aWV3Qm94PSIwIDAgMTUzNiAxNTM2Ij4KICA8Y2lyY2xlIGN4PSI3NjgiIGN5PSI3NjgiIHI9Ijc2OCIgZmlsbD0iI0VGNEYxRCIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc2OCA3NjgpIHNjYWxlKDEuMSkgdHJhbnNsYXRlKC04MDAgLTc2OCkiPgogICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuNSAyLjUpIiBmaWxsPSIjZmRmZGZkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NTggMzczIEw0NTcgMzc0IEw0NTcgMzc1IEw0NTQgMzc4IEw0NTQgMzc5IEw0NTIgMzgxIEw0NTIgMzgyIEw0NTEgMzgzIEw0NTEgMzg0IEw0NTAgMzg1IEw0NTAgMzg3IEw0NDkgMzg4IEw0NDkgMzkyIEw0NDggMzkzIEw0NDggMTEzOSBMNDQ5IDExNDAgTDQ0OSAxMTQzIEw0NTAgMTE0NCBMNDUwIDExNDYgTDQ1MSAxMTQ3IEw0NTEgMTE0OSBMNDUyIDExNTAgTDQ1MiAxMTUxIEw0NTUgMTE1NCBMNDU1IDExNTUgTDQ2MCAxMTYwIEw0NjEgMTE2MCBMNDYyIDExNjEgTDQ2MyAxMTYxIEw0NjQgMTE2MiBMNDY1IDExNjIgTDQ2NiAxMTYzIEw0NjcgMTE2MyBMNDY4IDExNjQgTDQ2OSAxMTY0IEw0NzAgMTE2NSBMNDczIDExNjUgTDQ3NCAxMTY2IEw5MTcgMTE2NiBMOTE4IDExNjUgTDkzMCAxMTY1IEw5MzEgMTE2NCBMOTM2IDExNjQgTDkzNyAxMTYzIEw5NDMgMTE2MyBMOTQ0IDExNjIgTDk0OSAxMTYyIEw5NTAgMTE2MSBMOTU0IDExNjEgTDk1NSAxMTYwIEw5NTggMTE2MCBMOTU5IDExNTkgTDk2MiAxMTU5IEw5NjMgMTE1OCBMOTY3IDExNTggTDk2OCAxMTU3IEw5NzAgMTE1NyBMOTcxIDExNTYgTDk3MyAxMTU2IEw5NzQgMTE1NSBMOTc3IDExNTUgTDk3OCAxMTU0IEw5ODAgMTE1NCBMOTgxIDExNTMgTDk4MyAxMTUzIEw5ODQgMTE1MiBMOTg2IDExNTIgTDk4NyAxMTUxIEw5ODkgMTE1MSBMOTkwIDExNTAgTDk5MiAxMTUwIEw5OTMgMTE0OSBMOTk0IDExNDkgTDk5NSAxMTQ4IEw5OTcgMTE0OCBMOTk4IDExNDcgTDk5OSAxMTQ3IEwxMDAwIDExNDYgTDEwMDIgMTE0NiBMMTAwMyAxMTQ1IEwxMDA0IDExNDUgTDEwMDUgMTE0NCBMMTAwNiAxMTQ0IEwxMDA3IDExNDMgTDEwMDggMTE0MyBMMTAwOSAxMTQyIEwxMDEwIDExNDIgTDEwMTEgMTE0MSBMMTAxMyAxMTQxIEwxMDE0IDExNDAgTDEwMTUgMTE0MCBMMTAxNiAxMTM5IEwxMDE3IDExMzkgTDEwMTggMTEzOCBMMTAxOSAxMTM4IEwxMDIxIDExMzYgTDEwMjIgMTEzNiBMMTAyMyAxMTM1IEwxMDI0IDExMzUgTDEwMjUgMTEzNCBMMTAyNiAxMTM0IEwxMDI4IDExMzIgTDEwMjkgMTEzMiBMMTAzMCAxMTMxIEwxMDMxIDExMzEgTDEwMzMgMTEyOSBMMTAzNCAxMTI5IEwxMDM2IDExMjcgTDEwMzcgMTEyNyBMMTAzOCAxMTI2IEwxMDM5IDExMjYgTDEwNDEgMTEyNCBMMTA0MiAxMTI0IEwxMDQ0IDExMjIgTDEwNDUgMTEyMiBMMTA0OSAxMTE4IEwxMDUwIDExMTggTDEwNTIgMTExNiBMMTA1MyAxMTE2IEwxMDU4IDExMTEgTDEwNTkgMTExMSBMMTA3OCAxMDkyIEwxMDc4IDEwOTEgTDEwODIgMTA4NyBMMTA4MiAxMDg2IEwxMDg2IDEwODIgTDEwODYgMTA4MSBMMTA4OCAxMDc5IEwxMDg4IDEwNzggTDEwOTEgMTA3NSBMMTA5MSAxMDc0IEwxMDkyIDEwNzMgTDEwOTIgMTA3MiBMMTA5NCAxMDcwIEwxMDk0IDEwNjkgTDEwOTYgMTA2NyBMMTA5NiAxMDY2IEwxMDk3IDEwNjUgTDEwOTcgMTA2NCBMMTA5OCAxMDYzIEwxMDk4IDEwNjIgTDExMDAgMTA2MCBMMTEwMCAxMDU5IEwxMTAxIDEwNTggTDExMDEgMTA1NyBMMTEwMiAxMDU2IEwxMTAyIDEwNTUgTDExMDMgMTA1NCBMMTEwMyAxMDUzIEwxMTA0IDEwNTIgTDExMDQgMTA1MSBMMTEwNSAxMDUwIEwxMTA1IDEwNDkgTDExMDYgMTA0OCBMMTEwNiAxMDQ3IEwxMTA3IDEwNDYgTDExMDcgMTA0NCBMMTEwOCAxMDQzIEwxMTA4IDEwNDIgTDExMDkgMTA0MSBMMTEwOSAxMDQwIEwxMTEwIDEwMzkgTDExMTAgMTAzNyBMMTExMSAxMDM2IEwxMTExIDEwMzQgTDExMTIgMTAzMyBMMTExMiAxMDMyIEwxMTEzIDEwMzEgTDExMTMgMTAyOSBMMTExNCAxMDI4IEwxMTE0IDEwMjYgTDExMTUgMTAyNSBMMTExNSAxMDIyIEwxMTE2IDEwMjEgTDExMTYgMTAxOSBMMTExNyAxMDE4IEwxMTE3IDEwMTYgTDExMTggMTAxNSBMMTExOCAxMDEyIEwxMTE5IDEwMTEgTDExMTkgMTAwOCBMMTEyMCAxMDA3IEwxMTIwIDEwMDQgTDExMjEgMTAwMyBMMTEyMSA5OTkgTDExMjIgOTk4IEwxMTIyIDk5NSBMMTEyMyA5OTQgTDExMjMgOTg4IEwxMTI0IDk4NyBMMTEyNCA5ODEgTDExMjUgOTgwIEwxMTI1IDk3MiBMMTEyNiA5NzEgTDExMjYgOTYzIEwxMTI3IDk2MiBMMTEyNyA5MTcgTDExMjYgOTE2IEwxMTI2IDkwNiBMMTEyNSA5MDUgTDExMjUgODk2IEwxMTI0IDg5NSBMMTEyNCA4ODkgTDExMjMgODg4IEwxMTIzIDg4MyBMMTEyMiA4ODIgTDExMjIgODc5IEwxMTIxIDg3OCBMMTEyMSA4NzQgTDExMjAgODczIEwxMTIwIDg3MCBMMTExOSA4NjkgTDExMTkgODY2IEwxMTE4IDg2NSBMMTExOCA4NjIgTDExMTcgODYxIEwxMTE3IDg1OSBMMTExNiA4NTggTDExMTYgODU2IEwxMTE1IDg1NSBMMTExNSA4NTMgTDExMTQgODUyIEwxMTE0IDg1MCBMMTExMyA4NDkgTDExMTMgODQ3IEwxMTEyIDg0NiBMMTExMiA4NDUgTDExMTEgODQ0IEwxMTExIDg0MyBMMTExMCA4NDIgTDExMTAgODQxIEwxMTA5IDg0MCBMMTEwOSA4MzggTDExMDggODM3IEwxMTA4IDgzNiBMMTEwNyA4MzUgTDExMDcgODM0IEwxMTA2IDgzMyBMMTEwNiA4MzIgTDExMDUgODMxIEwxMTA1IDgzMCBMMTEwNCA4MjkgTDExMDQgODI4IEwxMTAzIDgyNyBMMTEwMyA4MjYgTDExMDIgODI1IEwxMTAyIDgyNCBMMTEwMSA4MjMgTDExMDEgODIyIEwxMDk5IDgyMCBMMTA5OSA4MTkgTDEwOTggODE4IEwxMDk4IDgxNyBMMTA5NyA4MTYgTDEwOTcgODE1IEwxMDk1IDgxMyBMMTA5NSA4MTIgTDEwOTIgODA5IEwxMDkyIDgwOCBMMTA4OSA4MDUgTDEwODkgODA0IEwxMDg3IDgwMiBMMTA4NyA4MDEgTDEwODEgNzk1IEwxMDgxIDc5NCBMMTA2MyA3NzYgTDEwNjIgNzc2IEwxMDU3IDc3MSBMMTA1NiA3NzEgTDEwNTMgNzY4IEwxMDUyIDc2OCBMMTA0OSA3NjUgTDEwNDggNzY1IEwxMDQ3IDc2NCBMMTA0NiA3NjQgTDEwNDQgNzYyIEwxMDQzIDc2MiBMMTA0MSA3NjAgTDEwNDAgNzYwIEwxMDM3IDc1NyBMMTAzNiA3NTcgTDEwMzUgNzU2IEwxMDM0IDc1NiBMMTAzMiA3NTQgTDEwMzEgNzU0IEwxMDMwIDc1MyBMMTAyOSA3NTMgTDEwMjcgNzUxIEwxMDI2IDc1MSBMMTAyNSA3NTAgTDEwMjQgNzUwIEwxMDIzIDc0OSBMMTAyMiA3NDkgTDEwMjEgNzQ4IEwxMDIwIDc0OCBMMTAxOSA3NDcgTDEwMTcgNzQ3IEwxMDE2IDc0NiBMMTAxNSA3NDYgTDEwMTQgNzQ1IEwxMDEzIDc0NSBMMTAxMiA3NDQgTDEwMTEgNzQ0IEwxMDEwIDc0MyBMMTAwOSA3NDMgTDEwMDggNzQyIEwxMDA3IDc0MiBMMTAwNiA3NDEgTDEwMDUgNzQxIEwxMDAzIDczOSBMMTAwNSA3MzcgTDEwMDYgNzM3IEwxMDA4IDczNSBMMTAwOSA3MzUgTDEwMTAgNzM0IEwxMDExIDczNCBMMTAxMyA3MzIgTDEwMTQgNzMyIEwxMDE2IDczMCBMMTAxNyA3MzAgTDEwMTkgNzI4IEwxMDIwIDcyOCBMMTAyMyA3MjUgTDEwMjQgNzI1IEwxMDI5IDcyMCBMMTAzMCA3MjAgTDEwNDUgNzA1IEwxMDQ1IDcwNCBMMTA0NiA3MDMgTDEwNDcgNzAzIEwxMDQ3IDcwMiBMMTA1MSA2OTggTDEwNTEgNjk3IEwxMDU0IDY5NCBMMTA1NCA2OTMgTDEwNTcgNjkwIEwxMDU3IDY4OSBMMTA1OSA2ODcgTDEwNTkgNjg2IEwxMDYxIDY4NCBMMTA2MSA2ODMgTDEwNjMgNjgxIEwxMDYzIDY4MCBMMTA2NCA2NzkgTDEwNjQgNjc4IEwxMDY1IDY3NyBMMTA2NSA2NzYgTDEwNjYgNjc1IEwxMDY2IDY3NCBMMTA2NyA2NzMgTDEwNjcgNjcyIEwxMDY4IDY3MSBMMTA2OCA2NzAgTDEwNjkgNjY5IEwxMDY5IDY2OCBMMTA3MCA2NjcgTDEwNzAgNjY2IEwxMDcxIDY2NSBMMTA3MSA2NjQgTDEwNzIgNjYzIEwxMDcyIDY2MiBMMTA3MyA2NjEgTDEwNzMgNjYwIEwxMDc0IDY1OSBMMTA3NCA2NTcgTDEwNzUgNjU2IEwxMDc1IDY1NCBMMTA3NiA2NTMgTDEwNzYgNjUyIEwxMDc3IDY1MSBMMTA3NyA2NDkgTDEwNzggNjQ4IEwxMDc4IDY0NiBMMTA3OSA2NDUgTDEwNzkgNjQ0IEwxMDgwIDY0MyBMMTA4MCA2NDAgTDEwODEgNjM5IEwxMDgxIDYzNyBMMTA4MiA2MzYgTDEwODIgNjMzIEwxMDgzIDYzMiBMMTA4MyA2MjkgTDEwODQgNjI4IEwxMDg0IDYyNCBMMTA4NSA2MjMgTDEwODUgNjE5IEwxMDg2IDYxOCBMMTA4NiA2MTUgTDEwODcgNjE0IEwxMDg3IDYwOSBMMTA4OCA2MDggTDEwODggNjAxIEwxMDg5IDYwMCBMMTA4OSA1OTAgTDEwOTAgNTg5IEwxMDkwIDU1MCBMMTA4OSA1NDkgTDEwODkgNTQwIEwxMDg4IDUzOSBMMTA4OCA1MzEgTDEwODcgNTMwIEwxMDg3IDUyNCBMMTA4NiA1MjMgTDEwODYgNTIwIEwxMDg1IDUxOSBMMTA4NSA1MTUgTDEwODQgNTE0IEwxMDg0IDUxMSBMMTA4MyA1MTAgTDEwODMgNTA3IEwxMDgyIDUwNiBMMTA4MiA1MDMgTDEwODEgNTAyIEwxMDgxIDQ5OSBMMTA4MCA0OTggTDEwODAgNDk2IEwxMDc5IDQ5NSBMMTA3OSA0OTMgTDEwNzggNDkyIEwxMDc4IDQ5MCBMMTA3NyA0ODkgTDEwNzcgNDg4IEwxMDc2IDQ4NyBMMTA3NiA0ODUgTDEwNzUgNDg0IEwxMDc1IDQ4MyBMMTA3NCA0ODIgTDEwNzQgNDgwIEwxMDczIDQ3OSBMMTA3MyA0NzggTDEwNzIgNDc3IEwxMDcyIDQ3NiBMMTA3MSA0NzUgTDEwNzEgNDc0IEwxMDcwIDQ3MyBMMTA3MCA0NzIgTDEwNjkgNDcxIEwxMDY5IDQ3MCBMMTA2OCA0NjkgTDEwNjggNDY4IEwxMDY3IDQ2NyBMMTA2NyA0NjYgTDEwNjYgNDY1IEwxMDY2IDQ2NCBMMTA2NCA0NjIgTDEwNjQgNDYxIEwxMDYzIDQ2MCBMMTA2MyA0NTkgTDEwNjEgNDU3IEwxMDYxIDQ1NiBMMTA2MCA0NTUgTDEwNjAgNDU0IEwxMDU3IDQ1MSBMMTA1NyA0NTAgTDEwNTQgNDQ3IEwxMDU0IDQ0NiBMMTA0OSA0NDEgTDEwNDkgNDQwIEwxMDMxIDQyMiBMMTAzMCA0MjIgTDEwMjUgNDE3IEwxMDI0IDQxNyBMMTAyMCA0MTMgTDEwMTkgNDEzIEwxMDE4IDQxMiBMMTAxNyA0MTIgTDEwMTUgNDEwIEwxMDE0IDQxMCBMMTAxMSA0MDcgTDEwMTAgNDA3IEwxMDA3IDQwNCBMMTAwNiA0MDQgTDEwMDUgNDAzIEwxMDA0IDQwMyBMMTAwMiA0MDEgTDEwMDEgNDAxIEwxMDAwIDQwMCBMOTk5IDQwMCBMOTk4IDM5OSBMOTk3IDM5OSBMOTk1IDM5NyBMOTkzIDM5NyBMOTkxIDM5NSBMOTkwIDM5NSBMOTg5IDM5NCBMOTg4IDM5NCBMOTg3IDM5MyBMOTg2IDM5MyBMOTg1IDM5MiBMOTg0IDM5MiBMOTgzIDM5MSBMOTgyIDM5MSBMOTgxIDM5MCBMOTc5IDM5MCBMOTc3IDM4OCBMOTc1IDM4OCBMOTc0IDM4NyBMOTcyIDM4NyBMOTcxIDM4NiBMOTcwIDM4NiBMOTY5IDM4NSBMOTY4IDM4NSBMOTY3IDM4NCBMOTY0IDM4NCBMOTYzIDM4MyBMOTYyIDM4MyBMOTYxIDM4MiBMOTU5IDM4MiBMOTU4IDM4MSBMOTU2IDM4MSBMOTU1IDM4MCBMOTUzIDM4MCBMOTUyIDM3OSBMOTUwIDM3OSBMOTQ5IDM3OCBMOTQ4IDM3OCBMOTQ3IDM3NyBMOTQ0IDM3NyBMOTQzIDM3NiBMOTQwIDM3NiBMOTM5IDM3NSBMOTM3IDM3NSBMOTM2IDM3NCBMOTMyIDM3NCBMOTMxIDM3MyBMOTI4IDM3MyBMOTI3IDM3MiBMOTIzIDM3MiBMOTIyIDM3MSBMOTE5IDM3MSBMOTE4IDM3MCBMOTE0IDM3MCBMOTEzIDM2OSBMOTA3IDM2OSBMOTA2IDM2OCBMOTAwIDM2OCBMODk5IDM2NyBMODkwIDM2NyBMODg5IDM2NiBMODc2IDM2NiBMODc1IDM2NSBMNDc4IDM2NSBMNDc3IDM2NiBMNDcyIDM2NiBMNDcxIDM2NyBMNDY5IDM2NyBMNDY4IDM2OCBMNDY2IDM2OCBMNDY1IDM2OSBMNDY0IDM2OSBMNDYzIDM3MCBMNDYyIDM3MCBMNDU5IDM3MyBaTTk1MiA5MDcgTDk1MiA5MDkgTDk1MyA5MTAgTDk1MyA5MTMgTDk1NCA5MTQgTDk1NCA5MTggTDk1NSA5MTkgTDk1NSA5MjMgTDk1NiA5MjQgTDk1NiA5MzAgTDk1NyA5MzEgTDk1NyA5NjQgTDk1NiA5NjUgTDk1NiA5NzIgTDk1NSA5NzMgTDk1NSA5NzYgTDk1NCA5NzcgTDk1NCA5ODAgTDk1MyA5ODEgTDk1MyA5ODQgTDk1MiA5ODUgTDk1MiA5ODcgTDk1MSA5ODggTDk1MSA5OTAgTDk1MCA5OTEgTDk1MCA5OTMgTDk0OSA5OTQgTDk0OSA5OTUgTDk0OCA5OTYgTDk0OCA5OTcgTDk0NyA5OTggTDk0NyA5OTkgTDk0NiAxMDAwIEw5NDYgMTAwMSBMOTQ1IDEwMDIgTDk0NSAxMDAzIEw5NDMgMTAwNSBMOTQzIDEwMDYgTDk0MSAxMDA4IEw5NDEgMTAwOSBMOTM4IDEwMTIgTDkzOCAxMDEzIEw5MjcgMTAyNCBMOTI2IDEwMjQgTDkyMyAxMDI3IEw5MjIgMTAyNyBMOTIwIDEwMjkgTDkxOSAxMDI5IEw5MTcgMTAzMSBMOTE2IDEwMzEgTDkxNSAxMDMyIEw5MTQgMTAzMiBMOTEzIDEwMzMgTDkxMiAxMDMzIEw5MTEgMTAzNCBMOTEwIDEwMzQgTDkwOSAxMDM1IEw5MDggMTAzNSBMOTA3IDEwMzYgTDkwNSAxMDM2IEw5MDQgMTAzNyBMOTAyIDEwMzcgTDkwMSAxMDM4IEw4OTkgMTAzOCBMODk4IDEwMzkgTDg5NSAxMDM5IEw4OTQgMTA0MCBMODkwIDEwNDAgTDg4OSAxMDQxIEw4NzkgMTA0MSBMODc4IDEwNDIgTDYzMyAxMDQyIEw2MzIgMTA0MSBMNjI2IDEwNDEgTDYyNSAxMDQwIEw2MjMgMTA0MCBMNjIyIDEwMzkgTDYyMCAxMDM5IEw2MTkgMTAzOCBMNjE4IDEwMzggTDYxNyAxMDM3IEw2MTYgMTAzNyBMNjE1IDEwMzYgTDYxNCAxMDM2IEw2MTMgMTAzNSBMNjEyIDEwMzUgTDYwMyAxMDI2IEw2MDMgMTAyNSBMNjAxIDEwMjMgTDYwMSAxMDIyIEw2MDAgMTAyMSBMNjAwIDEwMjAgTDU5OSAxMDE5IEw1OTkgMTAxOCBMNTk4IDEwMTcgTDU5OCAxMDE2IEw1OTcgMTAxNSBMNTk3IDEwMTMgTDU5NiAxMDEyIEw1OTYgMTAwOCBMNTk1IDEwMDcgTDU5NSA4OTQgTDU5NiA4OTMgTDU5NiA4ODkgTDU5NyA4ODggTDU5NyA4ODUgTDU5OCA4ODQgTDU5OCA4ODMgTDU5OSA4ODIgTDU5OSA4ODEgTDYwMCA4ODAgTDYwMCA4NzkgTDYwMSA4NzggTDYwMSA4NzcgTDYwMyA4NzUgTDYwMyA4NzQgTDYxMCA4NjcgTDYxMSA4NjcgTDYxMyA4NjUgTDYxNCA4NjUgTDYxNiA4NjMgTDYxNyA4NjMgTDYxOCA4NjIgTDYxOSA4NjIgTDYyMCA4NjEgTDYyMiA4NjEgTDYyMyA4NjAgTDYyNiA4NjAgTDYyNyA4NTkgTDYzMiA4NTkgTDYzMyA4NTggTDgxMyA4NTggTDgyOSA4NDIgTDgyOSA4NDEgTDgzMCA4NDAgTDgzMSA4NDAgTDg3MiA3OTkgTDg3MyA3OTkgTDg3NCA4MDAgTDg3NCA4MDkgTDg3MyA4MTAgTDg3MyA4MTcgTDg3MiA4MTggTDg3MiA4MjcgTDg3MSA4MjggTDg3MSA4MzUgTDg3MCA4MzYgTDg3MCA4NDEgTDg2OSA4NDIgTDg2OSA4NDggTDg2OCA4NDkgTDg2OCA4NTggTDg4NyA4NTggTDg4OCA4NTkgTDg5NCA4NTkgTDg5NSA4NjAgTDkwMCA4NjAgTDkwMSA4NjEgTDkwMyA4NjEgTDkwNCA4NjIgTDkwNyA4NjIgTDkwOCA4NjMgTDkxMCA4NjMgTDkxMSA4NjQgTDkxMiA4NjQgTDkxMyA4NjUgTDkxNSA4NjUgTDkxNiA4NjYgTDkxNyA4NjYgTDkxOCA4NjcgTDkxOSA4NjcgTDkyMCA4NjggTDkyMSA4NjggTDkyMyA4NzAgTDkyNCA4NzAgTDkyNyA4NzMgTDkyOCA4NzMgTDkzMiA4NzcgTDkzMyA4NzcgTDkzOCA4ODIgTDkzOCA4ODMgTDk0MiA4ODcgTDk0MiA4ODggTDk0NCA4OTAgTDk0NCA4OTEgTDk0NSA4OTIgTDk0NSA4OTMgTDk0NiA4OTQgTDk0NiA4OTUgTDk0OCA4OTcgTDk0OCA4OTkgTDk0OSA5MDAgTDk0OSA5MDEgTDk1MCA5MDIgTDk1MCA5MDQgTDk1MSA5MDUgTDk1MSA5MDYgWk01ODggNTE4IEw1ODkgNTE3IEw1ODkgNTE2IEw1OTAgNTE1IEw1OTAgNTE0IEw1OTEgNTEzIEw1OTEgNTEyIEw1OTIgNTExIEw1OTIgNTEwIEw1OTQgNTA4IEw1OTQgNTA3IEw2MDAgNTAxIEw2MDEgNTAxIEw2MDQgNDk4IEw2MDUgNDk4IEw2MDYgNDk3IEw2MDggNDk3IEw2MDkgNDk2IEw2MTAgNDk2IEw2MTEgNDk1IEw2MTQgNDk1IEw2MTUgNDk0IEw2MTkgNDk0IEw2MjAgNDkzIEw4NjYgNDkzIEw4NjcgNDk0IEw4NzEgNDk0IEw4NzIgNDk1IEw4NzUgNDk1IEw4NzYgNDk2IEw4NzcgNDk2IEw4NzggNDk3IEw4ODAgNDk3IEw4ODEgNDk4IEw4ODIgNDk4IEw4ODMgNDk5IEw4ODQgNDk5IEw4ODYgNTAxIEw4ODcgNTAxIEw4ODkgNTAzIEw4OTAgNTAzIEw5MDAgNTEzIEw5MDAgNTE0IEw5MDIgNTE2IEw5MDIgNTE3IEw5MDQgNTE5IEw5MDQgNTIwIEw5MDYgNTIyIEw5MDYgNTIzIEw5MDcgNTI0IEw5MDcgNTI1IEw5MDggNTI2IEw5MDggNTI3IEw5MDkgNTI4IEw5MDkgNTMxIEw5MTAgNTMyIEw5MTAgNTM0IEw5MTEgNTM1IEw5MTEgNTM3IEw5MTIgNTM4IEw5MTIgNTQwIEw5MTMgNTQxIEw5MTMgNTQzIEw5MTQgNTQ0IEw5MTQgNTQ4IEw5MTUgNTQ5IEw5MTUgNTU0IEw5MTYgNTU1IEw5MTYgNTY5IEw5MTcgNTcwIEw5MTcgNjA0IEw5MTYgNjA1IEw5MTYgNjEzIEw5MTUgNjE0IEw5MTUgNjIwIEw5MTQgNjIxIEw5MTQgNjI0IEw5MTMgNjI1IEw5MTMgNjI4IEw5MTIgNjI5IEw5MTIgNjMyIEw5MTEgNjMzIEw5MTEgNjM0IEw5MTAgNjM1IEw5MTAgNjM3IEw5MDkgNjM4IEw5MDkgNjQwIEw5MDggNjQxIEw5MDggNjQyIEw5MDcgNjQzIEw5MDcgNjQ0IEw5MDYgNjQ1IEw5MDYgNjQ2IEw5MDUgNjQ3IEw5MDUgNjQ4IEw5MDQgNjQ5IEw5MDQgNjUwIEw5MDMgNjUxIEw5MDMgNjUyIEw5MDIgNjUzIEw5MDIgNjU0IEw5MDAgNjU2IEw5MDAgNjU3IEw4OTYgNjYxIEw4OTYgNjYyIEw4ODkgNjY5IEw4ODggNjY5IEw4ODQgNjczIEw4ODMgNjczIEw4ODEgNjc1IEw4ODAgNjc1IEw4NzkgNjc2IEw4NzggNjc2IEw4NzcgNjc3IEw4NzYgNjc3IEw4NzQgNjc5IEw4NzMgNjc5IEw4NzIgNjgwIEw4NzAgNjgwIEw4NjkgNjgxIEw4NjcgNjgxIEw4NjYgNjgyIEw4NjQgNjgyIEw4NjMgNjgzIEw4NTkgNjgzIEw4NTggNjg0IEw3NDAgNjg0IEw3MzkgNjg1IEw3MzggNjg1IEw2NzkgNzQ0IEw2NzkgNzQ1IEw2NzggNzQ2IEw2NzcgNzQ2IEw2NzUgNzQ4IEw2NzQgNzQ3IEw2NzQgNzM5IEw2NzUgNzM4IEw2NzUgNzMxIEw2NzYgNzMwIEw2NzYgNzIzIEw2NzcgNzIyIEw2NzcgNzE1IEw2NzggNzE0IEw2NzggNzEwIEw2NzkgNzA5IEw2NzkgNzAyIEw2ODAgNzAxIEw2ODAgNjkzIEw2ODEgNjkyIEw2ODEgNjg1IEw2ODAgNjg0IEw2MTcgNjg0IEw2MTYgNjgzIEw2MTMgNjgzIEw2MTIgNjgyIEw2MTAgNjgyIEw2MDkgNjgxIEw2MDggNjgxIEw2MDcgNjgwIEw2MDYgNjgwIEw2MDUgNjc5IEw2MDQgNjc5IEw2MDEgNjc2IEw2MDAgNjc2IEw1OTUgNjcxIEw1OTUgNjcwIEw1OTIgNjY3IEw1OTIgNjY2IEw1OTAgNjY0IEw1OTAgNjYyIEw1ODkgNjYxIEw1ODkgNjU5IEw1ODggNjU4IEw1ODggNjU2IEw1ODcgNjU1IEw1ODcgNjUyIEw1ODYgNjUxIEw1ODYgNTI2IEw1ODcgNTI1IEw1ODcgNTIxIEw1ODggNTIwIFoiLz4KICA8L2c+Cjwvc3ZnPgo=';
+logo.onload=draw;
 
-  // Tipografías: nombre en Google Fonts, grosor disponible y cómo se muestra en la lista
-  var FONTS = {
-    'Roboto Condensed': { w: 800, label: 'Roboto Condensed (la del sitio)' },
-    'Anton': { w: 400, label: 'Anton (alta y gruesa)' },
-    'Bebas Neue': { w: 400, label: 'Bebas Neue (titular limpio)' },
-    'Oswald': { w: 700, label: 'Oswald' },
-    'Montserrat': { w: 900, label: 'Montserrat Black' },
-    'Playfair Display': { w: 900, label: 'Playfair Display (con serifa)' },
-    'Permanent Marker': { w: 400, label: 'Permanent Marker (a mano)' }
-  };
+function norm(s){return s.toLowerCase().replace(/[.,;:!?¡¿"“”()]/g,'')}
+function fontSpec(){const [f,w]=$('font').value.split('|');return {f,w}}
 
-  // Colores y degradados de la marca y de las categorías del sitio
-  var COLORES = [
-    { id: 'naranja', name: 'Naranja BMM', c: '#ef4f1d' },
-    { id: 'naranja-oscuro', name: 'Naranja oscuro', c: '#c93c0b' },
-    { id: 'negro', name: 'Negro', c: '#111110' },
-    { id: 'carbon', name: 'Gris carbón', c: '#464d53' },
-    { id: 'verde', name: 'Verde azulado (Opiniones)', c: '#0f766e' },
-    { id: 'ambar', name: 'Ámbar (Historias)', c: '#a16207' }
-  ];
-  var DEGRADADOS = [
-    { id: 'atardecer', name: 'Atardecer', stops: ['#ff8a50', '#ef4f1d', '#7c2206'] },
-    { id: 'brasa', name: 'Brasa a noche', stops: ['#ef4f1d', '#111110'] },
-    { id: 'noche', name: 'Noche', stops: ['#4f575e', '#111110'] },
-    { id: 'selva', name: 'Selva', stops: ['#14907f', '#042f2e'] },
-    { id: 'oro', name: 'Oro viejo', stops: ['#d28a0a', '#5c3205'] },
-    { id: 'ceniza', name: 'Ceniza', stops: ['#7b848c', '#1b1a18'] }
-  ];
-  var ANGULO = 160;
-  var PATRONES = [
-    ['none', 'Ninguno'], ['diagonales', 'Diagonales'], ['puntos', 'Puntos'],
-    ['cuadricula', 'Cuadrícula'], ['rayos', 'Rayos'], ['ondas', 'Ondas']
-  ];
-  var DEFAULTS = {
-    topText: '¡AVISO IMPORTANTE!', bottomText: 'REUNIÓN DE VECINOS - SÁBADO 10 AM, PARQUE CENTRAL',
-    topColor: '#ffffff', bottomColor: '#ffffff', topSize: 40, bottomSize: 32,
-    topFont: 'Roboto Condensed', bottomFont: 'Roboto Condensed', scrim: 60, outline: true
-  };
+function spaced(t,x,y,sp){
+  for(const ch of t){ctx.fillText(ch,x,y);x+=ctx.measureText(ch).width+sp}
+}
+function spacedW(t,sp){let w=0;for(const ch of t)w+=ctx.measureText(ch).width+sp;return w-sp}
 
-  var base = { type: 'solid', id: 'naranja', c: '#ef4f1d' };
-  var pattern = 'diagonales';
-  var image = null;
-
-  var $ = function (id) { return document.getElementById(id); };
-  var el = {
-    topText: $('topText'), bottomText: $('bottomText'), topColor: $('topColor'), bottomColor: $('bottomColor'),
-    topSize: $('topSize'), bottomSize: $('bottomSize'), topFont: $('topFont'), bottomFont: $('bottomFont'),
-    scrim: $('scrim'), outline: $('outline'), customColor: $('customColor'), imageLoader: $('imageLoader'), removeImg: $('removeImg')
-  };
-
-  // ---- Construcción de la interfaz ----
-  function cssGradient(stops) { return 'linear-gradient(' + ANGULO + 'deg,' + stops.join(',') + ')'; }
-
-  function makeSwatch(item, grid, isGrad) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'gen-sw';
-    b.dataset.id = item.id;
-    b.title = item.name;
-    b.setAttribute('aria-label', item.name);
-    b.setAttribute('aria-pressed', 'false');
-    b.style.background = isGrad ? cssGradient(item.stops) : item.c;
-    b.addEventListener('click', function () {
-      image = null;
-      base = isGrad ? { type: 'grad', id: item.id, stops: item.stops } : { type: 'solid', id: item.id, c: item.c };
-      if (!isGrad) el.customColor.value = item.c;
-      el.imageLoader.value = '';
-      syncUI();
-      draw();
-    });
-    grid.appendChild(b);
+function drawBg(ac){
+  if(bg==='foto'&&photo){
+    const s=Math.max(W/photo.width,H/photo.height),dw=photo.width*s,dh=photo.height*s,p=$('pos').value/100;
+    const dx=dw>W?-(dw-W)*p:(W-dw)/2, dy=dh>H?-(dh-H)*p:(H-dh)/2;
+    ctx.fillStyle='#0a0a0a';ctx.fillRect(0,0,W,H);
+    ctx.drawImage(photo,dx,dy,dw,dh);return;
   }
-  COLORES.forEach(function (c) { makeSwatch(c, $('swColores'), false); });
-  DEGRADADOS.forEach(function (g) { makeSwatch(g, $('swDegradados'), true); });
-
-  PATRONES.forEach(function (p) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'gen-chip';
-    b.dataset.id = p[0];
-    b.textContent = p[1];
-    b.setAttribute('aria-pressed', 'false');
-    b.addEventListener('click', function () { pattern = p[0]; syncUI(); draw(); });
-    $('chipsPatron').appendChild(b);
-  });
-
-  [el.topFont, el.bottomFont].forEach(function (sel) {
-    Object.keys(FONTS).forEach(function (name) {
-      var o = document.createElement('option');
-      o.value = name; o.textContent = FONTS[name].label;
-      sel.appendChild(o);
-    });
-  });
-
-  function syncUI() {
-    [].forEach.call(document.querySelectorAll('.gen-sw'), function (b) {
-      b.setAttribute('aria-pressed', (!image && base.id === b.dataset.id) ? 'true' : 'false');
-    });
-    [].forEach.call(document.querySelectorAll('.gen-chip'), function (b) {
-      b.setAttribute('aria-pressed', b.dataset.id === pattern ? 'true' : 'false');
-    });
-    el.removeImg.hidden = !image;
-    $('scrimVal').textContent = el.scrim.value;
-    $('topSizeVal').textContent = el.topSize.value;
-    $('bottomSizeVal').textContent = el.bottomSize.value;
+  const a=$('accent').value;
+  if(bg==='naranja'){
+    const g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,a);g.addColorStop(1,'#b8330b');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);return;
   }
-
-  // ---- Tipografías: se cargan bajo demanda para que el canvas las use ----
-  var fontState = {};
-  function ensureFont(name) {
-    if (fontState[name] || !document.fonts || !document.fonts.load) return;
-    fontState[name] = 'pending';
-    document.fonts.load(FONTS[name].w + ' 48px "' + name + '"').then(function () {
-      fontState[name] = 'ready'; draw();
-    }, function () { fontState[name] = 'ready'; });
+  if(bg==='degradado'){
+    const g=ctx.createLinearGradient(0,0,W*.8,H);g.addColorStop(0,a);g.addColorStop(.75,'#111110');g.addColorStop(1,'#0a0a0a');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);return;
   }
+  ctx.fillStyle=bg==='negro'?'#0a0a0a':'#111110';ctx.fillRect(0,0,W,H);
+  if(bg==='negro'){
+    const r=ctx.createRadialGradient(W*.85,0,0,W*.85,0,H*.8);r.addColorStop(0,a+'55');r.addColorStop(1,'#00000000');
+    ctx.fillStyle=r;ctx.fillRect(0,0,W,H);
+  }
+  if(bg==='lineas'){
+    ctx.strokeStyle='rgba(255,255,255,.06)';ctx.lineWidth=26;ctx.beginPath();
+    for(let i=-H;i<W+H;i+=90){ctx.moveTo(i,0);ctx.lineTo(i+H,H)}ctx.stroke();
+    ctx.fillStyle=a;ctx.beginPath();ctx.moveTo(W-300,0);ctx.lineTo(W,0);ctx.lineTo(W,300);ctx.closePath();ctx.fill();
+  }
+  if(bg==='puntos'){
+    ctx.fillStyle='rgba(255,255,255,.14)';
+    for(let y=36;y<H;y+=54)for(let x=36;x<W;x+=54){ctx.beginPath();ctx.arc(x,y,3.2,0,7);ctx.fill()}
+  }
+}
 
-  // ---- Dibujo ----
-  function drawBase() {
-    if (image) {
-      var ia = image.width / image.height, rw, rh, ox = 0, oy = 0;
-      if (ia > 1) { rh = W; rw = image.width * (W / image.height); ox = (W - rw) / 2; }
-      else { rw = W; rh = image.height * (W / image.width); oy = (W - rh) / 2; }
-      ctx.drawImage(image, ox, oy, rw, rh);
-      return;
+function layoutHead(text,fs,font,w,hlPhrase){
+  const toks=text.split(/\\s+/).filter(Boolean);
+  const hlw=hlPhrase.split(/\\s+/).filter(Boolean).map(norm);
+  const mark=new Array(toks.length).fill(false);
+  if(hlw.length){
+    const nt=toks.map(norm);
+    for(let i=0;i+hlw.length<=nt.length;i++){
+      if(hlw.every((x,k)=>nt[i+k]===x)){for(let k=0;k<hlw.length;k++)mark[i+k]=true;break}
     }
-    if (base.type === 'grad') {
-      var a = ANGULO * Math.PI / 180, dx = Math.sin(a), dy = -Math.cos(a);
-      var len = W * (Math.abs(dx) + Math.abs(dy)) / 2;
-      var g = ctx.createLinearGradient(W / 2 - dx * len, W / 2 - dy * len, W / 2 + dx * len, W / 2 + dy * len);
-      base.stops.forEach(function (c, i) { g.addColorStop(i / (base.stops.length - 1), c); });
-      ctx.fillStyle = g;
-    } else {
-      ctx.fillStyle = base.c;
+  }
+  ctx.font=\`\${w} \${fs}px "\${font}", sans-serif\`;
+  const sp=ctx.measureText(' ').width,maxW=W-2*M;
+  const lines=[];let cur=[],cw=0;
+  toks.forEach((t,i)=>{
+    const tw=ctx.measureText(t).width;
+    if(cur.length&&cw+sp+tw>maxW){lines.push(cur);cur=[];cw=0}
+    cw+=(cur.length?sp:0)+tw;cur.push({t,hl:mark[i],w:tw});
+  });
+  if(cur.length)lines.push(cur);
+  return {lines,sp};
+}
+
+
+// ---- Frase clave automática (reglas, sin IA) ----
+const STOP=new Set('el la los las un una unos unas de del al a en y e o u que se su sus por con sin para ante bajo entre hacia hasta desde sobre tras es son fue ser ha han hay lo le les mi tu nos este esta estos estas ese esa eso como mas muy ya no ni pero si tambien sea cuando donde porque pues mientras tras ante vecinos'.split(' ').filter(x=>x!=='vecinos'));
+const BRIDGE=new Set(['de','del','en']);
+const VERBS=new Set('denuncian denuncia anuncia anuncian inaugura inauguran exigen exige piden pide reportan reporta confirman confirma informa informan lanza lanzan presenta presentan realiza realizan celebra celebran consume afectara afectaran habra hubo llega llegan abre abren cierra cierran suspende suspenden ofrece ofrecen invita invitan convoca convocan reclaman reclama advierten advierte descubren registra registran'.split(' '));
+const KEY=new Set('urgente alerta aviso importante emergencia accidente incendio robo agua luz energia drenaje seguridad salud gratis gratuito nuevo nueva hoy cierre suspension corte cortes apagon bloqueo derrumbe lluvia peligro reunion asamblea feria festival campana jornada convocatoria obra obras escasez recargos multa'.split(' '));
+function strip(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9ñ]/g,'')}
+function autoPhrase(text){
+  const toks=text.trim().split(/\\s+/).filter(Boolean);if(toks.length<3)return '';
+  const info=toks.map((t,i)=>{const n=strip(t);
+    const content=!!n&&!STOP.has(n)&&(n.length>=3||/\\d/.test(n)||t===t.toUpperCase()&&n.length>=2);
+    return {t,n,content,bridge:BRIDGE.has(n),brk:/[,;:.!?]$/.test(t),cap:i>0&&/^[A-ZÁÉÍÓÚÑ]/.test(t),
+      verb:VERBS.has(n)||(n.length>=6&&/(aron|ieron|ando|iendo)$/.test(n)),dig:/\\d/.test(n)}});
+  let best=null;
+  for(let i=0;i<toks.length;i++){
+    if(!info[i].content)continue;
+    let cc=0,j=i;
+    while(j<toks.length&&cc<3){
+      if(info[j].content){cc++;
+        const seg=info.slice(i,j+1);
+        let sc=cc*2;
+        seg.forEach(o=>{if(o.content){if(KEY.has(o.n))sc+=3;if(o.dig)sc+=2;if(o.cap)sc+=2;if(o.verb)sc-=3}});
+        if(i===0)sc-=1;
+        const len=j-i+1;
+        if(len<=3&&(!best||sc>best.sc||(sc===best.sc&&len<best.len)))best={sc,len,i,j};
+        if(info[j].brk)break;
+        j++;
+      }else if(info[j].bridge&&j+1<toks.length&&cc>0){
+        let k=j;while(k<toks.length&&info[k].bridge&&k-j<2)k++;
+        if(k<toks.length&&info[k].content&&!info[j-1].brk)j=k;else break;
+      }else break;
     }
-    ctx.fillRect(0, 0, W, W);
+  }
+  return best?toks.slice(best.i,best.j+1).join(' ').replace(/[,;:.!?]+$/,''):'';
+}
+function autoHL(){if($('autoHl').checked)$('hl').value=autoPhrase($('head').value)}
+// Refinamiento con IA (Workers AI) vía POST a /generador/. Si falla, se queda el resultado por reglas.
+let aiT;const aiCache={};
+function applyAI(f,t){if(f&&$('autoHl').checked&&$('head').value.trim()===t){$('hl').value=f;draw()}}
+function scheduleAI(){
+  clearTimeout(aiT);
+  if(!$('autoHl').checked)return;
+  const t=$('head').value.trim();
+  if(t.split(/\\s+/).length<3)return;
+  aiT=setTimeout(async()=>{
+    if(!$('autoHl').checked)return;
+    if(t in aiCache){applyAI(aiCache[t],t);return}
+    $('aiSt').textContent='· analizando con IA…';
+    try{
+      const r=await fetch('/generador/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({titulo:t})});
+      if(r.ok){const d=await r.json();aiCache[t]=d.frase||'';applyAI(aiCache[t],t)}
+    }catch(e){}
+    $('aiSt').textContent='';
+  },1000);
+}
+
+function draw(){
+  cv.width=W;cv.height=H;
+  const photoMode=bg==='foto'&&photo;
+  const accent=$('accent').value;
+  const ac=bg==='naranja'?'#111110':accent;
+  const {f,w}=fontSpec();
+  let text=$('head').value.trim();if($('upper').checked)text=text.toUpperCase();
+  const tagTxt=$('tag').value.trim().toUpperCase();
+  const maxLines=H>1500?5:4;
+
+  // medidas del bloque de texto
+  let fs=+$('sz').value,L;
+  for(;;){L=layoutHead(text,fs,f,w,$('hl').value);if(L.lines.length<=maxLines||fs<=44)break;fs-=2}
+  const lh=fs*1.06,tagH=tagTxt?40:0,gap=tagTxt?24:0;
+  const total=tagH+gap+L.lines.length*lh;
+  const footTop=H-64-84,lineY=footTop-38;
+  let top=lineY-60-total;
+  if($('anchor').value==='centro')top=Math.max(90,(lineY-total)/2);
+  top=Math.max(60,top);
+
+  drawBg(ac);
+
+  if(photoMode){
+    const k=$('dark').value/100;
+    const s0=Math.min(.95,Math.max(0,(top-460)/H)),s1=Math.min(.99,Math.max(s0+.02,(top-50)/H));
+    const g=ctx.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,'rgba(10,10,10,0)');g.addColorStop(s0,'rgba(10,10,10,0)');
+    g.addColorStop(s1,\`rgba(10,10,10,\${k})\`);g.addColorStop(1,'rgba(10,10,10,.97)');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  }else if(bg!=='naranja'){
+    const g=ctx.createLinearGradient(0,H*.55,0,H);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.6)');
+    ctx.fillStyle=g;ctx.fillRect(0,H*.55,W,H*.45);
   }
 
-  function drawPattern() {
-    if (pattern === 'none') return;
-    var i, x, y;
-    ctx.save();
-    if (pattern === 'diagonales') {
-      ctx.strokeStyle = 'rgba(255,255,255,0.09)'; ctx.lineWidth = 16;
-      ctx.beginPath();
-      for (x = -W; x < W; x += 60) { ctx.moveTo(x, W); ctx.lineTo(x + W, 0); }
-      ctx.stroke();
-    } else if (pattern === 'puntos') {
-      ctx.fillStyle = 'rgba(255,255,255,0.14)';
-      for (y = 30, i = 0; y < W + 30; y += 54, i++) {
-        for (x = (i % 2) * 27 + 20; x < W + 30; x += 54) { ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI * 2); ctx.fill(); }
-      }
-    } else if (pattern === 'cuadricula') {
-      ctx.strokeStyle = 'rgba(255,255,255,0.11)'; ctx.lineWidth = 2;
-      ctx.beginPath();
-      for (x = 0; x <= W; x += 72) { ctx.moveTo(x, 0); ctx.lineTo(x, W); ctx.moveTo(0, x); ctx.lineTo(W, x); }
-      ctx.stroke();
-    } else if (pattern === 'rayos') {
-      var n = 32, cx = W / 2, cy = W * 0.55, r = W * 1.6;
-      ctx.fillStyle = 'rgba(255,255,255,0.08)';
-      for (i = 0; i < n; i += 2) {
-        var a0 = i * 2 * Math.PI / n, a1 = (i + 1) * 2 * Math.PI / n;
-        ctx.beginPath(); ctx.moveTo(cx, cy);
-        ctx.lineTo(cx + Math.cos(a0) * r, cy + Math.sin(a0) * r);
-        ctx.lineTo(cx + Math.cos(a1) * r, cy + Math.sin(a1) * r);
-        ctx.closePath(); ctx.fill();
-      }
-    } else if (pattern === 'ondas') {
-      ctx.strokeStyle = 'rgba(255,255,255,0.13)'; ctx.lineWidth = 7; ctx.lineCap = 'round';
-      for (y = 20; y < W + 60; y += 60) {
-        ctx.beginPath();
-        for (x = -10; x <= W + 10; x += 8) {
-          var yy = y + Math.sin(x / 60) * 16;
-          if (x === -10) ctx.moveTo(x, yy); else ctx.lineTo(x, yy);
-        }
-        ctx.stroke();
-      }
-    }
-    ctx.restore();
+  ctx.textBaseline='alphabetic';ctx.textAlign='left';
+
+  // etiqueta
+  let y=top;
+  if(tagTxt){
+    ctx.font='700 22px "Roboto Condensed", sans-serif';
+    const tw=spacedW(tagTxt,6)+40;
+    ctx.fillStyle=ac;ctx.fillRect(M,y,tw,tagH);
+    ctx.fillStyle='#fff';ctx.textBaseline='middle';spaced(tagTxt,M+20,y+tagH/2+1,6);ctx.textBaseline='alphabetic';
+    y+=tagH+gap;
   }
 
-  function drawScrim(level) {
-    var s = level / 100, h = 220 * K;
-    var gt = ctx.createLinearGradient(0, 0, 0, h);
-    gt.addColorStop(0, 'rgba(0,0,0,' + Math.min(1, s * 1.0) + ')'); gt.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = gt; ctx.fillRect(0, 0, W, h);
-    var gb = ctx.createLinearGradient(0, W - h, 0, W);
-    gb.addColorStop(0, 'rgba(0,0,0,0)'); gb.addColorStop(1, 'rgba(0,0,0,' + Math.min(1, s * 1.2) + ')');
-    ctx.fillStyle = gb; ctx.fillRect(0, W - h, W, h);
+  // crédito de foto
+  const cr=$('credit').value.trim();
+  if(cr&&photoMode){
+    ctx.font='italic 300 26px "Roboto Condensed", sans-serif';ctx.fillStyle='rgba(255,255,255,.72)';
+    ctx.textAlign='right';ctx.fillText(cr,W-M,top+(tagTxt?tagH/2+8:-14));ctx.textAlign='left';
   }
 
-  function drawBlock(text, where, size, color, fontName, outline) {
-    var f = FONTS[fontName], px = size * K, pad = 50 * K, maxW = W - pad * 2;
-    ctx.font = f.w + ' ' + px + 'px "' + fontName + '", "Roboto Condensed", sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = where === 'top' ? 'top' : 'bottom';
-    ctx.lineJoin = 'round';
-
-    var words = text.split(/\\s+/).filter(Boolean), lines = [], cur = words[0] || '';
-    for (var i = 1; i < words.length; i++) {
-      if (ctx.measureText(cur + ' ' + words[i]).width < maxW) cur += ' ' + words[i];
-      else { lines.push(cur); cur = words[i]; }
-    }
-    lines.push(cur);
-
-    var lh = px * 1.15;
-    lines.forEach(function (line, idx) {
-      var y = where === 'top' ? pad + idx * lh : W - pad - (lines.length - 1 - idx) * lh;
-      if (outline) {
-        ctx.lineWidth = Math.max(3 * K, px / 12);
-        ctx.strokeStyle = 'rgba(0,0,0,0.6)';
-        ctx.strokeText(line, W / 2, y);
-      }
-      ctx.fillStyle = color;
-      ctx.fillText(line, W / 2, y);
-    });
-  }
-
-  function draw() {
-    ensureFont(el.topFont.value);
-    ensureFont(el.bottomFont.value);
-    ctx.clearRect(0, 0, W, W);
-    drawBase();
-    drawPattern();
-    drawScrim(parseInt(el.scrim.value, 10));
-    var outline = el.outline.checked;
-    var t = el.topText.value.toUpperCase(), b = el.bottomText.value.toUpperCase();
-    if (t.trim()) drawBlock(t, 'top', parseInt(el.topSize.value, 10), el.topColor.value, el.topFont.value, outline);
-    if (b.trim()) drawBlock(b, 'bottom', parseInt(el.bottomSize.value, 10), el.bottomColor.value, el.bottomFont.value, outline);
-  }
-
-  // ---- Eventos ----
-  ['topText', 'bottomText', 'topColor', 'bottomColor', 'topSize', 'bottomSize', 'topFont', 'bottomFont', 'scrim', 'outline'].forEach(function (k) {
-    el[k].addEventListener('input', function () { syncUI(); draw(); });
-    el[k].addEventListener('change', function () { syncUI(); draw(); });
+  // titular
+  ctx.font=\`\${w} \${fs}px "\${f}", sans-serif\`;
+  if(photoMode){ctx.shadowColor='rgba(0,0,0,.4)';ctx.shadowBlur=14}
+  L.lines.forEach((ln,i)=>{
+    let x=M;const by=y+i*lh+fs*.84;
+    ln.forEach(o=>{ctx.fillStyle=o.hl?ac:$('hcolor').value;ctx.fillText(o.t,x,by);x+=o.w+L.sp});
   });
+  ctx.shadowBlur=0;ctx.shadowColor='transparent';
 
-  el.customColor.addEventListener('input', function () {
-    image = null;
-    base = { type: 'solid', id: 'custom', c: el.customColor.value };
-    el.imageLoader.value = '';
-    syncUI(); draw();
-  });
-
-  el.imageLoader.addEventListener('change', function (e) {
-    var file = e.target.files[0];
-    if (!file) return;
-    var reader = new FileReader();
-    reader.onload = function (ev) {
-      var im = new Image();
-      im.onload = function () { image = im; syncUI(); draw(); };
-      im.src = ev.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-  el.removeImg.addEventListener('click', function () { image = null; el.imageLoader.value = ''; syncUI(); draw(); });
-
-  function toast(msg) {
-    var t = $('genToast');
-    t.textContent = msg;
-    t.classList.add('is-on');
-    clearTimeout(toast.timer);
-    toast.timer = setTimeout(function () { t.classList.remove('is-on'); }, 3600);
+  // línea y pie
+  ctx.strokeStyle='rgba(255,255,255,.35)';ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(M,lineY);ctx.lineTo(W-M,lineY);ctx.stroke();
+  let tx=M;
+  if($('showLogo').checked&&logo.complete&&logo.naturalWidth){
+    ctx.save();ctx.beginPath();ctx.arc(M+42,footTop+42,42,0,7);ctx.clip();
+    ctx.drawImage(logo,M,footTop,84,84);ctx.restore();
+    if(bg==='naranja'){ctx.strokeStyle='#fff';ctx.lineWidth=4;ctx.beginPath();ctx.arc(M+42,footTop+42,42,0,7);ctx.stroke()}
+    tx=M+84+28;
   }
+  const nm=$('name').value.trim().toUpperCase(),ur=$('url').value.trim();
+  ctx.fillStyle='#fff';ctx.font='300 38px "Roboto Condensed", sans-serif';spaced(nm,tx,footTop+38,5);
+  ctx.fillStyle=ac;ctx.font='italic 300 36px "Roboto Condensed", sans-serif';ctx.fillText(ur,tx,footTop+78);
+  $('dim').textContent=\`\${W} × \${H} px\`;
+}
 
-  function download() {
-    canvas.toBlob(function (blob) {
-      if (!blob) return;
-      var a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'cartel-barberena.png';
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
-    }, 'image/png');
+function loadFonts(){
+  const {f,w}=fontSpec();
+  return Promise.all([\`300 30px "Roboto Condensed"\`,\`italic 300 30px "Roboto Condensed"\`,\`700 30px "Roboto Condensed"\`,\`\${w} 30px "\${f}"\`].map(s=>document.fonts.load(s,'Aáéíóúñ'))).then(draw).catch(draw);
+}
+
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3200)}
+
+function setBg(k){
+  bg=k;document.querySelectorAll('.bgb').forEach(b=>b.classList.toggle('on',b.dataset.bg===k));
+  $('photoOpts').style.display=(k==='foto')?'block':'none';draw();
+}
+document.querySelectorAll('.bgb').forEach(b=>b.onclick=()=>setBg(b.dataset.bg));
+document.querySelectorAll('#fmt button').forEach(b=>b.onclick=()=>{
+  H=+b.dataset.h;document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x===b));draw();
+});
+$('imageLoader').onchange=e=>{
+  const file=e.target.files[0];if(!file)return;
+  const r=new FileReader();
+  r.onload=ev=>{const im=new Image();im.onload=()=>{photo=im;$('photoTile').style.display='block';
+    $('photoTile').style.background=\`url(\${ev.target.result}) center/cover\`;$('pos').value=25;setBg('foto')};im.src=ev.target.result};
+  r.readAsDataURL(file);
+};
+['tag','head','hl','sz','anchor','upper','name','url','credit','showLogo','accent','hcolor','pos','dark'].forEach(id=>{
+  $(id).addEventListener('input',()=>{
+    if(id==='sz')$('szv').textContent=$('sz').value;
+    if(id==='head'||id==='upper'){autoHL();if(id==='head')scheduleAI()}
+    if(id==='hl')$('autoHl').checked=false;
+    draw()});
+  $(id).addEventListener('change',draw);
+});
+$('autoHl').addEventListener('change',()=>{autoHL();draw();scheduleAI()});
+$('font').addEventListener('change',loadFonts);
+
+function blob(){return new Promise(r=>cv.toBlob(r,'image/png'))}
+$('dl').onclick=async()=>{
+  const b=await blob(),a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download='cartel-bmm.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+};
+$('share').onclick=async()=>{
+  const b=await blob(),file=new File([b],'cartel-bmm.png',{type:'image/png'});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){
+    try{await navigator.share({files:[file],title:'Barberena Mi Municipio'})}catch(e){}
+  }else{
+    const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='cartel-bmm.png';a.click();
+    toast('Este navegador no permite compartir directo; se descargó la imagen.');
   }
-  $('downloadBtn').addEventListener('click', download);
-
-  $('shareBtn').addEventListener('click', function () {
-    canvas.toBlob(function (blob) {
-      if (!blob) return;
-      var file = new File([blob], 'cartel-barberena.png', { type: 'image/png' });
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        navigator.share({ files: [file], title: 'Cartel - Barberena Mi Municipio' }).catch(function () {});
-      } else {
-        download();
-        toast('Este navegador no permite compartir directo. Se descargó la imagen para que la envíes.');
-      }
-    }, 'image/png');
-  });
-
-  $('resetBtn').addEventListener('click', function () {
-    el.topText.value = DEFAULTS.topText; el.bottomText.value = DEFAULTS.bottomText;
-    el.topColor.value = DEFAULTS.topColor; el.bottomColor.value = DEFAULTS.bottomColor;
-    el.topSize.value = DEFAULTS.topSize; el.bottomSize.value = DEFAULTS.bottomSize;
-    el.topFont.value = DEFAULTS.topFont; el.bottomFont.value = DEFAULTS.bottomFont;
-    el.scrim.value = DEFAULTS.scrim; el.outline.checked = DEFAULTS.outline;
-    el.customColor.value = '#ef4f1d'; el.imageLoader.value = '';
-    base = { type: 'solid', id: 'naranja', c: '#ef4f1d' };
-    pattern = 'diagonales'; image = null;
-    syncUI(); draw();
-    toast('Se restablecieron los valores iniciales.');
-  });
-
-  el.topFont.value = DEFAULTS.topFont;
-  el.bottomFont.value = DEFAULTS.bottomFont;
-  syncUI();
-  draw();
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
-})();
+};
+$('resetBtn').onclick=()=>{
+  $('tag').value='Local · Servicios';$('head').value='Vecinos denuncian falta de agua y exigen boletas sin recargos';
+  $('autoHl').checked=true;$('hl').value='falta de agua';$('font').value='Roboto Condensed|700';$('sz').value=96;$('szv').textContent='96';
+  $('anchor').value='abajo';$('upper').checked=false;$('name').value='Barberena Mi Municipio';
+  $('url').value='barberenamimunicipio.top';$('credit').value='Foto: archivo';$('showLogo').checked=true;
+  $('accent').value='#ef4f1d';$('hcolor').value='#ffffff';$('dark').value=88;
+  H=1350;document.querySelectorAll('#fmt button').forEach((x,i)=>x.classList.toggle('on',i===0));
+  setBg('negro');loadFonts();toast('Valores restablecidos.');
+};
+draw();loadFonts();document.fonts.ready.then(draw);
 </script>
 </body>
 </html>
 `;
-}
