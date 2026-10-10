@@ -44,6 +44,7 @@ export async function onRequestPost({ request, env }) {
           content:
             'Eres editor de un diario hiperlocal. Del titular que te den, elige la frase clave: de 1 a 3 palabras consecutivas, ' +
             'copiadas exactamente del titular, que más conviene resaltar. Prefiere el tema o dato central (no verbos ni palabras de relleno). ' +
+            'Si hay una palabra o frase entre comillas, casi siempre es la mejor opción. ' +
             'Responde solo con esa frase, sin comillas ni explicaciones.',
         },
         { role: 'user', content: titulo },
@@ -287,6 +288,7 @@ function drawBg(ac){
   }
 }
 
+const SHORTW=new Set('a y o e u de del la el en un una al con por los las su que se lo le sin para'.split(' '));
 function layoutHead(text,fs,font,w,hlPhrase){
   const toks=text.split(/\\s+/).filter(Boolean);
   const hlw=hlPhrase.split(/\\s+/).filter(Boolean).map(norm);
@@ -302,7 +304,11 @@ function layoutHead(text,fs,font,w,hlPhrase){
   const lines=[];let cur=[],cw=0;
   toks.forEach((t,i)=>{
     const tw=ctx.measureText(t).width;
-    if(cur.length&&cw+sp+tw>maxW){lines.push(cur);cur=[];cw=0}
+    if(cur.length&&cw+sp+tw>maxW){
+      const carry=[];
+      while(cur.length>1&&SHORTW.has(norm(cur[cur.length-1].t)))carry.unshift(cur.pop());
+      lines.push(cur);cur=carry;cw=cur.reduce((s,o,k)=>s+o.w+(k?sp:0),0);
+    }
     cw+=(cur.length?sp:0)+tw;cur.push({t,hl:mark[i],w:tw});
   });
   if(cur.length)lines.push(cur);
@@ -311,16 +317,18 @@ function layoutHead(text,fs,font,w,hlPhrase){
 
 
 // ---- Frase clave automática (reglas, sin IA) ----
-const STOP=new Set('el la los las un una unos unas de del al a en y e o u que se su sus por con sin para ante bajo entre hacia hasta desde sobre tras es son fue ser ha han hay lo le les mi tu nos este esta estos estas ese esa eso como mas muy ya no ni pero si tambien sea cuando donde porque pues mientras tras ante vecinos'.split(' ').filter(x=>x!=='vecinos'));
+const STOP=new Set('el la los las un una unos unas de del al a en y e o u que se su sus por con sin para ante bajo entre hacia hasta desde sobre tras es son fue ser ha han hay lo le les mi tu nos este esta estos estas ese esa eso como mas muy ya no ni pero si tambien quienes quien cual cuales esto eso otros otras todo todos toda todas sea cuando donde porque pues mientras tras ante vecinos'.split(' ').filter(x=>x!=='vecinos'));
 const BRIDGE=new Set(['de','del','en']);
-const VERBS=new Set('denuncian denuncia anuncia anuncian inaugura inauguran exigen exige piden pide reportan reporta confirman confirma informa informan lanza lanzan presenta presentan realiza realizan celebra celebran consume afectara afectaran habra hubo llega llegan abre abren cierra cierran suspende suspenden ofrece ofrecen invita invitan convoca convocan reclaman reclama advierten advierte descubren registra registran'.split(' '));
+const VERBS=new Set('denuncian denuncia anuncia anuncian inaugura inauguran exigen exige piden pide reportan reporta confirman confirma informa informan lanza lanzan presenta presentan realiza realizan celebra celebran consume afectara afectaran habra hubo llega llegan abre abren cierra cierran suspende suspenden ofrece ofrecen invita invitan convoca convocan reclaman reclama advierten advierte descubren  registra registran llama llaman dice dijo afirma asegura critica critican escriben escribe responde responden acusa acusan'.split(' '));
 const KEY=new Set('urgente alerta aviso importante emergencia accidente incendio robo agua luz energia drenaje seguridad salud gratis gratuito nuevo nueva hoy cierre suspension corte cortes apagon bloqueo derrumbe lluvia peligro reunion asamblea feria festival campana jornada convocatoria obra obras escasez recargos multa'.split(' '));
 function strip(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9ñ]/g,'')}
 function autoPhrase(text){
   const toks=text.trim().split(/\\s+/).filter(Boolean);if(toks.length<3)return '';
+  let q=false;
   const info=toks.map((t,i)=>{const n=strip(t);
+    const st=/^["“«]/.test(t),en=/["”»][.,;:!?]*$/.test(t);const quoted=q||st;if(st&&!en)q=true;if(en)q=false;
     const content=!!n&&!STOP.has(n)&&(n.length>=3||/\\d/.test(n)||t===t.toUpperCase()&&n.length>=2);
-    return {t,n,content,bridge:BRIDGE.has(n),brk:/[,;:.!?]$/.test(t),cap:i>0&&/^[A-ZÁÉÍÓÚÑ]/.test(t),
+    return {t,n,quoted,content,bridge:BRIDGE.has(n),brk:/[,;:.!?]$/.test(t),cap:i>0&&/^[A-ZÁÉÍÓÚÑ]/.test(t),
       verb:VERBS.has(n)||(n.length>=6&&/(aron|ieron|ando|iendo)$/.test(n)),dig:/\\d/.test(n)}});
   let best=null;
   for(let i=0;i<toks.length;i++){
@@ -330,7 +338,7 @@ function autoPhrase(text){
       if(info[j].content){cc++;
         const seg=info.slice(i,j+1);
         let sc=cc*2;
-        seg.forEach(o=>{if(o.content){if(KEY.has(o.n))sc+=3;if(o.dig)sc+=2;if(o.cap)sc+=2;if(o.verb)sc-=3}});
+        seg.forEach(o=>{if(o.content){if(KEY.has(o.n))sc+=3;if(o.dig)sc+=2;if(o.cap)sc+=2;if(o.quoted)sc+=4;if(o.verb)sc-=3}});
         if(i===0)sc-=1;
         const len=j-i+1;
         if(len<=3&&(!best||sc>best.sc||(sc===best.sc&&len<best.len)))best={sc,len,i,j};
@@ -342,7 +350,7 @@ function autoPhrase(text){
       }else break;
     }
   }
-  return best?toks.slice(best.i,best.j+1).join(' ').replace(/[,;:.!?]+$/,''):'';
+  return best?toks.slice(best.i,best.j+1).join(' ').replace(/^["“«]+|["”»,;:.!?]+$/g,''):'';
 }
 function autoHL(){if($('autoHl').checked)$('hl').value=autoPhrase($('head').value)}
 // Refinamiento con IA (Workers AI) vía POST a /generador/. Si falla, se queda el resultado por reglas.
@@ -371,7 +379,7 @@ function draw(){
   const accent=$('accent').value;
   const ac=bg==='naranja'?'#111110':accent;
   const {f,w}=fontSpec();
-  let text=$('head').value.trim();if($('upper').checked)text=text.toUpperCase();
+  let text=$('head').value.trim().replace(/"([^"]*)"/g,'“$1”');if($('upper').checked)text=text.toUpperCase();
   const tagTxt=$('tag').value.trim().toUpperCase();
   const maxLines=H>1500?5:4;
 
