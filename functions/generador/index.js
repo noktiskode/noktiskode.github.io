@@ -11,7 +11,13 @@ const json = (obj, status = 200) =>
   new Response(JSON.stringify(obj), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 
 export async function onRequestGet() {
-  return new Response(HTML, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
+  return new Response(HTML, {
+    headers: {
+      'content-type': 'text/html; charset=utf-8',
+      'cache-control': 'no-store',
+      'x-robots-tag': 'noindex, nofollow', // que los buscadores no indexen esta página
+    },
+  });
 }
 
 export async function onRequestPost({ request, env }) {
@@ -60,6 +66,7 @@ const HTML = `<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Generador de Carteles - Barberena Mi Municipio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
