@@ -104,6 +104,7 @@ main{flex:1;max-width:1180px;width:100%;margin:0 auto;padding:28px 20px}
 .sec>label.t{display:flex;align-items:center;gap:9px;font-family:var(--fuente-titulo);font-weight:700;font-size:14px;letter-spacing:.09em;text-transform:uppercase;color:var(--negro);margin-bottom:10px}
 .n{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--negro);color:#fff;font-size:12px;align-items:center;justify-content:center;letter-spacing:0}
 .box{background:var(--gris-claro);border:1px solid #e9ecef;border-radius:12px;padding:14px}
+.sm b{color:var(--rojo);font-weight:700;margin-left:4px}
 .sm{display:block;font-size:11.5px;font-weight:500;color:var(--gris);margin:0 0 5px}
 input[type=text],textarea,select{width:100%;padding:10px 13px;background:#fff;border:1px solid #ced4da;border-radius:10px;font:500 14px var(--fuente-texto);color:#212529}
 textarea{resize:vertical;min-height:70px}
@@ -168,19 +169,22 @@ footer{background:#fff;border-top:1px solid var(--linea);padding:20px;text-align
     <label class="up"><span>Subir foto o video desde tu dispositivo</span><input type="file" id="imageLoader" accept="image/*,video/*" hidden></label>
     <div class="box" id="videoOpts" style="display:none;margin-top:12px">
       <span class="sm">Video cargado: <b id="vinfo"></b></span>
+      <span class="sm" style="margin-top:10px">Posición del video <b id="vseekv">0:00</b></span>
       <input type="range" id="vseek" min="0" max="1000" value="0" aria-label="Posición del video">
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
         <button class="ghost" id="vplay" type="button">Vista previa</button>
         <button class="ghost" id="vframe" type="button">Usar este fotograma como foto</button>
       </div>
+      <div style="margin-top:12px"><span class="sm">Calidad de grabación</span>
+        <select id="vq"><option value="720">720p: más fluido (recomendado)</option><option value="1080">1080p: más nitidez, más pesado</option></select></div>
       <label class="chk"><input type="checkbox" id="vsound" checked> Conservar el sonido</label>
       <button class="btn b1" id="vrec" type="button" style="margin-top:12px;width:100%">Grabar video con el diseño</button>
-      <p class="sm" style="margin:10px 0 0;line-height:1.45">Se graba en tiempo real: tarda lo mismo que dura el video. No cambies de pestaña ni bloquees el celular mientras graba. Funciona mejor en Chrome.</p>
+      <p class="sm" style="margin:10px 0 0;line-height:1.45">Se graba en tiempo real: tarda lo mismo que dura el video. No cambies de pestaña ni bloquees el celular mientras graba. Funciona mejor en Chrome. Si se traba o se corta el audio, usa 720p y cierra otras aplicaciones.</p>
     </div>
     <div class="box" id="photoOpts" style="display:none;margin-top:12px">
       <div class="row r2" style="margin-top:0">
-        <div><span class="sm">Encuadre de la foto</span><input type="range" id="pos" min="0" max="100" value="25"></div>
-        <div><span class="sm">Oscuridad abajo (menos = más foto)</span><input type="range" id="dark" min="30" max="100" value="72"></div>
+        <div><span class="sm">Encuadre de la foto <b id="posv">25%</b></span><input type="range" id="pos" min="0" max="100" value="25"></div>
+        <div><span class="sm">Oscuridad abajo <b id="darkv">72%</b> (menos = más foto)</span><input type="range" id="dark" min="30" max="100" value="72"></div>
       </div>
     </div>
   </div>
@@ -207,7 +211,7 @@ footer{background:#fff;border-top:1px solid var(--linea);padding:20px;text-align
             <option value="Roboto Slab|700">Roboto Slab</option>
             <option value="Playfair Display|800">Playfair Display</option>
           </select></div>
-        <div><span class="sm">Tamaño máx. (<span id="szv">96</span>px)</span><input type="range" id="sz" min="48" max="130" value="96"></div>
+        <div><span class="sm">Tamaño máx. <b id="szv">96 px</b></span><input type="range" id="sz" min="48" max="130" value="96"></div>
         <div><span class="sm">Ubicación</span>
           <select id="anchor"><option value="abajo">Abajo</option><option value="centro">Centro</option></select></div>
       </div>
@@ -245,6 +249,7 @@ footer{background:#fff;border-top:1px solid var(--linea);padding:20px;text-align
   <div class="cvw"><canvas id="cv" width="1080" height="1350"></canvas></div>
   <div id="vprog" style="display:none;margin-top:14px">
     <div style="height:8px;background:#e9ecef;border-radius:99px;overflow:hidden"><div id="vbar" style="height:100%;width:0;background:var(--rojo)"></div></div>
+    <p class="sm" style="margin:8px 0 0">La vista previa se queda quieta mientras graba, para que el video salga fluido.</p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="sm" id="vtxt" style="margin:0">Grabando…</span><button class="ghost" id="vcancel" type="button">Cancelar</button></div>
   </div>
   <div id="vres" style="display:none;margin-top:14px">
@@ -396,7 +401,11 @@ function scheduleAI(){
   },1000);
 }
 
+function syncLabels(){
+  $('posv').textContent=$('pos').value+'%';$('darkv').textContent=$('dark').value+'%';$('szv').textContent=$('sz').value+' px';
+}
 function draw(){
+  syncLabels();
   cv.width=W;cv.height=H;
   const photoMode=bg==='foto'&&photo;
   const accent=$('accent').value;
@@ -486,6 +495,7 @@ function frame(){
 
 // ---------------- VIDEO ----------------
 const fmtT=s=>\`\${Math.floor(s/60)}:\${String(Math.floor(s%60)).padStart(2,'0')}\`;
+function updSeek(){if(vid&&isFinite(vid.duration))$('vseekv').textContent=\`\${fmtT(vid.currentTime)} / \${fmtT(vid.duration)}\`}
 function clearVideo(){
   playing=false;
   if(vid){try{vid.pause()}catch(e){}}
@@ -502,19 +512,19 @@ function setVideo(file){
   v.addEventListener('loadeddata',()=>{
     vid=v;photo=v;
     $('vinfo').textContent=\`\${fmtT(v.duration)} · \${v.videoWidth}×\${v.videoHeight}\`;
-    $('vseek').value=0;$('pos').value=25;
+    $('vseek').value=0;$('pos').value=25;updSeek();
     $('photoTile').style.display='block';$('photoTile').firstElementChild.textContent='Tu video';
     setBg('foto');
     try{v.currentTime=0.05}catch(e){}
   },{once:true});
-  v.addEventListener('seeked',()=>{if(vid===v&&!recording){if(!playing)frame()}});
+  v.addEventListener('seeked',()=>{if(vid===v&&!recording){updSeek();if(!playing)frame()}});
   v.addEventListener('ended',()=>{if(!recording){playing=false;$('vplay').textContent='Vista previa'}});
   v.addEventListener('error',()=>toast('No se pudo leer ese video. Prueba con un MP4.'));
 }
 function previewLoop(){
   if(!playing||recording)return;
   frame();
-  if(!vid.seeking)$('vseek').value=Math.round(vid.currentTime/vid.duration*1000);
+  if(!vid.seeking){$('vseek').value=Math.round(vid.currentTime/vid.duration*1000);updSeek()}
   requestAnimationFrame(previewLoop);
 }
 $('vplay').onclick=()=>{
@@ -522,7 +532,7 @@ $('vplay').onclick=()=>{
   if(vid.paused){vid.muted=true;vid.play().then(()=>{playing=true;$('vplay').textContent='Pausar';previewLoop()}).catch(()=>toast('El navegador bloqueó la reproducción.'))}
   else{vid.pause();playing=false;$('vplay').textContent='Vista previa'}
 };
-$('vseek').addEventListener('input',()=>{if(vid&&!recording&&isFinite(vid.duration))vid.currentTime=$('vseek').value/1000*vid.duration});
+$('vseek').addEventListener('input',()=>{if(vid&&!recording&&isFinite(vid.duration)){vid.currentTime=$('vseek').value/1000*vid.duration;updSeek()}});
 $('vframe').onclick=()=>{
   if(!vid||recording)return;
   const c=document.createElement('canvas');c.width=vid.videoWidth;c.height=vid.videoHeight;
@@ -533,26 +543,36 @@ $('vframe').onclick=()=>{
   setBg('foto');toast('Listo: ese fotograma ahora funciona como foto.');
 };
 
-const MIMES=['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4','video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'];
+const MIMES=['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4','video/webm;codecs=vp8,opus','video/webm;codecs=vp9,opus','video/webm'];
 function setBusy(b){
   const p=$('panel');p.style.pointerEvents=b?'none':'';p.style.opacity=b?'.55':'';
   $('vprog').style.display=b?'block':'none';
 }
 async function recordVideo(){
   if(!vid||recording)return;
-  if(!window.MediaRecorder||!cv.captureStream){toast('Este navegador no puede grabar video. Usa Chrome.');return}
+  if(!window.MediaRecorder){toast('Este navegador no puede grabar video. Usa Chrome.');return}
   const mime=MIMES.find(t=>MediaRecorder.isTypeSupported(t));
   if(!mime){toast('Este navegador no puede grabar video. Usa Chrome.');return}
+  // Se graba en un lienzo aparte, a la resolución elegida (720p pesa mucho menos que 1080p)
+  const q=+$('vq').value,sc=q/W,rw=Math.round(W*sc/2)*2,rh=Math.round(H*sc/2)*2;
+  const rc=document.createElement('canvas');rc.width=rw;rc.height=rh;
+  if(!rc.captureStream){toast('Este navegador no puede grabar video. Usa Chrome.');return}
+  const rctx=rc.getContext('2d',{alpha:false});rctx.imageSmoothingQuality='medium';
+  const drawRec=()=>{
+    ctx=rctx;rctx.setTransform(sc,0,0,sc,0,0);drawBg('');
+    rctx.setTransform(1,0,0,1,0,0);rctx.drawImage(oc,0,0,rw,rh);ctx=mainCtx;
+  };
   recording=true;cancelled=false;playing=false;vid.pause();
   $('vres').style.display='none';setBusy(true);$('vbar').style.width='0';$('vtxt').textContent='Preparando…';
   try{
     await new Promise(res=>{const h=()=>{vid.removeEventListener('seeked',h);res()};vid.addEventListener('seeked',h);vid.currentTime=0;setTimeout(res,600)});
-    draw(); // construye la capa de texto y pinta el primer cuadro
-    const stream=cv.captureStream(30);
+    draw(); // construye la capa de texto una sola vez
+    drawRec();
+    const stream=rc.captureStream(30);
     let nota='';
     if($('vsound').checked){
       try{
-        audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
+        audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)({latencyHint:'playback'});
         if(audioFor!==vid){audioSrc=audioCtx.createMediaElementSource(vid);audioFor=vid}
         const dest=audioCtx.createMediaStreamDestination();
         audioSrc.disconnect();audioSrc.connect(dest);
@@ -561,27 +581,36 @@ async function recordVideo(){
         dest.stream.getAudioTracks().forEach(t=>stream.addTrack(t));
       }catch(e){nota=' (sin sonido)'}
     }else vid.muted=true;
-    const rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:6000000});
+    const rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:q>=1080?9000000:5000000,audioBitsPerSecond:128000});
     const chunks=[];rec.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
     const stopped=new Promise(res=>{rec.onstop=res});
     $('vcancel').onclick=()=>{cancelled=true};
-    rec.start(500);
+    rec.start(1000);
     await vid.play();
     const dur=vid.duration;
     await new Promise(res=>{
-      vid.onended=()=>{frame();res()};
-      const tick=()=>{
-        if(cancelled){res();return}
-        frame();
-        const p=Math.min(1,vid.currentTime/dur);
-        $('vbar').style.width=(p*100).toFixed(1)+'%';
-        $('vtxt').textContent=\`Grabando… \${fmtT(vid.currentTime)} / \${fmtT(dur)}\${nota}\`;
-        requestAnimationFrame(tick);
+      let last=-1,lastUi=0,fin=false;
+      const finish=()=>{if(!fin){fin=true;res()}};
+      vid.onended=()=>{drawRec();finish()};
+      const useRVFC='requestVideoFrameCallback' in vid;
+      const schedule=()=>{useRVFC?vid.requestVideoFrameCallback(step):requestAnimationFrame(step)};
+      const step=(now,meta)=>{
+        if(fin)return;
+        if(cancelled){finish();return}
+        const t=(meta&&meta.mediaTime!==undefined)?meta.mediaTime:vid.currentTime;
+        if(t-last>=1/31||t<last){drawRec();last=t}   // solo dibuja cuando hay un cuadro nuevo
+        const n=performance.now();
+        if(n-lastUi>300){
+          lastUi=n;
+          $('vbar').style.width=(Math.min(1,t/dur)*100).toFixed(1)+'%';
+          $('vtxt').textContent=\`Grabando… \${fmtT(t)} / \${fmtT(dur)}\${nota}\`;
+        }
+        schedule();
       };
-      tick();
+      schedule();
     });
     vid.onended=null;vid.pause();
-    await new Promise(r=>setTimeout(r,300));
+    await new Promise(r=>setTimeout(r,400));
     if(rec.state!=='inactive')rec.stop();
     await stopped;
     if(cancelled){toast('Grabación cancelada.')}
@@ -597,7 +626,7 @@ async function recordVideo(){
   }catch(e){
     toast('No se pudo grabar el video: '+(e&&e.message?e.message:e));
   }finally{
-    recording=false;vid.muted=true;setBusy(false);
+    ctx=mainCtx;recording=false;vid.muted=true;setBusy(false);
     try{vid.currentTime=0}catch(e){}
     $('vplay').textContent='Vista previa';draw();
   }
@@ -638,7 +667,6 @@ $('imageLoader').onchange=e=>{
 };
 ['tag','head','hl','sz','anchor','upper','name','url','credit','showLogo','accent','hcolor','pos','dark'].forEach(id=>{
   $(id).addEventListener('input',()=>{
-    if(id==='sz')$('szv').textContent=$('sz').value;
     if(id==='head'||id==='upper'){autoHL();if(id==='head')scheduleAI()}
     if(id==='hl')$('autoHl').checked=false;
     draw()});
@@ -663,7 +691,7 @@ $('share').onclick=async()=>{
 };
 $('resetBtn').onclick=()=>{
   $('tag').value='Local · Servicios';$('head').value='Vecinos denuncian falta de agua y exigen boletas sin recargos';
-  $('autoHl').checked=true;$('hl').value='falta de agua';$('font').value='Roboto Condensed|700';$('sz').value=96;$('szv').textContent='96';
+  $('autoHl').checked=true;$('hl').value='falta de agua';$('font').value='Roboto Condensed|700';$('sz').value=96;
   $('anchor').value='abajo';$('upper').checked=false;$('name').value='Barberena Mi Municipio';
   $('url').value='barberenamimunicipio.top';$('credit').value='Foto: archivo';$('showLogo').checked=true;
   $('accent').value='#ef4f1d';$('hcolor').value='#ffffff';$('dark').value=72;
