@@ -769,3 +769,6 @@ html[data-theme="dark"] .cb-share-x { background: #2c2b28; }
   html { scroll-behavior: auto; }
   .dest-card, .dest-track, .dest-dot span, .dest-arrow { transition: none; }
 }
+
+.cb-pagination { display:flex; gap:1rem; justify-content:center; align-items:center; flex-wrap:wrap; margin:2rem 0; }
+
