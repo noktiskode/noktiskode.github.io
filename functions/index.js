@@ -11,13 +11,16 @@ const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 // Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
 const CAROUSEL_SIZE = 6;
-// Publicaciones por página en "Las últimas" (en móvil se ven 12 y el resto con "Ver más")
-const PAGE_SIZE = 24;
+// Publicaciones por página en "Las últimas"
+const PAGE_SIZE_DESKTOP = 12;
+const PAGE_SIZE_MOBILE = 12;
 
 export async function onRequestGet(context) {
   const baseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
   const url = new URL(context.request.url);
   const page = Math.max(1, parseInt(url.searchParams.get('pagina'), 10) || 1);
+  const ua = context.request.headers.get('user-agent') || '';
+  const pageSize = /Mobi|Android|iPhone|iPod/i.test(ua) ? PAGE_SIZE_MOBILE : PAGE_SIZE_DESKTOP;
 
   async function sb(query, extra) {
     try {
@@ -43,18 +46,18 @@ export async function onRequestGet(context) {
 
   // Lista paginada: excluye los del carrusel y pide solo la página actual
   const excluded = featuredPosts.map((p) => `"${p.slug}"`).join(',');
-  const from = (page - 1) * PAGE_SIZE;
+  const from = (page - 1) * pageSize;
   const rg = await sb(
-    `published=eq.true${excluded ? `&slug=not.in.(${excluded})` : ''}&select=*&order=published_at.desc&limit=${PAGE_SIZE}&offset=${from}`,
+    `published=eq.true${excluded ? `&slug=not.in.(${excluded})` : ''}&select=*&order=published_at.desc&limit=${pageSize}&offset=${from}`,
     { Prefer: 'count=exact' }
   );
   const gridPosts = rg ? await rg.json() : [];
   const total = rg ? parseInt((rg.headers.get('content-range') || '').split('/')[1], 10) || 0 : 0;
-  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
   // El carrusel solo se muestra en la primera página
   return new Response(renderHome(page === 1 ? featuredPosts : [], gridPosts, page, totalPages), {
-    headers: { 'content-type': 'text/html; charset=UTF-8' }
+    headers: { 'content-type': 'text/html; charset=UTF-8', 'vary': 'User-Agent' }
   });
 }
 
@@ -291,9 +294,6 @@ ${destHtml}
     <div class="cb-post-list">
       ${cardsHtml}
     </div>
-    <div class="cb-more-wrap">
-      <button type="button" class="cb-more" id="cbMore" hidden>Ver más publicaciones</button>
-    </div>
     ${paginationHtml(page, totalPages)}
   </div>
 </main>
@@ -471,23 +471,6 @@ ${footerHtml()}
 
   measure();
   restart();
-})();
-</script>
-<script>
-(function () {
-  var mq = window.matchMedia('(min-width: 900px)');
-  var items = [].slice.call(document.querySelectorAll('.cb-post-list .cb-post'));
-  var btn = document.getElementById('cbMore');
-  if (!btn) return;
-  var STEP = 12, shown = STEP;
-  function render() {
-    var all = mq.matches;
-    items.forEach(function (el, i) { el.hidden = !all && i >= shown; });
-    btn.hidden = all || shown >= items.length;
-  }
-  btn.addEventListener('click', function () { shown += STEP; render(); });
-  if (mq.addEventListener) mq.addEventListener('change', render); else mq.addListener(render);
-  render();
 })();
 </script>
 </body>
