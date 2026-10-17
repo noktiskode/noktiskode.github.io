@@ -1,9 +1,7 @@
-/admin/login.html      /login    301
-/admin/login           /login    301
-/login.html            /login    301
-/admin/moderar.html    /moderar  301
-/admin/moderar         /moderar  301
-/moderar.html          /moderar  301
+/login                 /admin/login    301
+/login.html            /admin/login    301
+/moderar               /admin/moderar  301
+/moderar.html          /admin/moderar  301
 
 # Redireccion de enlaces cambiados
 /barberena/2026/08/28/anuncian-ampliaci-U00c3-U00b3n-del-cementerio-municipal                           /anuncian-ampliacion-del-cementerio-municipal/                            301
