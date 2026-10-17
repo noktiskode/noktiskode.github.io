@@ -11,8 +11,8 @@ const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 // Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
 const CAROUSEL_SIZE = 6;
-// Publicaciones por página en "Las últimas"
-const PAGE_SIZE = 12;
+// Publicaciones por página en "Las últimas" (en móvil se ven 12 y el resto con "Ver más")
+const PAGE_SIZE = 24;
 
 export async function onRequestGet(context) {
   const baseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
@@ -291,6 +291,9 @@ ${destHtml}
     <div class="cb-post-list">
       ${cardsHtml}
     </div>
+    <div class="cb-more-wrap">
+      <button type="button" class="cb-more" id="cbMore" hidden>Ver más publicaciones</button>
+    </div>
     ${paginationHtml(page, totalPages)}
   </div>
 </main>
@@ -468,6 +471,23 @@ ${footerHtml()}
 
   measure();
   restart();
+})();
+</script>
+<script>
+(function () {
+  var mq = window.matchMedia('(min-width: 900px)');
+  var items = [].slice.call(document.querySelectorAll('.cb-post-list .cb-post'));
+  var btn = document.getElementById('cbMore');
+  if (!btn) return;
+  var STEP = 12, shown = STEP;
+  function render() {
+    var all = mq.matches;
+    items.forEach(function (el, i) { el.hidden = !all && i >= shown; });
+    btn.hidden = all || shown >= items.length;
+  }
+  btn.addEventListener('click', function () { shown += STEP; render(); });
+  if (mq.addEventListener) mq.addEventListener('change', render); else mq.addListener(render);
+  render();
 })();
 </script>
 </body>
