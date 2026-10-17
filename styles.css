@@ -772,3 +772,25 @@ html[data-theme="dark"] .cb-share-x { background: #2c2b28; }
 
 .cb-pagination { display:flex; gap:1rem; justify-content:center; align-items:center; flex-wrap:wrap; margin:2rem 0; }
 
+/* Lista de publicaciones: 2 columnas en computadora */
+.cb-post[hidden] { display: none; }
+
+@media (min-width: 900px) {
+  .cb-page .cb-container { max-width: 1120px; }
+  .cb-post-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .cb-post-list .cb-post { margin: 0; }
+}
+
+/* Paginación (Más recientes / Más antiguas) */
+.cb-pagination {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
