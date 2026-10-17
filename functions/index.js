@@ -11,41 +11,49 @@ const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 // Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
 const CAROUSEL_SIZE = 6;
+// Publicaciones por página en "Las últimas"
+const PAGE_SIZE = 12;
 
 export async function onRequestGet(context) {
-  const headers = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+  const baseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+  const url = new URL(context.request.url);
+  const page = Math.max(1, parseInt(url.searchParams.get('pagina'), 10) || 1);
 
-  let featuredPosts = [];
-  try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE}`,
-      { headers }
-    );
-    featuredPosts = res.ok ? await res.json() : [];
-  } catch (e) { featuredPosts = []; }
+  async function sb(query, extra) {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/posts?${query}`, { headers: { ...baseHeaders, ...extra } });
+      return res.ok ? res : null;
+    } catch (e) { return null; }
+  }
 
-  let posts = [];
-  try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?published=eq.true&select=*&order=published_at.desc&limit=60`,
-      { headers }
-    );
-    posts = res.ok ? await res.json() : [];
-  } catch (e) { posts = []; }
+  // Carrusel de destacados
+  const rf = await sb(`featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE}`);
+  let featuredPosts = rf ? await rf.json() : [];
 
-  // Si hay menos destacados que tarjetas, completa el carrusel con los más recientes
+  // Si hay menos destacados que tarjetas, completa con los más recientes
   if (featuredPosts.length < CAROUSEL_SIZE) {
-    const usedSlugs = new Set(featuredPosts.map((p) => p.slug));
-    for (const p of posts) {
+    const rr = await sb(`published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE * 2}`);
+    const recent = rr ? await rr.json() : [];
+    const used = new Set(featuredPosts.map((p) => p.slug));
+    for (const p of recent) {
       if (featuredPosts.length >= CAROUSEL_SIZE) break;
-      if (!usedSlugs.has(p.slug)) { featuredPosts.push(p); usedSlugs.add(p.slug); }
+      if (!used.has(p.slug)) { featuredPosts.push(p); used.add(p.slug); }
     }
   }
 
-  const carouselSlugs = new Set(featuredPosts.map((p) => p.slug));
-  const gridPosts = posts.filter((p) => !carouselSlugs.has(p.slug));
+  // Lista paginada: excluye los del carrusel y pide solo la página actual
+  const excluded = featuredPosts.map((p) => `"${p.slug}"`).join(',');
+  const from = (page - 1) * PAGE_SIZE;
+  const rg = await sb(
+    `published=eq.true${excluded ? `&slug=not.in.(${excluded})` : ''}&select=*&order=published_at.desc&limit=${PAGE_SIZE}&offset=${from}`,
+    { Prefer: 'count=exact' }
+  );
+  const gridPosts = rg ? await rg.json() : [];
+  const total = rg ? parseInt((rg.headers.get('content-range') || '').split('/')[1], 10) || 0 : 0;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
-  return new Response(renderHome(featuredPosts, gridPosts), {
+  // El carrusel solo se muestra en la primera página
+  return new Response(renderHome(page === 1 ? featuredPosts : [], gridPosts, page, totalPages), {
     headers: { 'content-type': 'text/html; charset=UTF-8' }
   });
 }
@@ -222,9 +230,19 @@ function postCard(post) {
 </article>`;
 }
 
-function renderHome(featuredPosts, gridPosts) {
+function paginationHtml(page, totalPages) {
+  if (totalPages <= 1) return '';
+  const href = (p) => (p === 1 ? '/' : `/?pagina=${p}`);
+  return `<nav class="cb-pagination" aria-label="Paginación">
+    ${page > 1 ? `<a class="cb-more" rel="prev" href="${href(page - 1)}">&lsaquo; Más recientes</a>` : ''}
+    <span>Página ${page} de ${totalPages}</span>
+    ${page < totalPages ? `<a class="cb-more" rel="next" href="${href(page + 1)}">Más antiguas &rsaquo;</a>` : ''}
+  </nav>`;
+}
+
+function renderHome(featuredPosts, gridPosts, page, totalPages) {
   const desc = 'Blog personal sobre Barberena y El Cerinal. Opiniones, historias, acontecimientos y cosas que vale la pena comentar.';
-  const og = featuredPosts[0];
+  const og = featuredPosts[0];  // vacío en páginas > 1
 
   const destHtml = destacadosHtml(featuredPosts);
 
@@ -240,7 +258,7 @@ function renderHome(featuredPosts, gridPosts) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barberena Mi Municipio</title>
   <meta name="description" content="${escapeHtml(desc)}">
-  <link rel="canonical" href="${SITE_URL}/">
+  <link rel="canonical" href="${SITE_URL}${page > 1 ? `/?pagina=${page}` : '/'}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Barberena Mi Municipio">
   <meta property="og:title" content="Barberena Mi Municipio">
@@ -273,9 +291,7 @@ ${destHtml}
     <div class="cb-post-list">
       ${cardsHtml}
     </div>
-    <div class="cb-more-wrap">
-      <button type="button" class="cb-more" id="cbMore" hidden>Ver más publicaciones</button>
-    </div>
+    ${paginationHtml(page, totalPages)}
   </div>
 </main>
 ${footerHtml()}
@@ -452,20 +468,6 @@ ${footerHtml()}
 
   measure();
   restart();
-})();
-</script>
-<script>
-(function () {
-  var step = 7, shown = step;
-  var items = [].slice.call(document.querySelectorAll('.cb-post-list .cb-post'));
-  var btn = document.getElementById('cbMore');
-  if (!btn) return;
-  function render() {
-    items.forEach(function (el, i) { el.hidden = i >= shown; });
-    btn.hidden = shown >= items.length;
-  }
-  btn.addEventListener('click', function () { shown += step; render(); });
-  render();
 })();
 </script>
 </body>
