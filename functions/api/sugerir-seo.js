@@ -4,10 +4,10 @@
 // sugerencias de SEO: etiquetas, resumen, slug y frases de búsqueda.
 //
 // Requisitos en Cloudflare Pages (Settings → Variables and Secrets):
-//   - ANTHROPIC_API_KEY  (secreto)  -> usa Claude. Recomendado.
-//   - ANTHROPIC_MODEL    (opcional) -> por defecto "claude-haiku-5-5".
-// Si ANTHROPIC_API_KEY no existe, usa Workers AI (gratis) siempre que
-// tengas un binding llamado "AI" (Settings → Bindings → Workers AI).
+//   - Binding "AI" (Settings → Bindings → Workers AI): usa Workers AI, gratis.
+//     AI_MODEL (opcional) cambia el modelo; por defecto llama-3.3-70b.
+//   - Opcional: ANTHROPIC_API_KEY (secreto). Si existe, tiene prioridad y usa
+//     Claude (ANTHROPIC_MODEL, por defecto "claude-haiku-5-5").
 //
 // Solo responde a quien tenga sesión iniciada en el panel: el token de
 // Supabase que manda el navegador se valida contra Supabase.
@@ -101,15 +101,49 @@ async function conClaude(env, { sistema, usuario }) {
   return (data.content || []).map((b) => b.text || '').join('');
 }
 
-async function conWorkersAI(env, { sistema, usuario }) {
-  const out = await env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
-    messages: [
-      { role: 'system', content: sistema },
-      { role: 'user', content: usuario }
-    ],
-    max_tokens: 900
-  });
-  return out.response || '';
+const ESQUEMA = {
+  name: 'seo',
+  schema: {
+    type: 'object',
+    properties: {
+      tags: { type: 'array', items: { type: 'string' } },
+      excerpt: { type: 'string' },
+      slug: { type: 'string' },
+      keywords: { type: 'array', items: { type: 'string' } },
+      notes: { type: 'string' }
+    },
+    required: ['tags', 'excerpt', 'slug', 'keywords', 'notes']
+  }
+};
+
+// Workers AI: primero el modelo grande (mejor español y JSON más fiable) y, si
+// falla, el pequeño. En el primer intento pide "modo JSON"; si el modelo no lo
+// admite, lo intenta sin él.
+async function conWorkersAI(env, { sistema, usuario }, intento) {
+  const modelos = [env.AI_MODEL || '@cf/meta/llama-3.3-70b-instruct-fp8-fast', '@cf/meta/llama-3.1-8b-instruct'];
+  let ultimo;
+  for (const modelo of modelos) {
+    for (const modoJson of (intento === 0 ? [true, false] : [false])) {
+      try {
+        const args = {
+          messages: [
+            { role: 'system', content: sistema },
+            { role: 'user', content: usuario }
+          ],
+          max_tokens: 1200,
+          temperature: 0.3
+        };
+        if (modoJson) args.response_format = { type: 'json_schema', json_schema: ESQUEMA };
+        const out = await env.AI.run(modelo, args);
+        const r = out && out.response !== undefined ? out.response : out;
+        return typeof r === 'string' ? r : JSON.stringify(r);
+      } catch (e) {
+        ultimo = e;
+        console.error('Workers AI', modelo, modoJson ? '(json)' : '', e && e.message);
+      }
+    }
+  }
+  throw new Error('Workers AI falló: ' + ((ultimo && ultimo.message) || 'sin detalle'));
 }
 
 function extraerJson(texto) {
@@ -160,13 +194,21 @@ export async function onRequestPost({ request, env }) {
     return json({ error: 'Falta configurar ANTHROPIC_API_KEY o el binding "AI" en Cloudflare Pages.' }, 500);
   }
 
-  try {
-    const existentes = await etiquetasExistentes();
-    const prompt = construirPrompt({ title, body, category: payload.category, existentes });
-    const texto = env.ANTHROPIC_API_KEY ? await conClaude(env, prompt) : await conWorkersAI(env, prompt);
-    return json({ ok: true, ...limpiar(extraerJson(texto)) });
-  } catch (e) {
-    console.error(e);
-    return json({ error: 'No se pudo generar la sugerencia: ' + (e.message || 'error desconocido') }, 502);
+  const existentes = await etiquetasExistentes();
+  const prompt = construirPrompt({ title, body, category: payload.category, existentes });
+
+  // Hasta 2 intentos: los modelos a veces devuelven JSON mal formado.
+  let ultimoError;
+  for (let intento = 0; intento < 2; intento++) {
+    try {
+      const texto = env.ANTHROPIC_API_KEY ? await conClaude(env, prompt) : await conWorkersAI(env, prompt, intento);
+      const r = limpiar(extraerJson(texto));
+      if (!r.tags.length && !r.excerpt) throw new Error('La IA devolvió una respuesta vacía.');
+      return json({ ok: true, ...r });
+    } catch (e) {
+      ultimoError = e;
+      console.error(e);
+    }
   }
+  return json({ error: 'No se pudo generar la sugerencia: ' + ((ultimoError && ultimoError.message) || 'error desconocido') }, 502);
 }
