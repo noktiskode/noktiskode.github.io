@@ -1,0 +1,23 @@
+---
+title: "El alcalde \"es un santo\""
+slug: "el-alcalde-es-un-santo"
+date: "2026-02-06T17:42:36+00:00"
+updated_at: "2026-09-27T03:48:30.770192+00:00"
+category: "barberena"
+image: null
+video_url: null
+featured: false
+published: true
+excerpt: "EL ALCALDE \"ES UN SANTO\""
+tags: ["Barberena", "Santa Rosa", "aldealaspozas", "Barberena Somos Todos", "guatemala", "Obras públicas"]
+---
+EL ALCALDE "ES UN SANTO"
+
+En la inauguración de la pavimentación de la calle Flomar, en la aldea Las Pozas, el alcalde contó —con lujo de detalles— que tuvo que poner Q5,000 de su propio bolsillo para completar los costos de la obra que se realizó junto con los vecinos.
+
+Doña Naya y los vecinos organizaron ventas y rifas para reunir fondos y poder cooperar. Según explicó el alcalde, el 40% de la mano de obra la pusieron los vecinos y el 60% la municipalidad, aunque el momento cumbre fue dejar claro quién hizo el mayor sacrificio... emocional.
+
+Lamentablemente, Doña Naya y los vecinos dejaron al alcalde sin un mes de comida. Porque insistir en que se pavimente una calle tiene consecuencias graves: ajustes presupuestarios personales y, posiblemente, cambiar carne por frijoles.
+
+La calle quedó pavimentada, el esfuerzo comunitario se contó a medias y el gesto de los Q5,000 quedó bien registrado.
+Porque cuando algo se hace “de corazón”, lo importante es que todo el mundo se entere.

@@ -1,0 +1,24 @@
+---
+title: "Calle Sector La Ladrillera: la obra ya terminó Ya terminaron los trabajos en el sector de."
+slug: "calle-sector-la-ladrillera-la-obra-ya-termino-ya-terminaron-los"
+date: "2026-08-11T07:09:10+00:00"
+updated_at: "2026-09-27T03:40:45.378215+00:00"
+category: "barberena"
+image: "/images/blog/122224960004318393.jpg"
+video_url: null
+featured: false
+published: true
+excerpt: "Calle Sector La Ladrillera: la obra ya terminó"
+tags: ["Barberena", "La Ladrillera", "Guatecompras", "Santa Rosa", "Obras públicas", "SCEP"]
+---
+Calle Sector La Ladrillera: la obra ya terminó
+
+Ya terminaron los trabajos en el sector de LaLadrillera. Según el informe de supervisión de Codede del 4 de agosto, el proyecto ya llegó al 100% de avance físico.
+
+La obra fue ejecutada por Construcciones Molina por Q4,049,639.84 e incluyó pavimento nuevo, bordillos, banquetas, postes con iluminación LED, señalización y cambio de tubería y conexiones domiciliares de drenaje pluvial.
+
+La obra estaba prevista para terminar en 180 días, pero finalmente tomó 227 días. En el camino hubo algunas ocasiones en las que los trabajos estuvieron detenidos, por lo que vecinos se acercaron a fiscalizar y también a pedir que se retomaran.
+
+En cuanto al dinero, la Municipalidad de Barberena aportó Q50 mil, mientras que el Codede aportó los otros Q4 millones.
+
+NOG: 25579657 —

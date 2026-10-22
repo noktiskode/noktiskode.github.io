@@ -1,0 +1,20 @@
+---
+title: "que disfruten mientras puedan, porque ya no serán las mismas autoridades"
+slug: "que-disfruten-mientras-puedan-porque-ya-no-seran-las-mismas-autoridades"
+date: "2026-05-06T22:15:02+00:00"
+updated_at: "2026-09-27T03:40:43.88261+00:00"
+category: "barberena"
+image: "/images/blog/122215385084318393.jpg"
+video_url: null
+featured: false
+published: true
+excerpt: "\"QUE DISFRUTEN MIENTRAS PUEDAN, PORQUE YA NO SERÁN LAS MISMAS AUTORIDADES\""
+tags: ["Barberena", "Las Astas", "El Quebracho", "El Junquillo", "Pepe Rueda"]
+---
+"QUE DISFRUTEN MIENTRAS PUEDAN, PORQUE YA NO SERÁN LAS MISMAS AUTORIDADES"
+
+Hoy se llevó a cabo el tercer día de entrega de fertilizante; los beneficiarios en esta ocasión fueron los habitantes de las aldeas LasAstas, ElQuebracho y ElJunquillo.
+
+Algunas personas comentan en redes sociales que pronto habrá un cambio de mando y que las autoridades actuales deben "disfrutar el tiempo que les queda". Asimismo, usuarios piden "ni un voto más" para Pepe Rueda.
+
+¿Será que Barberena quiere un cambio o es solo ruido?

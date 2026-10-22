@@ -1,0 +1,22 @@
+---
+title: "¡Se les acabó el tiempo Y la calle sigue A medias!"
+slug: "se-les-acabo-el-tiempo-y-la-calle-sigue-a-medias"
+date: "2026-05-13T22:12:30+00:00"
+updated_at: "2026-09-27T03:40:44.054705+00:00"
+category: "barberena"
+image: "/images/blog/122216211812318393.jpg"
+video_url: null
+featured: false
+published: true
+excerpt: "¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS!"
+tags: ["El Cerinal", "Barberena", "Santa Rosa", "Auditoria Social", "Guatecompras", "Obras públicas"]
+---
+¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS!
+
+El plazo para entregar el proyecto en El Cerinal venció ayer, 12 de mayo, y la obra todavía no está lista. Aunque en los papeles dicen que llevan un 86% de avance, la realidad es otra.
+
+Ayer que venció el contrato, el supervisor cabal se dio cuenta de que faltan 410 metros de cuneta y, lo más triste, es que los bordillos ni los han empezado (están en 0%). Tampoco han puesto la señalización ni un solo poste de las 26 lámparas LED que prometieron para que la calle sea segura.
+
+La empresa tenía 180 días (6 meses) desde noviembre para dejar todo nítido.
+
+NOG 25579673
