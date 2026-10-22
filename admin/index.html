@@ -80,6 +80,20 @@ sitemap: false
     .result{display:none;margin-top:18px;padding:14px;border-radius:8px;background:var(--orange-soft);border-left:4px solid var(--orange)}
     .result a{color:var(--orange-dark);font-weight:700}
 
+    /* Sugerencias de SEO */
+    .seo-box{margin-top:14px;border:1px solid var(--field-line);border-left:4px solid var(--orange);border-radius:10px;padding:16px;background:var(--field)}
+    .seo-sec{padding:12px 0;border-bottom:1px solid var(--line)}
+    .seo-sec:first-child{padding-top:0}.seo-sec:last-child{border-bottom:0;padding-bottom:0}
+    .seo-sec h3{margin:0 0 8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+    .seo-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+    .seo-chip{border:1px solid var(--field-line);background:var(--soft);color:var(--ink);border-radius:99px;padding:6px 12px;font-size:14px;font-weight:500;cursor:pointer}
+    .seo-chip:hover{background:var(--soft-hover)}
+    .seo-chip.on{background:var(--orange-soft);border-color:var(--orange);color:var(--orange-dark);font-weight:700}
+    .seo-text{margin:0 0 8px;font-size:15px}
+    .seo-count{font-size:12px;color:var(--muted)}
+    .seo-list{margin:0;padding-left:18px;color:var(--ink);font-size:14px}
+    .seo-btn{padding:7px 12px;font-size:14px}
+
     .posts{display:grid}
     .post-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
     .post-item:last-child{border-bottom:0}
@@ -227,6 +241,12 @@ sitemap: false
               </div>
               <textarea id="body" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
               <p class="help" id="body-image-status">Se admite Markdown y HTML básico. La imagen se inserta donde esté el cursor.</p>
+            </div>
+
+            <div class="full">
+              <button type="button" id="seo-suggest" class="btn btn-secondary">Sugerir SEO con IA</button>
+              <p class="help" id="seo-status">Lee el título y el contenido y propone etiquetas, resumen, slug y frases de búsqueda. Vos decidís qué aplicar.</p>
+              <div id="seo-box" class="seo-box" style="display:none"></div>
             </div>
 
             <div class="full check">
@@ -499,6 +519,8 @@ sitemap: false
     $('published-at').value = localDateTime();
     delete $('slug').dataset.manual;
     $('result').style.display = 'none';
+    $('seo-box').style.display = 'none';
+    $('seo-box').innerHTML = '';
   }
 
   async function enterEditMode(slug){
@@ -642,6 +664,103 @@ sitemap: false
       });
     });
   }
+
+  /* ---------- Sugerencias de SEO con IA (Cloudflare Function /api/sugerir-seo) ---------- */
+  let seoResult = null;
+
+  function currentTags(){ return $('tags').value.split(',').map(x=>x.trim()).filter(Boolean); }
+  function hasTag(list, t){ const k=slugify(t); return list.some(x=>slugify(x)===k); }
+  function syncChips(){
+    const list = currentTags();
+    document.querySelectorAll('#seo-box .seo-chip').forEach(function(c){
+      c.classList.toggle('on', hasTag(list, c.dataset.tag));
+    });
+  }
+  $('tags').addEventListener('input', syncChips);
+
+  function renderSeo(r){
+    const box = $('seo-box');
+    let html = '';
+    if(r.tags && r.tags.length){
+      html += '<div class="seo-sec"><h3>Etiquetas</h3><div class="seo-chips">'
+        + r.tags.map(t=>'<button type="button" class="seo-chip" data-tag="'+escapeHtml(t)+'">'+escapeHtml(t)+'</button>').join('')
+        + '</div><button type="button" class="btn btn-secondary seo-btn" data-action="all-tags">Agregar todas</button>'
+        + '<p class="help">Tocá una para agregarla o quitarla del campo Etiquetas.</p></div>';
+    }
+    if(r.excerpt){
+      html += '<div class="seo-sec"><h3>Resumen para Google</h3><p class="seo-text">'+escapeHtml(r.excerpt)+'</p>'
+        + '<p class="seo-count">'+r.excerpt.length+' caracteres (ideal: hasta 155)</p>'
+        + '<button type="button" class="btn btn-secondary seo-btn" data-action="use-excerpt">Usar este resumen</button></div>';
+    }
+    if(r.slug){
+      html += '<div class="seo-sec"><h3>Slug</h3><p class="seo-text">/'+escapeHtml(r.slug)+'/</p>'
+        + (editingSlug
+            ? '<p class="help">Estás editando un post ya publicado: cambiar el slug cambia su URL, por eso no se aplica desde acá.</p>'
+            : '<button type="button" class="btn btn-secondary seo-btn" data-action="use-slug">Usar este slug</button>')
+        + '</div>';
+    }
+    if(r.keywords && r.keywords.length){
+      html += '<div class="seo-sec"><h3>Cómo lo buscaría un vecino</h3><ul class="seo-list">'
+        + r.keywords.map(k=>'<li>'+escapeHtml(k)+'</li>').join('')
+        + '</ul><p class="help">Si el texto responde a estas frases con naturalidad, Google lo entiende mejor.</p></div>';
+    }
+    if(r.notes){
+      html += '<div class="seo-sec"><h3>Para mejorar el texto</h3><p class="seo-text">'+escapeHtml(r.notes)+'</p></div>';
+    }
+    box.innerHTML = html || '<p class="help">La IA no devolvió sugerencias. Probá de nuevo.</p>';
+    box.style.display = 'block';
+    syncChips();
+  }
+
+  $('seo-box').addEventListener('click', function(e){
+    const el = e.target.closest('[data-tag],[data-action]');
+    if(!el || !seoResult) return;
+    if(el.dataset.tag){
+      const list = currentTags();
+      const k = slugify(el.dataset.tag);
+      $('tags').value = (hasTag(list, el.dataset.tag) ? list.filter(x=>slugify(x)!==k) : list.concat(el.dataset.tag)).join(', ');
+      syncChips();
+    } else if(el.dataset.action === 'all-tags'){
+      const list = currentTags();
+      seoResult.tags.forEach(function(t){ if(!hasTag(list, t)) list.push(t); });
+      $('tags').value = list.join(', ');
+      syncChips();
+    } else if(el.dataset.action === 'use-excerpt'){
+      $('excerpt').value = seoResult.excerpt;
+      $('seo-status').textContent = 'Resumen aplicado. Recordá guardar el post.';
+    } else if(el.dataset.action === 'use-slug'){
+      $('slug').value = slugify(seoResult.slug);
+      $('slug').dataset.manual = '1';
+      $('seo-status').textContent = 'Slug aplicado. Recordá guardar el post.';
+    }
+  });
+
+  $('seo-suggest').addEventListener('click', async function(){
+    const title = $('title').value.trim(), body = $('body').value.trim();
+    const status = $('seo-status'), btn = $('seo-suggest');
+    if(!title || body.length < 80){ status.textContent = 'Escribí el título y un poco de contenido antes de pedir sugerencias.'; return; }
+    btn.disabled = true; btn.textContent = 'Analizando…'; status.textContent = 'Leyendo el post…';
+    try{
+      const {data} = await client.auth.getSession();
+      const token = data.session && data.session.access_token;
+      if(!token) throw new Error('La sesión expiró. Volvé a iniciar sesión.');
+      const res = await fetch('/api/sugerir-seo', {
+        method:'POST',
+        headers:{'Content-Type':'application/json', Authorization:'Bearer '+token},
+        body: JSON.stringify({title, body, category:$('category').value})
+      });
+      const out = await res.json().catch(()=>({}));
+      if(!res.ok) throw new Error(out.error || ('Error '+res.status));
+      seoResult = out;
+      renderSeo(out);
+      status.textContent = 'Listo. Revisá y aplicá lo que te sirva.';
+    }catch(err){
+      console.error(err);
+      status.textContent = 'No se pudo: ' + (err.message || 'Error desconocido');
+    }finally{
+      btn.disabled = false; btn.textContent = 'Sugerir SEO con IA';
+    }
+  });
 
   let searchTimer=null;
   $('search').addEventListener('input',()=>{
