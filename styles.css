@@ -823,3 +823,13 @@ html[data-theme="dark"] .cb-share-x { background: #2c2b28; }
   flex-wrap: wrap;
   margin: 2rem 0;
 }
+
+/* ---------- Etiquetas como enlaces y página /etiqueta/ ---------- */
+a.cb-tag { text-decoration: none; transition: background .2s ease, color .2s ease; }
+a.cb-tag:hover, a.cb-tag:focus-visible { background: var(--rojo); color: #fff; }
+
+/* La lista de etiqueta va dentro de .cb-container: se le quita el ancho de columna de lectura en pantallas grandes */
+.cb-tag-page .cb-post-list { width: 100%; max-width: var(--col); }
+@media (min-width: 900px) {
+  .cb-tag-page .cb-post-list { max-width: none; }
+}
