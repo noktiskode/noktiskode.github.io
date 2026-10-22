@@ -1,0 +1,63 @@
+name: Respaldo de posts (Supabase -> GitHub)
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC = 01:00 hora de Guatemala
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: "Saltarse la protección contra respaldos incompletos"
+        type: choice
+        options: ["false", "true"]
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: respaldo-posts
+  cancel-in-progress: false
+
+jobs:
+  respaldo:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) El script vive en main
+      - uses: actions/checkout@v4
+        with:
+          path: src
+
+      # 2) El respaldo vive en su propia rama, para no disparar el deploy de main cada noche
+      - name: Preparar rama respaldo-posts
+        run: |
+          git clone --quiet "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" out
+          cd out
+          if git ls-remote --exit-code --heads origin respaldo-posts >/dev/null 2>&1; then
+            git checkout --quiet respaldo-posts
+          else
+            git checkout --quiet --orphan respaldo-posts
+            git rm -rfq . || true
+          fi
+
+      - name: Volcar posts desde Supabase
+        working-directory: out
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          OUT_DIR: posts
+          INCLUDE_DRAFTS: "false"
+          FORCE: ${{ inputs.forzar || 'false' }}
+        run: python3 ../src/.github/scripts/backup_posts.py
+
+      - name: Guardar cambios
+        working-directory: out
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios desde el último respaldo."
+          else
+            git commit -q -m "Respaldo de posts $(date -u +%F)"
+            git push origin respaldo-posts
+          fi
