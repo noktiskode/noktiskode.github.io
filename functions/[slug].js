@@ -6,9 +6,7 @@
 // Jekyll (context.next()) — así las páginas que no son posts (categorías,
 // historia, manifiesto...) siguen funcionando sin cambios.
 
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
-const SITE_URL = 'https://barberenamimunicipio.top';
+import { SUPABASE_URL, SUPABASE_ANON_KEY, SITE_URL, escapeHtml, slugify, tagUrl, headerHtml, footerHtml } from './_shared.js';
 
 const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -38,26 +36,40 @@ export async function onRequestGet(context) {
 
   const post = rows[0];
 
+  const hdrs = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+  const cols = 'slug,title,published_at';
   let related = [];
-  try {
-    const relRes = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?category=eq.${encodeURIComponent(post.category)}&slug=neq.${encodeURIComponent(slug)}&select=slug,title,published_at&order=published_at.desc&limit=3`,
-      { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } }
-    );
-    if (relRes.ok) related = await relRes.json();
-  } catch (e) {
-    related = [];
+
+  // 1) Posts que comparten etiquetas con este (los más recientes primero).
+  const tags = (post.tags || []).filter(Boolean);
+  if (tags.length) {
+    try {
+      const lista = tags.map((t) => '"' + String(t).replace(/["\\]/g, '') + '"').join(',');
+      const tagRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/posts?tags=ov.${encodeURIComponent('{' + lista + '}')}&slug=neq.${encodeURIComponent(slug)}&select=${cols}&order=published_at.desc&limit=3`,
+        { headers: hdrs }
+      );
+      if (tagRes.ok) related = await tagRes.json();
+    } catch (e) {
+      related = [];
+    }
+  }
+
+  // 2) Si faltan, se completan con posts de la misma categoría.
+  if (related.length < 3) {
+    try {
+      const excluir = [slug, ...related.map((r) => r.slug)].map((s) => `slug=neq.${encodeURIComponent(s)}`).join('&');
+      const catRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/posts?category=eq.${encodeURIComponent(post.category)}&${excluir}&select=${cols}&order=published_at.desc&limit=${3 - related.length}`,
+        { headers: hdrs }
+      );
+      if (catRes.ok) related = related.concat(await catRes.json());
+    } catch (e) { /* se queda con lo que haya */ }
   }
 
   return new Response(renderPost(post, slug, related), {
     headers: { 'content-type': 'text/html; charset=UTF-8' }
   });
-}
-
-function escapeHtml(str) {
-  return String(str || '').replace(/[&<>"']/g, (c) => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-  }[c]));
 }
 
 function markdownToHtml(md) {
@@ -121,7 +133,7 @@ function comentariosBlock(slug) {
   return `<details class="comments-details">
   <summary>Comentarios</summary>
   <div class="comments-panel">
-  <div id="bmm-comentarios" data-slug="${slug}" style="font-family:-apple-system,sans-serif;color:var(--texto);">
+  <div id="bmm-comentarios" data-slug="${escapeHtml(slug)}" style="font-family:-apple-system,sans-serif;color:var(--texto);">
   <div id="comment-list" style="margin-bottom:1.75rem;"></div>
   <label style="display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.2px;margin:.6rem 0 .3rem;color:var(--texto-suave);">Nombre (opcional)</label>
   <input type="text" id="c-nombre" placeholder="Vecino" maxlength="60" style="width:100%;padding:11px 13px;font-size:15px;border:1.5px solid var(--borde);border-radius:6px;box-sizing:border-box;background:var(--bg-card);color:var(--texto);">
@@ -181,94 +193,6 @@ function comentariosBlock(slug) {
 </script>`;
 }
 
-function headerHtml() {
-  return `<header class="cb-navbar">
-  <div class="cb-container cb-navbar-inner">
-    <a class="cb-brand" href="/">
-      <img src="/images/bmm-orange-logo.svg" alt="" class="cb-brand-icon">
-      <span>Barberena Mi Municipio</span>
-    </a>
-    <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
-      <a href="/">Inicio</a>
-      <a href="/barberena/">Barberena</a>
-      <a href="/opiniones/">Opiniones</a>
-      <a href="/historias/">Historias</a>
-      <a href="/archivo/">Archivo</a>
-    </nav>
-    <div class="cb-nav-actions">
-      <button class="cb-search-toggle" type="button" aria-label="Buscar" aria-expanded="false" aria-controls="searchPanel">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-      </button>
-      <button class="cb-theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9 6.3 6.3M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
-      <button class="cb-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="cb-search-panel" id="searchPanel" hidden>
-    <div class="cb-container">
-      <form class="cb-search-bar" action="/buscar/" method="get" role="search">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"/></svg>
-        <input type="search" name="q" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones" autocomplete="off" enterkeyhint="search">
-        <button type="button" class="cb-search-close" aria-label="Cerrar búsqueda">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
-        </button>
-      </form>
-    </div>
-  </div>
-</header>
-<script>
-(function(){
-  var b=document.querySelector('.cb-menu-toggle'),n=document.getElementById('mainNav');
-  var s=document.querySelector('.cb-search-toggle'),p=document.getElementById('searchPanel');
-  var i=p&&p.querySelector('input'),c=p&&p.querySelector('.cb-search-close');
-  function setMenu(open){var h=document.querySelector('.cb-navbar');n.classList.toggle('is-open',open);if(h)h.classList.toggle('menu-open',open);document.body.classList.toggle('menu-open',open);b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');}
-  function closeMenu(){if(n&&b)setMenu(false);}
-  function openSearch(){closeMenu();p.hidden=false;s.setAttribute('aria-expanded','true');setTimeout(function(){if(i)i.focus();},30);}
-  function closeSearch(){p.hidden=true;s.setAttribute('aria-expanded','false');}
-  if(b&&n){
-    b.addEventListener('click',function(){if(p&&!p.hidden)closeSearch();setMenu(!n.classList.contains('is-open'));});
-    document.addEventListener('click',function(e){if(n.classList.contains('is-open')&&!n.contains(e.target)&&!b.contains(e.target))closeMenu();});
-    n.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))closeMenu();});
-  }
-  if(s&&p&&i&&c){
-    s.addEventListener('click',function(){if(p.hidden)openSearch();else closeSearch();});
-    c.addEventListener('click',closeSearch);
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!p.hidden)closeSearch();if(n&&n.classList.contains('is-open'))closeMenu();}});
-    document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target)&&!s.contains(e.target))closeSearch();});
-  }
-})();
-(function(){
-  var STORAGE_KEY='bmm-theme',btn=document.querySelector('.cb-theme-toggle');
-  if(!btn)return;
-  function isDarkNow(){var t=document.documentElement.getAttribute('data-theme');if(t==='dark')return true;if(t==='light')return false;return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;}
-  function updateLabel(dark){btn.setAttribute('aria-pressed',dark?'true':'false');btn.setAttribute('aria-label',dark?'Cambiar a modo claro':'Cambiar a modo oscuro');}
-  updateLabel(isDarkNow());
-  btn.addEventListener('click',function(){var next=isDarkNow()?'light':'dark';document.documentElement.setAttribute('data-theme',next);try{localStorage.setItem(STORAGE_KEY,next);}catch(e){}updateLabel(next==='dark');});
-})();
-</script>`;
-}
-function footerHtml() {
-  const year = new Date().getFullYear();
-  return `<footer class="cb-footer">
-  <div class="cb-container">
-    <a href="/" class="cb-footer-brand">
-      <img src="/images/bmm-black-logo.svg" alt="">
-      <span>Barberena Mi Municipio</span>
-    </a>
-    <p>Blog personal · Opiniones abiertas · Página independiente</p>
-    <nav aria-label="Enlaces del pie de página">
-      <a href="/que-publicamos/">¿Qué publicamos?</a>
-      <a href="/como-participar/">¿Cómo participar?</a>
-      <a href="/manifiesto/">Manifiesto</a>
-      <a href="https://www.facebook.com/BarberenaMiMunicipio/" target="_blank" rel="noopener">Facebook</a>
-    </nav>
-    <small>© ${year} Barberena Mi Municipio</small>
-  </div>
-</footer>`;
-}
-
 function renderPost(post, slug, related) {
   const title = escapeHtml(post.title);
   const desc = escapeHtml((post.excerpt || '').slice(0, 155));
@@ -285,7 +209,7 @@ function renderPost(post, slug, related) {
   const robotsTag = post.noindex ? '<meta name="robots" content="noindex, follow">' : '';
 
   const tagsHtml = (post.tags && post.tags.length)
-    ? `<div class="cb-tags"><p class="cb-tags-label">Etiquetas</p>${post.tags.map((t) => `<span class="cb-tag">${escapeHtml(t)}</span>`).join('')}</div>`
+    ? `<div class="cb-tags"><p class="cb-tags-label">Etiquetas</p>${post.tags.map((t) => `<a class="cb-tag" href="${tagUrl(t)}">${escapeHtml(t)}</a>`).join('')}</div>`
     : '';
 
   const relatedHtml = (related && related.length)
@@ -293,6 +217,30 @@ function renderPost(post, slug, related) {
 ${related.slice(0, 3).map((r) => `      <a class="cb-related-card" href="/${r.slug}/"><small>${new Date(r.published_at).toLocaleDateString('es-GT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</small><h3>${escapeHtml(r.title)}</h3></a>`).join('\n')}
     </div></section>`
     : '';
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    headline: String(post.title || '').slice(0, 110),
+    description: (post.excerpt || '').slice(0, 300),
+    image: [image],
+    datePublished: publishedIso,
+    dateModified: new Date(post.updated_at || post.published_at).toISOString(),
+    inLanguage: 'es-GT',
+    articleSection: categoryLabel,
+    keywords: (post.tags || []).join(', '),
+    wordCount: words,
+    author: { '@type': 'Organization', name: 'Barberena Mi Municipio', url: SITE_URL },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Barberena Mi Municipio',
+      url: SITE_URL,
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/bmm-orange-logo.svg` }
+    }
+  };
+  // "<" escapado para que el contenido nunca pueda cerrar la etiqueta <script>.
+  const jsonLdHtml = `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`;
 
   const mediaHtml = post.video_url
     ? `<div class="cb-article-image">${videoEmbed(post.video_url)}</div>`
@@ -315,11 +263,13 @@ ${related.slice(0, 3).map((r) => `      <a class="cb-related-card" href="/${r.sl
   <meta property="og:image" content="${image}">
   <meta property="og:locale" content="es_GT">
   <meta property="article:published_time" content="${publishedIso}">
+  ${post.tags && post.tags.length ? post.tags.map((t) => `<meta property="article:tag" content="${escapeHtml(t)}">`).join('\n  ') : ''}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${desc}">
   <meta name="twitter:image" content="${image}">
   <link rel="canonical" href="${canonical}">
+  ${jsonLdHtml}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700;800;900&family=Roboto:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
