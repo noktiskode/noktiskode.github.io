@@ -1,0 +1,171 @@
+name: Migrar imagenes a R2
+
+# Se ejecuta a mano: pestana Actions > "Migrar imagenes a R2" > Run workflow.
+# Copia images/blog (GitHub) y las imagenes del bucket post-images (Supabase)
+# al bucket bmm-imagenes de Cloudflare R2, con el mismo nombre de archivo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Solo simular, sin subir nada (true o false)"
+        default: "true"
+
+permissions:
+  contents: read
+
+env:
+  BUCKET: bmm-imagenes
+  SUPABASE_BASE: https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images
+  AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: auto
+  AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+  AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+
+jobs:
+  migrar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar endpoint de R2
+        run: |
+          # Deja solo https://<cuenta>.r2.cloudflarestorage.com (quita lo que venga despues)
+          ENDPOINT=$(echo "${{ secrets.R2_ENDPOINT }}" | sed -E 's#(https://[^/]+).*#\1#')
+          echo "ENDPOINT=$ENDPOINT" >> "$GITHUB_ENV"
+
+      - name: Copiar imagenes de GitHub (images/blog)
+        run: |
+          set -euo pipefail
+          DRY=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then DRY="--dryrun"; fi
+          echo "Archivos en images/blog: $(find images/blog -type f | wc -l)"
+          aws s3 sync images/blog "s3://$BUCKET/" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude ".*" --exclude "*/.*" \
+            --cache-control "public, max-age=31536000" \
+            $DRY
+
+      - name: Copiar imagenes de Supabase
+        run: |
+          set -uo pipefail
+          cat > nombres.txt <<'EOF'
+          _originals/1.webp
+          _originals/1790622553911-3j12i9.webp
+          _originals/1790623345906-d5airf.webp
+          _originals/1790633456976-am9jdr.webp
+          _originals/1790647470643-bqohwa.webp
+          _originals/1790720834875-dl4hjd.webp
+          _originals/1790804850226-pcazi9.jpg
+          _originals/1790806109529-u2jhh7.webp
+          _originals/1790806453166-wvit9k.webp
+          _originals/1790806750698-zik32i.webp
+          _originals/1790807188896-i088cw.webp
+          _originals/1790807475125-00j3jf.webp
+          _originals/1790807884615-p19hxu.webp
+          _originals/1790808190117-i2oda7.webp
+          _originals/1790808466220-cyg549.webp
+          _originals/1790808655962-6g6lwd.webp
+          _originals/1790808904105-ysstj8.webp
+          _originals/1790808926869-4y66r6.webp
+          _originals/1790809485494-zpvr9i.webp
+          _originals/1790875005927-9ga8c6.webp
+          _originals/1790916643019-0ydysi.webp
+          _originals/1790917324181-mjcy8o.webp
+          1.webp
+          1790622553911-3j12i9.webp
+          1790633456976-am9jdr.webp
+          1790647470643-bqohwa.webp
+          1790720834875-dl4hjd.webp
+          1790804850226-pcazi9.jpg
+          1790806109529-u2jhh7.webp
+          1790806453166-wvit9k.webp
+          1790806750698-zik32i.webp
+          1790807188896-i088cw.webp
+          1790807475125-00j3jf.webp
+          1790807884615-p19hxu.webp
+          1790808190117-i2oda7.webp
+          1790808466220-cyg549.webp
+          1790808655962-6g6lwd.webp
+          1790808904105-ysstj8.webp
+          1790808926869-4y66r6.webp
+          1790809485494-zpvr9i.webp
+          1790875005927-9ga8c6.webp
+          1790916643019-0ydysi.webp
+          1790917324181-mjcy8o.webp
+          1791016351811-ie4g4e.webp
+          1791070444558-xhrkep.webp
+          1791221123727-mgb9cr.webp
+          1791221153183-5yw2xm.webp
+          1791221170586-oe9g8e.webp
+          1791307677855-a67qp0.jpg
+          1791400713518-24irt1.webp
+          1791423871071-ow46gw.webp
+          1791435750690-bfadnw.webp
+          1791494644784-ncr0ii.webp
+          1791506345308-61nxzz.webp
+          1791506726448-r5yu6u.webp
+          1791522413984-y3xawe.webp
+          1791522441490-9wilra.webp
+          1791681732763-mcplup.webp
+          1791682103503-lhmlbs.webp
+          1791682486847-vb0fh8.webp
+          1791683413812-y0ganf.webp
+          1791741855586-hrf26y.webp
+          1791741893840-muwkab.webp
+          1791741952190-pckn9l.webp
+          1791741966725-xsotwz.webp
+          1791741988481-e5q9y1.webp
+          1791741996425-7shfse.webp
+          1791927884103-5ljqde.webp
+          1792008294555-7jk30p.webp
+          1792089055459-e3jyjs.webp
+          1792120496633-00yqzx.webp
+          1792120555107-46nq5e.webp
+          1792120576915-1u3hn9.webp
+          1792120588086-bt370m.webp
+          1792120602919-hxt0mk.webp
+          1792213886396-wn4n7a.webp
+          1792534702528-qww93t.webp
+          1792536113572-g9qteo.webp
+          1792709372319-x6nhql.webp
+          1792722793078-3ivtsp.webp
+          1792780774510-zpehh8.webp
+          1793050605325-vop4c7.webp
+          1793135050409-ihihhi.webp
+          1793207164168-bdjquj.webp
+          1793313212983-szkptp.webp
+          1793313417188-edh43f.webp
+          EOF
+
+          echo "Nombres en la lista: $(wc -l < nombres.txt)"
+          mkdir -p supabase-descarga
+          FALLAS=0
+          while IFS= read -r nombre; do
+            [ -z "$nombre" ] && continue
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              CODIGO=$(curl -s -o /dev/null -w "%{http_code}" -I "$SUPABASE_BASE/$nombre")
+              [ "$CODIGO" = "200" ] || { echo "NO DISPONIBLE ($CODIGO): $nombre"; FALLAS=$((FALLAS+1)); }
+            else
+              mkdir -p "supabase-descarga/$(dirname "$nombre")"
+              curl -sSf -o "supabase-descarga/$nombre" "$SUPABASE_BASE/$nombre" \
+                || { echo "FALLO LA DESCARGA: $nombre"; FALLAS=$((FALLAS+1)); }
+            fi
+          done < nombres.txt
+
+          if [ "${{ github.event.inputs.dry_run }}" != "true" ]; then
+            echo "Archivos descargados: $(find supabase-descarga -type f | wc -l)"
+            aws s3 sync supabase-descarga "s3://$BUCKET/" \
+              --endpoint-url "$ENDPOINT" \
+              --cache-control "public, max-age=31536000"
+          fi
+
+          echo "Fallas: $FALLAS"
+          [ "$FALLAS" -eq 0 ]
+
+      - name: Contar objetos en el bucket
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          echo "Objetos en $BUCKET: $(aws s3 ls "s3://$BUCKET/" --recursive --endpoint-url "$ENDPOINT" | wc -l)"
