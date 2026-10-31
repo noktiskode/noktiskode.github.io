@@ -2,9 +2,9 @@
 title: "El licenciado Federico \"Lico\" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez"
 slug: "el-licenciado-federico-lico-cruz-suarez-se-paro-hoy-en-el"
 date: "2026-08-20T21:54:44+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122225947202318393.jpg"
+image: "https://img.barberenamimunicipio.top/122225947202318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,7 +2,7 @@
 title: "Crónica de un adiós anunciado"
 slug: "cronica-de-un-adios-anunciado"
 date: "2026-01-30T01:48:19+00:00"
-updated_at: "2026-09-27T03:48:30.770192+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

@@ -2,7 +2,7 @@
 title: "Me parece poco acertado que el alcalde de Barberena afirme públicamente que los diputados por el departamento de Santa"
 slug: "me-parece-poco-acertado-que-el-alcalde-de-barberena-afirme-publicamente"
 date: "2025-11-10T21:44:44+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
 image: null
 video_url: null

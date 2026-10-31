@@ -2,9 +2,9 @@
 title: "Rubelio: ¿Robin Hood o ángel de Dios?"
 slug: "rubelio-robin-hood-o-angel-de-dios"
 date: "2025-12-30T21:28:30+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122202677534318393.jpg"
+image: "https://img.barberenamimunicipio.top/122202677534318393.jpg"
 video_url: null
 featured: false
 published: true

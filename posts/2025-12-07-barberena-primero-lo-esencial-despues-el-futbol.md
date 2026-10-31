@@ -2,9 +2,9 @@
 title: "Barberena: primero lo esencial, después el fútbol"
 slug: "barberena-primero-lo-esencial-despues-el-futbol"
 date: "2025-12-07T22:23:04+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122200242194318393.jpg"
+image: "https://img.barberenamimunicipio.top/122200242194318393.jpg"
 video_url: null
 featured: false
 published: true

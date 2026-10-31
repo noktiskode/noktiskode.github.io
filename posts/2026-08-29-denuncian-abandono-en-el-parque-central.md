@@ -2,7 +2,7 @@
 title: "Denuncian abandono en el parque central"
 slug: "denuncian-abandono-en-el-parque-central"
 date: "2026-08-29T21:50:27+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

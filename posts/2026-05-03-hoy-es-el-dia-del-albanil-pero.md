@@ -2,9 +2,9 @@
 title: "Hoy es el día del albañil, pero"
 slug: "hoy-es-el-dia-del-albanil-pero"
 date: "2026-05-03T19:28:16+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122215032236318393.jpg"
+image: "https://img.barberenamimunicipio.top/122215032236318393.jpg"
 video_url: null
 featured: false
 published: true

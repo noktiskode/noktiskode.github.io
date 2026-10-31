@@ -2,9 +2,9 @@
 title: "El cerinal vecinos denuncian Q1.1 millones en “remodelación” fantasma"
 slug: "el-cerinal-vecinos-denuncian-q1-1-millones-en-remodelacion-fantasma"
 date: "2026-01-29T18:40:56+00:00"
-updated_at: "2026-09-27T03:48:30.770192+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122205757184318393.jpg"
+image: "https://img.barberenamimunicipio.top/122205757184318393.jpg"
 video_url: null
 featured: false
 published: true

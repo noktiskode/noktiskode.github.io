@@ -2,9 +2,9 @@
 title: "La Muni entregó el proyecto de pavimentación de la Calle La Bendición, Sector 4, aldea."
 slug: "la-muni-entrego-el-proyecto-de-pavimentacion-de-la-calle-la"
 date: "2026-06-27T00:34:41+00:00"
-updated_at: "2026-09-27T03:40:44.716213+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122220555314318393.jpg"
+image: "https://img.barberenamimunicipio.top/122220555314318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "Se vienen los cortes de agua"
 slug: "se-vienen-los-cortes-de-agua"
 date: "2026-02-21T16:00:48+00:00"
-updated_at: "2026-09-27T03:40:42.58355+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122207983028318393.jpg"
+image: "https://img.barberenamimunicipio.top/122207983028318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "¿Ya cerraron el chorro?"
 slug: "ya-cerraron-el-chorro"
 date: "2026-03-11T02:17:44+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122209646468318393.jpg"
+image: "https://img.barberenamimunicipio.top/122209646468318393.jpg"
 video_url: null
 featured: false
 published: true

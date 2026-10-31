@@ -2,9 +2,9 @@
 title: "¡Chisme, chisme, chisme!"
 slug: "chisme-chisme-chisme"
 date: "2026-05-30T02:21:55+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122217907082318393.jpg"
+image: "https://img.barberenamimunicipio.top/122217907082318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,6 +23,6 @@ Lo chistoso es que entre los primeros en reaccionar aparecen caras muy conocidas
 La única página que tenemos sigue siendo esta:
  https://www.facebook.com/BarberenaMiMunicipio
 
-![](/images/blog/122217907130318393.jpg)
+![](https://img.barberenamimunicipio.top/122217907130318393.jpg)
 
-![](/images/blog/122217907178318393.jpg)
+![](https://img.barberenamimunicipio.top/122217907178318393.jpg)

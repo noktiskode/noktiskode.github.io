@@ -2,9 +2,9 @@
 title: "La PMT de barberena anunció que reforzará los operativos para detectar y sancionar el transporte colectivo que opere"
 slug: "la-pmt-de-barberena-anuncio-que-reforzara-los-operativos-para-detectar"
 date: "2026-07-04T21:52:25+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221264070318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221264070318393.jpg"
 video_url: null
 featured: false
 published: true

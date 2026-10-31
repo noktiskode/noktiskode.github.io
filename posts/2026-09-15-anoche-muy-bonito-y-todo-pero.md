@@ -2,9 +2,9 @@
 title: "Anoche, muy bonito y todo, pero"
 slug: "anoche-muy-bonito-y-todo-pero"
 date: "2026-09-15T17:53:00+00:00"
-updated_at: "2026-09-27T17:59:10.544663+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/1000038985.webp"
+image: "https://img.barberenamimunicipio.top/1000038985.webp"
 video_url: null
 featured: false
 published: true

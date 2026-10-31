@@ -2,9 +2,9 @@
 title: "En una de sus transmisiones, Pepe Rueda Vallejo se refirió al tema “periodístico” que están ejerciendo algunas páginas"
 slug: "en-una-de-sus-transmisiones-pepe-rueda-vallejo-se-refirio-al"
 date: "2025-10-22T00:23:21+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122195496860318393.jpg"
+image: "https://img.barberenamimunicipio.top/122195496860318393.jpg"
 video_url: null
 featured: false
 published: true

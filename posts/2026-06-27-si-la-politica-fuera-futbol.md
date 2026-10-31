@@ -2,9 +2,9 @@
 title: "Si la política fuera fútbol"
 slug: "si-la-politica-fuera-futbol"
 date: "2026-06-27T15:59:22+00:00"
-updated_at: "2026-09-27T03:40:44.716213+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122220610604318393.jpg"
+image: "https://img.barberenamimunicipio.top/122220610604318393.jpg"
 video_url: null
 featured: false
 published: true

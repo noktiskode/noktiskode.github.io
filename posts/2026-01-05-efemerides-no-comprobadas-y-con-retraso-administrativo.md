@@ -2,9 +2,9 @@
 title: "Efemérides (No comprobadas y con retraso administrativo)"
 slug: "efemerides-no-comprobadas-y-con-retraso-administrativo"
 date: "2026-01-05T16:00:05+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122203300712318393.jpg"
+image: "https://img.barberenamimunicipio.top/122203300712318393.jpg"
 video_url: null
 featured: false
 published: true

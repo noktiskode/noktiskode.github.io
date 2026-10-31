@@ -2,9 +2,9 @@
 title: "¿Agua o combustible?"
 slug: "agua-o-combustible"
 date: "2026-07-16T23:17:08+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222487662318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222487662318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -18,4 +18,4 @@ Nos escribe un vecino:
 
 ¿Ustedes también están recibiendo el agua así o solo le pasa a este vecino?
 
-![](/images/blog/122222487704318393.jpg)
+![](https://img.barberenamimunicipio.top/122222487704318393.jpg)

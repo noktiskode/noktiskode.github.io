@@ -2,9 +2,9 @@
 title: "En la calle El Calvario, un vecino encontró algo terrible"
 slug: "en-la-calle-el-calvario-un-vecino-encontro-algo-terrible"
 date: "2025-11-11T17:24:57+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122197613978318393.jpg"
+image: "https://img.barberenamimunicipio.top/122197613978318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -35,4 +35,4 @@ Y si aún se niegan, se puede pedir un allanamiento.
   Así que, si vemos maltrato, no nos quedemos solo con comentar o compartir.
 Denunciar salva vidas.
 
-![](/images/blog/122197614020318393.jpg)
+![](https://img.barberenamimunicipio.top/122197614020318393.jpg)

@@ -2,9 +2,9 @@
 title: "Tres exdiputados podrían pagar hasta 6 años y medio por tráfico de influencias"
 slug: "tres-exdiputados-podrian-pagar-hasta-6-anos-y-medio-por-trafico"
 date: "2026-07-22T18:52:03+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122223037820318393.jpg"
+image: "https://img.barberenamimunicipio.top/122223037820318393.jpg"
 video_url: null
 featured: false
 published: true

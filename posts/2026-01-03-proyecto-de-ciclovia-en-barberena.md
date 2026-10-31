@@ -2,9 +2,9 @@
 title: "Proyecto de ciclovía en Barberena"
 slug: "proyecto-de-ciclovia-en-barberena"
 date: "2026-01-03T15:00:21+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122203080164318393.jpg"
+image: "https://img.barberenamimunicipio.top/122203080164318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -25,6 +25,6 @@ En respuesta a comentarios que señalan que se “sacan conclusiones sin fundame
 
 Los vecinos de Barberena tienen todo el derecho de expresar su punto de vista sobre el uso de los recursos públicos.
 
-![](/images/blog/122203080158318393.jpg)
+![](https://img.barberenamimunicipio.top/122203080158318393.jpg)
 
-![](/images/blog/122203080170318393.jpg)
+![](https://img.barberenamimunicipio.top/122203080170318393.jpg)

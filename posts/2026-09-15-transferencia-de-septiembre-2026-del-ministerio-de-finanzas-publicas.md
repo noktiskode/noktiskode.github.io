@@ -2,9 +2,9 @@
 title: "Transferencia de septiembre 2026 del Ministerio de Finanzas Públicas"
 slug: "transferencia-de-septiembre-2026-del-ministerio-de-finanzas-publicas"
 date: "2026-09-15T20:30:00+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/1000038995.png"
+image: "https://img.barberenamimunicipio.top/1000038995.png"
 video_url: null
 featured: false
 published: true

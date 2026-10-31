@@ -2,9 +2,9 @@
 title: "\"Pepe, no servís\""
 slug: "pepe-no-servis"
 date: "2026-10-10T19:00:00+00:00"
-updated_at: "2026-10-11T01:25:44.802123+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791681732763-mcplup.webp"
+image: "https://img.barberenamimunicipio.top/1791681732763-mcplup.webp"
 video_url: "https://www.facebook.com/reel/1905092610452273/"
 featured: false
 published: true

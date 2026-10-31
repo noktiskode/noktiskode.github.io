@@ -2,7 +2,7 @@
 title: "\"La Ladrillera en el aire\" Vecino denuncia"
 slug: "la-ladrillera-en-el-aire-vecino-denuncia"
 date: "2026-05-11T16:53:20+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

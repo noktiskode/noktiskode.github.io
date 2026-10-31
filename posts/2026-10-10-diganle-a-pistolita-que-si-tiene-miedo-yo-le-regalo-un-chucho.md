@@ -2,9 +2,9 @@
 title: "\"Díganle a Pistolita que si tiene miedo, yo le regalo un chucho\""
 slug: "diganle-a-pistolita-que-si-tiene-miedo-yo-le-regalo-un-chucho"
 date: "2026-10-10T22:00:00+00:00"
-updated_at: "2026-10-11T01:31:07.085744+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791682103503-lhmlbs.webp"
+image: "https://img.barberenamimunicipio.top/1791682103503-lhmlbs.webp"
 video_url: "https://www.facebook.com/reel/1805740260773919/"
 featured: false
 published: true

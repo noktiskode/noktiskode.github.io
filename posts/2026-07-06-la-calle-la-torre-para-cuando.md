@@ -2,9 +2,9 @@
 title: "¿La calle la torre, para cuándo?"
 slug: "la-calle-la-torre-para-cuando"
 date: "2026-07-06T17:36:55+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221439792318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221439792318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,10 +19,10 @@ Un vecino pregunta lo siguiente:
 
 Ahora que llovió, el lavado hizo que toda la arena amontonada quedara ahí."
 
-![](/images/blog/122221439834318393.jpg)
+![](https://img.barberenamimunicipio.top/122221439834318393.jpg)
 
-![](/images/blog/122221439876318393.jpg)
+![](https://img.barberenamimunicipio.top/122221439876318393.jpg)
 
-![](/images/blog/122221439918318393.jpg)
+![](https://img.barberenamimunicipio.top/122221439918318393.jpg)
 
-![](/images/blog/122221439966318393.jpg)
+![](https://img.barberenamimunicipio.top/122221439966318393.jpg)

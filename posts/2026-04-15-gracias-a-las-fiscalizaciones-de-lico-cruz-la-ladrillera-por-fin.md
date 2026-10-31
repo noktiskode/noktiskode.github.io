@@ -2,9 +2,9 @@
 title: "Gracias a las fiscalizaciones de lico cruz, la ladrillera por fin es pavimentada"
 slug: "gracias-a-las-fiscalizaciones-de-lico-cruz-la-ladrillera-por-fin"
 date: "2026-04-15T16:02:19+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122213088320318393.jpg"
+image: "https://img.barberenamimunicipio.top/122213088320318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,6 +23,6 @@ Algunos trabajadores municipales madrugaron a comentar positivamente estos traba
 
 ¡Hay alegría en las calles de mi barrio: huele a pino y hay foquitos por doquier!
 
-![](/images/blog/122213088362318393.jpg)
+![](https://img.barberenamimunicipio.top/122213088362318393.jpg)
 
-![](/images/blog/122213088404318393.jpg)
+![](https://img.barberenamimunicipio.top/122213088404318393.jpg)

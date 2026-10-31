@@ -2,9 +2,9 @@
 title: "Noticia confirmada"
 slug: "noticia-confirmada"
 date: "2026-01-14T22:00:56+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122204339180318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204339180318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -24,4 +24,4 @@ Usar el nombre y la biografía de un artista que ya no está con nosotros para p
 De todas formas, si deciden ir, canten y bailen, pero recuerden: el concierto ya lo pagamos todos colectivamente con nuestros impuestos. No es “gratis”.
 Vayan sabiendo que lo que verán es un grupo tributo, no la leyenda que el empleado municipal pretende venderles.
 
-![](/images/blog/122204339228318393.jpg)
+![](https://img.barberenamimunicipio.top/122204339228318393.jpg)

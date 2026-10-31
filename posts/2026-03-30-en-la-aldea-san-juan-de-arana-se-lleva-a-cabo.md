@@ -2,9 +2,9 @@
 title: "En la aldea San Juan de Arana se lleva a cabo hoy el caldo de patas con motivo del Día de Verano 2026."
 slug: "en-la-aldea-san-juan-de-arana-se-lleva-a-cabo"
 date: "2026-03-30T18:37:12+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211554072318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211554072318393.jpg"
 video_url: null
 featured: false
 published: true

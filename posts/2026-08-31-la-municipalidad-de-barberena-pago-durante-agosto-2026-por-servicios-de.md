@@ -2,9 +2,9 @@
 title: "La Municipalidad de Barberena pagó durante agosto 2026 por servicios de divulgación a dos medios locales: A Barbe"
 slug: "la-municipalidad-de-barberena-pago-durante-agosto-2026-por-servicios-de"
 date: "2026-08-31T06:00:45+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122226998432318393.jpg"
+image: "https://img.barberenamimunicipio.top/122226998432318393.jpg"
 video_url: null
 featured: false
 published: true

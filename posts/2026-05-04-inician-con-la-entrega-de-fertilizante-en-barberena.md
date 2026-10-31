@@ -2,9 +2,9 @@
 title: "Inician con la entrega de fertilizante en Barberena"
 slug: "inician-con-la-entrega-de-fertilizante-en-barberena"
 date: "2026-05-04T20:07:41+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122215149536318393.jpg"
+image: "https://img.barberenamimunicipio.top/122215149536318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -26,4 +26,4 @@ El fertilizante es de buena marca, calidad Pelícano (DISAGRO). Si por pura nece
 
 NOG: 29534224
 
-![](/images/blog/122215149854318393.jpg)
+![](https://img.barberenamimunicipio.top/122215149854318393.jpg)

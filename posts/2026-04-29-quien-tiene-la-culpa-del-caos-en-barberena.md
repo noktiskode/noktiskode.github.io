@@ -2,9 +2,9 @@
 title: "¿Quién tiene la culpa del caos en Barberena?"
 slug: "quien-tiene-la-culpa-del-caos-en-barberena"
 date: "2026-04-29T07:32:01+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122214578726318393.jpg"
+image: "https://img.barberenamimunicipio.top/122214578726318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,4 +23,4 @@ Si pasas por ahí a diario, sabes exactamente de lo que hablamos...
 
 Ojalá la PMT de Barberena pueda hacer algo al respecto... ¿ustedes qué opinan?
 
-![](/images/blog/122214578768318393.jpg)
+![](https://img.barberenamimunicipio.top/122214578768318393.jpg)

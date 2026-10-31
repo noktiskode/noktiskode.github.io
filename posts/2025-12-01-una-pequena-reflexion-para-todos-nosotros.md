@@ -2,9 +2,9 @@
 title: "Una pequeña reflexión para todos nosotros"
 slug: "una-pequena-reflexion-para-todos-nosotros"
 date: "2025-12-01T21:14:10+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122199611690318393.jpg"
+image: "https://img.barberenamimunicipio.top/122199611690318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "El año del agua en Barberena"
 slug: "el-ano-del-agua-en-barberena"
 date: "2026-02-11T17:11:00+00:00"
-updated_at: "2026-09-27T03:48:30.770192+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122207016446318393.jpg"
+image: "https://img.barberenamimunicipio.top/122207016446318393.jpg"
 video_url: null
 featured: false
 published: true

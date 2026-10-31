@@ -2,9 +2,9 @@
 title: "Diputado Inés Castillo (jefe de la une)"
 slug: "diputado-ines-castillo-jefe-de-la-une"
 date: "2026-07-02T01:09:59+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221002254318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221002254318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -15,4 +15,4 @@ DIPUTADO INÉS CASTILLO (jefe de la UNE) le metió papel al Congreso este 1 de j
 
 Así el diputado del pueblo, jugando al fiscal ambiental con el resto del país.
 
-![](/images/blog/122221002296318393.jpg)
+![](https://img.barberenamimunicipio.top/122221002296318393.jpg)

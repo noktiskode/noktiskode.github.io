@@ -2,9 +2,9 @@
 title: "\"Fiscalización\" pavimentación Villa Graciela, Cuilapa"
 slug: "fiscalizacion-pavimentacion-villa-graciela-cuilapa"
 date: "2026-03-04T02:12:17+00:00"
-updated_at: "2026-09-27T03:40:42.936602+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122208988436318393.jpg"
+image: "https://img.barberenamimunicipio.top/122208988436318393.jpg"
 video_url: null
 featured: false
 published: true

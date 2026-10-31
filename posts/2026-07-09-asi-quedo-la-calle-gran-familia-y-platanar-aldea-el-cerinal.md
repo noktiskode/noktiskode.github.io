@@ -2,9 +2,9 @@
 title: "Así quedó la calle gran familia y platanar, aldea el cerinal"
 slug: "asi-quedo-la-calle-gran-familia-y-platanar-aldea-el-cerinal"
 date: "2026-07-09T22:31:46+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221784534318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221784534318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "Aldea San Nicolás: obra terminada al 100%"
 slug: "aldea-san-nicolas-obra-terminada-al-100"
 date: "2026-03-28T19:28:27+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211346094318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211346094318393.jpg"
 video_url: null
 featured: false
 published: true

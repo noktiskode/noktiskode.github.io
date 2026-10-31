@@ -2,9 +2,9 @@
 title: "Pila de las Cinco Calles"
 slug: "pila-de-las-cinco-calles"
 date: "2025-10-15T23:30:00+00:00"
-updated_at: "2026-09-30T22:52:10.66013+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790808655962-6g6lwd.webp"
+image: "https://img.barberenamimunicipio.top/1790808655962-6g6lwd.webp"
 video_url: "https://www.facebook.com/reel/1215918300373884/"
 featured: false
 published: true

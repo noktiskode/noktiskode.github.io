@@ -2,9 +2,9 @@
 title: "¿Y los diputados por Santa Rosa?"
 slug: "y-los-diputados-por-santa-rosa"
 date: "2026-09-04T23:03:00+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000037769.jpg"
+image: "https://img.barberenamimunicipio.top/1000037769.jpg"
 video_url: null
 featured: false
 published: true

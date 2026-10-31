@@ -2,9 +2,9 @@
 title: "Si tú, como yo, dependes de los buses para movilizarte a tu destino por trabajo o cualquier otra"
 slug: "si-tu-como-yo-dependes-de-los-buses-para-movilizarte-a"
 date: "2026-04-04T19:06:50+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212051670318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212051670318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "Vuelve el fertilizante 2026"
 slug: "vuelve-el-fertilizante-2026"
 date: "2026-04-24T04:45:17+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122214054044318393.jpg"
+image: "https://img.barberenamimunicipio.top/122214054044318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -31,4 +31,4 @@ Fotos: Proveedor del año pasado y listado de beneficiados por comunidad para es
 
 NOG 29534224
 
-![](/images/blog/122214054086318393.jpg)
+![](https://img.barberenamimunicipio.top/122214054086318393.jpg)

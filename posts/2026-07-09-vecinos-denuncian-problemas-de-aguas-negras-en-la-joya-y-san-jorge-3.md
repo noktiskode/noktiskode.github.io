@@ -2,7 +2,7 @@
 title: "Vecinos denuncian problemas de aguas negras en la joya y san jorge 3"
 slug: "vecinos-denuncian-problemas-de-aguas-negras-en-la-joya-y-san-jorge-3"
 date: "2026-07-09T17:32:59+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

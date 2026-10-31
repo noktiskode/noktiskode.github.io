@@ -2,9 +2,9 @@
 title: "Ayer fue la hija del “mejor alcalde” a fiscalizar los trabajos en la ladrillera"
 slug: "ayer-fue-la-hija-del-mejor-alcalde-a-fiscalizar-los-trabajos"
 date: "2026-05-20T18:08:57+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122216970182318393.jpg"
+image: "https://img.barberenamimunicipio.top/122216970182318393.jpg"
 video_url: null
 featured: false
 published: true

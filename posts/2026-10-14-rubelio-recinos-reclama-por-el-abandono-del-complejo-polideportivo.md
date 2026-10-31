@@ -2,9 +2,9 @@
 title: "Rubelio Recinos reclama por el abandono del Complejo Polideportivo"
 slug: "rubelio-recinos-reclama-por-el-abandono-del-complejo-polideportivo"
 date: "2026-10-14T17:00:00+00:00"
-updated_at: "2026-10-14T20:07:45.554113+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1792008294555-7jk30p.webp"
+image: "https://img.barberenamimunicipio.top/1792008294555-7jk30p.webp"
 video_url: null
 featured: true
 published: true

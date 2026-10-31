@@ -2,9 +2,9 @@
 title: "Avanzan trabajos en sector la llamarada, el cerinal"
 slug: "avanzan-trabajos-en-sector-la-llamarada-el-cerinal"
 date: "2026-07-07T22:23:09+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221576892318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221576892318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -17,4 +17,4 @@ El Cocode reporta actividad continua en el sector La Llamarada, El Cerinal, dond
 
 También se informa que hoy ingresó material para los trabajos programados en la zona.
 
-![](/images/blog/122221576940318393.jpg)
+![](https://img.barberenamimunicipio.top/122221576940318393.jpg)

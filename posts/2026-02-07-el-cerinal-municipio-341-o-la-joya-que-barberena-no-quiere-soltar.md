@@ -2,9 +2,9 @@
 title: "El Cerinal: ¿Municipio 341 o la joya que Barberena no quiere soltar?"
 slug: "el-cerinal-municipio-341-o-la-joya-que-barberena-no-quiere-soltar"
 date: "2026-02-07T23:46:43+00:00"
-updated_at: "2026-09-27T03:48:30.770192+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122206883312318393.jpg"
+image: "https://img.barberenamimunicipio.top/122206883312318393.jpg"
 video_url: null
 featured: false
 published: true

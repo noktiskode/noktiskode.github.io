@@ -2,9 +2,9 @@
 title: "Lico Cruz responde al alcalde: asegura que administraciones anteriores sí celebraron el Día del Niño"
 slug: "lico-cruz-responde-al-alcalde-por-el-dia-del-nino"
 date: "2026-10-07T16:00:00+00:00"
-updated_at: "2026-10-08T05:08:03.181111+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791400713518-24irt1.webp"
+image: "https://img.barberenamimunicipio.top/1791400713518-24irt1.webp"
 video_url: "https://www.facebook.com/reel/1454683820138781/"
 featured: true
 published: true

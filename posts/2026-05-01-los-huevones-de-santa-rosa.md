@@ -2,7 +2,7 @@
 title: "Los \"huevones\" de Santa Rosa"
 slug: "los-huevones-de-santa-rosa"
 date: "2026-05-01T09:50:48+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

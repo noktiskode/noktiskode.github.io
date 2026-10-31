@@ -2,9 +2,9 @@
 title: "Proyecto de pavimentación sector san jorge 4"
 slug: "proyecto-de-pavimentacion-sector-san-jorge-4"
 date: "2026-08-08T02:07:29+00:00"
-updated_at: "2026-09-27T03:40:45.378215+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122224637438318393.jpg"
+image: "https://img.barberenamimunicipio.top/122224637438318393.jpg"
 video_url: null
 featured: false
 published: true

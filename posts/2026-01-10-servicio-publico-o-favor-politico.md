@@ -2,9 +2,9 @@
 title: "¿Servicio público O favor político?"
 slug: "servicio-publico-o-favor-politico"
 date: "2026-01-10T02:29:23+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122203745258318393.jpg"
+image: "https://img.barberenamimunicipio.top/122203745258318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -32,4 +32,4 @@ Reconocemos que no todos los colaboradores son así, pero los pocos no están a 
 
  QUEREMOS EFICIENCIA EN LAS CALLES, NO ATAQUES EN REDES SOCIALES.
 
-![](/images/blog/122203745306318393.jpg)
+![](https://img.barberenamimunicipio.top/122203745306318393.jpg)

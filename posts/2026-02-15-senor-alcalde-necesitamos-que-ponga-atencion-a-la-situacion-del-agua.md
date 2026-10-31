@@ -2,9 +2,9 @@
 title: "Señor alcalde, necesitamos que ponga atención a la situación del agua acá en El Cerinal."
 slug: "senor-alcalde-necesitamos-que-ponga-atencion-a-la-situacion-del-agua"
 date: "2026-02-15T00:32:05+00:00"
-updated_at: "2026-09-27T03:40:42.58355+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122207327480318393.jpg"
+image: "https://img.barberenamimunicipio.top/122207327480318393.jpg"
 video_url: null
 featured: false
 published: true

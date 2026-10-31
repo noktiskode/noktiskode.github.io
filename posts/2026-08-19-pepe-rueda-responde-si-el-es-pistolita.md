@@ -2,7 +2,7 @@
 title: "Pepe Rueda responde si él es \"pistolita\""
 slug: "pepe-rueda-responde-si-el-es-pistolita"
 date: "2026-08-19T06:53:57+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

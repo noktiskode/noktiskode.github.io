@@ -2,9 +2,9 @@
 title: "Jorge Cruz, \"El Filósofo\""
 slug: "jorge-cruz-el-filosofo"
 date: "2026-10-07T20:00:00+00:00"
-updated_at: "2026-10-08T05:05:49.328593+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791435750690-bfadnw.webp"
+image: "https://img.barberenamimunicipio.top/1791435750690-bfadnw.webp"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "Tío chepe Y el nuevo pozo"
 slug: "tio-chepe-y-el-nuevo-pozo"
 date: "2026-03-29T20:05:37+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211450902318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211450902318393.jpg"
 video_url: null
 featured: false
 published: true

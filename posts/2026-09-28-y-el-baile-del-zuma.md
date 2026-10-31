@@ -2,9 +2,9 @@
 title: "¿Y el baile del Zuma?"
 slug: "y-el-baile-del-zuma"
 date: "2026-09-28T19:08:00+00:00"
-updated_at: "2026-09-29T06:50:22.210334+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790622553911-3j12i9.webp"
+image: "https://img.barberenamimunicipio.top/1790622553911-3j12i9.webp"
 video_url: "https://www.facebook.com/reel/1720051832420414/"
 featured: true
 published: true

@@ -2,9 +2,9 @@
 title: "El tren de aseo municipal"
 slug: "el-tren-de-aseo-municipal"
 date: "2026-03-31T23:27:23+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211672980318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211672980318393.jpg"
 video_url: null
 featured: false
 published: true

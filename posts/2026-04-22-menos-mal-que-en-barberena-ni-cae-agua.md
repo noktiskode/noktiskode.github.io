@@ -2,7 +2,7 @@
 title: "¡Menos mal que en Barberena ni cae agua!"
 slug: "menos-mal-que-en-barberena-ni-cae-agua"
 date: "2026-04-22T23:00:29+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

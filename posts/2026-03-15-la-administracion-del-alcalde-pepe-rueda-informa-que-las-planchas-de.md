@@ -2,9 +2,9 @@
 title: "La administración del alcalde pepe rueda informa que las planchas de pavimento que estaban agrietadas ya fueron restauradas"
 slug: "la-administracion-del-alcalde-pepe-rueda-informa-que-las-planchas-de"
 date: "2026-03-15T16:00:02+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122210067332318393.jpg"
+image: "https://img.barberenamimunicipio.top/122210067332318393.jpg"
 video_url: null
 featured: false
 published: true

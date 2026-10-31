@@ -2,9 +2,9 @@
 title: "Rubelio recinos realiza entrega de verduras en arimany"
 slug: "rubelio-recinos-realiza-entrega-de-verduras-en-arimany"
 date: "2026-07-28T21:35:36+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122223578474318393.jpg"
+image: "https://img.barberenamimunicipio.top/122223578474318393.jpg"
 video_url: null
 featured: false
 published: true

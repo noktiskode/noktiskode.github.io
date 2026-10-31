@@ -2,9 +2,9 @@
 title: "Lico Cruz denuncia la falta de planificación en Barberena y asegura que la pavimentación de La Ladrillera lleva"
 slug: "lico-cruz-denuncia-la-falta-de-planificacion-en-barberena-y-asegura"
 date: "2026-03-26T08:34:54+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211137216318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211137216318393.jpg"
 video_url: null
 featured: false
 published: true

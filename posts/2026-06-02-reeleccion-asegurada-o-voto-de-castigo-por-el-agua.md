@@ -2,9 +2,9 @@
 title: "¿Reelección asegurada O voto de castigo por el agua?"
 slug: "reeleccion-asegurada-o-voto-de-castigo-por-el-agua"
 date: "2026-06-02T16:00:15+00:00"
-updated_at: "2026-09-27T03:40:44.416992+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122218252232318393.jpg"
+image: "https://img.barberenamimunicipio.top/122218252232318393.jpg"
 video_url: null
 featured: false
 published: true

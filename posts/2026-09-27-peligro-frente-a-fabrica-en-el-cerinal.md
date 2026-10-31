@@ -2,9 +2,9 @@
 title: "Peligro frente a fabrica en El Cerinal"
 slug: "peligro-frente-a-fabrica-en-el-cerinal"
 date: "2026-09-27T20:55:00+00:00"
-updated_at: "2026-09-28T22:11:02.143756+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790633456976-am9jdr.webp"
+image: "https://img.barberenamimunicipio.top/1790633456976-am9jdr.webp"
 video_url: "https://www.facebook.com/reel/1758845736248886/"
 featured: false
 published: true

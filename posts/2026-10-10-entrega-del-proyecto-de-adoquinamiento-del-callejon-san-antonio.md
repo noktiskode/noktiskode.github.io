@@ -2,9 +2,9 @@
 title: "Entrega del proyecto de adoquinamiento del Callejón San Antonio"
 slug: "entrega-del-proyecto-de-adoquinamiento-del-callejon-san-antonio"
 date: "2026-10-10T16:30:00+00:00"
-updated_at: "2026-10-11T01:53:50.304234+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791683413812-y0ganf.webp"
+image: "https://img.barberenamimunicipio.top/1791683413812-y0ganf.webp"
 video_url: null
 featured: false
 published: true

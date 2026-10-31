@@ -2,7 +2,7 @@
 title: "El diputado por Santa Rosa, Ricardo Alarcón, dice que hace el videíto para que lo empecemos a conocer"
 slug: "el-diputado-por-santa-rosa-ricardo-alarcon-dice-que-hace-el"
 date: "2026-06-10T21:08:56+00:00"
-updated_at: "2026-09-27T03:40:44.416992+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

@@ -2,9 +2,9 @@
 title: "Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo"
 slug: "segun-publico-mass-noticias-gt-mientras-el-alcalde-de-santa-cruz"
 date: "2026-09-12T20:05:40+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122228297372318393.jpg"
+image: "https://img.barberenamimunicipio.top/122228297372318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "La paradoja del alcalde"
 slug: "la-paradoja-del-alcalde"
 date: "2026-10-01T17:15:00+00:00"
-updated_at: "2026-10-01T17:18:52.444695+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790875005927-9ga8c6.webp"
+image: "https://img.barberenamimunicipio.top/1790875005927-9ga8c6.webp"
 video_url: null
 featured: true
 published: true

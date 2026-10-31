@@ -2,9 +2,9 @@
 title: "El cerinal: beneficios y desafíos de convertirse en municipio"
 slug: "el-cerinal-beneficios-y-desafios-de-convertirse-en-municipio"
 date: "2026-01-15T16:00:02+00:00"
-updated_at: "2026-09-27T03:40:41.691733+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122204413916318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204413916318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -39,4 +39,4 @@ Hay vecinos que ven la autonomía como una oportunidad y otros que consideran qu
 
 Al final, todos queremos lo mismo: que El Cerinal viva mejor, decida lo que decida.
 
-![](/images/blog/122204413910318393.jpg)
+![](https://img.barberenamimunicipio.top/122204413910318393.jpg)

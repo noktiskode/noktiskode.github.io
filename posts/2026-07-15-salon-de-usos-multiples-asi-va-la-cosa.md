@@ -2,9 +2,9 @@
 title: "Salón de usos múltiples, así va la cosa"
 slug: "salon-de-usos-multiples-asi-va-la-cosa"
 date: "2026-07-15T23:59:56+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222390960318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222390960318393.jpg"
 video_url: null
 featured: false
 published: true

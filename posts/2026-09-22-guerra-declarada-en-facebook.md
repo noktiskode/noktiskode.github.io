@@ -2,9 +2,9 @@
 title: "Guerra declarada (en Facebook)"
 slug: "guerra-declarada-en-facebook"
 date: "2026-09-22T01:00:00+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000042073.webp"
+image: "https://img.barberenamimunicipio.top/1000042073.webp"
 video_url: null
 featured: true
 published: true

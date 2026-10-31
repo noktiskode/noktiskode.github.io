@@ -2,9 +2,9 @@
 title: "El cerinal molestia por trabajos detenidos en el jocote"
 slug: "el-cerinal-molestia-por-trabajos-detenidos-en-el-jocote"
 date: "2026-03-24T14:00:02+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122210939036318393.jpg"
+image: "https://img.barberenamimunicipio.top/122210939036318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,6 +23,6 @@ Esta situación afecta especialmente a personas de la tercera edad, dificulta el
 
 Los vecinos piden que se retomen los trabajos lo antes posible o que, al menos, se rellenen las zanjas para evitar más problemas.
 
-![](/images/blog/122210939030318393.jpg)
+![](https://img.barberenamimunicipio.top/122210939030318393.jpg)
 
-![](/images/blog/122210939042318393.jpg)
+![](https://img.barberenamimunicipio.top/122210939042318393.jpg)

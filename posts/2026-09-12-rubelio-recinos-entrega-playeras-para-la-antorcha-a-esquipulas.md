@@ -2,9 +2,9 @@
 title: "Rubelio Recinos entrega playeras para la antorcha a Esquipulas"
 slug: "rubelio-recinos-entrega-playeras-para-la-antorcha-a-esquipulas"
 date: "2026-09-12T17:44:00+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/1000037876.webp"
+image: "https://img.barberenamimunicipio.top/1000037876.webp"
 video_url: null
 featured: false
 published: true

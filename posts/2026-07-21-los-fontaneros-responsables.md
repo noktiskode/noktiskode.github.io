@@ -2,9 +2,9 @@
 title: "Los fontaneros responsables"
 slug: "los-fontaneros-responsables"
 date: "2026-07-21T22:09:27+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222943260318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222943260318393.jpg"
 video_url: null
 featured: false
 published: true

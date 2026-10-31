@@ -2,9 +2,9 @@
 title: "Rubelio entrega víveres"
 slug: "rubelio-entrega-viveres"
 date: "2026-09-29T02:04:00+00:00"
-updated_at: "2026-09-29T02:07:52.698812+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790647470643-bqohwa.webp"
+image: "https://img.barberenamimunicipio.top/1790647470643-bqohwa.webp"
 video_url: null
 featured: false
 published: true

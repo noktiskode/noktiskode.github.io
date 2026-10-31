@@ -2,9 +2,9 @@
 title: "Urgente: se solicita ayuda por perros maltratados en El Pino."
 slug: "urgente-se-solicita-ayuda-por-perros-maltratados-en-el-pino"
 date: "2025-11-27T02:00:41+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122199133562318393.jpg"
+image: "https://img.barberenamimunicipio.top/122199133562318393.jpg"
 video_url: null
 featured: false
 published: true

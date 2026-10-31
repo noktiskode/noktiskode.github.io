@@ -2,7 +2,7 @@
 title: "El alcalde Pepe Rueda consiguió un saludo para Barberena de parte de la Banda MS."
 slug: "el-alcalde-pepe-rueda-consiguio-un-saludo-para-barberena-de-parte"
 date: "2026-03-26T19:21:48+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

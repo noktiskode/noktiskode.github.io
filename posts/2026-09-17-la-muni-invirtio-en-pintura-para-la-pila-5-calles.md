@@ -2,9 +2,9 @@
 title: "La Muni invirtió en pintura para la Pila 5 Calles"
 slug: "la-muni-invirtio-en-pintura-para-la-pila-5-calles"
 date: "2026-09-17T18:11:00+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/1000041136.jpg"
+image: "https://img.barberenamimunicipio.top/1000041136.jpg"
 video_url: null
 featured: true
 published: true
@@ -15,7 +15,7 @@ Según orden de compra No. 53433920, publicada en Guatecompras el 10 de septiemb
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000041143.webp" alt="Orden de compra No. 53433920" style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000041143.webp" alt="Orden de compra No. 53433920" style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Orden de compra No. 53433920
 </figcaption>

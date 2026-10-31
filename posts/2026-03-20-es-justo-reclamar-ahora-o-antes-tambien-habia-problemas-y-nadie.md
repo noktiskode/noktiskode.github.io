@@ -2,7 +2,7 @@
 title: "¿Es justo reclamar ahora O antes también había problemas Y nadie decía nada?"
 slug: "es-justo-reclamar-ahora-o-antes-tambien-habia-problemas-y-nadie"
 date: "2026-03-20T09:13:00+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
 image: null
 video_url: null

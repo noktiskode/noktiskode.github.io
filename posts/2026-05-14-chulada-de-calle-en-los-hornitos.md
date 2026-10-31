@@ -2,9 +2,9 @@
 title: "Chulada de calle en Los Hornitos"
 slug: "chulada-de-calle-en-los-hornitos"
 date: "2026-05-14T19:55:33+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122216310692318393.jpg"
+image: "https://img.barberenamimunicipio.top/122216310692318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -17,4 +17,4 @@ El alcalde Pepe Rueda anduvo supervisando los trabajos este día en Los Hornitos
 
 Hubiera aprovechado también para hacerles un llamado a que fueran a ver el socavamiento que hay en el libramiento Barberena-El Cerinal y así presionar más al CIV, ya que dicho socavamiento cobró la vida de un joven el día de ayer.
 
-![](/images/blog/122216310734318393.jpg)
+![](https://img.barberenamimunicipio.top/122216310734318393.jpg)

@@ -2,9 +2,9 @@
 title: "Señor alcalde, necesitamos de su ayuda"
 slug: "senor-alcalde-necesitamos-de-su-ayuda"
 date: "2025-10-07T04:27:00+00:00"
-updated_at: "2026-09-30T22:21:12.742323+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790806750698-zik32i.webp"
+image: "https://img.barberenamimunicipio.top/1790806750698-zik32i.webp"
 video_url: "https://www.facebook.com/reel/1845337526190681/"
 featured: false
 published: true

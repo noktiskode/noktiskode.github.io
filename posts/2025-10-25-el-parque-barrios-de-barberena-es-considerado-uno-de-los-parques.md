@@ -2,7 +2,7 @@
 title: "El Parque Barrios de Barberena es considerado uno de los parques más antiguos de Santa Rosa, Guatemala."
 slug: "el-parque-barrios-de-barberena-es-considerado-uno-de-los-parques"
 date: "2025-10-25T06:36:26+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
 image: null
 video_url: null

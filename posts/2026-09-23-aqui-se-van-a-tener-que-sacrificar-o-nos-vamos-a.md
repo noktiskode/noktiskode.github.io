@@ -2,9 +2,9 @@
 title: "Aquí se van a tener que sacrificar o nos VAMOS a tener que sacrificar todos"
 slug: "aqui-se-van-a-tener-que-sacrificar-o-nos-vamos-a"
 date: "2026-09-23T03:38:00+00:00"
-updated_at: "2026-10-01T17:20:50.749208+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000042303.webp"
+image: "https://img.barberenamimunicipio.top/1000042303.webp"
 video_url: null
 featured: false
 published: true

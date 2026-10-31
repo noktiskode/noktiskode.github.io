@@ -2,9 +2,9 @@
 title: "Muni firma dos convenios para el mejoramiento de dos calles en El Cerinal"
 slug: "muni-firma-dos-convenios-para-el-mejoramiento-de-dos-calles-en-el-cerinal"
 date: "2026-10-15T17:28:00+00:00"
-updated_at: "2026-10-15T18:31:05.560948+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1792089055459-e3jyjs.webp"
+image: "https://img.barberenamimunicipio.top/1792089055459-e3jyjs.webp"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "Historia de la Pila de las 5 Calles"
 slug: "historia-de-la-pila-de-las-5-calles"
 date: "2026-06-11T16:00:00+00:00"
-updated_at: "2026-09-27T03:40:44.416992+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/1000038999.jpg"
+image: "https://img.barberenamimunicipio.top/1000038999.jpg"
 video_url: null
 featured: false
 published: true
@@ -14,7 +14,7 @@ tags: ["Historia local", "Patrimonio", "Tradiciones", "Barberena", "Utzumazate",
 <div style="max-width:640px; margin:0 auto; padding: 2.5rem 1.2rem; font-family:'Lora', serif; color:222; line-height:1.8;">
 
   <figure style="margin-bottom:1.5rem;">
-    <img src="/images/blog/1788418785301.webp" alt="Las Cinco Calles, Barberena, 1942" style="width:100%; border-radius:8px;">
+    <img src="https://img.barberenamimunicipio.top/1788418785301.webp" alt="Las Cinco Calles, Barberena, 1942" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Las Cinco Calles, Barberena, 1942.</figcaption>
   </figure>
 
@@ -27,7 +27,7 @@ tags: ["Historia local", "Patrimonio", "Tradiciones", "Barberena", "Utzumazate",
   </h2>
 
   <figure style="margin-bottom:1.5rem;">
-    <img src="/images/blog/1788418884653.webp" alt="Mujeres lavando en la Pila de las Cinco Calles, fotografía histórica" style="width:100%; border-radius:8px;">
+    <img src="https://img.barberenamimunicipio.top/1788418884653.webp" alt="Mujeres lavando en la Pila de las Cinco Calles, fotografía histórica" style="width:100%; border-radius:8px;">
   </figure>
 
   <p>
@@ -55,7 +55,7 @@ tags: ["Historia local", "Patrimonio", "Tradiciones", "Barberena", "Utzumazate",
   </p>
 
   <figure style="margin: 1rem 0 1.5rem;">
-    <img src="/images/blog/20260311205854_001.webp" alt="Pila de las Cinco Calles, Barberena, fotografía de fecha incierta" style="width:100%; border-radius:8px;">
+    <img src="https://img.barberenamimunicipio.top/20260311205854_001.webp" alt="Pila de las Cinco Calles, Barberena, fotografía de fecha incierta" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">La Pila de las Cinco Calles en una fotografía más reciente que la de 1942, aunque de fecha exacta incierta.</figcaption>
   </figure>
 
@@ -68,7 +68,7 @@ tags: ["Historia local", "Patrimonio", "Tradiciones", "Barberena", "Utzumazate",
   </p>
 
   <figure style="margin: 1rem 0 1.5rem;">
-    <img src="/images/blog/695267470.webp" alt="Pila de las Cinco Calles, Barberena, en la actualidad" style="width:100%; border-radius:8px;">
+    <img src="https://img.barberenamimunicipio.top/695267470.webp" alt="Pila de las Cinco Calles, Barberena, en la actualidad" style="width:100%; border-radius:8px;">
     <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">La Pila de las Cinco Calles en la actualidad.</figcaption>
   </figure>
 

@@ -2,7 +2,7 @@
 title: "Vecinos solicitan el apoyo del alcalde"
 slug: "vecinos-solicitan-el-apoyo-del-alcalde"
 date: "2026-07-01T05:31:55+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

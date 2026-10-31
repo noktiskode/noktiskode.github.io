@@ -2,9 +2,9 @@
 title: "Rubelio anuncia que apoyará actividades de escuelita"
 slug: "rubelio-anuncia-que-apoyara-actividades-de-escuelita"
 date: "2026-09-05T17:42:00+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/1000037765.jpg"
+image: "https://img.barberenamimunicipio.top/1000037765.jpg"
 video_url: null
 featured: false
 published: true

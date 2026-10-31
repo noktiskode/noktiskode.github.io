@@ -2,9 +2,9 @@
 title: "Perfil con dos amigos agradece la bolsa de víveres"
 slug: "perfil-con-dos-amigos-agradece-la-bolsa-de-viveres"
 date: "2026-10-01T17:20:00+00:00"
-updated_at: "2026-10-08T05:06:57.492354+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790916643019-0ydysi.webp"
+image: "https://img.barberenamimunicipio.top/1790916643019-0ydysi.webp"
 video_url: "https://www.facebook.com/reel/1112333464519300/"
 featured: false
 published: true

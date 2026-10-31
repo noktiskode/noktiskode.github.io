@@ -2,9 +2,9 @@
 title: "Pepe Rueda es unionista"
 slug: "pepe-rueda-es-unionista"
 date: "2026-07-04T15:48:56+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221240808318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221240808318393.jpg"
 video_url: null
 featured: false
 published: true

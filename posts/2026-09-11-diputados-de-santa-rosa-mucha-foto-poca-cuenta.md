@@ -2,9 +2,9 @@
 title: "Diputados de Santa Rosa: mucha foto, poca cuenta"
 slug: "diputados-de-santa-rosa-mucha-foto-poca-cuenta"
 date: "2026-09-11T19:18:34+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122228184260318393.jpg"
+image: "https://img.barberenamimunicipio.top/122228184260318393.jpg"
 video_url: null
 featured: false
 published: true

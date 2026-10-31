@@ -2,9 +2,9 @@
 title: "La Ladrillera casi finalizada"
 slug: "la-ladrillera-casi-finalizada"
 date: "2026-07-10T01:00:20+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221829672318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221829672318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -21,4 +21,4 @@ Estamos a nada de la gran inauguración.
 
 NOG: 25579657
 
-![](/images/blog/122221829678318393.jpg)
+![](https://img.barberenamimunicipio.top/122221829678318393.jpg)

@@ -2,9 +2,9 @@
 title: "Pavimento nuevo en Arimany: 'Su terreno vale el doble', dice el alcalde"
 slug: "pavimento-nuevo-en-arimany-su-terreno-vale-el-doble-dice-el-alcalde"
 date: "2026-07-19T00:35:00+00:00"
-updated_at: "2026-10-17T08:53:46.814505+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222683688318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222683688318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,6 +19,6 @@ Hoy en sector Arimany:
 
 Hoy si usted compró en Q50 mil, más baboso usted si va a querer vender a lo mismo, porque hoy su terreno no vale Q50 mil sino que vale quizá el doble." Fueron algunas de las palabras del alcalde Pepe Rueda Vallejo.
 
-![](/images/blog/122222683730318393.jpg)
+![](https://img.barberenamimunicipio.top/122222683730318393.jpg)
 
-![](/images/blog/122222683772318393.jpg)
+![](https://img.barberenamimunicipio.top/122222683772318393.jpg)

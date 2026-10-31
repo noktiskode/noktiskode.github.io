@@ -2,9 +2,9 @@
 title: "Pepe Rueda regresa de sus vacaciones"
 slug: "pepe-rueda-regresa-de-sus-vacaciones"
 date: "2026-04-07T18:57:16+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212357514318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212357514318393.jpg"
 video_url: null
 featured: false
 published: true

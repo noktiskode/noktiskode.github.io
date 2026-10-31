@@ -2,9 +2,9 @@
 title: "Diputados del departamento de que buscan colocar a Molina Barreto como magistrado de la cc a pesar de constantemente"
 slug: "diputados-del-departamento-de-que-buscan-colocar-a-molina-barreto-como"
 date: "2026-03-05T20:52:39+00:00"
-updated_at: "2026-09-27T03:40:42.936602+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122209153382318393.jpg"
+image: "https://img.barberenamimunicipio.top/122209153382318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -27,6 +27,6 @@ No se dejen llevar por lo que dicen sus alcaldes. La mayoría son amigos de los 
 El próximo año tenemos la oportunidad de decirlo claro:
 NO A LA REELECCIÓN.
 
-![](/images/blog/122209153424318393.jpg)
+![](https://img.barberenamimunicipio.top/122209153424318393.jpg)
 
-![](/images/blog/122209153472318393.jpg)
+![](https://img.barberenamimunicipio.top/122209153472318393.jpg)

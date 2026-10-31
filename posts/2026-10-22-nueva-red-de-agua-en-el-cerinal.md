@@ -2,9 +2,9 @@
 title: "Trabajos en nueva red de distribución de agua en La Cuadra, El Cerinal"
 slug: "nueva-red-de-agua-en-el-cerinal"
 date: "2026-10-22T17:30:00+00:00"
-updated_at: "2026-10-22T22:50:41.792616+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1792709372319-x6nhql.webp"
+image: "https://img.barberenamimunicipio.top/1792709372319-x6nhql.webp"
 video_url: null
 featured: false
 published: true

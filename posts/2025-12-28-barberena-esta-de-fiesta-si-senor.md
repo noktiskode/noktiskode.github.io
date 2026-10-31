@@ -2,9 +2,9 @@
 title: "Barberena está de fiesta, ¡sí señor!"
 slug: "barberena-esta-de-fiesta-si-senor"
 date: "2025-12-28T22:28:09+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122202475964318393.jpg"
+image: "https://img.barberenamimunicipio.top/122202475964318393.jpg"
 video_url: null
 featured: false
 published: true

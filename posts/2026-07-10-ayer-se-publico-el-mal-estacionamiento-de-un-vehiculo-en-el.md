@@ -2,9 +2,9 @@
 title: "Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado."
 slug: "ayer-se-publico-el-mal-estacionamiento-de-un-vehiculo-en-el"
 date: "2026-07-10T21:58:56+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221913060318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221913060318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -20,6 +20,6 @@ Dejo fotos en las cuales se deja en evidencia que a los 'ricos' no se atreven a 
 Publicación original
 https://www.facebook.com/groups/1539917980028542/permalink/1925418324811837/?mibextid=rS40aB7S9Ucbxw6v
 
-![](/images/blog/122221913102318393.jpg)
+![](https://img.barberenamimunicipio.top/122221913102318393.jpg)
 
-![](/images/blog/122221913144318393.jpg)
+![](https://img.barberenamimunicipio.top/122221913144318393.jpg)

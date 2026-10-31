@@ -2,9 +2,9 @@
 title: "Se reporta un robo más en plaza Barberena"
 slug: "se-reporta-un-robo-mas-en-plaza-barberena"
 date: "2026-02-15T22:08:31+00:00"
-updated_at: "2026-09-27T03:40:42.58355+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122207419118318393.jpg"
+image: "https://img.barberenamimunicipio.top/122207419118318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,4 +23,4 @@ https://www.facebook.com/share/p/1AMCZaPkWF/
 
  ACTUALIZACIÓN: Ya se pronunció Plaza Barberena. Dicen que no, que es mentira que se hayan robado el vehículo mencionado.
 
-![](/images/blog/122207422844318393.jpg)
+![](https://img.barberenamimunicipio.top/122207422844318393.jpg)

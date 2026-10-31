@@ -2,9 +2,9 @@
 title: "Se busca a Sashi"
 slug: "se-busca-a-sashi"
 date: "2026-10-03T23:30:00+00:00"
-updated_at: "2026-10-07T06:33:58.921885+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791070444558-xhrkep.webp"
+image: "https://img.barberenamimunicipio.top/1791070444558-xhrkep.webp"
 video_url: null
 featured: false
 published: true

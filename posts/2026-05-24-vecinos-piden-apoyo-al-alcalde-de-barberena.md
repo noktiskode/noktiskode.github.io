@@ -2,7 +2,7 @@
 title: "Vecinos piden apoyo al alcalde de Barberena"
 slug: "vecinos-piden-apoyo-al-alcalde-de-barberena"
 date: "2026-05-24T16:36:04+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

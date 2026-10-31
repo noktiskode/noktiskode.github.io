@@ -2,9 +2,9 @@
 title: "Servicio social: hoy queremos pedir el apoyo"
 slug: "servicio-social-hoy-queremos-pedir-el-apoyo"
 date: "2026-03-24T01:05:21+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122210880374318393.jpg"
+image: "https://img.barberenamimunicipio.top/122210880374318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -29,4 +29,4 @@ O visitar a la abuelita en su casa, es por la tercera calle de Barberena, Barrio
 
 Ayudar también es compartir este mensaje para que llegue a más personas
 
-![](/images/blog/122210880422318393.jpg)
+![](https://img.barberenamimunicipio.top/122210880422318393.jpg)

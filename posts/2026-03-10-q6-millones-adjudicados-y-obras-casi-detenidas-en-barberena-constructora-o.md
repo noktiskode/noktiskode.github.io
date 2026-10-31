@@ -2,9 +2,9 @@
 title: "Q6 millones adjudicados Y obras casi detenidas en Barberena ¿constructora O destructora?"
 slug: "q6-millones-adjudicados-y-obras-casi-detenidas-en-barberena-constructora-o"
 date: "2026-03-10T16:04:54+00:00"
-updated_at: "2026-09-27T03:40:42.936602+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122209610132318393.jpg"
+image: "https://img.barberenamimunicipio.top/122209610132318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -47,4 +47,4 @@ Mientras tanto, ALBAÑILES SIGUEN SIN RECIBIR PAGO, y PADRES, MAESTROS Y ALUMNOS
 
 Esperamos que estas sean las ÚLTIMAS ADJUDICACIONES para esta empresa en BARBERENA.
 
-![](/images/blog/122209610126318393.jpg)
+![](https://img.barberenamimunicipio.top/122209610126318393.jpg)

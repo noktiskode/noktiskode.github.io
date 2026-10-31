@@ -2,9 +2,9 @@
 title: "Hoy le queremos encontrar defectos A todo"
 slug: "hoy-le-queremos-encontrar-defectos-a-todo"
 date: "2025-09-20T01:55:38+00:00"
-updated_at: "2026-09-27T03:48:29.797667+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122192081090318393.jpg"
+image: "https://img.barberenamimunicipio.top/122192081090318393.jpg"
 video_url: null
 featured: false
 published: true

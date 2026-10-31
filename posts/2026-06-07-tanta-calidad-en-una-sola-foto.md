@@ -2,9 +2,9 @@
 title: "Tanta calidad en una sola foto"
 slug: "tanta-calidad-en-una-sola-foto"
 date: "2026-06-07T18:39:46+00:00"
-updated_at: "2026-09-27T03:40:44.416992+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122218751672318393.jpg"
+image: "https://img.barberenamimunicipio.top/122218751672318393.jpg"
 video_url: null
 featured: false
 published: true

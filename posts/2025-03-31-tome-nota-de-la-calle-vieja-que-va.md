@@ -2,9 +2,9 @@
 title: "Tome nota de la calle vieja que va"
 slug: "tome-nota-de-la-calle-vieja-que-va"
 date: "2025-03-31T18:39:20+00:00"
-updated_at: "2026-09-27T03:32:48.574263+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122167039778318393.jpg"
+image: "https://img.barberenamimunicipio.top/122167039778318393.jpg"
 video_url: null
 featured: false
 published: true

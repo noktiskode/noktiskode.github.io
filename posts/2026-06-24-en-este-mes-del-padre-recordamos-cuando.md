@@ -2,7 +2,7 @@
 title: "En este mes del padre recordamos cuando"
 slug: "en-este-mes-del-padre-recordamos-cuando"
 date: "2026-06-24T22:02:27+00:00"
-updated_at: "2026-09-27T03:40:44.716213+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

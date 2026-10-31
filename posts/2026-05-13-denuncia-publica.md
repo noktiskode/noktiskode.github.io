@@ -2,9 +2,9 @@
 title: "Denuncia pública"
 slug: "denuncia-publica"
 date: "2026-05-13T23:47:18+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122216217968318393.jpg"
+image: "https://img.barberenamimunicipio.top/122216217968318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,4 +19,4 @@ Un vecino denuncia:
 
 Aparte del mal aspecto, esto podría convertirse en un foco de infecciones. En la esquina hay una cámara de la municipalidad; deberían identificar a la persona que fue a dejar ese perrito muerto ahí y ponerle una sanción”.
 
-![](/images/blog/122216218016318393.jpg)
+![](https://img.barberenamimunicipio.top/122216218016318393.jpg)

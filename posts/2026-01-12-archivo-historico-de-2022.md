@@ -2,9 +2,9 @@
 title: "Archivo histórico de 2022."
 slug: "archivo-historico-de-2022"
 date: "2026-01-12T22:33:01+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/122204131634318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204131634318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -21,4 +21,4 @@ ARCHIVO HISTÓRICO DE 2022.
 
 ​Barberena
 
-![](/images/blog/122204131682318393.jpg)
+![](https://img.barberenamimunicipio.top/122204131682318393.jpg)

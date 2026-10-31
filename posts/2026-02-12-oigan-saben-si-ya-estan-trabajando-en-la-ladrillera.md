@@ -2,9 +2,9 @@
 title: "Oigan, ¿saben si ya están trabajando en La Ladrillera?"
 slug: "oigan-saben-si-ya-estan-trabajando-en-la-ladrillera"
 date: "2026-02-12T16:00:52+00:00"
-updated_at: "2026-09-27T03:40:42.58355+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122207105102318393.jpg"
+image: "https://img.barberenamimunicipio.top/122207105102318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -24,4 +24,4 @@ Recordemos que el proyecto tiene un costo total de Q4,049,639.84, lo que equival
 
 Y por cierto, ¿alguien sabe algo sobre Constructora Molina?
 
-![](/images/blog/122207105108318393.jpg)
+![](https://img.barberenamimunicipio.top/122207105108318393.jpg)

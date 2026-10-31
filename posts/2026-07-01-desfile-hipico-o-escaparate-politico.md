@@ -2,9 +2,9 @@
 title: "¿Desfile hípico O escaparate político?"
 slug: "desfile-hipico-o-escaparate-politico"
 date: "2026-07-01T18:53:54+00:00"
-updated_at: "2026-09-27T03:40:44.716213+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/122220983402318393.jpg"
+image: "https://img.barberenamimunicipio.top/122220983402318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,8 +19,8 @@ Supuestamente era un desfile hípico. Pero entre colores amarillos y sombrillas 
 
 ¿Será que el TSE tiene algo que decir sobre actividades partidarias disfrazadas de tradición? Se lo dejamos de tarea.
 
-![](/images/blog/122220983450318393.jpg)
+![](https://img.barberenamimunicipio.top/122220983450318393.jpg)
 
-![](/images/blog/122220983492318393.jpg)
+![](https://img.barberenamimunicipio.top/122220983492318393.jpg)
 
-![](/images/blog/122220983540318393.jpg)
+![](https://img.barberenamimunicipio.top/122220983540318393.jpg)

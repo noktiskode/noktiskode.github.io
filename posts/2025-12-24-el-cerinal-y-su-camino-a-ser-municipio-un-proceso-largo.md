@@ -2,9 +2,9 @@
 title: "El cerinal y su camino a ser municipio: un proceso largo, cuestionado y aún sin respuestas"
 slug: "el-cerinal-y-su-camino-a-ser-municipio-un-proceso-largo"
 date: "2025-12-24T21:59:35+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122202066062318393.jpg"
+image: "https://img.barberenamimunicipio.top/122202066062318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -26,4 +26,4 @@ A esto se suma la percepción de que el tema ha sido retomado en distintos momen
 
 Hoy, con más de 30 mil habitantes, El Cerinal cumple varios de los requisitos legales para convertirse en municipio. Sin embargo, la discusión ya no se centra únicamente en lo legal, sino en quiénes lideran el proceso, con qué antecedentes y con qué garantías de que esta vez sí habrá resultados reales para la población.
 
-![](/images/blog/122202066104318393.jpg)
+![](https://img.barberenamimunicipio.top/122202066104318393.jpg)

@@ -2,9 +2,9 @@
 title: "Mejoramiento de la calle de ingreso al sector Medio Beso, Aldea El Colorado"
 slug: "mejoramiento-de-la-calle-de-ingreso-al-sector-medio-beso-aldea-el-colorado"
 date: "2026-10-13T19:30:00+00:00"
-updated_at: "2026-10-13T21:45:00.549876+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791927884103-5ljqde.webp"
+image: "https://img.barberenamimunicipio.top/1791927884103-5ljqde.webp"
 video_url: null
 featured: false
 published: true

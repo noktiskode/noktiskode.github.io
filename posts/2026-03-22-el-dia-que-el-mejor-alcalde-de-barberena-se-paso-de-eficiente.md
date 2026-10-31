@@ -2,7 +2,7 @@
 title: "El día que el mejor alcalde de barberena se pasó (de eficiente)"
 slug: "el-dia-que-el-mejor-alcalde-de-barberena-se-paso-de-eficiente"
 date: "2026-03-22T10:03:06+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

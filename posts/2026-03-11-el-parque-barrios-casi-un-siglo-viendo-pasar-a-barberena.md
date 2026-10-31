@@ -2,9 +2,9 @@
 title: "El Parque Barrios: casi un siglo viendo pasar a Barberena"
 slug: "el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena"
 date: "2026-03-11T16:00:00+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/1000031698.jpg"
+image: "https://img.barberenamimunicipio.top/1000031698.jpg"
 video_url: null
 featured: false
 published: true
@@ -17,7 +17,7 @@ El parque fue inaugurado en 1926, durante la administración de don Cesáreo de 
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000039579.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000039579.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Parque Barrios, durante los años 20. (Créditos: El Cuje de Mis Amores).
 </figcaption>
@@ -30,7 +30,7 @@ Pero el dato más chilero de todos es este: entre 1929 y 1930 apareció una este
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000039582.webp" alt="Estela del Parque Barrios" style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000039582.webp" alt="Estela del Parque Barrios" style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">La estela que está en el parque. (Créditos: Jorge Melgar Fotógrafo).
 </figcaption>
@@ -43,7 +43,7 @@ Casi un siglo después de su inauguración, el Parque Barrios sigue siendo lo qu
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000015276.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000015276.jpg" alt="Parque Barrios" style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Parque Barrios, en la actualidad. (Créditos: Me Gusta Santa Rosa).
 </figcaption>

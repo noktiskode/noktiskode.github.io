@@ -2,7 +2,7 @@
 title: "Hoy llovió gracias al alcalde"
 slug: "hoy-llovio-gracias-al-alcalde"
 date: "2026-05-21T23:57:28+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

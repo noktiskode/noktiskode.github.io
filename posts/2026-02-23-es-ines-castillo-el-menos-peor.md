@@ -2,9 +2,9 @@
 title: "¿Es Inés Castillo el menos peor?"
 slug: "es-ines-castillo-el-menos-peor"
 date: "2026-02-23T05:08:00+00:00"
-updated_at: "2026-10-04T08:46:00.618611+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122208138152318393.jpg"
+image: "https://img.barberenamimunicipio.top/122208138152318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "El problema con el agua"
 slug: "el-problema-con-el-agua"
 date: "2025-09-09T19:42:44+00:00"
-updated_at: "2026-09-27T03:32:48.574263+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122190980726318393.jpg"
+image: "https://img.barberenamimunicipio.top/122190980726318393.jpg"
 video_url: null
 featured: false
 published: true

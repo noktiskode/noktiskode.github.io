@@ -2,9 +2,9 @@
 title: "No hubo boicot."
 slug: "no-hubo-boicot"
 date: "2026-01-18T18:38:01+00:00"
-updated_at: "2026-09-27T03:40:41.691733+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122204704754318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204704754318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -31,8 +31,8 @@ Eso sí fue boicot. Barberena merece respeto y cuentas claras.
 
 cerifer santarosa barberena ELCERINAL Diaco GT
 
-![](/images/blog/122204704808318393.jpg)
+![](https://img.barberenamimunicipio.top/122204704808318393.jpg)
 
-![](/images/blog/122204704850318393.jpg)
+![](https://img.barberenamimunicipio.top/122204704850318393.jpg)
 
-![](/images/blog/122204704892318393.jpg)
+![](https://img.barberenamimunicipio.top/122204704892318393.jpg)

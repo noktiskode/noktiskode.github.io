@@ -2,9 +2,9 @@
 title: "Misa de réquiem Y velación de candelas"
 slug: "misa-de-requiem-y-velacion-de-candelas"
 date: "2026-06-20T15:59:46+00:00"
-updated_at: "2026-09-27T03:40:44.716213+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122219981630318393.jpg"
+image: "https://img.barberenamimunicipio.top/122219981630318393.jpg"
 video_url: null
 featured: false
 published: true

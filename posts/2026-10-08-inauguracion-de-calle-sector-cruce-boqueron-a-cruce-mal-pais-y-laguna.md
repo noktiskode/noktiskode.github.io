@@ -2,9 +2,9 @@
 title: "Inauguración de calle sector Cruce Boquerón a Cruce Mal País y Laguna"
 slug: "inauguracion-de-calle-sector-cruce-boqueron-a-cruce-mal-pais-y-laguna"
 date: "2026-10-08T16:00:00+00:00"
-updated_at: "2026-10-11T01:55:29.471628+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791506726448-r5yu6u.webp"
+image: "https://img.barberenamimunicipio.top/1791506726448-r5yu6u.webp"
 video_url: null
 featured: false
 published: true

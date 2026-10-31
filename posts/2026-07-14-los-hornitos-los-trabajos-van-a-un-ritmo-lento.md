@@ -2,9 +2,9 @@
 title: "Los Hornitos: los trabajos van a un ritmo lento"
 slug: "los-hornitos-los-trabajos-van-a-un-ritmo-lento"
 date: "2026-07-14T16:03:00+00:00"
-updated_at: "2026-10-17T08:55:15.192346+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222265488318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222265488318393.jpg"
 video_url: null
 featured: false
 published: true

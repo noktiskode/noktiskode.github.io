@@ -2,7 +2,7 @@
 title: "Aforo de pozo en el sector Calle Vieja"
 slug: "aforo-de-pozo-en-el-sector-calle-vieja"
 date: "2026-02-20T21:55:23+00:00"
-updated_at: "2026-09-27T03:40:42.58355+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

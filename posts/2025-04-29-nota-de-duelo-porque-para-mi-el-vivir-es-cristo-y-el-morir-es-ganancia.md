@@ -2,9 +2,9 @@
 title: "Nota de duelo: “Porque para mí el vivir es Cristo, y el morir es ganancia.”"
 slug: "nota-de-duelo-porque-para-mi-el-vivir-es-cristo-y-el-morir-es-ganancia"
 date: "2025-04-29T00:07:15+00:00"
-updated_at: "2026-09-27T03:32:48.574263+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122171686202318393.jpg"
+image: "https://img.barberenamimunicipio.top/122171686202318393.jpg"
 video_url: null
 featured: false
 published: true

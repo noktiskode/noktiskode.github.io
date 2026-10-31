@@ -2,7 +2,7 @@
 title: "Ya fue habilitado el paso en el sector de la panadería la dulce abuelita"
 slug: "ya-fue-habilitado-el-paso-en-el-sector-de-la-panaderia-la-dulce-abuelita"
 date: "2026-05-22T23:45:16+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

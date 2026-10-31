@@ -2,9 +2,9 @@
 title: "'De Corral de Piedra a \"de tishudos para tishudos\": la historia que no"
 slug: "de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no"
 date: "2026-05-18T16:00:00+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/1000039581.jpg"
+image: "https://img.barberenamimunicipio.top/1000039581.jpg"
 video_url: null
 featured: false
 published: true
@@ -17,7 +17,7 @@ La cosa cambia el 20 de diciembre de 1879, cuando por acuerdo gubernativo se cre
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000039580.jpg" alt="Entrada a Barberena," style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000039580.jpg" alt="Entrada a Barberena," style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Entrada a Barberena, década de los años cincuenta. (Créditos: El Cuje de Mis Amores).
 </figcaption>
@@ -32,7 +32,7 @@ Hoy Barberena es uno de los 14 municipios de Santa Rosa, con más de 47,000 habi
 
 <figure style="margin-bottom:1.5rem;">
 
-<img src="/images/blog/1000039578.jpg" alt="Barberena, desde el cielo" style="width:100%; border-radius:8px;">
+<img src="https://img.barberenamimunicipio.top/1000039578.jpg" alt="Barberena, desde el cielo" style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Foto: Don Dron Guatemala.</figcaption>
 
@@ -44,7 +44,7 @@ Según el Diccionario de guatemaltequismos de Lisandro Sandoval, "tishudo/a" se 
 
 <figure style="margin-bottom:1.5rem;">
 
- <img src="/images/blog/1000031699.jpg" alt="Entrada a Barberena, 1970." style="width:100%; border-radius:8px;">
+ <img src="https://img.barberenamimunicipio.top/1000031699.jpg" alt="Entrada a Barberena, 1970." style="width:100%; border-radius:8px;">
 
 <figcaption style="font-size:0.8rem; color:888; text-align:center; margin-top:0.4rem;">Entrada a Barberena, 1970.
 </figcaption>

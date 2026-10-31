@@ -2,9 +2,9 @@
 title: "El busto del lic. José de Barberena"
 slug: "el-busto-del-lic-jose-de-barberena"
 date: "2026-05-21T15:41:28+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/122217051914318393.jpg"
+image: "https://img.barberenamimunicipio.top/122217051914318393.jpg"
 video_url: null
 featured: false
 published: true

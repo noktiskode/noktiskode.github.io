@@ -2,9 +2,9 @@
 title: "La municipalidad de barberena continúa con la conexión de una nueva red de distribución de agua"
 slug: "la-municipalidad-de-barberena-continua-con-la-conexion-de-una-nueva"
 date: "2026-04-06T21:21:13+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212256426318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212256426318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,4 +19,4 @@ En días anteriores, los vecinos señalaron que las obras habían sido abandonad
 
 Hoy se observa que ya están sellando las zanjas, un avance positivo para la seguridad de la comunidad. El nuevo pozo se encuentra en su fase final, por lo que está cerca de ser concluido y entregado oficialmente.
 
-![](/images/blog/122212256468318393.jpg)
+![](https://img.barberenamimunicipio.top/122212256468318393.jpg)

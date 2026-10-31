@@ -2,9 +2,9 @@
 title: "Los mejores alcaldes celebraron el Día del Niño"
 slug: "los-mejores-alcaldes-celebraron-el-dia-del-nino"
 date: "2026-10-01T22:59:00+00:00"
-updated_at: "2026-10-08T05:07:42.853788+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790917324181-mjcy8o.webp"
+image: "https://img.barberenamimunicipio.top/1790917324181-mjcy8o.webp"
 video_url: null
 featured: false
 published: true

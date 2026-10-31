@@ -2,9 +2,9 @@
 title: "Aclaración sobre la presentación de “Los Caminantes” en El Cerinal"
 slug: "aclaracion-sobre-la-presentacion-de-los-caminantes-en-el-cerinal"
 date: "2026-01-13T16:58:06+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122204218850318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204218850318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -24,4 +24,4 @@ Al revisar información disponible públicamente, surge una diferencia que convi
 
 La claridad en la información contribuye a una mejor experiencia para el público.
 
-![](/images/blog/122204218910318393.jpg)
+![](https://img.barberenamimunicipio.top/122204218910318393.jpg)

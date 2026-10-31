@@ -2,9 +2,9 @@
 title: "Muchos quisiéramos que la pasarela de El Cerinal tuviera la estética de la de chiquimulilla (primera foto), pero"
 slug: "muchos-quisieramos-que-la-pasarela-de-el-cerinal-tuviera-la-estetica"
 date: "2026-04-30T20:40:30+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122214748538318393.jpg"
+image: "https://img.barberenamimunicipio.top/122214748538318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "\"señor alcalde pepe rueda vallejo y cocode de el cerinal"
 slug: "senor-alcalde-pepe-rueda-vallejo-y-cocode-de-el-cerinal"
 date: "2026-07-11T20:19:13+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222005922318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222005922318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,10 +19,10 @@ Por tal motivo, aquí ingresan camiones, pipas y vehículos grandes, y este call
 
 Dijo una vecina.
 
-![](/images/blog/122222005970318393.jpg)
+![](https://img.barberenamimunicipio.top/122222005970318393.jpg)
 
-![](/images/blog/122222006018318393.jpg)
+![](https://img.barberenamimunicipio.top/122222006018318393.jpg)
 
-![](/images/blog/122222006126318393.jpg)
+![](https://img.barberenamimunicipio.top/122222006126318393.jpg)
 
-![](/images/blog/122222006168318393.jpg)
+![](https://img.barberenamimunicipio.top/122222006168318393.jpg)

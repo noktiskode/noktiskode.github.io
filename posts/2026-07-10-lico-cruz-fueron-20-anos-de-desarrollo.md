@@ -2,9 +2,9 @@
 title: "Lico Cruz: \"fueron 20 años de desarrollo\""
 slug: "lico-cruz-fueron-20-anos-de-desarrollo"
 date: "2026-07-10T16:00:27+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221890734318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221890734318393.jpg"
 video_url: null
 featured: false
 published: true

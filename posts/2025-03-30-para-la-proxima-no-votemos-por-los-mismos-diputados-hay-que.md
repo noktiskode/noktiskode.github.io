@@ -2,7 +2,7 @@
 title: "Para la próxima no votemos por los mismos diputados, hay que darle la oportunidad a otros"
 slug: "para-la-proxima-no-votemos-por-los-mismos-diputados-hay-que"
 date: "2025-03-30T21:11:22+00:00"
-updated_at: "2026-09-27T03:32:48.574263+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
 image: null
 video_url: null

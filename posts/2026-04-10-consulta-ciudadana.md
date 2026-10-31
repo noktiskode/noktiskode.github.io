@@ -2,9 +2,9 @@
 title: "Consulta ciudadana"
 slug: "consulta-ciudadana"
 date: "2026-04-10T05:37:03+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212586726318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212586726318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,7 +2,7 @@
 title: "Hacen un llamado al alcalde Pepe Rueda"
 slug: "hacen-un-llamado-al-alcalde-pepe-rueda"
 date: "2026-05-26T02:07:21+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

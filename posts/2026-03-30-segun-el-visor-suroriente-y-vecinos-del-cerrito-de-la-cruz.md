@@ -2,9 +2,9 @@
 title: "Según el Visor Suroriente y vecinos del Cerrito de la Cruz, la situación está preocupante por ahí."
 slug: "segun-el-visor-suroriente-y-vecinos-del-cerrito-de-la-cruz"
 date: "2026-03-30T16:38:36+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211545726318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211545726318393.jpg"
 video_url: null
 featured: false
 published: true

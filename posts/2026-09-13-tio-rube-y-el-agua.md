@@ -2,9 +2,9 @@
 title: "Tío Rube, ¿y el agua?"
 slug: "tio-rube-y-el-agua"
 date: "2026-09-13T21:03:00+00:00"
-updated_at: "2026-09-27T03:40:45.883469+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000038487.webp"
+image: "https://img.barberenamimunicipio.top/1000038487.webp"
 video_url: null
 featured: false
 published: true

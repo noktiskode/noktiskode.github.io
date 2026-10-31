@@ -2,9 +2,9 @@
 title: "Así dicen que avanzan los trabajos de pavimentación en el sector de la ladrillera"
 slug: "asi-dicen-que-avanzan-los-trabajos-de-pavimentacion-en-el-sector"
 date: "2026-04-20T20:09:29+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122213707748318393.jpg"
+image: "https://img.barberenamimunicipio.top/122213707748318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,4 +19,4 @@ Según las mismas declaraciones, mañana martes 21 de abril por la madrugada se 
 
 Entonces, ¿cómo se puede hablar de un 95% si aún existen tramos pendientes de fundición?
 
-![](/images/blog/122213707796318393.jpg)
+![](https://img.barberenamimunicipio.top/122213707796318393.jpg)

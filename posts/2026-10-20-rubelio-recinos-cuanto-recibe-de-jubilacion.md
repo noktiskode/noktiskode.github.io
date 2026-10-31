@@ -2,9 +2,9 @@
 title: "Rubelio Recinos: ¿cuánto recibe de jubilación?"
 slug: "rubelio-recinos-cuanto-recibe-de-jubilacion"
 date: "2026-10-20T16:00:00+00:00"
-updated_at: "2026-10-20T22:19:01.822902+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1792534702528-qww93t.webp"
+image: "https://img.barberenamimunicipio.top/1792534702528-qww93t.webp"
 video_url: null
 featured: false
 published: true

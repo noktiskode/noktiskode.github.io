@@ -2,9 +2,9 @@
 title: "Semana Santa nos ha dejado estas dos"
 slug: "semana-santa-nos-ha-dejado-estas-dos"
 date: "2026-04-06T16:00:42+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212237724318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212237724318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,4 +19,4 @@ Según el informe No. 1 de la Municipalidad, al 9 de marzo ya reportaban un 34% 
 
 ¿Se han dado cuenta que al caminar sobre esta calle siente uno que se va a hundir?
 
-![](/images/blog/122212237760318393.jpg)
+![](https://img.barberenamimunicipio.top/122212237760318393.jpg)

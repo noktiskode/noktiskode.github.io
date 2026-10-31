@@ -2,9 +2,9 @@
 title: "Aldea el cerinal contará con un total de 5 pozos"
 slug: "aldea-el-cerinal-contara-con-un-total-de-5-pozos"
 date: "2025-09-18T08:14:29+00:00"
-updated_at: "2026-09-27T03:32:48.574263+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122191897352318393.jpg"
+image: "https://img.barberenamimunicipio.top/122191897352318393.jpg"
 video_url: null
 featured: false
 published: true

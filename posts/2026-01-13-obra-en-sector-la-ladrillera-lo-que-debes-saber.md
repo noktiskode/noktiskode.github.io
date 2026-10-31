@@ -2,9 +2,9 @@
 title: "Obra en sector la ladrillera – lo que debes saber"
 slug: "obra-en-sector-la-ladrillera-lo-que-debes-saber"
 date: "2026-01-13T22:34:53+00:00"
-updated_at: "2026-09-27T03:40:41.536337+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122204234762318393.jpg"
+image: "https://img.barberenamimunicipio.top/122204234762318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -42,6 +42,6 @@ Aunque a primera vista parezca una obra costosa, conecta con la carretera y, al 
 
  Gracias a todos por compartir! He actualizado los datos con las cifras exactas del SNIP (Q4,050,000.00) para que la fiscalización sea más precisa. Invito a las páginas que replicaron la info a actualizarla también; entre más informados estemos, mejor cuidamos nuestro municipio.
 
-![](/images/blog/122204234804318393.jpg)
+![](https://img.barberenamimunicipio.top/122204234804318393.jpg)
 
-![](/images/blog/122204234852318393.jpg)
+![](https://img.barberenamimunicipio.top/122204234852318393.jpg)

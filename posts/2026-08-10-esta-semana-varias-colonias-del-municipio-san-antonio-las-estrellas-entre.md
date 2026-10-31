@@ -2,9 +2,9 @@
 title: "Esta semana varias colonias del municipio —San Antonio, Las Estrellas, entre otras— recibieron abastecimiento de agua por medio"
 slug: "esta-semana-varias-colonias-del-municipio-san-antonio-las-estrellas-entre"
 date: "2026-08-10T19:37:35+00:00"
-updated_at: "2026-09-27T03:40:45.378215+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122224913276318393.jpg"
+image: "https://img.barberenamimunicipio.top/122224913276318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,9 +2,9 @@
 title: "El sargento Vallejo inauguró la señalización en el pozo colapsado, en el sector de la panadería La Dulce"
 slug: "el-sargento-vallejo-inauguro-la-senalizacion-en-el-pozo-colapsado-en"
 date: "2026-04-08T22:20:00+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212468148318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212468148318393.jpg"
 video_url: null
 featured: false
 published: true

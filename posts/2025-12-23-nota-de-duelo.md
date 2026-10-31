@@ -2,9 +2,9 @@
 title: "Nota de Duelo"
 slug: "nota-de-duelo"
 date: "2025-12-23T17:30:30+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122201947526318393.jpg"
+image: "https://img.barberenamimunicipio.top/122201947526318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -23,4 +23,4 @@ Que su recuerdo permanezca vivo entre quienes la conocieron y que encuentre desc
 
  Descansa en paz
 
-![](/images/blog/122201947568318393.jpg)
+![](https://img.barberenamimunicipio.top/122201947568318393.jpg)

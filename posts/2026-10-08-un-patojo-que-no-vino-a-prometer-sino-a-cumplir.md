@@ -2,9 +2,9 @@
 title: "\"Un patojo que no vino a prometer, sino a cumplir\""
 slug: "un-patojo-que-no-vino-a-prometer-sino-a-cumplir"
 date: "2026-10-08T21:30:00+00:00"
-updated_at: "2026-10-11T01:55:08.779772+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1791522413984-y3xawe.webp"
+image: "https://img.barberenamimunicipio.top/1791522413984-y3xawe.webp"
 video_url: "https://www.facebook.com/reel/28557012590614479/"
 featured: false
 published: true

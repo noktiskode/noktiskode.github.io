@@ -2,9 +2,9 @@
 title: "La Muni informa que normalizó el agua en el casco urbano tras dos semanas de reparaciones, y advierte sobre quienes \"intentan sabotear\" la distribución"
 slug: "agua-potable-en-barberena"
 date: "2026-10-29T21:00:00+00:00"
-updated_at: "2026-10-29T22:37:43.390973+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1793313417188-edh43f.webp"
+image: "https://img.barberenamimunicipio.top/1793313417188-edh43f.webp"
 video_url: null
 featured: false
 published: true

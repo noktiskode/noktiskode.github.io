@@ -2,9 +2,9 @@
 title: "Continúan los trabajos para mejorar la distribución del agua en aldea el cerinal"
 slug: "continuan-los-trabajos-para-mejorar-la-distribucion-del-agua-en-aldea"
 date: "2026-05-07T20:00:30+00:00"
-updated_at: "2026-09-27T03:40:43.88261+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122215489058318393.jpg"
+image: "https://img.barberenamimunicipio.top/122215489058318393.jpg"
 video_url: null
 featured: false
 published: true

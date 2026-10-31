@@ -2,9 +2,9 @@
 title: "El exalcalde Rubelio Recinos entregó ayer una libra de pescado a vecinos de Utzumazate, acompañado de su hija"
 slug: "el-exalcalde-rubelio-recinos-entrego-ayer-una-libra-de-pescado-a"
 date: "2026-08-15T17:47:18+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122225423978318393.jpg"
+image: "https://img.barberenamimunicipio.top/122225423978318393.jpg"
 video_url: null
 featured: false
 published: true

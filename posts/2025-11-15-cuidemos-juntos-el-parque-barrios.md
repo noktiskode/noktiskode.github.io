@@ -2,7 +2,7 @@
 title: "¡Cuidemos juntos el Parque Barrios!"
 slug: "cuidemos-juntos-el-parque-barrios"
 date: "2025-11-15T21:07:31+00:00"
-updated_at: "2026-09-27T03:40:40.923974+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

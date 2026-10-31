@@ -2,9 +2,9 @@
 title: "Que siempre no habrá desfile mañana"
 slug: "que-siempre-no-habra-desfile-manana"
 date: "2026-09-04T22:51:10+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122227470740318393.jpg"
+image: "https://img.barberenamimunicipio.top/122227470740318393.jpg"
 video_url: null
 featured: false
 published: true

@@ -2,7 +2,7 @@
 title: "Pepe Rueda vs. Lico Cruz"
 slug: "pepe-rueda-vs-lico-cruz"
 date: "2026-05-13T14:32:13+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

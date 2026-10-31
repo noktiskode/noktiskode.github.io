@@ -2,9 +2,9 @@
 title: "Hace poco más de cuatro meses, el alcalde Pepe Rueda publicaba una indirecta con tono de reproche hacia"
 slug: "hace-poco-mas-de-cuatro-meses-el-alcalde-pepe-rueda-publicaba"
 date: "2026-08-30T09:04:40+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122226900410318393.jpg"
+image: "https://img.barberenamimunicipio.top/122226900410318393.jpg"
 video_url: null
 featured: false
 published: true

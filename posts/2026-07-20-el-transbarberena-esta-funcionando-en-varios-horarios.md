@@ -2,9 +2,9 @@
 title: "¿El Transbarberena está funcionando? En varios horarios"
 slug: "el-transbarberena-esta-funcionando-en-varios-horarios"
 date: "2026-07-20T18:02:24+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122222844110318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222844110318393.jpg"
 video_url: null
 featured: false
 published: true

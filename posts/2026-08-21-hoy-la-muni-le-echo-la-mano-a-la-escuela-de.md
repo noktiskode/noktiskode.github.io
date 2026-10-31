@@ -2,9 +2,9 @@
 title: "Hoy la Muni le echó la mano a la Escuela de Párvulos de El Cerinal con el servicio"
 slug: "hoy-la-muni-le-echo-la-mano-a-la-escuela-de"
 date: "2026-08-21T20:32:46+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122226057536318393.jpg"
+image: "https://img.barberenamimunicipio.top/122226057536318393.jpg"
 video_url: null
 featured: false
 published: true

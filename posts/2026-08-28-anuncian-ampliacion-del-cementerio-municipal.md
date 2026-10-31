@@ -2,9 +2,9 @@
 title: "Anuncian ampliación del cementerio municipal"
 slug: "anuncian-ampliacion-del-cementerio-municipal"
 date: "2026-08-28T18:28:00+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/1000037775.jpg"
+image: "https://img.barberenamimunicipio.top/1000037775.jpg"
 video_url: null
 featured: false
 published: true

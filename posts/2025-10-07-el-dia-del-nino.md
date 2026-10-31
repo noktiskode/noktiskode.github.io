@@ -2,9 +2,9 @@
 title: "El día del niño"
 slug: "el-dia-del-nino"
 date: "2025-10-07T01:41:00+00:00"
-updated_at: "2026-09-30T22:14:55.583124+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790806453166-wvit9k.webp"
+image: "https://img.barberenamimunicipio.top/1790806453166-wvit9k.webp"
 video_url: "https://www.facebook.com/reel/4265010970422624/"
 featured: false
 published: true

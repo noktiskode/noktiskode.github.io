@@ -2,9 +2,9 @@
 title: "Incidente genera alarma entre vecinos"
 slug: "incidente-genera-alarma-entre-vecinos"
 date: "2025-12-18T19:45:00+00:00"
-updated_at: "2026-10-04T08:48:45.627957+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122201399882318393.jpg"
+image: "https://img.barberenamimunicipio.top/122201399882318393.jpg"
 video_url: null
 featured: false
 published: true

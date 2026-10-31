@@ -2,9 +2,9 @@
 title: "Sobre percepciones... y realidades"
 slug: "sobre-percepciones-y-realidades"
 date: "2025-12-03T02:04:54+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122199767636318393.jpg"
+image: "https://img.barberenamimunicipio.top/122199767636318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -25,4 +25,4 @@ En nuestra realidad... la interpretación de sus acciones suele ser distinta.
 Pero al final, todo depende del cristal con que se mire.
 Quizá algunos viven en un país que el resto apenas puede imaginar.
 
-![](/images/blog/122199767678318393.jpg)
+![](https://img.barberenamimunicipio.top/122199767678318393.jpg)

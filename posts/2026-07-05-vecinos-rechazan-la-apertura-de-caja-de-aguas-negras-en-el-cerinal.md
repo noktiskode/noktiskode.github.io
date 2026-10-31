@@ -2,9 +2,9 @@
 title: "Vecinos rechazan la apertura de caja de aguas negras en el cerinal"
 slug: "vecinos-rechazan-la-apertura-de-caja-de-aguas-negras-en-el-cerinal"
 date: "2026-07-05T21:12:21+00:00"
-updated_at: "2026-09-27T03:40:44.872881+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122221354574318393.jpg"
+image: "https://img.barberenamimunicipio.top/122221354574318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -21,4 +21,4 @@ Los vecinos solicitan la intervención urgente de las autoridades para evitar un
 
 Según reportó Visor GT.
 
-![](/images/blog/122221354622318393.jpg)
+![](https://img.barberenamimunicipio.top/122221354622318393.jpg)

@@ -2,9 +2,9 @@
 title: "¿Qué es mejor que ganar la liga?"
 slug: "que-es-mejor-que-ganar-la-liga"
 date: "2026-05-10T21:07:13+00:00"
-updated_at: "2026-09-27T03:40:44.054705+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122215842614318393.jpg"
+image: "https://img.barberenamimunicipio.top/122215842614318393.jpg"
 video_url: null
 featured: false
 published: true

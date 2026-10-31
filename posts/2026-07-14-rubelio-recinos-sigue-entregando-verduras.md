@@ -2,9 +2,9 @@
 title: "Rubelio Recinos sigue entregando verduras"
 slug: "rubelio-recinos-sigue-entregando-verduras"
 date: "2026-07-14T19:23:42+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222287346318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222287346318393.jpg"
 video_url: null
 featured: false
 published: true

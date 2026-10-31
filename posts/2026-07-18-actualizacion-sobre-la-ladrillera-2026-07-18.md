@@ -2,9 +2,9 @@
 title: "Actualización sobre La Ladrillera"
 slug: "actualizacion-sobre-la-ladrillera-2026-07-18"
 date: "2026-07-18T18:05:04+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222666030318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222666030318393.jpg"
 video_url: null
 featured: false
 published: true

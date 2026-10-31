@@ -2,9 +2,9 @@
 title: "Mercado Municipal de Barberena"
 slug: "mercado-municipal-de-barberena"
 date: "2026-09-01T00:00:00+00:00"
-updated_at: "2026-09-27T07:47:22.264495+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/1000037779.jpg"
+image: "https://img.barberenamimunicipio.top/1000037779.jpg"
 video_url: null
 featured: false
 published: true

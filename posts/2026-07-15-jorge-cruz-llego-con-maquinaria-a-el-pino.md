@@ -2,9 +2,9 @@
 title: "Jorge cruz llegó con maquinaria a el pino"
 slug: "jorge-cruz-llego-con-maquinaria-a-el-pino"
 date: "2026-07-15T17:54:13+00:00"
-updated_at: "2026-09-27T03:48:32.381401+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122222368478318393.jpg"
+image: "https://img.barberenamimunicipio.top/122222368478318393.jpg"
 video_url: null
 featured: false
 published: true

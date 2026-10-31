@@ -2,7 +2,7 @@
 title: "El cerinal siguen los retrasos en la reconstrucción de la escuela n.o 1"
 slug: "el-cerinal-siguen-los-retrasos-en-la-reconstruccion-de-la-escuela-n-o-1"
 date: "2026-03-24T23:10:28+00:00"
-updated_at: "2026-09-27T03:40:43.26606+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

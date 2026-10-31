@@ -2,9 +2,9 @@
 title: "Reparan la entrada a El Jocote"
 slug: "reparan-la-entrada-a-el-jocote"
 date: "2026-09-30T21:45:00+00:00"
-updated_at: "2026-09-30T21:49:22.851065+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "https://iolchsadedieagiqrxzu.supabase.co/storage/v1/object/public/post-images/1790804850226-pcazi9.jpg"
+image: "https://img.barberenamimunicipio.top/1790804850226-pcazi9.jpg"
 video_url: null
 featured: false
 published: true

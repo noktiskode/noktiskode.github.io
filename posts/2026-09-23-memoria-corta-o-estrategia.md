@@ -2,9 +2,9 @@
 title: "¿Memoria corta o estrategia?"
 slug: "memoria-corta-o-estrategia"
 date: "2026-09-23T16:00:00+00:00"
-updated_at: "2026-09-29T07:00:12.2345+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000042519.webp"
+image: "https://img.barberenamimunicipio.top/1000042519.webp"
 video_url: null
 featured: true
 published: true

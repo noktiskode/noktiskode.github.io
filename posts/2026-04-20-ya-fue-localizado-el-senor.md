@@ -2,9 +2,9 @@
 title: "Ya fue localizado el señor"
 slug: "ya-fue-localizado-el-senor"
 date: "2026-04-20T21:58:55+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122213715428318393.jpg"
+image: "https://img.barberenamimunicipio.top/122213715428318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -25,6 +25,6 @@ La evidencia puede verse en los comentarios de esta publicación:
 
  https://www.facebook.com/share/p/18s3j63bMn/
 
-![](/images/blog/122213715470318393.jpg)
+![](https://img.barberenamimunicipio.top/122213715470318393.jpg)
 
-![](/images/blog/122213715518318393.jpg)
+![](https://img.barberenamimunicipio.top/122213715518318393.jpg)

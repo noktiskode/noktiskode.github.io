@@ -2,9 +2,9 @@
 title: "Vecinos de Barberena comentan que hay un agente de la PMT que, al parecer, confunde la calle con un ring"
 slug: "vecinos-de-barberena-comentan-que-hay-un-agente-de-la-pmt"
 date: "2026-03-22T23:42:38+00:00"
-updated_at: "2026-09-27T03:40:43.108288+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122211359282318393.jpg"
+image: "https://img.barberenamimunicipio.top/122211359282318393.jpg"
 video_url: null
 featured: false
 published: true

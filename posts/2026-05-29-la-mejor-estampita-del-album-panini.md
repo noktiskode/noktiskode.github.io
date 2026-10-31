@@ -2,9 +2,9 @@
 title: "La mejor estampita del álbum panini"
 slug: "la-mejor-estampita-del-album-panini"
 date: "2026-05-29T00:35:03+00:00"
-updated_at: "2026-09-27T03:40:44.212919+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122217807140318393.jpg"
+image: "https://img.barberenamimunicipio.top/122217807140318393.jpg"
 video_url: null
 featured: false
 published: true

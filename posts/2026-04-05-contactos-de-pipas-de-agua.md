@@ -2,9 +2,9 @@
 title: "Contactos de pipas de agua"
 slug: "contactos-de-pipas-de-agua"
 date: "2026-04-05T17:29:41+00:00"
-updated_at: "2026-09-27T03:40:43.4309+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122212151090318393.jpg"
+image: "https://img.barberenamimunicipio.top/122212151090318393.jpg"
 video_url: null
 featured: false
 published: true

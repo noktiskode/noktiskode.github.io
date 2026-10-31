@@ -2,9 +2,9 @@
 title: "Transparencia en el uso de fondos municipales"
 slug: "transparencia-en-el-uso-de-fondos-municipales"
 date: "2026-03-02T23:42:08+00:00"
-updated_at: "2026-09-27T03:40:42.936602+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122208892382318393.jpg"
+image: "https://img.barberenamimunicipio.top/122208892382318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -26,4 +26,4 @@ Si el apoyo es institucional y está reglamentado, debe aplicarse con igualdad p
 ¿Usted sabía que existe este tipo de apoyo?
 ¿Conoce los requisitos?
 
-![](/images/blog/122208892424318393.jpg)
+![](https://img.barberenamimunicipio.top/122208892424318393.jpg)

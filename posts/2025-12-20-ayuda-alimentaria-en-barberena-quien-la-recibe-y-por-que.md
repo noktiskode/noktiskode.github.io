@@ -2,9 +2,9 @@
 title: "Ayuda alimentaria en Barberena: ¿quién la recibe y por qué?"
 slug: "ayuda-alimentaria-en-barberena-quien-la-recibe-y-por-que"
 date: "2025-12-20T02:03:19+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122201534516318393.jpg"
+image: "https://img.barberenamimunicipio.top/122201534516318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -31,4 +31,4 @@ Hacemos un llamado respetuoso a los COCODES y autoridades comunitarias: que esto
 
 Sabemos que este tipo de publicaciones no son agradables para todos, pero alguien debe plantear estas inquietudes. Entre tantas páginas de noticias y chismes sobre Barberena, pocas investigan de manera seria. Invitamos a quienes hacen labores informativas a ejercer su responsabilidad periodística y apoyar la transparencia en nuestra comunidad.
 
-![](/images/blog/122201534546318393.jpg)
+![](https://img.barberenamimunicipio.top/122201534546318393.jpg)

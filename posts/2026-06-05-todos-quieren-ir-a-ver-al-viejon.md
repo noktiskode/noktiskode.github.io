@@ -2,7 +2,7 @@
 title: "Todos quieren ir A ver al viejón"
 slug: "todos-quieren-ir-a-ver-al-viejon"
 date: "2026-06-05T17:42:05+00:00"
-updated_at: "2026-09-27T03:40:44.416992+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
 image: null
 video_url: null

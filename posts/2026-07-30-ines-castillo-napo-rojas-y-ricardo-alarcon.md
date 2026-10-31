@@ -2,9 +2,9 @@
 title: "Inés Castillo, Napo Rojas y Ricardo Alarcón"
 slug: "ines-castillo-napo-rojas-y-ricardo-alarcon"
 date: "2026-07-30T00:57:53+00:00"
-updated_at: "2026-09-27T03:48:32.499048+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/122223693464318393.jpg"
+image: "https://img.barberenamimunicipio.top/122223693464318393.jpg"
 video_url: null
 featured: false
 published: true

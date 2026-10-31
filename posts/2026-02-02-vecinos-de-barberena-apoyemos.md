@@ -2,9 +2,9 @@
 title: "Vecinos de Barberena, apoyemos"
 slug: "vecinos-de-barberena-apoyemos"
 date: "2026-02-02T18:47:12+00:00"
-updated_at: "2026-09-27T03:48:30.770192+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122206157450318393.jpg"
+image: "https://img.barberenamimunicipio.top/122206157450318393.jpg"
 video_url: null
 featured: false
 published: true

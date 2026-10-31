@@ -2,9 +2,9 @@
 title: "Entre bolsas de verduras y \"pistolitas\""
 slug: "entre-bolsas-de-verduras-y-pistolitas"
 date: "2026-09-25T21:14:00+00:00"
-updated_at: "2026-09-29T07:04:52.036682+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000046534.webp"
+image: "https://img.barberenamimunicipio.top/1000046534.webp"
 video_url: null
 featured: false
 published: true

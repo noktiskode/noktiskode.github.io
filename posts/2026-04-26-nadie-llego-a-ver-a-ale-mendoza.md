@@ -2,9 +2,9 @@
 title: "Nadie llegó A ver A ale mendoza"
 slug: "nadie-llego-a-ver-a-ale-mendoza"
 date: "2026-04-26T16:00:24+00:00"
-updated_at: "2026-09-27T03:40:43.726897+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122214303314318393.jpg"
+image: "https://img.barberenamimunicipio.top/122214303314318393.jpg"
 video_url: null
 featured: false
 published: true
@@ -19,4 +19,4 @@ Es increíble que, teniendo remixes con artistas internacionales, Ale Mendoza en
 
 Junta más gente el alcalde en las inauguraciones, y eso que ni es cantante.
 
-![](/images/blog/122214303356318393.jpg)
+![](https://img.barberenamimunicipio.top/122214303356318393.jpg)

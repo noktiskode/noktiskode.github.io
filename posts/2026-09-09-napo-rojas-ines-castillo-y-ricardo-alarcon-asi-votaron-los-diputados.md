@@ -2,9 +2,9 @@
 title: "\"Napo Rojas, Inés Castillo y Ricardo Alarcón: así votaron los diputados"
 slug: "napo-rojas-ines-castillo-y-ricardo-alarcon-asi-votaron-los-diputados"
 date: "2026-09-09T23:23:00+00:00"
-updated_at: "2026-09-27T03:40:45.715699+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "opiniones"
-image: "/images/blog/1000042075.webp"
+image: "https://img.barberenamimunicipio.top/1000042075.webp"
 video_url: null
 featured: false
 published: true

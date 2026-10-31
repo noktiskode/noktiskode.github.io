@@ -2,9 +2,9 @@
 title: "Un día como hoy nació Barberena"
 slug: "un-dia-como-hoy-nacio-barberena"
 date: "2025-12-20T17:54:14+00:00"
-updated_at: "2026-09-27T03:40:41.235408+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "historias"
-image: "/images/blog/122201611982318393.jpg"
+image: "https://img.barberenamimunicipio.top/122201611982318393.jpg"
 video_url: null
 featured: false
 published: true

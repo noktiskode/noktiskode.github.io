@@ -2,9 +2,9 @@
 title: "Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal)"
 slug: "entregan-pavimentacion-y-nueva-red-de-agua-en-el-callejon-san"
 date: "2026-08-30T01:20:46+00:00"
-updated_at: "2026-09-27T03:40:45.560297+00:00"
+updated_at: "2026-10-31T00:28:52.938934+00:00"
 category: "barberena"
-image: "/images/blog/122226868622318393.jpg"
+image: "https://img.barberenamimunicipio.top/122226868622318393.jpg"
 video_url: null
 featured: false
 published: true
