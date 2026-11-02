@@ -7,24 +7,20 @@
 // Usa las mismas tarjetas (.cb-post) y el mismo encabezado (.category-masthead)
 // que las páginas de categoría, así que hereda el estilo de styles.css.
 
-import { SUPABASE_URL, SUPABASE_ANON_KEY, SITE_URL, escapeHtml, slugify, headerHtml, footerHtml } from '../_shared.js';
+import { SITE_URL, escapeHtml, slugify, headerHtml, footerHtml } from '../_shared.js';
+import { conEtiquetas } from '../_db.js';
 
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 
 const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
-export async function onRequestGet({ params, next }) {
+export async function onRequestGet({ params, next, env }) {
   const tagSlug = slugify(params.tag || '');
   if (!tagSlug) return next();
 
   let rows;
   try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?select=slug,title,excerpt,category,image_url,published_at,tags&order=published_at.desc&limit=1000`,
-      { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } }
-    );
-    if (!res.ok) return next();
-    rows = await res.json();
+    rows = await conEtiquetas(env.DB, 1000);
   } catch (e) {
     return next();
   }
