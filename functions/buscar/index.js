@@ -1,45 +1,23 @@
 // functions/buscar/index.js
 //
 // Página de búsqueda: /buscar/?q=palabra
-// Usa la función search_posts de Supabase (ignora tildes y mayúsculas).
-// Si esa función todavía no existe, cae a una búsqueda simple por título y resumen.
+// Busca en D1 sobre la columna search_text (ignora tildes y mayúsculas).
 
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+import { buscar } from '../_db.js';
+
 const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 
 export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const q = (url.searchParams.get('q') || '').trim().slice(0, 100);
-  const headers = {
-    apikey: SUPABASE_ANON_KEY,
-    Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-    'Content-Type': 'application/json'
-  };
 
   let posts = [];
   let failed = false;
 
   if (q.length >= 2) {
     try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/search_posts`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({ term: q })
-      });
-      if (res.ok) {
-        posts = await res.json();
-      } else {
-        // Respaldo: búsqueda simple (sensible a tildes) si la función SQL aún no existe
-        const safe = q.replace(/[*,()]/g, ' ');
-        const fb = await fetch(
-          `${SUPABASE_URL}/rest/v1/posts?published=eq.true&or=(title.ilike.*${encodeURIComponent(safe)}*,excerpt.ilike.*${encodeURIComponent(safe)}*)&select=*&order=published_at.desc&limit=60`,
-          { headers }
-        );
-        if (fb.ok) posts = await fb.json();
-        else failed = true;
-      }
+      posts = await buscar(context.env.DB, q, 60);
     } catch (e) {
       failed = true;
     }
