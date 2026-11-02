@@ -1,12 +1,13 @@
 // functions/[slug].js
 //
-// Sirve la página de un post leyendo de Supabase, replicando el layout
+// Sirve la página de un post leyendo de Cloudflare D1, replicando el layout
 // real del sitio (_layouts/post.html + header/footer). Si el slug no
 // existe en la tabla `posts`, delega la solicitud al sitio estático de
 // Jekyll (context.next()) — así las páginas que no son posts (categorías,
 // historia, manifiesto...) siguen funcionando sin cambios.
 
-import { SUPABASE_URL, SUPABASE_ANON_KEY, SITE_URL, escapeHtml, slugify, tagUrl, headerHtml, footerHtml } from './_shared.js';
+import { SITE_URL, escapeHtml, slugify, tagUrl, headerHtml, footerHtml } from './_shared.js';
+import { postPorSlug, relacionados } from './_db.js';
 
 const ICON_CAL = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -20,51 +21,14 @@ export async function onRequestGet(context) {
     return next();
   }
 
-  let rows;
+  let post;
+  let related = [];
   try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?slug=eq.${encodeURIComponent(slug)}&select=*&limit=1`,
-      { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } }
-    );
-    if (!res.ok) return next();
-    rows = await res.json();
+    post = await postPorSlug(context.env.DB, slug);
+    if (!post) return next();
+    related = await relacionados(context.env.DB, post, 3);
   } catch (e) {
     return next();
-  }
-
-  if (!rows || rows.length === 0) return next();
-
-  const post = rows[0];
-
-  const hdrs = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
-  const cols = 'slug,title,published_at';
-  let related = [];
-
-  // 1) Posts que comparten etiquetas con este (los más recientes primero).
-  const tags = (post.tags || []).filter(Boolean);
-  if (tags.length) {
-    try {
-      const lista = tags.map((t) => '"' + String(t).replace(/["\\]/g, '') + '"').join(',');
-      const tagRes = await fetch(
-        `${SUPABASE_URL}/rest/v1/posts?tags=ov.${encodeURIComponent('{' + lista + '}')}&slug=neq.${encodeURIComponent(slug)}&select=${cols}&order=published_at.desc&limit=3`,
-        { headers: hdrs }
-      );
-      if (tagRes.ok) related = await tagRes.json();
-    } catch (e) {
-      related = [];
-    }
-  }
-
-  // 2) Si faltan, se completan con posts de la misma categoría.
-  if (related.length < 3) {
-    try {
-      const excluir = [slug, ...related.map((r) => r.slug)].map((s) => `slug=neq.${encodeURIComponent(s)}`).join('&');
-      const catRes = await fetch(
-        `${SUPABASE_URL}/rest/v1/posts?category=eq.${encodeURIComponent(post.category)}&${excluir}&select=${cols}&order=published_at.desc&limit=${3 - related.length}`,
-        { headers: hdrs }
-      );
-      if (catRes.ok) related = related.concat(await catRes.json());
-    } catch (e) { /* se queda con lo que haya */ }
   }
 
   return new Response(renderPost(post, slug, related), {

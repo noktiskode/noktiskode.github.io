@@ -1,11 +1,9 @@
 // functions/_shared.js
 //
-// Código común entre las páginas generadas desde Supabase
+// Código común entre las páginas generadas desde la base de datos
 // ([slug].js y etiqueta/[tag].js). No exporta onRequest*, así que
 // Cloudflare Pages no lo trata como una ruta.
 
-export const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
 export const SITE_URL = 'https://barberenamimunicipio.top';
 
 export function escapeHtml(str) {

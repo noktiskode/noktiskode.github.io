@@ -1,16 +1,16 @@
 // functions/_middleware.js
 //
 // Caché en el borde de Cloudflare para las páginas públicas que se arman
-// leyendo Supabase: portada, secciones, archivo, posts, etiquetas y sitemap.
+// leyendo D1: portada, secciones, archivo, posts, etiquetas y sitemap.
 //
-// Sin esto, cada visita dispara varias consultas a Supabase. Con esto, la
+// Sin esto, cada visita dispara varias consultas a la base de datos. Con esto, la
 // primera visita arma la página y las siguientes (de cualquier persona, en ese
 // centro de datos de Cloudflare) se sirven de la copia guardada hasta que
 // vence el tiempo (TTL). Lo que publicás en el panel puede tardar hasta ese
 // tiempo en aparecer en la portada y en las listas.
 //
 // No toca: /admin, /login, /buscar, /api, archivos estáticos ni peticiones que
-// no sean GET. Tampoco guarda errores ni páginas vacías (señal de que Supabase
+// no sean GET. Tampoco guarda errores ni páginas vacías (señal de que la base
 // falló), para no dejar una página rota en el caché.
 //
 // El caché solo guarda en el dominio propio (barberenamimunicipio.top). En
@@ -28,7 +28,7 @@ const TTL_SITEMAP = 3600; // sitemap.xml
 const RESERVADOS = new Set(['admin', 'login', 'buscar', 'api', 'assets', 'images', 'functions']);
 
 // Si la página trae alguna de estas marcas, no hay publicaciones que mostrar.
-// Con el sitio lleno de posts eso solo pasa si Supabase falló, así que no se guarda.
+// Con el sitio lleno de posts eso solo pasa si la base falló, así que no se guarda.
 const MARCAS_VACIO = ['class="cb-empty"', 'class="category-empty"'];
 
 const MOVIL = /Mobi|Android|iPhone|iPod/i;

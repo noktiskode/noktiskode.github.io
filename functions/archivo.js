@@ -1,18 +1,12 @@
 // functions/archivo/index.js
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+import { ultimos } from './_db.js';
 const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 
-export async function onRequestGet() {
-  const headers = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+export async function onRequestGet({ env }) {
   let posts = [];
   try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?published=eq.true&select=*&order=published_at.desc&limit=1000`,
-      { headers }
-    );
-    posts = res.ok ? await res.json() : [];
+    posts = await ultimos(env.DB, { limite: 1000 });
   } catch (e) { posts = []; }
 
   return new Response(renderArchivo(posts), {

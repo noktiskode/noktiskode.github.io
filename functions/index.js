@@ -1,12 +1,12 @@
 // functions/index.js
 //
-// Sirve la portada del sitio leyendo los posts desde Supabase.
+// Sirve la portada del sitio leyendo los posts desde Cloudflare D1.
 // Reemplaza al index.html generado por Jekyll para que los posts
-// creados desde el panel de admin (que solo existen en Supabase)
+// creados desde el panel de admin (que solo existen en la base de datos)
 // aparezcan sin necesitar un build de Jekyll.
 
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+import { destacados, ultimos, paginaExcluyendo } from './_db.js';
+
 const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
 // Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
@@ -16,43 +16,36 @@ const PAGE_SIZE_DESKTOP = 12;
 const PAGE_SIZE_MOBILE = 12;
 
 export async function onRequestGet(context) {
-  const baseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+  const db = context.env.DB;
   const url = new URL(context.request.url);
   const page = Math.max(1, parseInt(url.searchParams.get('pagina'), 10) || 1);
   const ua = context.request.headers.get('user-agent') || '';
   const pageSize = /Mobi|Android|iPhone|iPod/i.test(ua) ? PAGE_SIZE_MOBILE : PAGE_SIZE_DESKTOP;
 
-  async function sb(query, extra) {
-    try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/posts?${query}`, { headers: { ...baseHeaders, ...extra } });
-      return res.ok ? res : null;
-    } catch (e) { return null; }
-  }
+  let featuredPosts = [];
+  let gridPosts = [];
+  let total = 0;
+  try {
+    // Carrusel de destacados
+    featuredPosts = await destacados(db, CAROUSEL_SIZE);
 
-  // Carrusel de destacados
-  const rf = await sb(`featured=eq.true&published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE}`);
-  let featuredPosts = rf ? await rf.json() : [];
-
-  // Si hay menos destacados que tarjetas, completa con los más recientes
-  if (featuredPosts.length < CAROUSEL_SIZE) {
-    const rr = await sb(`published=eq.true&select=*&order=published_at.desc&limit=${CAROUSEL_SIZE * 2}`);
-    const recent = rr ? await rr.json() : [];
-    const used = new Set(featuredPosts.map((p) => p.slug));
-    for (const p of recent) {
-      if (featuredPosts.length >= CAROUSEL_SIZE) break;
-      if (!used.has(p.slug)) { featuredPosts.push(p); used.add(p.slug); }
+    // Si hay menos destacados que tarjetas, completa con los más recientes
+    if (featuredPosts.length < CAROUSEL_SIZE) {
+      const recent = await ultimos(db, { limite: CAROUSEL_SIZE * 2 });
+      const used = new Set(featuredPosts.map((p) => p.slug));
+      for (const p of recent) {
+        if (featuredPosts.length >= CAROUSEL_SIZE) break;
+        if (!used.has(p.slug)) { featuredPosts.push(p); used.add(p.slug); }
+      }
     }
-  }
 
-  // Lista paginada: excluye los del carrusel y pide solo la página actual
-  const excluded = featuredPosts.map((p) => `"${p.slug}"`).join(',');
-  const from = (page - 1) * pageSize;
-  const rg = await sb(
-    `published=eq.true${excluded ? `&slug=not.in.(${excluded})` : ''}&select=*&order=published_at.desc&limit=${pageSize}&offset=${from}`,
-    { Prefer: 'count=exact' }
-  );
-  const gridPosts = rg ? await rg.json() : [];
-  const total = rg ? parseInt((rg.headers.get('content-range') || '').split('/')[1], 10) || 0 : 0;
+    // Lista paginada: excluye los del carrusel y pide solo la página actual
+    const res = await paginaExcluyendo(db, featuredPosts.map((p) => p.slug), pageSize, (page - 1) * pageSize);
+    gridPosts = res.posts;
+    total = res.total;
+  } catch (e) {
+    featuredPosts = []; gridPosts = []; total = 0;
+  }
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
   // El carrusel solo se muestra en la primera página

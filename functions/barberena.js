@@ -1,21 +1,15 @@
 // functions/barberena/index.js
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+import { ultimos } from './_db.js';
 const SITE_URL = 'https://barberenamimunicipio.top';
 const CATEGORY = 'barberena';
 const LABEL = 'Barberena';
 const DESCRIPTION = 'Lo que ocurre en el municipio: obras, servicios, comunidad, acontecimientos, información pública y asuntos que vale la pena conocer.';
 const PATH = '/barberena/';
 
-export async function onRequestGet() {
-  const headers = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+export async function onRequestGet({ env }) {
   let posts = [];
   try {
-    const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/posts?category=eq.${CATEGORY}&published=eq.true&select=*&order=published_at.desc&limit=200`,
-      { headers }
-    );
-    posts = res.ok ? await res.json() : [];
+    posts = await ultimos(env.DB, { categoria: CATEGORY, limite: 200 });
   } catch (e) { posts = []; }
 
   return new Response(renderCategoryPage(posts), {
