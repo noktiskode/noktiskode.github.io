@@ -1,8 +1,8 @@
 ---
 title: "¿Cómo va el chance en Los Hornitos?"
 slug: "como-va-el-chance-en-los-hornitos"
-date: "2026-05-14T16:00:29+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-14T16:00:29.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122216293460318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Vecinos del Barrio El Talpetate dicen no haber recibido respuesta del alcalde por el servicio de agua, 19 meses después de entregar una carta"
 slug: "vecinos-del-barrio-el-talpetate-denuncian-falta-de-agua"
-date: "2026-10-28T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-28T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1793207164168-bdjquj.webp"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Un señor deja sus desechos en un local... y dos vecinos terminan embarrando todo"
 slug: "un-senor-deja-sus-desechos-en-un-local-y-dos-vecinos"
-date: "2026-05-13T19:20:37+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-13T19:20:37.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

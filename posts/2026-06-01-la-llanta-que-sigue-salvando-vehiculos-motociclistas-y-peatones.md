@@ -1,8 +1,8 @@
 ---
 title: "La llanta que sigue salvando vehículos, motociclistas y peatones"
 slug: "la-llanta-que-sigue-salvando-vehiculos-motociclistas-y-peatones"
-date: "2026-06-01T22:11:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-01T22:11:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122218176242318393.jpg"
 video_url: null

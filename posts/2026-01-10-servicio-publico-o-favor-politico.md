@@ -1,8 +1,8 @@
 ---
 title: "¿Servicio público O favor político?"
 slug: "servicio-publico-o-favor-politico"
-date: "2026-01-10T02:29:23+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-10T02:29:23.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203745258318393.jpg"
 video_url: null

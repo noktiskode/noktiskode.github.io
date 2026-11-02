@@ -1,8 +1,8 @@
 ---
 title: "Rubelio recinos llegó a la escuelita de el pino"
 slug: "rubelio-recinos-llego-a-la-escuelita-de-el-pino"
-date: "2026-08-27T18:15:39+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-27T18:15:39.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122226633002318393.jpg"
 video_url: null

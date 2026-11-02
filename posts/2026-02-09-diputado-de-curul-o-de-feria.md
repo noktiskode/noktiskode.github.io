@@ -1,8 +1,8 @@
 ---
 title: "¿Diputado de curul o de feria?"
 slug: "diputado-de-curul-o-de-feria"
-date: "2026-02-09T05:05:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-09T05:05:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122206834136318393.jpg"
 video_url: null

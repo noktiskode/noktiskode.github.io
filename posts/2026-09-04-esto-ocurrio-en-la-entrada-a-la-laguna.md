@@ -1,8 +1,8 @@
 ---
 title: "Esto ocurrió en la entrada a La Laguna"
 slug: "esto-ocurrio-en-la-entrada-a-la-laguna"
-date: "2026-09-04T17:14:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-04T17:14:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

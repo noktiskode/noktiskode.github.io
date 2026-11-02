@@ -1,8 +1,8 @@
 ---
 title: "Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho."
 slug: "si-a-alguien-le-nace-de-corazon-ayudar-a-estos-ninos"
-date: "2026-03-02T18:13:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-02T18:13:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208872498318393.jpg"
 video_url: null

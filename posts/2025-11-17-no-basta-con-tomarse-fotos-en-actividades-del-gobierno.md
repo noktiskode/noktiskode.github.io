@@ -1,8 +1,8 @@
 ---
 title: "No basta con tomarse fotos en actividades del gobierno."
 slug: "no-basta-con-tomarse-fotos-en-actividades-del-gobierno"
-date: "2025-11-17T19:13:58+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-17T19:13:58.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: null
 video_url: null

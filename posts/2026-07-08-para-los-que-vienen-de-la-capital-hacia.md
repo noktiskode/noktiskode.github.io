@@ -1,8 +1,8 @@
 ---
 title: "Para los que vienen de la capital hacia"
 slug: "para-los-que-vienen-de-la-capital-hacia"
-date: "2026-07-08T23:07:52+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-08T23:07:52.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221673534318393.jpg"
 video_url: null

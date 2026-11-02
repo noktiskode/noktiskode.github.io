@@ -1,8 +1,8 @@
 ---
 title: "Municipalidad ejecuta 11 proyectos de pavimentación"
 slug: "municipalidad-ejecuta-11-proyectos-de-pavimentacion"
-date: "2026-06-09T19:20:24+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-09T19:20:24.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122218953752318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Oigan, ¿saben si ya están trabajando en La Ladrillera?"
 slug: "oigan-saben-si-ya-estan-trabajando-en-la-ladrillera"
-date: "2026-02-12T16:00:52+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-12T16:00:52.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122207105102318393.jpg"
 video_url: null

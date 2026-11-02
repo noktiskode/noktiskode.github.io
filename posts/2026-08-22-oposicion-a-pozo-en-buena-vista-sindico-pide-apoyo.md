@@ -1,8 +1,8 @@
 ---
 title: "Oposición a pozo en buena vista; síndico pide \"apoyo\""
 slug: "oposicion-a-pozo-en-buena-vista-sindico-pide-apoyo"
-date: "2026-08-22T19:06:09+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-22T19:06:09.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122226157748318393.jpg"
 video_url: null

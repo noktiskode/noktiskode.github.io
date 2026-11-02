@@ -1,8 +1,8 @@
 ---
 title: "Obra en sector la ladrillera – lo que debes saber"
 slug: "obra-en-sector-la-ladrillera-lo-que-debes-saber"
-date: "2026-01-13T22:34:53+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-13T22:34:53.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122204234762318393.jpg"
 video_url: null

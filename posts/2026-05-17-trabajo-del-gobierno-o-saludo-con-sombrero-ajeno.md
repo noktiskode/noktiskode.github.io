@@ -1,8 +1,8 @@
 ---
 title: "¿Trabajo del gobierno O saludo con sombrero ajeno?"
 slug: "trabajo-del-gobierno-o-saludo-con-sombrero-ajeno"
-date: "2026-05-17T22:54:09+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-17T22:54:09.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122216672954318393.jpg"
 video_url: null

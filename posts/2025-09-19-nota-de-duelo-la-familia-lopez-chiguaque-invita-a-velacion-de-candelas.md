@@ -1,8 +1,8 @@
 ---
 title: "Nota de duelo: la familia López Chiguaque invita a velación de candelas."
 slug: "nota-de-duelo-la-familia-lopez-chiguaque-invita-a-velacion-de-candelas"
-date: "2025-09-19T03:36:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-09-19T03:36:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122191978586318393.jpg"
 video_url: null

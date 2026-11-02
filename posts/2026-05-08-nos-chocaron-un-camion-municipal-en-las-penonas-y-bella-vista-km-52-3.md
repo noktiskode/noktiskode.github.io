@@ -1,8 +1,8 @@
 ---
 title: "Nos chocaron un camión municipal en “las peñonas” y bella vista (km 52.3)"
 slug: "nos-chocaron-un-camion-municipal-en-las-penonas-y-bella-vista-km-52-3"
-date: "2026-05-08T19:40:19+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-08T19:40:19.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215601762318393.jpg"
 video_url: null

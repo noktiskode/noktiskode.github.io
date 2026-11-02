@@ -1,8 +1,8 @@
 ---
 title: "Rubelio pasó 20 años trabajando bonito"
 slug: "rubelio-paso-20-anos-trabajando-bonito"
-date: "2026-05-23T18:00:49+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-23T18:00:49.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

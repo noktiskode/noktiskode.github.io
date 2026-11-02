@@ -1,8 +1,8 @@
 ---
 title: "Q6 millones adjudicados Y obras casi detenidas en Barberena ¿constructora O destructora?"
 slug: "q6-millones-adjudicados-y-obras-casi-detenidas-en-barberena-constructora-o"
-date: "2026-03-10T16:04:54+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-10T16:04:54.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122209610132318393.jpg"
 video_url: null

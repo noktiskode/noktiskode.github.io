@@ -1,8 +1,8 @@
 ---
 title: "Aplausos para los vecinos del callejón El Nuevo Amanecer"
 slug: "aplausos-para-los-vecinos-del-callejon-el-nuevo-amanecer"
-date: "2026-10-06T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-06T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791307677855-a67qp0.jpg"
 video_url: null

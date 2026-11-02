@@ -1,8 +1,8 @@
 ---
 title: "Con napo rojas y ricardo alarcón: así se inauguró la ladrillera"
 slug: "con-napo-rojas-y-ricardo-alarcon-asi-se-inauguro-la-ladrillera"
-date: "2026-08-29T16:54:07+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-29T16:54:07.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

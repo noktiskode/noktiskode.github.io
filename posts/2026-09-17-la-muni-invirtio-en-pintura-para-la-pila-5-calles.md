@@ -1,8 +1,8 @@
 ---
 title: "La Muni invirtió en pintura para la Pila 5 Calles"
 slug: "la-muni-invirtio-en-pintura-para-la-pila-5-calles"
-date: "2026-09-17T18:11:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-17T18:11:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/1000041136.jpg"
 video_url: null

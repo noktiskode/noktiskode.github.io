@@ -1,8 +1,8 @@
 ---
 title: "Entrega de víveres a beneficiarios del municipio"
 slug: "entrega-de-viveres-a-beneficiarios-del-municipio"
-date: "2026-09-29T22:26:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-29T22:26:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1790720834875-dl4hjd.webp"
 video_url: null

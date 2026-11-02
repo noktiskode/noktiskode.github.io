@@ -1,8 +1,8 @@
 ---
 title: "Hoy hubo inauguración"
 slug: "hoy-hubo-inauguracion"
-date: "2026-03-15T21:58:49+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-15T21:58:49.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210090156318393.jpg"
 video_url: null

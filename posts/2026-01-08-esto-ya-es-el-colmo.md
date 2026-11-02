@@ -1,8 +1,8 @@
 ---
 title: "¡Esto ya es el colmo!"
 slug: "esto-ya-es-el-colmo"
-date: "2026-01-08T16:00:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-08T16:00:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203597520318393.jpg"
 video_url: null

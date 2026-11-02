@@ -1,8 +1,8 @@
 ---
 title: "El único que dio la cara"
 slug: "el-unico-que-dio-la-cara"
-date: "2026-09-05T01:20:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-05T01:20:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1000037767.jpg"
 video_url: null

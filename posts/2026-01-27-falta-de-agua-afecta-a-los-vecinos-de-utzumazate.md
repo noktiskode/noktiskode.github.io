@@ -1,8 +1,8 @@
 ---
 title: "Falta de agua afecta a los vecinos de Utzumazate"
 slug: "falta-de-agua-afecta-a-los-vecinos-de-utzumazate"
-date: "2026-01-27T22:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-27T22:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205568568318393.jpg"
 video_url: null

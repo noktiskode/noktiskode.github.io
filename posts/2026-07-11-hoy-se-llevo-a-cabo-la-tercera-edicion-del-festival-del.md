@@ -1,8 +1,8 @@
 ---
 title: "Hoy se llevó a cabo la tercera edición del Festival del Café, organizado por la Municipalidad de Barberena"
 slug: "hoy-se-llevo-a-cabo-la-tercera-edicion-del-festival-del"
-date: "2026-07-11T19:49:38+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-11T19:49:38.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122222004098318393.jpg"
 video_url: null

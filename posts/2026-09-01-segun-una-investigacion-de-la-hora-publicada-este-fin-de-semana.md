@@ -1,8 +1,8 @@
 ---
 title: "Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como \"el caso más"
 slug: "segun-una-investigacion-de-la-hora-publicada-este-fin-de-semana"
-date: "2026-09-01T01:38:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-01T01:38:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122227072964318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "\"señor alcalde pepe rueda vallejo y cocode de el cerinal"
 slug: "senor-alcalde-pepe-rueda-vallejo-y-cocode-de-el-cerinal"
-date: "2026-07-11T20:19:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-11T20:19:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122222005922318393.jpg"
 video_url: null

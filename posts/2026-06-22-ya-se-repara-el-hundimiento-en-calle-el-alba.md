@@ -1,8 +1,8 @@
 ---
 title: "Ya se repara el hundimiento en calle el alba"
 slug: "ya-se-repara-el-hundimiento-en-calle-el-alba"
-date: "2026-06-22T20:34:36+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-22T20:34:36.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122220184598318393.jpg"
 video_url: null

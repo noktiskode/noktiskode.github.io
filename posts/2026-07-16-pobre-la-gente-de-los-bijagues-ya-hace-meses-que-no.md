@@ -1,8 +1,8 @@
 ---
 title: "Pobre la gente de los Bijagües, ya hace meses que no nos cae ni una gota de agua"
 slug: "pobre-la-gente-de-los-bijagues-ya-hace-meses-que-no"
-date: "2026-07-16T17:18:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-16T17:18:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122222473070318393.jpg"
 video_url: null

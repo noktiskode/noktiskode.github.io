@@ -1,8 +1,8 @@
 ---
 title: "La Municipalidad de Barberena pagó durante octubre 2026 por servicios de divulgación a dos medios locales"
 slug: "municipalidad-paga-divulgacion-octubre-2026"
-date: "2026-10-26T21:35:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-26T21:35:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1793050605325-vop4c7.webp"
 video_url: null

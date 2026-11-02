@@ -1,8 +1,8 @@
 ---
 title: "Historia del Templo de Minerva"
 slug: "historia-del-templo-de-minerva"
-date: "2026-09-01T20:54:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-01T20:54:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/1000038996.jpg"
 video_url: null

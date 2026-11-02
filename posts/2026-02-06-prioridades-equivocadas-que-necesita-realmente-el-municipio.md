@@ -1,8 +1,8 @@
 ---
 title: "Prioridades equivocadas: ¿qué necesita realmente el municipio?"
 slug: "prioridades-equivocadas-que-necesita-realmente-el-municipio"
-date: "2026-02-06T20:12:54+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-06T20:12:54.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122206546046318393.jpg"
 video_url: null

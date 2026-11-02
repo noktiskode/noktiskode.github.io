@@ -1,8 +1,8 @@
 ---
 title: "Utzumazate le manda un mensaje claro al alcalde"
 slug: "utzumazate-le-manda-un-mensaje-claro-al-alcalde"
-date: "2026-06-01T20:35:54+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-01T20:35:54.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122218169828318393.jpg"
 video_url: null

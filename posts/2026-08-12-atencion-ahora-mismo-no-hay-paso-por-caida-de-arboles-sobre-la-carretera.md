@@ -1,8 +1,8 @@
 ---
 title: "Atención — ↔ Ahora mismo no hay paso por caída de árboles sobre la carretera."
 slug: "atencion-ahora-mismo-no-hay-paso-por-caida-de-arboles-sobre-la-carretera"
-date: "2026-08-12T21:38:45+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-12T21:38:45.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225129102318393.jpg"
 video_url: null

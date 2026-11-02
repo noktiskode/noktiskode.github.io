@@ -1,8 +1,8 @@
 ---
 title: "Con profundo dolor comunicamos el sensible fallecimiento de la señora"
 slug: "con-profundo-dolor-comunicamos-el-sensible-fallecimiento-de-la-senora"
-date: "2026-06-14T17:16:37+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-14T17:16:37.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122219442308318393.jpg"
 video_url: null

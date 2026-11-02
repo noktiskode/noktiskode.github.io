@@ -1,8 +1,8 @@
 ---
 title: "Los huevones de santa rosa solo aparecen en las fiestas"
 slug: "los-huevones-de-santa-rosa-solo-aparecen-en-las-fiestas"
-date: "2026-05-10T16:00:34+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-10T16:00:34.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215819844318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "En la calle El Calvario, un vecino encontró algo terrible"
 slug: "en-la-calle-el-calvario-un-vecino-encontro-algo-terrible"
-date: "2025-11-11T17:24:57+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-11T17:24:57.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122197613978318393.jpg"
 video_url: null

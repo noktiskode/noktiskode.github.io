@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos publicó ayer un video en el que se le ve entregando bolsas de verduras, aunque no"
 slug: "rubelio-recinos-publico-ayer-un-video-en-el-que-se-le"
-date: "2026-09-09T14:10:34+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-09T14:10:34.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122227953890318393.jpg"
 video_url: null

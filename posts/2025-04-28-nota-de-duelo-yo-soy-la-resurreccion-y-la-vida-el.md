@@ -1,8 +1,8 @@
 ---
 title: "Nota de duelo: “Yo soy la resurrección y la vida; el que cree en mí, aunque muera, vivirá.”"
 slug: "nota-de-duelo-yo-soy-la-resurreccion-y-la-vida-el"
-date: "2025-04-28T02:15:21+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-04-28T02:15:21.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122171538890318393.jpg"
 video_url: null

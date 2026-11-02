@@ -1,8 +1,8 @@
 ---
 title: "Horario y candado para el tanque"
 slug: "horario-y-candado-para-el-tanque"
-date: "2026-09-02T02:22:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-02T02:22:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000037777.jpg"
 video_url: null

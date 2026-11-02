@@ -1,8 +1,8 @@
 ---
 title: "Culpa de Pepe: La paradoja del alcalde, en vivo"
 slug: "culpa-de-pepe-la-paradoja-del-alcalde-en-vivo"
-date: "2026-10-10T20:30:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-10T20:30:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1791682486847-vb0fh8.webp"
 video_url: "https://www.facebook.com/reel/1147047577663329/"

@@ -1,8 +1,8 @@
 ---
 title: "Alcalde se refiere al incidente con mototaxis en El Cerinal"
 slug: "alcalde-se-refiere-al-incidente-con-mototaxis-en-el-cerinal"
-date: "2026-08-12T22:28:20+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-12T22:28:20.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225133068318393.jpg"
 video_url: null

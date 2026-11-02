@@ -1,8 +1,8 @@
 ---
 title: "Para que no haya confusiones"
 slug: "para-que-no-haya-confusiones"
-date: "2026-09-10T03:15:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-10T03:15:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122228016980318393.jpg"
 video_url: null

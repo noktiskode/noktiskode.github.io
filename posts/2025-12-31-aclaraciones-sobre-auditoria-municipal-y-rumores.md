@@ -1,8 +1,8 @@
 ---
 title: "Aclaraciones sobre auditoría municipal Y rumores"
 slug: "aclaraciones-sobre-auditoria-municipal-y-rumores"
-date: "2025-12-31T19:05:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-31T19:05:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122202779426318393.jpg"
 video_url: null

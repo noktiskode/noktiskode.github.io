@@ -1,8 +1,8 @@
 ---
 title: "Jonathan José Antonio Rueda Vallejo es el alcalde de Barberena y apenas va por la mitad de su período."
 slug: "jonathan-jose-antonio-rueda-vallejo-es-el-alcalde-de-barberena-y"
-date: "2026-02-26T16:00:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-26T16:00:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208568370318393.jpg"
 video_url: null

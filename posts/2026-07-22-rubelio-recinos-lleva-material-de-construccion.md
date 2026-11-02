@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos lleva material de construcción"
 slug: "rubelio-recinos-lleva-material-de-construccion"
-date: "2026-07-22T23:11:03+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-22T23:11:03.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223054788318393.jpg"
 video_url: null

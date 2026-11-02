@@ -1,8 +1,8 @@
 ---
 title: "Está quedando chula la calle del sector de panadería \"la dulce abuelita\""
 slug: "esta-quedando-chula-la-calle-del-sector-de-panaderia-la-dulce-abuelita"
-date: "2026-05-12T22:10:48+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-12T22:10:48.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

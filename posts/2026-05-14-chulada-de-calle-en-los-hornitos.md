@@ -1,8 +1,8 @@
 ---
 title: "Chulada de calle en Los Hornitos"
 slug: "chulada-de-calle-en-los-hornitos"
-date: "2026-05-14T19:55:33+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-14T19:55:33.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122216310692318393.jpg"
 video_url: null

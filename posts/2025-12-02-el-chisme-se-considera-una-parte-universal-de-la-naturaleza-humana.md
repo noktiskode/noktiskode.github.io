@@ -1,8 +1,8 @@
 ---
 title: "El chisme se considera una parte universal de la naturaleza humana y la mayoría de las personas lo practican"
 slug: "el-chisme-se-considera-una-parte-universal-de-la-naturaleza-humana"
-date: "2025-12-02T18:00:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-02T18:00:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122199734060318393.jpg"
 video_url: null

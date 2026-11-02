@@ -1,8 +1,8 @@
 ---
 title: "Barberena Los Hornitos: indiferencia y descontento ciudadano"
 slug: "barberena-los-hornitos-indiferencia-y-descontento-ciudadano"
-date: "2026-01-26T16:30:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-26T16:30:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205449186318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Vecina indignada por cepo de Q500 que le colocó la PMT de Barberena La PMT sigue dando de qué hablar."
 slug: "vecina-indignada-por-cepo-de-q500-que-le-coloco-la-pmt"
-date: "2026-08-14T00:37:43+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-14T00:37:43.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

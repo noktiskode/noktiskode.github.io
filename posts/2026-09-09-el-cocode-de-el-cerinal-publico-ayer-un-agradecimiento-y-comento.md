@@ -1,8 +1,8 @@
 ---
 title: "El COCODE de El Cerinal publicó ayer un agradecimiento y comentó también que vino una ayuda para las familias"
 slug: "el-cocode-de-el-cerinal-publico-ayer-un-agradecimiento-y-comento"
-date: "2026-09-09T19:04:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-09T19:04:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122227980758318393.jpg"
 video_url: null

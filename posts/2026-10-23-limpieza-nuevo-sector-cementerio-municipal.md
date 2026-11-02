@@ -1,8 +1,8 @@
 ---
 title: "Alcalde confirma que ya inició la limpieza del nuevo sector del cementerio municipal"
 slug: "limpieza-nuevo-sector-cementerio-municipal"
-date: "2026-10-23T18:38:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-23T18:38:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1792780774510-zpehh8.webp"
 video_url: null

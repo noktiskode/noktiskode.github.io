@@ -1,8 +1,8 @@
 ---
 title: "Zury Ríos recicla diputados de VAMOS para llegar a la Presidencia"
 slug: "zury-rios-recicla-diputados-de-vamos-para-llegar-a-la-presidencia"
-date: "2026-06-08T18:40:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-08T18:40:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122218854458318393.jpg"
 video_url: null

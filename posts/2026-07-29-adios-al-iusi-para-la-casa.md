@@ -1,8 +1,8 @@
 ---
 title: "Adiós al IUSI para la casa"
 slug: "adios-al-iusi-para-la-casa"
-date: "2026-07-29T23:21:37+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-29T23:21:37.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223680924318393.jpg"
 video_url: null

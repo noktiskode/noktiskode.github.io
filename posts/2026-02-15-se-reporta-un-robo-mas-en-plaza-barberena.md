@@ -1,8 +1,8 @@
 ---
 title: "Se reporta un robo más en plaza Barberena"
 slug: "se-reporta-un-robo-mas-en-plaza-barberena"
-date: "2026-02-15T22:08:31+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-15T22:08:31.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122207419118318393.jpg"
 video_url: null

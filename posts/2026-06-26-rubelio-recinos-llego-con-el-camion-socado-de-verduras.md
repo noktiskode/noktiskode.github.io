@@ -1,8 +1,8 @@
 ---
 title: "Rubelio recinos llegó con el camión socado de verduras"
 slug: "rubelio-recinos-llego-con-el-camion-socado-de-verduras"
-date: "2026-06-26T21:31:57+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-26T21:31:57.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/122220543086318393.jpg"
 video_url: null

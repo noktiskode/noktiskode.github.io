@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos, exalcalde de Barberena, acompañado de su hija, entregó hoy una libra de pescado a personas que se encontraban"
 slug: "rubelio-recinos-exalcalde-de-barberena-acompanado-de-su-hija-entrego-hoy"
-date: "2026-08-15T00:26:22+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-15T00:26:22.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225345726318393.jpg"
 video_url: null

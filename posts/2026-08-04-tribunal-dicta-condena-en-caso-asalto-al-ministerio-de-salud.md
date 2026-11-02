@@ -1,8 +1,8 @@
 ---
 title: "Tribunal dicta condena en caso \"Asalto al Ministerio de Salud\""
 slug: "tribunal-dicta-condena-en-caso-asalto-al-ministerio-de-salud"
-date: "2026-08-04T03:04:21+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-04T03:04:21.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122224225760318393.jpg"
 video_url: null

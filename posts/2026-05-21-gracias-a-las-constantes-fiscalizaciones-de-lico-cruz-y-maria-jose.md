@@ -1,8 +1,8 @@
 ---
 title: "Gracias a las constantes fiscalizaciones de Lico Cruz y María José Recinos, el paso en el sector de la Panadería"
 slug: "gracias-a-las-constantes-fiscalizaciones-de-lico-cruz-y-maria-jose"
-date: "2026-05-21T17:20:18+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-21T17:20:18.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122217058382318393.jpg"
 video_url: null

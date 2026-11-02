@@ -1,8 +1,8 @@
 ---
 title: "“Alguien pregunta si esas ventas también las van a quitar o no."
 slug: "alguien-pregunta-si-esas-ventas-tambien-las-van-a-quitar-o-no"
-date: "2026-02-23T00:37:47+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-23T00:37:47.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208118616318393.jpg"
 video_url: null

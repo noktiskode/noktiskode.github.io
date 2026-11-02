@@ -1,8 +1,8 @@
 ---
 title: "El alcalde ha confirmado que, en los próximos"
 slug: "el-alcalde-ha-confirmado-que-en-los-proximos"
-date: "2025-10-24T00:09:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-24T00:09:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

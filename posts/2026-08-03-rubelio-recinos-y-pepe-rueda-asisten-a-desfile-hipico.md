@@ -1,8 +1,8 @@
 ---
 title: "Rubelio recinos y pepe rueda asisten a desfile hípico"
 slug: "rubelio-recinos-y-pepe-rueda-asisten-a-desfile-hipico"
-date: "2026-08-03T00:27:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-03T00:27:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122224094606318393.jpg"
 video_url: null

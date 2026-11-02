@@ -1,8 +1,8 @@
 ---
 title: "Obra terminada... ¿Y la inauguración?"
 slug: "obra-terminada-y-la-inauguracion"
-date: "2026-04-20T05:26:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-20T05:26:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213632070318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Primera piedra: escuelita de párvulos, aldea Fray Bartolomé de las Casas"
 slug: "primera-piedra-escuelita-de-parvulos"
-date: "2026-10-07T22:59:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-07T22:59:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791423871071-ow46gw.webp"
 video_url: "https://www.facebook.com/reel/1622174409591929/"

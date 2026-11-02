@@ -1,8 +1,8 @@
 ---
 title: "barberena Buses fuera de control: caos en cada calle"
 slug: "barberena-buses-fuera-de-control-caos-en-cada-calle"
-date: "2026-01-30T05:33:09+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-30T05:33:09.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

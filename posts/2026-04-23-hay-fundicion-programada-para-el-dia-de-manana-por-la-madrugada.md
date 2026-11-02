@@ -1,8 +1,8 @@
 ---
 title: "Hay fundición programada para el día de mañana por la madrugada en el sector de la panadería “La Dulce"
 slug: "hay-fundicion-programada-para-el-dia-de-manana-por-la-madrugada"
-date: "2026-04-23T01:53:32+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-23T01:53:32.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213950508318393.jpg"
 video_url: null

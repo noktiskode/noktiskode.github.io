@@ -1,8 +1,8 @@
 ---
 title: "La Municipalidad retiró una valla publicitaria alegando ilegalidades."
 slug: "la-municipalidad-retiro-una-valla-publicitaria-alegando-ilegalidades"
-date: "2026-06-22T22:10:49+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-22T22:10:49.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

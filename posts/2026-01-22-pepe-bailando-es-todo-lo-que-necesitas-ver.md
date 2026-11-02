@@ -1,8 +1,8 @@
 ---
 title: "Pepe bailando es todo lo que necesitas ver"
 slug: "pepe-bailando-es-todo-lo-que-necesitas-ver"
-date: "2026-01-22T01:21:44+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-22T01:21:44.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: null
 video_url: null

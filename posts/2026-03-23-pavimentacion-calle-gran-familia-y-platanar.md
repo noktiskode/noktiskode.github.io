@@ -1,8 +1,8 @@
 ---
 title: "Pavimentación calle Gran Familia Y Platanar"
 slug: "pavimentacion-calle-gran-familia-y-platanar"
-date: "2026-03-23T15:50:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-23T15:50:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210845094318393.jpg"
 video_url: null

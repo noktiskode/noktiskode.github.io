@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos reparte agua entre vecinos y lanza una crítica a la administración municipal"
 slug: "rubelio-recinos-reparte-agua-en-barberena"
-date: "2026-10-29T18:30:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-29T18:30:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1793313212983-szkptp.webp"
 video_url: null

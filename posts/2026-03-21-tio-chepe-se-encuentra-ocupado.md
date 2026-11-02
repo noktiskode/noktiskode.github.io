@@ -1,8 +1,8 @@
 ---
 title: "Tio chepe se encuentra ocupado"
 slug: "tio-chepe-se-encuentra-ocupado"
-date: "2026-03-21T01:00:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-21T01:00:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210588468318393.jpg"
 video_url: null

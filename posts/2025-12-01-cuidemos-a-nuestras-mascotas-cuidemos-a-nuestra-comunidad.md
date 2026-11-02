@@ -1,8 +1,8 @@
 ---
 title: "Cuidemos a nuestras mascotas, cuidemos a nuestra comunidad"
 slug: "cuidemos-a-nuestras-mascotas-cuidemos-a-nuestra-comunidad"
-date: "2025-12-01T21:32:44+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-01T21:32:44.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122199613148318393.jpg"
 video_url: null

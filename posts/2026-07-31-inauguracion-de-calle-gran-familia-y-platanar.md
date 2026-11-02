@@ -1,8 +1,8 @@
 ---
 title: "Inauguración de calle Gran Familia Y Platanar"
 slug: "inauguracion-de-calle-gran-familia-y-platanar"
-date: "2026-07-31T22:27:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-31T22:27:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223877058318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "En la 5.a sesión ordinaria de Consejos Departamentales"
 slug: "en-la-5-a-sesion-ordinaria-de-consejos-departamentales"
-date: "2026-05-27T23:38:38+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-27T23:38:38.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

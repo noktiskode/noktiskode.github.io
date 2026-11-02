@@ -1,8 +1,8 @@
 ---
 title: "Cuando invertir en equipo propio rinde más"
 slug: "cuando-invertir-en-equipo-propio-rinde-mas"
-date: "2026-06-25T16:53:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-25T16:53:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/122220437756318393.jpg"
 video_url: null

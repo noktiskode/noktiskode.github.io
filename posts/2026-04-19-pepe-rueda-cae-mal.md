@@ -1,8 +1,8 @@
 ---
 title: "¿Pepe Rueda cae mal?"
 slug: "pepe-rueda-cae-mal"
-date: "2026-04-19T17:34:10+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-19T17:34:10.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122213566814318393.jpg"
 video_url: null

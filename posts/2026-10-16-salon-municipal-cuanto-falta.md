@@ -1,8 +1,8 @@
 ---
 title: "Salón Municipal: ¿cuánto falta?"
 slug: "salon-municipal-cuanto-falta"
-date: "2026-10-16T16:10:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-16T16:10:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1792213886396-wn4n7a.webp"
 video_url: null

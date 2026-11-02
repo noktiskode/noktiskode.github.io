@@ -1,8 +1,8 @@
 ---
 title: "¿Desfile hípico O escaparate político?"
 slug: "desfile-hipico-o-escaparate-politico"
-date: "2026-07-01T18:53:54+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-01T18:53:54.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/122220983402318393.jpg"
 video_url: null

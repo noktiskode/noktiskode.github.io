@@ -1,8 +1,8 @@
 ---
 title: "Las travesuras de Don Chepe Los shreks andaban buscando un cepo para ponérselo al pobre chófer."
 slug: "las-travesuras-de-don-chepe-los-shreks-andaban-buscando-un-cepo"
-date: "2026-03-16T09:47:21+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-16T09:47:21.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210147702318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Barberena: más seguridad Y orden"
 slug: "barberena-mas-seguridad-y-orden"
-date: "2025-12-06T05:51:29+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-06T05:51:29.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122200081370318393.jpg"
 video_url: null

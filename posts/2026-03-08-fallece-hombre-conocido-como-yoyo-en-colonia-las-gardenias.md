@@ -1,8 +1,8 @@
 ---
 title: "Fallece hombre conocido como “Yoyo” en colonia Las Gardenias"
 slug: "fallece-hombre-conocido-como-yoyo-en-colonia-las-gardenias"
-date: "2026-03-08T22:37:58+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-08T22:37:58.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122209439966318393.jpg"
 video_url: null

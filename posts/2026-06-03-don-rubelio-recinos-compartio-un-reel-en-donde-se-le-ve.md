@@ -1,8 +1,8 @@
 ---
 title: "Don Rubelio Recinos compartió un reel en donde se le ve junto a los que considera sus amigos"
 slug: "don-rubelio-recinos-compartio-un-reel-en-donde-se-le-ve"
-date: "2026-06-03T23:11:01+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-03T23:11:01.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

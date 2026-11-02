@@ -1,8 +1,8 @@
 ---
 title: "Pavimento nuevo en Arimany: 'Su terreno vale el doble', dice el alcalde"
 slug: "pavimento-nuevo-en-arimany-su-terreno-vale-el-doble-dice-el-alcalde"
-date: "2026-07-19T00:35:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-19T00:35:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122222683688318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "En Monterroso hacen un llamado al alcalde"
 slug: "en-monterroso-hacen-un-llamado-al-alcalde"
-date: "2026-08-18T16:39:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-18T16:39:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

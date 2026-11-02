@@ -1,8 +1,8 @@
 ---
 title: "Calle Sector La Ladrillera: la obra ya terminó Ya terminaron los trabajos en el sector de."
 slug: "calle-sector-la-ladrillera-la-obra-ya-termino-ya-terminaron-los"
-date: "2026-08-11T07:09:10+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-11T07:09:10.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122224960004318393.jpg"
 video_url: null

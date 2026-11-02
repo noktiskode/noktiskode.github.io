@@ -1,8 +1,8 @@
 ---
 title: "Hechos por esclarecer en Barberena"
 slug: "hechos-por-esclarecer-en-barberena"
-date: "2026-01-05T00:52:37+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-05T00:52:37.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203228910318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El pasado, presente y el futuro de Barberena en el día del cariño."
 slug: "el-pasado-presente-y-el-futuro-de-barberena-en-el-dia-del-carino"
-date: "2026-02-14T06:58:29+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-14T06:58:29.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

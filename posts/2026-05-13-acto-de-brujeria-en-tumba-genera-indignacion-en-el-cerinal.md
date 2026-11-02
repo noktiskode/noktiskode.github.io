@@ -1,8 +1,8 @@
 ---
 title: "Acto de brujería en tumba genera indignación en el cerinal"
 slug: "acto-de-brujeria-en-tumba-genera-indignacion-en-el-cerinal"
-date: "2026-05-13T20:10:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-13T20:10:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

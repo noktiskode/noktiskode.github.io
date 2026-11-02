@@ -1,8 +1,8 @@
 ---
 title: "¡Hoy sí están trabajando en la muni!"
 slug: "hoy-si-estan-trabajando-en-la-muni"
-date: "2026-05-07T22:00:38+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-07T22:00:38.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215498166318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Resulta que bajo la administración del Alcalde Pepe Rueda, la Municipalidad de Barberena compró 500 chuchitos a Q6.00"
 slug: "resulta-que-bajo-la-administracion-del-alcalde-pepe-rueda-la-municipalidad"
-date: "2026-03-13T22:59:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-13T22:59:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122209911260318393.jpg"
 video_url: null

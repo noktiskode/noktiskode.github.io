@@ -1,8 +1,8 @@
 ---
 title: "Los diputados \"respaldaron Y acompañaron\""
 slug: "los-diputados-respaldaron-y-acompanaron"
-date: "2026-07-27T19:05:42+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-27T19:05:42.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223481046318393.jpg"
 video_url: null

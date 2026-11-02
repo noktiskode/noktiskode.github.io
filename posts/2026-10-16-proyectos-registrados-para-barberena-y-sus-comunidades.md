@@ -1,8 +1,8 @@
 ---
 title: "Proyectos registrados para Barberena y sus comunidades"
 slug: "proyectos-registrados-para-barberena-y-sus-comunidades"
-date: "2026-10-16T01:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-16T01:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1792120496633-00yqzx.webp"
 video_url: null

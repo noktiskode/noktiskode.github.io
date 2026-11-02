@@ -1,8 +1,8 @@
 ---
 title: "Vecinos de Las Estrellas 2 denuncian calles inundadas"
 slug: "vecinos-de-las-estrellas-2-denuncian-calles-inundadas"
-date: "2026-09-23T21:29:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-23T21:29:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1790809485494-zpvr9i.webp"
 video_url: "https://www.facebook.com/reel/2351432858993348/"

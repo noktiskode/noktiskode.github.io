@@ -1,8 +1,8 @@
 ---
 title: "Muni al rescate mientras el civ duerme"
 slug: "muni-al-rescate-mientras-el-civ-duerme"
-date: "2026-09-07T17:43:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-07T17:43:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000037763.jpg"
 video_url: null

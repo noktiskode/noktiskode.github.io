@@ -1,8 +1,8 @@
 ---
 title: "La PMT de Barberena salió a poner orden en la calle principal de la aldea El Cerinal, notificando"
 slug: "la-pmt-de-barberena-salio-a-poner-orden-en-la-calle"
-date: "2026-05-25T21:28:45+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-25T21:28:45.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122217488078318393.jpg"
 video_url: null

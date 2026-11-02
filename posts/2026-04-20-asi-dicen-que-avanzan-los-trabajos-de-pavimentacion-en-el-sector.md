@@ -1,8 +1,8 @@
 ---
 title: "Así dicen que avanzan los trabajos de pavimentación en el sector de la ladrillera"
 slug: "asi-dicen-que-avanzan-los-trabajos-de-pavimentacion-en-el-sector"
-date: "2026-04-20T20:09:29+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-20T20:09:29.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213707748318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Mercado municipal recibe mejoras después de décadas"
 slug: "mercado-municipal-recibe-mejoras-despues-de-decadas"
-date: "2026-04-14T19:03:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-14T19:03:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213006438318393.jpg"
 video_url: null

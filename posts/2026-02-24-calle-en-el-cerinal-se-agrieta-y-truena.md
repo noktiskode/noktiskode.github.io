@@ -1,8 +1,8 @@
 ---
 title: "Calle en El Cerinal se agrieta y truena"
 slug: "calle-en-el-cerinal-se-agrieta-y-truena"
-date: "2026-02-24T17:41:07+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-24T17:41:07.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

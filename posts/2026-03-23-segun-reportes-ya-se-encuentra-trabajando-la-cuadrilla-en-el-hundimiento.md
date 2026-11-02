@@ -1,8 +1,8 @@
 ---
 title: "Según reportes, ya se encuentra trabajando la cuadrilla en el hundimiento de El Zapotillo, El Cerinal."
 slug: "segun-reportes-ya-se-encuentra-trabajando-la-cuadrilla-en-el-hundimiento"
-date: "2026-03-23T22:00:01+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-23T22:00:01.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210868488318393.jpg"
 video_url: null

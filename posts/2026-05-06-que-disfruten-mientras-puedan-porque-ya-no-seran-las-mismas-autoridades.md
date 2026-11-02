@@ -1,8 +1,8 @@
 ---
 title: "que disfruten mientras puedan, porque ya no serán las mismas autoridades"
 slug: "que-disfruten-mientras-puedan-porque-ya-no-seran-las-mismas-autoridades"
-date: "2026-05-06T22:15:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-06T22:15:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215385084318393.jpg"
 video_url: null

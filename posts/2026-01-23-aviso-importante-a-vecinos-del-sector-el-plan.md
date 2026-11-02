@@ -1,8 +1,8 @@
 ---
 title: "Aviso importante A vecinos del sector el plan"
 slug: "aviso-importante-a-vecinos-del-sector-el-plan"
-date: "2026-01-23T20:47:49+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-23T20:47:49.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205179366318393.jpg"
 video_url: null

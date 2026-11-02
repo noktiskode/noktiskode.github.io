@@ -1,8 +1,8 @@
 ---
 title: "Dicen que la cortesía no quita lo valiente"
 slug: "dicen-que-la-cortesia-no-quita-lo-valiente"
-date: "2026-01-05T19:53:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-05T19:53:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203318256318393.jpg"
 video_url: null

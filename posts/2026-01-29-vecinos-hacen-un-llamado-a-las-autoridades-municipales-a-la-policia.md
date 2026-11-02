@@ -1,8 +1,8 @@
 ---
 title: "Vecinos hacen un llamado a las autoridades municipales, a la Policía Nacional Civil, Policía Municipal y PMT, para que actúen"
 slug: "vecinos-hacen-un-llamado-a-las-autoridades-municipales-a-la-policia"
-date: "2026-01-29T02:13:54+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-29T02:13:54.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205688868318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Buenas tardes, vecinos de elcerinal"
 slug: "buenas-tardes-vecinos-de-elcerinal"
-date: "2026-05-09T23:21:01+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-09T23:21:01.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

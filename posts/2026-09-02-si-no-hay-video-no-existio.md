@@ -1,8 +1,8 @@
 ---
 title: "Si no hay video, no existió"
 slug: "si-no-hay-video-no-existio"
-date: "2026-09-02T16:48:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-02T16:48:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1000037776.jpg"
 video_url: null

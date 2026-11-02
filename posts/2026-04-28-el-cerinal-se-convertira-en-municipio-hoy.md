@@ -1,8 +1,8 @@
 ---
 title: "¿El Cerinal se convertirá en municipio hoy?"
 slug: "el-cerinal-se-convertira-en-municipio-hoy"
-date: "2026-04-28T11:32:36+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-28T11:32:36.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122214488696318393.jpg"
 video_url: null

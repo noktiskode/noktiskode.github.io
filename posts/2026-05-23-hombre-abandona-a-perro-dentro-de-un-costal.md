@@ -1,8 +1,8 @@
 ---
 title: "Hombre abandona a perro dentro de un costal"
 slug: "hombre-abandona-a-perro-dentro-de-un-costal"
-date: "2026-05-23T00:13:25+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-23T00:13:25.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122217184952318393.jpg"
 video_url: null

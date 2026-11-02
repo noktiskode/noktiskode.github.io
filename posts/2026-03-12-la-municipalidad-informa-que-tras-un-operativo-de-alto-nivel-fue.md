@@ -1,8 +1,8 @@
 ---
 title: "La Municipalidad informa que, tras un operativo de alto nivel, fue capturado alias “El Therian”, principal responsable de criticar"
 slug: "la-municipalidad-informa-que-tras-un-operativo-de-alto-nivel-fue"
-date: "2026-03-12T10:16:05+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-12T10:16:05.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122209770974318393.jpg"
 video_url: null

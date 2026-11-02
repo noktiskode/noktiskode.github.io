@@ -1,8 +1,8 @@
 ---
 title: "Tío chepe está bravísimo"
 slug: "tio-chepe-esta-bravisimo"
-date: "2026-04-23T18:22:48+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-23T18:22:48.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122214017216318393.jpg"
 video_url: null

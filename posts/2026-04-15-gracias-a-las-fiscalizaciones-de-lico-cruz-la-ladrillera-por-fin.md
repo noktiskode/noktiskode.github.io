@@ -1,8 +1,8 @@
 ---
 title: "Gracias a las fiscalizaciones de lico cruz, la ladrillera por fin es pavimentada"
 slug: "gracias-a-las-fiscalizaciones-de-lico-cruz-la-ladrillera-por-fin"
-date: "2026-04-15T16:02:19+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-15T16:02:19.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213088320318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "lico cruz desmiente que en 20 años \"no se hizo nada\""
 slug: "lico-cruz-desmiente-que-en-20-anos-no-se-hizo-nada"
-date: "2026-07-03T22:03:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-03T22:03:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/122221172888318393.jpg"
 video_url: null

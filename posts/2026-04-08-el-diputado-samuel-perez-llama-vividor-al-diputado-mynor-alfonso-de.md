@@ -1,8 +1,8 @@
 ---
 title: "El diputado Samuel Pérez llama “vividor” al diputado Mynor Alfonso De La Rosa por su trayectoria durante la administración"
 slug: "el-diputado-samuel-perez-llama-vividor-al-diputado-mynor-alfonso-de"
-date: "2026-04-08T16:00:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-08T16:00:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122212448720318393.jpg"
 video_url: null

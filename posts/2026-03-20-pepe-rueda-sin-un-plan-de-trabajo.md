@@ -1,8 +1,8 @@
 ---
 title: "Pepe Rueda, sin un plan de trabajo"
 slug: "pepe-rueda-sin-un-plan-de-trabajo"
-date: "2026-03-20T02:26:33+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-20T02:26:33.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

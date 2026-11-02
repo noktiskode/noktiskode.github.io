@@ -1,8 +1,8 @@
 ---
 title: "El Parque Barrios: casi un siglo viendo pasar a Barberena"
 slug: "el-parque-barrios-casi-un-siglo-viendo-pasar-a-barberena"
-date: "2026-03-11T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-11T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/1000031698.jpg"
 video_url: null

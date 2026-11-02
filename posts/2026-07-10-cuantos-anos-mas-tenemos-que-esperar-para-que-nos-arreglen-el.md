@@ -1,8 +1,8 @@
 ---
 title: "\"¿Cuántos años más tenemos que esperar para que nos arreglen el callejón que está enfrente de canchas D'volea"
 slug: "cuantos-anos-mas-tenemos-que-esperar-para-que-nos-arreglen-el"
-date: "2026-07-10T18:30:06+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-10T18:30:06.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221900646318393.jpg"
 video_url: null

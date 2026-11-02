@@ -1,8 +1,8 @@
 ---
 title: "Persona denuncia acoso en el parque de Barberena"
 slug: "persona-denuncia-acoso-en-el-parque-de-barberena"
-date: "2026-04-01T19:12:16+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-01T19:12:16.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122211755738318393.jpg"
 video_url: null

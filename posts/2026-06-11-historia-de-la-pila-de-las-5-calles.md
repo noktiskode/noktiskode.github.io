@@ -1,8 +1,8 @@
 ---
 title: "Historia de la Pila de las 5 Calles"
 slug: "historia-de-la-pila-de-las-5-calles"
-date: "2026-06-11T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-11T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/1000038999.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles!"
 slug: "vaya-relajo-con-lo-del-pasaje-los-bloqueos-y-la-subida"
-date: "2026-09-04T19:57:45+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-04T19:57:45.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

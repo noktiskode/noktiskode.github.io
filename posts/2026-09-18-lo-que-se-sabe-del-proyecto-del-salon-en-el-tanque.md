@@ -1,8 +1,8 @@
 ---
 title: "Lo que se sabe del proyecto del salón en El Tanque"
 slug: "lo-que-se-sabe-del-proyecto-del-salon-en-el-tanque"
-date: "2026-09-18T00:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-18T00:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000041201.webp"
 video_url: null

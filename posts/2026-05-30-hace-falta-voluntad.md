@@ -1,8 +1,8 @@
 ---
 title: "Hace falta voluntad"
 slug: "hace-falta-voluntad"
-date: "2026-05-30T20:56:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-30T20:56:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

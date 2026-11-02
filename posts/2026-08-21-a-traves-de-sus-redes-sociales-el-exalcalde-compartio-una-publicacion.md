@@ -1,8 +1,8 @@
 ---
 title: "A través de sus redes sociales, el exalcalde compartió una publicación"
 slug: "a-traves-de-sus-redes-sociales-el-exalcalde-compartio-una-publicacion"
-date: "2026-08-21T17:25:20+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-21T17:25:20.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122226049322318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El pueblo del Cerinal, Barberena, Santa Rosa, ya está cansado de esto que vivimos\", escribió la persona que compartió"
 slug: "el-pueblo-del-cerinal-barberena-santa-rosa-ya-esta-cansado-de"
-date: "2026-08-12T17:27:04+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-12T17:27:04.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

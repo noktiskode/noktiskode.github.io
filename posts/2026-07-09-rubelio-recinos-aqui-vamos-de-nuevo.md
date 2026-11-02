@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos: 'aquí VAMOS de nuevo'"
 slug: "rubelio-recinos-aqui-vamos-de-nuevo"
-date: "2026-07-09T19:02:25+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-09T19:02:25.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221767158318393.jpg"
 video_url: null

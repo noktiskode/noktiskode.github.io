@@ -1,8 +1,8 @@
 ---
 title: "Municipalidad de Barberena"
 slug: "municipalidad-de-barberena"
-date: "2026-03-02T21:12:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-02T21:12:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208883526318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El amigo de todos, hace no mucho, llevó bolsas de verduras a los vecinos de aldea El Junquillo."
 slug: "el-amigo-de-todos-hace-no-mucho-llevo-bolsas-de-verduras"
-date: "2026-08-20T19:37:15+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-20T19:37:15.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225937728318393.jpg"
 video_url: null

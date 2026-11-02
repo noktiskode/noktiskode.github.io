@@ -1,8 +1,8 @@
 ---
 title: "Si bien, el vídeo del Señor Jorge Cruz en el Cementerio de Barberena fue nada más con fines"
 slug: "si-bien-el-video-del-senor-jorge-cruz-en-el-cementerio"
-date: "2025-09-09T01:44:31+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-09-09T01:44:31.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Ni los difuntos se salvan de quienes se apropian de lo ajeno"
 slug: "ni-los-difuntos-se-salvan-de-quienes-se-apropian-de-lo-ajeno"
-date: "2025-11-01T19:24:41+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-01T19:24:41.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122196601808318393.jpg"
 video_url: null

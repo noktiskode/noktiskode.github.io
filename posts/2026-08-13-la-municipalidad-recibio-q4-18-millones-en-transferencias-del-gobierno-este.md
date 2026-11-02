@@ -1,8 +1,8 @@
 ---
 title: "La municipalidad recibió Q4.18 millones en transferencias del gobierno este 13 de agosto"
 slug: "la-municipalidad-recibio-q4-18-millones-en-transferencias-del-gobierno-este"
-date: "2026-08-13T19:19:14+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-13T19:19:14.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225223098318393.jpg"
 video_url: null

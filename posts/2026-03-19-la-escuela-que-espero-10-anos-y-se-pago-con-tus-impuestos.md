@@ -1,8 +1,8 @@
 ---
 title: "La escuela que \"esperó\" 10 años y se pagó con tus impuestos"
 slug: "la-escuela-que-espero-10-anos-y-se-pago-con-tus-impuestos"
-date: "2026-03-19T20:07:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-19T20:07:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210471012318393.jpg"
 video_url: null

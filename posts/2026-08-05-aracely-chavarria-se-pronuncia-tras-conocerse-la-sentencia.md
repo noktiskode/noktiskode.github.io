@@ -1,8 +1,8 @@
 ---
 title: "Aracely Chavarría se pronuncia tras conocerse la sentencia"
 slug: "aracely-chavarria-se-pronuncia-tras-conocerse-la-sentencia"
-date: "2026-08-05T00:03:43+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-05T00:03:43.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122224308338318393.jpg"
 video_url: null

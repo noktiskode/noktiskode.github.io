@@ -1,8 +1,8 @@
 ---
 title: "Inician con la entrega de fertilizante en Barberena"
 slug: "inician-con-la-entrega-de-fertilizante-en-barberena"
-date: "2026-05-04T20:07:41+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-04T20:07:41.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215149536318393.jpg"
 video_url: null

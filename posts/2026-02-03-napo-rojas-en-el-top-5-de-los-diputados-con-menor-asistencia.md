@@ -1,8 +1,8 @@
 ---
 title: "Napo Rojas en el Top 5 de los diputados con menor asistencia"
 slug: "napo-rojas-en-el-top-5-de-los-diputados-con-menor-asistencia"
-date: "2026-02-03T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-03T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791506345308-61nxzz.webp"
 video_url: null

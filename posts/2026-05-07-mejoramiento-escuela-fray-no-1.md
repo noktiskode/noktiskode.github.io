@@ -1,8 +1,8 @@
 ---
 title: "Mejoramiento escuela fray no. 1"
 slug: "mejoramiento-escuela-fray-no-1"
-date: "2026-05-07T18:01:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-07T18:01:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215477490318393.jpg"
 video_url: null

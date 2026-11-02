@@ -1,8 +1,8 @@
 ---
 title: "El futuro alcalde de Barberena, el licenciado y empresario Jorge Cruz, comentó hace unos días que no es de los que andan"
 slug: "el-futuro-alcalde-de-barberena-el-licenciado-y-empresario-jorge-cruz"
-date: "2026-03-30T18:11:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-30T18:11:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122211552896318393.jpg"
 video_url: null

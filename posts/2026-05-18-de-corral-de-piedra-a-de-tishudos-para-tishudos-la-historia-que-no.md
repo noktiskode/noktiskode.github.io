@@ -1,8 +1,8 @@
 ---
 title: "'De Corral de Piedra a \"de tishudos para tishudos\": la historia que no"
 slug: "de-corral-de-piedra-a-de-tishudos-para-tishudos-la-historia-que-no"
-date: "2026-05-18T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-18T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/1000039581.jpg"
 video_url: null

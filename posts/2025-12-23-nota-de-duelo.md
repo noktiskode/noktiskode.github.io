@@ -1,8 +1,8 @@
 ---
 title: "Nota de Duelo"
 slug: "nota-de-duelo"
-date: "2025-12-23T17:30:30+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-23T17:30:30.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122201947526318393.jpg"
 video_url: null

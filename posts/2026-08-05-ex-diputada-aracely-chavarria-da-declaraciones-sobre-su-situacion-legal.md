@@ -1,8 +1,8 @@
 ---
 title: "Ex diputada Aracely Chavarría da declaraciones sobre su situación legal"
 slug: "ex-diputada-aracely-chavarria-da-declaraciones-sobre-su-situacion-legal"
-date: "2026-08-05T21:19:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-05T21:19:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

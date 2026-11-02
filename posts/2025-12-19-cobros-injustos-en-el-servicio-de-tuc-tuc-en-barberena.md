@@ -1,8 +1,8 @@
 ---
 title: "Cobros injustos en el servicio de tuc tuc en Barberena"
 slug: "cobros-injustos-en-el-servicio-de-tuc-tuc-en-barberena"
-date: "2025-12-19T22:59:53+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-19T22:59:53.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122201524052318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El pueblo no necesita promesas, necesita amigos."
 slug: "el-pueblo-no-necesita-promesas-necesita-amigos"
-date: "2026-02-23T05:32:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-23T05:32:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208140138318393.jpg"
 video_url: null

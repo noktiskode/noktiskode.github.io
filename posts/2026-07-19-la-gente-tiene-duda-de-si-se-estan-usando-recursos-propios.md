@@ -1,8 +1,8 @@
 ---
 title: "La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo."
 slug: "la-gente-tiene-duda-de-si-se-estan-usando-recursos-propios"
-date: "2026-07-19T00:00:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-19T00:00:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122222682026318393.jpg"
 video_url: null

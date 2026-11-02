@@ -1,8 +1,8 @@
 ---
 title: "Barberena Robo en el parqueo de La Maxi Despensa en Plaza Barberena"
 slug: "barberena-robo-en-el-parqueo-de-la-maxi-despensa-en-plaza-barberena"
-date: "2026-01-22T22:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-22T22:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205093008318393.jpg"
 video_url: null

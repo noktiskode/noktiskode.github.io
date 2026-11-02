@@ -1,8 +1,8 @@
 ---
 title: "La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día"
 slug: "la-municipalidad-de-barberena-a-traves-del-alcalde-pepe-rueda-vallejo"
-date: "2026-08-28T01:03:16+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-28T01:03:16.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122226663164318393.jpg"
 video_url: null

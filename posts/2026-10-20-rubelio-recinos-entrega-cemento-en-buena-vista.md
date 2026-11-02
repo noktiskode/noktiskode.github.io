@@ -1,8 +1,8 @@
 ---
 title: "Rubelio Recinos entrega cemento en Buena Vista"
 slug: "rubelio-recinos-entrega-cemento-en-buena-vista"
-date: "2026-10-20T22:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-20T22:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1792536113572-g9qteo.webp"
 video_url: null

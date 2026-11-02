@@ -1,8 +1,8 @@
 ---
 title: "Avanzan trabajos en sector la llamarada, el cerinal"
 slug: "avanzan-trabajos-en-sector-la-llamarada-el-cerinal"
-date: "2026-07-07T22:23:09+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-07T22:23:09.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221576892318393.jpg"
 video_url: null

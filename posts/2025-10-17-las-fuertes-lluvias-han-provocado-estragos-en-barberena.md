@@ -1,8 +1,8 @@
 ---
 title: "Las fuertes lluvias han provocado estragos en Barberena"
 slug: "las-fuertes-lluvias-han-provocado-estragos-en-barberena"
-date: "2025-10-17T03:01:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-17T03:01:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1790808926869-4y66r6.webp"
 video_url: "https://www.facebook.com/reel/1344585720728614/"

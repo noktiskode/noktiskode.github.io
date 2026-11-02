@@ -1,8 +1,8 @@
 ---
 title: "La ley y el manual municipal detallan las responsabilidades sobre el cementerio"
 slug: "la-ley-y-el-manual-municipal-detallan-las-responsabilidades-sobre-el-cementerio"
-date: "2026-10-11T17:58:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-11T17:58:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791741855586-hrf26y.webp"
 video_url: null

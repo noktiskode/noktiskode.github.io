@@ -1,8 +1,8 @@
 ---
 title: "Aldeas Buena Vista y Bijagües"
 slug: "aldeas-buena-vista-y-bijagues"
-date: "2026-01-22T16:27:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-22T16:27:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

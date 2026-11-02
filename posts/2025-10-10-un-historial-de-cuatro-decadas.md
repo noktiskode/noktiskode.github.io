@@ -1,8 +1,8 @@
 ---
 title: "Un historial de cuatro décadas"
 slug: "un-historial-de-cuatro-decadas"
-date: "2025-10-10T02:58:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-10T02:58:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1790807475125-00j3jf.webp"
 video_url: "https://www.facebook.com/reel/2961564690719627/"

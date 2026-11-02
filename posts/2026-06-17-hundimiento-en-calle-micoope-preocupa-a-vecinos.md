@@ -1,8 +1,8 @@
 ---
 title: "Hundimiento en Calle Micoope preocupa a vecinos"
 slug: "hundimiento-en-calle-micoope-preocupa-a-vecinos"
-date: "2026-06-17T18:54:47+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-17T18:54:47.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122219724140318393.jpg"
 video_url: null

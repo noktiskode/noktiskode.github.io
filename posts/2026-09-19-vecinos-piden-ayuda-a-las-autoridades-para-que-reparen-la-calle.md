@@ -1,8 +1,8 @@
 ---
 title: "Vecinos piden ayuda a las autoridades para que reparen la calle"
 slug: "vecinos-piden-ayuda-a-las-autoridades-para-que-reparen-la-calle"
-date: "2026-09-19T20:05:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-19T20:05:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000041418.webp"
 video_url: null

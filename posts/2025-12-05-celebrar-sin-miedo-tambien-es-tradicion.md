@@ -1,8 +1,8 @@
 ---
 title: "Celebrar Sin Miedo También Es Tradición"
 slug: "celebrar-sin-miedo-tambien-es-tradicion"
-date: "2025-12-05T03:37:51+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-05T03:37:51.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: "https://img.barberenamimunicipio.top/122199975056318393.jpg"
 video_url: null

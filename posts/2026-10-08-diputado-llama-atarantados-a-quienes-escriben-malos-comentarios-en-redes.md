@@ -1,8 +1,8 @@
 ---
 title: "Diputado llama \"atarantados\" a quienes escriben malos comentarios en redes"
 slug: "diputado-llama-atarantados-a-quienes-escriben-malos-comentarios-en-redes"
-date: "2026-10-08T22:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-08T22:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791522441490-9wilra.webp"
 video_url: "https://www.facebook.com/reel/2160898161164575/"

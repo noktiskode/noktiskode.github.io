@@ -1,8 +1,8 @@
 ---
 title: "Así se ve la calle de la ladrillera ya terminada"
 slug: "asi-se-ve-la-calle-de-la-ladrillera-ya-terminada"
-date: "2026-08-26T17:26:21+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-26T17:26:21.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

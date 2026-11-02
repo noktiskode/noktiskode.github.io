@@ -1,8 +1,8 @@
 ---
 title: "La función de informar implica ver el panorama completo."
 slug: "la-funcion-de-informar-implica-ver-el-panorama-completo"
-date: "2026-01-16T16:56:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-16T16:56:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122204508974318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El último período de pepe rueda como alcalde de barberena"
 slug: "el-ultimo-periodo-de-pepe-rueda-como-alcalde-de-barberena"
-date: "2026-02-27T00:43:20+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-27T00:43:20.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208500768318393.jpg"
 video_url: null

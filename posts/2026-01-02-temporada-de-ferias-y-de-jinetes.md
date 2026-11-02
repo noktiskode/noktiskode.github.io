@@ -1,8 +1,8 @@
 ---
 title: "Temporada de ferias... y de jinetes"
 slug: "temporada-de-ferias-y-de-jinetes"
-date: "2026-01-02T19:47:33+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-02T19:47:33.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122202999236318393.jpg"
 video_url: null

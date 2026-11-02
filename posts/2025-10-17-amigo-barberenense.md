@@ -1,8 +1,8 @@
 ---
 title: "Amigo barberenense"
 slug: "amigo-barberenense"
-date: "2025-10-17T07:47:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-17T07:47:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Barberena: el diputado Alarcón fiscalizó la noche de películas"
 slug: "barberena-el-diputado-alarcon-fiscalizo-la-noche-de-peliculas"
-date: "2026-02-15T08:48:19+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-15T08:48:19.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122207362976318393.jpg"
 video_url: null

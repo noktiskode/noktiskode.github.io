@@ -1,8 +1,8 @@
 ---
 title: "Algo que sí está mal en El Cerinal"
 slug: "algo-que-si-esta-mal-en-el-cerinal"
-date: "2026-05-25T17:21:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-25T17:21:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

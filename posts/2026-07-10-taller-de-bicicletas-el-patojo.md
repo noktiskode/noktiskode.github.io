@@ -1,8 +1,8 @@
 ---
 title: "Taller de bicicletas \"el patojo\""
 slug: "taller-de-bicicletas-el-patojo"
-date: "2026-07-10T09:30:08+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-10T09:30:08.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "historias"
 image: null
 video_url: null

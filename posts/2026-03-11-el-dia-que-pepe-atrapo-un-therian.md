@@ -1,8 +1,8 @@
 ---
 title: "El día que pepe atrapó un therian"
 slug: "el-dia-que-pepe-atrapo-un-therian"
-date: "2026-03-11T06:26:28+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-11T06:26:28.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122209664324318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Vecinos de El Cerinal, Barberena, SantaRosa, piden se apruebe la iniciativa 5558 para convertir la aldea en municipio"
 slug: "vecinos-de-el-cerinal-barberena-santarosa-piden-se-apruebe-la-iniciativa"
-date: "2026-05-11T19:25:46+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-11T19:25:46.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

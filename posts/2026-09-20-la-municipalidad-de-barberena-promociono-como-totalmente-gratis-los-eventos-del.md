@@ -1,8 +1,8 @@
 ---
 title: "La Municipalidad de Barberena promocionó como “totalmente gratis” los eventos del 13 y 19 de septiembre."
 slug: "la-municipalidad-de-barberena-promociono-como-totalmente-gratis-los-eventos-del"
-date: "2026-09-20T16:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-20T16:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000041797.webp"
 video_url: null

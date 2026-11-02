@@ -1,8 +1,8 @@
 ---
 title: "El mejor alcalde de Nueva Santa Rosa ya se cansó de que no le agradezcan"
 slug: "el-mejor-alcalde-de-nueva-santa-rosa-ya-se-canso-de-que-no-le-agradezcan"
-date: "2026-09-10T16:39:49+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-10T16:39:49.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122228070344318393.jpg"
 video_url: null

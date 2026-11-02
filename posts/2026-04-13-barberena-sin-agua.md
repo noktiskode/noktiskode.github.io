@@ -1,8 +1,8 @@
 ---
 title: "Barberena sin agua"
 slug: "barberena-sin-agua"
-date: "2026-04-13T18:17:46+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-13T18:17:46.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122212912214318393.jpg"
 video_url: null

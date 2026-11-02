@@ -1,8 +1,8 @@
 ---
 title: "El alcalde invita hoy a todos los vecinos del municipio al encendido del árbol navideño y de las luces"
 slug: "el-alcalde-invita-hoy-a-todos-los-vecinos-del-municipio-al"
-date: "2025-11-15T20:34:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-15T20:34:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122198013830318393.jpg"
 video_url: null

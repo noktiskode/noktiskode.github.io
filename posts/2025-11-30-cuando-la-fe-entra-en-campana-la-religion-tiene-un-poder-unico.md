@@ -1,8 +1,8 @@
 ---
 title: "Cuando la fe entra en campaña La religión tiene un poder único"
 slug: "cuando-la-fe-entra-en-campana-la-religion-tiene-un-poder-unico"
-date: "2025-11-30T20:07:46+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-30T20:07:46.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: null
 video_url: null

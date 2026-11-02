@@ -1,8 +1,8 @@
 ---
 title: "Noticia confirmada"
 slug: "noticia-confirmada"
-date: "2026-01-14T22:00:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-14T22:00:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122204339180318393.jpg"
 video_url: null

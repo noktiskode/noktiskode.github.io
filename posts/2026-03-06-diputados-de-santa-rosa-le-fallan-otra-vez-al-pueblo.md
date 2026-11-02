@@ -1,8 +1,8 @@
 ---
 title: "Diputados de santa rosa le fallan otra vez al pueblo"
 slug: "diputados-de-santa-rosa-le-fallan-otra-vez-al-pueblo"
-date: "2026-03-06T11:09:44+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-06T11:09:44.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "¿Es Rubelio Recinos el amigo del pueblo?"
 slug: "es-rubelio-recinos-el-amigo-del-pueblo"
-date: "2026-06-01T23:10:04+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-01T23:10:04.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Continúa la entrega de fertilizante A agricultores"
 slug: "continua-la-entrega-de-fertilizante-a-agricultores"
-date: "2026-05-09T19:48:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-09T19:48:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122215713728318393.jpg"
 video_url: null

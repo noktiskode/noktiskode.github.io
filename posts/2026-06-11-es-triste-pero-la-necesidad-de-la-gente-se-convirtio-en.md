@@ -1,8 +1,8 @@
 ---
 title: "Es triste, pero la necesidad de la gente se convirtió en el negocio de los políticos, sobre todo"
 slug: "es-triste-pero-la-necesidad-de-la-gente-se-convirtio-en"
-date: "2026-06-11T19:10:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-11T19:10:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejor alcalde de — guarda silencio, como todo"
 slug: "mientras-otros-solo-hablan-y-se-lanzan-indirectas-el-viejon-el"
-date: "2026-04-14T16:07:31+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-14T16:07:31.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213045480318393.jpg"
 video_url: null

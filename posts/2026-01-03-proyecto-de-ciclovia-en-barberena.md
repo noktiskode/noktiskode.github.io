@@ -1,8 +1,8 @@
 ---
 title: "Proyecto de ciclovía en Barberena"
 slug: "proyecto-de-ciclovia-en-barberena"
-date: "2026-01-03T15:00:21+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-03T15:00:21.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203080164318393.jpg"
 video_url: null

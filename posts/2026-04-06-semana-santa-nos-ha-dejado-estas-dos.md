@@ -1,8 +1,8 @@
 ---
 title: "Semana Santa nos ha dejado estas dos"
 slug: "semana-santa-nos-ha-dejado-estas-dos"
-date: "2026-04-06T16:00:42+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-06T16:00:42.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122212237724318393.jpg"
 video_url: null

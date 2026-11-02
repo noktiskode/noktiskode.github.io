@@ -1,8 +1,8 @@
 ---
 title: "¿La calle la torre, para cuándo?"
 slug: "la-calle-la-torre-para-cuando"
-date: "2026-07-06T17:36:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-06T17:36:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221439792318393.jpg"
 video_url: null

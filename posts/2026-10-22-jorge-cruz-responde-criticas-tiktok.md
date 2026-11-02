@@ -1,8 +1,8 @@
 ---
 title: "Jorge Cruz, \"El Mojarro\", publicó en Facebook un mensaje y un video donde se refiere a quienes lo critican en TikTok"
 slug: "jorge-cruz-responde-criticas-tiktok"
-date: "2026-10-22T22:00:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-22T22:00:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1792722793078-3ivtsp.webp"
 video_url: null

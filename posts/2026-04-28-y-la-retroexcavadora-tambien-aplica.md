@@ -1,8 +1,8 @@
 ---
 title: "¿Y la retroexcavadora también aplica?"
 slug: "y-la-retroexcavadora-tambien-aplica"
-date: "2026-04-28T22:35:44+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-28T22:35:44.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122214541574318393.jpg"
 video_url: null

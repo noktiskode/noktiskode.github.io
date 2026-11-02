@@ -1,8 +1,8 @@
 ---
 title: "A un año de la partida de Isidro Guzmán Ivoy"
 slug: "a-un-ano-de-la-partida-de-isidro-guzman-ivoy"
-date: "2026-04-18T16:02:15+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-18T16:02:15.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213399744318393.jpg"
 video_url: null

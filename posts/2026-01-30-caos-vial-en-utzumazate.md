@@ -1,8 +1,8 @@
 ---
 title: "Barberena"
 slug: "caos-vial-en-utzumazate"
-date: "2026-01-30T04:40:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-30T04:40:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Los alcaldes pueden subir y reducir su salario y dietas en una sesión municipal; lo pueden hacer esta"
 slug: "los-alcaldes-pueden-subir-y-reducir-su-salario-y-dietas-en"
-date: "2026-05-31T08:31:08+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-31T08:31:08.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

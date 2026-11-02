@@ -1,8 +1,8 @@
 ---
 title: "El mejor alcalde de Barberena"
 slug: "el-mejor-alcalde-de-barberena"
-date: "2026-03-04T01:49:41+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-04T01:49:41.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208986228318393.jpg"
 video_url: null

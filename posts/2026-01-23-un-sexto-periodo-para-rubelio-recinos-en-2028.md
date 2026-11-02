@@ -1,8 +1,8 @@
 ---
 title: "¿Un sexto período para Rubelio Recinos en 2028?"
 slug: "un-sexto-periodo-para-rubelio-recinos-en-2028"
-date: "2026-01-23T22:58:44+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-23T22:58:44.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122206072028318393.jpg"
 video_url: null

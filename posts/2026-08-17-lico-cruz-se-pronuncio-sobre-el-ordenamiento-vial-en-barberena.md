@@ -1,8 +1,8 @@
 ---
 title: "Lico Cruz se pronunció sobre el ordenamiento vial en Barberena"
 slug: "lico-cruz-se-pronuncio-sobre-el-ordenamiento-vial-en-barberena"
-date: "2026-08-17T22:56:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-17T22:56:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225649782318393.jpg"
 video_url: null

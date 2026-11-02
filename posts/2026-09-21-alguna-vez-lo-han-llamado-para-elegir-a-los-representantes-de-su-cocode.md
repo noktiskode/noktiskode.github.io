@@ -1,8 +1,8 @@
 ---
 title: "¿Alguna vez lo han llamado para elegir a los representantes de su COCODE?"
 slug: "alguna-vez-lo-han-llamado-para-elegir-a-los-representantes-de-su-cocode"
-date: "2026-09-21T19:57:03+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-21T19:57:03.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000042057.png"
 video_url: null

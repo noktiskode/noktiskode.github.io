@@ -1,8 +1,8 @@
 ---
 title: "Perforación de pozo aldeas monterroso y el cerinal"
 slug: "perforacion-de-pozo-aldeas-monterroso-y-el-cerinal"
-date: "2026-05-15T15:00:01+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-15T15:00:01.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122216402744318393.jpg"
 video_url: null

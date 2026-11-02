@@ -1,8 +1,8 @@
 ---
 title: "Tuberías dañadas El Cerinal"
 slug: "tuberias-danadas-el-cerinal"
-date: "2026-02-09T18:25:32+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-09T18:25:32.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122206824116318393.jpg"
 video_url: null

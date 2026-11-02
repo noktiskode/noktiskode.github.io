@@ -1,8 +1,8 @@
 ---
 title: "Mientras usted gana, a lo mucho, unos Q3,000 mensuales, estos personajes se embolsan Q66 mil sin hacer absolutamente"
 slug: "mientras-usted-gana-a-lo-mucho-unos-q3-000-mensuales-estos"
-date: "2026-04-17T08:25:13+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-17T08:25:13.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213247236318393.jpg"
 video_url: null

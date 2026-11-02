@@ -1,8 +1,8 @@
 ---
 title: "Tiene razón quien hizo esto, pero la multa está muy elevada, ¿no?"
 slug: "tiene-razon-quien-hizo-esto-pero-la-multa-esta-muy-elevada-no"
-date: "2026-02-14T21:30:43+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-14T21:30:43.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122207315660318393.jpg"
 video_url: null

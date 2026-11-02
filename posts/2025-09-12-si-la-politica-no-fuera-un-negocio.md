@@ -1,8 +1,8 @@
 ---
 title: "Si la política no fuera un negocio"
 slug: "si-la-politica-no-fuera-un-negocio"
-date: "2025-09-12T22:45:57+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-09-12T22:45:57.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122191319366318393.jpg"
 video_url: null

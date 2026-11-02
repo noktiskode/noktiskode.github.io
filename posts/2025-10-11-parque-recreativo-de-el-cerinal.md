@@ -1,8 +1,8 @@
 ---
 title: "Parque recreativo de El Cerinal"
 slug: "parque-recreativo-de-el-cerinal"
-date: "2025-10-11T21:21:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-11T21:21:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1790807884615-p19hxu.webp"
 video_url: "https://www.facebook.com/reel/1198351185659861/"

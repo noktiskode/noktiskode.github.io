@@ -1,8 +1,8 @@
 ---
 title: "Barberena Resumen de mi telenovela favorita"
 slug: "barberena-resumen-de-mi-telenovela-favorita"
-date: "2026-01-28T16:00:28+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-28T16:00:28.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205653102318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "En algún lugar de Guatemala... Conflicto por terreno"
 slug: "en-algun-lugar-de-guatemala-conflicto-por-terreno"
-date: "2025-11-17T20:34:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-11-17T20:34:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Queremos comentarles que esta obra no ha sido"
 slug: "queremos-comentarles-que-esta-obra-no-ha-sido"
-date: "2026-03-27T06:20:40+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-27T06:20:40.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122211199292318393.jpg"
 video_url: null

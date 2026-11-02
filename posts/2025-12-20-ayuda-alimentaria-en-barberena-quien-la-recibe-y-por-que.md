@@ -1,8 +1,8 @@
 ---
 title: "Ayuda alimentaria en Barberena: ¿quién la recibe y por qué?"
 slug: "ayuda-alimentaria-en-barberena-quien-la-recibe-y-por-que"
-date: "2025-12-20T02:03:19+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-20T02:03:19.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122201534516318393.jpg"
 video_url: null

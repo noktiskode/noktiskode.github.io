@@ -1,8 +1,8 @@
 ---
 title: "El alcalde \"es un santo\""
 slug: "el-alcalde-es-un-santo"
-date: "2026-02-06T17:42:36+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-06T17:42:36.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "barberena Posible balacera en Utzumazate"
 slug: "barberena-posible-balacera-en-utzumazate"
-date: "2026-01-25T23:44:58+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-25T23:44:58.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122205380816318393.jpg"
 video_url: null

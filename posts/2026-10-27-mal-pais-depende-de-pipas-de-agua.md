@@ -1,8 +1,8 @@
 ---
 title: "¡Qué bonito es agradecer lo que debería estar garantizado!"
 slug: "mal-pais-depende-de-pipas-de-agua"
-date: "2026-10-27T21:02:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-27T21:02:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1793135050409-ihihhi.webp"
 video_url: null

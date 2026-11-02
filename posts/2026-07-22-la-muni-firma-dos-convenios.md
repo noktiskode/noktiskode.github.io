@@ -1,8 +1,8 @@
 ---
 title: "La muni firma dos convenios"
 slug: "la-muni-firma-dos-convenios"
-date: "2026-07-22T21:00:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-22T21:00:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223047804318393.jpg"
 video_url: null

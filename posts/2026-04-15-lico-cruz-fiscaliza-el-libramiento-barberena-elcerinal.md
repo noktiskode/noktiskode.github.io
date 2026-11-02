@@ -1,8 +1,8 @@
 ---
 title: "Lico Cruz fiscaliza el libramiento Barberena - elcerinal"
 slug: "lico-cruz-fiscaliza-el-libramiento-barberena-elcerinal"
-date: "2026-04-15T19:40:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-15T19:40:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213101982318393.jpg"
 video_url: null

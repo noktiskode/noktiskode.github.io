@@ -1,8 +1,8 @@
 ---
 title: "No son Q5 millones Y medio"
 slug: "no-son-q5-millones-y-medio"
-date: "2026-04-30T05:19:27+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-30T05:19:27.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122214658904318393.jpg"
 video_url: null

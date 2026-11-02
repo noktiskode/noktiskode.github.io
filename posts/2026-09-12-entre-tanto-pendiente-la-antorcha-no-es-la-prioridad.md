@@ -1,8 +1,8 @@
 ---
 title: "Entre tanto pendiente, la antorcha no es la prioridad"
 slug: "entre-tanto-pendiente-la-antorcha-no-es-la-prioridad"
-date: "2026-09-12T20:17:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-12T20:17:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1000037909.png"
 video_url: null

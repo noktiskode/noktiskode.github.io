@@ -1,8 +1,8 @@
 ---
 title: "He visto algunas publicaciones recientes sobre el caso de Raquel Escalante y, aunque es totalmente comprensible la preocupación"
 slug: "he-visto-algunas-publicaciones-recientes-sobre-el-caso-de-raquel-escalante"
-date: "2025-12-01T17:35:09+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-01T17:35:09.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122199597092318393.jpg"
 video_url: null

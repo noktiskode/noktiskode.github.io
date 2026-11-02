@@ -1,8 +1,8 @@
 ---
 title: "Diputado Inés Castillo (jefe de la une)"
 slug: "diputado-ines-castillo-jefe-de-la-une"
-date: "2026-07-02T01:09:59+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-02T01:09:59.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221002254318393.jpg"
 video_url: null

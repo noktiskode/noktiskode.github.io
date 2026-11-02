@@ -1,8 +1,8 @@
 ---
 title: "En Barberena ya no se sabe qué admirar más"
 slug: "en-barberena-ya-no-se-sabe-que-admirar-mas"
-date: "2026-01-05T22:00:11+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-05T22:00:11.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203401404318393.jpg"
 video_url: null

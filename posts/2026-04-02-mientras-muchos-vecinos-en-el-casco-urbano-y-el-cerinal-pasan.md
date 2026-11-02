@@ -1,8 +1,8 @@
 ---
 title: "Mientras muchos vecinos en el casco urbano y El Cerinal pasan días sin que caiga una gota de agua"
 slug: "mientras-muchos-vecinos-en-el-casco-urbano-y-el-cerinal-pasan"
-date: "2026-04-02T08:38:05+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-02T08:38:05.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122211810032318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Se hace un llamado a la Municipalidad de Barberena"
 slug: "se-hace-un-llamado-a-la-municipalidad-de-barberena"
-date: "2026-02-24T20:37:59+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-24T20:37:59.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122208293744318393.jpg"
 video_url: null

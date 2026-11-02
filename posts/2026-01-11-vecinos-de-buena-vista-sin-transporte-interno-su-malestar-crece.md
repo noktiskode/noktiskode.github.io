@@ -1,8 +1,8 @@
 ---
 title: "Vecinos de Buena Vista sin transporte interno: su malestar crece"
 slug: "vecinos-de-buena-vista-sin-transporte-interno-su-malestar-crece"
-date: "2026-01-11T16:30:02+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-11T16:30:02.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122203916708318393.jpg"
 video_url: null

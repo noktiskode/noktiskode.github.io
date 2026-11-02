@@ -1,8 +1,8 @@
 ---
 title: "Inauguración de callejón en El Cerinal: la obra, de los vecinos."
 slug: "inauguracion-de-callejon-en-el-cerinal-la-obra-de-los-vecinos"
-date: "2026-06-21T15:59:30+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-21T15:59:30.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122220071846318393.jpg"
 video_url: null

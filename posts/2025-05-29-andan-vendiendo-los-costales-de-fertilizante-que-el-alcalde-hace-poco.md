@@ -1,8 +1,8 @@
 ---
 title: "Andan vendiendo los costales de fertilizante que el alcalde hace poco entregó a \"campesinos para sus cultivos\", los cocodes"
 slug: "andan-vendiendo-los-costales-de-fertilizante-que-el-alcalde-hace-poco"
-date: "2025-05-29T21:40:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-05-29T21:40:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122176387262318393.jpg"
 video_url: null

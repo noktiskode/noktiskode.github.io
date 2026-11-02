@@ -1,8 +1,8 @@
 ---
 title: "¿Estamos ante el alcalde que ha recibido más"
 slug: "estamos-ante-el-alcalde-que-ha-recibido-mas"
-date: "2025-10-23T06:03:56+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-10-23T06:03:56.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "opiniones"
 image: null
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "El cerinal y su camino a ser municipio: un proceso largo, cuestionado y aún sin respuestas"
 slug: "el-cerinal-y-su-camino-a-ser-municipio-un-proceso-largo"
-date: "2025-12-24T21:59:35+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2025-12-24T21:59:35.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122202066062318393.jpg"
 video_url: null

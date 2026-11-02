@@ -1,8 +1,8 @@
 ---
 title: "¡Se viene la inauguración con tormenta band!"
 slug: "se-viene-la-inauguracion-con-tormenta-band"
-date: "2026-04-16T01:01:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-16T01:01:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213121530318393.jpg"
 video_url: null

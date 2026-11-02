@@ -1,8 +1,8 @@
 ---
 title: "¡Chisme, chisme, chisme!"
 slug: "chisme-chisme-chisme"
-date: "2026-05-30T02:21:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-30T02:21:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122217907082318393.jpg"
 video_url: null

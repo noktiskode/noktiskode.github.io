@@ -1,8 +1,8 @@
 ---
 title: "Primera piedra en La Granja, Monterroso"
 slug: "primera-piedra-en-la-granja-monterroso"
-date: "2026-10-07T16:22:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-10-07T16:22:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1791494644784-ncr0ii.webp"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "Vecino comenta que hay largas filas para ingresar a Barberena"
 slug: "vecino-comenta-que-hay-largas-filas-para-ingresar-a-barberena"
-date: "2026-02-14T19:52:07+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-14T19:52:07.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122207310188318393.jpg"
 video_url: null

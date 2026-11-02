@@ -1,8 +1,8 @@
 ---
 title: "La precariedad como control politico"
 slug: "la-precariedad-como-control-politico"
-date: "2026-02-26T18:37:19+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-26T18:37:19.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

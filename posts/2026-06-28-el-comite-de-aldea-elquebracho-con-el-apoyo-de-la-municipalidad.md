@@ -1,8 +1,8 @@
 ---
 title: "El Comité de Aldea ElQuebracho, con el apoyo de la municipalidad, trabajaron en el campo de fútbol de la comunidad."
 slug: "el-comite-de-aldea-elquebracho-con-el-apoyo-de-la-municipalidad"
-date: "2026-06-28T00:52:24+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-28T00:52:24.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

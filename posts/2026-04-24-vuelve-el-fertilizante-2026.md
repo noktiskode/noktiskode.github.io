@@ -1,8 +1,8 @@
 ---
 title: "Vuelve el fertilizante 2026"
 slug: "vuelve-el-fertilizante-2026"
-date: "2026-04-24T04:45:17+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-24T04:45:17.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122214054044318393.jpg"
 video_url: null

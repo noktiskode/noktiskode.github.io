@@ -1,8 +1,8 @@
 ---
 title: "Pepe Rueda regaña al padrecito"
 slug: "pepe-rueda-regana-al-padrecito"
-date: "2026-04-17T22:11:59+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-04-17T22:11:59.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122213301632318393.jpg"
 video_url: null

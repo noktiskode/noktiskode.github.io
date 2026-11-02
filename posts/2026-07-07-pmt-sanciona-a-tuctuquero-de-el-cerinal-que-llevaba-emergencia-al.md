@@ -1,8 +1,8 @@
 ---
 title: "PMT sanciona a tuctuquero de el cerinal que llevaba emergencia al hospital"
 slug: "pmt-sanciona-a-tuctuquero-de-el-cerinal-que-llevaba-emergencia-al"
-date: "2026-07-07T17:18:05+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-07T17:18:05.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221557254318393.jpg"
 video_url: null

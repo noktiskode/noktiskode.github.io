@@ -1,8 +1,8 @@
 ---
 title: "Nota de duelo Y servicio social"
 slug: "nota-de-duelo-y-servicio-social"
-date: "2026-03-22T21:57:30+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-03-22T21:57:30.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122210770604318393.jpg"
 video_url: null

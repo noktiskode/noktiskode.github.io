@@ -1,8 +1,8 @@
 ---
 title: "Denuncia ciudadana"
 slug: "denuncia-ciudadana"
-date: "2026-05-24T16:03:04+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-05-24T16:03:04.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122217364772318393.jpg"
 video_url: null

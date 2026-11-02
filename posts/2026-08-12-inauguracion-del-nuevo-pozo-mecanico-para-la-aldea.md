@@ -1,8 +1,8 @@
 ---
 title: "Inauguración del nuevo pozo mecánico para la aldea"
 slug: "inauguracion-del-nuevo-pozo-mecanico-para-la-aldea"
-date: "2026-08-12T03:04:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-08-12T03:04:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122225043146318393.jpg"
 video_url: null

@@ -1,8 +1,8 @@
 ---
 title: "La Muni se gastó la cantidad de Q28,392.00 en shows de drones para Barberena y El Cerinal, esto"
 slug: "la-muni-se-gasto-la-cantidad-de-q28-392-00-en"
-date: "2026-01-16T23:48:01+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-01-16T23:48:01.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122204531258318393.jpg"
 video_url: null

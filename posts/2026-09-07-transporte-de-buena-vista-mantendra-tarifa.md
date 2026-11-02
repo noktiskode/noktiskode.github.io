@@ -1,8 +1,8 @@
 ---
 title: "Transporte de Buena Vista mantendrá tarifa"
 slug: "transporte-de-buena-vista-mantendra-tarifa"
-date: "2026-09-07T20:44:00+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-09-07T20:44:00.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000037761.webp"
 video_url: null

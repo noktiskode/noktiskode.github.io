@@ -1,8 +1,8 @@
 ---
 title: "Hoy tocó desfile en El Junquillo. Ahí iban"
 slug: "hoy-toco-desfile-en-el-junquillo-ahi-iban"
-date: "2026-02-22T23:06:45+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-02-22T23:06:45.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null

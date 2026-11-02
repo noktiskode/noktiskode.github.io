@@ -1,8 +1,8 @@
 ---
 title: "Según el Ministerio de Finanzas, en junio de 2026 Barberena recibió Q4,228,775.35 de aporte constitucional."
 slug: "segun-el-ministerio-de-finanzas-en-junio-de-2026-barberena-recibio"
-date: "2026-06-27T18:42:50+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-06-27T18:42:50.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/122220620474318393.jpg"
 video_url: null

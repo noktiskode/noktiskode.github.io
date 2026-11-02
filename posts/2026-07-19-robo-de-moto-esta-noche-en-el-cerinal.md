@@ -1,8 +1,8 @@
 ---
 title: "Robo de moto esta noche en el cerinal"
 slug: "robo-de-moto-esta-noche-en-el-cerinal"
-date: "2026-07-19T05:47:55+00:00"
-updated_at: "2026-10-31T00:28:52.938934+00:00"
+date: "2026-07-19T05:47:55.000Z"
+updated_at: "2026-10-31T00:28:52.938Z"
 category: "barberena"
 image: null
 video_url: null
