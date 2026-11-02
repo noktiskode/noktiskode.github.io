@@ -1,4 +1,4 @@
-name: Respaldo de posts (Supabase -> GitHub)
+name: Respaldo de posts (D1 -> GitHub)
 
 on:
   schedule:
@@ -39,11 +39,12 @@ jobs:
             git rm -rfq . || true
           fi
 
-      - name: Volcar posts desde Supabase
+      - name: Volcar posts desde D1
         working-directory: out
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
           OUT_DIR: posts
           INCLUDE_DRAFTS: "false"
           FORCE: ${{ inputs.forzar || 'false' }}
