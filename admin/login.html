@@ -8,7 +8,6 @@ sitemap: false
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión — Barberena Mi Municipio</title>
   <meta name="robots" content="noindex, nofollow">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -54,38 +53,41 @@ sitemap: false
 <body>
   <form id="login-form">
     <h1>Iniciar sesión — BMM</h1>
-    <input type="email" id="email" placeholder="Correo" required autocomplete="username">
     <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
     <button type="submit" id="submit-btn">Entrar</button>
-    <div id="msg"></div>
+    <div id="msg" role="alert"></div>
   </form>
 
-  <script src="/assets/js/supabase-auth.js"></script>
   <script>
-    // Si ya hay sesión activa, no tiene sentido mostrar el login
-    window.supabaseReady.then(function (session) {
-      if (session) window.location.href = '/';
-    });
+    // Si ya hay una sesión válida, no tiene sentido mostrar el login
+    fetch('/api/admin/session', {credentials: 'same-origin'}).then(function (r) {
+      if (r.ok) window.location.href = '/admin/';
+    }).catch(function () {});
 
     document.getElementById('login-form').addEventListener('submit', async function (e) {
       e.preventDefault();
       const btn = document.getElementById('submit-btn');
       const msg = document.getElementById('msg');
-      const email = document.getElementById('email').value.trim();
       const password = document.getElementById('password').value;
 
       btn.disabled = true;
       btn.textContent = 'Entrando…';
       msg.textContent = '';
 
-      const { error } = await window.supabaseClient.auth.signInWithPassword({ email, password });
-
-      if (error) {
-        msg.textContent = 'No se pudo iniciar sesión: ' + error.message;
+      try {
+        const res = await fetch('/api/admin/login', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({password: password})
+        });
+        const data = await res.json().catch(function () { return {}; });
+        if (!res.ok) throw new Error(data.error || ('Error ' + res.status));
+        window.location.href = '/admin/';
+      } catch (err) {
+        msg.textContent = 'No se pudo iniciar sesión: ' + err.message;
         btn.disabled = false;
         btn.textContent = 'Entrar';
-      } else {
-        window.location.href = '/';
       }
     });
   </script>

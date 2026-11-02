@@ -13,7 +13,6 @@ sitemap: false
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     :root{
       color-scheme:dark;
@@ -154,7 +153,7 @@ sitemap: false
     <section id="app" style="display:none">
       <div class="card">
         <h1 id="form-title">Nueva publicación</h1>
-        <p class="intro">La publicación se guarda directamente en Supabase. No se crea ningún archivo en GitHub.</p>
+        <p class="intro">La publicación se guarda directamente en la base de datos de Cloudflare (D1). No se crea ningún archivo en GitHub.</p>
 
         <form id="post-form">
           <div class="grid">
@@ -205,8 +204,8 @@ sitemap: false
                   <span id="image-origin" class="img-tag"></span>
                   <div class="image-actions">
                     <button type="button" id="btn-change-image" class="btn btn-secondary">Elegir nueva imagen</button>
-                    <button type="button" id="btn-remove-image" class="btn btn-secondary" title="Solo la desvincula del post; el archivo sigue en Supabase">Quitar</button>
-                    <button type="button" id="btn-delete-image" class="btn btn-danger" title="Borra el archivo de Supabase Storage">Eliminar de Supabase</button>
+                    <button type="button" id="btn-remove-image" class="btn btn-secondary" title="Solo la desvincula del post; el archivo sigue en el bucket">Quitar</button>
+                    <button type="button" id="btn-delete-image" class="btn btn-danger" title="Borra el archivo del bucket de imágenes (R2)">Eliminar archivo</button>
                   </div>
                 </div>
 
@@ -275,10 +274,24 @@ sitemap: false
 
 <script>
 (function(){
-  const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
-  const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-  window.supabaseClient = client;
+  // Dirección pública de las imágenes (bucket R2 de Cloudflare)
+  const IMG_BASE = 'https://img.barberenamimunicipio.top';
+
+  // Llama a las APIs del panel (la sesión viaja en una cookie segura)
+  async function api(path, opts){
+    opts = opts || {};
+    const init = {method: opts.method || 'GET', credentials: 'same-origin', headers: {'X-Requested-With': 'bmm-admin'}};
+    if(opts.body !== undefined){ init.headers['Content-Type'] = 'application/json'; init.body = JSON.stringify(opts.body); }
+    if(opts.form){ init.body = opts.form; }
+    const res = await fetch(path, init);
+    const data = await res.json().catch(()=>({}));
+    if(!res.ok){
+      const err = new Error(data.error || ('Error ' + res.status));
+      err.status = res.status;
+      throw err;
+    }
+    return data;
+  }
 
   const $ = id => document.getElementById(id);
   const errorBox = $('notice-error'), okBox = $('notice-ok');
@@ -307,30 +320,12 @@ sitemap: false
     return words.length>40 ? words.slice(0,40).join(' ')+'…' : first;
   }
 
-  /* Path del archivo dentro del bucket a partir de su URL pública */
+  /* Nombre del archivo dentro del bucket a partir de su URL pública (null si la imagen es externa) */
   function getStoragePathFromUrl(url){
-    if(!url || typeof url!=='string' || !url.includes('/post-images/')) return null;
-    let p = url.split('/post-images/').pop().split('?')[0].split('#')[0];
+    if(!url || typeof url!=='string' || !url.startsWith(IMG_BASE + '/')) return null;
+    let p = url.slice(IMG_BASE.length + 1).split('?')[0].split('#')[0];
     try{ p = decodeURIComponent(p); }catch(e){}
     return p || null;
-  }
-
-  /* Todas las imágenes del bucket usadas en un texto (Markdown/HTML) */
-  function storageUrlsInText(text){
-    const re = /https?:\/\/[^\s)"'<>]+\/post-images\/[^\s)"'<>]+/g;
-    return (String(text||'').match(re) || []);
-  }
-
-  /* ¿Otra publicación usa este archivo? (si falla la consulta, se asume que sí, por seguridad) */
-  async function isFileUsedElsewhere(path, excludeSlug){
-    const pat = '%' + path.replace(/[%_\\]/g,'\\$&') + '%';
-    for(const col of ['image_url','body']){
-      let q = client.from('posts').select('slug').ilike(col, pat).limit(1);
-      if(excludeSlug) q = q.neq('slug', excludeSlug);
-      const {data,error} = await q;
-      if(error || (data && data.length)) return true;
-    }
-    return false;
   }
 
 /* Redimensiona y comprime a WebP en el navegador antes de subir (máx. 1200px, calidad 0.75) */
@@ -353,28 +348,13 @@ sitemap: false
     }
   }
 
-/* Subida a Supabase Storage */
+/* Subida al bucket R2 (a través de /api/admin/upload) */
   async function uploadImage(file){
     file = await resizeImage(file);
-    const ext = (file.name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g,'') || 'jpg';
-    const path = Date.now() + '-' + Math.random().toString(36).slice(2,8) + '.' + ext;
-    const {error} = await client.storage.from('post-images').upload(path, file, {
-      contentType: file.type || undefined,
-      cacheControl: '31536000', upsert: false
-    });
-    if(error) throw error;
-    const {data} = client.storage.from('post-images').getPublicUrl(path);
-    return data.publicUrl;
-  }
-
-  /* Eliminar archivo de Supabase Storage (lanza error si no se borró de verdad) */
-  async function deleteImageFromStorage(url){
-    const path = getStoragePathFromUrl(url);
-    if(!path) return false;
-    const {data,error} = await client.storage.from('post-images').remove([path]);
-    if(error) throw error;
-    if(!data || !data.length) throw new Error('Supabase no borró el archivo (revisá la policy de DELETE del bucket post-images).');
-    return true;
+    const form = new FormData();
+    form.append('file', file, file.name);
+    const out = await api('/api/admin/upload', {method:'POST', form});
+    return out.url;
   }
 
 /* Widget de imagen destacada */
@@ -389,7 +369,7 @@ sitemap: false
       $('image-upload-controls').style.display = 'none';
       const inSb = !!getStoragePathFromUrl(url);
       const tag = $('image-origin');
-      tag.textContent = inSb ? 'Guardada en Supabase' : 'Enlace externo / ruta del sitio';
+      tag.textContent = inSb ? 'Guardada en Cloudflare (R2)' : 'Enlace externo / ruta del sitio';
       tag.className = 'img-tag' + (inSb ? '' : ' ext');
       $('btn-delete-image').style.display = inSb ? '' : 'none';
     } else {
@@ -429,39 +409,41 @@ sitemap: false
   $('btn-use-url').addEventListener('click', useManualUrl);
   $('image-url-manual').addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); useManualUrl(); } });
 
-  // QUITAR: desvincula la imagen del post; el archivo sigue en Supabase
+  // QUITAR: desvincula la imagen del post; el archivo sigue en el bucket
   $('btn-remove-image').addEventListener('click', () => {
-    setImageValue('', 'Imagen quitada del post (el archivo sigue guardado en Supabase). Recordá guardar.');
+    setImageValue('', 'Imagen quitada del post (el archivo sigue guardado en el bucket). Recordá guardar.');
   });
 
-  // ELIMINAR: borra el archivo de Supabase Storage
+  // ELIMINAR: borra el archivo del bucket (el servidor comprueba que ninguna otra publicación lo use)
   $('btn-delete-image').addEventListener('click', async () => {
     const url = $('image').value;
     const path = getStoragePathFromUrl(url);
     if(!url) return;
     const status = $('image-upload-status');
-    if(!path){ setImageValue('', 'Esa imagen no está en Supabase; solo se quitó del post.'); return; }
-    if(!confirm('¿Eliminar permanentemente esta imagen de Supabase Storage?')) return;
+    if(!path){ setImageValue('', 'Esa imagen no está en el bucket; solo se quitó del post.'); return; }
+    if(!confirm('¿Eliminar permanentemente esta imagen del bucket?')) return;
 
     const btn = $('btn-delete-image'); btn.disabled = true;
     status.textContent = 'Comprobando y eliminando…';
     try{
-      // ¿La usa otro post, o el contenido de este mismo post?
-      const usedByOther = await isFileUsedElsewhere(path, editingSlug);
-      const usedInBody = $('body').value.includes(path);
-      if(usedByOther || usedInBody){
-        setImageValue('', usedInBody
-          ? 'No se borró el archivo: también está insertada en el contenido de este post. Solo se quitó como destacada.'
-          : 'No se borró el archivo: lo usa otra publicación. Solo se quitó de este post.');
+      // ¿La usa el contenido de este mismo post?
+      if($('body').value.includes(path)){
+        setImageValue('', 'No se borró el archivo: también está insertada en el contenido de este post. Solo se quitó como destacada.');
         return;
       }
-      await deleteImageFromStorage(url);
+      const out = await api('/api/admin/imagen', {method:'DELETE', body:{url, excluirSlug: editingSlug}});
+      if(!out.borrada){
+        setImageValue('', out.motivo === 'en-uso'
+          ? 'No se borró el archivo: lo usa otra publicación. Solo se quitó de este post.'
+          : 'Esa imagen no está en el bucket; solo se quitó del post.');
+        return;
+      }
       // Si el post ya existe, limpiar también su image_url para que no quede un enlace roto
       if(editingSlug){
-        const {error} = await client.from('posts').update({image_url:null}).eq('slug', editingSlug);
-        if(error) throw error;
+        const {post} = await api('/api/admin/posts/' + encodeURIComponent(editingSlug));
+        await api('/api/admin/posts/' + encodeURIComponent(editingSlug), {method:'PUT', body:{...post, image_url:null}});
       }
-      setImageValue('', 'Imagen eliminada de Supabase Storage.');
+      setImageValue('', 'Imagen eliminada del bucket.');
     }catch(err){
       console.error(err);
       status.textContent = 'No se pudo eliminar: ' + (err.message || 'Error desconocido');
@@ -502,9 +484,13 @@ sitemap: false
   $('make-slug').addEventListener('click',()=>{ $('slug').value=slugify($('title').value); delete $('slug').dataset.manual; });
 
   async function init(){
-    const {data,error}=await client.auth.getSession();
-    if(error){show(errorBox,'No se pudo comprobar la sesión: '+error.message);return;}
-    if(!data.session){ $('login-required').style.display='block'; return; }
+    try{
+      await api('/api/admin/session');
+    }catch(err){
+      if(err.status === 401){ $('login-required').style.display='block'; return; }
+      show(errorBox,'No se pudo comprobar la sesión: '+err.message);
+      return;
+    }
     $('app').style.display='block';
     loadRecent();
   }
@@ -525,8 +511,9 @@ sitemap: false
 
   async function enterEditMode(slug){
     hide(errorBox); hide(okBox);
-    const {data,error} = await client.from('posts').select('*').eq('slug',slug).single();
-    if(error || !data){ show(errorBox,'No se pudo cargar la publicación: '+(error?error.message:'')); return; }
+    let data;
+    try{ data = (await api('/api/admin/posts/' + encodeURIComponent(slug))).post; }
+    catch(error){ show(errorBox,'No se pudo cargar la publicación: '+error.message); return; }
     editingSlug = slug;
     $('form-title').textContent = 'Editar publicación';
     $('save').textContent = 'Guardar cambios';
@@ -550,8 +537,8 @@ sitemap: false
   $('cancel-edit').addEventListener('click', exitEditMode);
 
   $('logout').addEventListener('click',async()=>{
-    await client.auth.signOut();
-    location.href='/login';
+    try{ await api('/api/admin/logout', {method:'POST'}); }catch(e){}
+    location.href='/admin/login';
   });
 
   $('clear').addEventListener('click', exitEditMode);
@@ -565,12 +552,6 @@ sitemap: false
     const save=$('save'); save.disabled=true; save.textContent=editingSlug?'Guardando…':'Publicando…';
     const isEditing = !!editingSlug;
     try{
-      if(!isEditing || slug!==editingSlug){
-        const {data:exists,error:checkError}=await client.from('posts').select('slug').eq('slug',slug).maybeSingle();
-        if(checkError) throw checkError;
-        if(exists) throw new Error('Ese slug ya existe. Elegí otro o generá uno nuevo.');
-      }
-
       const payload={
         slug,title,excerpt,body,
         category:$('category').value,
@@ -583,22 +564,21 @@ sitemap: false
       };
 
       if(isEditing){
-        const {error}=await client.from('posts').update(payload).eq('slug',editingSlug);
-        if(error) throw error;
+        await api('/api/admin/posts/' + encodeURIComponent(editingSlug), {method:'PUT', body:payload});
       }else{
-        const {error}=await client.from('posts').insert(payload);
-        if(error) throw error;
+        await api('/api/admin/posts', {method:'POST', body:payload});
       }
 
       const url='/'+encodeURIComponent(slug)+'/';
       $('result').innerHTML=(isEditing?'Cambios guardados correctamente.':'Publicación creada correctamente.')+' <a href="'+url+'" target="_blank">Abrir publicación →</a>';
       $('result').style.display='block';
-      show(okBox, isEditing ? 'Los cambios ya están en vivo.' : 'La publicación ya está lista en el sitio.');
+      show(okBox, (isEditing ? 'Los cambios ya están guardados.' : 'La publicación ya está lista.') + ' La portada y las listas pueden tardar hasta 2 minutos en reflejarlo.');
       exitEditMode();
       loadRecent($('search').value.trim());
     }catch(err){
       console.error(err);
-      show(errorBox,'No se pudo guardar: '+(err.message || 'Error desconocido'));
+      if(err.status === 401){ show(errorBox,'La sesión expiró. Volvé a iniciar sesión (no se perdió lo que escribiste: abrí el login en otra pestaña).'); }
+      else show(errorBox,'No se pudo guardar: '+(err.message || 'Error desconocido'));
     }finally{
       save.disabled=false; save.textContent=editingSlug?'Guardar cambios':'Publicar directamente';
     }
@@ -607,10 +587,13 @@ sitemap: false
   async function loadRecent(term){
     const box=$('recent');
     box.innerHTML='<span class="loading">Cargando…</span>';
-    let query = client.from('posts').select('slug,title,category,published_at').order('published_at',{ascending:false});
-    query = term ? query.ilike('title','%'+term+'%').limit(30) : query.limit(10);
-    const {data,error} = await query;
-    if(error){box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;}
+    let data;
+    try{
+      const out = await api('/api/admin/posts?limit=' + (term ? 30 : 10) + (term ? '&q=' + encodeURIComponent(term) : ''));
+      data = out.posts;
+    }catch(error){
+      box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;
+    }
     if(!data || !data.length){box.innerHTML='<span class="loading">'+(term?'Sin resultados para "'+escapeHtml(term)+'".':'No hay publicaciones.')+'</span>';return;}
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
@@ -627,33 +610,16 @@ sitemap: false
     box.querySelectorAll('.btn-delete').forEach(function(btn){
       btn.addEventListener('click', async function(){
         const slug = btn.dataset.slug, title = btn.dataset.title;
-        if(!confirm('¿Eliminar la publicación "'+title+'"?\n\nSe borrarán también sus imágenes de Supabase (salvo las que use otra publicación). No se puede deshacer.')) return;
+        if(!confirm('¿Eliminar la publicación "'+title+'"?\n\nSe borrarán también sus imágenes del bucket (salvo las que use otra publicación). No se puede deshacer.')) return;
         btn.disabled = true; btn.textContent = 'Eliminando…';
         try{
-          // 1. Leer las imágenes del post antes de borrarlo
-          const {data:post,error:readErr} = await client.from('posts').select('image_url,body').eq('slug', slug).single();
-          if(readErr) throw readErr;
-          const urls = new Set([post.image_url, ...storageUrlsInText(post.body)].filter(Boolean));
-
-          // 2. Borrar la fila (si falla, no se toca ninguna imagen)
-          const {error} = await client.from('posts').delete().eq('slug', slug);
-          if(error) throw error;
-
-          // 3. Borrar imágenes que ya nadie usa
-          let removed = 0, kept = 0, failed = 0;
-          for(const u of urls){
-            const path = getStoragePathFromUrl(u);
-            if(!path) continue;
-            try{
-              if(await isFileUsedElsewhere(path, null)){ kept++; continue; }
-              await deleteImageFromStorage(u); removed++;
-            }catch(e){ console.warn(e); failed++; }
-          }
+          const out = await api('/api/admin/posts/' + encodeURIComponent(slug), {method:'DELETE'});
+          const im = out.imagenes || {};
           if(editingSlug===slug) exitEditMode();
           let msg = 'Publicación eliminada.';
-          if(removed) msg += ' Imágenes borradas de Supabase: '+removed+'.';
-          if(kept) msg += ' '+kept+' se conservó porque la usa otra publicación.';
-          if(failed) msg += ' '+failed+' no se pudo borrar (revisá la policy de DELETE del bucket).';
+          if(im.borradas) msg += ' Imágenes borradas del bucket: '+im.borradas+'.';
+          if(im.conservadas) msg += ' '+im.conservadas+' se conservó porque la usa otra publicación.';
+          if(im.fallidas) msg += ' '+im.fallidas+' no se pudo borrar.';
           show(okBox, msg);
           loadRecent($('search').value.trim());
         }catch(err){
@@ -741,12 +707,10 @@ sitemap: false
     if(!title || body.length < 80){ status.textContent = 'Escribí el título y un poco de contenido antes de pedir sugerencias.'; return; }
     btn.disabled = true; btn.textContent = 'Analizando…'; status.textContent = 'Leyendo el post…';
     try{
-      const {data} = await client.auth.getSession();
-      const token = data.session && data.session.access_token;
-      if(!token) throw new Error('La sesión expiró. Volvé a iniciar sesión.');
       const res = await fetch('/api/sugerir-seo', {
         method:'POST',
-        headers:{'Content-Type':'application/json', Authorization:'Bearer '+token},
+        credentials:'same-origin',
+        headers:{'Content-Type':'application/json', 'X-Requested-With':'bmm-admin'},
         body: JSON.stringify({title, body, category:$('category').value})
       });
       const out = await res.json().catch(()=>({}));
