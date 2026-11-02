@@ -9,11 +9,10 @@
 //   - Opcional: ANTHROPIC_API_KEY (secreto). Si existe, tiene prioridad y usa
 //     Claude (ANTHROPIC_MODEL, por defecto "claude-haiku-5-5").
 //
-// Solo responde a quien tenga sesión iniciada en el panel: el token de
-// Supabase que manda el navegador se valida contra Supabase.
+// Solo responde a quien tenga sesión iniciada en el panel (cookie firmada).
 
-const SUPABASE_URL = 'https://iolchsadedieagiqrxzu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvbGNoc2FkZWRpZWFnaXFyeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NzI1ODYsImV4cCI6MjEwNjA0ODU4Nn0.lOUc-vt2JFfDIidKO7m_dFgjnmDWIGQnzXADHcBTjyg';
+import { exigirSesion } from '../_auth.js';
+import { etiquetasFrecuentes } from '../_db.js';
 
 const MAX_BODY_CHARS = 12000;
 
@@ -24,32 +23,11 @@ function json(data, status = 200) {
   });
 }
 
-async function sesionValida(token) {
-  if (!token) return false;
-  try {
-    const res = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${token}` }
-    });
-    return res.ok;
-  } catch (e) {
-    return false;
-  }
-}
-
 // Etiquetas que ya existen en el sitio, para que la IA las reutilice
 // en vez de inventar variantes ("Agua", "Agua potable", "agua").
-async function etiquetasExistentes() {
+async function etiquetasExistentes(db) {
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/posts?select=tags&limit=500`, {
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
-    });
-    if (!res.ok) return [];
-    const rows = await res.json();
-    const conteo = new Map();
-    for (const r of rows) {
-      for (const t of (r.tags || [])) conteo.set(t, (conteo.get(t) || 0) + 1);
-    }
-    return [...conteo.entries()].sort((a, b) => b[1] - a[1]).slice(0, 80).map(([t]) => t);
+    return await etiquetasFrecuentes(db, 80);
   } catch (e) {
     return [];
   }
@@ -173,9 +151,8 @@ function limpiar(r) {
 }
 
 export async function onRequestPost({ request, env }) {
-  const auth = request.headers.get('Authorization') || '';
-  const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
-  if (!(await sesionValida(token))) return json({ error: 'Sesión no válida. Iniciá sesión en el panel.' }, 401);
+  const sinSesion = await exigirSesion({ request, env });
+  if (sinSesion) return sinSesion;
 
   let payload;
   try {
@@ -194,7 +171,7 @@ export async function onRequestPost({ request, env }) {
     return json({ error: 'Falta configurar ANTHROPIC_API_KEY o el binding "AI" en Cloudflare Pages.' }, 500);
   }
 
-  const existentes = await etiquetasExistentes();
+  const existentes = await etiquetasExistentes(env.DB);
   const prompt = construirPrompt({ title, body, category: payload.category, existentes });
 
   // Hasta 2 intentos: los modelos a veces devuelven JSON mal formado.
