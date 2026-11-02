@@ -1,8 +1,9 @@
 """
-Respaldo de los posts de Supabase -> archivos .md (mismo formato que _posts/).
+Respaldo de los posts de Cloudflare D1 -> archivos .md (mismo formato que _posts/).
 
 Variables de entorno:
-  SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY   (los mismos secretos que ya usas)
+  CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, D1_DATABASE_ID
+                    (token con permiso "D1 Read" o "D1 Edit"; van como secretos de GitHub)
   OUT_DIR           carpeta donde escribir (default: posts)
   INCLUDE_DRAFTS    "true" para incluir borradores (default: false; si el repo es público, déjalo en false)
   FORCE             "true" para saltarse la protección contra respaldos incompletos
@@ -12,33 +13,49 @@ Solo usa la librería estándar de Python.
 import json
 import os
 import sys
-import urllib.parse
 import urllib.request
 from pathlib import Path
 
-URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
-KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "")
+ACCOUNT = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
+DB_ID = os.environ.get("D1_DATABASE_ID", "")
 OUT = Path(os.environ.get("OUT_DIR", "posts"))
 DRAFTS = os.environ.get("INCLUDE_DRAFTS", "false").lower() == "true"
 FORCE = os.environ.get("FORCE", "false").lower() == "true"
-PAGE = 500
+PAGE = 200
 
-if not URL or not KEY:
-    sys.exit("Faltan SUPABASE_URL o SUPABASE_SERVICE_ROLE_KEY.")
+if not TOKEN or not ACCOUNT or not DB_ID:
+    sys.exit("Faltan CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID o D1_DATABASE_ID.")
+
+
+def d1_query(sql, params):
+    req = urllib.request.Request(
+        f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/d1/database/{DB_ID}/query",
+        data=json.dumps({"sql": sql, "params": params}).encode("utf-8"),
+        headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = json.load(r)
+    if not data.get("success"):
+        raise RuntimeError(f"D1 respondió con error: {data.get('errors')}")
+    return data["result"][0].get("results", [])
 
 
 def fetch_all():
     rows, offset = [], 0
+    where = "" if DRAFTS else "WHERE published = 1"
     while True:
-        q = {"select": "*", "order": "published_at.asc,slug.asc", "limit": PAGE, "offset": offset}
-        if not DRAFTS:
-            q["published"] = "eq.true"
-        req = urllib.request.Request(
-            f"{URL}/rest/v1/posts?{urllib.parse.urlencode(q)}",
-            headers={"apikey": KEY, "Authorization": f"Bearer {KEY}"},
+        batch = d1_query(
+            "SELECT id,slug,title,excerpt,body,category,image_url,video_url,tags,published,featured,"
+            f"published_at,updated_at FROM posts {where} ORDER BY published_at ASC, slug ASC LIMIT ? OFFSET ?",
+            [PAGE, offset],
         )
-        with urllib.request.urlopen(req, timeout=60) as r:
-            batch = json.load(r)
+        for p in batch:
+            try:
+                p["tags"] = json.loads(p.get("tags") or "[]")
+            except ValueError:
+                p["tags"] = []
         rows += batch
         if len(batch) < PAGE:
             return rows
@@ -73,7 +90,7 @@ def render(p):
 def main():
     posts = fetch_all()
     if not posts:
-        sys.exit("Supabase devolvió 0 posts: no toco el respaldo anterior.")
+        sys.exit("D1 devolvió 0 posts: no toco el respaldo anterior.")
 
     OUT.mkdir(parents=True, exist_ok=True)
     previos = list(OUT.glob("*.md"))
