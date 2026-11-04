@@ -650,18 +650,33 @@ sitemap: false
     box.innerHTML='<span class="loading">Cargando…</span>';
     selected.clear(); currentPosts = []; updateBulk(); updateToggleAll();
     $('list-count').textContent = '';
-    let data;
+    let data, sinOffset = false;
     try{
-      const limit = showAll ? 500 : (term ? 30 : 10);
-      const out = await api('/api/admin/posts?limit=' + limit + (term ? '&q=' + encodeURIComponent(term) : ''));
-      data = out.posts;
+      const q = term ? '&q=' + encodeURIComponent(term) : '';
+      if(showAll){
+        // La API limita cada respuesta (100): se piden varias tandas con offset hasta traerlas todas
+        const vistos = new Set(); data = [];
+        for(let off=0; off<10000; off+=100){
+          box.innerHTML='<span class="loading">Cargando… ('+data.length+')</span>';
+          const out = await api('/api/admin/posts?limit=100&offset=' + off + q);
+          const lote = out.posts || [];
+          const nuevos = lote.filter(function(p){ return !vistos.has(p.slug); });
+          nuevos.forEach(function(p){ vistos.add(p.slug); });
+          data = data.concat(nuevos);
+          if(lote.length < 100) break;
+          if(!nuevos.length){ sinOffset = true; break; }
+        }
+      }else{
+        const out = await api('/api/admin/posts?limit=' + (term ? 30 : 10) + q);
+        data = out.posts;
+      }
     }catch(error){
       box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;
     }
     if(!data || !data.length){box.innerHTML='<span class="loading">'+(term?'Sin resultados para "'+escapeHtml(term)+'".':'No hay publicaciones.')+'</span>';return;}
     currentPosts = data;
     const ocultas = data.filter(isHidden).length;
-    $('list-count').textContent = data.length + (data.length===1?' publicación':' publicaciones') + (ocultas ? ' · ' + ocultas + (ocultas===1?' oculta':' ocultas') : '');
+    $('list-count').textContent = data.length + (data.length===1?' publicación':' publicaciones') + (ocultas ? ' · ' + ocultas + (ocultas===1?' oculta':' ocultas') : '') + (sinOffset ? ' · la API no entregó más de 100 (no acepta offset)' : '');
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
       const hid = isHidden(p);
