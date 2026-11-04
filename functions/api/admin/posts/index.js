@@ -1,5 +1,5 @@
 // functions/api/admin/posts/index.js
-//   GET  /api/admin/posts?q=texto&limit=10   -> lista para el panel (incluye borradores)
+//   GET  /api/admin/posts?q=texto&limit=10&offset=0   -> lista para el panel (incluye borradores)
 //   POST /api/admin/posts                     -> crea una publicación
 
 import { json, exigirSesion } from '../../../_auth.js';
@@ -11,17 +11,18 @@ export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const q = (url.searchParams.get('q') || '').trim().slice(0, 100);
   const limite = Math.min(100, Math.max(1, parseInt(url.searchParams.get('limit'), 10) || (q ? 30 : 10)));
+  const offset = Math.min(100000, Math.max(0, parseInt(url.searchParams.get('offset'), 10) || 0));
   const db = context.env.DB;
   let res;
   if (q) {
     const patron = '%' + q.replace(/[\\%_]/g, '\\$&') + '%';
     res = await db.prepare(
       `SELECT slug,title,category,published,published_at FROM posts
-        WHERE title LIKE ?1 ESCAPE '\\' ORDER BY published_at DESC LIMIT ?2`).bind(patron, limite).all();
+        WHERE title LIKE ?1 ESCAPE '\\' ORDER BY published_at DESC, slug LIMIT ?2 OFFSET ?3`).bind(patron, limite, offset).all();
   } else {
     res = await db.prepare(
-      'SELECT slug,title,category,published,published_at FROM posts ORDER BY published_at DESC LIMIT ?1'
-    ).bind(limite).all();
+      'SELECT slug,title,category,published,published_at FROM posts ORDER BY published_at DESC, slug LIMIT ?1 OFFSET ?2'
+    ).bind(limite, offset).all();
   }
   return json({ posts: res.results || [] });
 }
