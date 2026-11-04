@@ -94,12 +94,28 @@ sitemap: false
     .seo-btn{padding:7px 12px;font-size:14px}
 
     .posts{display:grid}
-    .post-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+    .post-item{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
     .post-item:last-child{border-bottom:0}
     .post-title{font-weight:700}
     .post-meta{font-size:13px;color:var(--muted);margin-top:3px}
-    .post-btns{display:flex;gap:6px;flex-wrap:wrap}
+    .post-btns{display:flex;gap:6px}
     .loading{color:var(--muted);font-size:14px}
+
+    /* Botones con ícono */
+    .btn-icon{width:42px;height:42px;padding:0;flex:none}
+    .btn-icon svg{width:20px;height:20px;pointer-events:none}
+    .btn-hide.on{background:var(--orange-soft);border-color:var(--orange);color:var(--orange-dark)}
+    .post-item.is-hidden .post-title{opacity:.55}
+    .badge-hidden{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--orange-soft);color:var(--orange-dark);vertical-align:1px}
+    .post-item input.sel,.bulk-bar input{width:22px;height:22px;padding:0;accent-color:var(--orange);cursor:pointer;flex:none}
+
+    /* Barra de selección múltiple */
+    .list-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+    .list-tools .help{margin:0}
+    .bulk-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 12px;margin-bottom:4px;border:1px solid var(--field-line);border-radius:10px;background:var(--field);position:sticky;top:63px;z-index:5}
+    .bulk-bar label{display:flex;align-items:center;gap:9px;margin:0;font-weight:500;font-size:14px;cursor:pointer}
+    .bulk-btns{display:flex;gap:6px;flex-wrap:wrap}
+    .bulk-btns .btn{padding:8px 12px;font-size:14px}
 
     @media(max-width:700px){
       .grid{grid-template-columns:1fr}.full{grid-column:auto}
@@ -108,8 +124,8 @@ sitemap: false
       .brand-text{font-size:15px}.brand-text small{display:none}
       .top-actions .btn{padding:9px 11px;font-size:14px}
       .top-actions .long{display:none}
-      .post-item{flex-direction:column;align-items:flex-start}
-      .post-btns{width:100%}
+      .post-item{grid-template-columns:auto 1fr}
+      .post-btns{grid-column:2}
       .image-actions .btn{flex:1 1 100%}
     }
     @media (max-width:520px){
@@ -267,6 +283,18 @@ sitemap: false
       <div class="card">
         <h2>Publicaciones existentes</h2>
         <input id="search" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" placeholder="Buscar por título…" style="margin-bottom:14px" autocomplete="off">
+        <div class="list-tools">
+          <button type="button" id="toggle-all" class="btn btn-secondary">Mostrar todas las publicaciones</button>
+          <span id="list-count" class="help"></span>
+        </div>
+        <div class="bulk-bar">
+          <label><input type="checkbox" id="select-all"><span id="select-count">Seleccionar todas</span></label>
+          <div class="bulk-btns">
+            <button type="button" id="bulk-hide" class="btn btn-secondary" disabled>Ocultar</button>
+            <button type="button" id="bulk-show" class="btn btn-secondary" disabled>Mostrar</button>
+            <button type="button" id="bulk-delete" class="btn btn-delete" disabled>Eliminar</button>
+          </div>
+        </div>
         <div id="recent" class="posts"><span class="loading">Cargando…</span></div>
       </div>
     </section>
@@ -296,6 +324,7 @@ sitemap: false
   const $ = id => document.getElementById(id);
   const errorBox = $('notice-error'), okBox = $('notice-ok');
   let editingSlug = null;
+  let editingPublished = true; // al editar un post oculto, que siga oculto
 
   function isoToLocalInput(iso){
     if(!iso) return localDateTime();
@@ -497,6 +526,7 @@ sitemap: false
 
   function exitEditMode(){
     editingSlug = null;
+    editingPublished = true;
     $('form-title').textContent = 'Nueva publicación';
     $('save').textContent = 'Publicar directamente';
     $('cancel-edit').style.display = 'none';
@@ -515,6 +545,7 @@ sitemap: false
     try{ data = (await api('/api/admin/posts/' + encodeURIComponent(slug))).post; }
     catch(error){ show(errorBox,'No se pudo cargar la publicación: '+error.message); return; }
     editingSlug = slug;
+    editingPublished = !isHidden(data);
     $('form-title').textContent = 'Editar publicación';
     $('save').textContent = 'Guardar cambios';
     $('cancel-edit').style.display = 'inline-flex';
@@ -559,7 +590,7 @@ sitemap: false
         video_url:$('video').value.trim() || null,
         tags,
         featured:$('featured').checked,
-        published:true,
+        published:isEditing ? editingPublished : true,
         published_at:new Date($('published-at').value).toISOString()
       };
 
@@ -584,52 +615,203 @@ sitemap: false
     }
   });
 
+  /* ---------- Lista de publicaciones: iconos, selección múltiple, ocultar ---------- */
+  const SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+  const ICON = {
+    eye: SVG+'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+    eyeOff: SVG+'<path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-6.5 0-10-7-10-7a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 5c6.5 0 10 7 10 7a18.5 18.5 0 0 1-2.16 3.19M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>',
+    pencil: SVG+'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
+    x: SVG+'<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+  };
+
+  let showAll = false;          // "Mostrar todas las publicaciones"
+  let currentPosts = [];
+  const selected = new Set();   // slugs marcados
+
+  function isHidden(p){ return p && (p.published === false || p.published === 0 || p.published === '0'); }
+  function postUrl(slug){ return '/api/admin/posts/' + encodeURIComponent(slug); }
+
+  function updateBulk(){
+    const n = selected.size;
+    $('select-count').textContent = n ? (n + (n===1?' seleccionada':' seleccionadas')) : 'Seleccionar todas';
+    ['bulk-hide','bulk-show','bulk-delete'].forEach(function(id){ $(id).disabled = !n; });
+    const sa = $('select-all');
+    sa.checked = currentPosts.length > 0 && n === currentPosts.length;
+    sa.indeterminate = n > 0 && n < currentPosts.length;
+  }
+
+  function updateToggleAll(){
+    $('toggle-all').textContent = showAll ? 'Mostrar solo las recientes' : 'Mostrar todas las publicaciones';
+  }
+
   async function loadRecent(term){
+    term = (term === undefined) ? $('search').value.trim() : term;
     const box=$('recent');
     box.innerHTML='<span class="loading">Cargando…</span>';
+    selected.clear(); currentPosts = []; updateBulk(); updateToggleAll();
+    $('list-count').textContent = '';
     let data;
     try{
-      const out = await api('/api/admin/posts?limit=' + (term ? 30 : 10) + (term ? '&q=' + encodeURIComponent(term) : ''));
+      const limit = showAll ? 500 : (term ? 30 : 10);
+      const out = await api('/api/admin/posts?limit=' + limit + (term ? '&q=' + encodeURIComponent(term) : ''));
       data = out.posts;
     }catch(error){
       box.innerHTML='<span class="loading">No se pudieron cargar las publicaciones: '+escapeHtml(error.message)+'</span>';return;
     }
     if(!data || !data.length){box.innerHTML='<span class="loading">'+(term?'Sin resultados para "'+escapeHtml(term)+'".':'No hay publicaciones.')+'</span>';return;}
+    currentPosts = data;
+    const ocultas = data.filter(isHidden).length;
+    $('list-count').textContent = data.length + (data.length===1?' publicación':' publicaciones') + (ocultas ? ' · ' + ocultas + (ocultas===1?' oculta':' ocultas') : '');
     box.innerHTML=data.map(p=>{
       const d=new Date(p.published_at).toLocaleDateString('es-GT',{day:'2-digit',month:'2-digit',year:'numeric'});
-      return '<div class="post-item"><div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+'</div></div>'
-        +'<div class="post-btns"><a class="btn btn-secondary" href="/'+encodeURIComponent(p.slug)+'/" target="_blank">Ver</a>'
-        +'<button type="button" class="btn btn-secondary btn-edit" data-slug="'+escapeHtml(p.slug)+'">Editar</button>'
-        +'<button type="button" class="btn btn-delete" data-slug="'+escapeHtml(p.slug)+'" data-title="'+escapeHtml(p.title)+'">Eliminar</button></div></div>';
+      const hid = isHidden(p);
+      const slug = escapeHtml(p.slug);
+      return '<div class="post-item'+(hid?' is-hidden':'')+'">'
+        +'<input type="checkbox" class="sel" data-slug="'+slug+'" aria-label="Seleccionar publicación">'
+        +'<div><div class="post-title">'+escapeHtml(p.title)+'</div><div class="post-meta">'+escapeHtml(p.category||'')+' · '+d+(hid?'<span class="badge-hidden">Oculto</span>':'')+'</div></div>'
+        +'<div class="post-btns">'
+        +'<a class="btn btn-secondary btn-icon" href="/'+encodeURIComponent(p.slug)+'/" target="_blank" title="Ver" aria-label="Ver">'+ICON.eye+'</a>'
+        +'<button type="button" class="btn btn-secondary btn-icon" data-act="edit" data-slug="'+slug+'" title="Editar" aria-label="Editar">'+ICON.pencil+'</button>'
+        +'<button type="button" class="btn btn-secondary btn-icon btn-hide'+(hid?' on':'')+'" data-act="toggle" data-slug="'+slug+'" data-hidden="'+(hid?'1':'0')+'" title="'+(hid?'Oculto: tocá para volver a mostrarlo':'Ocultar del sitio')+'" aria-label="'+(hid?'Mostrar':'Ocultar')+'">'+ICON.eyeOff+'</button>'
+        +'<button type="button" class="btn btn-delete btn-icon" data-act="delete" data-slug="'+slug+'" title="Eliminar" aria-label="Eliminar">'+ICON.x+'</button>'
+        +'</div></div>';
     }).join('');
-    
-    box.querySelectorAll('.btn-edit').forEach(function(btn){
-      btn.addEventListener('click', function(){ enterEditMode(btn.dataset.slug); });
-    });
-    
-    box.querySelectorAll('.btn-delete').forEach(function(btn){
-      btn.addEventListener('click', async function(){
-        const slug = btn.dataset.slug, title = btn.dataset.title;
-        if(!confirm('¿Eliminar la publicación "'+title+'"?\n\nSe borrarán también sus imágenes del bucket (salvo las que use otra publicación). No se puede deshacer.')) return;
-        btn.disabled = true; btn.textContent = 'Eliminando…';
-        try{
-          const out = await api('/api/admin/posts/' + encodeURIComponent(slug), {method:'DELETE'});
-          const im = out.imagenes || {};
-          if(editingSlug===slug) exitEditMode();
-          let msg = 'Publicación eliminada.';
-          if(im.borradas) msg += ' Imágenes borradas del bucket: '+im.borradas+'.';
-          if(im.conservadas) msg += ' '+im.conservadas+' se conservó porque la usa otra publicación.';
-          if(im.fallidas) msg += ' '+im.fallidas+' no se pudo borrar.';
-          show(okBox, msg);
-          loadRecent($('search').value.trim());
-        }catch(err){
-          console.error(err);
-          alert('No se pudo eliminar: ' + (err.message || 'Error desconocido'));
-          btn.disabled = false; btn.textContent = 'Eliminar';
-        }
-      });
-    });
   }
+
+  function titleOf(slug){ const p = currentPosts.find(x=>x.slug===slug); return p ? p.title : slug; }
+
+  async function deleteOne(slug){
+    const out = await api(postUrl(slug), {method:'DELETE'});
+    if(editingSlug===slug) exitEditMode();
+    return out.imagenes || {};
+  }
+
+  async function setPublished(slug, value){
+    const {post} = await api(postUrl(slug));
+    await api(postUrl(slug), {method:'PUT', body:{...post, published:value}});
+    if(editingSlug===slug) editingPublished = value;
+  }
+
+  function imagesMsg(t){
+    let msg = '';
+    if(t.borradas) msg += ' Imágenes borradas del bucket: '+t.borradas+'.';
+    if(t.conservadas) msg += ' '+t.conservadas+' se conservó porque la usa otra publicación.';
+    if(t.fallidas) msg += ' '+t.fallidas+' no se pudo borrar.';
+    return msg;
+  }
+
+  // Acciones por fila (editar, ocultar/mostrar, eliminar)
+  $('recent').addEventListener('click', async function(e){
+    const btn = e.target.closest('button[data-act]');
+    if(!btn) return;
+    const slug = btn.dataset.slug, act = btn.dataset.act;
+
+    if(act === 'edit'){ enterEditMode(slug); return; }
+
+    hide(errorBox); hide(okBox);
+    if(act === 'toggle'){
+      const hacerVisible = btn.dataset.hidden === '1';
+      btn.disabled = true;
+      try{
+        await setPublished(slug, hacerVisible);
+        show(okBox, hacerVisible ? 'La publicación vuelve a estar visible.' : 'Publicación oculta. Ya no aparece en el sitio, pero la podés volver a mostrar cuando quieras.');
+        loadRecent();
+      }catch(err){
+        console.error(err);
+        btn.disabled = false;
+        show(errorBox, 'No se pudo cambiar la visibilidad: ' + (err.message || 'Error desconocido'));
+      }
+      return;
+    }
+
+    if(act === 'delete'){
+      if(!confirm('¿Eliminar la publicación "'+titleOf(slug)+'"?\n\nSe borrarán también sus imágenes del bucket (salvo las que use otra publicación). No se puede deshacer.')) return;
+      btn.disabled = true;
+      try{
+        const im = await deleteOne(slug);
+        show(okBox, 'Publicación eliminada.' + imagesMsg(im));
+        loadRecent();
+      }catch(err){
+        console.error(err);
+        btn.disabled = false;
+        alert('No se pudo eliminar: ' + (err.message || 'Error desconocido'));
+      }
+    }
+  });
+
+  // Casillas de selección
+  $('recent').addEventListener('change', function(e){
+    if(!e.target.classList.contains('sel')) return;
+    if(e.target.checked) selected.add(e.target.dataset.slug); else selected.delete(e.target.dataset.slug);
+    updateBulk();
+  });
+
+  $('select-all').addEventListener('change', function(){
+    const on = $('select-all').checked;
+    selected.clear();
+    document.querySelectorAll('#recent .sel').forEach(function(c){
+      c.checked = on;
+      if(on) selected.add(c.dataset.slug);
+    });
+    updateBulk();
+  });
+
+  // Mostrar todas / solo recientes
+  $('toggle-all').addEventListener('click', function(){
+    showAll = !showAll;
+    loadRecent();
+  });
+
+  // Acciones en lote
+  async function runBulk(slugs, label, fn){
+    const btns = ['bulk-hide','bulk-show','bulk-delete','toggle-all'].map($);
+    btns.forEach(function(b){ b.disabled = true; });
+    hide(errorBox); hide(okBox);
+    const fails = [];
+    let ok = 0;
+    for(let i=0;i<slugs.length;i++){
+      show(okBox, label+' '+(i+1)+' de '+slugs.length+'…');
+      try{ await fn(slugs[i]); ok++; }
+      catch(err){ console.error(err); fails.push('"'+titleOf(slugs[i])+'": '+(err.message||'error')); }
+    }
+    btns.forEach(function(b){ b.disabled = false; });
+    return {ok, fails};
+  }
+
+  function bulkReport(prefix, r, extra){
+    if(r.ok) show(okBox, prefix.replace('{n}', r.ok) + (extra||'')); else hide(okBox);
+    if(r.fails.length) show(errorBox, 'No se pudieron procesar ' + r.fails.length + ': ' + r.fails.join(' · '));
+  }
+
+  $('bulk-delete').addEventListener('click', async function(){
+    const slugs = Array.from(selected);
+    if(!slugs.length) return;
+    const lista = slugs.slice(0,8).map(function(s){ return '• '+titleOf(s); }).join('\n') + (slugs.length>8 ? '\n• … y '+(slugs.length-8)+' más' : '');
+    if(!confirm('¿Eliminar '+slugs.length+(slugs.length===1?' publicación':' publicaciones')+'?\n\n'+lista+'\n\nSe borrarán también sus imágenes del bucket (salvo las que use otra publicación). No se puede deshacer.')) return;
+    const total = {borradas:0, conservadas:0, fallidas:0};
+    const r = await runBulk(slugs, 'Eliminando', async function(slug){
+      const im = await deleteOne(slug);
+      total.borradas += im.borradas||0; total.conservadas += im.conservadas||0; total.fallidas += im.fallidas||0;
+    });
+    bulkReport('{n} publicaciones eliminadas.', r, imagesMsg(total));
+    loadRecent();
+  });
+
+  $('bulk-hide').addEventListener('click', async function(){
+    const slugs = Array.from(selected);
+    if(!slugs.length) return;
+    const r = await runBulk(slugs, 'Ocultando', function(slug){ return setPublished(slug, false); });
+    bulkReport('{n} publicaciones ocultas. Ya no aparecen en el sitio.', r);
+    loadRecent();
+  });
+
+  $('bulk-show').addEventListener('click', async function(){
+    const slugs = Array.from(selected);
+    if(!slugs.length) return;
+    const r = await runBulk(slugs, 'Mostrando', function(slug){ return setPublished(slug, true); });
+    bulkReport('{n} publicaciones visibles de nuevo.', r);
+    loadRecent();
+  });
 
   /* ---------- Sugerencias de SEO con IA (Cloudflare Function /api/sugerir-seo) ---------- */
   let seoResult = null;
