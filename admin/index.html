@@ -109,6 +109,17 @@ sitemap: false
     .badge-hidden{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--orange-soft);color:var(--orange-dark);vertical-align:1px}
     .post-item input.sel,.bulk-bar input{width:22px;height:22px;padding:0;accent-color:var(--orange);cursor:pointer;flex:none}
 
+    /* Galería de imágenes del contenido */
+    .body-images{display:none;margin-top:12px;border:1px solid var(--field-line);border-radius:10px;padding:12px;background:var(--field)}
+    .bi-head{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+    .bi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+    .bi-card{border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden;display:flex;flex-direction:column}
+    .bi-card img{width:100%;height:120px;object-fit:cover;background:var(--soft);display:block}
+    .bi-n{font-size:12px;color:var(--muted);padding:6px 8px 0}
+    .bi-btns{display:flex;gap:4px;padding:6px 8px 8px}
+    .bi-btns .btn{flex:1;min-width:0;height:38px;padding:0}
+    .bi-btns .btn svg{width:18px;height:18px;pointer-events:none}
+
     /* Barra de selección múltiple */
     .list-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
     .list-tools .help{margin:0}
@@ -220,8 +231,9 @@ sitemap: false
                   <span id="image-origin" class="img-tag"></span>
                   <div class="image-actions">
                     <button type="button" id="btn-change-image" class="btn btn-secondary">Elegir nueva imagen</button>
+                    <button type="button" id="btn-download-image" class="btn btn-secondary">Descargar</button>
                     <button type="button" id="btn-remove-image" class="btn btn-secondary" title="Solo la desvincula del post; el archivo sigue en el bucket">Quitar</button>
-                    <button type="button" id="btn-delete-image" class="btn btn-danger" title="Borra el archivo del bucket de imágenes (R2)">Eliminar archivo</button>
+                    <button type="button" id="btn-delete-image" class="btn btn-danger" title="La quita y borra su archivo del bucket (R2) al guardar el post">Eliminar archivo</button>
                   </div>
                 </div>
 
@@ -256,6 +268,9 @@ sitemap: false
               </div>
               <textarea id="body" spellcheck="false" autocorrect="off" autocapitalize="off" data-gramm="false" required placeholder="Escribí aquí la publicación en Markdown..."></textarea>
               <p class="help" id="body-image-status">Se admite Markdown y HTML básico. La imagen se inserta donde esté el cursor.</p>
+              <div id="body-images" class="body-images"></div>
+              <p class="help" id="bi-pending" style="display:none"></p>
+              <input type="file" id="body-replace-file" accept="image/*" style="display:none">
             </div>
 
             <div class="full">
@@ -443,42 +458,14 @@ sitemap: false
     setImageValue('', 'Imagen quitada del post (el archivo sigue guardado en el bucket). Recordá guardar.');
   });
 
-  // ELIMINAR: borra el archivo del bucket (el servidor comprueba que ninguna otra publicación lo use)
-  $('btn-delete-image').addEventListener('click', async () => {
+  // ELIMINAR: la quita como destacada y marca su archivo para borrarlo del bucket al guardar el post
+  $('btn-delete-image').addEventListener('click', () => {
     const url = $('image').value;
-    const path = getStoragePathFromUrl(url);
     if(!url) return;
-    const status = $('image-upload-status');
-    if(!path){ setImageValue('', 'Esa imagen no está en el bucket; solo se quitó del post.'); return; }
-    if(!confirm('¿Eliminar permanentemente esta imagen del bucket?')) return;
-
-    const btn = $('btn-delete-image'); btn.disabled = true;
-    status.textContent = 'Comprobando y eliminando…';
-    try{
-      // ¿La usa el contenido de este mismo post?
-      if($('body').value.includes(path)){
-        setImageValue('', 'No se borró el archivo: también está insertada en el contenido de este post. Solo se quitó como destacada.');
-        return;
-      }
-      const out = await api('/api/admin/imagen', {method:'DELETE', body:{url, excluirSlug: editingSlug}});
-      if(!out.borrada){
-        setImageValue('', out.motivo === 'en-uso'
-          ? 'No se borró el archivo: lo usa otra publicación. Solo se quitó de este post.'
-          : 'Esa imagen no está en el bucket; solo se quitó del post.');
-        return;
-      }
-      // Si el post ya existe, limpiar también su image_url para que no quede un enlace roto
-      if(editingSlug){
-        const {post} = await api('/api/admin/posts/' + encodeURIComponent(editingSlug));
-        await api('/api/admin/posts/' + encodeURIComponent(editingSlug), {method:'PUT', body:{...post, image_url:null}});
-      }
-      setImageValue('', 'Imagen eliminada del bucket.');
-    }catch(err){
-      console.error(err);
-      status.textContent = 'No se pudo eliminar: ' + (err.message || 'Error desconocido');
-    }finally{
-      btn.disabled = false;
-    }
+    if(!getStoragePathFromUrl(url)){ setImageValue('', 'Esa imagen no está en el bucket; solo se quitó del post. Recordá guardar.'); return; }
+    if(!confirm('¿Eliminar esta imagen destacada?\n\nSe quita del post y, al guardar la publicación, también se borra su archivo del bucket (salvo que la use otra publicación).')) return;
+    queueDelete(url);
+    setImageValue('', 'Imagen quitada. Su archivo se borrará del bucket cuando guardes el post.');
   });
 
   // Subida de imagen para insertar dentro del contenido Markdown
@@ -497,6 +484,7 @@ sitemap: false
       ta.value = ta.value.slice(0,start) + snippet + ta.value.slice(end);
       const newPos = start + snippet.length;
       ta.focus(); ta.setSelectionRange(newPos, newPos);
+      renderBodyImages();
       status.textContent = 'Imagen insertada en el contenido.';
       $('body-image-file').value = '';
     }catch(err){
@@ -504,6 +492,170 @@ sitemap: false
       status.textContent = 'No se pudo subir: ' + (err.message || 'Error desconocido');
     }finally{
       btn.disabled=false; btn.textContent='Insertar imagen aquí';
+    }
+  });
+
+  /* ---------- Descargar imagen ---------- */
+  async function downloadImage(url){
+    let name = 'imagen';
+    try{ name = decodeURIComponent(new URL(url, location.href).pathname.split('/').pop()) || 'imagen'; }catch(e){}
+    try{
+      const res = await fetch(url, {mode:'cors'});
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      const blob = await res.blob();
+      const obj = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = obj; a.download = name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(obj); }, 4000);
+      return true;
+    }catch(e){
+      console.warn('Descarga directa no disponible, se abre en otra pestaña', e);
+      window.open(url, '_blank', 'noopener');
+      return false;
+    }
+  }
+  const NO_DIRECT = 'No se pudo descargar directo: se abrió en otra pestaña (mantené presionada la imagen para guardarla).';
+
+  $('btn-download-image').addEventListener('click', async function(){
+    const url = $('image').value.trim();
+    if(!url) return;
+    const ok = await downloadImage(url);
+    $('image-upload-status').textContent = ok ? 'Descargando imagen…' : NO_DIRECT;
+  });
+
+  /* ---------- Imágenes dentro del contenido: miniaturas con descargar / reemplazar / quitar ---------- */
+  const BI = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+  const BI_ICON = {
+    locate: BI+'<line x1="12" y1="4" x2="12" y2="20"/><path d="M8 4h8M8 20h8"/></svg>',
+    download: BI+'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+    replace: BI+'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
+    remove: BI+'<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+  };
+
+  // Busca imágenes en formato Markdown ![alt](url) y HTML <img src="...">
+  function parseBodyImages(body){
+    const out = [];
+    const re = /!\[([^\]]*)\]\(\s*(<[^>]+>|[^)\s]+)(?:\s+(?:"[^"]*"|'[^']*'))?\s*\)|<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["'][^>]*>/gi;
+    let m;
+    while((m = re.exec(body))){
+      const url = (m[2] || m[3] || '').replace(/^<|>$/g, '');
+      if(url) out.push({url: url, start: m.index, end: m.index + m[0].length, raw: m[0]});
+    }
+    return out;
+  }
+
+  function renderBodyImages(){
+    const box = $('body-images');
+    const list = parseBodyImages($('body').value);
+    if(!list.length){ box.style.display = 'none'; box.innerHTML = ''; return; }
+    box.style.display = 'block';
+    box.innerHTML = '<div class="bi-head">Imágenes en el contenido ('+list.length+')</div><div class="bi-grid">'
+      + list.map(function(it, i){
+          return '<div class="bi-card">'
+            + '<a href="'+escapeHtml(it.url)+'" target="_blank" rel="noopener"><img src="'+escapeHtml(it.url)+'" alt="" loading="lazy"></a>'
+            + '<div class="bi-n">Imagen '+(i+1)+'</div>'
+            + '<div class="bi-btns">'
+            + '<button type="button" class="btn btn-secondary" data-bi="locate" data-i="'+i+'" title="Ubicar en el texto" aria-label="Ubicar en el texto">'+BI_ICON.locate+'</button>'
+            + '<button type="button" class="btn btn-secondary" data-bi="download" data-i="'+i+'" title="Descargar" aria-label="Descargar">'+BI_ICON.download+'</button>'
+            + '<button type="button" class="btn btn-secondary" data-bi="replace" data-i="'+i+'" title="Reemplazar" aria-label="Reemplazar">'+BI_ICON.replace+'</button>'
+            + '<button type="button" class="btn btn-delete" data-bi="remove" data-i="'+i+'" title="Quitar del contenido" aria-label="Quitar del contenido">'+BI_ICON.remove+'</button>'
+            + '</div></div>';
+        }).join('') + '</div>';
+  }
+
+  let bodyImgTimer = null;
+  $('body').addEventListener('input', function(){
+    clearTimeout(bodyImgTimer);
+    bodyImgTimer = setTimeout(renderBodyImages, 300);
+  });
+
+  // Archivos a borrar del bucket: se borran solo al guardar la publicación
+  const pendingDeletes = new Set();
+  function updatePending(){
+    const n = pendingDeletes.size, el = $('bi-pending');
+    if(!n){ el.style.display = 'none'; el.textContent = ''; return; }
+    el.style.display = 'block';
+    el.textContent = 'Al guardar se borrarán del bucket ' + n + (n===1 ? ' archivo' : ' archivos') + ' (salvo los que use otra publicación). Si cancelás la edición, no se borra nada.';
+  }
+  function queueDelete(url){
+    if(!getStoragePathFromUrl(url)) return false;   // imágenes externas: nada que borrar en el bucket
+    pendingDeletes.add(url); updatePending(); return true;
+  }
+  async function flushPendingDeletes(slug, body, imageUrl){
+    const urls = Array.from(pendingDeletes);
+    pendingDeletes.clear(); updatePending();
+    const r = {borradas:0, conservadas:0, fallidas:0};
+    for(const url of urls){
+      const path = getStoragePathFromUrl(url);
+      if(!path) continue;
+      // Si el post guardado todavía la usa (otra copia en el texto o como destacada), no se toca
+      if((body||'').includes(url) || (body||'').includes(path) || (imageUrl||'') === url){ r.conservadas++; continue; }
+      try{
+        const out = await api('/api/admin/imagen', {method:'DELETE', body:{url: url, excluirSlug: slug}});
+        if(out.borrada) r.borradas++; else r.conservadas++;
+      }catch(e){ console.error(e); r.fallidas++; }
+    }
+    return r;
+  }
+
+  let replaceIdx = null;
+  $('body-images').addEventListener('click', async function(e){
+    const b = e.target.closest('button[data-bi]');
+    if(!b) return;
+    const ta = $('body'), st = $('body-image-status');
+    const i = parseInt(b.dataset.i, 10), act = b.dataset.bi;
+    const it = parseBodyImages(ta.value)[i];
+    if(!it) return;
+
+    if(act === 'download'){
+      const ok = await downloadImage(it.url);
+      st.textContent = ok ? 'Descargando imagen…' : NO_DIRECT;
+    }else if(act === 'locate'){
+      ta.focus();
+      ta.setSelectionRange(it.start, it.end);
+      ta.scrollIntoView({block:'center'});
+      st.textContent = 'Imagen ' + (i+1) + ' seleccionada en el texto.';
+    }else if(act === 'remove'){
+      if(!confirm('¿Eliminar la imagen ' + (i+1) + ' del contenido?\n\nSe quita del texto y, al guardar la publicación, también se borra su archivo del bucket (salvo que la use otra publicación).')) return;
+      const antes = ta.value.slice(0, it.start).replace(/\s+$/, '');
+      const despues = ta.value.slice(it.end).replace(/^\s+/, '');
+      ta.value = antes + ((antes && despues) ? '\n\n' : '') + despues;
+      renderBodyImages();
+      st.textContent = queueDelete(it.url)
+        ? 'Imagen quitada. Su archivo se borrará del bucket cuando guardes el post.'
+        : 'Imagen quitada del contenido. Recordá guardar el post.';
+    }else if(act === 'replace'){
+      replaceIdx = i;
+      $('body-replace-file').click();
+    }
+  });
+
+  $('body-replace-file').addEventListener('change', async function(){
+    const file = this.files[0];
+    this.value = '';
+    if(!file || replaceIdx === null) return;
+    const ta = $('body'), st = $('body-image-status');
+    const antes = parseBodyImages(ta.value)[replaceIdx];
+    const snap = ta.value;
+    replaceIdx = null;
+    if(!antes) return;
+    st.textContent = 'Subiendo imagen…';
+    try{
+      const nueva = await uploadImage(file);
+      const lista = parseBodyImages(ta.value);
+      // Si el texto no cambió mientras subía, se usa la misma posición; si cambió, se busca por URL
+      const it = (ta.value === snap) ? antes : lista.find(function(x){ return x.url === antes.url; });
+      if(!it){ st.textContent = 'La imagen ya no está en el texto; no se reemplazó.'; return; }
+      const nuevo = it.raw.split(it.url).join(nueva);
+      ta.value = ta.value.slice(0, it.start) + nuevo + ta.value.slice(it.end);
+      renderBodyImages();
+      st.textContent = queueDelete(it.url)
+        ? 'Imagen reemplazada. El archivo anterior se borrará del bucket cuando guardes el post.'
+        : 'Imagen reemplazada. Recordá guardar el post.';
+    }catch(err){
+      console.error(err);
+      st.textContent = 'No se pudo subir: ' + (err.message || 'Error desconocido');
     }
   });
 
@@ -527,10 +679,12 @@ sitemap: false
   function exitEditMode(){
     editingSlug = null;
     editingPublished = true;
+    pendingDeletes.clear(); updatePending();
     $('form-title').textContent = 'Nueva publicación';
     $('save').textContent = 'Publicar directamente';
     $('cancel-edit').style.display = 'none';
     $('post-form').reset();
+    setTimeout(renderBodyImages, 0);
     setImageValue('');
     $('published-at').value = localDateTime();
     delete $('slug').dataset.manual;
@@ -541,6 +695,7 @@ sitemap: false
 
   async function enterEditMode(slug){
     hide(errorBox); hide(okBox);
+    pendingDeletes.clear(); updatePending();
     let data;
     try{ data = (await api('/api/admin/posts/' + encodeURIComponent(slug))).post; }
     catch(error){ show(errorBox,'No se pudo cargar la publicación: '+error.message); return; }
@@ -561,6 +716,7 @@ sitemap: false
     $('video').value = data.video_url || '';
     $('tags').value = (data.tags||[]).join(', ');
     $('body').value = data.body || '';
+    renderBodyImages();
     $('featured').checked = !!data.featured;
     $('post-form').scrollIntoView({behavior:'smooth', block:'start'});
   }
@@ -600,10 +756,11 @@ sitemap: false
         await api('/api/admin/posts', {method:'POST', body:payload});
       }
 
+      const imgs = await flushPendingDeletes(slug, payload.body, payload.image_url);
       const url='/'+encodeURIComponent(slug)+'/';
       $('result').innerHTML=(isEditing?'Cambios guardados correctamente.':'Publicación creada correctamente.')+' <a href="'+url+'" target="_blank">Abrir publicación →</a>';
       $('result').style.display='block';
-      show(okBox, (isEditing ? 'Los cambios ya están guardados.' : 'La publicación ya está lista.') + ' La portada y las listas pueden tardar hasta 2 minutos en reflejarlo.');
+      show(okBox, (isEditing ? 'Los cambios ya están guardados.' : 'La publicación ya está lista.') + ' La portada y las listas pueden tardar hasta 2 minutos en reflejarlo.' + imagesMsg(imgs));
       exitEditMode();
       loadRecent($('search').value.trim());
     }catch(err){
