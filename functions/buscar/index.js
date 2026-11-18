@@ -6,7 +6,7 @@
 import { buscar } from '../_db.js';
 
 const SITE_URL = 'https://barberenamimunicipio.top';
-const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
+const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias', 'santa-rosa': 'Santa Rosa' };
 
 export async function onRequestGet(context) {
   const url = new URL(context.request.url);
@@ -54,6 +54,7 @@ function headerHtml() {
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
       <a href="/">Inicio</a>
       <a href="/barberena/">Barberena</a>
+      <a href="/santa-rosa/">Santa Rosa</a>
       <a href="/opiniones/">Opiniones</a>
       <a href="/historias/">Historias</a>
       <a href="/archivo/">Archivo</a>
@@ -141,7 +142,7 @@ const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden=
 function postCard(post) {
   const title = escapeHtml(post.title);
   const label = CATEGORY_LABELS[post.category] || 'Barberena';
-  const categoryClass = ['barberena', 'opiniones', 'historias'].includes(post.category) ? post.category : 'barberena';
+  const categoryClass = ['barberena', 'santa-rosa', 'opiniones', 'historias'].includes(post.category) ? post.category : 'barberena';
   const minutes = readingMinutes(post.body);
   const media = mediaBlock(post, title);
   return `<article class="cb-post cb-post--${categoryClass}">
