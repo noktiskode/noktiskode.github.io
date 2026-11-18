@@ -2,8 +2,8 @@
 title: "Napo Rojas, entre los diputados con menor asistencia al Congreso"
 slug: "napo-rojas-asistencia-congreso"
 date: "2026-11-14T16:00:00.000Z"
-updated_at: "2026-11-15T04:51:19.831Z"
-category: "opiniones"
+updated_at: "2026-11-18T07:03:08.576Z"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/1794718243045-24gm93.webp"
 video_url: null
 featured: false
