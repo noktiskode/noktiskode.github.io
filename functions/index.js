@@ -8,7 +8,7 @@
 import { destacados, ultimos, paginaExcluyendo } from './_db.js';
 
 const SITE_URL = 'https://barberenamimunicipio.top';
-const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias' };
+const CATEGORY_LABELS = { opiniones: 'Opiniones', barberena: 'Barberena', historias: 'Historias', 'santa-rosa': 'Santa Rosa' };
 // Cuántas tarjetas lleva el carrusel de destacados (en computadora se ven 3 a la vez)
 const CAROUSEL_SIZE = 6;
 // Publicaciones por página en "Las últimas"
@@ -84,6 +84,7 @@ function headerHtml() {
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
       <a href="/">Inicio</a>
       <a href="/barberena/">Barberena</a>
+      <a href="/santa-rosa/">Santa Rosa</a>
       <a href="/opiniones/">Opiniones</a>
       <a href="/historias/">Historias</a>
       <a href="/archivo/">Archivo</a>

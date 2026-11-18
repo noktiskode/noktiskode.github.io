@@ -5,12 +5,12 @@
 
 import { normalizar } from './_db.js';
 
-export const CATEGORIAS = ['barberena', 'opiniones', 'historias'];
+export const CATEGORIAS = ['barberena', 'santa-rosa', 'opiniones', 'historias'];
 
 // Rutas que ya existen en el sitio: un post con uno de estos slugs quedaría tapado.
 const RESERVADOS = new Set([
   'admin', 'api', 'assets', 'images', 'functions', 'login', 'moderar', 'buscar', 'etiqueta',
-  'archivo', 'barberena', 'opiniones', 'historias', 'generador', 'que-publicamos',
+  'archivo', 'barberena', 'santa-rosa', 'opiniones', 'historias', 'generador', 'que-publicamos',
   'como-participar', 'manifiesto', 'sitemap', 'robots', 'llms', 'favicon', '404', 'index'
 ]);
 

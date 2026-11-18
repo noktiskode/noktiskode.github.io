@@ -11,6 +11,7 @@ const SITE_URL = 'https://barberenamimunicipio.top';
 const STATIC_PATHS = [
   '/',
   '/barberena/',
+  '/santa-rosa/',
   '/opiniones/',
   '/historias/',
   '/archivo/',

@@ -63,9 +63,9 @@ export async function paginaExcluyendo(db, excluir, limite, desplazamiento) {
   return { posts: aPosts(lista), total: (cuenta.results[0] && cuenta.results[0].n) || 0 };
 }
 
-// Posts publicados con solo los campos que usa el sitemap.
+// Posts publicados (y no marcados noindex) con solo los campos que usa el sitemap.
 export async function paraSitemap(db) {
-  const res = await db.prepare('SELECT slug,published_at FROM posts WHERE published = 1 ORDER BY published_at DESC').all();
+  const res = await db.prepare('SELECT slug,published_at FROM posts WHERE published = 1 AND noindex = 0 ORDER BY published_at DESC').all();
   return res.results || [];
 }
 

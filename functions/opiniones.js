@@ -43,6 +43,7 @@ function headerHtml() {
     <nav id="mainNav" class="cb-nav" aria-label="Navegación principal">
       <a href="/">Inicio</a>
       <a href="/barberena/">Barberena</a>
+      <a href="/santa-rosa/">Santa Rosa</a>
       <a href="/opiniones/">Opiniones</a>
       <a href="/historias/">Historias</a>
       <a href="/archivo/">Archivo</a>
