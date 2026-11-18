@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign category_label = page.category | default: 'Barberena' %}
-{% case page.category %}{% when 'opiniones' %}{% assign category_label='Opiniones' %}{% when 'barberena' %}{% assign category_label='Barberena' %}{% when 'historias' %}{% assign category_label='Historias' %}{% endcase %}
+{% case page.category %}{% when 'opiniones' %}{% assign category_label='Opiniones' %}{% when 'barberena' %}{% assign category_label='Barberena' %}{% when 'santa-rosa' %}{% assign category_label='Santa Rosa' %}{% when 'historias' %}{% assign category_label='Historias' %}{% endcase %}
 {% assign imagen = page.image | default: page.hero_image %}
 <main class="cb-post-page">
   <article class="cb-article">
