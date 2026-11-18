@@ -28,6 +28,17 @@ for (const [f, nombre] of [['barberena.js', 'barberena'], ['opiniones.js', 'opin
   const h = await r.text();
   ok(r.status === 200 && h.includes('cb-post'), nombre + ' lista posts (' + (h.match(/class="cb-post/g) || []).length + ' tarjetas)');
 }
+// Santa Rosa: categoría nueva, todavía sin posts -> la página carga con el aviso de vacío
+{
+  const m = await imp('santa-rosa.js');
+  const r = await m.onRequestGet({ env, request: req('/santa-rosa/'), next });
+  const h = await r.text();
+  ok(r.status === 200 && h.includes('<h1>Santa Rosa</h1>') && h.includes('category-empty'), 'santa-rosa carga vacía sin romper');
+  DB._raw.prepare("UPDATE posts SET category='santa-rosa' WHERE slug=(SELECT slug FROM posts LIMIT 1)").run();
+  const r2 = await m.onRequestGet({ env, request: req('/santa-rosa/'), next });
+  ok((await r2.text()).includes('cb-post--santa-rosa'), 'santa-rosa lista un post cuando lo hay');
+  DB._raw.prepare("UPDATE posts SET category='barberena' WHERE category='santa-rosa'").run();
+}
 // Post individual: todos
 {
   const m = await imp('[slug].js');
@@ -70,7 +81,7 @@ for (const [f, nombre] of [['barberena.js', 'barberena'], ['opiniones.js', 'opin
   const m = await imp('sitemap.xml.js');
   const r = await m.onRequestGet({ env, request: req('/sitemap.xml'), next });
   const x = await r.text();
-  ok((x.match(/<url>/g) || []).length === 519 + 8, 'sitemap tiene 519 posts + 8 páginas fijas (' + (x.match(/<url>/g) || []).length + ')');
+  ok((x.match(/<url>/g) || []).length === 519 + 9, 'sitemap tiene 519 posts + 9 páginas fijas (' + (x.match(/<url>/g) || []).length + ')');
 }
 console.log(fallos ? `\n${fallos} FALLOS` : '\nTODO BIEN');
 process.exit(fallos ? 1 : 0);
