@@ -20,7 +20,7 @@
 
   <div class="cb-post-meta">
     {% assign label = include.post.category | default: 'Barberena' %}
-    {% case label %}{% when 'opiniones' %}{% assign label='Opiniones' %}{% when 'barberena' %}{% assign label='Barberena' %}{% when 'historias' %}{% assign label='Historias' %}{% endcase %}
+    {% case label %}{% when 'opiniones' %}{% assign label='Opiniones' %}{% when 'barberena' %}{% assign label='Barberena' %}{% when 'santa-rosa' %}{% assign label='Santa Rosa' %}{% when 'historias' %}{% assign label='Historias' %}{% endcase %}
     <span class="cat">{{ label }}</span> · {{ include.post.date | date: "%d/%m/%Y" }} ·
     {% assign words = include.post.content | number_of_words %}{% assign minutes = words | divided_by: 200 | plus: 1 %}{{ minutes }} min de lectura
   </div>
