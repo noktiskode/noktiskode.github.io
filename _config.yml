@@ -20,6 +20,7 @@ defaults:
       hero_badge: Blog
 
 exclude:
+  - _posts   # los posts viven en D1; si se construyen aquí, un post borrado del panel sigue publicado como página estática
   - README.md
   - MIGRACION.md
   - d1
@@ -55,6 +56,7 @@ meses:
 categories:
   - { label: "Opiniones", value: "opiniones" }
   - { label: "Barberena", value: "barberena" }
+  - { label: "Santa Rosa", value: "santa-rosa" }
   - { label: "Historias", value: "historias" }
 
 tags:
