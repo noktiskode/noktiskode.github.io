@@ -273,6 +273,7 @@ html[data-theme="dark"] .dest-chip { background: rgba(239, 79, 29, .2); color: #
   border-radius: 999px; background: rgba(194, 65, 12, .93); color: #fff;
   font: 600 .75rem var(--fuente-texto); box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
 }
+.dest-badge[data-cat="santa-rosa"] { background: rgba(29, 78, 216, .93); }
 .dest-badge[data-cat="opiniones"] { background: rgba(15, 118, 110, .93); }
 .dest-badge[data-cat="historias"] { background: rgba(161, 98, 7, .95); }
 
