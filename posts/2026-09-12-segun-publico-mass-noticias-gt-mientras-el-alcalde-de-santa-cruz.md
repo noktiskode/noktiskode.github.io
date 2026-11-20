@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio, aquí en Barberena fue el vicealcalde quien tuvo que ir a representar."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Política nacional", "Opinion", "Pepe Rueda"]
+tags: ["Pepe Rueda", "El Cerinal", "PolĂ­tica local"]
 ---
 Según publicó Mass Noticias GT, mientras el alcalde de Santa Cruz Naranjo se fajó por tercer año consecutivo en la entrega del fuego patrio, aquí en Barberena fue el vicealcalde quien tuvo que ir a representar.
 

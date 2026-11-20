@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"EMPLEADOS NO RECIBEN BILLETES DE Q 200."
-tags: ["Municipalidad", "Comunidad"]
+tags: ["Mercado y comercio"]
 ---
 "EMPLEADOS NO RECIBEN BILLETES DE Q 200.
 

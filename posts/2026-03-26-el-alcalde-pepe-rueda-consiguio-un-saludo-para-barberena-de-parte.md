@@ -3,13 +3,13 @@ title: "El alcalde Pepe Rueda consiguió un saludo para Barberena de parte de la
 slug: "el-alcalde-pepe-rueda-consiguio-un-saludo-para-barberena-de-parte"
 date: "2026-03-26T19:21:48.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "El alcalde Pepe Rueda consiguió un saludo para Barberena de parte de la Banda MS. ¿Cuál habrá sido el costo? ¿Lo pagó con su sueldo o con el dinero del pueblo? ¿Será acaso un \"detalle\" por una futura contratación?"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Guatemala", "Banda MS", "Obras Públicas"]
+tags: ["Pepe Rueda", "Agua potable", "La Ladrillera", "Sátira política", "Elecciones 2027"]
 ---
 El alcalde Pepe Rueda consiguió un saludo para Barberena de parte de la Banda MS. ¿Cuál habrá sido el costo? ¿Lo pagó con su sueldo o con el dinero del pueblo? ¿Será acaso un "detalle" por una futura contratación?
 

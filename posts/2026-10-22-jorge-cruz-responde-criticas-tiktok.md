@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Jorge Cruz responde a críticas en TikTok con un mensaje y video en Facebook"
-tags: ["Jorge Cruz", "Barberena", "Santa Rosa", "Política Local", "Crítica En Línea", "El Mojarro"]
+tags: ["Jorge Cruz", "PolÃ­tica local", "Elecciones 2027"]
 ---
 En su publicación del domingo 18 de octubre, escribió: "A los que me tratan de hacer mal, yo les deseo el bien. Dios conmigo, nadie contra mí".
 

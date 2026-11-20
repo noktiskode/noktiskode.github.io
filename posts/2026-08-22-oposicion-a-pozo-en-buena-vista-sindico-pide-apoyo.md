@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO PIDE \"APOYO\""
-tags: ["Barberena", "Santa Rosa", "Agua potable", "Buena Vista", "Comunidad", "Obras públicas"]
+tags: ["Buena Vista", "Agua potable", "Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 OPOSICIÓN A POZO EN BUENA VISTA; SÍNDICO PIDE "APOYO"
 

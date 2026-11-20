@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ASÍ LUCÍA LA PILA DE LAS CINCO CALLES ANTES DEL DESPIDO DE LA SEÑORA ENCARGADA DE SU LIMPIEZA."
-tags: ["Video", "Barberena", "Santa Rosa", "Pila 5 Calles", "Patrimonio", "Obras públicas"]
+tags: ["Servicios municipales", "Municipalidad de Barberena"]
 ---
 ASÍ LUCÍA LA PILA DE LAS CINCO CALLES ANTES DEL DESPIDO DE LA SEÑORA ENCARGADA DE SU LIMPIEZA.
 

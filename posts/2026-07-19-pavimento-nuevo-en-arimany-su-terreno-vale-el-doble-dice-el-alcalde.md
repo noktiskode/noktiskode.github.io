@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Pavimento nuevo en Arimany: 'Su terreno vale el doble', dice el alcalde"
-tags: ["Barberena", "Santa Rosa", "Buena Vista", "Pepe Rueda", "Obras públicas", "Municipalidad"]
+tags: ["Pepe Rueda", "Buena Vista", "Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 La Municipalidad inauguró, ayer y hoy, dos nuevas calles trabajadas en conjunto con los vecinos del Callejón Los Ramírez, Aldea Buena Vista, y con los vecinos de calle La Luz Del Mundo, sector Arimany.
 

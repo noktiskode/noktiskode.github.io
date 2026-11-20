@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TRISTE NOTICIA ENLUTA A UNA FAMILIA DE NUESTRO MUNICIPIO"
-tags: ["Barberena", "Santa Rosa", "Municipalidad", "Comunidad"]
+tags: ["Seguridad", "Cuilapa"]
 ---
 TRISTE NOTICIA ENLUTA A UNA FAMILIA DE NUESTRO MUNICIPIO
 

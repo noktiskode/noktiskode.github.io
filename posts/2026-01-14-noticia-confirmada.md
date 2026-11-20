@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NOTICIA CONFIRMADA"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "cerifer 2026", "Municipalidad"]
+tags: ["El Cerinal", "Cultura y tradiciones", "Municipalidad de Barberena", "FiscalizaciÃ³n ciudadana", "Cerifer"]
 ---
 NOTICIA CONFIRMADA
 

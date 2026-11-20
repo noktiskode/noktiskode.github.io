@@ -3,13 +3,13 @@ title: "La precariedad como control politico"
 slug: "la-precariedad-como-control-politico"
 date: "2026-02-26T18:37:19.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "LA PRECARIEDAD COMO CONTROL POLITICO"
-tags: ["Precariedad Laboral", "Control Político", "Derechos Laborales", "noeshumor", "Comunidad"]
+tags: ["Política local", "Denuncia ciudadana"]
 ---
 LA PRECARIEDAD COMO CONTROL POLITICO
 

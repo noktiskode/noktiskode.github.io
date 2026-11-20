@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE?"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Agua potable", "La Joya", "Monterroso"]
+tags: ["COCODE", "El Cerinal", "Agua potable", "El BoquerĂ³n", "La Joya"]
 ---
 ¿Ya vieron qué buen chorro está cayendo en la casa del administrador de la página del COCODE?
 

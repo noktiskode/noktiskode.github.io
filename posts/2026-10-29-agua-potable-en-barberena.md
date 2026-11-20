@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad de Barberena informa que normalizó el agua en el casco urbano"
-tags: ["Barberena", "Municipalidad", "Agua Potable", "Pepe Rueda", "El Talpetate", "Aldea Mal País"]
+tags: ["Agua potable", "Pepe Rueda", "Municipalidad de Barberena", "Servicios municipales"]
 ---
 La Municipalidad de Barberena informó, en una publicación del alcalde Pepe Rueda, que tras dos semanas de trabajos se repararon las fugas de la línea que conduce agua desde Mal País hacia el casco urbano, así como las bombas que se quemaron por el mal servicio de energía eléctrica. No precisa a qué empresa se refiere. Indicó que la distribución seguirá "poco a poco" en los distintos sectores y pidió comprensión.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Aldeas Buena Vista y Bijagües"
-tags: ["Barberena", "Santa Rosa", "Buena Vista", "Bijagues", "Mototaxis", "Pepe Rueda"]
+tags: ["Buena Vista", "Bijagues", "Transporte", "Pepe Rueda", "PolÃ­tica local"]
 ---
 Aldeas Buena Vista y Bijagües
 

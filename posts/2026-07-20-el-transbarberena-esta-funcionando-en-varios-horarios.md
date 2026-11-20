@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "En varios horarios, según reportan vecinos, el bus anda casi vacío. Y eso hace que muchos se pregunten si el servicio realmente se está aprovechando."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Municipalidad", "Opinión local"]
+tags: ["Transporte", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 En varios horarios, según reportan vecinos, el bus anda casi vacío. Y eso hace que muchos se pregunten si el servicio realmente se está aprovechando.
 

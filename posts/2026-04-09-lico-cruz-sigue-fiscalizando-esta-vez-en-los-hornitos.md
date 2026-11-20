@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN LOS HORNITOS"
-tags: ["Barberena", "La Ladrillera", "Los Hornitos", "Pepe Rueda", "Lico Cruz", "Obras públicas"]
+tags: ["Los Hornitos", "La Ladrillera", "Pepe Rueda", "Fiscalización ciudadana", "Lico Cruz"]
 ---
 LICO CRUZ SIGUE FISCALIZANDO: ESTA VEZ EN LOS HORNITOS
 

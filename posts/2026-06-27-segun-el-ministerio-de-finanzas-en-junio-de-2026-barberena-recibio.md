@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Según el Ministerio de Finanzas, en junio de 2026 Barberena recibió Q4,228,775.35 de aporte constitucional. Solo en ese mes."
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Municipalidad"]
+tags: ["Transparencia", "Municipalidad de Barberena", "Fiscalización ciudadana", "Obras públicas"]
 ---
 Según el Ministerio de Finanzas, en junio de 2026 Barberena recibió Q4,228,775.35 de aporte constitucional. Solo en ese mes.
 

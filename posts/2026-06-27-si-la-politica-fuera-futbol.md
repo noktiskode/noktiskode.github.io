@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "SI LA POLÍTICA FUERA FÚTBOL:"
-tags: ["Barberena", "Santa Rosa", "FIFAWorld Cup", "Rubelio Recinos", "Pepe Rueda", "Política local"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "Sátira política"]
 ---
 SI LA POLÍTICA FUERA FÚTBOL:
 

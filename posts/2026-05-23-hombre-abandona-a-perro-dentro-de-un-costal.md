@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "HOMBRE ABANDONA A PERRO DENTRO DE UN COSTAL"
-tags: ["Barberena", "Adopción", "Rescate Animal", "Perritos", "Mascotas", "ayudaanimal"]
+tags: ["Denuncia ciudadana", "Servicios municipales"]
 ---
 HOMBRE ABANDONA A PERRO DENTRO DE UN COSTAL
 

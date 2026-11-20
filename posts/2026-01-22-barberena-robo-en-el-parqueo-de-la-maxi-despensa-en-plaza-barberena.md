@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Barberena  Robo en el parqueo de La Maxi Despensa en Plaza Barberena"
-tags: ["Barberena", "Denuncia Ciudadana", "Inseguridad", "Plaza Barberena", "Robo", "Alerta Vecinal"]
+tags: ["Seguridad", "Denuncia ciudadana", "Mercado y comercio"]
 ---
 Barberena  Robo en el parqueo de La Maxi Despensa en Plaza Barberena
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Semana Santa nos ha dejado estas dos postales, una en el sector de panadería La Dulce Abuelita y la otra en La Ladrillera. La falta de señalización, la tubería expuesta y un pozo colapsado son evidentes; días atrás, un tráiler…"
-tags: ["Barberena", "Santa Rosa", "CODEDE", "SCEP", "Guatecompras", "Guatemala"]
+tags: ["La Ladrillera", "Obras públicas", "Fiscalización ciudadana", "Transparencia"]
 ---
 Semana Santa nos ha dejado estas dos postales, una en el sector de panadería La Dulce Abuelita y la otra en La Ladrillera. La falta de señalización, la tubería expuesta y un pozo colapsado son evidentes; días atrás, un tráiler se quedó atascado precisamente en este lugar, lo que demuestra que el terreno no tiene la capacidad de carga necesaria.
 

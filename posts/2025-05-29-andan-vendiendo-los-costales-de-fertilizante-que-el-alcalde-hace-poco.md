@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Andan vendiendo los costales de fertilizante que el alcalde hace poco entregó a \"campesinos para sus cultivos\", los COCODES no están haciendo bien su labor, entregan estos beneficios a sus allegados y conocidos, lo mismo pasó con la entrega de…"
-tags: ["Pepe Rueda", "Municipalidad", "Gobierno municipal"]
+tags: ["COCODE", "Ayuda social", "Denuncia ciudadana", "Pepe Rueda"]
 ---
 Andan vendiendo los costales de fertilizante que el alcalde hace poco entregó a "campesinos para sus cultivos", los COCODES no están haciendo bien su labor, entregan estos beneficios a sus allegados y conocidos, lo mismo pasó con la entrega de alimentos, estos no están llegando a las personas que realmente los necesitan. Pepe Rueda Munibarbe

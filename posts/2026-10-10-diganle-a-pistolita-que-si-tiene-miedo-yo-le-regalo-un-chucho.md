@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1805740260773919/"
 featured: false
 published: true
 excerpt: "El exalcalde Rubelio Recinos aparece en un video, grabado ayer durante una entrega de verduras, diciendo: \"Díganle a Pistolita que si tiene miedo, yo le regalo un chucho\"."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Día del Niño", "Política Local"]
+tags: ["Rubelio Recinos", "PolÃ­tica local", "SÃ¡tira polÃ­tica"]
 ---
 El exalcalde Rubelio Recinos aparece en un video, grabado ayer durante una entrega de verduras, diciendo: "Díganle a Pistolita que si tiene miedo, yo le regalo un chucho".
 

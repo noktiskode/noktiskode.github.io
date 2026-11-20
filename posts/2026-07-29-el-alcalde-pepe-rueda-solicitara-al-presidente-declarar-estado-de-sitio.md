@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE DECLARAR ESTADO DE SITIO EN BARBERENA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "URGENTE", "Pepe Rueda", "Municipalidad"]
+tags: ["Pepe Rueda", "Seguridad", "PolĂ­tica local", "Municipalidad de Barberena"]
 ---
 EL ALCALDE PEPE RUEDA SOLICITARÁ AL PRESIDENTE DECLARAR ESTADO DE SITIO EN BARBERENA
 

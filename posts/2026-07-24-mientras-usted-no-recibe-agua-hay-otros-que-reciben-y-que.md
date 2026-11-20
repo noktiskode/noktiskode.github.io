@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Mientras usted no recibe agua, hay otros que reciben y que terminan desperdiciándola. Una vecina comparte un video y hace un llamado al alcalde para que pueda tomar cartas en el asunto."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Agua potable", "Gobierno municipal"]
+tags: ["Agua potable", "Denuncia ciudadana"]
 ---
 Mientras usted no recibe agua, hay otros que reciben y que terminan desperdiciándola. Una vecina comparte un video y hace un llamado al alcalde para que pueda tomar cartas en el asunto.
 

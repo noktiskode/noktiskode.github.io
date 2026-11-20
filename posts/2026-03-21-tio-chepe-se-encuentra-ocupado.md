@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TiO CHEPE SE ENCUENTRA OCUPADO"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Splash Day", "Obras públicas", "Municipalidad"]
+tags: ["El Cerinal", "Obras públicas", "Pepe Rueda", "Denuncia ciudadana"]
 ---
 TiO CHEPE SE ENCUENTRA OCUPADO
 

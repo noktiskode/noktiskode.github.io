@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Parque Barrios de Barberena luce adornos navideños"
-tags: ["Barberena", "Parque Barrios", "Santa Rosa", "Municipalidad", "Navidad"]
+tags: ["Parque Barrios", "Servicios municipales", "Cultura y tradiciones"]
 ---
 La página de Facebook "Barberena Santa Rosa" publicó un mensaje en el que cuestionó la iluminación navideña del parque Barrios y preguntó a dónde va el dinero que recauda la municipalidad. El autor comparó el aspecto actual con el de años anteriores, cuando, según dijo, el parque se veía mejor iluminado en estas fechas.
 

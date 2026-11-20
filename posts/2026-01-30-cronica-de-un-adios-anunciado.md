@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CRÓNICA DE UN ADIÓS ANUNCIADO:\nEl michi que mandó el sillón al basurero"
-tags: ["Gatos Traicioneros", "Drama Doméstico", "Cosas Que Pasan", "FEn El Chat", "El Cerinal", "Barberena"]
+tags: ["Servicios municipales", "El Cerinal"]
 ---
 CRÓNICA DE UN ADIÓS ANUNCIADO:
 El michi que mandó el sillón al basurero

@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "Exdiputada Aracely Chavarría queda absuelta de condena"
-tags: ["Aracely Chavarría", "Diputados de Santa Rosa", "Justicia", "Política nacional", "Guatemala", "Santa Rosa"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala"]
 ---
 La Sala Primera de Apelaciones dejó sin efecto la condena contra tres exdiputados guatemaltecos (Ronald Arango, Aracely Chavarría y Humberto Sosa).
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MISA DE RÉQUIEM Y VELACIÓN DE CANDELAS"
-tags: ["Barberena", "Nota De Duelo", "Santa Rosa", "Comunidad"]
+tags: ["Cultura y tradiciones"]
 ---
 MISA DE RÉQUIEM Y VELACIÓN DE CANDELAS
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "YA FUE HABILITADO EL PASO EN EL SECTOR DE LA PANADERÍA LA DULCE ABUELITA"
-tags: ["Barberena", "Santa Rosa", "Guatemala", "Pepe Rueda", "Noticias", "desarrollo"]
+tags: ["Pepe Rueda", "Obras públicas", "Municipalidad de Barberena"]
 ---
 YA FUE HABILITADO EL PASO EN EL SECTOR DE LA PANADERÍA LA DULCE ABUELITA
 

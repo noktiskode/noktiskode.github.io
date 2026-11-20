@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "No basta con tomarse fotos en actividades del gobierno.\nLa representación se demuestra con trabajo."
-tags: ["Santa Rosa", "Guatemala", "Fiscalización Ciudadana", "Transparencia", "Congreso de Guatemala", "Informe Ciudadano"]
+tags: ["Congreso de Guatemala", "FiscalizaciĂ³n ciudadana", "Transparencia", "PolĂ­tica local"]
 ---
 No basta con tomarse fotos en actividades del gobierno.
 La representación se demuestra con trabajo.

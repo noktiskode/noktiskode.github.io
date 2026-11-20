@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINA INDIGNADA POR CEPO DE Q500 QUE LE COLOCÓ LA PMT DE BARBERENA"
-tags: ["Barberena", "Santa Rosa", "PMT", "El Cerinal"]
+tags: ["PMT", "Denuncia ciudadana", "Servicios municipales", "Transporte"]
 ---
 VECINA INDIGNADA POR CEPO DE Q500 QUE LE COLOCÓ LA PMT DE BARBERENA
 

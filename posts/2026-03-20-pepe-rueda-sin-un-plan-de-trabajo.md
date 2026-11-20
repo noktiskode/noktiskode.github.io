@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"PEPE RUEDA, SIN UN PLAN DE TRABAJO\""
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Pepe Rueda", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Obras públicas", "Denuncia ciudadana"]
 ---
 "PEPE RUEDA, SIN UN PLAN DE TRABAJO"
 

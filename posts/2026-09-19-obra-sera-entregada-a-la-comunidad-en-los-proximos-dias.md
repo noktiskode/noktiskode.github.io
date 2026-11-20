@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El alcalde Pepe Rueda anunció un \"avance físico significativo\" en la calle Ojo de Agua, Aldea Los Bijagües, y adelantó que la obra será entregada a la comunidad en los próximos días."
-tags: ["Barberena", "Bijagües", "Santa Rosa", "CODEDE", "Obras públicas", "Pepe Rueda"]
+tags: ["Obras pÃºblicas", "CODEDE", "Bijagues", "Pepe Rueda", "Transparencia"]
 ---
 El alcalde Pepe Rueda anunció un "avance físico significativo" en la calle Ojo de Agua, Aldea Los Bijagües, y adelantó que la obra será entregada a la comunidad en los próximos días.
 

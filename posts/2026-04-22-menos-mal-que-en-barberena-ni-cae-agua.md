@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡Menos mal que en Barberena ni cae agua!  Solo falta que nos quieran quitar el tren de aseo por un servicio que ni recibimos completo."
-tags: ["San Miguel Petapa", "IUSI", "Congreso de Guatemala", "Barberena", "Santa Rosa", "Agua potable"]
+tags: ["Agua potable", "Congreso de Guatemala", "Servicios municipales"]
 ---
 ¡Menos mal que en Barberena ni cae agua!  Solo falta que nos quieran quitar el tren de aseo por un servicio que ni recibimos completo.
 

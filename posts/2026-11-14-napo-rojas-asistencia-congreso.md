@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Napo Rojas tiene 58% de asistencia al Congreso"
-tags: ["Napo Rojas", "Congreso De Guatemala", "Santa Rosa", "Política Nacional", "Diputados De Santa Rosa"]
+tags: ["Napo Rojas", "Congreso de Guatemala", "Transparencia", "FiscalizaciĂ³n ciudadana"]
 ---
 El diputado por Santa Rosa, Napoleón Rojas, registró apenas un 58% de asistencia a las sesiones del Pleno del Congreso, ubicándose entre los tres diputados con el porcentaje más bajo del ranking publicado por la Alianza por un Congreso Eficiente.
 

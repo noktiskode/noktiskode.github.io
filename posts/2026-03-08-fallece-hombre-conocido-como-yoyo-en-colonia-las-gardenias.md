@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Fallece hombre conocido como “Yoyo” en colonia Las Gardenias"
-tags: ["Barberena", "Noticias Barberena", "Respeto", "Información Responsable", "Ética Periodística", "Historia local"]
+tags: ["Seguridad", "Salud"]
 ---
 Fallece hombre conocido como “Yoyo” en colonia Las Gardenias
 

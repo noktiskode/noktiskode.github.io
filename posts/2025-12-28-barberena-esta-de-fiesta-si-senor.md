@@ -3,13 +3,13 @@ title: "Barberena está de fiesta, ¡sí señor!"
 slug: "barberena-esta-de-fiesta-si-senor"
 date: "2025-12-28T22:28:09.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122202475964318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Barberena está de fiesta, ¡sí señor! Y no es para menos."
-tags: ["Barberena", "El Cerinal", "Rubelio Recinos", "Gobierno municipal", "Historia local"]
+tags: ["Rubelio Recinos", "SĂ¡tira polĂ­tica", "PolĂ­tica local"]
 ---
 Barberena está de fiesta, ¡sí señor! Y no es para menos.
 

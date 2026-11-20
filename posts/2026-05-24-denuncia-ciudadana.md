@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "DENUNCIA CIUDADANA"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Agua potable", "Denuncia", "Pepe Rueda"]
+tags: ["Agua potable", "Denuncia ciudadana", "Pepe Rueda", "Servicios municipales"]
 ---
 DENUNCIA CIUDADANA
 

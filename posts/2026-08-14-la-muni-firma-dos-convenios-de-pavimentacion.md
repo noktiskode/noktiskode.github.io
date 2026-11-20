@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN"
-tags: ["Barberena", "CODEDE", "El Cerinal", "Santa Rosa", "Guatemala", "Pepe Rueda"]
+tags: ["Pepe Rueda", "CODEDE", "El Cerinal", "Obras pĂºblicas", "Transparencia"]
 ---
 LA MUNI FIRMA DOS CONVENIOS DE PAVIMENTACIÓN
 

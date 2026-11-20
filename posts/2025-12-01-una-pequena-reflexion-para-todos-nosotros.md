@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Una pequeña reflexión para todos nosotros"
-tags: ["Barberena", "El Cerinal", "contaminacionambiental", "limpieza", "solidaridad", "barberenaopiniones"]
+tags: ["Servicios municipales", "Municipalidad de Barberena"]
 ---
 Una pequeña reflexión para todos nosotros
 

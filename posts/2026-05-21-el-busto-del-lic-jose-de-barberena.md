@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL BUSTO DEL LIC. JOSÉ DE BARBERENA"
-tags: ["Barberena", "Datos Curiosos", "Historia Tishuda", "Santa Rosa", "Orgullo Local", "Guatemala"]
+tags: ["Historia local", "Cultura y tradiciones"]
 ---
 EL BUSTO DEL LIC. JOSÉ DE BARBERENA
 

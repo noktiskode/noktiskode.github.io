@@ -3,13 +3,13 @@ title: "lico cruz desmiente que en 20 años \"no se hizo nada\""
 slug: "lico-cruz-desmiente-que-en-20-anos-no-se-hizo-nada"
 date: "2026-07-03T22:03:11.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "barberena"
 image: "https://img.barberenamimunicipio.top/122221172888318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LICO CRUZ desmiente que en 20 años \"no se hizo nada\""
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Lico Cruz", "Agua potable", "Obras públicas"]
+tags: ["Política local", "Obras públicas", "Agua potable", "Historia local", "Lico Cruz"]
 ---
 LICO CRUZ desmiente que en 20 años "no se hizo nada"
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS: 'AQUÍ VAMOS DE NUEVO'"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Rubelio Recinos", "Municipalidad", "Comunidad"]
+tags: ["Rubelio Recinos", "Ayuda social", "Política local"]
 ---
 RUBELIO RECINOS: 'AQUÍ VAMOS DE NUEVO'
 

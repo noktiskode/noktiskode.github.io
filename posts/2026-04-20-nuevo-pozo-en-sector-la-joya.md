@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NUEVO POZO EN SECTOR LA JOYA"
-tags: ["El Cerinal", "Agua potable", "Barberena", "Santa Rosa", "CODEDE", "Guatecompras"]
+tags: ["La Joya", "El Cerinal", "Agua potable", "CODEDE", "Guatecompras"]
 ---
 NUEVO POZO EN SECTOR LA JOYA
 

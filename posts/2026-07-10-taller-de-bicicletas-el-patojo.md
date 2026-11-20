@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TALLER DE BICICLETAS \"EL PATOJO\""
-tags: ["Barberena", "Historias de Barberena", "Barberena Mi Municipio", "Santa Rosa", "Municipalidad", "Historia local"]
+tags: ["Historia local", "Cultura y tradiciones"]
 ---
 TALLER DE BICICLETAS "EL PATOJO"
 

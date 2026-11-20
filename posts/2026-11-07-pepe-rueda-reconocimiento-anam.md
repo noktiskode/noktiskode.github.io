@@ -3,13 +3,13 @@ title: "¡Felicitaciones al segundo mejor alcalde de Barberena!"
 slug: "pepe-rueda-reconocimiento-anam"
 date: "2026-11-07T00:00:00.000Z"
 updated_at: "2026-11-07T00:15:21.578Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1794010482234-4ujd0p.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Pepe Rueda recibe reconocimiento por Buenas Prácticas Municipales"
-tags: ["Barberena", "Pepe Rueda", "Municipalidad", "ANAM", "Gobierno Municipal", "Opiniones"]
+tags: ["Pepe Rueda", "PolĂ­tica local", "Municipalidad de Barberena"]
 ---
 Por tercer año consecutivo, el alcalde Pepe Rueda recibe un reconocimiento de la ANAM por las Buenas Prácticas Municipales.
 

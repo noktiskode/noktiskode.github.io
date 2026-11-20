@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNI FIRMA CONVENIO PARA PROYECTO EN LA CALLE COGUASA, EL CERINAL"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Obras públicas", "Municipalidad", "Contratación pública"]
+tags: ["El Cerinal", "Obras públicas", "Guatecompras", "Municipalidad de Barberena"]
 ---
 LA MUNI FIRMA CONVENIO PARA PROYECTO EN LA CALLE COGUASA, EL CERINAL
 

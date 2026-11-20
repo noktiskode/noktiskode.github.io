@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA ESCUELA QUE \"ESPERÓ\" 10 AÑOS Y SE PAGÓ CON TUS IMPUESTOS"
-tags: ["Ojoconmipisto", "Barberena", "Santa Rosa", "Fiscalización Ciudadana", "Transparencia GT", "CODEDE"]
+tags: ["El Junquillo", "CODEDE", "Educación", "Fiscalización ciudadana", "Transparencia"]
 ---
 LA ESCUELA QUE "ESPERÓ" 10 AÑOS Y SE PAGÓ CON TUS IMPUESTOS
 

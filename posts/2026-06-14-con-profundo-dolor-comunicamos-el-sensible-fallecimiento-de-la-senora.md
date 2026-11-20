@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Con profundo dolor comunicamos el sensible fallecimiento de la señora"
-tags: ["Notade Duelo", "Barberena", "Santa Rosa", "Obras públicas", "Municipalidad", "Comunidad"]
+tags: ["Cultura y tradiciones"]
 ---
 Con profundo dolor comunicamos el sensible fallecimiento de la señora
 

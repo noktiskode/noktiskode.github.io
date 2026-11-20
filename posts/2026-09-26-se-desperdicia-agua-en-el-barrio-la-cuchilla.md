@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Barberena: Vecinos del Barrio La Cuchilla reportan que el fontanero encargado dejó abierta la llave de paso, lo que habría provocado que en varias viviendas del sector el agua se esté desperdiciando desde la madrugada."
-tags: ["AGUA POTABLE", "FONTANERÍA", "MUNICIPALIDAD"]
+tags: ["Agua potable", "Servicios municipales", "Denuncia ciudadana"]
 ---
 Barberena: Vecinos del Barrio La Cuchilla reportan que el fontanero encargado dejó abierta la llave de paso, lo que habría provocado que en varias viviendas del sector el agua se esté desperdiciando desde la madrugada.
 

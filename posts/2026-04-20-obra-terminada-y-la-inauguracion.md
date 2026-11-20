@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "OBRA TERMINADA... ¿Y LA INAUGURACIÓN?"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "CODEDE", "Obras públicas", "NOG 25579711"]
+tags: ["Obras pÃºblicas", "CODEDE", "Transparencia"]
 ---
 OBRA TERMINADA... ¿Y LA INAUGURACIÓN?
 

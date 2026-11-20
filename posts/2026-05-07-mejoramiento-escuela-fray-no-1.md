@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MEJORAMIENTO ESCUELA FRAY NO. 1"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Educación", "Obras Públicas"]
+tags: ["EducaciÃ³n", "El Cerinal", "Obras pÃºblicas", "Guatecompras"]
 ---
 MEJORAMIENTO ESCUELA FRAY NO. 1
 

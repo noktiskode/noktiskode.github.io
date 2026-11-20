@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Cuando la fe entra en campaña"
-tags: ["Política YReligión", "Reflexión Social", "Conciencia Ciudadana", "Opinión Pública", "Pensemos", "Barberena Mi Municipio"]
+tags: ["PolĂ­tica local", "Elecciones 2027"]
 ---
 Cuando la fe entra en campaña
 

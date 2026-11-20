@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Los Hornitos: los trabajos van a un ritmo lento"
-tags: ["Barberena", "Santa Rosa", "Guatecompras", "Los Hornitos", "Obras públicas"]
+tags: ["Los Hornitos", "CODEDE", "Obras pĂºblicas", "FiscalizaciĂ³n ciudadana", "Transparencia"]
 ---
 A mes y medio del vencimiento del contrato, el supervisor advierte que "los trabajos de ejecución no han tenido mayor avance, van a un ritmo lento y se sugiere a la empresa poner más gente a trabajar para no tener problemas con los tiempos de contrato."
 

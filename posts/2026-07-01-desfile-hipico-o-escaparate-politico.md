@@ -3,13 +3,13 @@ title: "¿Desfile hípico O escaparate político?"
 slug: "desfile-hipico-o-escaparate-politico"
 date: "2026-07-01T18:53:54.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122220983402318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¿DESFILE HÍPICO O ESCAPARATE POLÍTICO?"
-tags: ["Santa Rosa", "Amberes", "Elecciones 2027", "TSE", "Santa Rosa De Lima", "Guatemala"]
+tags: ["Napo Rojas", "Ricardo Alarcón", "Pepe Rueda", "Elecciones 2027", "Sátira política"]
 ---
 ¿DESFILE HÍPICO O ESCAPARATE POLÍTICO?
 

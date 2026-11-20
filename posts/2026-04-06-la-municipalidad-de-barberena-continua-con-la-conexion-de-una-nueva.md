@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA CONEXIÓN DE UNA NUEVA RED DE DISTRIBUCIÓN DE AGUA"
-tags: ["Aldea El Cerinal", "Barberena", "El Cerinal", "Santa Rosa", "Obras GT", "La Joya"]
+tags: ["Agua potable", "La Joya", "El Cerinal", "Obras públicas", "Municipalidad de Barberena"]
 ---
 LA MUNICIPALIDAD DE BARBERENA CONTINÚA CON LA CONEXIÓN DE UNA NUEVA RED DE DISTRIBUCIÓN DE AGUA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LICO CRUZ: \"FUERON 20 AÑOS DE DESARROLLO\""
-tags: ["Barberena", "San Nicolas", "El Cerinal", "Santa Rosa", "San Nicolás", "Monterroso"]
+tags: ["Política local", "Obras públicas", "Elecciones 2027", "El Cerinal", "Lico Cruz"]
 ---
 LICO CRUZ: "FUERON 20 AÑOS DE DESARROLLO"
 

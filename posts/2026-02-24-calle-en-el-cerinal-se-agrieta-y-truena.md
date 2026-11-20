@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Calle en El Cerinal se agrieta y truena"
-tags: ["Barberena", "El Cerinal", "Fiscalización", "Gestión Municipal", "CODEDE", "Guatecompras"]
+tags: ["El Cerinal", "Obras públicas", "CODEDE", "SCEP", "Pepe Rueda"]
 ---
 Calle en El Cerinal se agrieta y truena
 

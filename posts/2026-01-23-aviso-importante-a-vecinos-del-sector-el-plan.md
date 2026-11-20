@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "AVISO IMPORTANTE A VECINOS DEL SECTOR EL PLAN"
-tags: ["La Joya", "Municipalidad", "Servicios municipales"]
+tags: ["La Joya", "Servicios municipales", "Denuncia ciudadana"]
 ---
 AVISO IMPORTANTE A VECINOS DEL SECTOR EL PLAN
 

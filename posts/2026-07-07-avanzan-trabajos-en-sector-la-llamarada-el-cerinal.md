@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "AVANZAN TRABAJOS EN SECTOR LA LLAMARADA, EL CERINAL"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "BMM", "Municipalidad"]
+tags: ["El Cerinal", "COCODE", "Obras públicas", "Servicios municipales"]
 ---
 AVANZAN TRABAJOS EN SECTOR LA LLAMARADA, EL CERINAL
 

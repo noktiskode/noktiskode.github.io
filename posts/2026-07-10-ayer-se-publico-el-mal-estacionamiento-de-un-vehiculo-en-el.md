@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado."
-tags: ["Barberena", "Santa Rosa", "Barberena Mi Municipio", "Obras públicas"]
+tags: ["Mercado y comercio", "Denuncia ciudadana", "Transporte"]
 ---
 "Ayer se publicó el 'mal estacionamiento' de un vehículo en el área del mercado.
 

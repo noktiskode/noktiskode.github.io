@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Este muchacho trabaja para la Muni de Barberena como auxiliar de logística en la Dirección de Relaciones Públicas y, al mismo tiempo, también colabora con Visor Suroriente."
-tags: ["Barberena", "Municipalidad"]
+tags: ["Transparencia", "Municipalidad de Barberena", "Fiscalización ciudadana"]
 ---
 Este muchacho trabaja para la Muni de Barberena como auxiliar de logística en la Dirección de Relaciones Públicas y, al mismo tiempo, también colabora con Visor Suroriente.
 

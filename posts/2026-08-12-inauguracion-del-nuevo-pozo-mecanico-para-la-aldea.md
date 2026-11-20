@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Inauguración del nuevo pozo mecánico para la aldea"
-tags: ["El Cerinal", "Guatecompras", "Barberena", "Santa Rosa", "Agua potable", "SCEP"]
+tags: ["Guatecompras", "El Cerinal", "La Joya", "Agua potable", "Obras pĂºblicas"]
 ---
 Inauguración del nuevo pozo mecánico para la aldea
 

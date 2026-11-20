@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La tradición de la quema del diablo en Guatemala"
-tags: ["Quema Del Diablo", "Tradición Responsable", "Salud Primero", "Respeto ALos Trabajadores", "Guatemala Cultura YTradición", "Agua potable"]
+tags: ["Cultura y tradiciones", "Salud", "Servicios municipales"]
 ---
 La tradición de la quema del diablo en Guatemala
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "“¡Qué asco la política!” — Dewey, Malcolm in the Middle"
-tags: ["Democracia", "Humor Negro", "Dewey", "Malcolm In The Middle", "Reflexión", "Cultura Pop"]
+tags: ["PolĂ­tica nacional", "EducaciĂ³n"]
 ---
 “¡Qué asco la política!” — Dewey, Malcolm in the Middle
 

@@ -3,13 +3,13 @@ title: "¿Ya cerraron el chorro?"
 slug: "ya-cerraron-el-chorro"
 date: "2026-03-11T02:17:44.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122209646468318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¿YA CERRARON EL CHORRO?"
-tags: ["Barberena", "Agua potable", "Municipalidad"]
+tags: ["Agua potable", "Municipalidad de Barberena", "Elecciones 2027", "Sátira política"]
 ---
 ¿YA CERRARON EL CHORRO?
 

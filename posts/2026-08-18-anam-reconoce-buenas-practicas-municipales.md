@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ANAM reconoce buenas prácticas municipales"
-tags: ["Barberena", "Santa Rosa", "ANAM", "Agua potable", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Agua potable", "Obras pĂºblicas", "EducaciĂ³n"]
 ---
 ANAM reconoce buenas prácticas municipales
 

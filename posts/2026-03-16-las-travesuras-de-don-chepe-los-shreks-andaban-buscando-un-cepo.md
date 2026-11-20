@@ -3,13 +3,13 @@ title: "Las travesuras de Don Chepe Los shreks andaban buscando un cepo para pon
 slug: "las-travesuras-de-don-chepe-los-shreks-andaban-buscando-un-cepo"
 date: "2026-03-16T09:47:21.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122210147702318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Las travesuras de Don Chepe"
-tags: ["La Ladrillera", "Barberena", "Santa Rosa"]
+tags: ["Sátira política", "PMT", "Pepe Rueda"]
 ---
 Las travesuras de Don Chepe
 

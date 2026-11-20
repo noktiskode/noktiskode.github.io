@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Agua o combustible? Vecinos reportan diésel saliendo del chorro"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua potable"]
+tags: ["Agua potable", "Denuncia ciudadana", "Salud", "Servicios municipales"]
 ---
 ¿Agua o combustible? Vecinos reportan diésel saliendo del chorro
 

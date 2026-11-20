@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NOTA DE SEGUIMIENTO\nReglamentos heredados mantienen sin mototaxis a Buena Vista y Bijagües"
-tags: ["Barberena", "Santa Rosa", "Denuncia Ciudadana", "Comunidad", "El Cerinal", "Buena Vista"]
+tags: ["Buena Vista", "Bijagues", "Transporte", "Pepe Rueda", "Servicios municipales"]
 ---
 NOTA DE SEGUIMIENTO
 Reglamentos heredados mantienen sin mototaxis a Buena Vista y Bijagües

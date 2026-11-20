@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"¿Cuántos años más tenemos que esperar para que nos arreglen el callejón que está enfrente de canchas D'volea y conduce a la calle principal que va para el cementerio?\", pregunta un vecino."
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Servicios municipales"]
+tags: ["Denuncia ciudadana", "Obras públicas"]
 ---
 "¿Cuántos años más tenemos que esperar para que nos arreglen el callejón que está enfrente de canchas D'volea y conduce a la calle principal que va para el cementerio?", pregunta un vecino.

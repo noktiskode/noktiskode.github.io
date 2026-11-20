@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Alcalde se refiere al incidente con mototaxis en El Cerinal"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "PMT", "Monterroso", "Pepe Rueda"]
+tags: ["Pepe Rueda", "PMT", "El Cerinal", "Seguridad", "Transporte"]
 ---
 Alcalde se refiere al incidente con mototaxis en El Cerinal
 

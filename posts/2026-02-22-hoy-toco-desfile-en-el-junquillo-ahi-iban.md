@@ -3,13 +3,13 @@ title: "Hoy tocó desfile en El Junquillo. Ahí iban"
 slug: "hoy-toco-desfile-en-el-junquillo-ahi-iban"
 date: "2026-02-22T23:06:45.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "Hoy tocó desfile en El Junquillo."
-tags: ["Barberena", "Junquillo Fer", "Santa Rosa", "Desfile Hipico"]
+tags: ["El Junquillo", "Sátira política", "Elecciones 2027"]
 ---
 Hoy tocó desfile en El Junquillo.
 

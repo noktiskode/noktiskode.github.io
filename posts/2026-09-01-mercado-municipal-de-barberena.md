@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Frente al parque y cerquita de la Muni, el mercado de Barberena es el mero corazón del pueblo. Ahí se siente el calor de la gente entre puestos llenos de fruta fresca, chiles rellenos, rellenitos y tortillas palmeadas, y el…"
-tags: ["Comunidad", "Acontecimientos", "Barberena", "Municipalidad"]
+tags: ["Mercado y comercio", "Cultura y tradiciones"]
 ---
 Frente al parque y cerquita de la Muni, el mercado de Barberena es el mero corazón del pueblo. Ahí se siente el calor de la gente entre puestos llenos de fruta fresca, chiles rellenos, rellenitos y tortillas palmeadas, y el «pásele, pásele, ¿qué va a llevar, mi rey?» de las vendedoras que le ponen sabor y alegría al día a día.
 

@@ -3,13 +3,13 @@ title: "Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejo
 slug: "mientras-otros-solo-hablan-y-se-lanzan-indirectas-el-viejon-el"
 date: "2026-04-14T16:07:31.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122213045480318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejor alcalde de Barberena— guarda silencio, como todo un caballero, y se mantiene alejado de los chismes que puedan ensuciar su imagen. Porque es lo que un hombre hace."
-tags: ["Barberena", "Rubelio Recinos", "Pepe Rueda", "Jorge Cruz", "Gobierno municipal", "Elecciones"]
+tags: ["Rubelio Recinos", "Pepe Rueda", "Jorge Cruz", "Elecciones 2027", "PolÃ­tica local"]
 ---
 Mientras otros solo hablan y se lanzan indirectas, el viejón —el mejor alcalde de Barberena— guarda silencio, como todo un caballero, y se mantiene alejado de los chismes que puedan ensuciar su imagen. Porque es lo que un hombre hace.
 

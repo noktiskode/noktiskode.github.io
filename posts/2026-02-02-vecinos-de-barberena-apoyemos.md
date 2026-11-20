@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINOS DE BARBERENA, APOYEMOS"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Santa Cruz Naranjo", "Alerta Alba Keneth", "Guatemala"]
+tags: ["Seguridad", "Ayuda social"]
 ---
 VECINOS DE BARBERENA, APOYEMOS
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA"
-tags: ["Barberena", "Canoguitas", "San Nicolás", "Mal País", "La Vega", "Municipalidad"]
+tags: ["Ayuda social", "San NicolÃ¡s", "Municipalidad de Barberena"]
 ---
 CONTINÚAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA
 

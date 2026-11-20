@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1121040916843100/"
 featured: false
 published: true
 excerpt: "¿Cuál es tu evaluación general del desempeño de Pepe Rueda Vallejo como alcalde hasta ahora..."
-tags: ["Barberena", "Santa Rosa", "Alcalde", "Municipalidad", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Transparencia", "FiscalizaciĂ³n ciudadana", "Guatecompras"]
 ---
 ¿Cuál es tu evaluación general del desempeño de Pepe Rueda Vallejo como alcalde hasta ahora, en particular en lo que respecta a la gestión e inversión de los recursos económicos del municipio?
 

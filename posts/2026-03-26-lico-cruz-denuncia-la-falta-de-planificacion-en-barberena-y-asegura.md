@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Lico Cruz denuncia la falta de planificación en Barberena y asegura que la pavimentación de La Ladrillera lleva demasiado tiempo, lo que tiene a la gente ya desesperada."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "splashday", "Agua potable", "Política local"]
+tags: ["Lico Cruz", "Pepe Rueda", "La Ladrillera", "Agua potable", "Política local"]
 ---
 Lico Cruz denuncia la falta de planificación en Barberena y asegura que la pavimentación de La Ladrillera lleva demasiado tiempo, lo que tiene a la gente ya desesperada.
 

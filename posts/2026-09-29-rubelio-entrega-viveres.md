@@ -3,13 +3,13 @@ title: "Rubelio entrega víveres"
 slug: "rubelio-entrega-viveres"
 date: "2026-09-29T02:04:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "opiniones"
+category: "barberena"
 image: "https://img.barberenamimunicipio.top/1790647470643-bqohwa.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos apareció nuevamente entregando bolsas, pero esta vez no eran verduras, sino víveres."
-tags: ["Barberena", "Santa Rosa", "PoliticaLocal", "NoticiasBarberena", "Sátira Política"]
+tags: ["Rubelio Recinos", "Ayuda social", "PolÃ­tica local"]
 ---
 Rubelio Recinos apareció nuevamente entregando bolsas, pero esta vez no eran verduras, sino víveres.
 

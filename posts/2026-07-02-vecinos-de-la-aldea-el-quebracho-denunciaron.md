@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos de la aldea El Quebracho denunciaron que encontraron evidencias del mal uso del corredor del salón comunal, entre ellas sobres de condones, señalando que no es la primera vez que esto ocurre. Según los pobladores, el espacio está prohibido…"
-tags: ["Barberena", "El Quebracho", "Santa Rosa", "Municipalidad"]
+tags: ["El Quebracho", "Denuncia ciudadana", "Seguridad"]
 ---
 Vecinos de la aldea El Quebracho denunciaron que encontraron evidencias del mal uso del corredor del salón comunal, entre ellas sobres de condones, señalando que no es la primera vez que esto ocurre. Según los pobladores, el espacio está prohibido para realizar actos contra la moral, las buenas costumbres, el orden público y la higiene del lugar. Los vecinos hicieron un llamado a la comunidad a cuidar entre todos las instalaciones.

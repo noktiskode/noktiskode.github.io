@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Lico Cruz se pronunció sobre el ordenamiento vial en Barberena"
-tags: ["Barberena", "Santa Rosa", "PMT", "Orden Vial", "El Cerinal", "Lico Cruz"]
+tags: ["PMT", "PolĂ­tica local", "Seguridad", "Servicios municipales", "Lico Cruz"]
 ---
 Lico Cruz se pronunció sobre el ordenamiento vial en Barberena
 

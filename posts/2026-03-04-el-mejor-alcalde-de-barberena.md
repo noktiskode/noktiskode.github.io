@@ -3,13 +3,13 @@ title: "El mejor alcalde de Barberena"
 slug: "el-mejor-alcalde-de-barberena"
 date: "2026-03-04T01:49:41.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122208986228318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "EL MEJOR ALCALDE DE BARBERENA"
-tags: ["Barberena", "Santa Rosa", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Sátira política", "Municipalidad de Barberena"]
 ---
 EL MEJOR ALCALDE DE BARBERENA
 

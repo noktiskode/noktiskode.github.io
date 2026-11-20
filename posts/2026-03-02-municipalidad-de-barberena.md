@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Municipalidad de Barberena"
-tags: ["Barberena", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Mercado y comercio", "Servicios municipales"]
 ---
 Municipalidad de Barberena
 

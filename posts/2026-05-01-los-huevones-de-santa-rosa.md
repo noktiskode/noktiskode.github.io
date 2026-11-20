@@ -3,13 +3,13 @@ title: "Los \"huevones\" de Santa Rosa"
 slug: "los-huevones-de-santa-rosa"
 date: "2026-05-01T09:50:48.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "LOS \"HUEVONES\" DE SANTA ROSA"
-tags: ["Casillas", "Video", "Santa Rosa", "Guatemala", "diadeltrabajador", "Ricardo Alarcón"]
+tags: ["Ricardo AlarcÃ³n", "Salud", "SÃ¡tira polÃ­tica"]
 ---
 LOS "HUEVONES" DE SANTA ROSA
 

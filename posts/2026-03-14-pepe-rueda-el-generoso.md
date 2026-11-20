@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA, “EL GENEROSO”"
-tags: ["Barberena", "Pepe Rueda", "Gestión Municipal", "Educación", "Agua potable", "Infraestructura"]
+tags: ["Pepe Rueda", "Educación", "Agua potable", "Municipalidad de Barberena"]
 ---
 PEPE RUEDA, “EL GENEROSO”
 

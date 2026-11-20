@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL CERINAL  VECINOS DENUNCIAN Q1.1 MILLONES EN “REMODELACIÓN” FANTASMA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Q 1100000", "Dinero Público", "Sobrevaloración"]
+tags: ["El Cerinal", "Obras pÃºblicas", "FiscalizaciÃ³n ciudadana", "Denuncia ciudadana"]
 ---
 EL CERINAL  VECINOS DENUNCIAN Q1.1 MILLONES EN “REMODELACIÓN” FANTASMA
 

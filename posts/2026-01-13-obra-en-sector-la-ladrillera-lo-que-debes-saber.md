@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "OBRA EN SECTOR LA LADRILLERA – LO QUE DEBES SABER"
-tags: ["Barberena", "La Ladrillera", "Obras públicas", "Transparencia", "Fiscalización Ciudadana", "Agua potable"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "FiscalizaciÃ³n ciudadana", "Transparencia", "Municipalidad de Barberena"]
 ---
 OBRA EN SECTOR LA LADRILLERA – LO QUE DEBES SABER
 

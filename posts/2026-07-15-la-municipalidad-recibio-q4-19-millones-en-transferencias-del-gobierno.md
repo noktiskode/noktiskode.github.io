@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNICIPALIDAD RECIBIÓ Q4.19 MILLONES EN TRANSFERENCIAS DEL GOBIERNO"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Transparencia"]
 ---
 LA MUNICIPALIDAD RECIBIÓ Q4.19 MILLONES EN TRANSFERENCIAS DEL GOBIERNO
 

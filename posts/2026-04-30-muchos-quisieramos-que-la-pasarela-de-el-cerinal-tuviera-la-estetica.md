@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MUCHOS QUISIÉRAMOS QUE LA PASARELA DE EL CERINAL TUVIERA LA ESTÉTICA DE LA DE CHIQUIMULILLA (PRIMERA FOTO), PERO LOS NÚMEROS CUENTAN OTRA HISTORIA."
-tags: ["El Cerinal", "Barberena", "Chiquimulilla", "Santa Rosa", "Agua potable", "Obras públicas"]
+tags: ["El Cerinal", "Chiquimulilla", "Obras pÃºblicas", "Transparencia", "Agua potable"]
 ---
 MUCHOS QUISIÉRAMOS QUE LA PASARELA DE EL CERINAL TUVIERA LA ESTÉTICA DE LA DE CHIQUIMULILLA (PRIMERA FOTO), PERO LOS NÚMEROS CUENTAN OTRA HISTORIA.
 

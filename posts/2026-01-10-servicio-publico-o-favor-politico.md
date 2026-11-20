@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿SERVICIO PÚBLICO O FAVOR POLÍTICO?\n — Queja ciudadana —"
-tags: ["Barberena", "El Cerinal", "Obras públicas", "Gobierno municipal", "Servicios municipales"]
+tags: ["Servicios municipales", "Denuncia ciudadana", "El BoquerÃ³n"]
 ---
 ¿SERVICIO PÚBLICO O FAVOR POLÍTICO?
  — Queja ciudadana —

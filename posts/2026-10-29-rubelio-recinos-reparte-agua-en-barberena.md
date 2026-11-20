@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos reparte agua en Barberena y critica a la administración municipal"
-tags: ["Rubelio Recinos", "Barberena", "Agua Potable", "Municipalidad", "Santa Rosa"]
+tags: ["Rubelio Recinos", "Agua potable", "PolĂ­tica local"]
 ---
 El exalcalde Rubelio Recinos compartió en sus redes que sigue entregando agua a familias de Barberena. En la publicación dijo: "Una realidad que viven muchas familias de Barberena. Hoy compartimos agua con nuestros vecinos, porque la necesidad no puede esperar."
 

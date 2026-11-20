@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Posible balacera en Utzumazate"
-tags: ["Barberena", "Utzumazate", "Seguridad"]
+tags: ["Utzumazate", "Seguridad"]
 ---
 BARBERENA  Posible balacera en Utzumazate
 

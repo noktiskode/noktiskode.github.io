@@ -3,13 +3,13 @@ title: "Hoy hubo inauguración"
 slug: "hoy-hubo-inauguracion"
 date: "2026-03-15T21:58:49.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122210090156318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "HOY HUBO INAUGURACIÓN"
-tags: ["Cuilapa", "Obras públicas", "Gobierno municipal", "Política nacional"]
+tags: ["Cuilapa", "Obras públicas", "Fiscalización ciudadana", "Transparencia"]
 ---
 HOY HUBO INAUGURACIÓN
 

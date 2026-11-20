@@ -3,13 +3,13 @@ title: "Efemérides (No comprobadas y con retraso administrativo)"
 slug: "efemerides-no-comprobadas-y-con-retraso-administrativo"
 date: "2026-01-05T16:00:05.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122203300712318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "EFEMÉRIDES (No comprobadas y con retraso administrativo)"
-tags: ["felizcumplenada", "Diputados de Santa Rosa", "Barberena", "Santa Rosa", "Napo Rojas", "Política nacional"]
+tags: ["Napo Rojas", "Congreso de Guatemala", "SÃ¡tira polÃ­tica", "FiscalizaciÃ³n ciudadana"]
 ---
 EFEMÉRIDES (No comprobadas y con retraso administrativo)
 

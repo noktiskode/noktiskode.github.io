@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VUELVE EL FERTILIZANTE 2026"
-tags: ["Barberena", "Santa Rosa", "Agricultura", "Guatecompras", "Fertilizante", "Municipalidad"]
+tags: ["Ayuda social", "Transparencia", "Guatecompras", "COCODE", "FiscalizaciÃ³n ciudadana"]
 ---
 VUELVE EL FERTILIZANTE 2026
 

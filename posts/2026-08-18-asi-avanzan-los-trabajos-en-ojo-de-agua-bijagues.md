@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Así avanzan los trabajos en Ojo de Agua, Bijagues"
-tags: ["Barberena", "Santa Rosa", "Bijagues", "Obras públicas", "Guatecompras", "SCEP"]
+tags: ["Bijagues", "Guatecompras", "Obras pĂºblicas", "Transparencia", "FiscalizaciĂ³n ciudadana"]
 ---
 Así avanzan los trabajos en Ojo de Agua, Bijagues
 

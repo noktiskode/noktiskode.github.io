@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Aclaración sobre la presentación de “Los Caminantes” en El Cerinal"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Guatemala"]
+tags: ["El Cerinal", "Cultura y tradiciones", "Municipalidad de Barberena", "Cerifer"]
 ---
 Aclaración sobre la presentación de “Los Caminantes” en El Cerinal
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La esposa de nuestro exalcalde, Rubelio Recinos, señalada en el caso 'Asalto al Ministerio de Salud', podrá salir del país para recibir tratamiento médico. Resulta irónico dadas las circunstancias, pero desde aquí esperamos que mejore y se recupere pronto; ya…"
-tags: ["El Cerinal", "Rubelio Recinos", "Gobierno municipal"]
+tags: ["Rubelio Recinos", "El Cerinal", "Política local"]
 ---
 La esposa de nuestro exalcalde, Rubelio Recinos, señalada en el caso 'Asalto al Ministerio de Salud', podrá salir del país para recibir tratamiento médico.
 Resulta irónico dadas las circunstancias, pero desde aquí esperamos que mejore y se recupere pronto; ya que en El Cerinal se le quiere mucho.

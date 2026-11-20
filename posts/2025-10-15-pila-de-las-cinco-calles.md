@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1215918300373884/"
 featured: false
 published: true
 excerpt: "Pila de las Cinco Calles"
-tags: ["Barberena", "Santa Rosa", "Historia local", "Orgullo Tishudo"]
+tags: ["Historia local", "Cultura y tradiciones", "Parque Barrios"]
 ---
 Escuchemos este relato sobre uno de los lugares más queridos de nuestro municipio.
 Un espacio que, en su momento, fue punto de encuentro para muchas personas, donde se compartían historias, risas y momentos que hoy forman parte de nuestra memoria colectiva.

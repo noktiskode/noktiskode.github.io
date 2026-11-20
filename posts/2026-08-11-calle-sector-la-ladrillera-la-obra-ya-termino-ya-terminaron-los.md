@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Calle Sector La Ladrillera: la obra ya terminó"
-tags: ["Barberena", "La Ladrillera", "Guatecompras", "Santa Rosa", "Obras públicas", "SCEP"]
+tags: ["La Ladrillera", "CODEDE", "Obras pĂºblicas", "FiscalizaciĂ³n ciudadana", "Transparencia"]
 ---
 Calle Sector La Ladrillera: la obra ya terminó
 

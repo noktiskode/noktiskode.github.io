@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Tres exdiputados podrían pagar hasta 6 años y medio por tráfico de influencias"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Política nacional"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala", "Transparencia"]
 ---
 Tres exdiputados podrían pagar hasta 6 años y medio por tráfico de influencias
 

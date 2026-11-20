@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS CONTINÚA CON LAS ENTREGAS DE VERDURAS"
-tags: ["Barberena", "Las Astas", "Santa Rosa", "Rubelio Recinos", "Municipalidad"]
+tags: ["Rubelio Recinos", "Las Astas", "Ayuda social", "Elecciones 2027"]
 ---
 RUBELIO RECINOS CONTINÚA CON LAS ENTREGAS DE VERDURAS
 

@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1622174409591929/"
 featured: false
 published: true
 excerpt: "El alcalde Pepe Rueda dijo que \"hoy estamos iniciando la ejecución\" y que se cumplió \"todo el procedimiento administrativo y legal\". Anunció 14 aulas equipadas, y una cancha techada con escenario, graderíos e iluminación. También habrá área de juegos, picnic,…"
-tags: ["Barberena", "El Cerinal", "SantaRosaGT", "ObrasPublicas", "CODEDE", "Infraestructura", "Educación"]
+tags: ["Obras pÃºblicas", "CODEDE", "Guatecompras", "Pepe Rueda", "EducaciÃ³n"]
 ---
 El alcalde Pepe Rueda dijo que "hoy estamos iniciando la ejecución" y que se cumplió "todo el procedimiento administrativo y legal". Anunció 14 aulas equipadas, y una cancha techada con escenario, graderíos e iluminación. También habrá área de juegos, picnic, cocina y sanitarios. Sobre la obra afirmó: "aquí no andamos haciendo chambonadas".
 

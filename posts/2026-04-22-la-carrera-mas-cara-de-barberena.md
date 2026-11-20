@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA CARRERA MÁS CARA DE BARBERENA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "transparencia", "Fiscalización", "Agua potable"]
+tags: ["Transparencia", "FiscalizaciÃ³n ciudadana", "Agua potable", "Pepe Rueda", "Municipalidad de Barberena"]
 ---
 LA CARRERA MÁS CARA DE BARBERENA
 

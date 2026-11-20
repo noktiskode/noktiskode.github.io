@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El señor alcalde Pepe Rueda, junto a su Honorable Concejo Municipal, expresan sus más sinceras condolencias a su familia y seres queridos, elevando oraciones para que encuentren fortaleza, consuelo y resignación ante esta irreparable pérdida."
-tags: ["Barberena", "Santa Rosa", "Pepe Rueda", "Municipalidad", "Gobierno municipal", "Comunidad"]
+tags: ["Municipalidad de Barberena", "Pepe Rueda"]
 ---
 El señor alcalde Pepe Rueda, junto a su Honorable Concejo Municipal, expresan sus más sinceras condolencias a su familia y seres queridos, elevando oraciones para que encuentren fortaleza, consuelo y resignación ante esta irreparable pérdida.
 

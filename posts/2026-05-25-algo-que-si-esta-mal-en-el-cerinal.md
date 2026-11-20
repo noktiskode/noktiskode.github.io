@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Algo que sí está mal en El Cerinal: el alcalde debería tener un PMT que les ponga cepo a todos los que ocupan la parada de buses como parqueadero. Siempre se hace gran tráfico y es en vano que se…"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "trafico", "PMT", "Gobierno municipal"]
+tags: ["El Cerinal", "PMT", "Transporte"]
 ---
 Algo que sí está mal en El Cerinal: el alcalde debería tener un PMT que les ponga cepo a todos los que ocupan la parada de buses como parqueadero. Siempre se hace gran tráfico y es en vano que se haya invertido tanto en eso.

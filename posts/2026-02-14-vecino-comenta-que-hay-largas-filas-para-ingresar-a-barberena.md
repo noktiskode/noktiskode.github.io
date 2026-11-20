@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecino comenta que hay largas filas para ingresar a Barberena:"
-tags: ["Barberena", "La Ladrillera"]
+tags: ["La Ladrillera", "Obras públicas", "Transporte", "Denuncia ciudadana"]
 ---
 Vecino comenta que hay largas filas para ingresar a Barberena:
 

@@ -3,13 +3,13 @@ title: "La mejor estampita del álbum panini"
 slug: "la-mejor-estampita-del-album-panini"
 date: "2026-05-29T00:35:03.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122217807140318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LA MEJOR ESTAMPITA DEL ÁLBUM PANINI"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Album Panini", "Política local", "Elecciones"]
+tags: ["Jorge Cruz", "Rubelio Recinos", "Pepe Rueda", "Elecciones 2027", "Sátira política"]
 ---
 LA MEJOR ESTAMPITA DEL ÁLBUM PANINI
 

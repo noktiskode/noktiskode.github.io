@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PIDEN EL REGRESO DEL MEJOR ALCALDE: el licenciado RUBELIO RECINOS COREA.\nBarberena, BuenaVista, Bijagues, ElCerinal y LosHornitos le piden que se postule en 2027."
-tags: ["Barberena", "Buena Vista", "Bijagues", "El Cerinal", "Los Hornitos", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Elecciones 2027", "Política local", "Buena Vista", "Bijagues"]
 ---
 PIDEN EL REGRESO DEL MEJOR ALCALDE: el licenciado RUBELIO RECINOS COREA.
 Barberena, BuenaVista, Bijagues, ElCerinal y LosHornitos le piden que se postule en 2027.

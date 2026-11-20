@@ -3,13 +3,13 @@ title: "Desfile de camiones genera opiniones divididas en barberena"
 slug: "desfile-de-camiones-genera-opiniones-divididas-en-barberena"
 date: "2025-12-29T19:42:01.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "barberena"
 image: "https://img.barberenamimunicipio.top/122202563588318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "DESFILE DE CAMIONES GENERA OPINIONES DIVIDIDAS EN BARBERENA"
-tags: ["barbefer", "Barberena", "Municipalidad", "Tradiciones", "Historia local"]
+tags: ["Cultura y tradiciones", "Transporte", "Municipalidad de Barberena"]
 ---
 DESFILE DE CAMIONES GENERA OPINIONES DIVIDIDAS EN BARBERENA
 

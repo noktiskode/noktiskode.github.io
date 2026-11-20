@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hoy se llevó a cabo la tercera edición del Festival del Café, organizado por la Municipalidad de Barberena en conjunto con ANACAFÉ y Plaza Barberena."
-tags: ["Barberena", "Santa Rosa", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Cultura y tradiciones", "Mercado y comercio"]
 ---
 Hoy se llevó a cabo la tercera edición del Festival del Café, organizado por la Municipalidad de Barberena en conjunto con ANACAFÉ y Plaza Barberena.
 

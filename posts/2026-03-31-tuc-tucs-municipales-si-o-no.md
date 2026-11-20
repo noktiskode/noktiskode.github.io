@@ -3,13 +3,13 @@ title: "Tuc-tucs municipales: ¿sí o no?"
 slug: "tuc-tucs-municipales-si-o-no"
 date: "2026-03-31T07:23:02.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122211607946318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Tuc-tucs municipales: ¿sí o no?"
-tags: ["Barberena", "Buena Vista", "Obras públicas", "Municipalidad", "Seguridad", "Transporte"]
+tags: ["Transporte", "Buena Vista", "Bijagues", "Servicios municipales"]
 ---
 Tuc-tucs municipales: ¿sí o no?
 

@@ -3,13 +3,13 @@ title: "Rubelio Recinos: en Cuilapa lo aman"
 slug: "rubelio-recinos-en-cuilapa-lo-aman"
 date: "2026-08-07T16:11:11.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS: EN CUILAPA LO AMAN"
-tags: ["Barberena", "Cuilapa", "El Cerinal", "Santa Rosa", "Rubelio Recinos", "Política nacional"]
+tags: ["Rubelio Recinos", "Cuilapa", "Elecciones 2027", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS: EN CUILAPA LO AMAN
 

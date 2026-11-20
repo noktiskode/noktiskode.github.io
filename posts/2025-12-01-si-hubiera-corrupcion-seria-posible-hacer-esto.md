@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: ": Si hubiera corrupción, ¿sería posible hacer esto?"
-tags: ["Humor", "humorviral", "humorlatino", "Opinión local"]
+tags: ["SĂ¡tira polĂ­tica", "Transparencia"]
 ---
 : Si hubiera corrupción, ¿sería posible hacer esto?

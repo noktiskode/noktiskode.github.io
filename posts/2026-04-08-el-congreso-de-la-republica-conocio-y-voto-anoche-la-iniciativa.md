@@ -3,13 +3,13 @@ title: "El Congreso de la República conoció y votó anoche la iniciativa 6742,
 slug: "el-congreso-de-la-republica-conocio-y-voto-anoche-la-iniciativa"
 date: "2026-04-08T17:46:25.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122212462406318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El Congreso de la República conoció y votó anoche la iniciativa 6742, la cual buscaba otorgar un subsidio a los combustibles para aliviar el impacto económico en las familias."
-tags: ["Santa Rosa", "Congreso de Guatemala", "Gasolina", "subsidio", "Inés Castillo", "Ricardo Alarcón"]
+tags: ["Congreso de Guatemala", "Inés Castillo", "Ricardo Alarcón", "Política nacional"]
 ---
 El Congreso de la República conoció y votó anoche la iniciativa 6742, la cual buscaba otorgar un subsidio a los combustibles para aliviar el impacto económico en las familias.
 

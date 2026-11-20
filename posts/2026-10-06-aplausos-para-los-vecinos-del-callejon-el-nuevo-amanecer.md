@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "En el callejón El Nuevo Amanecer, en El Cerinal, tres vecinos, dos señoras y un señor, han estado con pala y carretilla trabajando duro para terminar la obra."
-tags: ["El Cerinal", "Barberena", "SantaRosaGT", "Comunidad"]
+tags: ["El Cerinal", "Obras pÃºblicas", "Municipalidad de Barberena"]
 ---
 En el callejón El Nuevo Amanecer, en El Cerinal, tres vecinos, dos señoras y un señor, han estado con pala y carretilla trabajando duro para terminar la obra.
 

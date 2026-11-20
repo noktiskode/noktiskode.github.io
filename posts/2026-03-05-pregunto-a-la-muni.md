@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Pregunto a la Muni:\n¿A él también le enviaron 150 sillas plásticas para su velorio, como las del 16 de febrero?"
-tags: ["Barberena", "Aldea Bijagues", "Santa Rosa", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Bijagues", "Transparencia"]
 ---
 Pregunto a la Muni:
 ¿A él también le enviaron 150 sillas plásticas para su velorio, como las del 16 de febrero?

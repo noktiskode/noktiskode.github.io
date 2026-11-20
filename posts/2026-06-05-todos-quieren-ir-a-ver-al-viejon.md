@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TODOS QUIEREN IR A VER AL VIEJÓN"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Une", "Política 2027", "Monterroso"]
+tags: ["Rubelio Recinos", "Elecciones 2027", "Política local", "Monterroso", "El Cerinal"]
 ---
 TODOS QUIEREN IR A VER AL VIEJÓN
 

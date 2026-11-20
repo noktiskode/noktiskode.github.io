@@ -3,13 +3,13 @@ title: "24 Años sin progreso real... 2 años de Don Chepe: casi 3 pozos listos.
 slug: "24-anos-sin-progreso-real-2-anos-de-don-chepe-casi-3-pozos-listos"
 date: "2026-02-20T21:31:32.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122207896574318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "24 años sin progreso real...\n2 años de Don Chepe: casi 3 pozos listos."
-tags: ["El Cerinal", "Agua potable"]
+tags: ["Pepe Rueda", "Agua potable", "El Cerinal", "Sátira política"]
 ---
 24 años sin progreso real...
 2 años de Don Chepe: casi 3 pozos listos.

@@ -3,13 +3,13 @@ title: "Archivo histórico de 2022."
 slug: "archivo-historico-de-2022"
 date: "2026-01-12T22:33:01.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122204131634318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "ARCHIVO HISTÓRICO DE 2022."
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Cuilapa", "Napo Rojas", "Política nacional"]
+tags: ["SÃ¡tira polÃ­tica", "Napo Rojas", "PolÃ­tica local"]
 ---
 ARCHIVO HISTÓRICO DE 2022.
 

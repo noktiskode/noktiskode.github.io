@@ -3,13 +3,13 @@ title: "¿Es Inés Castillo el menos peor?"
 slug: "es-ines-castillo-el-menos-peor"
 date: "2026-02-23T05:08:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122208138152318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¿Es Inés Castillo el “menos peor” de nuestros diputados? (Reflexión)"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Inés Castillo", "CongresoGT", "UNE"]
+tags: ["Inés Castillo", "Congreso de Guatemala", "Fiscalización ciudadana", "Salud"]
 ---
 Vamos al grano.
 

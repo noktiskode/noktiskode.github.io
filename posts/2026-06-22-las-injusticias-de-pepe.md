@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"LAS INJUSTICIAS DE PEPE\""
-tags: ["Barberena", "Santa Rosa"]
+tags: ["Pepe Rueda", "Municipalidad de Barberena", "Política local"]
 ---
 "LAS INJUSTICIAS DE PEPE"
 

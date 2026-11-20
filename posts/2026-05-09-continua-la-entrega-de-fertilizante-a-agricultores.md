@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES"
-tags: ["Barberena", "Monterroso", "Mi Municipio", "Santa Rosa", "Transparencia", "Auditoria Social"]
+tags: ["Ayuda social", "Monterroso", "Los Hornitos", "Guatecompras", "Transparencia"]
 ---
 CONTINÚA LA ENTREGA DE FERTILIZANTE A AGRICULTORES
 

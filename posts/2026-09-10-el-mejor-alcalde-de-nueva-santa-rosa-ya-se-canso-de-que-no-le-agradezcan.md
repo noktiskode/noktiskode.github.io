@@ -3,13 +3,13 @@ title: "El mejor alcalde de Nueva Santa Rosa ya se cansó de que no le agradezca
 slug: "el-mejor-alcalde-de-nueva-santa-rosa-ya-se-canso-de-que-no-le-agradezcan"
 date: "2026-09-10T16:39:49.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122228070344318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El mejor alcalde de Nueva Santa Rosa ya se cansó de que no le agradezcan"
-tags: ["Nueva Santa Rosa", "Santa Rosa", "Política nacional", "Nueva", "Enrique El Incomprendido", "El Mejor Alcalde"]
+tags: ["Nueva Santa Rosa", "SĂ¡tira polĂ­tica", "PolĂ­tica local"]
 ---
 El mejor alcalde de Nueva Santa Rosa ya se cansó de que no le agradezcan
 

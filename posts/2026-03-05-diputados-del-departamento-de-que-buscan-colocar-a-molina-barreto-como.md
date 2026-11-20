@@ -3,13 +3,13 @@ title: "Diputados del departamento de que buscan colocar a Molina Barreto como m
 slug: "diputados-del-departamento-de-que-buscan-colocar-a-molina-barreto-como"
 date: "2026-03-05T20:52:39.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122209153382318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "\"Diputados del departamento de SantaRosa que buscan colocar a Molina Barreto como magistrado de la CC a pesar de constantemente demostrar que esta del lado de narcotraficantes, crimen organizado y grandes corruptos."
-tags: ["Santa Rosa", "Justicia Ya", "Barberena", "Nueva Santa Rosa", "Cuilapa", "Oratorio"]
+tags: ["Inés Castillo", "Napo Rojas", "Ricardo Alarcón", "Congreso de Guatemala", "Elecciones 2027"]
 ---
 "Diputados del departamento de SantaRosa que buscan colocar a Molina Barreto como magistrado de la CC a pesar de constantemente demostrar que esta del lado de narcotraficantes, crimen organizado y grandes corruptos.
 

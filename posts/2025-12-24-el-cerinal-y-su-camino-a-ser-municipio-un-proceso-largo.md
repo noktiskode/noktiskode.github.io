@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL CERINAL Y SU CAMINO A SER MUNICIPIO: UN PROCESO LARGO, CUESTIONADO Y AÚN SIN RESPUESTAS"
-tags: ["Barberena", "El Cerinal", "Municipalidad", "Política local", "Finanzas municipales"]
+tags: ["El Cerinal", "Congreso de Guatemala", "PolĂ­tica local", "Transparencia"]
 ---
 EL CERINAL Y SU CAMINO A SER MUNICIPIO: UN PROCESO LARGO, CUESTIONADO Y AÚN SIN RESPUESTAS
 

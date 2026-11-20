@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA ES UNIONISTA"
-tags: ["Barberena", "Santa Rosa", "politicagt", "Elecciones 2027", "Rubelio Recinos", "Pepe Rueda"]
+tags: ["Pepe Rueda", "Napo Rojas", "Ricardo Alarcón", "Elecciones 2027", "Política local"]
 ---
 PEPE RUEDA ES UNIONISTA
 

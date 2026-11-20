@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La cosa empezó en octubre de 2025, cuando la Muni de Barberena y el CODEDE de Santa Rosa acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro…"
-tags: ["Barberena", "Barberena Santa Rosa", "El Tanque", "Muni Barberena", "CODEDE Santa Rosa", "Obras Publicas Guatemala"]
+tags: ["Obras pÃºblicas", "CODEDE", "Municipalidad de Barberena", "Guatecompras", "Transparencia"]
 ---
 La cosa empezó en octubre de 2025, cuando la Muni de Barberena y el CODEDE de Santa Rosa acordaron construir un nuevo edificio en el lugar donde estaba el anterior. El contrato salió por Q5.25 millones con la empresa Suministro Zurdo, S.A.
 <figure style="margin-bottom:1.5rem;">

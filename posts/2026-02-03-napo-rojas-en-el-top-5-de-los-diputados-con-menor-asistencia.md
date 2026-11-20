@@ -3,13 +3,13 @@ title: "Napo Rojas en el Top 5 de los diputados con menor asistencia"
 slug: "napo-rojas-en-el-top-5-de-los-diputados-con-menor-asistencia"
 date: "2026-02-03T16:00:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/1791506345308-61nxzz.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Napo Rojas solo asistió a alrededor del 40 % de las sesiones del Congreso en 2025"
-tags: ["Santa Rosa", "CongresoGT", "Diputados"]
+tags: ["Napo Rojas", "Congreso de Guatemala", "FiscalizaciÃ³n ciudadana", "PolÃ­tica nacional"]
 ---
 Napo Rojas solo asistió a alrededor del 40 % de las sesiones del Congreso en 2025
 

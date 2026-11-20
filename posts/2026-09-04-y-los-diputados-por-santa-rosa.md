@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada."
-tags: ["Política local", "Santa Rosa", "Barberena", "Política nacional", "Opinión local"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala", "Transporte"]
 ---
 ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada.
 

@@ -3,13 +3,13 @@ title: "El alcalde \"es un santo\""
 slug: "el-alcalde-es-un-santo"
 date: "2026-02-06T17:42:36.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "EL ALCALDE \"ES UN SANTO\""
-tags: ["Barberena", "Santa Rosa", "aldealaspozas", "Barberena Somos Todos", "guatemala", "Obras públicas"]
+tags: ["Pepe Rueda", "Obras pÃºblicas", "SÃ¡tira polÃ­tica", "Municipalidad de Barberena"]
 ---
 EL ALCALDE "ES UN SANTO"
 

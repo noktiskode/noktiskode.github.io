@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNICIPALIDAD RECIBIÓ Q4.18 MILLONES EN TRANSFERENCIAS DEL GOBIERNO ESTE 13 DE AGOSTO"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Guatemala", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Transparencia"]
 ---
 LA MUNICIPALIDAD RECIBIÓ Q4.18 MILLONES EN TRANSFERENCIAS DEL GOBIERNO ESTE 13 DE AGOSTO
 

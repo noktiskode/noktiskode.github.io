@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "Vecinos piden ayuda a las autoridades para que reparen la calle"
-tags: ["El pino", "El Cerinal", "Barberena", "Santa Rosa", "Barberena Mi Municipio", "Pepe Rueda"]
+tags: ["El Pino", "Denuncia ciudadana", "Obras pÃºblicas", "Pepe Rueda"]
 ---
 Vecinos piden ayuda a las autoridades para que reparen la calle
 

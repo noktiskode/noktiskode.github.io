@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos del Callejón El Amatillo piden túmulos y alumbrado"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Pepe Rueda", "Obras públicas", "Municipalidad"]
+tags: ["El Cerinal", "Pepe Rueda", "Seguridad", "Servicios municipales", "Denuncia ciudadana"]
 ---
 Vecinos del Callejón El Amatillo piden túmulos y alumbrado
 

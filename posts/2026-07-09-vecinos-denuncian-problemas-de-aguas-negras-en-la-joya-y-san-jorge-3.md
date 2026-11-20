@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN LA JOYA Y SAN JORGE 3"
-tags: ["Denuncia Ciudadana", "El Cerinal", "Barberena", "Santa Rosa", "La Joya", "Pepe Rueda"]
+tags: ["La Joya", "Denuncia ciudadana", "Servicios municipales", "Salud", "Pepe Rueda"]
 ---
 VECINOS DENUNCIAN PROBLEMAS DE AGUAS NEGRAS EN LA JOYA Y SAN JORGE 3
 

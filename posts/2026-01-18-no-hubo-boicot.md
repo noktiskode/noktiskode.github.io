@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NO HUBO BOICOT.\nHubo publicidad engañosa."
-tags: ["cerifer", "Santa Rosa", "Barberena", "El Cerinal", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "El Cerinal", "FiscalizaciÃ³n ciudadana", "PolÃ­tica local", "Cerifer"]
 ---
 NO HUBO BOICOT.
 Hubo publicidad engañosa.

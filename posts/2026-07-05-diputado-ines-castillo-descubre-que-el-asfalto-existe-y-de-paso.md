@@ -3,13 +3,13 @@ title: "Diputado inés castillo descubre que el asfalto existe, y de paso se acu
 slug: "diputado-ines-castillo-descubre-que-el-asfalto-existe-y-de-paso"
 date: "2026-07-05T17:52:42.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122221342412318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO EXISTE, Y DE PASO SE ACUERDA QUE HAY ELECCIONES EN 2027"
-tags: ["REGIONALES", "Santa Rosa", "Chiquimulilla", "Jutiapa", "Ciudad Pedro De Alvarado", "El Boqueron"]
+tags: ["Inés Castillo", "Política nacional", "Sátira política", "Fiscalización ciudadana", "Elecciones 2027"]
 ---
 DIPUTADO INÉS CASTILLO DESCUBRE QUE EL ASFALTO EXISTE, Y DE PASO SE ACUERDA QUE HAY ELECCIONES EN 2027
 

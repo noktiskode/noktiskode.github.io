@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "DOS POZOS, DOS ATRASOS"
-tags: ["Barberena", "Santa Rosa", "Agua Potable", "Guatecompras", "Obras públicas", "Municipalidad"]
+tags: ["Guatecompras", "Agua potable", "Municipalidad de Barberena", "Las Astas", "Transparencia"]
 ---
 DOS POZOS, DOS ATRASOS
 

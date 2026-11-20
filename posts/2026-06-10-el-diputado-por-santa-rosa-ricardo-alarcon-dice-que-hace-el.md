@@ -3,13 +3,13 @@ title: "El diputado por Santa Rosa, Ricardo Alarcón, dice que hace el videíto 
 slug: "el-diputado-por-santa-rosa-ricardo-alarcon-dice-que-hace-el"
 date: "2026-06-10T21:08:56.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "El diputado por Santa Rosa, Ricardo Alarcón, dice que hace el videíto para que lo empecemos a conocer un poquito más."
-tags: ["Santa Rosa", "Diputados de Santa Rosa", "Política 2027", "Ricardo Alarcon", "Ricardo Alarcón", "Política nacional"]
+tags: ["Ricardo Alarcón", "Congreso de Guatemala", "Política nacional", "Fiscalización ciudadana"]
 ---
 El diputado por Santa Rosa, Ricardo Alarcón, dice que hace el videíto para que lo empecemos a conocer un poquito más.
 

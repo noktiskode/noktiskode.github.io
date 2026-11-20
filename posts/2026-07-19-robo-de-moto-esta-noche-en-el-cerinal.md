@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ROBO DE MOTO ESTA NOCHE EN EL CERINAL"
-tags: ["URGENTE", "El Cerinal", "Barberena", "Santa Rosa", "Alerta", "Seguridad"]
+tags: ["El Cerinal", "Seguridad", "Denuncia ciudadana"]
 ---
 ROBO DE MOTO ESTA NOCHE EN EL CERINAL
 

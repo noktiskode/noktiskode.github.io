@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Se cuestiona si el próximo alcalde de Barberena estará dispuesto a reducir su salario"
-tags: ["Barberena", "Municipalidad", "Rubelio Recinos", "Pepe Rueda", "Congreso de Guatemala", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "Transparencia", "Congreso de Guatemala", "Municipalidad de Barberena"]
 ---
 ¿Estará dispuesto el próximo alcalde de Barberena, quien sea, a bajarse el salario, él y su concejo municipal?
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Q6 MILLONES ADJUDICADOS Y OBRAS CASI DETENIDAS EN BARBERENA"
-tags: ["Barberena", "El Cerinal", "Obras públicas", "Guatecompras", "SCEP", "La Ladrillera"]
+tags: ["Obras públicas", "Fiscalización ciudadana", "Guatecompras", "La Ladrillera", "El Cerinal"]
 ---
 Q6 MILLONES ADJUDICADOS Y OBRAS CASI DETENIDAS EN BARBERENA
 

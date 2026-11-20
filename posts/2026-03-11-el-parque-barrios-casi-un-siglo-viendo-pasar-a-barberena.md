@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Si hay un lugar que conoce de memoria a Barberena, ese es el Parque Barrios. Ahí se han sentado abuelos, se han dado el sí varias parejas, y hasta hoy sigue siendo el punto de reunión de siempre. Pero pocos…"
-tags: ["Historias", "Patrimonio", "Barberena", "Santa Rosa", "Municipalidad", "Historia local"]
+tags: ["Parque Barrios", "Historia local", "Cultura y tradiciones"]
 ---
 Si hay un lugar que conoce de memoria a Barberena, ese es el Parque Barrios. Ahí se han sentado abuelos, se han dado el sí varias parejas, y hasta hoy sigue siendo el punto de reunión de siempre. Pero pocos saben todo lo que ese parquecito ha visto pasar.
 

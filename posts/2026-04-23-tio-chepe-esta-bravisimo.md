@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TÍO CHEPE ESTÁ BRAVÍSIMO"
-tags: ["Barberena", "Santa Rosa", "Satira", "Sátira política", "Obras públicas", "La Ladrillera"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "SÃ¡tira polÃ­tica"]
 ---
 TÍO CHEPE ESTÁ BRAVÍSIMO
 

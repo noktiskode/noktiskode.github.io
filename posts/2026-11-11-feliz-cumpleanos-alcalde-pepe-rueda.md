@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Mañana cumple años el alcalde Pepe Rueda"
-tags: ["Barberena", "Pepe Rueda", "Municipalidad", "Gobierno municipal", "Santa Rosa", "Gestión Municipal"]
+tags: ["Pepe Rueda", "PolĂ­tica local"]
 ---
 Nos adelantamos con el saludo al alcalde de Barberena, Pepe Rueda, quien cumple años este 12 de noviembre.
 

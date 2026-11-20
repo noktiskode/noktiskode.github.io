@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "<div style=\"max-width:640px; margin:0 auto; padding: 2.5rem 1.2rem; font-family:'Lora', serif; color:222; line-height:1.8;\">"
-tags: ["Historia local", "Patrimonio", "Tradiciones", "Barberena", "Utzumazate", "Agua potable"]
+tags: ["Historia local", "Cultura y tradiciones"]
 ---
 <div style="max-width:640px; margin:0 auto; padding: 2.5rem 1.2rem; font-family:'Lora', serif; color:222; line-height:1.8;">
 

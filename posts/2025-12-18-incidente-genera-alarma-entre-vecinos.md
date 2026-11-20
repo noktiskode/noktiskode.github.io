@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Un incidente ocurrido recientemente en Barrio La Cuchilla generó preocupación entre los vecinos del sector. Según versiones de residentes, un hombre que se encontraba en la vía pública solicitó limosna a una persona que se desplazaba en un vehículo, quien…"
-tags: ["Barberena", "Santa Rosa", "Seguridad"]
+tags: ["Seguridad", "Denuncia ciudadana"]
 ---
 Un incidente ocurrido recientemente en Barrio La Cuchilla generó preocupación entre los vecinos del sector. Según versiones de residentes, un hombre que se encontraba en la vía pública solicitó limosna a una persona que se desplazaba en un vehículo, quien presuntamente se negó a darle dinero.
 

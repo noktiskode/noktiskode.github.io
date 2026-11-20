@@ -3,13 +3,13 @@ title: "El chisme se considera una parte universal de la naturaleza humana y la 
 slug: "el-chisme-se-considera-una-parte-universal-de-la-naturaleza-humana"
 date: "2025-12-02T18:00:50.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122199734060318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El chisme se considera una parte universal de la naturaleza humana y la mayoría de las personas lo practican en cierta medida. Desde una perspectiva psicológica y antropológica, no solo es una conducta común, sino que también tiene funciones sociales…"
-tags: ["Barberena"]
+tags: ["Cultura y tradiciones"]
 ---
 El chisme se considera una parte universal de la naturaleza humana y la mayoría de las personas lo practican en cierta medida. Desde una perspectiva psicológica y antropológica, no solo es una conducta común, sino que también tiene funciones sociales y evolutivas importantes.
 

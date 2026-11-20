@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA LADRILLERA CASI FINALIZADA"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "La Ladrillera", "Municipalidad"]
+tags: ["La Ladrillera", "Municipalidad de Barberena", "Guatecompras", "Obras públicas", "Transparencia"]
 ---
 LA LADRILLERA CASI FINALIZADA
 

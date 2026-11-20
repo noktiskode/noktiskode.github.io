@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano."
-tags: ["Política local", "Municipalidad", "Comunidad", "Barberena", "Opinión local"]
+tags: ["SĂ¡tira polĂ­tica", "Ayuda social", "PolĂ­tica local", "Elecciones 2027"]
 ---
 Regalar una silla de ruedas está bien. Es un gesto noble, necesario y humano.
 

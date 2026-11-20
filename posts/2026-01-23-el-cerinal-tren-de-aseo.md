@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El Cerinal  Tren de aseo"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Tren De Aseo", "Servicios Municipales", "Denuncia Vecinal"]
+tags: ["El Cerinal", "Servicios municipales", "Denuncia ciudadana"]
 ---
 El Cerinal  Tren de aseo
 

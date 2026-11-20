@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos de Barberena comentan que hay un agente de la PMT que, al parecer, confunde la calle con un ring de boxeo... por la forma en que trata a la gente."
-tags: ["Barberena", "Santa Rosa", "PMT", "boxeo", "relacioneshumanas", "Obras públicas"]
+tags: ["PMT", "Denuncia ciudadana", "Servicios municipales"]
 ---
 Vecinos de Barberena comentan que hay un agente de la PMT que, al parecer, confunde la calle con un ring de boxeo... por la forma en que trata a la gente.
 

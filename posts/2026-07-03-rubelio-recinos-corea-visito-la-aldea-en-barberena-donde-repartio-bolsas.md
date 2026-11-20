@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS COREA visitó la aldea ElPino, en Barberena, donde repartió bolsas de verduras frescas entre varias familias. Los vecinos agradecieron el gesto y Recinos reiteró su compromiso de seguir visitando comunidades para escuchar sus necesidades."
-tags: ["Barberena", "El Pino", "Santa Rosa", "Rubelio Recinos", "Municipalidad", "Comunidad"]
+tags: ["Rubelio Recinos", "El Pino", "Ayuda social", "Política local"]
 ---
 RUBELIO RECINOS COREA visitó la aldea ElPino, en Barberena, donde repartió bolsas de verduras frescas entre varias familias. Los vecinos agradecieron el gesto y Recinos reiteró su compromiso de seguir visitando comunidades para escuchar sus necesidades.
 

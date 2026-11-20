@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL TREN DE ASEO MUNICIPAL"
-tags: ["Barberena", "Tren De Aseo", "Santa Rosa", "El Cerinal", "reciclaje", "basura"]
+tags: ["Servicios municipales", "Pepe Rueda", "Municipalidad de Barberena", "El Cerinal"]
 ---
 EL TREN DE ASEO MUNICIPAL
 

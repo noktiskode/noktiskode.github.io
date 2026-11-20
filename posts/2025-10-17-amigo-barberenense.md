@@ -3,13 +3,13 @@ title: "Amigo barberenense"
 slug: "amigo-barberenense"
 date: "2025-10-17T07:47:13.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "barberena"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "Amigo barberenense:"
-tags: ["Barberena", "Santa Rosa", "Barberena Somos Todos", "Barberena Mi Municipio", "Municipalidad", "Servicios municipales"]
+tags: ["Cultura y tradiciones", "Servicios municipales"]
 ---
 Amigo barberenense:
 

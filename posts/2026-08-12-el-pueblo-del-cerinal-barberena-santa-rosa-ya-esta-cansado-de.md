@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"El pueblo del Cerinal, Barberena, Santa Rosa, ya está cansado de esto que vivimos\", escribió la persona que compartió el video en su cuenta de Facebook."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "PMT", "Municipalidad"]
+tags: ["El Cerinal", "PMT", "Denuncia ciudadana"]
 ---
 "El pueblo del Cerinal, Barberena, Santa Rosa, ya está cansado de esto que vivimos", escribió la persona que compartió el video en su cuenta de Facebook.
 

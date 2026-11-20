@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ADIÓS AL IUSI PARA LA CASA"
-tags: ["Nacionales", "Barberena", "Santa Rosa", "Agua potable", "Municipalidad", "Servicios municipales"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala", "Municipalidad de Barberena", "Servicios municipales"]
 ---
 ADIÓS AL IUSI PARA LA CASA
 

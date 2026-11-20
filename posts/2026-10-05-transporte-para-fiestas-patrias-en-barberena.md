@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Diez pagos a un mismo proveedor, según Guatecompras."
-tags: ["Los Bijagues", "El Junquillo", "Buena Vista", "Canoguitas", "El Quebracho", "Las Astas", "Barberena", "Guatecompras", "Transporte", "Fiestas Patrias", "Multiservicios Daniel R & S", "Municipalidad De Barberena"]
+tags: ["Guatecompras", "Municipalidad de Barberena", "Transparencia", "Transporte", "FiscalizaciÃ³n ciudadana"]
 ---
 Actualizado el 03/11/2026: se agregan 6 pagos.
 

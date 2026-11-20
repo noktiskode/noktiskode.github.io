@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El diputado Samuel Pérez llama “vividor” al diputado Mynor Alfonso De La Rosa por su trayectoria durante la administración del gobierno anterior."
-tags: ["Barberena", "Política nacional"]
+tags: ["Política nacional", "Congreso de Guatemala", "Transparencia"]
 ---
 El diputado Samuel Pérez llama “vividor” al diputado Mynor Alfonso De La Rosa por su trayectoria durante la administración del gobierno anterior.
 

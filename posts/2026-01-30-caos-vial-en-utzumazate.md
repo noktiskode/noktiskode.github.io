@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA\nCaos Vial En Utzumazate: Vecinos exigen acción a autoridades"
-tags: ["Utzumazate", "Barberena", "Santa Rosa", "Caos Vial", "PMTBarberena", "Gobierno municipal"]
+tags: ["Utzumazate", "PMT", "Denuncia ciudadana", "Servicios municipales"]
 ---
 BARBERENA
 Caos Vial En Utzumazate: Vecinos exigen acción a autoridades

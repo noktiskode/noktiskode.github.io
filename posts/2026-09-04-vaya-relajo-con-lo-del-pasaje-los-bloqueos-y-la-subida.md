@@ -3,13 +3,13 @@ title: "¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combust
 slug: "vaya-relajo-con-lo-del-pasaje-los-bloqueos-y-la-subida"
 date: "2026-09-04T19:57:45.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada."
-tags: ["Departamentales", "bloqueos", "El Cerinal", "Santa Rosa", "Guatemala", "CA 1 Oriente"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala", "Transporte"]
 ---
 ¡Vaya relajo con lo del pasaje, los bloqueos y la subida de los combustibles! La mera verdad es que la situación está fregada.
 

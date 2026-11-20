@@ -3,13 +3,13 @@ title: "El Multiverso de la Alcaldía de Barberena"
 slug: "el-multiverso-de-la-alcaldia-de-barberena"
 date: "2026-01-06T01:00:05.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122203333790318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El Multiverso de la Alcaldía de Barberena"
-tags: ["barbefer", "Barbefer 2026", "Barberena", "barberenasantarosa"]
+tags: ["SÃ¡tira polÃ­tica", "Municipalidad de Barberena"]
 ---
 El Multiverso de la Alcaldía de Barberena
 

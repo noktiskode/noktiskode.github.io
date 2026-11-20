@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El futuro alcalde de Barberena, el licenciado y empresario Jorge Cruz, comentó hace unos días que no es de los que andan hablando mucho de la administración de Pepe Rueda Vallejo, pero que ¡ya es el colmo!"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Elecciones", "Elecciones 2027", "Jorge Cruz"]
+tags: ["Jorge Cruz", "Pepe Rueda", "Rubelio Recinos", "Elecciones 2027", "Política local"]
 ---
 El futuro alcalde de Barberena, el licenciado y empresario Jorge Cruz, comentó hace unos días que no es de los que andan hablando mucho de la administración de Pepe Rueda Vallejo, pero que ¡ya es el colmo!
 

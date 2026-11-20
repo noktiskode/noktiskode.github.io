@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "YA SE REPARA EL HUNDIMIENTO EN CALLE EL ALBA"
-tags: ["Barberena", "Santa Rosa", "Agua potable", "Obras públicas", "Municipalidad"]
+tags: ["Servicios municipales", "Obras públicas", "Municipalidad de Barberena"]
 ---
 YA SE REPARA EL HUNDIMIENTO EN CALLE EL ALBA
 

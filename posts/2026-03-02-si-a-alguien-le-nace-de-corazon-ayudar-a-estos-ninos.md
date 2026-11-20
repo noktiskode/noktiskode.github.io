@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho."
-tags: ["Ayuda Social", "Aldea San Nicolás", "Barberena", "Santa Rosa", "San Nicolás"]
+tags: ["San Nicolás", "Ayuda social"]
 ---
 Si a alguien le nace de corazón ayudar a estos niños, se lo agradeceremos mucho.
 

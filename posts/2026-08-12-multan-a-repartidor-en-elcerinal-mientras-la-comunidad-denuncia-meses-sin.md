@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Multan a repartidor en ELCERINAL mientras la comunidad denuncia meses sin agua"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "PMT", "Agua potable", "Municipalidad"]
+tags: ["El Cerinal", "PMT", "Agua potable", "Denuncia ciudadana"]
 ---
 Multan a repartidor en ELCERINAL mientras la comunidad denuncia meses sin agua
 

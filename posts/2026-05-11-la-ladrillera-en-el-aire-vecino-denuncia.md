@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"LA LADRILLERA EN EL AIRE\""
-tags: ["Barberena", "Santa Rosa", "La Ladrillera", "Obras públicas"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "Denuncia ciudadana", "Mercado y comercio"]
 ---
 "LA LADRILLERA EN EL AIRE"
 

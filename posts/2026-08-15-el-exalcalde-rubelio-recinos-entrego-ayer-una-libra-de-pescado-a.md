@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El exalcalde Rubelio Recinos entregó ayer una libra de pescado a vecinos de Utzumazate, acompañado de su hija y del exalcalde de Taxisco y diputado por Santa Rosa Inés Castillo."
-tags: ["Barberena", "Utzumazate", "Santa Rosa", "Guate", "Rubelio Recinos", "Inés Castillo"]
+tags: ["Rubelio Recinos", "InĂ©s Castillo", "Utzumazate", "Ayuda social", "Elecciones 2027"]
 ---
 El exalcalde Rubelio Recinos entregó ayer una libra de pescado a vecinos de Utzumazate, acompañado de su hija y del exalcalde de Taxisco y diputado por Santa Rosa Inés Castillo.
 

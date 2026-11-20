@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA LADRILLERA: ÚLTIMOS TRABAJOS"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "La Ladrillera"]
+tags: ["La Ladrillera", "CODEDE", "Obras públicas", "Guatecompras"]
 ---
 LA LADRILLERA: ÚLTIMOS TRABAJOS
 

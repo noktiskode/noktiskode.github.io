@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡HOY SÍ ESTÁN TRABAJANDO EN LA MUNI!"
-tags: ["Barberena", "Santa Rosa", "Fertilizante", "El Pino", "trabajoduro", "Pepe Rueda"]
+tags: ["Pepe Rueda", "El Pino", "Ayuda social"]
 ---
 ¡HOY SÍ ESTÁN TRABAJANDO EN LA MUNI!
 

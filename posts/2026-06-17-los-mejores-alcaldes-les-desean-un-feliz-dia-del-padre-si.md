@@ -3,13 +3,13 @@ title: "Los mejores alcaldes les desean un feliz día del padre Si su esposa no 
 slug: "los-mejores-alcaldes-les-desean-un-feliz-dia-del-padre-si"
 date: "2026-06-17T21:46:27.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122219734178318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LOS MEJORES ALCALDES LES DESEAN UN FELIZ DÍA DEL PADRE"
-tags: ["Barberena", "Feliz Día Del Padre", "Santa Rosa", "El Cerinal", "Agua potable", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "Sátira política", "Agua potable"]
 ---
 LOS MEJORES ALCALDES LES DESEAN UN FELIZ DÍA DEL PADRE
 

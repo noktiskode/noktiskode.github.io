@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/28557012590614479/"
 featured: false
 published: true
 excerpt: "La Muni entregó hoy, 8 de octubre, 1,300 metros de calle pavimentada, con cuneta, bordillo, señalización e iluminación, entre Cruce Boquerón y Cruce Mal País y Laguna. Según el proyecto, beneficiará a unas 2,000 personas."
-tags: ["El Cerinal", "Barberena", "SantaRosaGT", "Obras Públicas", "Inauguración"]
+tags: ["Obras pÃºblicas", "El Cerinal", "Pepe Rueda", "Municipalidad de Barberena"]
 ---
 La Muni entregó hoy, 8 de octubre, 1,300 metros de calle pavimentada, con cuneta, bordillo, señalización e iluminación, entre Cruce Boquerón y Cruce Mal País y Laguna. Según el proyecto, beneficiará a unas 2,000 personas.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "El Cerinal", "Obras pĂºblicas"]
 ---
 PROYECTO DE PAVIMENTACIÓN SECTOR SAN JORGE 4
 

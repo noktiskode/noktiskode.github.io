@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos entregó pipa de agua"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Agua potable", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Agua potable", "Ayuda social", "Elecciones 2027"]
 ---
 Rubelio Recinos entregó pipa de agua
 

@@ -3,13 +3,13 @@ title: "El problema con el agua"
 slug: "el-problema-con-el-agua"
 date: "2025-09-09T19:42:44.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122190980726318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El problema con el agua"
-tags: ["Rubelio Recinos", "Agua potable", "Municipalidad", "Gobierno municipal", "Elecciones"]
+tags: ["Agua potable", "Servicios municipales", "Rubelio Recinos", "PolĂ­tica local"]
 ---
 El problema con el agua
 

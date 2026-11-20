@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ASÍ SE VE LA CALLE DE LA LADRILLERA YA TERMINADA"
-tags: ["Barberena", "La Ladrillera", "Santa Rosa", "obrapublica", "Obras públicas"]
+tags: ["La Ladrillera", "Obras pĂºblicas"]
 ---
 ASÍ SE VE LA CALLE DE LA LADRILLERA YA TERMINADA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA SIN AGUA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua potable", "splashday", "Guatecompras"]
+tags: ["Agua potable", "Guatecompras", "Transparencia", "FiscalizaciÃ³n ciudadana", "Servicios municipales"]
 ---
 BARBERENA SIN AGUA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Don Rubelio Recinos compartió un reel en donde se le ve junto a los que considera sus amigos, los conductores de Tuc Tuc, señaló que estuvieron fortaleciendo lazos de amistad y convivencia."
-tags: ["Barberena", "Rubelio Recinos", "Gobierno municipal"]
+tags: ["Rubelio Recinos", "Política local"]
 ---
 Don Rubelio Recinos compartió un reel en donde se le ve junto a los que considera sus amigos, los conductores de Tuc Tuc, señaló que estuvieron fortaleciendo lazos de amistad y convivencia.
 

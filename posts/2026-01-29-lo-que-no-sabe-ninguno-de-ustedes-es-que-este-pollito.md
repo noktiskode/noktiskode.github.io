@@ -3,13 +3,13 @@ title: "Lo que no sabe ninguno de ustedes es que este pollito tiene genes de gav
 slug: "lo-que-no-sabe-ninguno-de-ustedes-es-que-este-pollito"
 date: "2026-01-29T01:46:32.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "Lo que no sabe ninguno de ustedes es que este pollito tiene genes de gavilán. Mientras el Gallo sigue cacareando por costumbre, el Pollo está esperando el momento justo para elevarse. ¡Se los va a comer de un bocado! Al…"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "jefedejefes"]
+tags: ["SÃ¡tira polÃ­tica", "Elecciones 2027", "PolÃ­tica local"]
 ---
 Lo que no sabe ninguno de ustedes es que este pollito tiene genes de gavilán.
 Mientras el Gallo sigue cacareando por costumbre, el Pollo está esperando el momento justo para elevarse. ¡Se los va a comer de un bocado! Al Gallo por correoso y a la Mojarra por escurridiza.

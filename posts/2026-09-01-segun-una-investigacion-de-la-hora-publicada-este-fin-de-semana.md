@@ -3,13 +3,13 @@ title: "Según una investigación de La Hora publicada este fin de semana, Santa
 slug: "segun-una-investigacion-de-la-hora-publicada-este-fin-de-semana"
 date: "2026-09-01T01:38:35.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "opiniones"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122227072964318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como \"el caso más visible\" de la nueva estrategia de fichajes del Partido Unionista rumbo a 2027. Y Barberena aparece nombrado directamente."
-tags: ["Ojo Al Dato", "Santa Rosa", "Barberena", "Elecciones 2027", "politicagt", "Guatemala"]
+tags: ["Pepe Rueda", "Napo Rojas", "Ricardo AlarcĂ³n", "Elecciones 2027", "PolĂ­tica nacional"]
 ---
 Según una investigación de La Hora publicada este fin de semana, Santa Rosa aparece como "el caso más visible" de la nueva estrategia de fichajes del Partido Unionista rumbo a 2027. Y Barberena aparece nombrado directamente.
 

@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/2351432858993348/"
 featured: false
 published: true
 excerpt: "Barberena, 23 de septiembre de 2026. Un vecino del barrio Las Estrellas 2 publicó hoy en un grupo de Facebook un video en el que denuncia el mal estado de las calles del sector, que según su testimonio se vuelven…"
-tags: ["Barberena", "Santa Rosa", "Las Estrellas 2", "Inundaciones", "Drenajes", "Agua potable"]
+tags: ["Denuncia ciudadana", "Servicios municipales", "Obras pÃºblicas"]
 ---
 Barberena, 23 de septiembre de 2026. Un vecino del barrio Las Estrellas 2 publicó hoy en un grupo de Facebook un video en el que denuncia el mal estado de las calles del sector, que según su testimonio se vuelven intransitables por el agua acumulada durante la época de lluvias.
 

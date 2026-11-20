@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1112333464519300/"
 featured: false
 published: true
 excerpt: "Un perfil con solo dos amigos publicó, en el grupo de Comercio El Cerinal, un texto y un video en los que se agradece al alcalde Pepe Rueda por \"una bolsa de víveres\". El texto abre con \"NO SOY POLITICA\",…"
-tags: ["Política Local", "Barberena", "Santa Rosa", "El Cerinal", "Guatecompras", "Opiniones"]
+tags: ["Ayuda social", "Guatecompras", "Pepe Rueda", "El Cerinal", "Transparencia"]
 ---
 Un perfil con solo dos amigos publicó, en el grupo de Comercio El Cerinal, un texto y un video en los que se agradece al alcalde Pepe Rueda por "una bolsa de víveres". El texto abre con "NO SOY POLITICA", pero enseguida elogia la gestión del alcalde, que "es obras, no solo palabras". También dice que apenas lleva 2 años y 8 meses y que recibió la municipalidad en una triste situación económica, por lo que no puede atender todas las necesidades del municipio.
 

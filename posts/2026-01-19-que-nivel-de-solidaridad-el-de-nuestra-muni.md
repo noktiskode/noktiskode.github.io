@@ -3,12 +3,12 @@ title: "¡Qué nivel de solidaridad el de nuestra Muni!"
 slug: "que-nivel-de-solidaridad-el-de-nuestra-muni"
 date: "2026-01-19T18:35:14.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122204797940318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¡Qué nivel de solidaridad el de nuestra Muni! Mientras el resto de nosotros vemos cómo llegar al trabajo con el Estado de Sitio, ellos se sacrifican quedándose en casa para 'resguardarnos'. Qué detalle que se tomen el lunes libre por…"
-tags: ["Barberena", "Gran Sacrificio", "Lunes Cerrado", "Municipalidad", "Seguridad"]
+tags: ["SÃ¡tira polÃ­tica", "Municipalidad de Barberena"]
 ---
 ¡Qué nivel de solidaridad el de nuestra Muni!  Mientras el resto de nosotros vemos cómo llegar al trabajo con el Estado de Sitio, ellos se sacrifican quedándose en casa para 'resguardarnos'. Qué detalle que se tomen el lunes libre por nuestra seguridad... ¡Eso es eficiencia administrativa y lo demás son cuentos!

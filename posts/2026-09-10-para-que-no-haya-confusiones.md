@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PARA QUE NO HAYA CONFUSIONES"
-tags: ["Barberena", "Santa Rosa", "Barberena Mi Municipio", "Municipalidad", "Gobierno municipal"]
+tags: ["Municipalidad de Barberena", "PolĂ­tica local"]
 ---
 PARA QUE NO HAYA CONFUSIONES
 

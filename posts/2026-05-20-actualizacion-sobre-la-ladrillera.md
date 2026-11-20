@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Actualización sobre La Ladrillera"
-tags: ["Barberena", "La Ladrillera", "Guatecompras", "Santa Rosa", "Obras públicas", "Auditoria Social"]
+tags: ["La Ladrillera", "CODEDE", "Obras públicas", "Guatecompras", "Fiscalización ciudadana"]
 ---
 Actualización sobre La Ladrillera
 

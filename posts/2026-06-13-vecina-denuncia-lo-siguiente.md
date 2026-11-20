@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecina denuncia lo siguiente:\n\"Los de la Ximena's se pasan, están cobrando Q15 de Concepción para El Cerinal. Cargan un ayudante moreno, todo seco.\""
-tags: ["El Cerinal", "Obras públicas"]
+tags: ["El Cerinal", "Transporte", "Denuncia ciudadana"]
 ---
 Vecina denuncia lo siguiente:
 "Los de la Ximena's se pasan, están cobrando Q15 de Concepción para El Cerinal. Cargan un ayudante moreno, todo seco."

@@ -3,13 +3,13 @@ title: "Mañana vendrá la futura presidenta de Guatemala"
 slug: "manana-vendra-la-futura-presidenta-de-guatemala"
 date: "2026-06-06T17:01:31.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE GUATEMALA"
-tags: ["Barberena", "GUATEMALA", "Video", "El Cerinal", "Santa Rosa", "Política 2027"]
+tags: ["Rubelio Recinos", "Política nacional", "Elecciones 2027", "Sátira política"]
 ---
 MAÑANA VENDRÁ LA FUTURA PRESIDENTA DE GUATEMALA
 

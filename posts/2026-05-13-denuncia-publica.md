@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "DENUNCIA PÚBLICA"
-tags: ["Barberena", "Denuncia Pública", "Mascotas", "Basura", "Conciencia Ciudadana", "Santa Rosa"]
+tags: ["Servicios municipales", "Denuncia ciudadana"]
 ---
 DENUNCIA PÚBLICA
 

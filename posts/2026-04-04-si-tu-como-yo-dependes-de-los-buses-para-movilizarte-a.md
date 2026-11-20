@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Si tú, como yo, dependes de los buses para movilizarte a tu destino por trabajo o cualquier otra necesidad, no dudes en denunciar los pasajes excesivos y las faltas de respeto de los choferes. Ellos brindan un servicio y tú…"
-tags: ["Denuncia Ciudadana", "Transporte Justo", "No Al Cobro Excesivo", "Barberena", "El Cerinal", "Santa Rosa"]
+tags: ["Transporte", "Denuncia ciudadana", "El Cerinal"]
 ---
 Si tú, como yo, dependes de los buses para movilizarte a tu destino por trabajo o cualquier otra necesidad, no dudes en denunciar los pasajes excesivos y las faltas de respeto de los choferes. Ellos brindan un servicio y tú lo pagas; no es un favor.
 

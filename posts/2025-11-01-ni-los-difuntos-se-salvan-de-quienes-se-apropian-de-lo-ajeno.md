@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Ni los difuntos se salvan de quienes se apropian de lo ajeno"
-tags: ["Barberena", "Obras públicas", "Seguridad", "Servicios municipales"]
+tags: ["Seguridad", "Denuncia ciudadana", "Servicios municipales"]
 ---
 Ni los difuntos se salvan de quienes se apropian de lo ajeno
 

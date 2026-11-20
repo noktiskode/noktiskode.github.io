@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Buses fuera de control: caos en cada calle"
-tags: ["Barberena", "Santa Rosa", "Caos Vial", "PMT", "Munibarbe", "Obras públicas"]
+tags: ["PMT", "Transporte", "Denuncia ciudadana", "Servicios municipales"]
 ---
 BARBERENA  Buses fuera de control: caos en cada calle
 

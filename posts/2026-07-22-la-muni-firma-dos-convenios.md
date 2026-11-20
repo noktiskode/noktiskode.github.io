@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA MUNI FIRMA DOS CONVENIOS"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Pepe Rueda", "Obras públicas", "Municipalidad"]
+tags: ["Pepe Rueda", "SCEP", "El Pino", "El Cerinal", "EducaciĂ³n"]
 ---
 LA MUNI FIRMA DOS CONVENIOS
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN DEL AGUA EN ALDEA EL CERINAL"
-tags: ["El Cerinal", "Amate Blanco", "Coguasa", "El Zapotillo", "El Boquerón", "Barberena"]
+tags: ["Agua potable", "El Cerinal", "El BoquerÃ³n", "Obras pÃºblicas"]
 ---
 CONTINÚAN LOS TRABAJOS PARA MEJORAR LA DISTRIBUCIÓN DEL AGUA EN ALDEA EL CERINAL
 

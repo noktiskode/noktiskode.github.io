@@ -3,13 +3,13 @@ title: "El día que el mejor alcalde de barberena se pasó (de eficiente)"
 slug: "el-dia-que-el-mejor-alcalde-de-barberena-se-paso-de-eficiente"
 date: "2026-03-22T10:03:06.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "EL DÍA QUE EL MEJOR ALCALDE DE BARBERENA SE PASÓ (DE EFICIENTE)"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "humorpolitico", "Sátira", "Sátira política"]
+tags: ["Pepe Rueda", "Sátira política", "Transparencia", "Agua potable"]
 ---
 EL DÍA QUE EL MEJOR ALCALDE DE BARBERENA SE PASÓ (DE EFICIENTE)
 

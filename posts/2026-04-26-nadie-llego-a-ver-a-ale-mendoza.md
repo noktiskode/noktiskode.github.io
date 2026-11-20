@@ -3,13 +3,13 @@ title: "Nadie llegó A ver A ale mendoza"
 slug: "nadie-llego-a-ver-a-ale-mendoza"
 date: "2026-04-26T16:00:24.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122214303314318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "NADIE LLEGÓ A VER A ALE MENDOZA"
-tags: ["Barberena", "Humor", "Santa Rosa", "Guatemala", "Gobierno municipal"]
+tags: ["SÃ¡tira polÃ­tica", "Municipalidad de Barberena"]
 ---
 NADIE LLEGÓ A VER A ALE MENDOZA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Se reportó un posible caso paranormal en el bazar frente al Parque Barrios en Barberena..."
-tags: ["Caso Paranormal", "Misterio En El Bazar", "Actividad Paranormal", "Sillón Misterioso", "Humor Paranormal", "No Van AEncontrar Nada"]
+tags: ["Parque Barrios", "Mercado y comercio"]
 ---
 Se reportó un posible caso paranormal en el bazar frente al Parque Barrios en Barberena...
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El Cerinal: ¿Municipio 341 o la joya que Barberena no quiere soltar?"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Municipalización", "Iniciativa De Ley 5558", "Municipio 341"]
+tags: ["El Cerinal", "Política local", "Congreso de Guatemala", "Obras públicas"]
 ---
 El Cerinal: ¿Municipio 341 o la joya que Barberena no quiere soltar?
 

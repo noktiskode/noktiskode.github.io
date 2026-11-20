@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PERFORACIÓN DE POZO ALDEAS MONTERROSO Y EL CERINAL"
-tags: ["El Cerinal", "Guatecompras", "Barberena", "Santa Rosa", "Monterroso", "Agua potable"]
+tags: ["Monterroso", "El Cerinal", "Agua potable", "CODEDE", "Guatecompras"]
 ---
 PERFORACIÓN DE POZO ALDEAS MONTERROSO Y EL CERINAL
 

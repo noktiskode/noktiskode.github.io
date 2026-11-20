@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hace unos días, Rubelio Recinos fue visto entregando verduras y hoy publicó un video en el que se puede ver que estuvo presente en la escuela de la Colonia Arimany, donde se le escuchó mencionar que apoyará con toldos y…"
-tags: ["Comunidad", "Acontecimientos", "Educación", "Barberena", "Rubelio Recinos", "Municipalidad"]
+tags: ["Rubelio Recinos", "EducaciĂ³n", "Ayuda social", "Elecciones 2027"]
 ---
 Hace unos días, Rubelio Recinos fue visto entregando verduras y hoy publicó un video en el que se puede ver que estuvo presente en la escuela de la Colonia Arimany, donde se le escuchó mencionar que apoyará con toldos y sonido para las actividades programadas para el 14 de septiembre.
 

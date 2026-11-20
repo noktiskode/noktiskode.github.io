@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El futuro alcalde, el licenciado Jorge Cruz, compartió ayer con varias comunidades, llevando y disfrutando unas deliciosas mojarras."
-tags: ["Barberena", "Mojarro", "Santa Rosa", "vacaciones", "pescados", "Jorge Cruz"]
+tags: ["Jorge Cruz", "Elecciones 2027", "Política local"]
 ---
 El futuro alcalde, el licenciado Jorge Cruz, compartió ayer con varias comunidades, llevando y disfrutando unas deliciosas mojarras.
 

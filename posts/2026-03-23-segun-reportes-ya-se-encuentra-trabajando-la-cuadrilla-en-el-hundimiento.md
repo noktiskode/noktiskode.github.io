@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Según reportes, ya se encuentra trabajando la cuadrilla en el hundimiento de El Zapotillo, El Cerinal. Esto es gracias a las gestiones de Don Chepe y a su Honorable Consejo."
-tags: ["Barberena", "El Cerinal", "Santa Rosa"]
+tags: ["El Cerinal", "Obras públicas", "Pepe Rueda"]
 ---
 Según reportes, ya se encuentra trabajando la cuadrilla en el hundimiento de El Zapotillo, El Cerinal. Esto es gracias a las gestiones de Don Chepe y a su Honorable Consejo.
 

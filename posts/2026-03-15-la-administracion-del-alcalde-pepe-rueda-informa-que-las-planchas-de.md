@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La administración del ALCALDE PEPE RUEDA informa que las planchas de pavimento que estaban agrietadas YA FUERON RESTAURADAS."
-tags: ["Barberena", "El Cerinal", "Transparencia", "Obra Publica", "Pepe Rueda", "Fiscalización"]
+tags: ["Obras públicas", "Fiscalización ciudadana", "Transparencia", "SCEP", "El Cerinal"]
 ---
 La administración del ALCALDE PEPE RUEDA informa que las planchas de pavimento que estaban agrietadas YA FUERON RESTAURADAS.
 

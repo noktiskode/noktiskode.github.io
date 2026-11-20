@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"SEÑOR ALCALDE PEPE RUEDA VALLEJO Y COCODE DE EL CERINAL:"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Pepe Rueda", "Agua potable", "Obras públicas"]
+tags: ["Pepe Rueda", "COCODE", "El Cerinal", "Obras pĂºblicas", "Denuncia ciudadana"]
 ---
 "SEÑOR ALCALDE PEPE RUEDA VALLEJO Y COCODE DE EL CERINAL:
 

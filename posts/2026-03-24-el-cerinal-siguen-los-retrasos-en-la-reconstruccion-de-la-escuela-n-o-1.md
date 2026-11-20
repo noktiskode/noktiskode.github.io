@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL CERINAL  SIGUEN LOS RETRASOS EN LA RECONSTRUCCIÓN DE LA ESCUELA N.o 1"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Guatemala", "CODEDE", "Mineduc"]
+tags: ["El Cerinal", "Educación", "CODEDE", "Obras públicas", "Fiscalización ciudadana"]
 ---
 EL CERINAL  SIGUEN LOS RETRASOS EN LA RECONSTRUCCIÓN DE LA ESCUELA N.o 1
 

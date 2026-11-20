@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡SE VIENE LA INAUGURACIÓN CON TORMENTA BAND!"
-tags: ["Aldea San Nicolas", "Barberena", "Santa Rosa", "Inauguracion", "Obras públicas", "San Nicolás"]
+tags: ["San NicolÃ¡s", "Obras pÃºblicas", "Pepe Rueda", "Rubelio Recinos", "Municipalidad de Barberena"]
 ---
 ¡SE VIENE LA INAUGURACIÓN CON TORMENTA BAND!
 

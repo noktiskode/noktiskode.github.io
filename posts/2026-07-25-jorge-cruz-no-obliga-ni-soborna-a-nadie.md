@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"Jorge Cruz no obliga ni soborna a nadie.\" Esa fue una de las frases que escribió \"El Mojarro\" en su cuenta de Facebook, luego de publicar un video en el que agradeció la preocupación de la gente por querer ver…"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Jorge Cruz", "Municipalidad"]
+tags: ["Jorge Cruz", "Elecciones 2027", "PolĂ­tica local"]
 ---
 "Jorge Cruz no obliga ni soborna a nadie." Esa fue una de las frases que escribió "El Mojarro" en su cuenta de Facebook, luego de publicar un video en el que agradeció la preocupación de la gente por querer ver el municipio de color blanco y azul.
 

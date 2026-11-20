@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "En las siguientes capturas pueden consultar los proyectos registrados en el portal del SISCODE correspondientes a los años 2024, 2025 y 2026."
-tags: ["El Cerinal", "Barberena", "SantaRosa", "Obras Públicas", "SISCODE", "Transparencia"]
+tags: ["Transparencia", "FiscalizaciÃ³n ciudadana", "Obras pÃºblicas", "CODEDE"]
 ---
 En las siguientes capturas pueden consultar los proyectos registrados en el portal del SISCODE correspondientes a los años 2024, 2025 y 2026.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Siempre hemos pensado que ellos son el verdadero motor."
-tags: ["Barberena Mi Municipio", "Gente Trabajadora", "Santa Rosa", "Barberena", "Municipalidad"]
+tags: ["Servicios municipales", "PMT"]
 ---
 Siempre hemos pensado que ellos son el verdadero motor.
 

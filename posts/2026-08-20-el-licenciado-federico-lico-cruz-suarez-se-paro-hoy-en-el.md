@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El licenciado Federico \"Lico\" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva meses ahí y que nadie ha venido a arreglar."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "CIV", "Inés Castillo", "Napo Rojas"]
+tags: ["Obras pĂºblicas", "InĂ©s Castillo", "Napo Rojas", "Ricardo AlarcĂ³n", "Lico Cruz"]
 ---
 El licenciado Federico "Lico" Cruz Suárez se paró hoy en el libramiento Barberena–El Cerinal para denunciar, una vez más, el socavón que lleva meses ahí y que nadie ha venido a arreglar.
 

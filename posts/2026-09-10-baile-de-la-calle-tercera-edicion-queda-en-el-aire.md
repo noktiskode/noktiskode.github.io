@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "@Publizuma solicitó al COCODE de Utzumazate espacio en el campo de la feria para el \"Baile de la Calle\", que realiza sin fines de lucro por tercer año consecutivo. Según su comunicado, la solicitud fue denegada porque la fecha —26…"
-tags: ["Barberena", "Utzumazate", "Santa Rosa", "Zuma Fer 2026", "feria", "Obras públicas"]
+tags: ["Utzumazate", "COCODE", "Cultura y tradiciones"]
 ---
 @Publizuma solicitó al COCODE de Utzumazate espacio en el campo de la feria para el "Baile de la Calle", que realiza sin fines de lucro por tercer año consecutivo. Según su comunicado, la solicitud fue denegada porque la fecha —26 de septiembre— ya estaba ocupada, y la carta nunca le fue firmada de recibido pese a tres intentos de entrega.
 

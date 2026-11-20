@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PMT SANCIONA A TUCTUQUERO DE EL CERINAL QUE LLEVABA EMERGENCIA AL HOSPITAL"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "PMT", "Pepe Rueda", "Gobierno municipal"]
+tags: ["PMT", "Transporte", "El Cerinal", "Denuncia ciudadana", "Salud"]
 ---
 PMT SANCIONA A TUCTUQUERO DE EL CERINAL QUE LLEVABA EMERGENCIA AL HOSPITAL
 

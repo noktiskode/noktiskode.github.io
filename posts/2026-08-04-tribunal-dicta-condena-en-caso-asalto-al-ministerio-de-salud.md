@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Tribunal dicta condena en caso \"Asalto al Ministerio de Salud\""
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Política nacional"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala", "Transparencia"]
 ---
 Tribunal dicta condena en caso "Asalto al Ministerio de Salud"
 

@@ -3,13 +3,13 @@ title: "¡La ineficiencia del gobierno y de los diputados!"
 slug: "la-ineficiencia-del-gobierno-y-de-los-diputados"
 date: "2026-07-25T01:16:47.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122223238298318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¡LA INEFICIENCIA DEL GOBIERNO Y DE LOS DIPUTADOS!"
-tags: ["Combustibles", "Guatemala", "El Salvador", "Precio De La Gasolina", "Barberena", "Santa Rosa"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala"]
 ---
 ¡LA INEFICIENCIA DEL GOBIERNO Y DE LOS DIPUTADOS!
 

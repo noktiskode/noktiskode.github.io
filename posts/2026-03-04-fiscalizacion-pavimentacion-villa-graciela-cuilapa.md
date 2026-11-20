@@ -3,13 +3,13 @@ title: "\"Fiscalización\" pavimentación Villa Graciela, Cuilapa"
 slug: "fiscalizacion-pavimentacion-villa-graciela-cuilapa"
 date: "2026-03-04T02:12:17.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122208988436318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "\"FISCALIZACIÓN\" PAVIMENTACIÓN VILLA GRACIELA, CUILAPA"
-tags: ["Cuilapa", "Santa Rosa", "Villa Graciela", "Ricardo Alarcón", "Obras públicas", "Municipalidad"]
+tags: ["Ricardo Alarcón", "Cuilapa", "Obras públicas", "Elecciones 2027", "Sátira política"]
 ---
 "FISCALIZACIÓN" PAVIMENTACIÓN VILLA GRACIELA, CUILAPA
 

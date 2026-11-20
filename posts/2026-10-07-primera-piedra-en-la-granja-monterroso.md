@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El 7 de octubre de 2026 se colocó la primera piedra del proyecto de mejoramiento de la calle del Sector La Granja, Aldea Monterroso, por Q1,506,000, de los cuales Q1,367,993 corresponden al CODEDE."
-tags: ["El Cerinal", "Barberena", "SantaRosaGT", "ObrasPublicas"]
+tags: ["Obras pÃºblicas", "CODEDE", "Monterroso", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 El 7 de octubre de 2026 se colocó la primera piedra del proyecto de mejoramiento de la calle del Sector La Granja, Aldea Monterroso, por Q1,506,000, de los cuales Q1,367,993 corresponden al CODEDE.
 

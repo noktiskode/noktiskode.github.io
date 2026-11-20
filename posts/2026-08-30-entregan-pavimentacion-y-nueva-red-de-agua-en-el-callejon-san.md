@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal)"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Pepe Rueda", "Agua potable"]
+tags: ["Pepe Rueda", "El Cerinal", "Agua potable", "Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 Entregan pavimentación y nueva red de agua en el Callejón San Antonio, El Jocote (El Cerinal)
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿PEPE RUEDA CAE MAL?"
-tags: ["San Nicolas", "Barberena", "Santa Rosa", "Obras públicas", "opinion", "El Cerinal"]
+tags: ["Pepe Rueda", "Agua potable", "El Cerinal", "Elecciones 2027", "PolÃ­tica local"]
 ---
 ¿PEPE RUEDA CAE MAL?
 

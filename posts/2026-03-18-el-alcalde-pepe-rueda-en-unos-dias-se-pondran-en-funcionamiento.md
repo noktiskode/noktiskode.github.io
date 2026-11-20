@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El alcalde Pepe Rueda: \"En unos días se pondrán en funcionamiento los tres nuevos pozos en la aldea El Cerinal.\""
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua potable", "La Joya", "Monterroso"]
+tags: ["Agua potable", "Pepe Rueda", "El Cerinal", "La Joya", "Monterroso"]
 ---
 El alcalde Pepe Rueda: "En unos días se pondrán en funcionamiento los tres nuevos pozos en la aldea El Cerinal."
 

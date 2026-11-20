@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿UN SEXTO PERÍODO PARA RUBELIO RECINOS EN 2028?"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Elecciones 2027", "Rubelio Recinos", "El Mojarro"]
+tags: ["Rubelio Recinos", "Elecciones 2027", "PolÃ­tica local"]
 ---
 ¿UN SEXTO PERÍODO PARA RUBELIO RECINOS EN 2028?
 

@@ -3,13 +3,13 @@ title: "Pepe Rueda regaña al padrecito"
 slug: "pepe-rueda-regana-al-padrecito"
 date: "2026-04-17T22:11:59.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122213301632318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA REGAÑA AL PADRECITO"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Política local", "Católicos", "Iglesia"]
+tags: ["Pepe Rueda", "PolÃ­tica local", "FiscalizaciÃ³n ciudadana"]
 ---
 PEPE RUEDA REGAÑA AL PADRECITO
 

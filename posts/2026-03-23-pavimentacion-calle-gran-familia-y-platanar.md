@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR"
-tags: ["El Cerinal", "Barberena", "Fiscalización Ciudadana", "Transparencia", "Santa Rosa", "Guatecompras"]
+tags: ["El Cerinal", "CODEDE", "Obras públicas", "Napo Rojas", "Ricardo Alarcón"]
 ---
 PAVIMENTACIÓN CALLE GRAN FAMILIA Y PLATANAR
 

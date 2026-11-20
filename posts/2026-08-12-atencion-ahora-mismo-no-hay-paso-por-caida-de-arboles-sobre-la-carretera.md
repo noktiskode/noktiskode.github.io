@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Atención — Barberena ↔ NuevaSantaRosa\nAhora mismo no hay paso por caída de árboles sobre la carretera. Si venís de cualquiera de los dos lados, mejor esperate un momento antes de salir."
-tags: ["Barberena", "Nueva Santa Rosa"]
+tags: ["Nueva Santa Rosa", "Transporte"]
 ---
 Atención — Barberena ↔ NuevaSantaRosa
 Ahora mismo no hay paso por caída de árboles sobre la carretera. Si venís de cualquiera de los dos lados, mejor esperate un momento antes de salir.

@@ -3,13 +3,13 @@ title: "Con napo rojas y ricardo alarcón: así se inauguró la ladrillera"
 slug: "con-napo-rojas-y-ricardo-alarcon-asi-se-inauguro-la-ladrillera"
 date: "2026-08-29T16:54:07.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ SE INAUGURÓ LA LADRILLERA"
-tags: ["Barberena", "La Ladrillera", "Santa Rosa", "Obras públicas", "Espectáculos", "Pan YCirco"]
+tags: ["La Ladrillera", "Napo Rojas", "Ricardo AlarcĂ³n", "CODEDE", "Elecciones 2027"]
 ---
 CON NAPO ROJAS Y RICARDO ALARCÓN: ASÍ SE INAUGURÓ LA LADRILLERA
 

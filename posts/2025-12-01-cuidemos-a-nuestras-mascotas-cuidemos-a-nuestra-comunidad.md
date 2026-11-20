@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Cuidemos a nuestras mascotas, cuidemos a nuestra comunidad"
-tags: ["Adopta No Compres", "Mascotas Responsables", "Castración YEsterilización", "Cuidado Animal", "Protege ATus Mascotas", "Amor Responsable"]
+tags: ["Servicios municipales", "Salud", "Bienestar animal"]
 ---
 Cuidemos a nuestras mascotas, cuidemos a nuestra comunidad
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "2 MESES SIN AGUA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua Potable", "Gestión Municipal", "Cocode"]
+tags: ["El Cerinal", "Agua potable", "COCODE", "Denuncia ciudadana"]
 ---
 2 MESES SIN AGUA
 

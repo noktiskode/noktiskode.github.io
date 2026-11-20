@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "El alcalde ha confirmado que, en los próximos días, comenzará el proyecto anunciado meses atrás. Finalmente, se dará solución a la problemática de ese tramo."
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 El alcalde ha confirmado que, en los próximos días, comenzará el proyecto anunciado meses atrás. Finalmente, se dará solución a la problemática de ese tramo.

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Consulta ciudadana"
-tags: ["Barberena", "Obras públicas", "Municipalidad"]
+tags: ["Obras públicas", "Denuncia ciudadana", "Municipalidad de Barberena", "Fiscalización ciudadana"]
 ---
 Consulta ciudadana
 

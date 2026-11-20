@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1720051832420414/"
 featured: true
 published: true
 excerpt: "Los amigos del Zuma se quedaron sin su baile de la calle. Algunos comentan que la razón sería que quien organizaba la actividad es seguidor del exalcalde..."
-tags: ["Comunidad", "Feria Patronal", "Baile", "Utzumazate"]
+tags: ["Utzumazate", "COCODE", "Cultura y tradiciones", "PolÃ­tica local"]
 ---
 Los amigos del Zuma se quedaron sin su baile de la calle. Algunos comentan que la razón sería que quien organizaba la actividad es seguidor del exalcalde. Pero… ¿qué dice el organizador?
 

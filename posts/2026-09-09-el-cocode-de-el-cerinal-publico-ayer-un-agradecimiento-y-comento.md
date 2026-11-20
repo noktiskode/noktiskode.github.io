@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El Cocode de El Cerinal publicó ayer un agradecimiento y comentó también que vino una ayuda para las familias más necesitadas, no dice exactamente de que se trataba la ayuda o qué les dieron, según se ve en las fotos,…"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Comunidad", "Ayuda Social", "Obras públicas"]
+tags: ["COCODE", "El Cerinal", "Ayuda social", "Transparencia"]
 ---
 El Cocode de El Cerinal publicó ayer un agradecimiento y comentó también que vino una ayuda para las familias más necesitadas, no dice exactamente de que se trataba la ayuda o qué les dieron, según se ve en las fotos, ¿podrían ser láminas y costaneras?
 

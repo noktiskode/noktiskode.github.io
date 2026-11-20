@@ -3,13 +3,13 @@ title: "Aquí se van a tener que sacrificar o nos VAMOS a tener que sacrificar t
 slug: "aqui-se-van-a-tener-que-sacrificar-o-nos-vamos-a"
 date: "2026-09-23T03:38:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "opiniones"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/1000042303.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "El diputado por Santa Rosa, Inés Castillo, respondió así hace unas horas al ser cuestionado..."
-tags: ["Santa Rosa", "Congreso de Guatemala", "Impuestos", "Aprobación", "Combustibles", "Exoneración"]
+tags: ["InÃ©s Castillo", "Congreso de Guatemala", "PolÃ­tica nacional"]
 ---
 El diputado por Santa Rosa, Inés Castillo, respondió así hace unas horas al ser cuestionado sobre qué pasará con el dinero que reciben las municipalidades por medio del IVA, ante la posible exoneración temporal de impuestos a los combustibles:
 

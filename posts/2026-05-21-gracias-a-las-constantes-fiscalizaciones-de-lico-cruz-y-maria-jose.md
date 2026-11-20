@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Gracias a las constantes fiscalizaciones de Lico Cruz y María José Recinos, el paso en el sector de la Panadería La Dulce Abuelita estará completamente habilitado para la circulación de vehículos livianos a partir de este viernes a las 12:00…"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Fiscalización", "Agua Para Todos", "Mi Municipio"]
+tags: ["Obras públicas", "Fiscalización ciudadana", "Agua potable", "Servicios municipales", "Lico Cruz"]
 ---
 Gracias a las constantes fiscalizaciones de Lico Cruz y María José Recinos, el paso en el sector de la Panadería La Dulce Abuelita estará completamente habilitado para la circulación de vehículos livianos a partir de este viernes a las 12:00 del mediodía.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "QUE SIEMPRE NO HABRÁ DESFILE MAÑANA"
-tags: ["Barberena", "Santa Rosa", "Barberena Mi Municipio", "desfile", "bloqueos", "Municipalidad"]
+tags: ["EducaciĂ³n", "Transporte"]
 ---
 QUE SIEMPRE NO HABRÁ DESFILE MAÑANA
 

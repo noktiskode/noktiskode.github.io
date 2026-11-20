@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Pepe bailando es todo lo que necesitas ver hoy. Dicen que ni Rubelio se hacía esos quiebres."
-tags: ["Humor", "Opinión local"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "SÃ¡tira polÃ­tica"]
 ---
 Pepe bailando es todo lo que necesitas ver hoy. Dicen que ni Rubelio se hacía esos quiebres.

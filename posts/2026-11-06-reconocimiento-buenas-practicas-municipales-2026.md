@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Reconocimiento a las Buenas Prácticas Municipales 2026 son simbólicos"
-tags: ["Barberena", "Santa Rosa", "ANAM", "Política Local", "Premios Municipales"]
+tags: ["Municipalidad de Barberena", "PolĂ­tica local", "Pepe Rueda"]
 ---
 En mi opinión, el Reconocimiento a las Buenas Prácticas Municipales que entrega la ANAM es más simbólico que otra cosa: se parece a los diplomas que nos daban en la escuela por participar en un concurso de dibujo, canto o baile. Solo faltó la estrellita en la frente por buena conducta.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL ÚLTIMO PERÍODO DE PEPE RUEDA COMO ALCALDE DE BARBERENA"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "La Ladrillera", "Pepe Rueda", "Lico Cruz"]
+tags: ["Lico Cruz", "Pepe Rueda", "La Ladrillera", "Política local", "Elecciones 2027"]
 ---
 EL ÚLTIMO PERÍODO DE PEPE RUEDA COMO ALCALDE DE BARBERENA
 

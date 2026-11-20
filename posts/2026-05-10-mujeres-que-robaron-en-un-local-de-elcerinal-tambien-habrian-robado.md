@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MUJERES QUE ROBARON EN UN LOCAL DE ELCERINAL TAMBIÉN HABRÍAN ROBADO EN SANJUANCOMALAPA"
-tags: ["Barberena", "El Cerinal", "SANJUANCOMALAPA", "Zaragoza", "Santa Rosa", "Chimaltenango"]
+tags: ["Seguridad", "El Cerinal", "Denuncia ciudadana"]
 ---
 MUJERES QUE ROBARON EN UN LOCAL DE ELCERINAL TAMBIÉN HABRÍAN ROBADO EN SANJUANCOMALAPA
 

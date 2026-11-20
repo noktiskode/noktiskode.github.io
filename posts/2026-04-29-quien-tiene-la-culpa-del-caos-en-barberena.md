@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿QUIÉN TIENE LA CULPA DEL CAOS EN BARBERENA?"
-tags: ["Orden Vial", "PMT", "Barberena", "Obras públicas", "Comunidad"]
+tags: ["PMT", "Transporte", "Denuncia ciudadana", "Servicios municipales"]
 ---
 ¿QUIÉN TIENE LA CULPA DEL CAOS EN BARBERENA?
 

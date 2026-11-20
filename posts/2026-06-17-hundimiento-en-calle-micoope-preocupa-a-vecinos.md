@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hundimiento en Calle Micoope preocupa a vecinos"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Municipalidad", "Clima"]
+tags: ["Servicios municipales", "Obras públicas", "Denuncia ciudadana"]
 ---
 Hundimiento en Calle Micoope preocupa a vecinos
 

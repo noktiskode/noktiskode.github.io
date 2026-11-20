@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La gente anda creyendo que ya no va a pagar ni un len, pero la pura verdad es otra. El presidente Arévalo ya sancionó el Decreto 18-2026, lo que significa que las viviendas y los locales de uso mixto van…"
-tags: ["Santa Rosa", "Barberena", "Cuilapa", "Nueva Santa Rosa", "Chiquimulilla", "IUSI"]
+tags: ["PolĂ­tica nacional", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 La gente anda creyendo que ya no va a pagar ni un len, pero la pura verdad es otra. El presidente Arévalo ya sancionó el Decreto 18-2026, lo que significa que las viviendas y los locales de uso mixto van a pagar cero de IUSI. Eso sí, los negocios puramente comerciales y otros predios van a seguir tasados con el 3, 6 o 9 por millar, tal cual.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Napo Rojas pide más seguridad en Santa Rosa"
-tags: ["Napo Rojas", "Santa Rosa", "Barberena", "Seguridad", "Congreso De Guatemala", "Gobernación"]
+tags: ["Napo Rojas", "Seguridad", "Congreso de Guatemala"]
 ---
 El diputado por Santa Rosa, Napo Rojas, dijo que citó este martes en el Congreso a autoridades de Gobernación, del Ministerio de la Defensa, del INACIF y al director de la PNC, Erick Osoy, por el aumento de la inseguridad en el departamento. Según su publicación, contó con la presencia del alcalde de Barberena, el tío Chepe.
 

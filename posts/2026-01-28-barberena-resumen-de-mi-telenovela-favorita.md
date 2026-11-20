@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Resumen de mi telenovela favorita"
-tags: ["Barberena", "Buena Vista", "Los Hornitos", "Rubelio Recinos", "Pepe Rueda", "Lico Cruz"]
+tags: ["PolÃ­tica local", "Pepe Rueda", "Lico Cruz", "Transporte", "Transparencia"]
 ---
 BARBERENA  Resumen de mi telenovela favorita
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Don Rubelio Recinos, Coordinador Municipal de la UNE, te invita a la Jornada de Afiliación y Capacitación."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "UNE", "Política 2027", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Política local", "Elecciones 2027"]
 ---
 Don Rubelio Recinos, Coordinador Municipal de la UNE, te invita a la Jornada de Afiliación y Capacitación.
 

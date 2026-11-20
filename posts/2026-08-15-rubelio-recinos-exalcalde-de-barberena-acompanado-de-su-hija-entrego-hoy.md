@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos, exalcalde de Barberena, acompañado de su hija, entregó hoy una libra de pescado a personas que se encontraban en el sector conocido como \"Las Chileras\", lugar de vendedoras de chiles y comida en general."
-tags: ["Barberena", "Santa Rosa", "Guatemala", "El Cerinal", "Rubelio Recinos", "Municipalidad"]
+tags: ["Rubelio Recinos", "Ayuda social", "Mercado y comercio", "Elecciones 2027"]
 ---
 Rubelio Recinos, exalcalde de Barberena, acompañado de su hija, entregó hoy una libra de pescado a personas que se encontraban en el sector conocido como "Las Chileras", lugar de vendedoras de chiles y comida en general.
 

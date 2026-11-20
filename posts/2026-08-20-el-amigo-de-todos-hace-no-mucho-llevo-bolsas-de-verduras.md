@@ -3,13 +3,13 @@ title: "El amigo de todos, hace no mucho, llevó bolsas de verduras a los vecino
 slug: "el-amigo-de-todos-hace-no-mucho-llevo-bolsas-de-verduras"
 date: "2026-08-20T19:37:15.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122225937728318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "El amigo de todos, hace no mucho, llevó bolsas de verduras a los vecinos de aldea El Junquillo."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Barberena Mi Municipio", "Monterroso", "Agua potable"]
+tags: ["Rubelio Recinos", "El Junquillo", "Monterroso", "Ayuda social", "Elecciones 2027"]
 ---
 El amigo de todos, hace no mucho, llevó bolsas de verduras a los vecinos de aldea El Junquillo.
 

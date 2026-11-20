@@ -3,13 +3,13 @@ title: "Hace falta voluntad"
 slug: "hace-falta-voluntad"
 date: "2026-05-30T20:56:02.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "HACE FALTA VOLUNTAD"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Hace Falta Voluntad", "Rubelio Recinos", "Pepe Rueda"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "Municipalidad de Barberena", "Transparencia", "El Cerinal"]
 ---
 HACE FALTA VOLUNTAD
 

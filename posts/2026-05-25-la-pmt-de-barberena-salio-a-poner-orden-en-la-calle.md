@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La PMT de Barberena salió a poner orden en la calle principal de la aldea El Cerinal, notificando a los vendedores que tienen que dejar libre el paso, tanto para carros como para peatones. Y ojo, que no es broma:…"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "PMT", "Orden Vial", "orden"]
+tags: ["PMT", "El Cerinal", "Servicios municipales", "Mercado y comercio"]
 ---
 La PMT de Barberena salió a poner orden en la calle principal de la aldea El Cerinal, notificando a los vendedores que tienen que dejar libre el paso, tanto para carros como para peatones. Y ojo, que no es broma: si no hacen caso, les van a consignar sus ventas.
 

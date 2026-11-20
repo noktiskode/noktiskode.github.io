@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE MAL PAÍS?"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Guatecompras", "Agua potable", "Contratación pública"]
+tags: ["Agua potable", "El Cerinal", "Guatecompras", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 ¿POR QUÉ SEGUIMOS DEPENDIENDO DEL POZO DE MAL PAÍS?
 

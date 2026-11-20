@@ -3,13 +3,13 @@ title: "Los pleitos de Pepe Rueda"
 slug: "los-pleitos-de-pepe-rueda"
 date: "2026-06-08T16:09:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1790806109529-u2jhh7.webp"
 video_url: "https://www.facebook.com/reel/1010873948049307"
 featured: false
 published: true
 excerpt: "Pepe Rueda en apenas dos años se ha peleado con medio municipio: tuctuqueros, diputados, ex alcaldes, periodistas, ex concejales y hasta la iglesia."
-tags: ["Barberena", "Santa Rosa", "reels", "Pepe Rueda", "Municipalidad", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Política local"]
 ---
 Pepe Rueda en apenas dos años se ha peleado con medio municipio: tuctuqueros, diputados, ex alcaldes, periodistas, ex concejales y hasta la iglesia.
 

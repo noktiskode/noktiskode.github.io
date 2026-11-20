@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "Alcalde de Barberena informa que se inició la limpieza del nuevo sector del cementerio"
-tags: ["Barberena", "Cementerio Municipal", "Municipalidad", "Pepe Rueda", "Casco Urbano", "Santa Rosa"]
+tags: ["Servicios municipales", "Municipalidad de Barberena", "Transparencia"]
 ---
 Casi dos meses después de anunciar la ampliación del Cementerio Municipal del casco urbano, el alcalde de Barberena, tío Chepe, informó este viernes que la Municipalidad ya trabaja en la limpieza del nuevo sector.
 

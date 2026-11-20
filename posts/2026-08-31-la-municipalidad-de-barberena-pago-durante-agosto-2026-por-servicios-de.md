@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad de Barberena pagó durante agosto 2026 por servicios de divulgación a dos medios locales:"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Ojo Al Dato", "Guatecompras", "Obras públicas"]
+tags: ["Municipalidad de Barberena", "Transparencia", "FiscalizaciĂ³n ciudadana"]
 ---
 La Municipalidad de Barberena pagó durante agosto 2026 por servicios de divulgación a dos medios locales:
 

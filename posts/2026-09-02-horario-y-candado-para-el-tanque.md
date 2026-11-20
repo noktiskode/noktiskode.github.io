@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La pila del Barrio El Tanque, en pleno casco urbano de Barberena, ya tiene circulación y horario regulado. Según declaraciones del alcalde Pepe Rueda, la medida responde a quejas de amas de casa que denunciaban que el espacio se había…"
-tags: ["Agua potable", "Servicios públicos", "Comunidad", "Barberena", "Pepe Rueda", "Municipalidad"]
+tags: ["Pepe Rueda", "Servicios municipales", "Seguridad", "Municipalidad de Barberena"]
 ---
 La pila del Barrio El Tanque, en pleno casco urbano de Barberena, ya tiene circulación y horario regulado. Según declaraciones del alcalde Pepe Rueda, la medida responde a quejas de amas de casa que denunciaban que el espacio se había convertido en sanitario público —y peor— en un punto donde se daban relaciones sexuales sin ningún control de horario, incluso mientras los niños del sector transitaban por ahí.
 

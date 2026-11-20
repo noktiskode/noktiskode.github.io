@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL ÚLTIMO TRUCO DE LICO CRUZ"
-tags: ["Barberena", "Santa Rosa", "Sátira política", "truco", "Lico Cruz", "Obras públicas"]
+tags: ["Sátira política", "Política local", "Fiscalización ciudadana", "Transparencia", "Lico Cruz"]
 ---
 EL ÚLTIMO TRUCO DE LICO CRUZ
 

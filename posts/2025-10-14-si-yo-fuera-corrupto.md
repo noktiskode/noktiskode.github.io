@@ -9,6 +9,6 @@ video_url: "https://www.facebook.com/reel/809450424915748/"
 featured: false
 published: true
 excerpt: "Si yo fuera corrupto no podría hacer esto."
-tags: ["Humor", "Sátira", "Memes"]
+tags: ["SĂ¡tira polĂ­tica", "PolĂ­tica local"]
 ---
 Si yo fuera corrupto no podría hacer esto. 😬

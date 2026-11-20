@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Jorge Cruz no ha empezado a pintar paredes en Barberena"
-tags: ["Jorge Cruz", "Barberena", "El Mojarro", "Santa Rosa", "Política Local"]
+tags: ["Jorge Cruz", "Elecciones 2027", "PolĂ­tica local"]
 ---
 Pasaron más de tres meses desde que el empresario Jorge Cruz, "El Mojarro", pidió paciencia en un video y aseguró que, "primeramente Dios", empezarían a colorear el municipio a finales de este año, con blanco, azul y su estrellita de fondo.
 

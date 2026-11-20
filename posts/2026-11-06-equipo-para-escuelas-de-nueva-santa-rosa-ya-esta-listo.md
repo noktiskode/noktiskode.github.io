@@ -3,13 +3,13 @@ title: "Enrique Arrendondo informó que el equipo que solicitó en 2024 a la UCE
 slug: "equipo-para-escuelas-de-nueva-santa-rosa-ya-esta-listo"
 date: "2026-11-06T20:00:00.000Z"
 updated_at: "2026-11-07T00:16:39.926Z"
-category: "opiniones"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/1794010246770-asptxf.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Equipo para siete escuelas de Nueva Santa Rosa ya está listo"
-tags: ["Nueva Santa Rosa", "Enrique Arredondo", "UCEE", "Educación", "Cuilapa", "Santa Rosa De Lima"]
+tags: ["Nueva Santa Rosa", "EducaciĂ³n", "PolĂ­tica local"]
 ---
 El mejor alcalde del vecino municipio de Nueva Santa Rosa, José Enrique Arredondo Amaya, informó que el equipo que solicitó en 2024 a la UCEE para siete escuelas ya está listo para recogerse en Cuilapa. Pidió a los alcaldes de Santa Rosa de Lima y Santa Cruz Naranjo que manden a retirarlo.
 

@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Para los que vienen de la capital hacia Barberena, tomar precauciones antes de llegar a La Vega. (Información compartida por un vecino)."
-tags: ["Barberena"]
+tags: ["Seguridad", "Transporte"]
 ---
 Para los que vienen de la capital hacia Barberena, tomar precauciones antes de llegar a La Vega. (Información compartida por un vecino).

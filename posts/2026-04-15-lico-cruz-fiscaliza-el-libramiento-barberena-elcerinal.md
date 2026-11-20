@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LICO CRUZ FISCALIZA EL LIBRAMIENTO BARBERENA - ELCERINAL"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "guatemala", "Fiscalización", "Lico Cruz"]
+tags: ["Napo Rojas", "Ricardo AlarcÃ³n", "InÃ©s Castillo", "FiscalizaciÃ³n ciudadana", "Lico Cruz"]
 ---
 LICO CRUZ FISCALIZA EL LIBRAMIENTO BARBERENA - ELCERINAL
 

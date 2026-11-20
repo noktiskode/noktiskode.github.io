@@ -3,13 +3,13 @@ title: "Temporada de ferias... y de jinetes"
 slug: "temporada-de-ferias-y-de-jinetes"
 date: "2026-01-02T19:47:33.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122202999236318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Temporada de ferias... y de jinetes"
-tags: ["Temporada De Jinetes", "Cambio De Montura", "La Memoria Se Queda"]
+tags: ["SÃ¡tira polÃ­tica", "Elecciones 2027", "PolÃ­tica local"]
 ---
 Temporada de ferias... y de jinetes
 

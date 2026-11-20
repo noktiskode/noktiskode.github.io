@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA LLANTA QUE SIGUE SALVANDO VEHÍCULOS, MOTOCICLISTAS Y PEATONES"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Peligro Latente", "Municipalidad"]
+tags: ["El Cerinal", "Denuncia ciudadana", "Servicios municipales", "Seguridad"]
 ---
 LA LLANTA QUE SIGUE SALVANDO VEHÍCULOS, MOTOCICLISTAS Y PEATONES
 

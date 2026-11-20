@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen demostrando que quieren vivir del pueblo de Guatemala a toda costa"
-tags: ["Santa Rosa", "Barberena", "IUSI", "Inés Castillo", "Napo Rojas", "Ricardo Alarcón"]
+tags: ["InĂ©s Castillo", "Napo Rojas", "Ricardo AlarcĂ³n", "Congreso de Guatemala", "PolĂ­tica nacional"]
 ---
 INÉS CASTILLO, NAPO ROJAS Y RICARDO ALARCÓN: siguen demostrando que quieren vivir del pueblo de Guatemala a toda costa
 

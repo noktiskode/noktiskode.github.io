@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Cruce de señalamientos entre Lico Cruz y Pepe Rueda"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Política local", "Guatemala", "Pepe Rueda"]
+tags: ["Pepe Rueda", "PolÃ­tica local", "Transparencia", "Lico Cruz"]
 ---
 BARBERENA  Cruce de señalamientos entre Lico Cruz y Pepe Rueda
 

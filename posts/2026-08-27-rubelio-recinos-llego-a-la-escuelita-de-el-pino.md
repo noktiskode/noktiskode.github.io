@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE EL PINO"
-tags: ["Barberena", "El Pino", "El Cerinal", "Santa Rosa", "Escuelita", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Pepe Rueda", "El Pino", "EducaciĂ³n", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS LLEGÓ A LA ESCUELITA DE EL PINO
 

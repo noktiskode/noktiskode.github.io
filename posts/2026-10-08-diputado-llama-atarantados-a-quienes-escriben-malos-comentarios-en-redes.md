@@ -3,13 +3,13 @@ title: "Diputado llama \"atarantados\" a quienes escriben malos comentarios en r
 slug: "diputado-llama-atarantados-a-quienes-escriben-malos-comentarios-en-redes"
 date: "2026-10-08T22:00:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1791522441490-9wilra.webp"
 video_url: "https://www.facebook.com/reel/2160898161164575/"
 featured: true
 published: true
 excerpt: "Santa Rosa ya tiene nuevo comediante. Lo vimos nacer en vivo durante la inauguración de la Calle sector Cruce Boquerón a Cruce Mal País y Laguna, en El Cerinal."
-tags: ["El Cerinal", "Barberena", "SantaRosaGT", "Politica", "Guatemala", "Obras Públicas"]
+tags: ["Napo Rojas", "SÃ¡tira polÃ­tica", "El Cerinal", "Congreso de Guatemala", "Obras pÃºblicas"]
 ---
 Santa Rosa ya tiene nuevo comediante. Lo vimos nacer en vivo durante la inauguración de la Calle sector Cruce Boquerón a Cruce Mal País y Laguna, en El Cerinal.
 

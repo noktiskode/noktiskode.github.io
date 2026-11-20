@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR DE PANADERÍA \"LA DULCE ABUELITA\""
-tags: ["Barberena", "Obras públicas"]
+tags: ["Obras pÃºblicas", "La Ladrillera"]
 ---
 ESTÁ QUEDANDO CHULA LA CALLE DEL SECTOR DE PANADERÍA "LA DULCE ABUELITA"
 

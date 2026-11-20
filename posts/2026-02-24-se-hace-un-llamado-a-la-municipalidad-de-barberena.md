@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Se hace un llamado a la Municipalidad de Barberena:"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Pepe Rueda", "Municipalidad", "Gobierno municipal"]
+tags: ["Educación", "Pepe Rueda", "El Cerinal", "Denuncia ciudadana"]
 ---
 Se hace un llamado a la Municipalidad de Barberena:
 

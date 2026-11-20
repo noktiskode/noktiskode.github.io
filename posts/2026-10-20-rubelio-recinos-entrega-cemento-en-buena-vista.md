@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Tío Rube compartió un video en el que muestra la entrega de cemento para apoyar trabajos que realizan vecinos de la aldea Buena Vista, en Barberena."
-tags: ["Barberena", "SantaRosa", "Buena Vista", "Rubelio Recinos", "Exalcalde"]
+tags: ["Rubelio Recinos", "Buena Vista", "Ayuda social", "PolÃ­tica local"]
 ---
 Tío Rube compartió un video en el que muestra la entrega de cemento para apoyar trabajos que realizan vecinos de la aldea Buena Vista, en Barberena.
 

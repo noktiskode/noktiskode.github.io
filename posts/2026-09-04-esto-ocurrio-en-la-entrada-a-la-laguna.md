@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Esto ocurrió en la entrada a La Laguna"
-tags: ["El Cerinal", "Laguna Del Pino", "Barberena", "Santa Rosa", "Barberena Mi Municipio"]
+tags: ["Transporte", "Seguridad"]
 ---
 En el video se observa a una persona cargando carne. La escena llamó la atención de algunos, quienes incluso hicieron bromas sobre que podría tratarse de carne destinada a las personas que se encuentran bloqueando la carretera, esto en el contexto de los bloqueos registrados por el alza en los precios de los combustibles, dicen.
 

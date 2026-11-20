@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Muni entregó el proyecto de pavimentación de la Calle La Bendición, Sector 4, aldea BuenaVista. Un proyecto hecho en conjunto con los vecinos de esta comunidad."
-tags: ["Barberena", "Buena Vista", "Santa Rosa", "Obras públicas", "Pepe Rueda", "Municipalidad"]
+tags: ["Pepe Rueda", "Buena Vista", "Obras públicas", "Municipalidad de Barberena"]
 ---
 La Muni entregó el proyecto de pavimentación de la Calle La Bendición, Sector 4, aldea BuenaVista. Un proyecto hecho en conjunto con los vecinos de esta comunidad.
 

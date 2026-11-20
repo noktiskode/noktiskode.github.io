@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MERCADO MUNICIPAL RECIBE MEJORAS DESPUÉS DE DÉCADAS"
-tags: ["Barberena", "Pepe Rueda", "Obras públicas", "Municipalidad", "Gobierno municipal"]
+tags: ["Mercado y comercio", "Obras pÃºblicas", "Pepe Rueda", "Municipalidad de Barberena"]
 ---
 MERCADO MUNICIPAL RECIBE MEJORAS DESPUÉS DE DÉCADAS
 

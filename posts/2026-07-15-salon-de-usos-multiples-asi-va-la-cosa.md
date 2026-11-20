@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "SALÓN DE USOS MÚLTIPLES, ASÍ VA LA COSA"
-tags: ["Barberena", "Santa Rosa", "Guatecompras", "Los Hornitos", "Agua potable", "Obras públicas"]
+tags: ["Guatecompras", "CODEDE", "Obras pĂºblicas", "FiscalizaciĂ³n ciudadana", "Transparencia"]
 ---
 SALÓN DE USOS MÚLTIPLES, ASÍ VA LA COSA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TUBERÍAS DAÑADAS  EL CERINAL"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua Potable", "Municipalidad", "Gobierno municipal"]
+tags: ["El Cerinal", "Agua potable", "Municipalidad de Barberena", "Denuncia ciudadana"]
 ---
 TUBERÍAS DAÑADAS  EL CERINAL
 

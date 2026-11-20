@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Barberena: El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que:"
-tags: ["Transporte", "Comunidad", "Barberena", "Buena Vista", "Municipalidad"]
+tags: ["Transporte", "Buena Vista", "Municipalidad de Barberena", "PolĂ­tica local"]
 ---
 Barberena: El concejal II de la Municipalidad de Barberena, Walfredo Arébalo López, ha informado a través de su cuenta de Facebook que:
 

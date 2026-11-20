@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "A través de sus redes sociales, el exalcalde compartió una publicación: \"Hoy estuvimos cerca de las familias para conocer de primera mano lo que están viviendo y brindarles un poco de apoyo ante esta necesidad. Una realidad que merece ser…"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Sin Agua", "Agua potable", "Gobierno municipal"]
+tags: ["Rubelio Recinos", "Agua potable", "Denuncia ciudadana", "Elecciones 2027"]
 ---
 A través de sus redes sociales, el exalcalde compartió una publicación:
 "Hoy estuvimos cerca de las familias para conocer de primera mano lo que están viviendo y brindarles un poco de apoyo ante esta necesidad. Una realidad que merece ser escuchada."

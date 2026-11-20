@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Apareció el COCODE de El Cerinal y dice que los muchachos de la Muni están reparando la entrada a El Jocote."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "COCODE", "Transparencia", "Opiniones"]
+tags: ["Ayuda social", "Guatecompras", "COCODE", "El Cerinal", "Municipalidad de Barberena"]
 ---
 Apareció el COCODE de El Cerinal y dice que los muchachos de la Muni están reparando la entrada a El Jocote.
 

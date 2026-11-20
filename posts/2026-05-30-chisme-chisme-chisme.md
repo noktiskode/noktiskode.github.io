@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡CHISME, CHISME, CHISME!"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Política local"]
 ---
 ¡CHISME, CHISME, CHISME!
 

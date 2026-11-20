@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL AÑO DEL AGUA EN BARBERENA"
-tags: ["Barberena", "El Cerinal", "Buena Vista", "Bijagues", "Las Astas", "Agua Potable"]
+tags: ["Agua potable", "Pepe Rueda", "Obras públicas", "El Cerinal", "Fiscalización ciudadana"]
 ---
 EL AÑO DEL AGUA EN BARBERENA
 

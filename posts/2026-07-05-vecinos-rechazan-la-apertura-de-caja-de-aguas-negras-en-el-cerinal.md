@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINOS RECHAZAN LA APERTURA DE CAJA DE AGUAS NEGRAS EN EL CERINAL"
-tags: ["El Cerinal", "Agua potable", "Obras públicas", "Municipalidad", "Gobierno municipal", "Saneamiento"]
+tags: ["El Cerinal", "Denuncia ciudadana", "Servicios municipales", "Salud"]
 ---
 VECINOS RECHAZAN LA APERTURA DE CAJA DE AGUAS NEGRAS EN EL CERINAL
 

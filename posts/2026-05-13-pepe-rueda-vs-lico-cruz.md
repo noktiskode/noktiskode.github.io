@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA VS. LICO CRUZ"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Auditoria Social", "Sátira política", "streetfighter"]
+tags: ["Pepe Rueda", "Sátira política", "Política local", "Lico Cruz"]
 ---
 PEPE RUEDA VS. LICO CRUZ
 

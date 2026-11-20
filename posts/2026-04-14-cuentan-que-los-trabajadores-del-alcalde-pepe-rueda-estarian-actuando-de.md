@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Cuentan que los trabajadores del alcalde Pepe Rueda estarían actuando de forma desordenada en la distribución de agua en el callejón Los Morenos, dejando algunas casas abastecidas y otras no, además de dar distintas excusas para no completar el recorrido."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Agua potable", "Pepe Rueda", "Obras públicas"]
+tags: ["Agua potable", "Servicios municipales", "Denuncia ciudadana"]
 ---
 Cuentan que los trabajadores del alcalde Pepe Rueda estarían actuando de forma desordenada en la distribución de agua en el callejón Los Morenos, dejando algunas casas abastecidas y otras no, además de dar distintas excusas para no completar el recorrido.
 

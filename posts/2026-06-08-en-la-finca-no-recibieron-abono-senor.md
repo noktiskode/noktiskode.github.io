@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "En la finca no recibieron abono, señor alcalde."
-tags: ["Barberena", "Gobierno municipal"]
+tags: ["Ayuda social", "Denuncia ciudadana"]
 ---
 En la finca no recibieron abono, señor alcalde.

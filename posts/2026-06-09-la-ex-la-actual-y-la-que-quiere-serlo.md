@@ -3,12 +3,12 @@ title: "La ex, la actual y la que quiere serlo."
 slug: "la-ex-la-actual-y-la-que-quiere-serlo"
 date: "2026-06-09T17:10:55.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122218945868318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LA EX, LA ACTUAL Y LA QUE QUIERE SERLO."
-tags: ["Barberena"]
+tags: ["Sátira política", "Política local"]
 ---
 LA EX, LA ACTUAL Y LA QUE QUIERE SERLO.

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Antes de ser Barberena, este pedazo de tierra ni siquiera se llamaba así. En la Colonia era territorio de los frailes mercedarios y le decían Corral de Piedra. Así nomás, sin adornos. Después de la independencia de Centroamérica quedó bajo…"
-tags: ["Historias", "Barberena", "Santa Rosa", "Buena Vista", "Municipalidad", "Historia local"]
+tags: ["Historia local", "Cultura y tradiciones"]
 ---
 Antes de ser Barberena, este pedazo de tierra ni siquiera se llamaba así. En la Colonia era territorio de los frailes mercedarios y le decían Corral de Piedra. Así nomás, sin adornos. Después de la independencia de Centroamérica quedó bajo el Circuito de Cuajiniquilapa pa' asuntos de justicia — o sea, ni cabecera éramos todavía.
 

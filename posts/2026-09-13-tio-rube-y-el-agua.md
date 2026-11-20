@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Durante un recorrido por una comunidad del municipio, Rubelio Recinos conversó con varios vecinos sobre la situación del agua potable en la zona."
-tags: ["Agua potable", "Política local", "Barberena", "Rubelio Recinos", "Municipalidad", "Gobierno municipal"]
+tags: ["Rubelio Recinos", "Agua potable", "PolĂ­tica local"]
 ---
 Durante un recorrido por una comunidad del municipio, Rubelio Recinos conversó con varios vecinos sobre la situación del agua potable en la zona.
 

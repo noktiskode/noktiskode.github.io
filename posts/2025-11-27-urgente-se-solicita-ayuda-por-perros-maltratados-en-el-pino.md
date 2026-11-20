@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡URGENTE!"
-tags: ["PNC", "PNCde Guatemala", "DIPRONA", "ubamaga", "animalrescue", "El Cerinal"]
+tags: ["El Pino", "Denuncia ciudadana", "Seguridad", "Bienestar animal"]
 ---
 ¡URGENTE!
 

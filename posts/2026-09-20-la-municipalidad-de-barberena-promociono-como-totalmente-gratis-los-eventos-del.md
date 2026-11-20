@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad de Barberena promocionó como “TOTALMENTE GRATIS” los eventos del 13 y 19 de septiembre."
-tags: ["Barberena", "Santa Rosa", "Guatecompras", "Tishudos", "Mercado municipal", "Municipalidad"]
+tags: ["Guatecompras", "Municipalidad de Barberena", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 La Municipalidad de Barberena promocionó como “TOTALMENTE GRATIS” los eventos del 13 y 19 de septiembre.
 

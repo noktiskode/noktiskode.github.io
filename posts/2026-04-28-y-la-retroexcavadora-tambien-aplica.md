@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Y LA RETROEXCAVADORA TAMBIÉN APLICA?"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "La Ladrillera", "Utzumazate", "Municipalidad"]
+tags: ["Utzumazate", "La Ladrillera", "Obras pÃºblicas", "Municipalidad de Barberena", "FiscalizaciÃ³n ciudadana"]
 ---
 ¿Y LA RETROEXCAVADORA TAMBIÉN APLICA?
 

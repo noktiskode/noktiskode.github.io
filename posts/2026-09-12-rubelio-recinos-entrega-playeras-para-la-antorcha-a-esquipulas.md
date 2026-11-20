@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hace un par de días, Rubelio Recinos publicó un video a través de su cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en una comunidad que, según él, vive en situaciones un poco complicadas."
-tags: ["Comunidad", "Tradiciones", "Acontecimientos", "Barberena", "Rubelio Recinos", "Municipalidad"]
+tags: ["Rubelio Recinos", "Cultura y tradiciones", "PolĂ­tica local"]
 ---
 Hace un par de días, Rubelio Recinos publicó un video a través de su cuenta de Facebook en el que cuenta que estuvo entregando unos escritorios en una comunidad que, según él, vive en situaciones un poco complicadas.
 

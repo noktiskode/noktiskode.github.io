@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos publicó ayer un video en el que se le ve entregando bolsas de verduras, aunque no menciona dónde estuvo."
-tags: ["Barberena", "Santa Rosa", "Guatemala", "Política", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "PolĂ­tica local", "Ayuda social"]
 ---
 Rubelio Recinos publicó ayer un video en el que se le ve entregando bolsas de verduras, aunque no menciona dónde estuvo.
 

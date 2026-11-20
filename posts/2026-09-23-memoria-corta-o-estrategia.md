@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "El diputado Napo Rojas presumió en sus redes su voto a favor de bajar los impuestos a los combustibles..."
-tags: ["Santa Rosa", "Congreso de Guatemala", "Impuestos", "Combustibles", "Fiscalización", "Diputados de Santa Rosa"]
+tags: ["Napo Rojas", "InÃ©s Castillo", "Ricardo AlarcÃ³n", "Congreso de Guatemala", "PolÃ­tica nacional"]
 ---
 El diputado Napo Rojas presumió en sus redes su voto a favor de bajar los impuestos a los combustibles (Decreto 22-2026, aprobado el 22 de septiembre), afirmando que lo hizo "pensando en el bolsillo de las familias".
 

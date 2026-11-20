@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Sector Los Hornitos"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Los Hornitos", "Pepe Rueda", "Obras públicas"]
+tags: ["Los Hornitos", "Pepe Rueda", "Obras pÃºblicas", "Transparencia"]
 ---
 BARBERENA  Sector Los Hornitos
 

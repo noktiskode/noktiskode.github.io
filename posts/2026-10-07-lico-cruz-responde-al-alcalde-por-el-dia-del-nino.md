@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1454683820138781/"
 featured: true
 published: true
 excerpt: "Ayer martes 6 de octubre, Federico \"Lico\" Cruz publicó en Facebook un video en el que responde a declaraciones del alcalde de Barberena, José \"Pepe\" Rueda, hechas durante la celebración del Día del Niño."
-tags: ["Barberena", "SantaRosaGT", "Política Local", "Dia Del Niño"]
+tags: ["Pepe Rueda", "PolÃ­tica local", "Mercado y comercio", "Lico Cruz"]
 ---
 Ayer martes 6 de octubre, Federico "Lico" Cruz publicó en Facebook un video en el que responde a declaraciones del alcalde de Barberena, José "Pepe" Rueda, hechas durante la celebración del Día del Niño.
 

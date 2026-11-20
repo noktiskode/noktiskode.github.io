@@ -3,13 +3,13 @@ title: "El pasado, presente y el futuro de Barberena en el día del cariño."
 slug: "el-pasado-presente-y-el-futuro-de-barberena-en-el-dia-del-carino"
 date: "2026-02-14T06:58:29.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "El pasado, presente y el futuro de Barberena en el día del cariño.\nRubelito, Pepito y Jorgito."
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "14 febrero", "Política", "Guatemala"]
+tags: ["Sátira política", "Elecciones 2027", "Rubelio Recinos", "Pepe Rueda", "Jorge Cruz"]
 ---
 El pasado, presente y el futuro de Barberena en el día del cariño.
 Rubelito, Pepito y Jorgito.

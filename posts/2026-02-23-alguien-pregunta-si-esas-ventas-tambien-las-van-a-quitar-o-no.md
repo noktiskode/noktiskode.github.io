@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "“Alguien pregunta si esas ventas también las van a quitar o no.\nSuponemos que serán trasladadas al nuevo mercado que prometen construir."
-tags: ["Obras públicas"]
+tags: ["Mercado y comercio", "Obras públicas", "Denuncia ciudadana"]
 ---
 “Alguien pregunta si esas ventas también las van a quitar o no.
 Suponemos que serán trasladadas al nuevo mercado que prometen construir.

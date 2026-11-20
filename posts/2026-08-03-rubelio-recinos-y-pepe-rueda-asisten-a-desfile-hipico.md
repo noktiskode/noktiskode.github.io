@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS Y PEPE RUEDA ASISTEN A DESFILE HÍPICO"
-tags: ["Cuilapa", "Barberena", "Santa Rosa", "Desfile Hipico", "feria", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Pepe Rueda", "Cuilapa", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS Y PEPE RUEDA ASISTEN A DESFILE HÍPICO
 

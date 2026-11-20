@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"¿SABOTAJES POR PARTE DE LOS FONTANEROS?\""
-tags: ["Agua potable", "Municipalidad", "Gobierno municipal"]
+tags: ["Agua potable", "Servicios municipales", "Denuncia ciudadana", "Municipalidad de Barberena"]
 ---
 "¿SABOTAJES POR PARTE DE LOS FONTANEROS?"
 

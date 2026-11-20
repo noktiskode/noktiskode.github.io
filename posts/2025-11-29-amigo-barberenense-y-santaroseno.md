@@ -3,13 +3,13 @@ title: "Amigo barberenense y santaroseño"
 slug: "amigo-barberenense-y-santaroseno"
 date: "2025-11-29T20:47:27.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122199397490318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Amigo barberenense y santaroseño:"
-tags: ["Participación Ciudadana", "facebookviral", "Barberena Mi Municipio", "Barberena", "El Cerinal", "Santa Rosa"]
+tags: ["FiscalizaciĂ³n ciudadana", "Congreso de Guatemala", "Transparencia", "PolĂ­tica local"]
 ---
 Amigo barberenense y santaroseño:
 

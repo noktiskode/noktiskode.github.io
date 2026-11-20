@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Un día como hoy nació Barberena"
-tags: ["Barberena", "Municipalidad", "Historia local", "Comunidad"]
+tags: ["Historia local", "Cultura y tradiciones"]
 ---
 Un día como hoy nació Barberena
 

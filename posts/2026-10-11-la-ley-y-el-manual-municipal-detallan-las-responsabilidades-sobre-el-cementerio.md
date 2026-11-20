@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La administración y el mantenimiento del cementerio municipal forman parte de las responsabilidades que los documentos oficiales asignan a la Municipalidad de Barberena."
-tags: ["Barberena", "Santa Rosa", "Municipalidad de Barberena", "cementerio municipal de Barberena", "Cementerio Municipal", "Santa Rosa Guatemala", "Código Municipal de Guatemala", "Decreto 12-2002", "servicios públicos municipales", "mantenimiento del cementerio", "limpieza del cementerio municipal", "Manual de Puestos y Funciones", "administración municipal", "información municipal", "Ojo al Dato"]
+tags: ["Servicios municipales", "Municipalidad de Barberena", "Transparencia"]
 ---
 La administración y el mantenimiento del cementerio municipal forman parte de las responsabilidades que los documentos oficiales asignan a la Municipalidad de Barberena.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿CÓMO VA A CUBRIR LA MUNI EL HUECO QUE DEJA LA ELIMINACIÓN DEL IUSI?"
-tags: ["Barberena", "Santa Rosa", "Guatemala", "IUSI", "Congreso de Guatemala", "impuestos"]
+tags: ["Municipalidad de Barberena", "Transparencia", "Servicios municipales", "Elecciones 2027", "FiscalizaciĂ³n ciudadana"]
 ---
 ¿CÓMO VA A CUBRIR LA MUNI EL HUECO QUE DEJA LA ELIMINACIÓN DEL IUSI?
 

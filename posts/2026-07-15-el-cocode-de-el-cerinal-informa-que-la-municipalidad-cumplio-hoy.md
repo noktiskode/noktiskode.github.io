@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "El Cocode de El Cerinal informa que la Municipalidad cumplió hoy con llevar agua en pipas a algunos vecinos del Amatillo. Así debe ser: llevar agua no es un favor, es una obligación municipal."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "cocode", "Agua potable", "Municipalidad"]
+tags: ["COCODE", "El Cerinal", "Agua potable", "Servicios municipales"]
 ---
 El Cocode de El Cerinal informa que la Municipalidad cumplió hoy con llevar agua en pipas a algunos vecinos del Amatillo. Así debe ser: llevar agua no es un favor, es una obligación municipal.

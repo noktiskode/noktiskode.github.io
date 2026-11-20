@@ -3,13 +3,13 @@ title: "Ayer fue la hija del “mejor alcalde” a fiscalizar los trabajos en la
 slug: "ayer-fue-la-hija-del-mejor-alcalde-a-fiscalizar-los-trabajos"
 date: "2026-05-20T18:08:57.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122216970182318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "AYER FUE LA HIJA DEL “MEJOR ALCALDE” A FISCALIZAR LOS TRABAJOS EN LA LADRILLERA"
-tags: ["Barberena", "La Ladrillera", "Santa Rosa", "Guatemala", "Obras públicas", "Fiscalización"]
+tags: ["La Ladrillera", "Rubelio Recinos", "Pepe Rueda", "Obras públicas", "Sátira política"]
 ---
 AYER FUE LA HIJA DEL “MEJOR ALCALDE” A FISCALIZAR LOS TRABAJOS EN LA LADRILLERA
 

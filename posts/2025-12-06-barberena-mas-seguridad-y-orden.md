@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA: MÁS SEGURIDAD Y ORDEN"
-tags: ["Barberena", "Pepe Rueda Vallejo", "Opinión Ciudadana", "Crítica Constructiva", "Seguridad YOrden", "Mejoras Para Todos"]
+tags: ["Seguridad", "Transporte", "Servicios municipales", "Pepe Rueda"]
 ---
 BARBERENA: MÁS SEGURIDAD Y ORDEN
 

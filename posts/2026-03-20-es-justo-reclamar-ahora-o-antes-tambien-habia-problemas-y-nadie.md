@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿ES JUSTO RECLAMAR AHORA O ANTES TAMBIÉN HABÍA PROBLEMAS Y NADIE DECÍA NADA?"
-tags: ["Barberena", "Rubelio Recinos", "Obras públicas", "Opinión local"]
+tags: ["Rubelio Recinos", "Política local", "Obras públicas"]
 ---
 ¿ES JUSTO RECLAMAR AHORA O ANTES TAMBIÉN HABÍA PROBLEMAS Y NADIE DECÍA NADA?
 

@@ -3,13 +3,13 @@ title: "La Muni invirtió en pintura para la Pila 5 Calles"
 slug: "la-muni-invirtio-en-pintura-para-la-pila-5-calles"
 date: "2026-09-17T18:11:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "barberena"
 image: "https://img.barberenamimunicipio.top/1000041136.jpg"
 video_url: null
 featured: true
 published: true
 excerpt: "Según orden de compra No. 53433920, publicada en Guatecompras el 10 de septiembre de 2026, la Muni pagó Q3,740.00 a Distribuidora de Materiales La Pintura, Limitada, por pintura para el mantenimiento de la Pila 5 Calles, casco urbano de Barberena."
-tags: ["Patrimonio", "Historia local", "Mantenimiento", "Barberena", "Obras públicas", "Municipalidad"]
+tags: ["Guatecompras", "Transparencia", "FiscalizaciÃ³n ciudadana", "Municipalidad de Barberena"]
 ---
 Según orden de compra No. 53433920, publicada en Guatecompras el 10 de septiembre de 2026, la Muni pagó Q3,740.00 a Distribuidora de Materiales La Pintura, Limitada, por pintura para el mantenimiento de la Pila 5 Calles, casco urbano de Barberena.
 

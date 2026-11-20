@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El sargento Vallejo inauguró la señalización en el pozo colapsado, en el sector de la panadería La Dulce Abuelita. Esta acción es clave para la seguridad de peatones y conductores; ojalá no sea algo temporal y se mantenga hasta que…"
-tags: ["Barberena", "Agua potable", "Gobierno municipal", "Seguridad"]
+tags: ["Obras públicas", "Seguridad", "Servicios municipales"]
 ---
 El sargento Vallejo inauguró la señalización en el pozo colapsado, en el sector de la panadería La Dulce Abuelita. Esta acción es clave para la seguridad de peatones y conductores; ojalá no sea algo temporal y se mantenga hasta que finalicen los trabajos.
 

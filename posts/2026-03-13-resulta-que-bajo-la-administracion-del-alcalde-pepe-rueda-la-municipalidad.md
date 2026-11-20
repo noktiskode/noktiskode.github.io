@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Resulta que bajo la administración del Alcalde Pepe Rueda, la Municipalidad de Barberena compró 500 chuchitos a Q6.00 cada uno para el Día de la Mujer. Estamos de acuerdo: para la mujer, lo mejor; pero tampoco es de pasarse de…"
-tags: ["Fiscalización Ciudadana", "Barberena", "Pepe Rueda", "Santa Rosa", "Municipalidad", "Gobierno municipal"]
+tags: ["Pepe Rueda", "Fiscalización ciudadana", "Transparencia", "Municipalidad de Barberena"]
 ---
 Resulta que bajo la administración del Alcalde Pepe Rueda, la Municipalidad de Barberena compró 500 chuchitos a Q6.00 cada uno para el Día de la Mujer. Estamos de acuerdo: para la mujer, lo mejor; pero tampoco es de pasarse de "generosos" con el pisto del pueblo.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hace aproximadamente dos meses, durante una transmisión en vivo, le preguntaron al alcalde PP si él era «Pistolita», un apodo o broma que el tío Rube menciona en sus videos."
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Jubilación", "Rubelio Recinos", "Exalcalde"]
+tags: ["Rubelio Recinos", "Pepe Rueda", "Transparencia", "Municipalidad de Barberena"]
 ---
 Hace aproximadamente dos meses, durante una transmisión en vivo, le preguntaron al alcalde PP si él era «Pistolita», un apodo o broma que el tío Rube menciona en sus videos.
 

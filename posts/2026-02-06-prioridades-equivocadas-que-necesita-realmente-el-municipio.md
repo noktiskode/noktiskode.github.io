@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PRIORIDADES EQUIVOCADAS: ¿QUÉ NECESITA REALMENTE EL MUNICIPIO?"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua Potable", "Infraestructura", "Clientelismo"]
+tags: ["Agua potable", "Obras pÃºblicas", "FiscalizaciÃ³n ciudadana", "El Cerinal", "Municipalidad de Barberena"]
 ---
 PRIORIDADES EQUIVOCADAS: ¿QUÉ NECESITA REALMENTE EL MUNICIPIO?
 

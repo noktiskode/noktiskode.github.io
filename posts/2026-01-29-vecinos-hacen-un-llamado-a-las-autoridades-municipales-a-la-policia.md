@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos hacen un llamado a las autoridades municipales, a la Policía Nacional Civil, Policía Municipal y PMT, para que actúen ante varios jóvenes que utilizan la calle principal de Utzumazate como si fuera una autopista."
-tags: ["Barberena", "Utzumazate", "PMT", "PNC", "Policia Municipal", "Seguridad Vial"]
+tags: ["Utzumazate", "PMT", "Seguridad", "Transporte", "Denuncia ciudadana"]
 ---
 Vecinos hacen un llamado a las autoridades municipales, a la Policía Nacional Civil, Policía Municipal y PMT, para que actúen ante varios jóvenes que utilizan la calle principal de Utzumazate como si fuera una autopista.
 

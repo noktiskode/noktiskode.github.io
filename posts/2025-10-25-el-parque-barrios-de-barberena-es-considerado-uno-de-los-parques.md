@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El Parque Barrios de Barberena es considerado uno de los parques más antiguos de Santa Rosa, Guatemala. Acompáñanos en este recorrido especial para conocer un poco la historia y la belleza de este icónico lugar."
-tags: ["Parque Barrios", "Barberena", "Santa Rosa", "Guatemala", "Turismo GT", "Parques Antiguos GT"]
+tags: ["Parque Barrios", "Historia local", "Cultura y tradiciones"]
 ---
 El Parque Barrios de Barberena es considerado uno de los parques más antiguos de Santa Rosa, Guatemala. Acompáñanos en este recorrido especial para conocer un poco la historia y la belleza de este icónico lugar.
 

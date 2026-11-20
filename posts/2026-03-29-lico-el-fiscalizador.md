@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Lico \"El Fiscalizador\""
-tags: ["Barberena", "La Ladrillera", "Lico Cruz", "Agua potable", "Obras públicas"]
+tags: ["La Ladrillera", "Obras públicas", "Fiscalización ciudadana", "Política local", "Lico Cruz"]
 ---
 Lico "El Fiscalizador"
 

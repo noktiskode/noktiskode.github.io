@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Convenio para mejorar calle en El Cerinal"
-tags: ["Barberena", "El Cerinal", "Pepe Rueda", "Municipalidad", "Obras Públicas"]
+tags: ["Obras pĂºblicas", "CODEDE", "El Cerinal", "Pepe Rueda"]
 ---
 El Consejo Departamental de Desarrollo (Codede) de Santa Rosa continúa con la firma de convenios de proyectos extraordinarios, en esta ocasión para el municipio de Barberena.
 

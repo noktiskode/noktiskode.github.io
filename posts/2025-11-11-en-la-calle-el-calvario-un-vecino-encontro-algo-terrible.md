@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados.\n  Colocó un rótulo para advertir a todos... pero alguien lo arrancó.\n¿Quién está haciendo esto? ¿Y por qué?"
-tags: ["Barberena Mi Municipio", "El Cerinal", "Barberena", "Santa Rosa", "animalrescue", "Obras públicas"]
+tags: ["Denuncia ciudadana", "Seguridad", "Servicios municipales", "Bienestar animal"]
 ---
 En la calle El Calvario, un vecino encontró algo terrible: perros y gatos estaban siendo envenenados.
   Colocó un rótulo para advertir a todos... pero alguien lo arrancó.

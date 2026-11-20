@@ -3,13 +3,13 @@ title: "Tanta calidad en una sola foto"
 slug: "tanta-calidad-en-una-sola-foto"
 date: "2026-06-07T18:39:46.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122218751672318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "TANTA CALIDAD EN UNA SOLA FOTO\nEn la imagen: la futura presidenta de Guatemala, el mejor diputado de Santa Rosa y el mejor alcalde de Barberena."
-tags: ["Barberena", "Santa Rosa", "UNE", "Guatemala", "Política", "Barberena Mi Municipio"]
+tags: ["Sátira política", "Política nacional", "Elecciones 2027"]
 ---
 TANTA CALIDAD EN UNA SOLA FOTO
 En la imagen: la futura presidenta de Guatemala, el mejor diputado de Santa Rosa y el mejor alcalde de Barberena.

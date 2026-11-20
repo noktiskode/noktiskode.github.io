@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS!"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Auditoria Social", "Guatecompras", "Obras públicas"]
+tags: ["El Cerinal", "Obras públicas", "Guatecompras", "Fiscalización ciudadana", "Transparencia"]
 ---
 ¡SE LES ACABÓ EL TIEMPO Y LA CALLE SIGUE A MEDIAS!
 

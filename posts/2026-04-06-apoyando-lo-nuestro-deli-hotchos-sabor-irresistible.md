@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡APOYANDO LO NUESTRO!"
-tags: ["El Cerinal", "Antojitos", "comidacallejera", "Santa Rosa", "apoyolocal", "emprendimiento"]
+tags: ["Mercado y comercio", "El Cerinal"]
 ---
 ¡APOYANDO LO NUESTRO!
 

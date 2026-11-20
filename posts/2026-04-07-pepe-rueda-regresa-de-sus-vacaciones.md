@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA REGRESA DE SUS VACACIONES"
-tags: ["La Ladrillera", "El Boqueron", "Barberena", "Santa Rosa", "El Cerinal", "Guatemala"]
+tags: ["Pepe Rueda", "CODEDE", "La Ladrillera", "El Boquerón", "Elecciones 2027"]
 ---
 PEPE RUEDA REGRESA DE SUS VACACIONES
 

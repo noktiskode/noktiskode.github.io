@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Cobro autorizado o improvisado?"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Municipalidad"]
+tags: ["Mercado y comercio", "Denuncia ciudadana", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 ¿Cobro autorizado o improvisado?
 

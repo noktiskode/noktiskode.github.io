@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿CÓMO VA EL CHANCE EN LOS HORNITOS?"
-tags: ["Barberena", "Guatecompras", "Santa Rosa", "Los Hornitos", "CODEDE", "Obras públicas"]
+tags: ["Los Hornitos", "CODEDE", "Obras públicas", "Guatecompras", "Transparencia"]
 ---
 ¿CÓMO VA EL CHANCE EN LOS HORNITOS?
 

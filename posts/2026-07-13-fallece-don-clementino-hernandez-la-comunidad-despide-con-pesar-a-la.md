@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE CON PESAR A LA PAREJA DE ESPOSOS"
-tags: ["Barberena", "Santa Rosa", "Nota De Duelo", "Municipalidad", "Comunidad"]
+tags: ["Seguridad", "Cuilapa"]
 ---
 FALLECE DON CLEMENTINO HERNÁNDEZ; LA COMUNIDAD DESPIDE CON PESAR A LA PAREJA DE ESPOSOS
 

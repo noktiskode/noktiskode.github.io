@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Me parece poco acertado que el alcalde de Barberena afirme públicamente que los diputados por el departamento de Santa Rosa están trabajando y gestionando, cuando esa percepción no coincide con la realidad que vive la población."
-tags: ["Barberena", "Santa Rosa", "Municipalidad", "Gobierno municipal", "Política nacional", "Transparencia"]
+tags: ["Pepe Rueda", "Congreso de Guatemala", "PolĂ­tica local", "FiscalizaciĂ³n ciudadana"]
 ---
 Me parece poco acertado que el alcalde de Barberena afirme públicamente que los diputados por el departamento de Santa Rosa están trabajando y gestionando, cuando esa percepción no coincide con la realidad que vive la población.
 

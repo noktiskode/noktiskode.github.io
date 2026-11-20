@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL CERINAL: BENEFICIOS Y DESAFÍOS DE CONVERTIRSE EN MUNICIPIO"
-tags: ["Barberena", "El Cerinal", "Agua potable", "Municipalidad", "Seguridad", "Servicios municipales"]
+tags: ["El Cerinal", "PolÃ­tica local", "Servicios municipales"]
 ---
 EL CERINAL: BENEFICIOS Y DESAFÍOS DE CONVERTIRSE EN MUNICIPIO
 

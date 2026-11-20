@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Avanzan trabajos de nueva red de distribución de agua en La Cuadra, El Cerinal"
-tags: ["El Cerinal", "La Cuadra", "Municipalidad", "Obras Públicas", "Agua Potable", "Barberena"]
+tags: ["Agua potable", "Obras pÃºblicas", "El Cerinal", "Monterroso", "Municipalidad de Barberena"]
 ---
 La página de la Munibarbe transmitió en vivo el avance de los trabajos de una nueva red de distribución de agua en el sector de La Cuadra, en la aldea El Cerinal. La obra se conectaría con el pozo de la aldea Monterroso, que según se comentó, cuenta con un tanque elevado para almacenar el agua.
 

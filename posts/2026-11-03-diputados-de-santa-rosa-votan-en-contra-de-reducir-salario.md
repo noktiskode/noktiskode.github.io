@@ -3,13 +3,13 @@ title: "Los tres diputados de Santa Rosa votaron en contra de la enmienda para r
 slug: "diputados-de-santa-rosa-votan-en-contra-de-reducir-salario"
 date: "2026-11-03T16:00:00.000Z"
 updated_at: "2026-11-04T01:23:39.478Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/1793754983075-meyjsd.webp"
 video_url: null
 featured: true
 published: true
 excerpt: "Diputados de Santa Rosa votan en contra de reducir su salario"
-tags: ["Santa Rosa", "Diputados de Santa Rosa", "Congreso de Guatemala", "Inés Castillo", "Napo Rojas", "Ricardo Alarcón"]
+tags: ["Napo Rojas", "InĂ©s Castillo", "Ricardo AlarcĂ³n", "Congreso de Guatemala", "Elecciones 2027"]
 ---
 Sesión Ordinaria 56 del 3 de noviembre de 2026.
 

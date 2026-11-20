@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Alguna vez lo han llamado para elegir a los representantes de su COCODE? Quiero leerlos."
-tags: ["Barberena", "Santa Rosa", "COCODE", "Comunidad", "Participación", "Municipalidad"]
+tags: ["COCODE", "FiscalizaciÃ³n ciudadana", "Transparencia"]
 ---
 ¿Alguna vez lo han llamado para elegir a los representantes de su COCODE? Quiero leerlos.
 

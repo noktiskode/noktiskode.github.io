@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Muni dio inicio a la obra Mejoramiento Calle de Ingreso Sector Medio Beso, Aldea El Colorado, Barberena, registrada con el SNIP 356376 y el NOG 29909473. Durante el acto con vecinos, el alcalde explicó que el proyecto incluye pavimentación,…"
-tags: ["Medio Beso", "Aldea El Colorado", "Barberena", "Santa Rosa", "ObraPública", "Pavimentación", "CODEDE", "SNIP 356376", "NOG 29909473"]
+tags: ["Obras pÃºblicas", "CODEDE", "Guatecompras", "Pepe Rueda"]
 ---
 La Muni dio inicio a la obra Mejoramiento Calle de Ingreso Sector Medio Beso, Aldea El Colorado, Barberena, registrada con el SNIP 356376 y el NOG 29909473. Durante el acto con vecinos, el alcalde explicó que el proyecto incluye pavimentación, y que "va a haber una cuneta en L, va a haber bordillo". La obra, de 252 metros lineales, está a cargo de Constructora Herall.
 

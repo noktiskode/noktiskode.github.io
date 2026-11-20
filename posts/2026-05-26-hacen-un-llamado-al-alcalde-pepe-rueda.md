@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "HACEN UN LLAMADO AL ALCALDE PEPE RUEDA"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Pepe Rueda", "Obras públicas", "Gobierno municipal"]
+tags: ["El Boquerón", "Pepe Rueda", "Denuncia ciudadana", "Obras públicas"]
 ---
 HACEN UN LLAMADO AL ALCALDE PEPE RUEDA
 

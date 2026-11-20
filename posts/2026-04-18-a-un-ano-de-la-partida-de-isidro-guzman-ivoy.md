@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "A un año de su partida, recordamos con cariño a:"
-tags: ["Obras públicas", "Comunidad"]
+tags: ["Cultura y tradiciones"]
 ---
 A un año de su partida, recordamos con cariño a:
 

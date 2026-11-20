@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del sector Los Chepitos, en El Cerinal, un tramo que por años se volvía intransitable en época…"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Pepe Rueda", "Agua potable"]
+tags: ["Pepe Rueda", "El Cerinal", "Obras pĂºblicas", "Agua potable", "COCODE"]
 ---
 La Municipalidad de Barberena, a través del alcalde Pepe Rueda Vallejo y el Concejo Municipal, entregó este día la pavimentación de la calle del sector Los Chepitos, en El Cerinal, un tramo que por años se volvía intransitable en época de invierno.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN EL CERINAL"
-tags: ["SUPUESTO", "El Cerinal", "Barberena", "Santa Rosa", "Denuncia", "Cementerio"]
+tags: ["El Cerinal", "Cultura y tradiciones"]
 ---
 ACTO DE BRUJERÍA EN TUMBA GENERA INDIGNACIÓN EN EL CERINAL
 

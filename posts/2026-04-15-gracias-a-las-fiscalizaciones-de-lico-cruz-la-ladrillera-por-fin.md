@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "GRACIAS A LAS FISCALIZACIONES DE LICO CRUZ, LA LADRILLERA POR FIN ES PAVIMENTADA"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "CODEDE", "La Ladrillera", "Lico Cruz"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "FiscalizaciÃ³n ciudadana", "PolÃ­tica local", "Lico Cruz"]
 ---
 GRACIAS A LAS FISCALIZACIONES DE LICO CRUZ, LA LADRILLERA POR FIN ES PAVIMENTADA
 

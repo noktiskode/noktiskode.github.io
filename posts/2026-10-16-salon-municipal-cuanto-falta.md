@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad compartió avances del Salón Municipal y el alcalde expresó: \"Sigamos adelante que en unos días, primeramente Dios, este proyecto va a ser entregado a nuestros vecinos\"."
-tags: ["Barberena", "Santa Rosa", "SISCODE", "CODEDE", "Guatecompras", "Obras Públicas", "Salón Municipal", "Barrio El Tanque"]
+tags: ["Obras pÃºblicas", "CODEDE", "Transparencia", "FiscalizaciÃ³n ciudadana", "Pepe Rueda"]
 ---
 La Municipalidad compartió avances del Salón Municipal y el alcalde expresó: "Sigamos adelante que en unos días, primeramente Dios, este proyecto va a ser entregado a nuestros vecinos".
 

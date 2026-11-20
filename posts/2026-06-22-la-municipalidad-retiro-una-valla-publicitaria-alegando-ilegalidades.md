@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Municipalidad retiró una valla publicitaria alegando ilegalidades. La reacción: \"TIENEN MIEDO DE QUE PONGAN PUBLICIDAD DE OTRO PARTIDO POLÍTICO.\""
-tags: ["Barberena", "Santa Rosa", "Municipalidad"]
+tags: ["Municipalidad de Barberena", "Política local", "Elecciones 2027", "Denuncia ciudadana"]
 ---
 La Municipalidad retiró una valla publicitaria alegando ilegalidades. La reacción: "TIENEN MIEDO DE QUE PONGAN PUBLICIDAD DE OTRO PARTIDO POLÍTICO."
 

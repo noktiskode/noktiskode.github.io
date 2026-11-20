@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Municipalidad informó sobre entrega de adoquinamiento en El Junquillo..."
-tags: ["El Junquillo", "Barberena", "Santa Rosa", "Obras Públicas", "Inauguración"]
+tags: ["El Junquillo", "Obras pÃºblicas", "Municipalidad de Barberena"]
 ---
 La Municipalidad de Barberena informó sobre la entrega del proyecto de adoquinamiento del Callejón San Antonio, ubicado en Aldea El Junquillo.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINOS SOLICITAN EL APOYO DEL ALCALDE"
-tags: ["Barberena", "El Pino", "Santa Rosa", "Pepe Rueda", "Agua potable", "Obras públicas"]
+tags: ["El Pino", "Pepe Rueda", "Denuncia ciudadana", "Servicios municipales", "Obras públicas"]
 ---
 VECINOS SOLICITAN EL APOYO DEL ALCALDE
 

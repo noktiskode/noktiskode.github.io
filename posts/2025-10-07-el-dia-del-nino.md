@@ -3,13 +3,13 @@ title: "El día del niño"
 slug: "el-dia-del-nino"
 date: "2025-10-07T01:41:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1790806453166-wvit9k.webp"
 video_url: "https://www.facebook.com/reel/4265010970422624/"
 featured: false
 published: true
 excerpt: "El día del niño, el día más incómodo..."
-tags: ["Barberena", "Santa Rosa", "Día del Niño", "Municipalidad", "Gobierno municipal"]
+tags: ["Pepe Rueda", "PolĂ­tica local", "Municipalidad de Barberena"]
 ---
 Si bien, el alcalde no tenía ninguna obligación de celebrar el día del niño,  también nos queda claro que lo hicieron de manera incorrecta, el vídeo es corto, pero provoca bastante incomodidad.
 

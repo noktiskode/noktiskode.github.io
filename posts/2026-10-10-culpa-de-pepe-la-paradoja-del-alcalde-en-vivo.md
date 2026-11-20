@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1147047577663329/"
 featured: false
 published: true
 excerpt: "En la inauguración de la Calle sector La Joyita, en El Junquillo, el alcalde se quejó de que le echan la culpa de todo..."
-tags: ["El Junquillo", "Barberena", "Santa Rosa", "Política Local", "Sátira Política", "Opinión"]
+tags: ["Pepe Rueda", "El Junquillo", "SÃ¡tira polÃ­tica", "PolÃ­tica local"]
 ---
 En la inauguración de la Calle sector La Joyita, en El Junquillo, el alcalde se quejó de que le echan la culpa de todo y hasta puso ejemplos:
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "FALTA DE AGUA EN EL CERINAL"
-tags: ["Barberena", "El Cerinal", "Agua potable", "Obras públicas"]
+tags: ["El Cerinal", "Agua potable", "Denuncia ciudadana", "Municipalidad de Barberena"]
 ---
 FALTA DE AGUA EN EL CERINAL
 

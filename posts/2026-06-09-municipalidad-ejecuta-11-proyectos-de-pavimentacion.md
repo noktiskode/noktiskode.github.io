@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MUNICIPALIDAD EJECUTA 11 PROYECTOS DE PAVIMENTACIÓN"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Municipalidad", "Comunidad"]
+tags: ["El Cerinal", "Obras públicas", "Municipalidad de Barberena"]
 ---
 MUNICIPALIDAD EJECUTA 11 PROYECTOS DE PAVIMENTACIÓN
 

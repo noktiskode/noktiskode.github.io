@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "UTZUMAZATE LE MANDA UN MENSAJE CLARO AL ALCALDE"
-tags: ["Barberena", "Utzumazate", "Jorge Cruz", "Santa Rosa", "Pepe Rueda", "Obras públicas"]
+tags: ["Utzumazate", "Pepe Rueda", "Jorge Cruz", "Denuncia ciudadana", "Obras públicas"]
 ---
 UTZUMAZATE LE MANDA UN MENSAJE CLARO AL ALCALDE
 

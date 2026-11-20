@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hoy la Muni le echó la mano a la Escuela de Párvulos de El Cerinal con el servicio de pipas, llevándoles agua para que el centro se mantenga limpio y en condiciones."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Agua potable", "Monterroso", "Municipalidad"]
+tags: ["El Cerinal", "Agua potable", "COCODE", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 Hoy la Muni le echó la mano a la Escuela de Párvulos de El Cerinal con el servicio de pipas, llevándoles agua para que el centro se mantenga limpio y en condiciones.
 

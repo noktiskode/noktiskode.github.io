@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN ARIMANY"
-tags: ["Barberena", "Arimany", "El Cerinal", "Santa Rosa", "Rubelio Recinos", "Municipalidad"]
+tags: ["Rubelio Recinos", "Ayuda social", "Elecciones 2027", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS REALIZA ENTREGA DE VERDURAS EN ARIMANY
 

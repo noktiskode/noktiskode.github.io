@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El caso de Ricardo Alarcón"
-tags: ["Ricardo Alarcon", "Barberena", "El Cerinal", "Santa Rosa", "CongresoGT", "VAMOS"]
+tags: ["Ricardo Alarcón", "Napo Rojas", "Congreso de Guatemala", "CODEDE", "Fiscalización ciudadana"]
 ---
 Si buscás el nombre de Ricardo Martínez Alarcón (VAMOS) en la agenda de grandes transformaciones para Guatemala en este 2025, probablemente te quedés esperando.
 Pero si lo buscás en los jaripeos y ferias de Santa Rosa, ahí siempre está en primera fila.

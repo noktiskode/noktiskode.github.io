@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿QUÉ ESTÁ PASANDO CON LOS COCODES?"
-tags: ["Barberena", "Buena Vista", "Bijagüez", "El Junquillo", "El Cerinal", "Santa Rosa"]
+tags: ["COCODE", "Buena Vista", "Bijagues", "El Junquillo", "El Cerinal"]
 ---
 ¿QUÉ ESTÁ PASANDO CON LOS COCODES?
 

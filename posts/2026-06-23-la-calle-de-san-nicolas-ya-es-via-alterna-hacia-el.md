@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LA CALLE DE SAN NICOLÁS YA ES VÍA ALTERNA HACIA EL CERINAL, EL CASCO URBANO Y FRAIJANES"
-tags: ["Barberena", "sannicolas", "Santa Rosa", "El Cerinal", "Fraijanes", "cascourbano"]
+tags: ["San Nicolás", "Obras públicas", "Guatecompras", "Transporte"]
 ---
 LA CALLE DE SAN NICOLÁS YA ES VÍA ALTERNA HACIA EL CERINAL, EL CASCO URBANO Y FRAIJANES
 

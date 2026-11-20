@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Tiene razón quien hizo esto, pero la multa está muy elevada, ¿no?"
-tags: ["Barberena", "Obras públicas"]
+tags: ["Mercado y comercio", "Servicios municipales"]
 ---
 Tiene razón quien hizo esto, pero la multa está muy elevada, ¿no?
 

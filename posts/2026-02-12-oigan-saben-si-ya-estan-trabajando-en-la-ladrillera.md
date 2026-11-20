@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Oigan, ¿saben si ya están trabajando en La Ladrillera?"
-tags: ["Barberena", "Santa Rosa", "La Ladrillera", "Fiscalización Ciudadana", "Obras públicas"]
+tags: ["La Ladrillera", "Obras públicas", "Fiscalización ciudadana", "Transparencia"]
 ---
 Oigan, ¿saben si ya están trabajando en La Ladrillera?
 

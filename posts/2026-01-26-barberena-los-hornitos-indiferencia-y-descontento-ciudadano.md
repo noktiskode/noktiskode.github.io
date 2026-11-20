@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Los Hornitos: indiferencia y descontento ciudadano"
-tags: ["Barberena", "Los Hornitos", "Opinión Ciudadana", "Gestión Municipal", "Santa Rosa", "Malestar Vecinal"]
+tags: ["Los Hornitos", "Pepe Rueda", "PolÃ­tica local", "Denuncia ciudadana"]
 ---
 BARBERENA  Los Hornitos: indiferencia y descontento ciudadano
 

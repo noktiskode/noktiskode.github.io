@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos denuncia deterioro en instituto de El Junquillo"
-tags: ["Barberena", "El Junquillo", "Rubelio Recinos", "Educación", "Municipalidad", "Mineduc"]
+tags: ["Rubelio Recinos", "El Junquillo", "EducaciĂ³n", "Denuncia ciudadana"]
 ---
 Rubelio Recinos Corea publicó en Facebook un video grabado en el instituto de la aldea El Junquillo, donde, según indicó, se encontraba para mostrar el estado de varias áreas del edificio. "¿Estas son las condiciones en las que queremos que estudien nuestros hijos?", escribió Recinos en su publicación. En el video, dijo: "Nuestros jóvenes necesitan espacios dignos para poder estudiar, porque invertir en educación no es un lujo, es una responsabilidad."
 

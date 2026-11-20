@@ -3,13 +3,13 @@ title: "¿Es Rubelio Recinos el amigo del pueblo?"
 slug: "es-rubelio-recinos-el-amigo-del-pueblo"
 date: "2026-06-01T23:10:04.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "¿ES RUBELIO RECINOS EL AMIGO DEL PUEBLO?"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Política local", "Sátira política"]
 ---
 ¿ES RUBELIO RECINOS EL AMIGO DEL PUEBLO?
 

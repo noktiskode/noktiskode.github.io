@@ -9,6 +9,6 @@ video_url: "https://www.facebook.com/reel/24329842333379141/"
 featured: false
 published: true
 excerpt: "Parque Barrios de Barberena"
-tags: ["Barberena", "Santa Rosa", "Parque Barrios", "Historia local", "Orgullo Tishudo"]
+tags: ["Parque Barrios", "Cultura y tradiciones"]
 ---
 Parque Barrios de Barberena

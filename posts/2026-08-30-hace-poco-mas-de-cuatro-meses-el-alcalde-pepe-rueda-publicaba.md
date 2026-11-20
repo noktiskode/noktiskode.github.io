@@ -3,13 +3,13 @@ title: "Hace poco más de cuatro meses, el alcalde Pepe Rueda publicaba una indi
 slug: "hace-poco-mas-de-cuatro-meses-el-alcalde-pepe-rueda-publicaba"
 date: "2026-08-30T09:04:40.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122226900410318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Hace poco más de cuatro meses, el alcalde Pepe Rueda publicaba una indirecta con tono de reproche hacia el padre Justo Rufino, párroco de El Cerinal, tras una comida — quejándose de que \"cuando están recibiendo hasta nos invitan a…"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Elecciones 2027", "Reconciliaciones", "Guatemala"]
+tags: ["Pepe Rueda", "El Cerinal", "PolĂ­tica local", "Elecciones 2027"]
 ---
 Hace poco más de cuatro meses, el alcalde Pepe Rueda publicaba una indirecta con tono de reproche hacia el padre Justo Rufino, párroco de El Cerinal, tras una comida — quejándose de que "cuando están recibiendo hasta nos invitan a comer", en un tono que no sonaba del todo a paz hecha.
 

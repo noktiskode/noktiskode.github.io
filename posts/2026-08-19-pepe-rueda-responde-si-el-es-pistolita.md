@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "PEPE RUEDA RESPONDE SI ÉL ES \"PISTOLITA\""
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Barberena Mi Municipio", "Rubelio Recinos", "Pepe Rueda"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "PolĂ­tica local", "Elecciones 2027", "SĂ¡tira polĂ­tica"]
 ---
 PEPE RUEDA RESPONDE SI ÉL ES "PISTOLITA"
 

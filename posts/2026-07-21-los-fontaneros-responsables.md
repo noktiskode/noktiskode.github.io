@@ -3,13 +3,13 @@ title: "Los fontaneros responsables"
 slug: "los-fontaneros-responsables"
 date: "2026-07-21T22:09:27.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122222943260318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LOS FONTANEROS RESPONSABLES"
-tags: ["Barberena", "Santa Rosa", "Agua potable"]
+tags: ["Servicios municipales", "Agua potable", "SĂ¡tira polĂ­tica"]
 ---
 LOS FONTANEROS RESPONSABLES
 

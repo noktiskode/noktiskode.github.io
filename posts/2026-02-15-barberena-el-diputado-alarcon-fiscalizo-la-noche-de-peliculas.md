@@ -3,13 +3,13 @@ title: "Barberena: el diputado Alarcón fiscalizó la noche de películas"
 slug: "barberena-el-diputado-alarcon-fiscalizo-la-noche-de-peliculas"
 date: "2026-02-15T08:48:19.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122207362976318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Barberena: el diputado Alarcón fiscalizó la noche de películas"
-tags: ["Barberena", "Santa Rosa", "14 Febrero", "Dia De San Valentin", "Noche De Peliculas", "Cine De Parejas"]
+tags: ["Ricardo Alarcón", "Sátira política", "Municipalidad de Barberena"]
 ---
 Barberena: el diputado Alarcón fiscalizó la noche de películas
 

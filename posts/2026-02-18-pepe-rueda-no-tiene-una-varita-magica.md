@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Pepe Rueda “NO TIENE UNA VARITA MÁGICA\""
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Buena Vista", "Utzumazate", "La Ladrillera"]
+tags: ["Pepe Rueda", "Agua potable", "Obras públicas", "Guatecompras", "El Cerinal"]
 ---
 Pepe Rueda “NO TIENE UNA VARITA MÁGICA"
 

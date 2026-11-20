@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos del Barrio El Talpetate denuncian servicio de agua irregular"
-tags: ["Barberena", "El Talpetate", "Municipalidad", "Agua Potable", "Comunidad", "Gobierno Municipal"]
+tags: ["Agua potable", "Denuncia ciudadana", "Municipalidad de Barberena", "Servicios municipales"]
 ---
 Vecinos del Barrio El Talpetate nos hicieron llegar una carta dirigida al alcalde municipal en la que denuncian un servicio de agua potable que describen como irregular. El documento, con fecha del 20 de marzo de 2025 y más de 30 firmas, fue recibido en la municipalidad el 28 de marzo de 2025, según el sello de recepción.
 

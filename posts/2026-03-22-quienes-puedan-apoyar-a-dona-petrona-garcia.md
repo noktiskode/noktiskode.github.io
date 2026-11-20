@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Quienes puedan apoyar a doña Petrona García, una persona buena, humilde y de escasos recursos, serán de gran ayuda en estos momentos tan difíciles. Cada granito de arena cuenta y su solidaridad hará la diferencia. ¡Muchas gracias a todos los…"
-tags: ["Barberena"]
+tags: ["Ayuda social"]
 ---
 Quienes puedan apoyar a doña Petrona García, una persona buena, humilde y de escasos recursos, serán de gran ayuda en estos momentos tan difíciles. Cada granito de arena cuenta y su solidaridad hará la diferencia. ¡Muchas gracias a todos los barberenenses que decidan acompañarla y tenderle una mano!

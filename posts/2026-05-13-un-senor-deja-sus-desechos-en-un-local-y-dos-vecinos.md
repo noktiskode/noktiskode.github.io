@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "UN SEÑOR DEJA SUS DESECHOS EN UN LOCAL... Y DOS VECINOS TERMINAN EMBARRANDO TODO"
-tags: ["VIDEO", "Santa Rosa", "Noticias", "Humor", "Fails", "viral"]
+tags: ["Seguridad"]
 ---
 UN SEÑOR DEJA SUS DESECHOS EN UN LOCAL... Y DOS VECINOS TERMINAN EMBARRANDO TODO
 

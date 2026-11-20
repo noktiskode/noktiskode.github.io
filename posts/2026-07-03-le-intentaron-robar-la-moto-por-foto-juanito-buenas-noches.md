@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "LE INTENTARON ROBAR LA MOTO POR FOTO JUANITO"
-tags: ["El Cerinal", "Barberena", "Santa Rosa"]
+tags: ["Seguridad", "Denuncia ciudadana"]
 ---
 LE INTENTARON ROBAR LA MOTO POR FOTO JUANITO
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Minfin informa traslado de aportes a municipalidades"
-tags: ["Barberena", "Santa Rosa", "Municipalidad", "Minfin", "Transparencia"]
+tags: ["Municipalidad de Barberena", "Transparencia"]
 ---
 El Minfin informó hoy el traslado a las municipalidades de todo el país del aporte constitucional, IVA-PAZ, vehículos y petróleo correspondiente a noviembre de 2026.
 

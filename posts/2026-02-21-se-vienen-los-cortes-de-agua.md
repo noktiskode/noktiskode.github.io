@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "SE VIENEN LOS CORTES DE AGUA"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Agua Potable", "Pepe Rueda", "Municipalidad"]
+tags: ["Agua potable", "El Cerinal", "Pepe Rueda", "Servicios municipales"]
 ---
 SE VIENEN LOS CORTES DE AGUA
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CONTINÚA LA ENTREGA DE FERTILIZANTE"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Transparencia", "Auditoria Social", "Municipalidad"]
+tags: ["Ayuda social", "El Cerinal", "Guatecompras", "Transparencia", "Municipalidad de Barberena"]
 ---
 CONTINÚA LA ENTREGA DE FERTILIZANTE
 

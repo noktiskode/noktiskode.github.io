@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Vecinos de Buena Vista sin transporte interno: su malestar crece"
-tags: ["Barberena", "Santa Rosa", "Denuncia Ciudadana", "Comunidad", "Buena Vista", "Obras públicas"]
+tags: ["Buena Vista", "Transporte", "COCODE", "Denuncia ciudadana"]
 ---
 Vecinos de Buena Vista sin transporte interno: su malestar crece
 

@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Mototaxistas de El Cerinal inconformes por falta de apoyo por parte de la Municipalidad de Barberena."
-tags: ["Comunidad", "Mototaxistas", "Barberena", "El Cerinal", "Municipalidad", "Transporte"]
+tags: ["El Cerinal", "Transporte", "Municipalidad de Barberena"]
 ---
 Mototaxistas de El Cerinal inconformes por falta de apoyo por parte de la Municipalidad de Barberena.

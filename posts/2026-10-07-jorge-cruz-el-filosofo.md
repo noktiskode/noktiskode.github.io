@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El empresario Jorge Cruz, \"El Mojarro\", publicó hoy un video en Facebook donde nos dejó un par de reflexiones muy reflexivas:"
-tags: ["Barberena", "SantaRosaGT", "El Mojarro", "Reflexiones", "Filosofia", "PoliticaGT"]
+tags: ["Jorge Cruz", "SÃ¡tira polÃ­tica", "Elecciones 2027"]
 ---
 El empresario Jorge Cruz, "El Mojarro", publicó hoy un video en Facebook donde nos dejó un par de reflexiones muy reflexivas:
 

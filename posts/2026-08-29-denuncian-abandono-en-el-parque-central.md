@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Denuncian abandono en el parque central"
-tags: ["Barberena", "Parque Barrios", "Santa Rosa", "Tishudos", "barberenenses", "Obras públicas"]
+tags: ["Municipalidad de Barberena", "Servicios municipales", "Denuncia ciudadana"]
 ---
 Denuncian abandono en el parque central
 

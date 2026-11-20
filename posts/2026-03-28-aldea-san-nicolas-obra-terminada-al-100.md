@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100%"
-tags: ["Barberena", "Aldea San Nicolas", "Santa Rosa", "CODEDE", "Gobierno", "Obras públicas"]
+tags: ["San Nicolás", "CODEDE", "Obras públicas", "Pepe Rueda"]
 ---
 ALDEA SAN NICOLÁS: OBRA TERMINADA AL 100%
 

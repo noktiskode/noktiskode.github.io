@@ -3,13 +3,13 @@ title: "¿Te pueden quitar una tumba por no darle mantenimiento?"
 slug: "te-pueden-quitar-una-tumba-por-no-darle-mantenimiento"
 date: "2026-07-08T06:18:03.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "historias"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "¿TE PUEDEN QUITAR UNA TUMBA POR NO DARLE MANTENIMIENTO?"
-tags: ["Barberena", "BMM", "Santa Rosa", "cementerio"]
+tags: ["Cultura y tradiciones", "Servicios municipales"]
 ---
 ¿TE PUEDEN QUITAR UNA TUMBA POR NO DARLE MANTENIMIENTO?
 

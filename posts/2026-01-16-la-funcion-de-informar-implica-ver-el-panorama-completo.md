@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La función de informar implica ver el panorama completo. Aquí los hechos de la gestión actual, para que el análisis sea basado en datos y no en percepciones."
-tags: ["Barberena", "Información Municipal", "Barberena Mi Municipio", "Resumen 20242025", "El Cerinal", "Buena Vista"]
+tags: ["Obras pÃºblicas", "Agua potable", "Servicios municipales", "Municipalidad de Barberena", "El Cerinal"]
 ---
 La función de informar implica ver el panorama completo. Aquí los hechos de la gestión actual, para que el análisis sea basado en datos y no en percepciones.
 

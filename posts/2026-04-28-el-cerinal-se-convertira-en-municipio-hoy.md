@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY?"
-tags: ["iniciativa 5558", "Barberena", "El Cerinal", "Santa Rosa", "Congreso de Guatemala", "Guatecompras"]
+tags: ["El Cerinal", "Congreso de Guatemala", "Guatecompras", "PolÃ­tica local"]
 ---
 ¿EL CERINAL SE CONVERTIRÁ EN MUNICIPIO HOY?
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "INAUGURACIÓN DE CALLE GRAN FAMILIA Y PLATANAR"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obra Publica", "CODEDE", "SCEP"]
+tags: ["Municipalidad de Barberena", "El Cerinal", "Obras pĂºblicas", "Guatecompras", "Transparencia"]
 ---
 INAUGURACIÓN DE CALLE GRAN FAMILIA Y PLATANAR
 

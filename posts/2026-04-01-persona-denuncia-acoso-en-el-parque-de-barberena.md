@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Persona denuncia acoso en el parque de Barberena"
-tags: ["Barberena", "Santa Rosa", "acoso", "Pepe Rueda", "Municipalidad", "Gobierno municipal"]
+tags: ["Seguridad", "Denuncia ciudadana", "Pepe Rueda", "Municipalidad de Barberena"]
 ---
 Persona denuncia acoso en el parque de Barberena
 

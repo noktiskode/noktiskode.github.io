@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Transparencia en el uso de fondos municipales"
-tags: ["Barberena", "Municipalidad", "Contratación pública", "Transparencia"]
+tags: ["Guatecompras", "Transparencia", "Municipalidad de Barberena", "Fiscalización ciudadana"]
 ---
 Transparencia en el uso de fondos municipales
 

@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "No se puede querer el crédito por cada foco que se cambia, cada tapadera que se arregla y cada gestión que se hace."
-tags: ["Barberena", "Santa Rosa", "Alcalde", "Sátira Política", "Política Local", "Opinión"]
+tags: ["Pepe Rueda", "PolÃ­tica local", "SÃ¡tira polÃ­tica"]
 ---
 En Barberena hasta cambiar un foco ya es noticia.
 

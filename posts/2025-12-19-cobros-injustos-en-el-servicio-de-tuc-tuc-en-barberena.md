@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Cobros injustos en el servicio de tuc tuc en Barberena"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Municipalidad", "Transporte"]
+tags: ["Transporte", "Denuncia ciudadana", "Servicios municipales"]
 ---
 Cobros injustos en el servicio de tuc tuc en Barberena
 

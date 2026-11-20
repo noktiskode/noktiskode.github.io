@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"QUE DISFRUTEN MIENTRAS PUEDAN, PORQUE YA NO SERÁN LAS MISMAS AUTORIDADES\""
-tags: ["Barberena", "Las Astas", "El Quebracho", "El Junquillo", "Pepe Rueda"]
+tags: ["Las Astas", "El Quebracho", "El Junquillo", "Pepe Rueda", "Ayuda social"]
 ---
 "QUE DISFRUTEN MIENTRAS PUEDAN, PORQUE YA NO SERÁN LAS MISMAS AUTORIDADES"
 

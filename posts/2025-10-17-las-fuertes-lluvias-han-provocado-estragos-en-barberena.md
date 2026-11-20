@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1344585720728614/"
 featured: false
 published: true
 excerpt: "Las fuertes lluvias han provocado estragos en Barberena. ¿Y los culpables?"
-tags: ["Barberena", "Santa Rosa", "Lluvias", "Drenajes", "Limpieza"]
+tags: ["Servicios municipales", "Obras pĂºblicas"]
 ---
 Los culpables somos nosotros los vecinos por no cuidar las calles y ensuciarlas.
 

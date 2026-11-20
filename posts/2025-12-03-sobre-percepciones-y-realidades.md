@@ -3,13 +3,13 @@ title: "Sobre percepciones... y realidades"
 slug: "sobre-percepciones-y-realidades"
 date: "2025-12-03T02:04:54.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122199767636318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Sobre percepciones... y realidades"
-tags: ["Barberena", "Santa Rosa", "Ciudadanía", "Opinión Pública", "Guatemala", "barberenaopiniones"]
+tags: ["SĂ¡tira polĂ­tica", "Congreso de Guatemala", "FiscalizaciĂ³n ciudadana"]
 ---
 Sobre percepciones... y realidades
 

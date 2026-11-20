@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "BARBERENA  Sector La Cuchilla"
-tags: ["Barberena", "colchones", "Basura En Las Calles", "Obras públicas", "Municipalidad", "Servicios municipales"]
+tags: ["Servicios municipales", "Denuncia ciudadana"]
 ---
 BARBERENA  Sector La Cuchilla
 

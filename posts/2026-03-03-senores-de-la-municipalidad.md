@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "SEÑORES DE LA MUNICIPALIDAD"
-tags: ["Agua Potable", "El Cerinal", "Barberena", "Santa Rosa", "Municipalidad", "Gobierno municipal"]
+tags: ["El Cerinal", "Agua potable", "Municipalidad de Barberena", "Elecciones 2027", "Denuncia ciudadana"]
 ---
 SEÑORES DE LA MUNICIPALIDAD
 

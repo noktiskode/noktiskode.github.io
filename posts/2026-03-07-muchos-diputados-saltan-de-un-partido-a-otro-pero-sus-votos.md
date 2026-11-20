@@ -3,13 +3,13 @@ title: "Muchos diputados saltan de un partido a otro, pero sus votos siempre dej
 slug: "muchos-diputados-saltan-de-un-partido-a-otro-pero-sus-votos"
 date: "2026-03-07T02:39:57.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "Muchos diputados saltan de un partido a otro, pero sus votos siempre dejan huella."
-tags: ["Santa Rosa", "Guatemala", "Congreso de Guatemala", "Elecciones 2027", "Política nacional", "Justicia Ya"]
+tags: ["Inés Castillo", "Napo Rojas", "Ricardo Alarcón", "Congreso de Guatemala", "Elecciones 2027"]
 ---
 Muchos diputados saltan de un partido a otro, pero sus votos siempre dejan huella.
 

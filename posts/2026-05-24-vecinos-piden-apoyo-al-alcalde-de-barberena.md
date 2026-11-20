@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "VECINOS PIDEN APOYO AL ALCALDE DE BARBERENA"
-tags: ["Barberena", "Santa Rosa", "Pepe Rueda", "Obras públicas", "Municipalidad", "Gobierno municipal"]
+tags: ["Denuncia ciudadana", "Servicios municipales", "Pepe Rueda", "Obras públicas"]
 ---
 VECINOS PIDEN APOYO AL ALCALDE DE BARBERENA
 

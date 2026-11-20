@@ -3,13 +3,13 @@ title: "Diputados por Santa Rosa: la verdad que nadie quiere decir"
 slug: "diputados-por-santa-rosa-la-verdad-que-nadie-quiere-decir"
 date: "2025-11-26T22:37:35.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122199119660318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Diputados por Santa Rosa: la verdad que nadie quiere decir"
-tags: ["Salud", "Guatemala", "Salubristas", "facebookpost", "facebookviral", "Barberena Mi Municipio"]
+tags: ["Congreso de Guatemala", "InĂ©s Castillo", "Ricardo AlarcĂ³n", "Napo Rojas", "FiscalizaciĂ³n ciudadana"]
 ---
 Diputados por Santa Rosa: la verdad que nadie quiere decir
 

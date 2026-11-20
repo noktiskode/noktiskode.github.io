@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hechos por esclarecer en Barberena"
-tags: ["Barberena", "Municipalidad", "Gobierno municipal", "Seguridad", "Transparencia"]
+tags: ["Pepe Rueda", "Municipalidad de Barberena", "Seguridad", "Transparencia"]
 ---
 Hechos por esclarecer en Barberena
 

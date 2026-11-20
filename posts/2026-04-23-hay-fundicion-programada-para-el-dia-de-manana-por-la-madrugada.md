@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hay fundición programada para el día de mañana por la madrugada en el sector de la panadería “La Dulce Abuelita”."
-tags: ["Barberena", "Obras públicas"]
+tags: ["Obras pÃºblicas", "La Ladrillera"]
 ---
 Hay fundición programada para el día de mañana por la madrugada en el sector de la panadería “La Dulce Abuelita”.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA"
-tags: ["Buena Vista", "Colellana", "Utzumazate", "Guatecompras", "Barberena", "Santa Rosa"]
+tags: ["Ayuda social", "Guatecompras", "Buena Vista", "Utzumazate", "Transparencia"]
 ---
 INICIAN CON LA ENTREGA DE FERTILIZANTE EN BARBERENA
 

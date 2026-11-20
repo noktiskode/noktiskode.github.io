@@ -3,13 +3,13 @@ title: "La función de un COCODE es identificar las necesidades de la comunidad,
 slug: "la-funcion-de-un-cocode-es-identificar-las-necesidades-de-la"
 date: "2026-07-16T16:07:04.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122222465258318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "La función de un COCODE es identificar las necesidades de la comunidad, proponer soluciones y gestionar proyectos de desarrollo social, económico y cultural ante la municipalidad."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "cocode", "Agua potable", "Obras públicas"]
+tags: ["COCODE", "Servicios municipales", "FiscalizaciĂ³n ciudadana", "PolĂ­tica local"]
 ---
 La función de un COCODE es identificar las necesidades de la comunidad, proponer soluciones y gestionar proyectos de desarrollo social, económico y cultural ante la municipalidad.
 

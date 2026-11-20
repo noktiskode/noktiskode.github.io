@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Queremos comentarles que esta obra no ha sido entregada todavía; aún le faltan cunetas y bordillos. Las planchas que estaban agrietadas ya fueron levantadas y se fundió nuevo pavimento. Los costos los cubrió la empresa constructora y la Municipalidad no…"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Guatemala", "CODEDE", "Agua potable"]
+tags: ["Obras públicas", "CODEDE", "Municipalidad de Barberena"]
 ---
 Queremos comentarles que esta obra no ha sido entregada todavía; aún le faltan cunetas y bordillos. Las planchas que estaban agrietadas ya fueron levantadas y se fundió nuevo pavimento. Los costos los cubrió la empresa constructora y la Municipalidad no va a reconstruir todo desde cero, como se lo han inventado algunos.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "MP recurrirá contra absolución de exdiputada Aracely Chavarría"
-tags: ["Aracely Chavarría", "Santa Rosa", "Justicia", "Diputados", "Corte Suprema", "Ministerio Público"]
+tags: ["PolĂ­tica nacional", "Congreso de Guatemala"]
 ---
 La exdiputada Aracely Chavarría, junto a Ronald Arango y Humberto Leonel Sosa, será objeto de un recurso del MP: pedirá revisar su absolución
 

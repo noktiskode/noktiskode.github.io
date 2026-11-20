@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo."
-tags: ["Barberena Pregunta", "Barberena", "El Cerinal", "Santa Rosa", "Municipalidad", "Opinión local"]
+tags: ["Transparencia", "FiscalizaciĂ³n ciudadana"]
 ---
 La gente tiene duda de si se están usando recursos propios o municipales; creo que sería muy bueno aclararlo.
 

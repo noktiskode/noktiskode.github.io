@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Esta semana varias colonias del municipio —San Antonio, Las Estrellas, entre otras— recibieron abastecimiento de agua por medio de pipas municipales, según publicaciones difundidas en redes sociales."
-tags: ["Barberena", "Santa Rosa", "Agua potable", "Municipalidad"]
+tags: ["Agua potable", "Servicios municipales", "COCODE", "Municipalidad de Barberena"]
 ---
 Esta semana varias colonias del municipio —San Antonio, Las Estrellas, entre otras— recibieron abastecimiento de agua por medio de pipas municipales, según publicaciones difundidas en redes sociales.
 

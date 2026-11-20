@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"¡LO QUE USTEDES TANTO ESTABAN ESPERANDO!\""
-tags: ["Barberena", "Santa Rosa", "Cabal", "Política 2027", "Jorge Cruz", "Política local"]
+tags: ["Jorge Cruz", "Política local", "Elecciones 2027"]
 ---
 "¡LO QUE USTEDES TANTO ESTABAN ESPERANDO!"
 

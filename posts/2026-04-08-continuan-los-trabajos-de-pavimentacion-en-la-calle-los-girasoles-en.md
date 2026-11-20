@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Continúan los trabajos de pavimentación en la calle Los Girasoles , en el sector de Arimany, con la colaboración de la municipalidad de Barberena y los vecinos."
-tags: ["Arimany", "Barberena", "San Jorge", "Obras públicas", "Municipalidad"]
+tags: ["Obras públicas", "Denuncia ciudadana", "Municipalidad de Barberena"]
 ---
 Continúan los trabajos de pavimentación en la calle Los Girasoles , en el sector de Arimany, con la colaboración de la municipalidad de Barberena y los vecinos.
 

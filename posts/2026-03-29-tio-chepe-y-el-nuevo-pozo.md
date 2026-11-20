@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "TÍO CHEPE Y EL NUEVO POZO"
-tags: ["El Cerinal", "La Joya", "Agua potable"]
+tags: ["La Joya", "El Cerinal", "Agua potable", "Obras públicas"]
 ---
 TÍO CHEPE Y EL NUEVO POZO
 

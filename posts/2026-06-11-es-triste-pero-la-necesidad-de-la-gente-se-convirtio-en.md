@@ -3,13 +3,13 @@ title: "Es triste, pero la necesidad de la gente se convirtió en el negocio de 
 slug: "es-triste-pero-la-necesidad-de-la-gente-se-convirtio-en"
 date: "2026-06-11T19:10:56.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "​ES TRISTE, PERO LA NECESIDAD DE LA GENTE SE CONVIRTIÓ EN EL NEGOCIO DE LOS POLÍTICOS, SOBRE TODO AHORA QUE ESTAMOS EN AÑO PREELECTORAL"
-tags: ["Cuilapa", "No ALa Reeleccion", "Politica Ficticia", "No Nos Dejemos Engañar", "Santa Rosa", "Los Esclavos"]
+tags: ["Política local", "Elecciones 2027", "Ayuda social"]
 ---
 ​ES TRISTE, PERO LA NECESIDAD DE LA GENTE SE CONVIRTIÓ EN EL NEGOCIO DE LOS POLÍTICOS, SOBRE TODO AHORA QUE ESTAMOS EN AÑO PREELECTORAL
 

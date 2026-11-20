@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Cómo les está yendo con la entrega de víveres que según dicen los beneficiarios, está siendo coordinada por la Muni y los COCODE?"
-tags: ["Comunidad", "COCODE", "Víveres", "Barberena", "Santa Rosa", "Opiniones"]
+tags: ["Ayuda social", "Municipalidad de Barberena", "COCODE", "FiscalizaciÃ³n ciudadana"]
 ---
 ¿Cómo les está yendo con la entrega de víveres que según dicen los beneficiarios, está siendo coordinada por la Muni y los COCODE?
 

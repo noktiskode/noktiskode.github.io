@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "AGUAS NEGRAS"
-tags: ["El Cerinal", "Barberena", "Agua potable", "Municipalidad", "Saneamiento"]
+tags: ["El Cerinal", "Servicios municipales", "Denuncia ciudadana", "Municipalidad de Barberena"]
 ---
 AGUAS NEGRAS
 

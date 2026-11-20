@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CHULADA DE CALLE EN LOS HORNITOS"
-tags: ["Barberena", "Los Hornitos", "El Cerinal", "CIV", "Santa Rosa", "Noticias"]
+tags: ["Los Hornitos", "Napo Rojas", "Ricardo Alarcón", "Pepe Rueda", "Obras públicas"]
 ---
 CHULADA DE CALLE EN LOS HORNITOS
 

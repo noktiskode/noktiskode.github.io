@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y PLATANAR, ALDEA EL CERINAL"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Obras públicas", "Municipalidad", "Comunidad"]
+tags: ["El Cerinal", "Obras públicas", "Guatecompras", "Municipalidad de Barberena", "Transparencia"]
 ---
 ASÍ QUEDÓ LA CALLE GRAN FAMILIA Y PLATANAR, ALDEA EL CERINAL
 

@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "Así es, amigos: el ex alcalde publicó en sus redes sociales un video en el que cuestiona el estado actual de las instalaciones y critica a las autoridades municipales."
-tags: ["Complejo Polideportivo", "Barberena", "Santa Rosa", "Rubelio Recinos", "Infraestructura Municipal"]
+tags: ["Rubelio Recinos", "Servicios municipales", "PolÃ­tica local"]
 ---
 Así es, amigos: el ex alcalde publicó en sus redes sociales un video en el que cuestiona el estado actual de las instalaciones y critica a las autoridades municipales.
 

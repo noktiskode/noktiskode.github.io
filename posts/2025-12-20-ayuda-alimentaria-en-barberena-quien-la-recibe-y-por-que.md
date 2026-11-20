@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Ayuda alimentaria en Barberena: ¿quién la recibe y por qué?"
-tags: ["Barberena", "Santa Rosa", "Municipalidad", "Elecciones", "Comunidad", "Transparencia"]
+tags: ["Ayuda social", "COCODE", "Transparencia", "Denuncia ciudadana"]
 ---
 Ayuda alimentaria en Barberena: ¿quién la recibe y por qué?
 

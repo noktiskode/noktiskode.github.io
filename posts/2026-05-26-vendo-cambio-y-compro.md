@@ -3,13 +3,13 @@ title: "¡Vendo, cambio Y compro!"
 slug: "vendo-cambio-y-compro"
 date: "2026-05-26T16:00:46.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122217575768318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "¡VENDO, CAMBIO Y COMPRO!"
-tags: ["Barberena", "Humor", "Album Panini", "Política local", "Elecciones", "Guatemala"]
+tags: ["Jorge Cruz", "Pepe Rueda", "Rubelio Recinos", "Sátira política", "Elecciones 2027"]
 ---
 ¡VENDO, CAMBIO Y COMPRO!
 

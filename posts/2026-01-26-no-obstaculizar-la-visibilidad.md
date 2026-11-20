@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NO OBSTACULIZAR LA VISIBILIDAD"
-tags: ["Barberena", "El Cerinal", "Así No Se Puede", "Orden Publico", "Obras públicas", "Municipalidad"]
+tags: ["PMT", "Seguridad", "Mercado y comercio", "Servicios municipales"]
 ---
 NO OBSTACULIZAR LA VISIBILIDAD
 

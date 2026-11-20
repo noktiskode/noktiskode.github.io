@@ -3,13 +3,13 @@ title: "EL poder NO ES vitalicio: Santa Rosa merece alternancia y transparencia"
 slug: "el-poder-no-es-vitalicio-santa-rosa-merece-alternancia-y-transparencia"
 date: "2026-01-23T16:00:31.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122205162542318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "EL PODER NO ES VITALICIO: Santa Rosa merece alternancia y transparencia"
-tags: ["No ALa Reelección", "Alternancia Ya", "Santa Rosa", "El Cerinal", "Transparencia", "Barberena"]
+tags: ["Congreso de Guatemala", "Napo Rojas", "Ricardo AlarcÃ³n", "InÃ©s Castillo", "Elecciones 2027"]
 ---
 EL PODER NO ES VITALICIO: Santa Rosa merece alternancia y transparencia
 

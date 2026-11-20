@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1845337526190681/"
 featured: false
 published: true
 excerpt: "Necesitamos de su ayuda en el callejón \"Los Pineda\"..."
-tags: ["Barberena", "Santa Rosa", "Pepe Rueda", "Obras públicas", "infraestructura"]
+tags: ["Obras pĂºblicas", "Denuncia ciudadana", "Servicios municipales", "Pepe Rueda"]
 ---
 Necesitamos de su ayuda en el callejón "Los Pineda", sufrimos de mucho lodo, aunque sea esas planchas de cemento que va tirar venga a ponerlas aquí, con cemento se va a ver bonito, de esa manera nuestros niños van a la escuela más presentables y sin lodo en sus zapatos, no se mojarian sus pies.
 

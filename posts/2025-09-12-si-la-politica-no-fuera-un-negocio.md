@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "SI LA POLÍTICA NO FUERA UN NEGOCIO"
-tags: ["Municipalidad", "Política local", "Transparencia", "Opinión local"]
+tags: ["PolĂ­tica nacional", "Transparencia"]
 ---
 SI LA POLÍTICA NO FUERA UN NEGOCIO
 

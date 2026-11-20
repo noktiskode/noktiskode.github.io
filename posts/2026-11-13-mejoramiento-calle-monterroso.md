@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Pepe Rueda firma convenio para mejorar calle en Monterroso"
-tags: ["Barberena", "Monterroso", "Pepe Rueda", "Codede", "Obras Públicas", "Santa Rosa"]
+tags: ["Obras pĂºblicas", "CODEDE", "Monterroso", "Pepe Rueda"]
 ---
 El Consejo Departamental de Desarrollo (Codede) de Santa Rosa continúa con la firma de convenios de proyectos extraordinarios, en esta ocasión se trata del proyecto: 
 

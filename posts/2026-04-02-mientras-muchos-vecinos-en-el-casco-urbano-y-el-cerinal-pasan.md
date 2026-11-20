@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Mientras muchos vecinos en el casco urbano y El Cerinal pasan días sin que caiga una gota de agua, la Municipalidad de Barberena acaba de pagar más de un millón y medio de quetzales (Q1,527,525.00) solo por alquilar camiones cisterna."
-tags: ["Guatecompras", "Barberena", "El Cerinal", "Santa Rosa", "Agua potable", "Municipalidad"]
+tags: ["Agua potable", "El Cerinal", "Transparencia", "Fiscalización ciudadana", "Municipalidad de Barberena"]
 ---
 Mientras muchos vecinos en el casco urbano y El Cerinal pasan días sin que caiga una gota de agua, la Municipalidad de Barberena acaba de pagar más de un millón y medio de quetzales (Q1,527,525.00) solo por alquilar camiones cisterna.
 

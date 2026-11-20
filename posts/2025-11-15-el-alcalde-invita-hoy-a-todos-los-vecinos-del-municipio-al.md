@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "El alcalde invita hoy a todos los vecinos del municipio al encendido del árbol navideño y de las luces en el Parque Barrios."
-tags: ["Barberena Mi Municipio", "Barberena", "Santa Rosa", "El Cerinal", "parquebarrios", "Municipalidad"]
+tags: ["Parque Barrios", "Seguridad", "Pepe Rueda", "Cultura y tradiciones"]
 ---
 El alcalde invita hoy a todos los vecinos del municipio al encendido del árbol navideño y de las luces en el Parque Barrios.
 

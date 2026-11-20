@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS"
-tags: ["Barberena", "Santa Rosa", "El Cerinal", "Rubelio Recinos", "Municipalidad", "Comunidad"]
+tags: ["Rubelio Recinos", "Ayuda social", "Elecciones 2027", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS SIGUE ENTREGANDO VERDURAS
 

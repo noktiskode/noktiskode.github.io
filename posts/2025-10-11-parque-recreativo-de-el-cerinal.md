@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1198351185659861/"
 featured: false
 published: true
 excerpt: "Y ahora, un poema..."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Municipalidad", "Obras Públicas", "Parque Recreativo"]
+tags: ["El Cerinal", "Obras pĂºblicas"]
 ---
 Y ahora, un poema.
 

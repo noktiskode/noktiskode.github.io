@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Rubelio Recinos"]
+tags: ["Rubelio Recinos", "Ayuda social", "Elecciones 2027", "PolĂ­tica local"]
 ---
 RUBELIO RECINOS LLEVA MATERIAL DE CONSTRUCCIÓN
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "EL CERINAL  MOLESTIA POR TRABAJOS DETENIDOS EN EL JOCOTE"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Obras públicas", "Agua potable", "Municipalidad"]
+tags: ["El Cerinal", "Agua potable", "Obras públicas", "Denuncia ciudadana"]
 ---
 EL CERINAL  MOLESTIA POR TRABAJOS DETENIDOS EN EL JOCOTE
 

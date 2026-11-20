@@ -3,13 +3,13 @@ title: "Anoche, muy bonito y todo, pero"
 slug: "anoche-muy-bonito-y-todo-pero"
 date: "2026-09-15T17:53:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1000038985.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Esto de las antorchas debería estar regulado, porque cada año es un caos: el bullicio y la contaminación ambiental que dejan a su paso, más aún por las personas que se prestan también a lanzar bolsas de agua, caca, orines…"
-tags: ["Comunidad", "Tradiciones", "Antorchas", "Barberena", "Utzumazate", "Agua potable"]
+tags: ["Cultura y tradiciones", "Elecciones 2027", "Servicios municipales"]
 ---
 Esto de las antorchas debería estar regulado, porque cada año es un caos: el bullicio y la contaminación ambiental que dejan a su paso, más aún por las personas que se prestan también a lanzar bolsas de agua, caca, orines y piedras.
 

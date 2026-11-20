@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/2961564690719627/"
 featured: false
 published: true
 excerpt: "Rubelio Recinos Corea: Un Historial de Cuatro Décadas en Barberena..."
-tags: ["Barberena", "Santa Rosa", "Rubelio Recinos", "Política Local"]
+tags: ["Rubelio Recinos", "Transparencia", "FiscalizaciĂ³n ciudadana", "Municipalidad de Barberena", "PolĂ­tica local"]
 ---
 Rubelio Recinos Corea: Un Historial de Cuatro Décadas en Barberena
 

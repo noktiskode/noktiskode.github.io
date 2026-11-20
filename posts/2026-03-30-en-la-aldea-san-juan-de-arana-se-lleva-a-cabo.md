@@ -3,13 +3,13 @@ title: "En la aldea San Juan de Arana se lleva a cabo hoy el caldo de patas con 
 slug: "en-la-aldea-san-juan-de-arana-se-lleva-a-cabo"
 date: "2026-03-30T18:37:12.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122211554072318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "En la aldea San Juan de Arana se lleva a cabo hoy el caldo de patas con motivo del Día de Verano 2026."
-tags: ["Cuilapa", "Santa Rosa", "Agua potable", "Verano", "Alcaldesa", "Sátira"]
+tags: ["Cuilapa", "Agua potable", "Sátira política"]
 ---
 En la aldea San Juan de Arana se lleva a cabo hoy el caldo de patas con motivo del Día de Verano 2026.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Hoy, a las 2 de la tarde, inauguran la calle que va del Cruce Boquerón al Cruce Mal País y Laguna, en El Cerinal. Son más de 6 millones de quetzales, casi todos del CODEDE."
-tags: ["Barberena", "El Cerinal", "SantaRosaGT", "Obras Públicas", "Inauguración"]
+tags: ["Obras pÃºblicas", "CODEDE", "El Cerinal", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 Hoy, a las 2 de la tarde, inauguran la calle que va del Cruce Boquerón al Cruce Mal País y Laguna, en El Cerinal. Son más de 6 millones de quetzales, casi todos del CODEDE.
 

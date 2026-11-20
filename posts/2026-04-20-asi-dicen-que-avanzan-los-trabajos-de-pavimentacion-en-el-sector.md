@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE PAVIMENTACIÓN EN EL SECTOR DE LA LADRILLERA"
-tags: ["Barberena", "Santa Rosa", "Fiscalización", "Obras públicas", "Guatecompras", "La Ladrillera"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "FiscalizaciÃ³n ciudadana", "Transparencia"]
 ---
 ASÍ DICEN QUE AVANZAN LOS TRABAJOS DE PAVIMENTACIÓN EN EL SECTOR DE LA LADRILLERA
 

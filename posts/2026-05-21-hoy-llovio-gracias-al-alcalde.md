@@ -3,13 +3,13 @@ title: "Hoy llovió gracias al alcalde"
 slug: "hoy-llovio-gracias-al-alcalde"
 date: "2026-05-21T23:57:28.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "HOY LLOVIÓ GRACIAS AL ALCALDE"
-tags: ["Barberena", "Santa Rosa", "Lluvia", "Mercado", "Humor Chapín", "Noticias"]
+tags: ["Pepe Rueda", "Napo Rojas", "Ricardo Alarcón", "Sátira política", "Servicios municipales"]
 ---
 HOY LLOVIÓ GRACIAS AL ALCALDE
 

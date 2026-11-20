@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"Señor alcalde, necesitamos que ponga atención a la situación del agua acá en El Cerinal. Su fontanero no la está enviando con suficiente presión y no está llegando a las viviendas."
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua Potable", "Vecinos Organizados", "Municipalidad"]
+tags: ["El Cerinal", "Agua potable", "Denuncia ciudadana", "Municipalidad de Barberena"]
 ---
 "Señor alcalde, necesitamos que ponga atención a la situación del agua acá en El Cerinal. Su fontanero no la está enviando con suficiente presión y no está llegando a las viviendas.
 

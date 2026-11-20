@@ -3,13 +3,13 @@ title: "Aforo de pozo en el sector Calle Vieja"
 slug: "aforo-de-pozo-en-el-sector-calle-vieja"
 date: "2026-02-20T21:55:23.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: null
 video_url: null
 featured: false
 published: true
 excerpt: "Aforo de pozo en el sector Calle Vieja"
-tags: ["Agua potable", "Obras públicas"]
+tags: ["Agua potable", "Sátira política"]
 ---
 Aforo de pozo en el sector Calle Vieja
 

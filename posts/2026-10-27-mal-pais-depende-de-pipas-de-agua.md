@@ -3,13 +3,13 @@ title: "¡Qué bonito es agradecer lo que debería estar garantizado!"
 slug: "mal-pais-depende-de-pipas-de-agua"
 date: "2026-10-27T21:02:00.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1793135050409-ihihhi.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Mal País depende de pipas de agua pese a abastecer al casco urbano"
-tags: ["Municipalidad De Barberena", "Barberena", "El Cerinal", "Mal País", "Agua Potable", "Gobierno Municipal", "Santa Rosa", "Tu Muni Resuelve"]
+tags: ["Agua potable", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 Por ahí anda circulando en varios grupos una publicación agradeciendo a la Municipalidad de Barberena por llevar una pipa de agua a la aldea Mal País. Un agradecimiento que, por supuesto, parece muy espontáneo y genuino.
 

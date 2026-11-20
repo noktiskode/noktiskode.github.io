@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "JORGE CRUZ LLEGÓ CON MAQUINARIA A EL PINO"
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Jorge Cruz", "Obras públicas"]
+tags: ["Jorge Cruz", "El Pino", "PolĂ­tica local", "Elecciones 2027"]
 ---
 JORGE CRUZ LLEGÓ CON MAQUINARIA A EL PINO
 

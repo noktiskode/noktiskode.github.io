@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Muni firma dos convenios para el mejoramiento de dos calles en la aldea El Cerinal. Así lo informó el alcalde en su cuenta de Facebook, donde habla de \"dos proyectos de pavimentación\" y afirma que el Gobierno Municipal \"sigue…"
-tags: ["Utzumazate", "Monterroso", "El Naranjito", "El Colorado", "El Cerinal", "Barberena", "Santa Rosa", "Obras Públicas"]
+tags: ["Obras pÃºblicas", "CODEDE", "El Cerinal", "Transparencia", "Pepe Rueda"]
 ---
 La Muni firma dos convenios para el mejoramiento de dos calles en la aldea El Cerinal. Así lo informó el alcalde en su cuenta de Facebook, donde habla de "dos proyectos de pavimentación" y afirma que el Gobierno Municipal "sigue demostrando con hechos que sí se puede".
 

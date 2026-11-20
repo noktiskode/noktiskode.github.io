@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "\"La estamos buscando; por favor, tráiganla de regreso o escríbanme al privado.\""
-tags: ["El Cerinal", "Barberena", "SantaRosa", "Guatemala", "Comunidad"]
+tags: ["Seguridad", "Denuncia ciudadana"]
 ---
 "Ayer, frente al Condado Santa Marta, un hombre en una moto se llevó a nuestra perrita. Es muy querida por nosotros, más aún por mi hermanito de 3 años. La estamos buscando; por favor, tráiganla de regreso o escríbanme al privado. Tiene un valor muy especial para nuestra familia. Se dará una recompensa de Q1,000.
 

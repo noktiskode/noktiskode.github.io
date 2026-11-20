@@ -3,13 +3,13 @@ title: "Hoy es el día del albañil, pero"
 slug: "hoy-es-el-dia-del-albanil-pero"
 date: "2026-05-03T19:28:16.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122215032236318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "HOY ES EL DÍA DEL ALBAÑIL, PERO..."
-tags: ["Santa Rosa", "Congreso de Guatemala", "Día del albañil", "Diputados de Santa Rosa", "Guatemala", "Elecciones"]
+tags: ["InÃ©s Castillo", "Napo Rojas", "Ricardo AlarcÃ³n", "Congreso de Guatemala", "SÃ¡tira polÃ­tica"]
 ---
 HOY ES EL DÍA DEL ALBAÑIL, PERO...
 

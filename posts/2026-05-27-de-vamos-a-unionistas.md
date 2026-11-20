@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "De VAMOS a UNIONISTAS"
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Diputados de Santa Rosa", "Elecciones", "Unionistas"]
+tags: ["Napo Rojas", "Ricardo Alarcón", "Pepe Rueda", "Elecciones 2027", "Política local"]
 ---
 De VAMOS a UNIONISTAS
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡BUENAS NOTICIAS!\nLos trabajos municipales en el sector El Jocote, El Cerinal, se han retomado tras dos semanas de espera, tal como lo confirmaron los vecinos."
-tags: ["El Jocote", "El Cerinal", "Santa Rosa", "Obras públicas", "Barberena", "Pepe Rueda"]
+tags: ["El Cerinal", "Agua potable", "Obras públicas", "Pepe Rueda"]
 ---
 ¡BUENAS NOTICIAS!
 Los trabajos municipales en el sector El Jocote, El Cerinal, se han retomado tras dos semanas de espera, tal como lo confirmaron los vecinos.

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡Cuidemos juntos el Parque Barrios!"
-tags: ["Barberena Mi Municipio", "parquebarrios", "Barberena", "Santa Rosa", "parquesantiguosgt", "Guatemala"]
+tags: ["Parque Barrios", "Seguridad", "Servicios municipales", "Pepe Rueda"]
 ---
 ¡Cuidemos juntos el Parque Barrios!
 

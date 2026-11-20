@@ -3,13 +3,13 @@ title: "El año del agua"
 slug: "el-ano-del-agua"
 date: "2026-07-23T17:30:22.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "opiniones"
+category: "barberena"
 image: "https://img.barberenamimunicipio.top/122223123776318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "\"EL AÑO DEL AGUA\""
-tags: ["Barberena", "El Cerinal", "Santa Rosa", "Agua potable", "Buena Vista", "La Joya"]
+tags: ["Agua potable", "Obras pĂºblicas", "La Joya", "Monterroso", "Las Astas"]
 ---
 "EL AÑO DEL AGUA"
 

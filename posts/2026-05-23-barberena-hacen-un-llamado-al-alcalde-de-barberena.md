@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Barberena  HACEN UN LLAMADO AL ALCALDE DE BARBERENA"
-tags: ["Barberena", "Santa Rosa", "Denuncia Ciudadana", "Guatemala", "desarrollo", "Agua potable"]
+tags: ["Denuncia ciudadana", "Servicios municipales", "Municipalidad de Barberena"]
 ---
 Barberena  HACEN UN LLAMADO AL ALCALDE DE BARBERENA
 

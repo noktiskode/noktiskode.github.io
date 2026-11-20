@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Brandon Herrarte y Jorge Cruz en acción"
-tags: ["Barberena", "Santa Rosa", "CABAL", "Jorge Cruz", "Política local"]
+tags: ["Jorge Cruz", "SĂ¡tira polĂ­tica", "Elecciones 2027"]
 ---
 "No todos los superhéroes llevan capa ni tienen superpoderes; algunos simplemente tienen un corazón enorme y ayudan sin esperar nada a cambio."
 

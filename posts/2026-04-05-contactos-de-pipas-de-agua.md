@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Contactos de pipas de agua"
-tags: ["Barberena", "El Cerinal", "Agua potable"]
+tags: ["Agua potable", "Mercado y comercio", "El Cerinal"]
 ---
 Contactos de pipas de agua
 

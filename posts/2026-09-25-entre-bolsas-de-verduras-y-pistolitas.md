@@ -2,14 +2,14 @@
 title: "Entre bolsas de verduras y \"pistolitas\""
 slug: "entre-bolsas-de-verduras-y-pistolitas"
 date: "2026-09-25T21:14:00.000Z"
-updated_at: "2026-10-31T00:28:52.938Z"
+updated_at: "2026-11-19T21:05:01.205Z"
 category: "opiniones"
 image: "https://img.barberenamimunicipio.top/1000046534.webp"
 video_url: null
 featured: false
 published: true
 excerpt: "Rubelio Recinos, \"el amigo de todos\", como le llaman algunas personas, ha estado entregando agua y verduras en estos últimos días. En su más reciente entrega compartió lo siguiente en Facebook:"
-tags: ["Barberena", "Santa Rosa", "Compartiendo", "Amigos", "Rubelio Recinos", "Agua potable"]
+tags: ["Rubelio Recinos", "SÃ¡tira polÃ­tica", "Ayuda social"]
 ---
 Rubelio Recinos, "el amigo de todos", como le llaman algunas personas, ha estado entregando agua y verduras en estos últimos días. En su más reciente entrega compartió lo siguiente en Facebook:
 

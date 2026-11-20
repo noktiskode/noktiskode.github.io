@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "La Muni se gastó la cantidad de Q28,392.00 en shows de drones para Barberena y El Cerinal, esto como parte de la barbefer y cerifer 2026..."
-tags: ["barbefer", "cerifer", "Barberena", "El Cerinal", "Municipalidad", "Historia local"]
+tags: ["Barbefer", "FiscalizaciÃ³n ciudadana", "Transparencia", "Municipalidad de Barberena", "El Cerinal"]
 ---
 La Muni se gastó la cantidad de Q28,392.00 en shows de drones para Barberena y El Cerinal, esto como parte de la barbefer y cerifer 2026...
 

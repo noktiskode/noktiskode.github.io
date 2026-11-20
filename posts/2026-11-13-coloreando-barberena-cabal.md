@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "CABAL Barberena anuncia proximo lanzamiento de video de apertura"
-tags: ["Barberena", "Jorge Cruz", "CABAL Barberena", "El Mojarro", "Santa Rosa", "Coloreando Barberena"]
+tags: ["Jorge Cruz", "Elecciones 2027", "PolĂ­tica local"]
 ---
 El 24 de julio, Jorge Cruz, "El Mojarro", pidió paciencia en un video y aseguró que, "primeramente Dios", empezarían a colorear el municipio a finales de este año. El 10 de noviembre publicamos que algunos vecinos preguntaban cuándo comenzarían.
 

@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Falta de agua afecta a los vecinos de Utzumazate"
-tags: ["Barberena", "Falta De Agua", "Utzumazate", "Comunidad", "Agua potable"]
+tags: ["Utzumazate", "Agua potable", "Servicios municipales", "Denuncia ciudadana"]
 ---
 Falta de agua afecta a los vecinos de Utzumazate
 

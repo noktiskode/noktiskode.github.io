@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Rubelio: ¿Robin Hood o ángel de Dios?"
-tags: ["Auditoría Pendiente", "Dos Milloncitos", "Robin Hood De Barberena", "Rubelio Recinos", "Pepe Rueda", "Municipalidad"]
+tags: ["Rubelio Recinos", "Pepe Rueda", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 Rubelio: ¿Robin Hood o ángel de Dios?
 

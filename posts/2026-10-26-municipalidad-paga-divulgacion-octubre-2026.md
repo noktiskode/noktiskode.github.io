@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Municipalidad de Barberena paga Q11,000 por divulgación en octubre"
-tags: ["Barberena", "Municipalidad", "Guatecompras", "Santa Rosa", "Comunicación institucional"]
+tags: ["Guatecompras", "Municipalidad de Barberena", "Transparencia", "FiscalizaciÃ³n ciudadana"]
 ---
 A Barbe TV Canal 9, Q6,000.00 por "divulgación del apoyo y fomento del deporte en el municipio de Barberena durante el mes de octubre del 2026."
 (NPG E593452488)

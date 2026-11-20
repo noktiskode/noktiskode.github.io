@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "HOY LE QUEREMOS ENCONTRAR DEFECTOS A TODO"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "Municipalidad", "Transporte"]
+tags: ["Mercado y comercio", "Transporte", "Denuncia ciudadana", "Servicios municipales"]
 ---
 HOY LE QUEREMOS ENCONTRAR DEFECTOS A TODO
 

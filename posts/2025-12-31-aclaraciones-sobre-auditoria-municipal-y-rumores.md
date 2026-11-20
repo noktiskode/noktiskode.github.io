@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ACLARACIONES SOBRE AUDITORÍA MUNICIPAL Y RUMORES"
-tags: ["Municipalidad", "Gobierno municipal", "Comunidad"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "Transparencia", "Municipalidad de Barberena"]
 ---
 ACLARACIONES SOBRE AUDITORÍA MUNICIPAL Y RUMORES
 

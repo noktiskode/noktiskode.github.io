@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "Si se conduce de El Cerinal a Barberena, con precaución: hay un bus con desperfectos en la vuelta de Las Peñonas, sin ninguna señalización. Información compartida por un vecino, quien comenta también que casi le pega."
-tags: ["Barberena", "El Cerinal"]
+tags: ["El Cerinal", "Seguridad", "Transporte"]
 ---
 Si se conduce de El Cerinal a Barberena, con precaución: hay un bus con desperfectos en la vuelta de Las Peñonas, sin ninguna señalización. Información compartida por un vecino, quien comenta también que casi le pega.

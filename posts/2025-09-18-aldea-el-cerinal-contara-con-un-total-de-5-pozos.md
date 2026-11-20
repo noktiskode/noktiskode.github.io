@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "ALDEA EL CERINAL CONTARÁ CON UN TOTAL DE 5 POZOS"
-tags: ["Barberena", "El Cerinal", "Agua potable", "Gobierno municipal"]
+tags: ["El Cerinal", "Agua potable", "Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 ALDEA EL CERINAL CONTARÁ CON UN TOTAL DE 5 POZOS
 

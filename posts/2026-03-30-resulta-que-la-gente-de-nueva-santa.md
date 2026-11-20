@@ -3,13 +3,13 @@ title: "Resulta que la gente de Nueva Santa"
 slug: "resulta-que-la-gente-de-nueva-santa"
 date: "2026-03-30T17:44:47.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "santa-rosa"
 image: "https://img.barberenamimunicipio.top/122211550754318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "Resulta que la gente de Nueva Santa Rosa está de fiesta porque por fin inauguraron su pozo mecánico y toda la tubería para que el agua llegue a las casas. El mejor alcalde, Enrique Arredondo, se puso las pilas junto…"
-tags: ["Nueva Santa Rosa", "Santa Rosa", "Agua potable", "Pozos", "Obras públicas", "Municipalidad"]
+tags: ["Nueva Santa Rosa", "Agua potable", "Obras públicas", "COCODE"]
 ---
 Resulta que la gente de Nueva Santa Rosa está de fiesta porque por fin inauguraron su pozo mecánico y toda la tubería para que el agua llegue a las casas. El mejor alcalde, Enrique Arredondo, se puso las pilas junto con su equipo, porque sabían que la patojada estaba sufriendo por la falta de agua.
 

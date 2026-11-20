@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NO SON Q5 MILLONES Y MEDIO"
-tags: ["Barberena", "Santa Rosa", "Agricultura", "Guatecompras", "Fertilizante", "Municipalidad"]
+tags: ["Guatecompras", "Transparencia", "Ayuda social", "Municipalidad de Barberena"]
 ---
 NO SON Q5 MILLONES Y MEDIO
 

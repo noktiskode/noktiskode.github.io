@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿LA CALLE LA TORRE, PARA CUÁNDO?"
-tags: ["ELPINO", "Barberena", "Santa Rosa", "Obras públicas"]
+tags: ["El Pino", "Pepe Rueda", "Obras públicas", "Denuncia ciudadana"]
 ---
 ¿LA CALLE LA TORRE, PARA CUÁNDO?
 

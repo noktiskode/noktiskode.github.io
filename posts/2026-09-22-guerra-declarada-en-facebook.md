@@ -9,7 +9,7 @@ video_url: null
 featured: true
 published: true
 excerpt: "El \"mejor alcalde de Nueva Santa Rosa\" y el \"diputado del pueblo\" ya no disimulan."
-tags: ["Nueva Santa Rosa", "Santa Rosa", "Ojodeagua", "Política local", "Diputados de Santa Rosa", "Inés Castillo"]
+tags: ["InÃ©s Castillo", "Nueva Santa Rosa", "PolÃ­tica local", "Transparencia"]
 ---
 El "mejor alcalde de Nueva Santa Rosa" y el "diputado del pueblo" ya no disimulan.
 

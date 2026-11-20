@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Barberena: Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo."
-tags: ["Municipalidad", "Obras públicas", "Servicios públicos", "Barberena", "Historia local"]
+tags: ["Obras pĂºblicas", "Municipalidad de Barberena"]
 ---
 Barberena: Los muchachos de la Muni salieron desde tempranito a echar punta. ¿El motivo? Tapar un par de hoyos por la entrada al pueblo.
 

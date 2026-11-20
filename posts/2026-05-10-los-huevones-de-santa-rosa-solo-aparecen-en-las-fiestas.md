@@ -3,13 +3,13 @@ title: "Los huevones de santa rosa solo aparecen en las fiestas"
 slug: "los-huevones-de-santa-rosa-solo-aparecen-en-las-fiestas"
 date: "2026-05-10T16:00:34.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "barberena"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122215819844318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "LOS HUEVONES DE SANTA ROSA SOLO APARECEN EN LAS FIESTAS"
-tags: ["Santa Rosa", "Barberena", "El Cerinal", "Fiscalización Ciudadana", "Fuera Huevones", "Elecciones 2027"]
+tags: ["Napo Rojas", "Ricardo AlarcÃ³n", "Elecciones 2027", "FiscalizaciÃ³n ciudadana", "Obras pÃºblicas"]
 ---
 LOS HUEVONES DE SANTA ROSA SOLO APARECEN EN LAS FIESTAS
 

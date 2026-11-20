@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Estoy pensando seriamente en dejar al tuctuquero del Ceri y tirarle la onda a algún pipero de Barbe."
-tags: ["Barberena", "Echen El Agua", "Se Busca Pipero", "Adios Tuctuquero", "El Cerinal"]
+tags: ["Agua potable", "El Cerinal"]
 ---
 Estoy pensando seriamente en dejar al tuctuquero del Ceri y tirarle la onda a algún pipero de Barbe.
 

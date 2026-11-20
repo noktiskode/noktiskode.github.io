@@ -3,13 +3,13 @@ title: "Cuando invertir en equipo propio rinde más"
 slug: "cuando-invertir-en-equipo-propio-rinde-mas"
 date: "2026-06-25T16:53:11.000Z"
 updated_at: "2026-10-31T00:28:52.938Z"
-category: "historias"
+category: "opiniones"
 image: "https://img.barberenamimunicipio.top/122220437756318393.jpg"
 video_url: null
 featured: false
 published: true
 excerpt: "CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS"
-tags: ["Barberena", "Santa Rosa", "convoymunicipal", "Municipalidad", "Servicios municipales", "Historia local"]
+tags: ["Municipalidad de Barberena", "Servicios municipales", "Agua potable", "Transparencia"]
 ---
 CUANDO INVERTIR EN EQUIPO PROPIO RINDE MÁS
 

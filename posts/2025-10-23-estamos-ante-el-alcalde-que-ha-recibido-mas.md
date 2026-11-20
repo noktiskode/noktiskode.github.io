@@ -9,6 +9,6 @@ video_url: null
 featured: false
 published: true
 excerpt: "¿Estamos ante el alcalde que ha recibido más \"palo\" en la historia reciente de nuestro municipio, superando incluso a figuras como Víctor Jiménez o Rubelio Recinos?"
-tags: ["Barberena", "Santa Rosa", "Barberena Somos Todos", "Barberena Mi Municipio", "Rubelio Recinos", "Municipalidad"]
+tags: ["Pepe Rueda", "Rubelio Recinos", "PolĂ­tica local"]
 ---
 ¿Estamos ante el alcalde que ha recibido más "palo" en la historia reciente de nuestro municipio, superando incluso a figuras como Víctor Jiménez o Rubelio Recinos?

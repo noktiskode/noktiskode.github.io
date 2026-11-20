@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "YA FUE LOCALIZADO EL SEÑOR"
-tags: ["Barberena", "Santa Rosa", "La Ladrillera", "Obras públicas", "Municipalidad", "Gobierno municipal"]
+tags: ["La Ladrillera", "Obras pÃºblicas", "Municipalidad de Barberena"]
 ---
 YA FUE LOCALIZADO EL SEÑOR
 

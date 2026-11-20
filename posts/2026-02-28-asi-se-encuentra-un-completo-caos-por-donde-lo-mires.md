@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "Así se encuentra Barberena: un completo caos, por donde lo mires."
-tags: ["Barberena", "Obras públicas", "Municipalidad"]
+tags: ["Mercado y comercio", "Servicios municipales", "Obras públicas", "Denuncia ciudadana"]
 ---
 Así se encuentra Barberena: un completo caos, por donde lo mires.
 

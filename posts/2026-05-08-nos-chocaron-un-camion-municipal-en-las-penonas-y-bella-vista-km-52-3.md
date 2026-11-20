@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "NOS CHOCARON UN CAMIÓN MUNICIPAL EN “LAS PEÑONAS” Y BELLA VISTA (Km 52.3)"
-tags: ["Barberena", "PMT", "Santa Rosa", "Accidente", "Bomberos", "Municipalidad"]
+tags: ["Seguridad", "PMT", "Transporte", "Municipalidad de Barberena"]
 ---
 NOS CHOCARON UN CAMIÓN MUNICIPAL EN “LAS PEÑONAS” Y BELLA VISTA (Km 52.3)
 

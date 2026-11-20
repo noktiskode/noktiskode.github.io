@@ -9,7 +9,7 @@ video_url: null
 featured: false
 published: true
 excerpt: "¡Se habilita el paso en el sector La Ladrillera!"
-tags: ["Barberena", "Santa Rosa", "Obras públicas", "CODEDE", "La Ladrillera", "Pepe Rueda"]
+tags: ["La Ladrillera", "Pepe Rueda", "Obras públicas", "Municipalidad de Barberena"]
 ---
 ¡Se habilita el paso en el sector La Ladrillera!
 

@@ -9,7 +9,7 @@ video_url: "https://www.facebook.com/reel/1758845736248886/"
 featured: false
 published: true
 excerpt: "Ojo si van a pasar por la fábrica de El Cerinal. Durante el día hay bastante tráfico por ese sector y, cuando llueve, la calle se pone bastante lisa."
-tags: ["El Cerinal", "Barberena", "Santa Rosa", "Accidente"]
+tags: ["El Cerinal", "Seguridad"]
 ---
 Ojo si van a pasar por la fábrica de El Cerinal. Durante el día hay bastante tráfico por ese sector y, cuando llueve, la calle se pone bastante lisa.
 
