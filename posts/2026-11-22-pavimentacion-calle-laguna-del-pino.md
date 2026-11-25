@@ -2,7 +2,7 @@
 title: "Calle de Laguna del Pino: ¿qué sigue?"
 slug: "pavimentacion-calle-laguna-del-pino"
 date: "2026-11-22T21:00:00.000Z"
-updated_at: "2026-11-23T07:43:20.141Z"
+updated_at: "2026-11-25T06:51:33.204Z"
 category: "barberena"
 image: "https://img.barberenamimunicipio.top/1795381409171-ho7ig2.webp"
 video_url: null
@@ -24,4 +24,4 @@ Aquí lo comentamos el 14 de agosto de 2026:
 
 Fuentes: SISCODE (SNIP 372552) y Guatecompras (NOG 32290756).
 
-ACTUALIZACIÓN (23 nov): precisamos el tramo del proyecto y aclaramos que no es el de "Calle Coguasa" (SNIP 372547), que es otro y tiene su primera piedra hoy, 23 de noviembre.
+ACTUALIZACIÓN (25 nov): precisamos el tramo del proyecto y aclaramos que no es el de "Calle Coguasa" (SNIP 372547), que es otro y que tuvo su primera piedra el 23 de noviembre.
